@@ -31,11 +31,12 @@
     "url": "git+https://github.com/SU-SWS/decanter-web.git"
   },
   "bugs": {
-    "url": "https://github.com/SU-SWS/decanter/issues"
+    "url": "https://github.com/SU-SWS/decanter-web/issues"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
     "bourbon": "^5.1",
+    "decanter": "https://github.com/su-sws/decanter#metalsmith",
     "hexo": "^4.0.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
