@@ -1,1 +1,1 @@
-alert("Hello Decanter");
+console.log("Hello Decanter");

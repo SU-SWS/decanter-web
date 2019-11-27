@@ -1,0 +1,23 @@
+<div class="layout ">
+    {% if page.header is not empty %}
+    <header class="flex-container centered-container">
+    <div class="flex-12-of-12">
+      {{ page.header }}
+    </div>
+  </header>
+  {% endif %}
+
+  <section class="flex-container centered-container">
+    <div class="flex-12-of-12">
+        {{ page.content }}
+    </div>
+  </section>
+
+  {% if page.footer is not empty %}
+  <footer class="flex-container centered-container">
+    <div class="flex-12-of-12">
+      {{ page.footer }}
+    </div>
+  </footer>
+  {% endif %}
+</div>
