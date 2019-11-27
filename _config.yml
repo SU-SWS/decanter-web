@@ -6,7 +6,7 @@
 title: Decanter
 subtitle: 'Design System'
 description: 'Pattern Library and Styleguide'
-keywords:
+keywords: Decanter, 'Design System'
 author: 'Stanford Web Services'
 language: en
 timezone: 'America/Vancouver'
@@ -31,7 +31,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :title.twig # File name of new posts
 default_layout: page
 titlecase: false # Transform title into titlecase
 external_link:
@@ -90,7 +90,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: decanter2020
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

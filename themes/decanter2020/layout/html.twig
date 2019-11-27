@@ -1,0 +1,23 @@
+{#
+ # HTML Template.
+ #}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ config.title|default('Decanter') }}</title>
+    {% include "head/meta.twig" %}
+    {% include "head/scripts.twig" %}
+    {% include "head/styles.twig" %}
+  </head>
+  <body>
+    {% include "@decanter/components/brand-bar/brand-bar.twig" %}
+    {% block content %}
+    <h1>{{ page.title }}</h1>
+    {{ page.content }}
+    {% endblock %}
+    <footer id="footer">
+    {% include "@decanter/components/global-footer/global-footer.twig" %}
+    </footer>
+  </body>
+</html>

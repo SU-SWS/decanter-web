@@ -1,0 +1,32 @@
+# Navigation
+menu:
+  Home: /
+  Components: /components
+  Designers: /For-Designers
+  SASS: /docs/scss
+  JS: /docs/js
+  Page: /page.html
+
+# Sass Renderer
+node_sass:
+  debug: false
+  outputStyle: nested
+  precision: 5
+  sourceComments: false
+  includePaths:
+    - node_modules
+    - node_modules/bourbon/core
+    - node_modules/decanter/core/src/scss
+
+# Twig Renderer
+twig:
+  extensions:
+    - twig-drupal-filters
+  namespaces:
+    decanter: node_modules/decanter/core/src/templates
+    node_modules: node_modules
+
+# Assets
+css: css
+js: js
+images: assets
