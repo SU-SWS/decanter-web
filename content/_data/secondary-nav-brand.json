@@ -1,0 +1,22 @@
+{
+  "title": "Brand + Design Elements Navigation",
+  "modifier_class": "su-secondary-nav--buttons",
+  "list_items": [
+    {
+      "href": "/brand-design-elements/brand/",
+      "text": "Brand"
+    },
+    {
+      "href": "/brand-design-elements/typography/",
+      "text": "Typography"
+    },
+    {
+      "href": "/brand-design-elements/color/",
+      "text": "Color"
+    },
+    {
+      "href": "/brand-design-elements/icons/",
+      "text": "Icons"
+    }
+  ]
+}

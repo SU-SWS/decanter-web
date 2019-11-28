@@ -1,0 +1,108 @@
+{
+  "title": "Components",
+  "modifier_class": "su-secondary-nav--buttons",
+  "list_items": [
+    {
+      "href": "/components/atoms/",
+      "text": "Atoms",
+      "children": [
+        {
+          "href": "/components/atoms/button/",
+          "text": "Button"
+        },
+        {
+          "href": "/components/atoms/link/",
+          "text": "Link"
+        },
+        {
+          "href": "/components/atoms/logo/",
+          "text": "Logo"
+        },
+        {
+          "href": "/components/atoms/nav-toggle/",
+          "text": "Navigation Toggle"
+        },
+        {
+          "href": "/components/atoms/skiplinks/",
+          "text": "Skiplinks"
+        }
+      ]
+    },
+    {
+      "href": "/components/molecules/",
+      "text": "Molecules",
+      "children": [
+        {
+          "href": "/components/molecules/alert/",
+          "text": "Alert"
+        },
+        {
+          "href": "/components/molecules/brand-bar/",
+          "text": "Brand Bar"
+        },
+        {
+          "href": "/components/molecules/lockup/",
+          "text": "Lockup"
+        },
+        {
+          "href": "/components/molecules/media/",
+          "text": "Media"
+        },
+        {
+          "href": "/components/molecules/quote/",
+          "text": "Quote"
+        },
+        {
+          "href": "/components/molecules/site-search/",
+          "text": "Site Search"
+        }
+      ]
+    },
+    {
+      "href": "/components/organisms/",
+      "text": "Organisims",
+      "children": [
+        {
+          "href": "/components/organisms/card/",
+          "text": "Card"
+        },
+        {
+          "href": "/components/organisms/cta/",
+          "text": "CTA"
+        },
+        {
+          "href": "/components/organisms/date-stacked/",
+          "text": "Date Stacked"
+        },
+        {
+          "href": "/components/organisms/global-footer/",
+          "text": "Global Footer"
+        },
+        {
+          "href": "/components/organisms/hero/",
+          "text": "Hero"
+        },
+        {
+          "href": "/components/organisms/local-footer/",
+          "text": "Local Footer"
+        },
+        {
+          "href": "/components/organisms/main-navigation/",
+          "text": "Main Navigation"
+        },
+        {
+          "href": "/components/organisms/masthead/",
+          "text": "Masthead"
+        },
+        {
+          "href": "/components/organisms/secondary-navigation/",
+          "text": "Secondary Navigation"
+        },
+        {
+          "href": "/components/organisms/signup-form/",
+          "text": "Signup Form"
+        }
+      ]
+    }
+  ]
+}

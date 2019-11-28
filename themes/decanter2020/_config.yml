@@ -1,12 +1,3 @@
-# Navigation
-menu:
-  Home: /
-  Components: /components
-  Designers: /For-Designers
-  SASS: /docs/scss
-  JS: /docs/js
-  Page: /page.html
-
 # Sass Renderer
 node_sass:
   debug: false
@@ -23,6 +14,7 @@ twig:
   extensions:
     - twig-drupal-filters
   namespaces:
+    hexo: themes/decanter2020/layout
     decanter: node_modules/decanter/core/src/templates
     node_modules: node_modules
 

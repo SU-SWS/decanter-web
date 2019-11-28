@@ -12,11 +12,28 @@
   </head>
   <body>
     {% include "@decanter/components/brand-bar/brand-bar.twig" %}
-    {% block content %}
-    <h1>{{ page.title }}</h1>
-    {{ page.content }}
+    <header>
+    {% block primarynav %}
+    <div class="centered-container">
+      {% include "navigation/primary.twig" %}
+    </div>
     {% endblock %}
+    </header>
+
+    {% block content %}
+    <article>
+      <header>
+        <h1>{{ page.title }}</h1>
+      </header>
+      <section>
+        {{ page.content }}
+      </section>
+    </article>
+    {% endblock %}
+
     <footer id="footer">
+    {% block footer %}
+    {% endblock %}
     {% include "@decanter/components/global-footer/global-footer.twig" %}
     </footer>
   </body>

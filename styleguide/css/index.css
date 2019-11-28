@@ -16354,3 +16354,22 @@ a:active {
   top: 0.8em;
   z-index: 11222;
 }
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+body>footer {
+  margin-top: auto;
+}
+
+html {
+  display: flex;
+}

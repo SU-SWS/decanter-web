@@ -1,0 +1,3 @@
+{% set navkey = "secondary-nav-" ~ page["secondary-nav"] %}
+{% set navdata = site.data[navkey] %}
+{% include '@decanter/components/secondary-nav/secondary-nav.twig' with navdata %}

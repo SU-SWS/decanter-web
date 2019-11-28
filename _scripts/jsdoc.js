@@ -39,7 +39,7 @@ function lookupJSDOCBin() {
 ////
 
 let jsdoc = lookupJSDOCBin();
-exec(jsdoc + ' -c ./scripts/jsdoc.json', (err, stdout, stderr) => {
+exec(jsdoc + ' -c ./_scripts/jsdoc.json', (err, stdout, stderr) => {
   if (err) {
     //some err occurred
     console.error(err)

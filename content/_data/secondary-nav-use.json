@@ -1,0 +1,40 @@
+{
+  "title": "Use Decanter Navigation",
+  "modifier_class": "su-secondary-nav--buttons",
+  "list_items": [
+    {
+      "href": "/use-decanter/as-a-developer/",
+      "text": "As a Developer",
+      "children": [
+        {
+          "href": "/use-decanter/as-a-developer/installation/",
+          "text": "Installation"
+        },
+        {
+          "href": "/use-decanter/as-a-developer/build-tools/",
+          "text": "Build Tools"
+        },
+        {
+          "href": "/docs/scss",
+          "text": "SASS Docs"
+        },
+        {
+          "href": "/docs/js",
+          "text": "JS Docs"
+        },
+        {
+          "href": "/use-decanter/as-a-developer/browser-compatibility/",
+          "text": "Browser Compatibility"
+        },
+        {
+          "href": "/use-decanter/as-a-developer/code-standards/",
+          "text": "Code Standards"
+        }
+      ]
+    },
+    {
+      "href": "/use-decanter/as-a-designer/",
+      "text": "As a Designer"
+    }
+  ]
+}

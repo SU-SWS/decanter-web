@@ -12,8 +12,7 @@
     "server": "hexo server",
     "jsdoc": "node _scripts/jsdoc.js",
     "sassdoc": "node _scripts/sassdoc.js",
-    "kss": "node _scripts/kss.js",
-    "styleguide": "npm run build && npm run jsdoc && npm run sassdoc && npm run kss",
+    "styleguide": "npm run build && npm run jsdoc && npm run sassdoc",
     "eslint": "eslint -c .eslintrc 'core/src/'",
     "sasslint": "sass-lint -c .sass-lint.yml '**/*.scss' -v -q -i 'vendor/**/*.scss, node_modules/**/*.scss, themes/kss/builder/decanter/**/*.scss'"
   },
@@ -36,7 +35,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
     "bourbon": "^5.1",
-    "decanter": "https://github.com/su-sws/decanter#metalsmith",
+    "decanter": "git+https://github.com/su-sws/decanter.git#metalsmith",
     "hexo": "^4.0.0",
     "hexo-beautify": "^1.0.2",
     "hexo-browsersync": "^0.3.0",
@@ -47,16 +46,15 @@
     "hexo-generator-tag": "^1.0.0",
     "hexo-renderer-marked": "^2.0.0",
     "hexo-renderer-scss": "^1.2.0",
-    "hexo-renderer-twig": "https://github.com/sherakama/hexo-renderer-twig#namespaces",
+    "hexo-renderer-twig": "git+https://github.com/sherakama/hexo-renderer-twig.git#namespaces",
     "hexo-server": "^1.0.0",
     "jsdoc-api": "^5.0.4",
-    "kss": "^3.0.0-beta.25",
     "sassdoc": "^2.7.1",
     "twig": "^1.14.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.2",
-    "@babel/preset-env": "^7.7.1",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
     "autoprefixer": "^9.7.2",
     "babel-loader": "^8.0.6",
     "css-loader": "^2.1",
