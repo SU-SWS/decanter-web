@@ -34,3 +34,8 @@ node_modules
 
 # Ignore as they are customized on the user end.
 .lando.yml
+
+# Next Stuff
+.next/
+/npm-debug.log
+out/
