@@ -1,14 +1,3 @@
-# Sass Renderer
-node_sass:
-  debug: false
-  outputStyle: nested
-  precision: 5
-  sourceComments: false
-  includePaths:
-    - node_modules
-    - node_modules/bourbon/core
-    - node_modules/decanter/core/src/scss
-
 # Twig Renderer
 twig:
   extensions:

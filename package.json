@@ -6,18 +6,22 @@
   "homepage": "https://github.com/SU-SWS/decanter-web",
   "license": "MIT",
   "scripts": {
-    "build": "hexo generate",
+    "build": "npm run webpack && npm run gen && npm run jsdoc && npm run sassdoc",
+    "gen": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
     "jsdoc": "node _scripts/jsdoc.js",
     "sassdoc": "node _scripts/sassdoc.js",
-    "styleguide": "npm run build && npm run jsdoc && npm run sassdoc",
     "eslint": "eslint -c .eslintrc 'core/src/'",
-    "sasslint": "sass-lint -c .sass-lint.yml '**/*.scss' -v -q -i 'vendor/**/*.scss, node_modules/**/*.scss, themes/kss/builder/decanter/**/*.scss'"
+    "sasslint": "sass-lint -c .sass-lint.yml '**/*.scss' -v -q -i 'vendor/**/*.scss, node_modules/**/*.scss, themes/kss/builder/decanter/**/*.scss'",
+    "webpack": "webpack --config themes/decanter2020/webpack.config.js --mode production --display-error-details"
   },
   "hexo": {
     "version": "4.0.0"
+  },
+  "config": {
+    "node_modules": "node_modules"
   },
   "keywords": [
     "css",
@@ -50,7 +54,8 @@
     "hexo-server": "^1.0.0",
     "jsdoc-api": "^5.0.4",
     "sassdoc": "^2.7.1",
-    "twig": "^1.14.0"
+    "twig": "^1.14.0",
+    "webpack-fix-style-only-entries": "^0.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.4",

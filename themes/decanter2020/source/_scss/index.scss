@@ -1,13 +1,9 @@
 @charset 'UTF-8';
 
 @import 'config';
-@import 'decanter';
+@import 'decanter-no-markup';
 @import 'base';
 @import 'layout';
 @import 'components';
 @import 'theme';
 @import 'state';
-
-body {
-  @include sticky-footer("> footer");
-}

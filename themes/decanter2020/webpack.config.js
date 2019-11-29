@@ -12,83 +12,50 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const WebpackAssetsManifest = require("webpack-assets-manifest");
-const ExtraWatchWebpackPlugin = require("extra-watch-webpack-plugin");
+const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
 
 // Paths
-const npmPackage = 'node_modules/';
+const npmPackage = path.resolve(process.env.npm_package_config_node_modules);
 
 // Other variables
 // process.env.NODE_ENV is NOT set, so use the name of the npm script as the clue.
 const devMode = process.env.npm_lifecycle_event !== 'dist';
 
-// For MiniCssExtractPlugin
-// Loops through the module variable that is nested looking for a name.
-function recursiveIssuer(module) {
-  if (module.issuer) {
-    return recursiveIssuer(module.issuer);
-  }
-  else if (module.name) {
-    return module.name;
-  }
-  else {
-    return false;
-  }
-}
-
 // Module Exports.
 module.exports = {
-  name: "kss-assets",
+  name: "decanter2020",
   // Define the entry points for which webpack builds a dependency graph.
   entry: {
-    "kss": path.resolve( __dirname, "kss/decanter/scss/kss.scss")
+    "styles": path.resolve( __dirname, "source/_scss/index.scss"),
+    "scripts": path.resolve( __dirname, "source/_scripts/index.js")
   },
   // Where should I output the assets.
   output: {
     filename: devMode ? "[name].js" : "[name].[hash].js",
-    path: path.resolve( __dirname, 'kss/decanter/kss-assets/js' )
+    path: path.resolve( __dirname, 'source/js' )
   },
   // Allows for map files.
   devtool: 'source-map',
-  // Live dev server!
-  devServer: {
-    contentBase: path.join(__dirname, 'styleguide'),
-    compress: true,
-    port: 9000
-  },
   // Relative output paths for css assets.
   resolve: {
     alias: {
-      'decanter-src': path.resolve(npmPackage + 'decanter/core/src'),
-      'decanter-img': path.resolve(npmPackage + 'decanter/core/src/img'),
-      '@fortawesome': path.resolve(npmPackage + '@fortawesome')
+      'decanter-src': path.resolve(npmPackage, 'decanter/core/src'),
+      'decanter-img': path.resolve(npmPackage, 'decanter/core/src/img'),
+      '@fortawesome': path.resolve(npmPackage, '@fortawesome')
     }
   },
   // Optimizations that are triggered by production mode.
   optimization: {
     // Uglify the Javascript & and CSS.
     minimizer: [
-      new UglifyJsPlugin( {
-        cache: true,
-        parallel: true,
-        sourceMap: true
-      } ),
-      new OptimizeCSSAssetsPlugin( {} )
-    ],
-    // Splitchunks plugin configuration.
-    // https://webpack.js.org/plugins/split-chunks-plugin/.
-    splitChunks: {
-      cacheGroups: {
-        'kss': {
-          name: 'kss',
-          test: ( module, chunks, entry = 'kss' ) => module.constructor.name === 'CssModule' && recursiveIssuer( module ) === entry,
-          chunks: 'all',
-          enforce: true
-        }
-      }
-    }
+      // Shrink CSS.
+      new OptimizeCSSAssetsPlugin({})
+    ]
   },
   // Define and configure webpack plugins.
   plugins: [
+    // Remove JS files from render.
+    new FixStyleOnlyEntriesPlugin(),
     // This plugin extracts CSS into separate files. It creates a CSS file per
     // JS file which contains CSS. It supports On-Demand-Loading of CSS and
     // SourceMaps.
@@ -96,8 +63,7 @@ module.exports = {
     new MiniCssExtractPlugin( {
       // Options similar to the same options in webpackOptions.output
       // both options are optional
-      filename: devMode ? "../css/[name].css" : "../css/[name].[hash].css",
-      chunkFilename: "../css/[id].css"
+      filename: devMode ? "../css/[name].css" : "../css/[name].[hash].css"
     } ),
     // This Webpack plugin will generate a JSON file that matches the original
     // filename with the hashed version.
@@ -149,9 +115,10 @@ module.exports = {
             loader: 'sass-loader',
             options: {
               includePaths: [
-                path.resolve( __dirname, npmPackage, "bourbon/core" ),
-                path.resolve( __dirname, npmPackage, "decanter/core/src/scss" ),
-                path.resolve( __dirname, npmPackage )
+                path.resolve( __dirname, "source/_scss" ),
+                path.resolve( npmPackage, "bourbon/core" ),
+                path.resolve( npmPackage, "decanter/core/src/scss" ),
+                path.resolve( npmPackage )
               ],
               sourceMap: true,
               lineNumbers: true,
