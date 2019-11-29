@@ -1,8 +1,0 @@
-{% extends "html.twig" %}
-{% block content %}
-  {% if page.grid is not empty %}
-    {% include './grids/' ~ page.grid ~ '.twig' %}
-  {% else %}
-    {{ page.content }}
-  {% endif %}
-{% endblock %}
