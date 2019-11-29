@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
     "@fortawesome/fontawesome-free": "^5.11.2",
     "bourbon": "^5.1",
     "decanter": "git+https://github.com/su-sws/decanter.git#metalsmith",
@@ -41,6 +42,8 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-markdown": "^4.2.2",
+    "redux": "^4.0.4",
+    "slate": "^0.50.2",
     "webpack": "^4.41.2"
   },
   "devDependencies": {
