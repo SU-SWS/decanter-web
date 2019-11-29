@@ -12,3 +12,7 @@ cats:
     name: Something something
 ---
 I am Just getting started!
+
+
+
+![sdfg](/img/photo-epel-stanford-campus.jpg "sdfg")
