@@ -1,0 +1,22 @@
+{
+  "title": "Layout Navigation",
+  "modifier_class": "su-secondary-nav--buttons",
+  "list_items": [
+    {
+      "href": "/layouts/grid-system/",
+      "text": "Grid System"
+    },
+    {
+      "href": "/layouts/modular-spacing/",
+      "text": "Modular Spacing"
+    },
+    {
+      "href": "/layouts/responsive-design/",
+      "text": "Responsive Design"
+    },
+    {
+      "href": "/layouts/examples/",
+      "text": "Examples"
+    }
+  ]
+}
