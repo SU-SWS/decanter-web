@@ -1,4 +1,4 @@
-import BrandBar from '../BrandBar/Brandbar.js';
+import BrandBar from '../BrandBar/BrandBar.js';
 import PrimaryNav from '../PrimaryNav/PrimaryNav.js';
 
 const MastHead = () => (
