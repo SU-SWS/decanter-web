@@ -1,4 +1,4 @@
-import NavData from '../../content/navigation/primary-nav.json';
+import NavData from '../../content/_navigation/primary-nav.json';
 import Link from 'next/link';
 
 const PrimaryNav = props => (
