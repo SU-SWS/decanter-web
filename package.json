@@ -39,6 +39,7 @@
     "decanter": "git+https://github.com/su-sws/decanter.git#metalsmith",
     "file-loader": "^5.0.2",
     "frontmatter-markdown-loader": "^3.1.0",
+    "glob": "^7.1.6",
     "jsdoc-api": "^5.0.4",
     "mini-css-extract-plugin": "^0.8.0",
     "netlify-cms": "^2.9.7",

@@ -2,6 +2,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const autoprefixer = require('autoprefixer')({ grid: true });
 const withSass = require('@zeit/next-sass');
 const path = require('path');
+var glob = require("glob")
 const npmPackage = "node_modules";
 
 module.exports = withSass({
@@ -43,3 +44,26 @@ module.exports = withSass({
     return cfg;
   }
 });
+
+/**
+ * Tell NextJS about our dynamic pages.
+ */
+module.exports.exportTrailingSlash = true;
+
+var pages = {
+  '/': { page: '/' }
+};
+
+glob('content/_pages/*.md', null, function(er, files) {
+  files.forEach(function(filename) {
+    var key = filename.replace("content/_pages/", "").replace(".md", "");
+    pages['/page/' + key] = { page: '/page/[id]', query: { id: key} };
+  });
+});
+
+module.exports.exportPathMap = function() {
+  return pages;
+}
+/**
+ * End Dynamic page export.
+ */
