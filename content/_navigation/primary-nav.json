@@ -1,6 +1,5 @@
 {
   "title": "Primary Navigation",
-  "modifier_class": "su-main-nav--right",
   "toggle_text": "Menu",
   "list_items": [
     {
@@ -8,23 +7,81 @@
       "text": "Home"
     },
     {
-      "href": "/about/",
-      "text": "About"
+      "href": "/page/about/",
+      "text": "About",
+      "children": [
+        {
+          "href": "/page/about-contributing/",
+          "text": "Contributing + Collaboration",
+          "children": [
+            {
+              "href": "/page/about-contributing-what-can-i-contribute/",
+              "text": "What you can contribute?"
+            },
+            {
+              "href": "/page/about-contributing-how-to-communicate/",
+              "text": "How to communicate"
+            },
+            {
+              "href": "/page/about/contributing-feedback-questions/",
+              "text": "Feedback + Questions"
+            }
+          ]
+        },
+        {
+          "href": "/page/about-blog/",
+          "text": "Blog"
+        },
+        {
+          "href": "/page/about-why-decanter/",
+          "text": "Why Decanter?",
+          "children": [
+            {
+              "href": "/page/about-why-decanter-accessibility/",
+              "text": "Accessibility"
+            },
+            {
+              "href": "/page/about-why-decanter-brand-compliance/",
+              "text": "Brand Compliance"
+            },
+            {
+              "href": "/page/about-why-decanter-get-started-quickly/",
+              "text": "Get Started More Quickly"
+            }
+          ]
+        },
+        {
+          "href": "/page/about-projects-that-use-decanter/",
+          "text": "Projects that use Decanter"
+        },
+        {
+          "href": "/page/about-release-notes/",
+          "text": "Release Notes"
+        },
+        {
+          "href": "/page/about-release-roadmap/",
+          "text": "Release Road Map"
+        },
+        {
+          "href": "/page/about-governance/",
+          "text": "Governance"
+        }
+      ]
     },
     {
-      "href": "/use-decanter/",
+      "href": "/page/use-decanter/",
       "text": "Use Decanter"
     },
     {
-      "href": "/brand-design-elements/",
+      "href": "/page/brand-design-elements/",
       "text": "Brand + Design Elements"
     },
     {
-      "href": "/layouts/",
+      "href": "/page/layouts/",
       "text": "Layouts"
     },
     {
-      "href": "/components/",
+      "href": "/page/components/",
       "text": "Components"
     }
   ]

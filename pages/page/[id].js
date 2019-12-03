@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import TheContent  from '../../scripts/getAllContent.js';
+import Layout from '../../components/layouts/TwoCol.js';
 
 /**
  * [Post description]
@@ -11,10 +12,7 @@ const Page = props => {
   const MyContent = TheContent[router.query.id].react;
 
   return (
-    <div>
-    <h1>{title}</h1>
-    <MyContent />
-    </div>
+    <Layout content=<MyContent /> title={title} />
   )
 }
 
