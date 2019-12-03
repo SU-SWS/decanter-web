@@ -1,12 +1,14 @@
-import { Component } from 'react'
-import { attributes, react as HomeContent } from '../content/home.md';
+import { Component } from 'react';
 import Layout from '../components/layouts/OneCol.js';
-let { title } = attributes;
+import TheContent  from '../scripts/getAllContent.js';
+var myInfo = TheContent['./index.md'];
+var MyComponent = myInfo.react;
+var { title } = myInfo.attributes.title;
 
-const TheContent = [
-  <HomeContent />
+const MyContent = [
+  <MyComponent />
 ];
 
 export default function Index() {
-  return <Layout content={TheContent} />;
+  return <Layout content={MyContent} />;
 }
