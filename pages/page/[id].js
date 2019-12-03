@@ -6,9 +6,9 @@ import TheContent  from '../../scripts/getAllContent.js';
  * @param {[type]} props [description]
  */
 const Page = props => {
-  const MyContent = props.page.component;
   const title = props.page.attributes.title;
   const router = useRouter();
+  const MyContent = TheContent[router.query.id].react;
 
   return (
     <div>
@@ -24,18 +24,17 @@ const Page = props => {
  * @return {[type]}       [description]
  */
 Page.getInitialProps = async function(context) {
+  var myInfo = false;
   const { id } = context.query;
   if (TheContent[id]) {
-    const myInfo = TheContent[id];
+    myInfo = TheContent[id];
   }
   else {
     return { page: {attributes: {title: "Undefined"}, component: 'undefined'}};
   }
-  var MyComponent = myInfo.react;
-  var MyAttributes = myInfo.attributes;
 
   return {
-    page: {attributes: myInfo.attributes, component: myInfo.react}
+    page: {attributes: myInfo.attributes, component: myInfo}
   }
 }
 
