@@ -24,9 +24,13 @@ const Page = props => {
  * @return {[type]}       [description]
  */
 Page.getInitialProps = async function(context) {
-  console.log(context);
   const { id } = context.query;
-  const myInfo = TheContent[id];
+  if (TheContent[id]) {
+    const myInfo = TheContent[id];
+  }
+  else {
+    return { page: {attributes: {title: "Undefined"}, component: 'undefined'}};
+  }
   var MyComponent = myInfo.react;
   var MyAttributes = myInfo.attributes;
 
