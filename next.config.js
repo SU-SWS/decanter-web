@@ -59,9 +59,7 @@ module.exports = withSass({
 module.exports.exportTrailingSlash = true;
 
 var pages = {
-  '/': { page: '/' },
-  '/docs/scss/': { page: '/docs/scss/index.html', as: '/docs/scss/'},
-  '/docs/js/': { page: '/docs/js/index.html', as: '/docs/js/' }
+  '/': { page: '/' }
 };
 
 glob('content/_pages/*.md', null, function(er, files) {
