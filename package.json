@@ -7,11 +7,10 @@
   "license": "MIT",
   "scripts": {
     "dev": "next",
-    "build": "npm run pack && next build",
+    "build": "npm run jsdoc && npm run sassdoc && npm run pack && next build",
     "start": "next start",
     "export": "npm run build && next export",
     "pack": "webpack --mode production --display-error-details",
-    "compile": "npm run jsdoc && npm run sassdoc && npm run build",
     "jsdoc": "node scripts/jsdoc.js",
     "sassdoc": "node scripts/sassdoc.js"
   },
