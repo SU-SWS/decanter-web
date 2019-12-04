@@ -12,8 +12,8 @@ function lookupJSDOCBin() {
 
   // Comment goes here.
   paths = [
-    __dirname + '/../node_modules/.bin/jsdoc',
-    __dirname + '/../node_modules/jsdoc/jsdoc.js'
+    path.resolve(__dirname, '../node_modules/.bin/jsdoc'),
+    path.resolve(__dirname, '../node_modules/jsdoc/jsdoc.js')
   ];
 
   // Fall back on global if not found at the usual location.
@@ -39,7 +39,7 @@ function lookupJSDOCBin() {
 ////
 
 let jsdoc = lookupJSDOCBin();
-exec(jsdoc + ' -c ./_scripts/jsdoc.json', (err, stdout, stderr) => {
+exec(jsdoc + ' -c ./scripts/jsdoc.json', (err, stdout, stderr) => {
   if (err) {
     //some err occurred
     console.error(err)

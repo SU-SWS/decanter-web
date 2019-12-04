@@ -2,21 +2,25 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const autoprefixer = require('autoprefixer')({ grid: true });
 const withSass = require('@zeit/next-sass');
 const path = require('path');
+const sass = require('sass');
 var glob = require("glob")
 const npmPackage = "node_modules";
 
 module.exports = withSass({
   sassLoaderOptions: {
-    includePaths: [
-      path.resolve(npmPackage, "bourbon/core"),
-      path.resolve(npmPackage)
-    ],
-    sourceMap: true,
-    lineNumbers: true,
-    outputStyle: 'nested',
-    precision: 10
+    implementation: require('sass'),
+    sassOptions: {
+      includePaths: [
+        path.resolve(npmPackage, "bourbon/core"),
+        path.resolve(npmPackage)
+      ],
+      sourceMap: true,
+      lineNumbers: true,
+      precision: 10
+    }
   },
   webpack: (cfg, options) => {
+
     cfg.module.rules.push(
       {
         test: /\.md$/,
@@ -40,7 +44,11 @@ module.exports = withSass({
         test: /\.(png|svg|jpg|gif)$/i,
         loader: "file-loader"
       }
-    )
+    );
+
+    cfg.resolve.modules.push(path.resolve('./'));
+    cfg.resolve.alias['decanter-img'] = path.resolve(__dirname, "node_modules/decanter/core/src/img");
+
     return cfg;
   }
 });
@@ -51,7 +59,9 @@ module.exports = withSass({
 module.exports.exportTrailingSlash = true;
 
 var pages = {
-  '/': { page: '/' }
+  '/': { page: '/' },
+  '/docs/scss/': { page: '/docs/scss/index.html', as: '/docs/scss/'},
+  '/docs/js/': { page: '/docs/js/index.html', as: '/docs/js/' }
 };
 
 glob('content/_pages/*.md', null, function(er, files) {

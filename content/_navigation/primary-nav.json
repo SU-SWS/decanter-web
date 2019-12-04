@@ -23,7 +23,7 @@
               "text": "How to communicate"
             },
             {
-              "href": "/page/about/contributing-feedback-questions/",
+              "href": "/page/about-contributing-feedback-questions/",
               "text": "Feedback + Questions"
             }
           ]
@@ -70,19 +70,195 @@
     },
     {
       "href": "/page/use-decanter/",
-      "text": "Use Decanter"
+      "text": "Use Decanter",
+      "children": [
+        {
+          "href": "/page/use-decanter-as-a-developer/",
+          "text": "As a Developer",
+          "children": [
+            {
+              "href": "/page/use-decanter-as-a-developer-installation/",
+              "text": "Installation"
+            },
+            {
+              "href": "/page/use-decanter-as-a-developer-build-tools/",
+              "text": "Build Tools"
+            },
+            {
+              "href": "/docs/scss/index.html",
+              "text": "SASS Docs"
+            },
+            {
+              "href": "/docs/js/index.html",
+              "text": "JS Docs"
+            },
+            {
+              "href": "/page/use-decanter-as-a-developer-browser-compatibility/",
+              "text": "Browser Compatibility"
+            },
+            {
+              "href": "/page/use-decanter-as-a-developer-code-standards/",
+              "text": "Code Standards"
+            }
+          ]
+        },
+        {
+          "href": "/page/use-decanter-as-a-designer/",
+          "text": "As a Designer"
+        }
+      ]
     },
     {
       "href": "/page/brand-design-elements/",
-      "text": "Brand + Design Elements"
+      "text": "Brand + Design Elements",
+      "children": [
+        {
+          "href": "/page/brand-design-elements-brand/",
+          "text": "Brand"
+        },
+        {
+          "href": "/page/brand-design-elements-typography/",
+          "text": "Typography"
+        },
+        {
+          "href": "/page/brand-design-elements-color/",
+          "text": "Color"
+        },
+        {
+          "href": "/page/brand-design-elements-icons/",
+          "text": "Icons"
+        }
+      ]
     },
     {
       "href": "/page/layouts/",
-      "text": "Layouts"
+      "text": "Layouts",
+      "children": [
+        {
+          "href": "/page/layouts-grid-system/",
+          "text": "Grid System"
+        },
+        {
+          "href": "/page/layouts-modular-spacing/",
+          "text": "Modular Spacing"
+        },
+        {
+          "href": "/page/layouts-responsive-design/",
+          "text": "Responsive Design"
+        },
+        {
+          "href": "/page/layouts-examples/",
+          "text": "Examples"
+        }
+      ]
     },
     {
       "href": "/page/components/",
-      "text": "Components"
+      "text": "Components",
+      "children": [
+        {
+          "href": "/page/components-atoms/",
+          "text": "Atoms",
+          "children": [
+            {
+              "href": "/page/components-atoms-button/",
+              "text": "Button"
+            },
+            {
+              "href": "/page/components-atoms-link/",
+              "text": "Link"
+            },
+            {
+              "href": "/page/components-atoms-logo/",
+              "text": "Logo"
+            },
+            {
+              "href": "/page-components-atoms-nav-toggle/",
+              "text": "Navigation Toggle"
+            },
+            {
+              "href": "/page/components-atoms-skiplinks/",
+              "text": "Skiplinks"
+            }
+          ]
+        },
+        {
+          "href": "/page/components-molecules/",
+          "text": "Molecules",
+          "children": [
+            {
+              "href": "/page/components-molecules-alert/",
+              "text": "Alert"
+            },
+            {
+              "href": "/page/components-molecules-brand-bar/",
+              "text": "Brand Bar"
+            },
+            {
+              "href": "/page/components-molecules-lockup/",
+              "text": "Lockup"
+            },
+            {
+              "href": "/page/components-molecules-media/",
+              "text": "Media"
+            },
+            {
+              "href": "/page/components-molecules-quote/",
+              "text": "Quote"
+            },
+            {
+              "href": "/page/components-molecules-site-search/",
+              "text": "Site Search"
+            }
+          ]
+        },
+        {
+          "href": "/page/components-organisms/",
+          "text": "Organisims",
+          "children": [
+            {
+              "href": "/page/components-organisms-card/",
+              "text": "Card"
+            },
+            {
+              "href": "/page/components-organisms-cta/",
+              "text": "CTA"
+            },
+            {
+              "href": "/page/components-organisms-date-stacked/",
+              "text": "Date Stacked"
+            },
+            {
+              "href": "/page/components-organisms-global-footer/",
+              "text": "Global Footer"
+            },
+            {
+              "href": "/page/components-organisms-hero/",
+              "text": "Hero"
+            },
+            {
+              "href": "/page/components-organisms-local-footer/",
+              "text": "Local Footer"
+            },
+            {
+              "href": "/page/components-organisms-main-navigation/",
+              "text": "Main Navigation"
+            },
+            {
+              "href": "/page/components-organisms-masthead/",
+              "text": "Masthead"
+            },
+            {
+              "href": "/page/components-organisms-secondary-navigation/",
+              "text": "Secondary Navigation"
+            },
+            {
+              "href": "/page/components-organisms-signup-form/",
+              "text": "Signup Form"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

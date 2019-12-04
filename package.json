@@ -7,14 +7,13 @@
   "license": "MIT",
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "npm run pack && next build",
     "start": "next start",
     "export": "npm run build && next export",
-    "compile": "npm run gen && npm run jsdoc && npm run sassdoc",
-    "jsdoc": "node _scripts/jsdoc.js",
-    "sassdoc": "node _scripts/sassdoc.js",
-    "eslint": "eslint -c .eslintrc 'core/src/'",
-    "sasslint": "sass-lint -c .sass-lint.yml '**/*.scss' -v -q -i 'vendor/**/*.scss, node_modules/**/*.scss, themes/kss/builder/decanter/**/*.scss'"
+    "pack": "webpack --mode production --display-error-details",
+    "compile": "npm run jsdoc && npm run sassdoc && npm run build",
+    "jsdoc": "node scripts/jsdoc.js",
+    "sassdoc": "node scripts/sassdoc.js"
   },
   "keywords": [
     "css",
@@ -31,13 +30,17 @@
   },
   "dependencies": {
     "@babel/core": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.7.4",
     "@babel/preset-react": "^7.7.4",
     "@fortawesome/fontawesome-free": "^5.11.2",
     "@zeit/next-sass": "^1.0.1",
     "autoprefixer": "^9.7.2",
     "bourbon": "^5.1",
     "decanter": "git+https://github.com/su-sws/decanter.git#metalsmith",
+    "fibers": "^4.0.2",
     "file-loader": "^5.0.2",
+    "filemanager-webpack-plugin": "^2.0.5",
     "frontmatter-markdown-loader": "^3.1.0",
     "glob": "^7.1.6",
     "jsdoc-api": "^5.0.4",
@@ -45,18 +48,26 @@
     "netlify-cms": "^2.9.7",
     "next": "^9.1.4",
     "node-sass": "^4.13.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-markdown": "^4.2.2",
     "redux": "^4.0.4",
+    "sass": "^1.23.7",
+    "sass-loader": "^8.0.0",
     "slate": "^0.50.2",
-    "webpack": "^4.41.2"
+    "style-loader": "^1.0.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-assets-manifest": "^3.1.1",
+    "webpack-fix-style-only-entries": "^0.4.0"
   },
   "devDependencies": {
+    "eslint": "^5.16",
+    "jsdoc": "^3.6.3",
     "sassdoc": "^2.7.1",
     "twig": "^1.14.0",
-    "eslint": "^5.16",
-    "jsdoc": "^3.6.3"
+    "webpack-cli": "^3.3.10"
   }
 }
