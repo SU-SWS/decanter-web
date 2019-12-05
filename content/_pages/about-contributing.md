@@ -6,8 +6,10 @@ date: 2019-11-28T14:11:13.000Z
 
 askldjflkasdjf
 
-asdf
-
-asdf
+<ul>
+<li>This is list item one</li>
+<li>This is list item two</li>
+</ul>
 
 ![Hello Everyone](/img/photo-epel-stanford-campus.jpg "This is fun")
+
