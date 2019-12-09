@@ -3,7 +3,7 @@ title: Community
 date: 2019-11-28T14:11:13.000Z
 ---
 
-## Community
+## Communicate
 
 The Decanter team is on Slack, which is the best way to learn about new releases and find support. Some relevant Slack channels are:
 
