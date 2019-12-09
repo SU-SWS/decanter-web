@@ -11,3 +11,7 @@ variants:
       human_title: Minimal Styled Hero
 ---
 This is the hero
+
+
+
+![](/img/photo-epel-stanford-campus.jpg)
