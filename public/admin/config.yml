@@ -1,14 +1,35 @@
 backend:
   name: git-gateway
   branch: nextjs
-media_folder: public/img
-public_folder: img
+media_folder: "public/img"
+public_folder: "/img"
+publish_mode: editorial_workflow
+site_url: https://elegant-poitras-87214a.netlify.com
 collections:
   - name: "pages"
     label: "Pages"
+    delete: true
+    description: "Basic building block pages. You may use markdown or html."
     folder: "content/_pages"
+    preview_path: page/{{slug}}
     create: true
     fields:
-      - { label: "Title", name: "title", widget: "string"}
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown"}
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "components"
+    label: "Components"
+    delete: false
+    description: "Component pages."
+    folder: "content/_components"
+    preview_path: component/{{slug}}
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Variant"
+        name: "variant"
+        widget: "object"
+        fields:
+          - { label: "Human friendly title", name: "human_title", widget: "string" }
+          - { label: "Description", name: "description", widget: "markdown" }

@@ -21,6 +21,11 @@ module.exports = withSass({
   },
   webpack: (cfg, options) => {
 
+    // Fix: "Uncaught ReferenceError: global is not defined", and "Can't resolve 'fs'".
+    cfg.node = cfg.node || {};
+    cfg.node.global = true;
+    cfg.node.fs = 'empty';
+
     cfg.module.rules.push(
       {
         test: /\.md$/,

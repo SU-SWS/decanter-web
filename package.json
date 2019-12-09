@@ -37,12 +37,12 @@
     "autoprefixer": "^9.7.2",
     "bourbon": "^5.1",
     "decanter": "git+https://github.com/su-sws/decanter.git#metalsmith",
-    "fibers": "^4.0.2",
     "file-loader": "^5.0.2",
     "filemanager-webpack-plugin": "^2.0.5",
     "frontmatter-markdown-loader": "^3.1.0",
     "glob": "^7.1.6",
     "jsdoc-api": "^5.0.4",
+    "kss": "^3.0.0-beta.25",
     "mini-css-extract-plugin": "^0.8.0",
     "netlify-cms": "^2.9.7",
     "next": "^9.1.4",
@@ -57,6 +57,7 @@
     "sass-loader": "^8.0.0",
     "slate": "^0.50.2",
     "style-loader": "^1.0.1",
+    "twig": "^1.14.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.41.2",
     "webpack-assets-manifest": "^3.1.1",
@@ -66,7 +67,6 @@
     "eslint": "^5.16",
     "jsdoc": "^3.6.3",
     "sassdoc": "^2.7.1",
-    "twig": "^1.14.0",
     "webpack-cli": "^3.3.10"
   }
 }

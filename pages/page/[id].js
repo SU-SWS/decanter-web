@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import TheContent  from '../../scripts/getAllContent.js';
+import TheContent from '../../scripts/getAllContent.js';
 import Layout from '../../src/components/layouts/TwoCol.js';
 
 /**
