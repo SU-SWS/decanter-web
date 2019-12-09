@@ -10,9 +10,11 @@ Decanter includes both the Decanter Design System, and the implementation of tha
 
 We build the living Decanter Design System elements in Figma. Figma is design software that our team at Stanford Web Services and University Communications specifically selected for these reasons. 
 
-Collaboration: the software is cloud-based and allows for synchronized, multi-person editing in real time. All files are stored through Figma itself. No checking-in or checking-out of any files is necessary. 
+**Collaboration**: the software is cloud-based and allows for synchronized, multi-person editing in real time. All files are stored through Figma itself. No checking-in or checking-out of any files is necessary. 
 
-Libraries: type, color, and master components can be created as shared libraries, of which any person on the enterprise Stanford Figma team can use. By simply toggling the Stanford Design System library on, you have access to branded colors, type styles, modular spacing, and basic components. You can also make libraries for use within your own team, and custom design work. Our goal with the Decanter Design System is to accelerate your work, but not to dictate your design outcomes. Creative freedom and flexibility are encouraged. 
+**Libraries**: type, color, and master components can be created as shared libraries, of which any person on the enterprise Stanford Figma team can use. By simply toggling the Stanford Design System library on, you have access to branded colors, type styles, modular spacing, and basic components. You can also make libraries for use within your own team, and custom design work. Our goal with the Decanter Design System is to accelerate your work, but not to dictate your design outcomes. Creative freedom and flexibility are encouraged. 
+
+Learn more about using Figma and getting the library.
 
 ## Community Contribution
 
