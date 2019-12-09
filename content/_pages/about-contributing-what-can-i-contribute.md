@@ -2,6 +2,19 @@
 title: Contributing to Decanter
 date: 2019-11-28T14:11:13.000Z
 ---
+## What we accept
+
+When considering new components and functionality for Decanter, we need to ensure it will serve the needs of the broader University community and does not duplicate existing functionality. The following criteria should be met for features and functionality improvements:
+
+* Reusable (content-agnostic)
+* Component/element has a clear use case
+* Addresses accessibility and usability (see accessibility
+* Considers evolving web trends
+
+### Out of Scope for Decanter
+
+* Content-specific design elements
+
 ## Request a Component
 
 All new requests for components will be evaluated, beginning with a discovery process that includes an audit of visual patterns. Factors such as reusability across the product ecosystem (ideally can be used by 3-5 teams), investment, and maturity of the product, and team bandwidth are also taken into account.
@@ -17,3 +30,11 @@ The team will address the bug as soon as possible, depending on the severity of 
 If you have a fix for the bug and would like to submit a PR for it, please reach out in Slack at #decanter or visit the Contributing to Decanter page to learn more about contribution opportunities.
 
 [Learn more about technical contribution guidelines.](/page/about-contributing/)
+
+## Join the Decanter Design community
+
+Our teams at Stanford Web Services and University Communication encourage contribution to the Stanford Design System. Though our goal remains to be the to keep the system as succinct and simplified as possible—to provide a baseline framework of the essential elements—we are very aware that that baseline is not there yet, and will need perpetual refactoring and optimization. 
+
+Please contact Kerri Augenstein, kaugenst@stanford.edu, if you are interested in collaborating and contributing to the Stanford Design System.
+
+Read more about our Visual Guidelines
