@@ -14,7 +14,7 @@ We build the living Decanter Design System elements in Figma. Figma is design so
 
 **Libraries**: type, color, and master components can be created as shared libraries, of which any person on the enterprise Stanford Figma team can use. By simply toggling the Stanford Design System library on, you have access to branded colors, type styles, modular spacing, and basic components. You can also make libraries for use within your own team, and custom design work. Our goal with the Decanter Design System is to accelerate your work, but not to dictate your design outcomes. Creative freedom and flexibility are encouraged. 
 
-Learn more about using Figma and getting the library.
+[Learn more about using Figma and getting the library.](/page/using-figma)
 
 ## Community Contribution
 
