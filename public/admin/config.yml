@@ -3,7 +3,8 @@ backend:
   branch: nextjs
 media_folder: "public/img"
 public_folder: "/img"
-publish_mode: editorial_workflow
+# This creates PRs for every change. Only enable after go-live.
+# publish_mode: editorial_workflow
 site_url: https://elegant-poitras-87214a.netlify.com
 collections:
   - name: "pages"
