@@ -16,7 +16,6 @@ The issue tracker is the preferred channel for [bug reports](#bugs),
 requests](#pull-requests), but please respect the following restrictions:
 
 * Please **do not** use the issue tracker for personal support requests.
-
 * Please **do** assign a maintainer for review
 
 ## Bug reports
@@ -58,14 +57,12 @@ Example:
 > causing the bug, and potential solutions (and your opinions on their
 > merits).
 
-
 ## Feature requests
 
 Feature requests are welcome. But take a moment to find out whether your idea
-fits with the scope and aims of the project. It's up to *you* to make a strong
+fits with the scope and aims of the project. It's up to _you_ to make a strong
 case to convince the project's developers of the merits of this feature. Please
 provide as much detail and context as possible.
-
 
 ## Pull requests
 
@@ -85,7 +82,6 @@ project:
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) the project, clone your
    fork, and configure the remotes:
-
    ```bash
    # Clone your fork of the repo into the current directory
    git clone https://github.com/<your-username>/decanter
@@ -95,35 +91,30 @@ project:
    git remote add upstream https://github.com/SU-SWS/decanter
    ```
 2. If you cloned a while ago, get the latest changes from upstream:
-
    ```bash
    git checkout master
    git pull upstream master
    ```
 3. Never work directly on `master`. Create a new topic branch (off the latest
    version of `master`) to contain your feature, change, or fix:
-
    ```bash
    git checkout -b <topic-branch-name>
    ```
 4. Commit your changes in logical chunks. Use Git's
    [interactive rebase](https://help.github.com/articles/interactive-rebase)
    feature to tidy up your commits before making them public.
-
    Be sure to compile the css before submitting.
    Be sure to lint the scss before submitting.
 5. Locally rebase the upstream development branch into your topic branch:
-
    ```bash
    git pull --rebase upstream master
    ```
 6. Push your topic branch up to your fork:
-
    ```bash
    git push origin <topic-branch-name>
    ```
 7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
-    with a clear title and description.
+   with a clear title and description.
 
 **IMPORTANT**: By submitting a patch, you agree to allow the project owner to
 license your work under the same license as that used by the project.
@@ -138,10 +129,10 @@ To install you must have NPM installed.
 
 Then run:
 
-   ```bash
-   npm install
-   grunt sasslint
-   ```
+```bash
+npm install
+grunt sasslint
+```
 
 This should output any errors the linter can find. Please fix those before
 submitting a pull request.
@@ -172,6 +163,7 @@ cutting new releases.
 * Code approved and merged into the main branch of theme/module.
 
 Supports browsers: 
+
 * IE 11 ( check clients analytics )
 * EDGE ( < 2 latest versions) Win
 * Chrome ( < 2 latest versions) Win + OSx
@@ -198,3 +190,10 @@ MAJOR.MINOR.PATCH.
 Any change that is backwards-breaking will result in a new **major** release.
 Others changes with no impact on rendering are considered backwards-compatible
 and will result in a new **patch** release.
+
+## Testing your code for Accessibility
+
+Before submitting a PR for review, please ensure that your code meets basic accessibility requirements. To test your code you should check the following:
+
+* HTML Validation - https://validator.w3.org/ - if a page doesn’t pass HTML Validation, it’s likely to have issues with accessibility.
+* WAVE, AXE, etc. These are handy tools. They are easy to use and are great for spot checking work. It may be that one of these tools pick up an issue that another tool missed.
