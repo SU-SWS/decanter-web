@@ -1,5 +1,5 @@
 ---
-title: About Contributing
+title: Technical Contribution Guidelines
 date: 2019-11-28T14:11:13.000Z
 ---
 # Contributing to Decanter
