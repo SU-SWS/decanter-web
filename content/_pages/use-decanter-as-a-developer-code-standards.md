@@ -21,23 +21,7 @@ Include a long description
 Include details on each available parameter
 
 ```
-{#
-/**
- * @file
- * Card Component.
- *
- * Basic building block component with two variants
- *   - Horizontal: An image beside text content
- *   - Vertical (default): An image above text content
- *
- * Available variables:
- * - attributes: For additional HTML attributes not already provided.
- * - modifier_class: Additional css classes to change look and behaviour.
- * -- su-card--horizontal
- * - card_image: A full HTML entity for an image.
- * - card_super_headline: Text heading
- */
-#}
+TODO
 ```
 
 ## Spacing rules
