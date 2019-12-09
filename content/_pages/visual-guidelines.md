@@ -8,7 +8,7 @@ Our team has built grids for each range of breakpoints described in the kit. Whe
 
 [Review our responsive grids here](/page/layouts-responsive-design/)
 
-## Modular spacing 
+## Modular spacing
 
 In an attempt to provide designers a method to employ consistent spaces between UI objects (and to complete that concept through to code), our teams have constructed “modular spacers” across all ranges of breakpoints. 
 
@@ -20,10 +20,14 @@ Typographic styles have been built to include a range of practicality across you
 
 [Learn how to use typographic styles in Figma](page/brand-design-elements-typography/)
 
-## Color 
+## Color
 
 Included in the Stanford Design System are colors drawn directly from the Stanford Brand Guidelines. Much like each of the other tools, colors from the library can be picked up and used in your projects as soon as you turn on the Stanford Design System Library. 
 
 Learn how to use color styles in Figma 
 
 View Color on identity.stanford.edu
+
+## Testing your design for accessibility
+
+Before submitting to Decanter
