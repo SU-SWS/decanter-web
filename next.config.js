@@ -41,10 +41,8 @@ module.exports = withSass({
             typographer: true,
             gfm: true,
             highlight: (code, lang) => {
-              const entities = new Entities();
-              code = entities.encode(code);
-              code = code.replace("}", "`}`");
-              code = code.replace("{", "`{`");
+              // const entities = new Entities();
+              // code = entities.encode(code);
               if (!lang || ['text', 'literal', 'nohighlight'].includes(lang)) {
                 return `<pre class="hljs">${code}</pre>`;
               }
