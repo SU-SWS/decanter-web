@@ -10,7 +10,7 @@ import FooterScripts from '../partials/global-footer-scripts.js';
 const Layout = props => (
   <>
   <HTMLHead />
-    <SkipLink />
+  <SkipLink />
   <MastHead />
   <main>
     <aside>
