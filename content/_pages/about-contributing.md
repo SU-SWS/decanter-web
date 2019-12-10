@@ -2,6 +2,8 @@
 title: Technical Contribution Guidelines
 date: 2019-11-28T14:11:13.000Z
 ---
+https://github.com/SU-SWS/decanter/issues/564
+
 # Contributing to Decanter
 
 This project is meant to be open source and freely shared. If you find something
