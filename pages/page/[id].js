@@ -5,16 +5,13 @@ import Layout from '../../src/components/layouts/TwoCol.js';
  * [Post description]
  * @param {[type]} props [description]
  */
-const Page = props => {
-  const title = props.page.attributes.title;
-  const Content = props.page.react;
-  return (
+const Page = (props) => (
     <Layout
-      content={<Content />}
-      title={title}
+      content={props.page.react}
+      title={props.page.attributes.title}
     />
-  )
-}
+)
+
 
 /**
  * [getInitialProps description]
@@ -24,7 +21,7 @@ const Page = props => {
 Page.getInitialProps = async function(context) {
   const { id } = context.query;
   const fileContent = await import(`../../content/_pages/${id}.md`);
-  return { page: await fileContent };
+  return { page: fileContent };
 }
 
 export default Page;
