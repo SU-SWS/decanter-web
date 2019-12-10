@@ -41,8 +41,6 @@ module.exports = withSass({
             typographer: true,
             gfm: true,
             highlight: (code, lang) => {
-              // const entities = new Entities();
-              // code = entities.encode(code);
               if (!lang || ['text', 'literal', 'nohighlight'].includes(lang)) {
                 return `<pre class="hljs">${code}</pre>`;
               }
@@ -67,28 +65,22 @@ module.exports = withSass({
     cfg.resolve.alias['decanter-img'] = path.resolve(__dirname, "node_modules/decanter/core/src/img");
 
     return cfg;
+  },
+
+  // Output trailing slashes on urls.
+  exportTrailingSlash: true,
+
+  // What to export as static pages that are dynamically generated.
+  exportPathMap: function() {
+    var pages = {
+      '/': { page: '/' }
+    };
+
+    var files = glob.sync('content/_pages/*.md');
+    files.forEach(function(filename) {
+      var key = filename.replace("content/_pages/", "").replace(".md", "");
+      pages['/page/' + key] = { page: '/page/[id]', query: { id: key } };
+    });
+    return pages;
   }
 });
-
-/**
- * Tell NextJS about our dynamic pages.
- */
-module.exports.exportTrailingSlash = true;
-
-var pages = {
-  '/': { page: '/' }
-};
-
-glob('content/_pages/*.md', null, function(er, files) {
-  files.forEach(function(filename) {
-    var key = filename.replace("content/_pages/", "").replace(".md", "");
-    pages['/page/' + key] = { page: '/page/[id]', query: { id: key} };
-  });
-});
-
-module.exports.exportPathMap = function() {
-  return pages;
-}
-/**
- * End Dynamic page export.
- */
