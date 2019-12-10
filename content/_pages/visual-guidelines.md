@@ -4,6 +4,17 @@ date: 2019-12-09T23:39:06.389Z
 ---
 https://github.com/SU-SWS/decanter/issues/567
 
+## Criteria for acceptance for new work
+
+New design work must meet the following criteria:
+
+* Must have clear use case and be reusable 
+* Must be accessible and usable
+* Must be technically feasible
+* Decanter designers will do a design review
+
+The following resources will help you.
+
 ## Responsive grids
 
 Our team has built grids for each range of breakpoints described in the kit. When you subscribe to the Stanford Design Library through your own Figma Project, you’ll have access to employ these grids on your own work through the Figma UI. 
