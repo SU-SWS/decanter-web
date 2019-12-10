@@ -80,6 +80,24 @@ main {
           width: 100%;
           max-width: 100%;
         }
+
+        // Vertical rhythm for content
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          @include margin(null null 0.6em);
+          clear: none;
+
+          &:not(:first-child) {
+            @include margin(1em null null);
+          }
+        }
+      }
+
+      > header:not(:empty) + div {
+        @include modular-spacing('padding', 3);
       }
     }
   }
