@@ -1,7 +1,13 @@
 ---
-title: How to communicate
+title: Connecting with the Decanter Community
 date: 2019-11-28T14:11:13.000Z
 ---
-Hello How are you?
+https://github.com/SU-SWS/decanter/issues/566
 
-![Alt Text](/img/photo-epel-stanford-campus.jpg "Title Text")
+## Communicate
+
+The Decanter team is on Slack, which is the best way to learn about new releases and find support. Some relevant Slack channels are:
+
+Slack:
+
+[\#decanter](https://stanfordwebservices.slack.com/archives/C9SL2179B)

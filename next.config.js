@@ -3,8 +3,11 @@ const autoprefixer = require('autoprefixer')({ grid: true });
 const withSass = require('@zeit/next-sass');
 const path = require('path');
 const sass = require('sass');
-var glob = require("glob")
+const highlight = require('highlight.js');
 const npmPackage = "node_modules";
+var glob = require("glob");
+var urlencode = require('urlencode');
+const Entities = require('html-entities').AllHtmlEntities;
 
 module.exports = withSass({
   sassLoaderOptions: {
@@ -12,7 +15,7 @@ module.exports = withSass({
     sassOptions: {
       includePaths: [
         path.resolve(npmPackage, "bourbon/core"),
-        path.resolve(npmPackage)
+        path.resolve(__dirname, npmPackage)
       ],
       sourceMap: true,
       lineNumbers: true,
@@ -33,10 +36,23 @@ module.exports = withSass({
         options: {
           mode: ["react-component"],
           markdownIt: {
+            preset: 'default',
             html: true,
             xhtmlOut: true,
             linkify: true,
-            typographer: true
+            typographer: true,
+            gfm: true,
+            highlight: (code, lang) => {
+              const entities = new Entities();
+              code = entities.encode(code);
+              code = code.replace("}", "`}`");
+              code = code.replace("{", "`{`");
+              if (!lang || ['text', 'literal', 'nohighlight'].includes(lang)) {
+                return `<pre class="hljs">${code}</pre>`;
+              }
+              const html = highlight.highlight(lang, code).value;
+              return `<span class="hljs">${html}</span>`;
+            }
           }
         }
       },
