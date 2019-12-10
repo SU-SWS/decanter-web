@@ -4,6 +4,8 @@ date: 2019-12-09T23:39:06.389Z
 ---
 https://github.com/SU-SWS/decanter/issues/567
 
+The following guidelines are meant to help designers and developers who are contributing new visual work to Decanter. To find out if a visual work is already in progress CHECK HERE (Kerri to add link. Yvonne mentioned you had a page.)
+
 ## Criteria for acceptance for new work
 
 New design work must meet the following criteria:
