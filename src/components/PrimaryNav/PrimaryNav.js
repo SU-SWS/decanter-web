@@ -1,6 +1,4 @@
 import NavData from '../../../content/_navigation/primary-nav.json';
-import Link from 'next/link';
-
 const PrimaryNav = props => (
   <>
     <nav className="su-secondary-nav su-secondary-nav--buttons-dark no-js" aria-label="main menu">

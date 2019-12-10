@@ -6,11 +6,9 @@ const sass = require('sass');
 const highlight = require('highlight.js');
 const npmPackage = "node_modules";
 var glob = require("glob");
-var urlencode = require('urlencode');
 const Entities = require('html-entities').AllHtmlEntities;
 
 module.exports = withSass({
-  // Sass option overrides.
   sassLoaderOptions: {
     implementation: require('sass'),
     sassOptions: {
@@ -23,8 +21,6 @@ module.exports = withSass({
       precision: 10
     }
   },
-
-  // Webpack overrides.
   webpack: (cfg, options) => {
 
     // Fix: "Uncaught ReferenceError: global is not defined", and "Can't resolve 'fs'".
@@ -74,22 +70,28 @@ module.exports = withSass({
     cfg.resolve.alias['decanter-img'] = path.resolve(__dirname, "node_modules/decanter/core/src/img");
 
     return cfg;
-  },
-
-  // Output trailing slashes on urls.
-  exportTrailingSlash: true,
-
-  // What to export as static pages that are dynamically generated.
-  exportPathMap: function() {
-    var pages = {
-      '/': { page: '/' }
-    };
-
-    var files = glob.sync('content/_pages/*.md');
-    files.forEach(function(filename) {
-      var key = filename.replace("content/_pages/", "").replace(".md", "");
-      pages['/page/' + key] = { page: '/page/[id]', query: { id: key } };
-    });
-    return pages;
   }
 });
+
+/**
+ * Tell NextJS about our dynamic pages.
+ */
+module.exports.exportTrailingSlash = true;
+
+var pages = {
+  '/': { page: '/' }
+};
+
+glob('content/_pages/*.md', null, function(er, files) {
+  files.forEach(function(filename) {
+    var key = filename.replace("content/_pages/", "").replace(".md", "");
+    pages['/page/' + key] = { page: '/page/[id]', query: { id: key} };
+  });
+});
+
+module.exports.exportPathMap = function() {
+  return pages;
+}
+/**
+ * End Dynamic page export.
+ */
