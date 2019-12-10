@@ -2,6 +2,8 @@
 title: Visual Guidelines
 date: 2019-12-09T23:39:06.389Z
 ---
+https://github.com/SU-SWS/decanter/issues/567
+
 ## Responsive grids
 
 Our team has built grids for each range of breakpoints described in the kit. When you subscribe to the Stanford Design Library through your own Figma Project, you’ll have access to employ these grids on your own work through the Figma UI. 
