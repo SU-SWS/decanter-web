@@ -6,11 +6,19 @@ import Layout from '../../src/components/layouts/TwoCol.js';
  * @param {[type]} props [description]
  */
 const Page = props => {
+
+  if (!props.page.html) {
+    <Layout
+      content=<p>Loading...</p>
+      title="Loading"
+    />
+  }
+
   const title = props.page.attributes.title;
-  const Content = props.page.react;
+  const cont = <div dangerouslySetInnerHTML={{ __html: props.page.html }} />;
   return (
     <Layout
-      content={<Content />}
+      content={cont}
       title={title}
     />
   )
