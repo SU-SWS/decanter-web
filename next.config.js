@@ -1,5 +1,4 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-var escape = require('react-escape-html');
 const autoprefixer = require('autoprefixer')({ grid: true });
 const withSass = require('@zeit/next-sass');
 const path = require('path');
@@ -7,6 +6,8 @@ const sass = require('sass');
 const highlight = require('highlight.js');
 const npmPackage = "node_modules";
 var glob = require("glob");
+var urlencode = require('urlencode');
+const Entities = require('html-entities').AllHtmlEntities;
 
 module.exports = withSass({
   sassLoaderOptions: {
@@ -14,7 +15,7 @@ module.exports = withSass({
     sassOptions: {
       includePaths: [
         path.resolve(npmPackage, "bourbon/core"),
-        path.resolve(npmPackage)
+        path.resolve(__dirname, npmPackage)
       ],
       sourceMap: true,
       lineNumbers: true,
@@ -42,6 +43,10 @@ module.exports = withSass({
             typographer: true,
             gfm: true,
             highlight: (code, lang) => {
+              const entities = new Entities();
+              code = entities.encode(code);
+              code = code.replace("}", "`}`");
+              code = code.replace("{", "`{`");
               if (!lang || ['text', 'literal', 'nohighlight'].includes(lang)) {
                 return `<pre class="hljs">${code}</pre>`;
               }

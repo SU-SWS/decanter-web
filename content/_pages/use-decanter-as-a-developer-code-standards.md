@@ -95,28 +95,13 @@ Sample text here...
 Syntax highlighting
 
 ``` js
-var foo = function (bar) {
-  return bar++;
+var dec = function (dac) {
+  return duck++;
 };
 
 console.log(foo(5));
 ```
 
-## Tables
-
-| Tag    | Use         |
-| ------ | ----------- |
-| p      | Paragraph   |
-| table  | Table       |
-| em     | Emphasis    |
-
-Left/right aligned columns
-
-| Project | Stars |
-| :------ | -----------:|
-| React | 80 759 |
-| Vue.js | 73 322 |
-| sse-channel | 50 |
 
 
 ## Links
