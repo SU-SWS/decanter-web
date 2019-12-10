@@ -7,6 +7,16 @@ public_folder: "/img"
 # publish_mode: editorial_workflow
 site_url: https://elegant-poitras-87214a.netlify.com
 collections:
+  - label: "Homepage"
+    name: "homepage"
+    files:
+      - label: "Welcome To Decanter"
+        name: "homepage"
+        file: "content/index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages"
     label: "Pages"
     delete: true
