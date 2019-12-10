@@ -1,5 +1,5 @@
 const GlobalFooter = () => (
-  <section className="su-global-footer">
+  <section className="su-global-footer su-global-footer--bright">
     <div className="su-global-footer__container">
       <div className="su-global-footer__brand">
       <a className="su-logo" href="https://www.stanford.edu">Stanford<br/>University</a>

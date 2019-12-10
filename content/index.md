@@ -3,27 +3,26 @@ title: Decanter Design System
 date: 2019-03-17T19:31:20.591Z
 ---
 
-<div className="section section--welcome">
-  <div>
-    <h2>Welcome to the Decanter Style Guide and Pattern Library.</h2>
-    <p>Decanter is a web design and development system for Stanford University.  It includes a responsive layout system and a browsable collection of design patterns that can be used in any Stanford project.</p>
-  </div>
-</div>
+<section className="section section--welcome fullwidth">
+    <h1>Welcome to the Decanter Style Guide and Pattern Library.</h1>
+    <p className="su-intro-text">Decanter is a web design and development system for Stanford University.  It includes a responsive layout system and a browsable collection of design patterns that can be used in any Stanford project.</p>
+</section>
 
-<div className="section section--ui-components">
-  <div className="su-card su-card--horizontal">
-    <img src='/assets/ui-components.png' alt='UI-Components' />
+<section className="section section--start fullwidth">
+  <div className="su-card su-card--horizontal su-card--minimal">
+    <img src='http://decanter5.local/kss-assets/ui-components.png' alt='' />
     <div className="su-card__contents">
-      <h2>Explore our UI components</h2>
-      <p>From buttons, to rows of cards, to full article level pages, Decanter breaks down and builds components thoughtfully, allowing your content to be displayed exactly the way you want.</p>
-      <a href="/section-components.html" className="su-link su-link--action">Browse</a>
+      <h2>Getting Started</h2>
+      <p>Learn about how to use Decanter components with our onboarding guides, tailored to designers or developers.</p>
+      <a href="page/use-decanter-as-a-developer/" className="su-link su-link--action">View Developer Guide</a>
+      <a href="page/use-decanter-as-a-designer/" className="su-link su-link--action">View Designer Guide</a>
     </div>
   </div>
-</div>
-<div className="section section--dev-resources">
+</section>
+<section className="section section--dev-resources">
   <h2>Developer Resources</h2>
   <div className="cards-container">
-    <div className="su-card">
+    <div className="su-card su-card--minimal">
       <img src="/assets/cubes.png" alt="Cubes" role="presentation" />
       <div className="su-card__contents">
         <h3>Components</h3>
@@ -31,7 +30,7 @@ date: 2019-03-17T19:31:20.591Z
         <a href="/section-components.html" className="su-link su-link--action">Browse</a>
       </div>
     </div>
-    <div className="su-card card-2">
+    <div className="su-card card-2 su-card--minimal">
       <img src="/assets/file.png" alt="File" role="presentation" />
       <div className="su-card__contents">
         <h3>Documentation</h3>
@@ -40,8 +39,8 @@ date: 2019-03-17T19:31:20.591Z
       </div>
     </div>
   </div>
-</div>
-<div className="section section--more-info">
+</section>
+<section className="section section--more-info">
   <div>
     <h2>More from Stanford University</h2>
     <ul>
@@ -62,4 +61,4 @@ date: 2019-03-17T19:31:20.591Z
       </li>
     </ul>
   </div>
-</div>
+</section>

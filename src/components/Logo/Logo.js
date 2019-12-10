@@ -3,20 +3,17 @@ const Logo = () => (
   <span className="brand-logo"><a href="/">Decanter</a></span>
   <style jsx>{`
     .brand-logo {
+      display: block;
       font-size: 1.953125em;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      margin-left: -2px;
-      color: #ffffff;
+      margin-left: 20px;
+      padding: 30px 0;
+      color: #fff;
       font-weight: 700;
-      display: block;
-      vertical-align: middle;
-      line-height: 69px;
-      -ms-grid-row: 1;
-      -ms-grid-column: 1;
     }
     .brand-logo a {
-      color: #ffffff;
+      color: #fff;
       text-decoration: none;
       font-weight: 700;
     }
