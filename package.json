@@ -44,6 +44,7 @@
     "glob": "^7.1.6",
     "highlight.js": "^9.16.2",
     "html-entities": "^1.2.1",
+    "js-yaml-loader": "^1.2.2",
     "jsdoc-api": "^5.0.4",
     "kss": "^3.0.0-beta.25",
     "markdown-it-highlight": "^0.2.0",

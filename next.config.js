@@ -58,6 +58,10 @@ module.exports = withSass({
       {
         test: /\.(png|svg|jpg|gif)$/i,
         loader: "file-loader"
+      },
+      {
+        test: /\.(yaml|yml)$/,
+        use: 'js-yaml-loader'
       }
     );
 

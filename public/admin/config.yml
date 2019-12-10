@@ -26,8 +26,8 @@ collections:
                 fields:
                   - {label: Label, name: label, widget: string}
                   - {label: Path, name: path, widget: string}
-                  - label: Navigation
-                    name: nav_items
+                  - label: Children
+                    name: children
                     widget: list
                     fields:
                       - {label: Label, name: label, widget: string}

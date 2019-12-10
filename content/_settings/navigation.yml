@@ -1,19 +1,83 @@
 nav_items:
-  - label: Home
-    path: /
-  - children:
-      - label: Contributing + Collaboration
-        nav_items:
-          - label: What you can contribute?
-            path: /page/about-contributing-what-can-i-contribute/
-        path: /page/about-contributing/
-    label: About
-    path: /page/about/
-  - label: Use Decanter
-    path: /page/use-decanter/
-  - label: Brand + Design Elements
-    path: /page/brand-design-elements/
-  - label: Layouts
-    path: /page/layouts/
-  - label: Components
-    path: /page/components/
+  - href: "/"
+    text: "Home"
+  - href: "/page/about/"
+    text: "About"
+    children:
+    - href: "/page/about-contributing/"
+      text: Contributing + Collaboration"
+      children:
+      - href: "/page/about-contributing-what-can-i-contribute/"
+        text: "What you can contribute?"
+      - href: "/page/about-contributing-how-to-communicate/"
+        text: "How to communicate"
+      - href: "/page/about-contributing-feedback-questions/"
+        text: "Feedback + Questions"
+    - href: "/page/about-blog/"
+      text: "Blog"
+    - href: "/page/about-why-decanter/"
+      text: "Why Decanter?"
+      children:
+      - href: "/page/about-why-decanter-accessibility/"
+        text: "Accessibility"
+      - href: "/page/about-the-main-nav-component"
+        text: "The Main Nav Component"
+      - href: "/page/about-why-decanter-brand-compliance/"
+        text: "Brand Compliance"
+      - href: "/page/about-why-decanter-get-started-quickly/"
+        text: "Get Started More Quickly"
+    - href: "/page/about-projects-that-use-decanter/"
+      text: "Projects that use Decanter"
+    - href: "/page/about-release-notes/"
+      text: "Release Notes"
+    - href: "/page/about-release-roadmap/"
+      text: "Release Road Map"
+    - href: "/page/about-governance/"
+      text: "Governance"
+  - href: "/page/use-decanter/"
+    text: "Use Decanter"
+    children:
+    - href: "/page/use-decanter-as-a-developer/"
+      text: "As a Developer"
+      children:
+      - href: "/page/use-decanter-as-a-developer-installation/"
+        text: "Installation"
+      - href: "/page/use-decanter-as-a-developer-build-tools/"
+        text: "Build Tools"
+      - href: "/docs/scss/index.html"
+        text: "SASS Docs"
+      - href: "/docs/js/index.html"
+        text: "JS Docs"
+      - href: "/page/use-decanter-as-a-developer-browser-compatibility/"
+        text: "Browser Compatibility"
+      - href: "/page/use-decanter-as-a-developer-code-standards/"
+        text: "Code Standards"
+    - href: "/page/use-decanter-as-a-designer/"
+      text: "As a Designer"
+      children:
+      - href: "/page/using-figma/"
+        text: "Using Figma"
+  - href: "/page/brand-design-elements/"
+    text: "Brand + Design Elements"
+    children:
+    - href: "/page/brand-design-elements-brand/"
+      text: "Brand"
+    - href: "/page/brand-design-elements-typography/"
+      text: "Typography"
+    - href: "/page/brand-design-elements-color/"
+      text: "Color"
+    - href: "/page/brand-design-elements-icons/"
+      text: "Icons"
+  - href: "/page/layouts/"
+    text: "Layouts"
+    children:
+    - href: "/page/layouts-grid-system/"
+      text: "Grid System"
+    - href: "/page/layouts-modular-spacing/"
+      text: "Modular Spacing"
+    - href: "/page/layouts-responsive-design/"
+      text: "Responsive Design"
+    - href: "/page/layouts-examples/"
+      text: "Examples"
+  - href: "/page/components/"
+    text: "Components"
