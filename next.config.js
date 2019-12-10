@@ -1,10 +1,12 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+var escape = require('react-escape-html');
 const autoprefixer = require('autoprefixer')({ grid: true });
 const withSass = require('@zeit/next-sass');
 const path = require('path');
 const sass = require('sass');
-var glob = require("glob")
+const highlight = require('highlight.js');
 const npmPackage = "node_modules";
+var glob = require("glob");
 
 module.exports = withSass({
   sassLoaderOptions: {
@@ -33,10 +35,19 @@ module.exports = withSass({
         options: {
           mode: ["react-component"],
           markdownIt: {
+            preset: 'default',
             html: true,
             xhtmlOut: true,
             linkify: true,
-            typographer: true
+            typographer: true,
+            gfm: true,
+            highlight: (code, lang) => {
+              if (!lang || ['text', 'literal', 'nohighlight'].includes(lang)) {
+                return `<pre class="hljs">${code}</pre>`;
+              }
+              const html = highlight.highlight(lang, code).value;
+              return `<span class="hljs">${html}</span>`;
+            }
           }
         }
       },
