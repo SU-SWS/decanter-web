@@ -2,8 +2,9 @@
 title: Installing Decanter
 date: 2019-11-28T14:11:13.000Z
 ---
-System Requirements
----
+https://github.com/SU-SWS/decanter/issues/576
+
+## System Requirements
 
 To build and deploy code, you must have the following installed on your system:
 
@@ -27,7 +28,6 @@ Visit Node's website to download the [installer](http://nodejs.org/).
 
 `npm install -g webpack`
 
-
 ### Grunt
 
 The only requirement for Grunt is Grunts CLI(Command Line Utility).
@@ -35,7 +35,9 @@ The only requirement for Grunt is Grunts CLI(Command Line Utility).
 If you don't already have that installed, install globally, this is not project specific.
 In NPM we do so with the -g flag.
 
-    npm install -g grunt-cli
+```
+npm install -g grunt-cli
+```
 
 ### KSS
 
@@ -44,7 +46,9 @@ by humans and machines. We use KSS to create our style guide.
 
 If you don't already have that installed, install globally, this is not project specific.
 
-    npm install -g kss
+```
+npm install -g kss
+```
 
 ### Troubleshooting
 
@@ -52,8 +56,7 @@ If you don't already have that installed, install globally, this is not project 
 * If you run into any issues with some of the tasks run, `npm rebuild` and try again.
 * Make sure that git is installed globally as some bower packages require it to be fetched and installed.
 
-Development Workflow
----
+## Development Workflow
 
 ### One-time Setup
 
@@ -65,8 +68,7 @@ The following steps need to be performed once to get your local copy of Decanter
 * `npm install -g kss`
 * `npm install` to install your remaining dependencies
 
-Workflow
----
+## Workflow
 
 ### Starting Your Environment
 
