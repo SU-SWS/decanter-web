@@ -1,78 +1,76 @@
 ---
-title: Standards & Conventions
+title: 'TESTING: Standards & Conventions'
 date: 2019-11-28T14:11:13.000Z
 ---
 # h1 Heading
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
 
+## h2 Heading
+
+### h3 Heading
+
+#### h4 Heading
+
+##### h5 Heading
+
+###### h6 Heading
 
 ## Horizontal Rules
 
-___
+- - -
 
----
+- - -
 
-***
-
+- - -
 
 ## Emphasis
 
 **This is bold text**
 
-__This is bold text__
+**This is bold text**
 
-*This is italic text*
+_This is italic text_
 
 _This is italic text_
 
 ~~Strikethrough~~
 
-
 ## Blockquotes
 
-
 > Blockquotes can also be nested...
->> ...by using additional greater-than signs right next to each other...
+>
+> > ...by using additional greater-than signs right next to each other...
+> >
 > > > ...or with spaces between arrows.
-
 
 ## Lists
 
 Unordered
 
-+ Create a list by starting a line with `+`, `-`, or `*`
-+ Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
+* Create a list by starting a line with `+`, `-`, or `*`
+* Sub-lists are made by indenting 2 spaces:
+  * Marker character change forces new list start:
     * Ac tristique libero volutpat at
-    + Facilisis in pretium nisl aliquet
-    - Nulla volutpat aliquam velit
-+ Very easy!
+    * Facilisis in pretium nisl aliquet
+    * Nulla volutpat aliquam velit
+* Very easy!
 
 Ordered
 
 1. Lorem ipsum dolor sit amet
 2. Consectetur adipiscing elit
 3. Integer molestie lorem at massa
-
-
-1. You can use sequential numbers...
-1. ...or keep all the numbers as `1.`
+4. You can use sequential numbers...
+5. ...or keep all the numbers as `1.`
 
 Start numbering with offset:
 
 57. foo
-1. bar
+58. bar
 
 Loose lists?
 
-- foo
-
-- bar
-
+* foo
+* bar
 
 ## Code
 
@@ -80,11 +78,12 @@ Inline `code`
 
 Indented code
 
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-
+```
+// Some comments
+line 1 of code
+line 2 of code
+line 3 of code
+```
 
 Block code "fences"
 
@@ -94,7 +93,7 @@ Sample text here...
 
 Syntax highlighting
 
-``` js
+```js
 var dec = function (dac) {
   return duck++;
 };
@@ -102,18 +101,13 @@ var dec = function (dac) {
 console.log(foo(5));
 ```
 
-
-
 ## Links
 
 [Decanter](https://decanter.stanford.edu/ "Design System")
 
 Autoconverted link https://github.com/rexxars/react-markdown
 
-[Link references][React]
-
-[React]: https://reactjs.org "React, A JavaScript library for building user interfaces"
-
+[Link references](https://reactjs.org "React, A JavaScript library for building user interfaces")
 
 ## Images
 
@@ -122,15 +116,13 @@ Autoconverted link https://github.com/rexxars/react-markdown
 
 Like links, Images also have a footnote style syntax
 
-![Alt text][someref]
+!\[Alt text]
 
 With a reference later in the document defining the URL location:
 
-[somref]: https://public.sanity.io/modell_@2x.png  "Headless CMS"
-
 ## Hard breaks
 
-Yeah, hard breaks  
+Yeah, hard breaks\
 can be useful too.
 
 ## HTML entities
