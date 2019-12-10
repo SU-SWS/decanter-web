@@ -1,13 +1,16 @@
 import pageIds from './getPageIds.js';
 
 const PrimaryNav = (props) => {
-  var items = [];
+  var items = [{ href: "/", text: "Home" }];
+
+  // Loop through each of the pages and set the nav item.
   pageIds.forEach(function(item) {
     items.push({
       href: "/page/" + item.key,
       text: item.title
     });
   });
+
   return (
     <>
       <nav className="su-secondary-nav su-secondary-nav--buttons-dark no-js" aria-label="main menu">

@@ -7,6 +7,31 @@ public_folder: "/img"
 # publish_mode: editorial_workflow
 site_url: https://elegant-poitras-87214a.netlify.com
 collections:
+  - name: settings
+    label: Settings
+    files:
+      - file: content/_settings/navigation.yml
+        label: Navigation
+        name: navigation
+        fields:
+          - label: Navigation
+            name: nav_items
+            widget: list
+            fields:
+              - {label: Label, name: label, widget: string}
+              - {label: Path, name: path, widget: string}
+              - label: Children
+                name: children
+                widget: list
+                fields:
+                  - {label: Label, name: label, widget: string}
+                  - {label: Path, name: path, widget: string}
+                  - label: Navigation
+                    name: nav_items
+                    widget: list
+                    fields:
+                      - {label: Label, name: label, widget: string}
+                      - {label: Path, name: path, widget: string}
   - label: "Homepage"
     name: "homepage"
     files:
