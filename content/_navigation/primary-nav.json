@@ -8,14 +8,17 @@
     },
     {
       "href": "/page/about/",
+      "as": "about",
       "text": "About",
       "children": [
         {
           "href": "/page/about-contributing/",
+          "as": "about-contributing",
           "text": "Contributing + Collaboration",
           "children": [
             {
               "href": "/page/about-contributing-what-can-i-contribute/",
+              "as": "about-contributing-what-can-i-contribute",
               "text": "What you can contribute?"
             },
             {

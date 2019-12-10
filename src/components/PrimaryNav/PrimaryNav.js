@@ -7,30 +7,22 @@ const PrimaryNav = props => (
       <ul className="su-secondary-nav__menu-lv1 su-secondary-nav__menu">
         {NavData.list_items.map((item, index) => (
           <li className="su-secondary-nav__item su-secondary-nav__item--parent" key={"lv1-" + index}>
-            <Link href={item.href}>
-              <a className="su-secondary-nav__link">{item.text}</a>
-            </Link>
+            <a className="su-secondary-nav__link" href={item.href}>{item.text}</a>
             {item.children && (
               <ul className="su-secondary-nav__menu-lv2 su-secondary-nav__menu">
                 {item.children.map((lv2, index2) => (
                   <li className="su-secondary-nav__item su-secondary-nav__item--parent" key={"lv2-" + index2}>
-                    <Link href={lv2.href}>
-                      <a className="su-secondary-nav__link">{lv2.text}</a>
-                    </Link>
+                    <a className="su-secondary-nav__link" href={lv2.href}>{lv2.text}</a>
                     {lv2.children && (
                       <ul className="su-secondary-nav__menu-lv3 su-secondary-nav__menu">
                         {lv2.children.map((lv3, index3) => (
                           <li className="su-secondary-nav__item" key={"lv3-" + index3}>
-                            <Link href={lv3.href}>
-                              <a className="su-secondary-nav__link">{lv3.text}</a>
-                            </Link>
+                            <a className="su-secondary-nav__link" href={lv3.href}>{lv3.text}</a>
                             {lv3.children && (
                               <ul className="su-secondary-nav__menu-lv4 su-secondary-nav__menu">
                                 {lv3.children.map((lv4, index4) => (
                                   <li className="su-secondary-nav__item" key={"lv4-" + index4}>
-                                    <Link href={lv4.href}>
-                                      <a className="su-secondary-nav__link">{lv4.text}</a>
-                                    </Link>
+                                    <a className="su-secondary-nav__link" href={lv4.href}>{lv4.text}</a>
                                   </li>
                                 ))}
                               </ul>
