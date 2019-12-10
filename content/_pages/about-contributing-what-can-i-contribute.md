@@ -2,6 +2,8 @@
 title: Contributing to Decanter
 date: 2019-11-28T14:11:13.000Z
 ---
+https://github.com/SU-SWS/decanter/issues/576
+
 ## What we accept
 
 When considering new components and functionality for Decanter, we need to ensure it will serve the needs of the broader University community and does not duplicate existing functionality. The following criteria should be met for features and functionality improvements:
