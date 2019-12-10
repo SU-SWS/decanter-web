@@ -15,6 +15,9 @@ const Layout = props => {
         <aside className="flex-3-of-12 main-aside">
         <Logo />
         <PrimaryNav />
+        <a href="https://www.netlify.com">
+          <img src="https://www.netlify.com/img/global/badges/netlify-dark.svg" />
+        </a>
         </aside>
         <section className="flex-9-of-12">
         {props.title && (
@@ -29,5 +32,4 @@ const Layout = props => {
     </>
   );
 }
-
 export default Layout;

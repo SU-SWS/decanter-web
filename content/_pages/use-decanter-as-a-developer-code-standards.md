@@ -106,9 +106,7 @@ console.log(foo(5));
 
 ## Links
 
-[Espen.Codes](https://espen.codes/)
-
-[Sanity](https://www.sanity.io/ "Sanity, the headless CMS and PaaS")
+[Decanter](https://decanter.stanford.edu/ "Design System")
 
 Autoconverted link https://github.com/rexxars/react-markdown
 
@@ -150,9 +148,9 @@ Does anyone actually like the fact that you can embed HTML in markdown?
 />
 
 We used to have a known bug where inline HTML wasn't handled well. You can do basic tags like
-<code>code</code>, as long as it doesn't contain any <span class="attrs">attributes</span>. If you
+<code>code</code>, as long as it doesn't contain any <span className="attrs">attributes</span>. If you
 have weird ordering on your tags, it won't work either. It does support <strong>nested
-<em>tags</em>, however</strong>. And with the <code class="name">html-parser</code> plugin, it can now properly handle HTML! Which is pretty sweet.
+<em>tags</em>, however</strong>. And with the <code className="name">html-parser</code> plugin, it can now properly handle HTML! Which is pretty sweet.
 
 <hr /><hr />
 
