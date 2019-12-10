@@ -23,7 +23,7 @@ date: 2019-03-17T19:31:20.591Z
   <div>
       <h2>Who should use Decanter?</h2>
       <p>If your project is an internal-facing web application, an enterprise system requiring IU Login authentication, or a task-focused application separate from your organization’s website, Decanter may be right for you.</p>
-      <a href="page/use-decanter-as-a-developer/" class="su-button">See if Decanter is right for you</a>
+      <a href="page/about-why-decanter" class="su-button">See if Decanter is right for you</a>
   </div>
 </section>
 
