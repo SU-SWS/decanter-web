@@ -1,4 +1,19 @@
 nav_items:
-  - {label: 'Home', path: '/'}
-  - {label: 'Products', path: '/products/'}
-  - {label: 'News', path: '/news/'}
+  - label: Home
+    path: /
+  - children:
+      - label: Contributing + Collaboration
+        nav_items:
+          - label: What you can contribute?
+            path: /page/about-contributing-what-can-i-contribute/
+        path: /page/about-contributing/
+    label: About
+    path: /page/about/
+  - label: Use Decanter
+    path: /page/use-decanter/
+  - label: Brand + Design Elements
+    path: /page/brand-design-elements/
+  - label: Layouts
+    path: /page/layouts/
+  - label: Components
+    path: /page/components/
