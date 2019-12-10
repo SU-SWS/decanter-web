@@ -37,4 +37,4 @@ Our teams at Stanford Web Services and University Communication encourage contri
 
 Please contact Kerri Augenstein, kaugenst@stanford.edu, if you are interested in collaborating and contributing to the Stanford Design System.
 
-Read more about our Visual Guidelines
+[Read more about our Visual Guidelines](/page/visual-guidelines/)
