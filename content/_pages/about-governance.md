@@ -10,10 +10,11 @@ If you  want to be involved in our ongoing work, please reach out to us via the 
 
 We aim for, and look for, contributions that are:
 
+* Platform-agnostic
 * Maintainable
 * Reusable
-* Brand Compliance
+* Brand compliant
 * Accessible
-* Meets our [Coding Standards](page/use-decanter-as-a-developer-code-standards)
+* Meet our [Coding Standards](page/use-decanter-as-a-developer-code-standards)
 
 Please see both our [Technical Contribution Guidelines](/page/about-contributing/) and our [Visual Guidelines](/page/visual-guidelines/) for more details.
