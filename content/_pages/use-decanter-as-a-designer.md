@@ -2,7 +2,9 @@
 title: As a Designer
 date: 2019-11-28T14:11:13.000Z
 ---
-## Learn about Decanter 
+https://github.com/SU-SWS/decanter/issues/574
+
+## Learn about Decanter
 
 Decanter includes both the Decanter Design System, and the implementation of that system in frontend code (documented on this site). The Decanter Design System has been implemented for two purposes. To articulate new ideas for our frontend framework and see them through the collaborative ideation process where requirements, functionality, UX, and UI are defined. It’s second purpose is to become a rapid prototyping library for our communication and design teams across the University, where efficiencies can be made by using elements we all want to be sharing anyway, so we can spend our time on new and innovative ideas, instead of duplicative effort. 
 

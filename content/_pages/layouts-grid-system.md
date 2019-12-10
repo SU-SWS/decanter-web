@@ -2,6 +2,8 @@
 title: Grid System
 date: 2019-11-28T14:11:13.000Z
 ---
+https://github.com/SU-SWS/decanter/issues/576
+
 ### Grid Systems
 
 There are now two grid systems available in this project, one of which is built
