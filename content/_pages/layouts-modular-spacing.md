@@ -2,6 +2,8 @@
 title: Modular Spacing
 date: 2019-11-28T14:11:13.000Z
 ---
+https://github.com/SU-SWS/decanter/issues/576
+
 Decanter includes a range of spacing types that impact a page's or an element’s appearance. These spacing types are: gutters, screen edge, element spacing, vertical rhythm, and typography scale.
 
 ## Gutters
