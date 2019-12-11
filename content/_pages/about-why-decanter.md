@@ -10,12 +10,12 @@ Decanter can be used out of the box to create a project, or it can be extended a
 
 ## Benefits
 
-### Usability & Accessibility
+### Accessibility & Usability
 
 As usability and accessibility are increasingly critical markers to the success of our Stanford sites, Decanter components have been intentionally created and vetted to meet requirements. Teams in University IT and University Communications devote time and effort to see that these areas are not just a part of our work, but fundamental to the success and acceptance criteria of Decanter.
 
-Learn more about Usability practices\
-Learn more about Accessibility practices
+[Learn more about Accessibility practices](https://elegant-poitras-87214a.netlify.com/page/page-about-why-decanter-accessibility/)\
+[Learn more about Usability practices](https://elegant-poitras-87214a.netlify.com/page/usability/)
 
 ### Brand Compliance
 
