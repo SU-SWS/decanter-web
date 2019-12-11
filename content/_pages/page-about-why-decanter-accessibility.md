@@ -20,7 +20,7 @@ If you have found an accessibility error or have a suggestion please create a ti
 
 ## More Documentation
 
-You can find examples of documentation on our accessibility work on our shared Drive here: \
-[Accessibility documentation examples](https://drive.google.com/drive/folders/1gRdr6nzzdyxU0DZNwjQB2SMyEohXaQRV)
+Accessibility practices across Stanford: \
+[Stanford's Accessibility Guidelines website](https://soap.stanford.edu/)
 
-(Note: these folders are available to Stanford users only.)
+(_Note: these folders are available to Stanford users only._)
