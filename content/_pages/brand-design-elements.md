@@ -4,22 +4,22 @@ date: 2019-11-28T14:11:13.000Z
 ---
 https://github.com/SU-SWS/decanter/issues/575
 
-## Brand Elements 
+## Brand Elements
 
 Stanford websites deserve consistency for visual language, and also for ease of use in the user experience.\
 [Learn more about brand elements offered through Decanter](https://elegant-poitras-87214a.netlify.com/page/brand-design-elements-brand/) 
 
-## Typography 
+## Typography
 
 Keeping our visual design system feel consistent is very often through our use of brand approved fonts.\
 [Learn more about the typographic styles created for Decanter](https://elegant-poitras-87214a.netlify.com/page/brand-design-elements-typography/) 
 
-## Color 
+## Color
 
 Beside our name and emblems, the most recognizable part of our Identity system is our color palette.\
 [Learn more about the color palette offered through Decanter](https://elegant-poitras-87214a.netlify.com/page/brand-design-elements-color/)
 
-## Icons 
+## Icons
 
 Becoming more and more important to our University communications, particularly in our digital communications, we've made a variety of icon packs available through Decanter.\
 [Learn more about the icons offered through Decanter](https://elegant-poitras-87214a.netlify.com/page/brand-design-elements-icons/)
@@ -56,14 +56,20 @@ Our brand guidelines for websites make the Stanford web experience consistent wh
 
 If you're also in need of a content management solution, Stanford has invested in website templates and themes for your use across the University on two platforms. If you're unsure where to start, see the options below, and also feel free to reach out to Stanford Web Services [through this form](https://docs.google.com/forms/u/1/d/e/1FAIpQLSdZ8N06DW8LOKdGlcCfUIF8q8rQILh4A697qR5SoZ6-eWfG7g/viewform) for more information, and to talk you through options. 
 
-#### Stanford's Jumpstart on Drupal through Web Services \
+#### Drupal: Stanford's Jumpstart Platform 
+
+Created through University IT's Web Services team. 
+
 [Learn more about Jumpstart](https://sites-jumpstart.stanford.edu/)\
 [Learn more about Web Services](https://uit.stanford.edu/sws)
 
-#### Wordpress through University Communications \
+#### Wordpress  
+
+Created through our University Communications team. 
+
 [Learn more about Wordpress options](https://identity.stanford.edu/web-mobile.html)
 
-### Custom Websites 
+### Custom Websites
 
 In situations where the templates available do not meet your needs, we have more robust options for website development on campus. This is a great place to start before seeking a vendor off-campus.
 
