@@ -21,7 +21,7 @@ As usability and accessibility are increasingly critical markers to the success 
 
 Decanter has been developed in cooperation with University Communications to ensure that elements are in alignment with the [Stanford identity system](identity.stanford.edu). 
 
-_For further information, please contact our_ [_University Communications team_](https://ucomm.stanford.edu/)_._ 
+[Learn more about how Decanter has achieved brand compliance](https://elegant-poitras-87214a.netlify.com/page/brand-compliance/)
 
 ### Get Started Quickly
 
