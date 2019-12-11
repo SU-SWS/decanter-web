@@ -12,14 +12,10 @@ Decanter can be used out of the box to create a project, or it can be extended a
 
 ### Usability & Accessibility
 
-As usability and accessibility are increasingly critical markers of our sites Decanter components have been intentionally created to meet requirements. Our components have been tested fully to meet accessibility. Some user experience research comes directly out of client engagements with our Stanford partners and additional research is selectively conducted where secondary industry research is incomplete and essential.
+As usability and accessibility are increasingly critical markers to the success of our Stanford sites, Decanter components have been intentionally created and vetted to meet requirements. Teams in University IT and University Communications devote time and effort to see that these areas are not just a part of our work, but fundamental to the success and acceptance criteria of Decanter.
 
-You can find documentation on accessibility and ux research on our shared Drive here: 
-
-[Accessibility documentation examples](https://drive.google.com/drive/folders/1gRdr6nzzdyxU0DZNwjQB2SMyEohXaQRV) \
-[UX Research examples](https://drive.google.com/drive/folders/15Jr7zIWphRb92VAP2_gOenZDY2HJ_HiQ)
-
-(_Disclaimer: these folders are available to Stanford users only_.) 
+Learn more about Usability practices\
+Learn more about Accessibility practices
 
 ### Brand Compliance
 
