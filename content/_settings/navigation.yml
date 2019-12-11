@@ -11,25 +11,16 @@ nav_items:
             path: /page/about-contributing-feedback-questions/
         label: Contributing + Collaboration
         path: /page/about-contributing/
-      - label: Blog
-        path: /page/about-blog/
-      - children:
-          - label: Accessibility
-            path: /page/about-why-decanter-accessibility/
-          - label: The Main Nav Component
-            path: /page/about-the-main-nav-component
-          - label: Brand Compliance
-            path: /page/about-why-decanter-brand-compliance/
-          - label: Get Started More Quickly
-            path: /page/about-why-decanter-get-started-quickly/
-        label: Why Decanter?
-        path: /page/about-why-decanter/
       - label: Projects that use Decanter
         path: /page/about-projects-that-use-decanter/
       - label: Release Notes
         path: /page/about-release-notes/
       - label: Release Road Map
         path: /page/about-release-roadmap/
+      - label: Technical Contribution Guidelines
+        path: /page/about-contributing
+      - label: Visual Guidelines
+        path: /page/visual-guidelines
       - label: Governance
         path: /page/about-governance/
     label: About
