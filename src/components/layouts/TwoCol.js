@@ -13,7 +13,7 @@ const Layout = props => (
   <SkipLink />
   <MastHead />
   <main>
-    <aside>
+    <aside aria-label="left sidebar" id="left-sidebar">
       <Logo />
       <PrimaryNav />
       <a href="https://www.netlify.com">
