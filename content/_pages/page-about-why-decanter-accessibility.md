@@ -17,3 +17,10 @@ If you have found an accessibility error or have a suggestion please create a ti
 ## Site Search
 
 * We added a wrapper `<div>` with `role="search"` outside the `<form>` element instead of adding `role="search"` directly to the `<form>` element. The reason is that `<form>` elements explicitly have `role="form"`. If we add `role="search"` to it, we would be changing its default semantic.
+
+## More Documentation
+
+You can find examples of documentation on our accessibility work on our shared Drive here: \
+[Accessibility documentation examples](https://drive.google.com/drive/folders/1gRdr6nzzdyxU0DZNwjQB2SMyEohXaQRV)
+
+(Note: these folders are available to Stanford users only.)
