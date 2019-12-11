@@ -8,19 +8,20 @@ This project conforms to level AA WCAG 2.0 standards as required by the universi
 
 If you have found an accessibility error or have a suggestion please create a ticket.
 
-# Component Specific Information
+## Component Specific Information
 
-## Site Navigation
+### Site Navigation
 
 * See "[About the Main Nav Component](https://github.com/SU-SWS/decanter/wiki/About-the-Main-Nav-Component)" for information on how we build our accessible navigation.
 
-## Site Search
+### Site Search
 
 * We added a wrapper `<div>` with `role="search"` outside the `<form>` element instead of adding `role="search"` directly to the `<form>` element. The reason is that `<form>` elements explicitly have `role="form"`. If we add `role="search"` to it, we would be changing its default semantic.
 
-## More Documentation
+### More Documentation
 
-Accessibility practices across Stanford: \
+**Accessibility practices across Stanford:** \
+[Stanford Online Accessibility Policy](https://ucomm.stanford.edu/policies/accessibility-policy/)\
 [Stanford's Accessibility Guidelines website](https://soap.stanford.edu/)
 
 (_Note: these folders are available to Stanford users only._)
