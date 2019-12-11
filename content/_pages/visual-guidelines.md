@@ -45,4 +45,8 @@ View Color on identity.stanford.edu
 
 ## Testing your design for accessibility
 
-Before submitting to Decanter
+Stanford's goal is to provide online content and applications that conform to WCAG (Web Content Accessibility Guidelines) 2.0  AA. It will be valuable for you to familiarize yourself with the [Stanford Online Accessibility Policy](http://ucomm.stanford.edu/policies/accessibility-policy/) and review the [Basic Checks](https://soap.stanford.edu/getting-started/basic-checks).
+
+On the [Tips and Tools](https://soap.stanford.edu/tips-and-tools) pages, you'll find useful articles and information about tools and approaches you can incorporate into your current workflow including [color](https://soap.stanford.edu/tips-and-tools/tips/color), [contrast](https://soap.stanford.edu/tips-and-tools/tips/contrast), [css](https://soap.stanford.edu/tips-and-tools/tips/css), [fonts and typography](https://soap.stanford.edu/tips-and-tools/tips/fonts-and-typography), [forms](https://soap.stanford.edu/tips-and-tools/tips/forms), [headings](https://soap.stanford.edu/tips-and-tools/tips/headings), [links](https://soap.stanford.edu/tips-and-tools/tips/links), [menus](https://soap.stanford.edu/tips-and-tools/tips/menus-navigation), [page structure](https://soap.stanford.edu/tips-and-tools/tips/page-structure), [tables](https://soap.stanford.edu/tips-and-tools/tips/tables), and [visible focus](https://soap.stanford.edu/tips-and-tools/tips/visible-focus). 
+
+Stanford uses [AMP](https://stanford.levelaccess.net/index.php) from Level Access for accessibility testing, although the [tools listed here](https://soap.stanford.edu/tips-and-tools/tools) can be useful. All work on Decanter will need to pass tests for AMP before getting merged into Decanter.  Please review steps listed in [How to achieve accessibility](https://soap.stanford.edu/achieve-accessibility) before submitting new design work to Decanter

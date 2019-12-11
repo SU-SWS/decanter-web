@@ -10,22 +10,18 @@ Decanter can be used out of the box to create a project, or it can be extended a
 
 ## Benefits
 
-### Usability & Accessibility
+### Accessibility & Usability
 
-As usability and accessibility are increasingly critical markers of our sites Decanter components have been intentionally created to meet requirements. Our components have been tested fully to meet accessibility. Some user experience research comes directly out of client engagements with our Stanford partners and additional research is selectively conducted where secondary industry research is incomplete and essential.
+As usability and accessibility are increasingly critical markers to the success of our Stanford sites, Decanter components have been intentionally created and vetted to meet requirements. Teams in University IT and University Communications devote time and effort to see that these areas are not just a part of our work, but fundamental to the success and acceptance criteria of Decanter.
 
-You can find documentation on accessibility and ux research on our shared Drive here: 
-
-[Accessibility documentation examples](https://drive.google.com/drive/folders/1gRdr6nzzdyxU0DZNwjQB2SMyEohXaQRV) \
-[UX Research examples](https://drive.google.com/drive/folders/15Jr7zIWphRb92VAP2_gOenZDY2HJ_HiQ)
-
-(_Disclaimer: these folders are available to Stanford users only_.) 
+[Learn more about Accessibility practices](https://elegant-poitras-87214a.netlify.com/page/page-about-why-decanter-accessibility/)\
+[Learn more about Usability practices](https://elegant-poitras-87214a.netlify.com/page/usability/)
 
 ### Brand Compliance
 
 Decanter has been developed in cooperation with University Communications to ensure that elements are in alignment with the [Stanford identity system](identity.stanford.edu). 
 
-_For further information, please contact our_ [_University Communications team_](https://ucomm.stanford.edu/)_._ 
+[Learn more about how Decanter has achieved brand compliance](https://elegant-poitras-87214a.netlify.com/page/brand-compliance/)
 
 ### Get Started Quickly
 
