@@ -16,6 +16,6 @@ Slack:
 
 As more campus partners and vendors use Decanter, the Decanter team is considering a Community of Practice around Decanter. Please let us know on Slack if this would be of interest.
 
-Other Ways to Communicate
+## Other Ways to Communicate
 
 To learn more about submitting feature requests and bug reports, please see our [Technical Contribution Guidelines](/page/about-contributing).
