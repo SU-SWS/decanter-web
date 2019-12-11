@@ -4,6 +4,22 @@ date: 2019-11-28T14:11:13.000Z
 ---
 https://github.com/SU-SWS/decanter/issues/575
 
+## Brand Elements 
+
+[Learn more about brand elements offered through Decanter](https://elegant-poitras-87214a.netlify.com/page/brand-design-elements-brand/) 
+
+## Typography 
+
+[Learn more about the typographic styles created for Decanter](https://elegant-poitras-87214a.netlify.com/page/brand-design-elements-typography/) 
+
+## Color 
+
+[Learn more about the color palette offered through Decanter](https://elegant-poitras-87214a.netlify.com/page/brand-design-elements-color/)
+
+## Icons 
+
+[Learn more about the icons offered through Decanter](https://elegant-poitras-87214a.netlify.com/page/brand-design-elements-icons/)
+
 ## Standards
 
 ### Stanford websites must be accessible.
@@ -14,36 +30,36 @@ Stanford University is committed to providing an online environment that is acce
 [Stanford Online Accessibility Policy](https://ucomm.stanford.edu/policies/accessibility-policy/)\
 [Stanford's Accessibility Guidelines website](https://soap.stanford.edu/)
 
-###Design for all sized screens.
+\###Design for all sized screens.
 
 We can no longer assume what device a person will use to visit us on the web, so our websites should be developed for all screen sizes – from mobile to desktop.
 
-###Make websites intuitive and easy to use.
+\###Make websites intuitive and easy to use.
 
 We want to make it as easy and intuitive as possible for people to interact with us online. Be clear. Simplify.
 
-###Use semantic markup.
+\###Use semantic markup.
 
 We should follow code best practices with semantic HTML and CSS. This also helps with accessibility and usability.
 
-###Create unity, not uniformity.
+\###Create unity, not uniformity.
 
 Our brand guidelines for websites make the Stanford web experience consistent while providing the flexibility needed to communicate unique messages. We have two essential web branding elements – the Stanford Brand Bar and Global Footer – that should be included in all Stanford websites. These are built into all our available templates.
 
 ## Additional resources to build sites
 
-###Do it Yourself
+\###Do it Yourself
 
 If you're also in need of a content management solution, Stanford has invested in website templates and themes for your use across the University on two platforms. If you're unsure where to start, see the options below, and also feel free to reach out to Stanford Web Services [through this form](https://docs.google.com/forms/u/1/d/e/1FAIpQLSdZ8N06DW8LOKdGlcCfUIF8q8rQILh4A697qR5SoZ6-eWfG7g/viewform) for more information, and to talk you through options. 
 
-####Stanford's Jumpstart on Drupal through Web Services \
+\####Stanford's Jumpstart on Drupal through Web Services \
 [Learn more about Jumpstart](https://sites-jumpstart.stanford.edu/)\
 [Learn more about Web Services](https://uit.stanford.edu/sws)
 
-####Wordpress through University Communications \
+\####Wordpress through University Communications \
 [Learn more about Wordpress options](https://identity.stanford.edu/web-mobile.html)
 
-###Custom Websites 
+\###Custom Websites 
 
 In situations where the templates available do not meet your needs, we have more robust options for website development on campus. This is a great place to start before seeking a vendor off-campus.
 
