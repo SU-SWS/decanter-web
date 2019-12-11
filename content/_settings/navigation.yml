@@ -52,7 +52,7 @@ nav_items:
         path: /page/about-governance/
       - label: Connecting with the Decanter Community
         path: /page/about-contributing-how-to-communicate/
-    label: Contributing to Decanter
+    label: Contribute to Decanter
     path: /page/about-contributing-what-can-i-contribute/
   - children:
       - label: Brand
