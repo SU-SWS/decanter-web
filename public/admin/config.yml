@@ -61,7 +61,7 @@ collections:
     folder: "content/_components"
     preview_path: component/{{slug}}
     create: true
-    summary: "{{title}} Group: {{group}} Modifiers: {{modifier_css}}"
+    summary: "{{title}} | {{group}} | {{modifier_css}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Unique ID", name: "uid", widget: "string" }
@@ -77,12 +77,11 @@ collections:
         name: modifier_css
         widget: list
         fields:
-          - { label: "Human Readable Name", name: label, widget: string }
           - { label: "CSS Class", name: css_class, widget: string, hint: "No preceeding period. eg: su-card" }
           - { label: "Experimental", name: "experimental", widget: "boolean", default: false }
           - { label: "Deprecated", name: "deprecated", widget: "boolean", default: false }
+          - { label: "Source Data", name: "source_json", widget: "text", hint: "JSON data to populate the template with. Leave empty to use what is in the Decanter repo." }
       - { label: "SCSS Path", name: "scss_path", widget: "string", hint: "Relative to the Decanter project root." }
       - { label: "Template Path", name: "template_path", widget: "string", hint: "Relative to the Decanter project root." }
       - { label: "Template Markup", name: "template_markup", widget: "text", hint: "This overrides the template path." }
-      - { label: "Source Data", name: "source_json", widget: "text", hint: "JSON data to populate the template with. Leave empty to use what is in the Decanter repo." }
       - { label: "Notes", name: "notes", widget: "markdown" }

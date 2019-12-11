@@ -1,7 +1,10 @@
 import Navigation from '../../../content/_settings/navigation.yml';
+import Components from '../../../content/_settings/kss.json';
 
 const PrimaryNav = (props) => {
-  var items = Navigation.nav_items;
+  var pages = Navigation.nav_items;
+  var components = Components.items;
+  var items = pages.concat(components);
   return (
     <>
       <nav className="su-secondary-nav su-secondary-nav--buttons-dark no-js" aria-label="main menu">

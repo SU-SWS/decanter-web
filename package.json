@@ -11,6 +11,7 @@
     "start": "next start",
     "export": "npm run build && next export",
     "pack": "webpack --mode production --display-error-details",
+    "kss": "node scripts/kss/generate.js",
     "jsdoc": "node scripts/jsdoc.js",
     "sassdoc": "node scripts/sassdoc.js"
   },
