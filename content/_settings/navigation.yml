@@ -2,29 +2,26 @@ nav_items:
   - label: Home
     path: /
   - children:
-      - children:
-          - label: What you can contribute?
-            path: /page/about-contributing-what-can-i-contribute/
-          - label: How to communicate
-            path: /page/about-contributing-how-to-communicate/
-          - label: Feedback + Questions
-            path: /page/about-contributing-feedback-questions/
-        label: Contributing + Collaboration
-        path: /page/about-contributing/
       - label: Projects that use Decanter
         path: /page/about-projects-that-use-decanter/
       - label: Release Notes
         path: /page/about-release-notes/
       - label: Release Road Map
         path: /page/about-release-roadmap/
-      - label: Technical Contribution Guidelines
-        path: /page/about-contributing
-      - label: Visual Guidelines
-        path: /page/visual-guidelines
-      - label: Governance
-        path: /page/about-governance/
     label: About
     path: /page/about/
+  - children:
+      - children: []
+        label: Accessibility
+        path: /page/page-about-why-decanter-accessibility/
+      - label: Usability
+        path: /page/usability
+      - label: Brand Compliance
+        path: /page/brand-compliance
+      - label: Get Started Quickly
+        path: /page/get-started-quickly
+    label: Why Decanter
+    path: /page/about-why-decanter/
   - children:
       - children:
           - label: Installation
@@ -72,3 +69,14 @@ nav_items:
     path: /page/layouts/
   - label: Components
     path: /page/components/
+  - children:
+      - label: Technical Contribution Guidelines
+        path: /page/about-contributing
+      - label: Visual Guidelines
+        path: 'https://elegant-poitras-87214a.netlify.com/page/visual-guidelines'
+      - label: Governance
+        path: /page/about-governance/
+      - label: Connecting with the Decanter Community
+        path: /page/about-contributing-how-to-communicate/
+    label: Contributing to Decanter
+    path: /page/about-contributing-what-can-i-contribute/
