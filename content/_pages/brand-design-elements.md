@@ -6,18 +6,22 @@ https://github.com/SU-SWS/decanter/issues/575
 
 ## Brand Elements 
 
+Stanford websites deserve consistency for visual language, and also for ease of use in the user experience.\
 [Learn more about brand elements offered through Decanter](https://elegant-poitras-87214a.netlify.com/page/brand-design-elements-brand/) 
 
 ## Typography 
 
+Keeping our visual design system feel consistent is very often through our use of brand approved fonts.\
 [Learn more about the typographic styles created for Decanter](https://elegant-poitras-87214a.netlify.com/page/brand-design-elements-typography/) 
 
 ## Color 
 
+Beside our name and emblems, the most recognizable part of our Identity system is our color palette.\
 [Learn more about the color palette offered through Decanter](https://elegant-poitras-87214a.netlify.com/page/brand-design-elements-color/)
 
 ## Icons 
 
+Becoming more and more important to our University communications, particularly in our digital communications, we've made a variety of icon packs available through Decanter.\
 [Learn more about the icons offered through Decanter](https://elegant-poitras-87214a.netlify.com/page/brand-design-elements-icons/)
 
 ## Standards
