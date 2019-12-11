@@ -49,3 +49,11 @@ The Stanford global footer is a red footer recommended to place at the bottom of
 Our brand team at University Communications has documented all of the tools, best practices, and guidance on the Brand Guidelines website. 
 
 [Learn more about Stanford brand guidelines](https://identity.stanford.edu/)
+
+## Decanter Components 
+
+Our Decanter Design System is fully outfitted with your brand needs. Explore each of our brand areas here: 
+
+Typography\
+Color\
+Icons
