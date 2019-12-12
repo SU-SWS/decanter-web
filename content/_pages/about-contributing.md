@@ -2,7 +2,7 @@
 title: Technical Contribution Guidelines
 date: 2019-11-28T14:11:13.000Z
 ---
-https://github.com/SU-SWS/decanter/issues/564
+READY FOR REVIEW
 
 # Contributing to Decanter
 
@@ -65,6 +65,8 @@ Feature requests are welcome. But take a moment to find out whether your idea
 fits with the scope and aims of the project. It's up to _you_ to make a strong
 case to convince the project's developers of the merits of this feature. Please
 provide as much detail and context as possible.
+
+<a href="/page/about-contributing-what-can-i-contribute/" class="su-link su-link--action">Learn more about how we evaluate feature requests</a>
 
 ## Pull requests
 
