@@ -8,7 +8,7 @@ Decanter has been created from partnership between [Stanford Web Services](https
 
 If you  want to be involved in our ongoing work, please reach out to us via the #decanter channel on Slack.
 
-We aim for, and look for, contributions that are:
+We look for contributions that are:
 
 * Platform-agnostic
 * Maintainable
@@ -16,5 +16,7 @@ We aim for, and look for, contributions that are:
 * Brand compliant
 * Accessible
 * Meet our [Coding Standards](page/use-decanter-as-a-developer-code-standards)
+
+New components will be reviewed by at least one member each of our design and technical teams. Code submitted from contributors outside the core Decanter team will be reviewed by at least two Decanter team members. We are active believers in peer review, so expect questions, comments, and suggestions throughout.
 
 Please see both our [Technical Contribution Guidelines](/page/about-contributing/) and our [Visual Guidelines](/page/visual-guidelines/) for more details.
