@@ -25,8 +25,8 @@ Having a shared central source for all Stanford digital design provides us the o
 
 ## Using Figma at Stanford
 
+### Unfortunately, we currently do not have an enterprise-wide solution through Figma, which does mean that the Decanter Design System is not yet currently available for design adoption on campus. 
+
 Figma does not currently have the single sign on functionality in place for the educational context that would allow us to move forward with an organizational license. We are continuing to work with them to add this functionality, but have no estimated time of delivery.
 
-This means that at this time, if you would like to use Figma, your team will need to adopt on your own. Luckily, Figma is free to use for those in education. Unfortunately, this does mean that the Decanter Design System is also not accessible to you and your teams, _just yet_. 
-
-Learn more about contributing design.
+Which means that at this time, if you would like to use Figma, your team will need to adopt the tool on your own. Luckily, Figma is free to use for those in education. Unfortunately, this does mean that the Decanter Design System is also not accessible to you and your teams, _just yet_.
