@@ -52,8 +52,5 @@ Our brand team at University Communications has documented all of the tools, bes
 
 ## Decanter Components
 
-Our Decanter Design System is fully outfitted with your brand needs. Explore each of our brand areas here: 
-
-Typography\
-Color\
-Icons
+Our Decanter Design System is fully outfitted with your brand needs. \
+[Explore our Brand + Design Elements section](https://elegant-poitras-87214a.netlify.com/page/brand-design-elements/)
