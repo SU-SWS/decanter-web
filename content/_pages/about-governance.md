@@ -2,7 +2,7 @@
 title: Governance
 date: 2019-11-28T14:11:13.000Z
 ---
-https://github.com/SU-SWS/decanter/issues/568
+READY FOR REVIEW
 
 Decanter has been created from partnership between [Stanford Web Services](https://uit.stanford.edu/sws) and [University Communications](https://ucomm.stanford.edu/). Technical leadership and design direction are currently provided by members of both of these teams, but we are always looking for new collaborators.
 
