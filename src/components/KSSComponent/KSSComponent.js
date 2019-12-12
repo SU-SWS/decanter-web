@@ -1,5 +1,4 @@
 const hljs = require('highlight.js');
-const formatter = require('html-formatter');
 const beautify = require('beautify');
 
 const KSSComponent = (props) => {
@@ -33,7 +32,7 @@ const KSSComponent = (props) => {
         </div>
         <div className="component__markup">
           <pre>
-            <code class="language-html hljs">
+            <code className="language-html hljs">
             {markup}
             </code>
           </pre>
