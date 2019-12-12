@@ -56,7 +56,7 @@ kss_util.fetchSections()
       var full_path = path.join(decanter_src, short_path);
       var dest_path = path.join(kss_settings_dir, 'data', key + '.json');
       fs.copyFile(full_path, dest_path, (err) => {
-        if (err) throw err;
+        if (err) console.log(err);
       });
     });
   }
