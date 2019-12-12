@@ -2,11 +2,11 @@
 title: Contributing to Decanter
 date: 2019-11-28T14:11:13.000Z
 ---
-https://github.com/SU-SWS/decanter/issues/576
+READY FOR REVIEW
 
 ## What we accept
 
-When considering new components and functionality for Decanter, we need to ensure it will serve the needs of the broader University community and does not duplicate existing functionality. The following criteria should be met for features and functionality improvements:
+When considering new components and functionality for Decanter, we need to ensure it will serve the needs of the broader University community and does not duplicate existing functionality. The following criteria should be met for the design of new features as well as functional enhancements:
 
 * Reusable (content-agnostic)
 * Component/element has a clear use case
@@ -19,13 +19,13 @@ When considering new components and functionality for Decanter, we need to ensur
 
 ## Report an Issue
 
-The Decanter team is committed to maintaining consistent, high-quality components. If you encounter any defects in the Figma Toolkit, or on the documentation site, please [submit an issue to our Github project](https://github.com/SU-SWS/decanter) and it will be added to the backlog.
+The Decanter team is committed to maintaining consistent, high-quality components. If you encounter any issues with the Figma Toolkit, components, or on the documentation site, please [submit an issue to our Github project](https://github.com/SU-SWS/decanter) and it will be added to the backlog.
 
-The team will address the bug as soon as possible, depending on the severity of the issue and the sprint capacity. Please include as much relevant information as possible when submitting a bug report, including steps to reproduce, urgency, and impact to help prioritize the task.
+The team will address bugs depending on the severity of the issue and the sprint capacity. Please include as much relevant information as possible when submitting a bug report, including steps to reproduce, urgency, and impact to help prioritize the task.
 
-If you have a fix for the bug and would like to submit a PR for it, please reach out in Slack at #decanter or visit the Contributing to Decanter page to learn more about contribution opportunities.
+If you have a fix for the bug and would like to submit a PR for it, please reach out in Slack at #decanter or visit the [Contributing to Decanter](/page/about-contributing-what-can-i-contribute/) page to learn more about contribution opportunities.
 
-[Learn more about technical contribution guidelines.](/page/about-contributing/)
+<a href="/page/about-contributing/" class="su-link su-link--action">Learn more about technical contribution guidelines.</a>
 
 ## Join the Decanter Design community
 
@@ -33,4 +33,4 @@ Our teams at Stanford Web Services and University Communication encourage contri
 
 Please [contact us on Slack](/page/about-contributing-how-to-communicate/) if you are interested in collaborating and contributing to the Stanford Design System.
 
-[Read more about our Visual Guidelines](/page/visual-guidelines/)
+<a href="/page/visual-guidelines/" class="su-link su-link--action"> Read more about our Visual Guidelines</a>
