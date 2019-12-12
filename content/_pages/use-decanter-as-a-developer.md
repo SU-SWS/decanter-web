@@ -18,6 +18,8 @@ Browser Compatibility
 
 Code Standards
 
-Please let us k
+
+
+## Giving Back
 
 If you are interested in contributing code back to Decanter, please take a look at our [Technical Contribution Guidelines](/page/about-contributing/).
