@@ -30,6 +30,7 @@ kss_util.fetchSections()
       if (!markup.match(/(<|>)/g)) {
         var short_path = markup.trim().replace(/\.\.\//ig, '');
         section.markup(short_path);
+        section.custom('source_twig', short_path);
       }
       let data = JSON.stringify(section);
       let filepath = path.join(kss_settings_dir, "info", key + ".json");

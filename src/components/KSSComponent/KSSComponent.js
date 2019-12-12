@@ -1,35 +1,53 @@
 const hljs = require('highlight.js');
+import Alert from '../Alert/Alert.js';
+import Variant from '../Variant/Variant.js';
 
 const KSSComponent = (props) => {
+  let example = "DATA MISSING";
+  let markup = "DATA MISSING";
+  let description = <div dangerouslySetInnerHTML={{ __html: props.kssdata.description }} />;
+  let twig_source;
+  if (props.kssdata.source_twig) {
+    var fp = "https://github.com/SU-SWS/decanter/blob/master/core/src/" + props.kssdata.source_twig;
+    twig_source = <a href={fp}>core/src/{props.kssdata.source_twig}</a>;
+  }
+  var fps = "https://github.com/SU-SWS/decanter/blob/master/core/src/scss/components/" + props.kssdata.source.filename;
+  let scss_source = <a href={fps}>core/src/scss/components/{props.kssdata.source.filename}</a>;
 
-  const example = <div dangerouslySetInnerHTML={{ __html: props.markup }} />;
-  const markup = <div dangerouslySetInnerHTML={{ __html:
+  if (props.markup) {
+    example = <div dangerouslySetInnerHTML={{ __html: props.markup }} />;
+    markup = <div dangerouslySetInnerHTML={{ __html:
       hljs.highlight('html', props.markup).value
-  }} />;
+    }} />;
+  };
+  let variants = props.variants || [];
 
   return (
   <>
     <article className="component">
-      <div className="su-alert su-alert--warning">
-        <div className="su-alert__body">
-          <h4>Experimental Component</h4>
-        </div>
-      </div>
-      <header>
-        <p>Decanter Version: 6.0</p>
-        <p>Deprecated in Version: 5.4</p>
-        <p>Browser compatibility: IE11+, Edge, Chrome, FireFox</p>
-      </header>
+      {props.kssdata.deprecated || props.kssdata.experimental ? <Alert deprecated={props.kssdata.deprecated} experimental={props.kssdata.experimental} /> : '' }
       <section>
-        <p>A lockup with the Stanford wordmark logo and department/unit name. It is used in the header of a website and links to the homepage of the department/unit. When building a department lockup, besides the Stanford wordmark, the most obvious element should be the most granular relevant department.</p>
+        <div className="component__description">
+        <h2>Description</h2>
+        {description}
+        </div>
         <div className="component__resources">
-          <p>SCSS Path: https://github.com/su-sws/decanter/blob/master/core/src/scss/components/lockup/</p>
-          <p>Twig Path: https://github.com/su-sws/decanter/blob/master/core/src/templates/components/lockup/</p>
+          <h2>Source Files</h2>
+          <p><strong>SCSS Path:</strong> {scss_source}</p>
+          {twig_source ? <p><strong>Twig Path:</strong> {twig_source} </p> : ''}
         </div>
         <div className="component__example">
+          <h2>Default Render</h2>
           {example}
         </div>
+        <div className="component__modifiers">
+          <h2>Modifiers</h2>
+          {variants.map((val) => {
+            return <Variant data={val} />;
+          })}
+        </div>
         <div className="component__markup">
+        <h2>Source Markup</h2>
           <pre>
             <code className="language-html hljs">
             {markup}

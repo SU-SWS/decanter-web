@@ -44,10 +44,10 @@ date: 2019-03-17T19:31:20.591Z
     <h2>Resources</h2>
     <div class="flex-container">
     <section class="flex-md-6-of-12">
-        <img src="/assets/cubes.png" alt="Cubes" role="presentation" />
+        <img src="img/widgets-24px.svg" alt="" role="presentation" />
         <h3>Decanter Figma Design System</h3>
         <p>Familiarize yourself with our foundational styles, components, and naming conventions using the Decanter Figma Design System and start using the toolkit.</p>
-        <a href="/section-components.html" class="su-link su-link--action">Learn more about the Decanter Design System on Figma</a>
+        <a href="/section-components.html" class="su-link su-link--action">Learn about the Decanter Design System on Figma</a>
     </section>
     <section class="flex-md-6-of-12">
         <img src="/assets/file.png" alt="File" role="presentation" />
@@ -65,7 +65,7 @@ date: 2019-03-17T19:31:20.591Z
         <img src="/assets/file.png" alt="File" role="presentation" />
         <h3>Feedback + Support</h3>
         <p>There are various ways to connect with the Decanter community. Find out how to get support, submit bug report and request features.</p>
-        <a href="page/about-contributing-how-to-communicate/" class="su-link su-link--action">Connecting with the Decanter community</a>
+        <a href="page/about-contributing-how-to-communicate/" class="su-link su-link--action">Connect with the Decanter community</a>
     </section>
     </div>
 </section>

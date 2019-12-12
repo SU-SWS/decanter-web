@@ -1,0 +1,77 @@
+@charset 'UTF-8';
+
+// Homepage
+
+.section {
+  &--welcome {
+    @include linear-gradient(to right, shade($su-color-lagunita, 20%), shade($su-color-purple, 10%));
+
+    .su-intro-text {
+      line-height: 1.3;
+    }
+
+    > * {
+      &:last-child {
+        @include margin(null null 0);
+      }
+    }
+  }
+
+  &--welcome,
+  &--who,
+  &--resources {
+    color: $su-color-white;
+  }
+
+  &--welcome,
+  &--who {
+    .su-button {
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  &--who,
+  &--resources,
+  &--components {
+    p {
+      @include modular-typography(1);
+    }
+  }
+
+  &--start .su-card,
+  &--components .su-card,
+  &--resources,
+  &--more-info {
+    .su-link--action {
+      display: block;
+      font-size: 1.1em;
+    }
+  }
+
+  &--start,
+  &--components,
+  &--more-info {
+    background-color: $su-color-fog;
+  }
+
+  &--who {
+    background-color: $su-color-cool-grey;
+  }
+
+  &--components {
+    .su-card--horizontal {
+      @include grid-media-only('sm') {
+        grid-template-columns: 2fr 1fr;
+      }
+    }
+  }
+
+  &--resources {
+    background-color: $su-color-lagunita;
+
+    .su-link--action {
+      color: $su-color-white;
+      width: fit-content;
+    }
+  }
+}
