@@ -12,7 +12,9 @@ Lorem ipsum...
 
 ## Designers
 
-Through our Decanter Design System on Figma, you can start with a preexisting library of components with built in type and color styles. Grids, modular spacing, and responsive design have also been fully implemented in this design system. Take all of the foundational objects that are useful to you and unsync from an objects master component to generate a starting point for modifying your cards, banners, buttons, etc. It's a great resource to use directly or to modify however your project needs. 
+_Note: Figma does not currently have the single sign on functionality in place for the educational context that would allow us to move forward with an organizational license. We are continuing to work with them to add this functionality, but have no estimated time of delivery._
+
+However, through our Decanter Design System on Figma, you will be able to start with a preexisting library of components with built in type and color styles. Grids, modular spacing, and responsive design have also been fully implemented in this design system. Take all of the foundational objects that are useful to you and unsync from an object's master component to generate a starting point for modifying your cards, banners, buttons, etc. It's a great resource to use directly or to modify to fit your project needs. 
 
 ## Additional resources to build sites
 
