@@ -89,14 +89,33 @@ module.exports = withSass({
     });
 
     var kssinfo = path.resolve(__dirname, "content/_settings/kss.json");
-    var components = fs.readFileSync(kssinfo);
-    components.items.unshift();
-    components.items.forEach(function(val) {
-      pages[val.path] = { page: '/component/[id]', query: { id: val.key }};
+    var data = fs.readFileSync(kssinfo);
+    var components = JSON.parse(data);
+    components.items[0].children.forEach(function(val) {
+      if (val.children) {
+        val.children.forEach(function(child1) {
+          if (child1.children) {
+            child1.children.forEach(function(child2) {
+              if (child2.children) {
+                child2.children.forEach(function(child3) {
+                  pages[child3.path] = { page: '/component/[id]', query: { id: child3.key }};
+                });
+              }
+              else {
+                pages[child2.path] = { page: '/component/[id]', query: { id: child2.key }};
+              }
+
+            });
+          }
+          else {
+            pages[child1.path] = { page: '/component/[id]', query: { id: child1.key }};
+          }
+        });
+      }
+      else {
+        pages[val.path] = { page: '/component/[id]', query: { id: val.key }};
+      }
     });
-
-
-
     return pages;
   }
 });
