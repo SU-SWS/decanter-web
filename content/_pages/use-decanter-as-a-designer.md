@@ -4,22 +4,29 @@ date: 2019-11-28T14:11:13.000Z
 ---
 https://github.com/SU-SWS/decanter/issues/574
 
-## Learn about Decanter
+## Learn about Decanter Design System
 
-Decanter includes both the Decanter Design System, and the implementation of that system in frontend code (documented on this site). The Decanter Design System has been implemented for two purposes. To articulate new ideas for our frontend framework and see them through the collaborative ideation process where requirements, functionality, UX, and UI are defined. It’s second purpose is to become a rapid prototyping library for our communication and design teams across the University, where efficiencies can be made by using elements we all want to be sharing anyway, so we can spend our time on new and innovative ideas, instead of duplicative effort. 
+Decanter includes both the Decanter Design System in Figma, and the implementation of that system in as a frontend framework (_who's code is hosted on this site_). The Decanter Design System in Figma has been implemented for two purposes. 
+
+1. To articulate new ideas and see them through the collaborative ideation process where requirements, functionality, UX, and UI are defined. 
+2. It’s second purpose is to become a rapid prototyping library for our communication and design teams across the University, where efficiencies can be made by using elements we all want to be sharing anyway, so we can spend our time where we want to—on other work, or on new and innovative ideas, instead of duplicative work. 
 
 ## The tools
 
-We build the living Decanter Design System elements in Figma. Figma is design software that our team at Stanford Web Services and University Communications specifically selected for these reasons. 
+We build the living Decanter Design System in Figma. [Figma](https://www.figma.com/) is design software that our team at Stanford Web Services and University Communications specifically selected for the following reasons. 
 
-**Collaboration**: the software is cloud-based and allows for synchronized, multi-person editing in real time. All files are stored through Figma itself. No checking-in or checking-out of any files is necessary. 
+**Collaboration**: the software is cloud-based and allows for synchronized, multi-person editing in real time. All files are stored through Figma itself. No checking-in or checking-out files at any time. 
 
-**Libraries**: type, color, and master components can be created as shared libraries, of which any person on the enterprise Stanford Figma team can use. By simply toggling the Stanford Design System library on, you have access to branded colors, type styles, modular spacing, and basic components. You can also make libraries for use within your own team, and custom design work. Our goal with the Decanter Design System is to accelerate your work, but not to dictate your design outcomes. Creative freedom and flexibility are encouraged. 
+**Libraries**: type, color, and master components can be created as shared, master libraries. There is no limit to the number of libraries a team can make. You can also use elements in a library as a starting place, detach them from their master, and tweak as needed for your own projects (and further turn those new components into libraries in themselves). We've designed Decanter to be a starting place or fully functional design system. 
 
-[Learn more about using Figma and getting the library.](/page/using-figma)
+### Community Contribution
 
-## Community Contribution
+Having a shared central source for all Stanford digital design provides us the opportunity to share our work quickly and easily. Though the Decanter Design System is intentionally meant to be a baseline framework—deliberately simple and succinct—that doesn’t mean that new custom  libraries that we all create for other purposes cannot be shared between us as well. 
 
-Having a shared central source for all Stanford digital design provides us the opportunity to share our work quickly and easily. Though the Decanter Design System is intentionally meant to be a baseline framework, and deliberately simplified and succinct, that doesn’t mean that other custom component libraries that we all create for other purposes cannot be shared between us as well. 
+## Using Figma at Stanford
+
+Figma does not currently have the single sign on functionality in place for the educational context that would allow us to move forward with an organizational license. We are continuing to work with them to add this functionality, but have no estimated time of delivery.
+
+This means that at this time, if you would like to use Figma, your team will need to adopt on your own. Luckily, Figma is free to use for those in education. Unfortunately, this does mean that the Decanter Design System is also not accessible to you and your teams, _just yet_. 
 
 Learn more about contributing design.

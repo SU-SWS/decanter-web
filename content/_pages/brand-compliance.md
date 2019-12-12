@@ -4,7 +4,7 @@ date: 2019-12-11T18:02:16.854Z
 ---
 ## Achieving brand compliance with Decanter
 
-The collaborative work between University Communications and Stanford Web Services is key to achieving our goals in brand compliance. Since the inception of web platforms for Stanford, on Drupal and Wordpress our teams have been working to solve these challenges for the University with a primary goal: make it easy for websites to be brand compliant and make the treatment of the brand consistent in a select number of areas. 
+The collaborative work between University Communications and Stanford Web Services is key to achieving our goals in brand compliance. Since the inception of web platforms for Stanford—in html, and on Drupal and Wordpress—our teams have been working to solve these challenges for the University with a primary goal: make it easy for websites to be brand compliant and make the treatment of the brand consistent in a select number of areas. 
 
 ### Tools for brand compliance
 
@@ -30,7 +30,7 @@ The local header is a complex component, including some of the most critical par
 
 ![Header example including the Stanford | Biology logo lockup in the far left, the search in the top far right, and the main navigation in the bottom right.](/img/header-right_02.png "Stanford branded header")
 
-Our Decanter team has gone to great lengths to create **logo "lockups"** for your websites that are compliant with branding guidelines depending on how your organization is situated in the organization. 
+Our Decanter team has gone to great lengths to create **logos** for your websites that are compliant with identity guidelines depending on how your organization is situated in the organization. 
 
 The **local search**—though becoming less important to many users because of traffic coming into your sites "sideways" (Google dominates deep searches, leading users directly to content pages within the site, instead of starting at your homepage)—is still a very important tool to your users, the ones that use it. This functionality has been fully accessibility tested, as are all of our components. 
 
@@ -40,7 +40,7 @@ Your **main navigation** is one of the most critical parts of your website. That
 
 #### Global Footer overview
 
-The Stanford global footer is a red footer recommended to place at the bottom of all official university websites. It is designed to enhance sites with consistent Stanford branding and navigation, much like the brand bar and local header. 
+The Stanford global footer is recommended to be placed at the bottom of all official university websites. It is designed to enhance sites with consistent Stanford branding and navigation, much like the brand bar and local header. 
 
 ![The Stanford global footer](/img/universal-footer.png "The Stanford global footer")
 
@@ -52,8 +52,5 @@ Our brand team at University Communications has documented all of the tools, bes
 
 ## Decanter Components
 
-Our Decanter Design System is fully outfitted with your brand needs. Explore each of our brand areas here: 
-
-Typography\
-Color\
-Icons
+Our Decanter Design System is fully outfitted with your brand needs. \
+[Explore our Brand + Design Elements section](https://elegant-poitras-87214a.netlify.com/page/brand-design-elements/)
