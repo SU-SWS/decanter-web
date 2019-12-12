@@ -6,7 +6,13 @@ date: 2019-12-11T18:03:24.367Z
 
 lorem ipsum...
 
+## Developers 
 
+Lorem ipsum...
+
+## Designers
+
+Through our Decanter Design System toolkit on Figma, you can start with a preexisting library of components and built in type and color styles. Grids, modular spacing, and responsive design has also been fully implemented in this designer toolkit. Take all of the foundational objects that are useful to you and unsync from an objects master component to generate a starting point for modifying your cards, banners, buttons, etc. It's a great resource to use directly or to modify however your project needs. 
 
 ## Additional resources to build sites
 
