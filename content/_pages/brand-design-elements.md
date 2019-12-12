@@ -28,9 +28,7 @@ Becoming more and more important to our University communications, particularly 
 
 ### Stanford websites must be accessible.
 
-Stanford University is committed to providing an online environment that is accessible to everyone, including individuals with disabilities.
-
-**Accessibility practices across Stanford:** \
+Stanford University is committed to providing an online environment that is accessible to everyone, including individuals with disabilities.\
 [Stanford Online Accessibility Policy](https://ucomm.stanford.edu/policies/accessibility-policy/)\
 [Stanford's Accessibility Guidelines website](https://soap.stanford.edu/)
 
