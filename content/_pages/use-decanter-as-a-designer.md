@@ -4,6 +4,8 @@ date: 2019-11-28T14:11:13.000Z
 ---
 https://github.com/SU-SWS/decanter/issues/574
 
+_Note: Unfortunately, we currently do not have an enterprise-wide solution through Figma, which does mean that the Decanter Design System is not yet currently available for design adoption on campus._
+
 ## Learn about Decanter Design System
 
 Decanter includes both the Decanter Design System in Figma, and the implementation of that system in as a frontend framework (_who's code is hosted on this site_). The Decanter Design System in Figma has been implemented for two purposes. 
@@ -25,7 +27,7 @@ Having a shared central source for all Stanford digital design provides us the o
 
 ## Using Figma at Stanford
 
-### Unfortunately, we currently do not have an enterprise-wide solution through Figma, which does mean that the Decanter Design System is not yet currently available for design adoption on campus. 
+### Unfortunately, we currently do not have an enterprise-wide solution through Figma, which does mean that the Decanter Design System is not yet currently available for design adoption on campus.
 
 Figma does not currently have the single sign on functionality in place for the educational context that would allow us to move forward with an organizational license. We are continuing to work with them to add this functionality, but have no estimated time of delivery.
 
