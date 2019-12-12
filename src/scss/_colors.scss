@@ -1,0 +1,48 @@
+@charset 'UTF-8';
+
+.color-palette {
+  @include margin(1.4em null null);
+  display: grid;
+  align-items: start;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+
+  @include grid-media-between('sm', 'md') {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include grid-media-only('lg') {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include grid-media('xl') {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.color {
+  @include box-shadow(paper, none);
+  border: 1px solid #ccc;
+
+  .inverse {
+    color: color(text--reverse);
+  }
+
+  > div {
+    @include padding(0.7em 1em);
+
+    &:not(.variant){
+      height: 170px;
+    }
+
+    > h3 {
+      @include type-d;
+    }
+
+    > p {
+      @include margin(null null 0);
+      font-size: 0.9em;
+
+    }
+  }
+}
