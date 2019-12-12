@@ -20,7 +20,7 @@ If you have found an accessibility error or have a suggestion please create a ti
 
 https://github.com/SU-SWS/decanter/issues/563
 
-# Building an Accessible Site Navigation
+## Building an Accessible Site Navigation
 
 While many resources exist today on building an accessible website navigation menu, the truth is that there is still no perfect solution out there. In fact, one can often find conflicting ideas on this topic which can cause great confusion for developers. For example, developers might try to follow [W3C's "WAI-ARIA Authoring Practices"](https://www.w3.org/TR/wai-aria-practices/) when building their site navigations without knowing that the guidelines under ["Menu or Menu Bar"](https://www.w3.org/TR/wai-aria-practices/#menu) and ["Menu Button"](https://www.w3.org/TR/wai-aria-practices/#menubutton) are in fact meant for desktop web application menus and not website navigation menus.
 
@@ -141,7 +141,6 @@ Since Decanter components are adopted by developers who would likely tweak them 
 * https://www.marcozehe.de/2018/09/22/wai-aria-menus-and-why-you-should-generally-avoid-using-them/
 * http://adrianroselli.com/2017/10/dont-use-aria-menu-roles-for-site-nav.html
 * https://identity.stanford.edu/
-
 
 ### More Documentation
 
