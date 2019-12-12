@@ -12,7 +12,7 @@ Lorem ipsum...
 
 ## Designers
 
-Through our Decanter Design System toolkit on Figma, you can start with a preexisting library of components and built in type and color styles. Grids, modular spacing, and responsive design has also been fully implemented in this designer toolkit. Take all of the foundational objects that are useful to you and unsync from an objects master component to generate a starting point for modifying your cards, banners, buttons, etc. It's a great resource to use directly or to modify however your project needs. 
+Through our Decanter Design System on Figma, you can start with a preexisting library of components with built in type and color styles. Grids, modular spacing, and responsive design have also been fully implemented in this design system. Take all of the foundational objects that are useful to you and unsync from an objects master component to generate a starting point for modifying your cards, banners, buttons, etc. It's a great resource to use directly or to modify however your project needs. 
 
 ## Additional resources to build sites
 
