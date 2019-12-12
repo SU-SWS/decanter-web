@@ -74,6 +74,7 @@ data.getNavItems = async function() {
     items.items[0].children.push({
       path: '/component/' + key,
       label: tl_sections[key].label,
+      key: key,
       children: []
     })
   });
@@ -90,7 +91,8 @@ data.getNavItems = async function() {
 
     items.items[0].children[ref].children.push({
       path: '/component/' + slug,
-      label: label
+      label: label,
+      key: slug
     });
   });
 

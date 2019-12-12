@@ -2,6 +2,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const autoprefixer = require('autoprefixer')({ grid: true });
 const withSass = require('@zeit/next-sass');
 const path = require('path');
+const fs = require('fs');
 const sass = require('sass');
 const highlight = require('highlight.js');
 const npmPackage = "node_modules";
@@ -77,7 +78,8 @@ module.exports = withSass({
   // What to export as static pages that are dynamically generated.
   exportPathMap: function() {
     var pages = {
-      '/': { page: '/' }
+      '/': { page: '/' },
+      '/page/components': { page: '/page/[id]', query: {id: 'components'}}
     };
 
     var files = glob.sync('content/_pages/*.md');
@@ -85,6 +87,16 @@ module.exports = withSass({
       var key = filename.replace("content/_pages/", "").replace(".md", "");
       pages['/page/' + key] = { page: '/page/[id]', query: { id: key } };
     });
+
+    var kssinfo = path.resolve(__dirname, "content/_settings/kss.json");
+    var components = fs.readFileSync(kssinfo);
+    components.items.unshift();
+    components.items.forEach(function(val) {
+      pages[val.path] = { page: '/component/[id]', query: { id: val.key }};
+    });
+
+
+
     return pages;
   }
 });
