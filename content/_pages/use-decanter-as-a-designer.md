@@ -4,7 +4,7 @@ date: 2019-11-28T14:11:13.000Z
 ---
 https://github.com/SU-SWS/decanter/issues/574
 
-_Note: Unfortunately, we currently do not have an enterprise-wide solution through Figma, which does mean that the Decanter Design System is not yet currently available for design adoption on campus._
+_Note: Unfortunately, we currently do not have an enterprise-wide solution through Figma, which means that the Decanter Design System is not yet currently available for design adoption. But your individual designers and teams can still adopt Figma as design software and make a copy of Decanter for your use. Learn more about how to adopt Figma below._ 
 
 ## Learn about Decanter Design System
 
@@ -27,8 +27,10 @@ Having a shared central source for all Stanford digital design provides us the o
 
 ## Using Figma at Stanford
 
-### Unfortunately, we currently do not have an enterprise-wide solution through Figma, which does mean that the Decanter Design System is not yet currently available for design adoption on campus.
+### Unfortunately, we currently do not have an enterprise-wide solution through Figma, which means that the Decanter Design System is not yet currently available for design adoption.
 
 Figma does not currently have the single sign on functionality in place for the educational context that would allow us to move forward with an organizational license. We are continuing to work with them to add this functionality, but have no estimated time of delivery.
 
-Which means that at this time, if you would like to use Figma, your team will need to adopt the tool on your own. Luckily, Figma is free to use for those in education. Unfortunately, this does mean that the Decanter Design System is also not accessible to you and your teams, _just yet_.
+Which means that at this time, if you would like to use Figma, your team will need to adopt the software through your own team use. Luckily, Figma is free to use for those in education. Unfortunately, this does mean that the Decanter Design System is not ready to be used as a shared library, but can be copied and pasted to _your_ team Figma at current state. (Clearly there are tradeoffs here, as copying a "state" of the library may cause future manual updates when the library syncing does become available.)
+
+[Please contact Kerri Augenstein at Stanford Web Services for more information](https://stanford.rimeto.io/search/kerri%20augenstein?tab=all)
