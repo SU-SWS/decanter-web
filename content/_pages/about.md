@@ -14,7 +14,7 @@ Decanter is maintained by a core team of designers, developers, and writers at S
 
 **Learn more about how to get started:** \
 [As a developer](https://elegant-poitras-87214a.netlify.com/page/use-decanter-as-a-developer/)\
-<a href="/page/use-decanter-as-a-designer/"class="su-link su-link--action"> As A Designer</a>
+<a href="/page/use-decanter-as-a-designer/" class="su-link su-link--action"> As A Designer</a>
 [As a designer](https://elegant-poitras-87214a.netlify.com/page/use-decanter-as-a-designer/)
 
 ## Open Source 
