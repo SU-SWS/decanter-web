@@ -28,7 +28,7 @@ Some additional [research on approaches to global navigation](https://www.nngrou
 
 The local header is a complex component, including some of the most critical parts of your website—your logo, Stanford or not, your local site search, and your main navigation.
 
-![Header example including the Stanford | Biology logo lockup in the far left, the search in the top far right, and the main navigation in the bottom right.](/img/header-right.png "Stanford branded header")
+![Header example including the Stanford | Biology logo lockup in the far left, the search in the top far right, and the main navigation in the bottom right.](/img/header-right_02.png "Stanford branded header")
 
 Our Decanter team has gone to great lengths to create **logo "lockups"** for your websites that are compliant with branding guidelines depending on how your organization is situated in the organization. 
 
@@ -50,7 +50,7 @@ Our brand team at University Communications has documented all of the tools, bes
 
 [Learn more about Stanford brand guidelines](https://identity.stanford.edu/)
 
-## Decanter Components 
+## Decanter Components
 
 Our Decanter Design System is fully outfitted with your brand needs. Explore each of our brand areas here: 
 
