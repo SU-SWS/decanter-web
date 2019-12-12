@@ -2,13 +2,13 @@
 title: Decanter Design System
 date: 2019-03-17T19:31:20.591Z
 ---
-<section class="section section--welcome fullwidth narrow-content padding-vertical-md">
+<section class="section section--welcome fullwidth narrow-content padding-vertical-md inverse">
     <h1>Welcome to the Decanter Style Guide and Pattern Library.</h1>
     <p class="su-intro-text">Decanter is a web design and development system for Stanford University. It includes a responsive layout system and a browsable collection of design patterns that can be used in any Stanford project.</p>
-    <p><a class="su-button">Use Decanter version 6.0</a></p>
+    <p><a class="su-button" href="page/use-decanter-as-a-developer-installation/">Use Decanter version 6.0</a></p>
 </section>
 
-<section class="section section--start fullwidth wide-content padding-vertical-md">
+<section class="section section--start fullwidth wide-content padding-vertical-lg inverse">
   <div class="su-card su-card--horizontal su-card--minimal">
     <img src='http://decanter5.local/kss-assets/ui-components.png' alt='' />
     <div class="su-card__contents">
@@ -20,7 +20,7 @@ date: 2019-03-17T19:31:20.591Z
   </div>
 </section>
 
-<section class="section section--who fullwidth narrow-content padding-vertical-md">
+<section class="section section--who fullwidth narrow-content padding-vertical-md inverse">
   <div>
       <h2>Who should use Decanter?</h2>
       <p>Decanter is an open source design system and frontend framework,intended for use by Stanford University teams creating websites and other digital products. </p>
@@ -28,7 +28,7 @@ date: 2019-03-17T19:31:20.591Z
   </div>
 </section>
 
-<section class="section section--components fullwidth wide-content padding-vertical-md">
+<section class="section section--components fullwidth wide-content padding-vertical-lg">
   <div class="su-card su-card--horizontal su-card--minimal">
     <div class="su-card__contents">
       <h2>Explore our Design Styles + Components</h2>
@@ -40,7 +40,7 @@ date: 2019-03-17T19:31:20.591Z
   </div>
 </section>
 
-<section class="section section--resources fullwidth wide-content padding-vertical-md">
+<section class="section section--resources fullwidth wide-content padding-vertical-lg">
     <h2>Resources</h2>
     <div class="flex-container">
     <section class="flex-md-6-of-12">
@@ -70,7 +70,7 @@ date: 2019-03-17T19:31:20.591Z
     </div>
 </section>
 
-<section class="section section--more-info fullwidth wide-content padding-vertical-md">
+<section class="section section--more-info fullwidth wide-content padding-vertical-lg inverse">
     <h2>More from Stanford University</h2>
     <div class="flex-container">
         <section class="flex-md-4-of-12">
