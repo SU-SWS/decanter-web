@@ -31,6 +31,6 @@ If you have a fix for the bug and would like to submit a PR for it, please reach
 
 Our teams at Stanford Web Services and University Communication encourage contribution to the Stanford Design System. Though our goal remains to be the to keep the system as succinct and simplified as possible—to provide a baseline framework of the essential elements—we are very aware that that baseline is not there yet, and will need perpetual refactoring and optimization. 
 
-Please contact Kerri Augenstein, kaugenst@stanford.edu, if you are interested in collaborating and contributing to the Stanford Design System.
+Please [contact us on Slack](/page/about-contributing-how-to-communicate/) if you are interested in collaborating and contributing to the Stanford Design System.
 
 [Read more about our Visual Guidelines](/page/visual-guidelines/)
