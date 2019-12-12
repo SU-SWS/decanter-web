@@ -17,12 +17,6 @@ When considering new components and functionality for Decanter, we need to ensur
 
 * Content-specific design elements
 
-## Request a Component
-
-All new requests for components will be evaluated, beginning with a discovery process that includes an audit of visual patterns. Factors such as reusability across the product ecosystem (ideally can be used by 3-5 teams), investment, and maturity of the product, and team bandwidth are also taken into account.
-
-New feature and enhancement requests can be submitted using the **Feature Request Form**.
-
 ## Report an Issue
 
 The Decanter team is committed to maintaining consistent, high-quality components. If you encounter any defects in the Figma Toolkit, or on the documentation site, please [submit an issue to our Github project](https://github.com/SU-SWS/decanter) and it will be added to the backlog.
