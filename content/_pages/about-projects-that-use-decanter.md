@@ -32,10 +32,12 @@ https://github.com/SU-SWS/decanter/issues/569
         <a href="https://earth.stanford.edu" class="su-link su-link--action">Visit the School of Earth Website</a>
     </section>
 
-
 <section class="flex-md-6-of-12">    
         <h3>The Stanford Homepage</h3>
 <span class=".su-caption">WordPress</span>
         <p>The Stanford homepage uses an early version of Decanter.</p>
         <a href="https://www.stanford.edu" class="su-link su-link--action">Visit the Stanford Homepage</a>
     </section>
+
+<h2>Share your Project</h2>
+<a href="https://stanfordwebservices.slack.com/archives/C9SL2179B">Find us on Slack in the #decanter channel</a> to share your project made with Decanter.
