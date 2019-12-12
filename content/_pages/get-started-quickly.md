@@ -2,7 +2,7 @@
 title: Get Started Quickly
 date: 2019-12-11T18:03:24.367Z
 ---
-## How does Decanter make you faster?
+## How does Decanter make your development faster?
 
 lorem ipsum...
 
@@ -14,7 +14,7 @@ Lorem ipsum...
 
 _Note: Figma does not currently have the single sign on functionality in place for the educational context that would allow us to move forward with an organizational license. We are continuing to work with them to add this functionality, but have no estimated time of delivery._
 
-However, through our Decanter Design System in Figma, you will be able to start with a preexisting library of components with built in type and color styles. Grids, modular spacing, and responsive design have also been fully implemented in this design system. Take all of the foundational objects that are useful to you and unsync from an object's master component to generate a starting point for modifying your cards, banners, buttons, etc. It's a great resource to use directly or to modify to fit your project needs. 
+Through our Decanter Design System in Figma, you will be able to start with a preexisting library of components with built in type and color styles. Grids, modular spacing, and responsive design have also been fully implemented in this design system. Take all of the foundational objects that are useful to you and unsync from an object's master component to generate a starting point for modifying your cards, banners, buttons, etc. It's a great resource to use directly or to modify to fit your project needs. 
 
 ## Additional resources to build sites
 
@@ -22,15 +22,15 @@ However, through our Decanter Design System in Figma, you will be able to start 
 
 If you're also in need of a content management solution, Stanford has invested in website templates and themes for your use across the University on two platforms. If you're unsure where to start, see the options below, and also feel free to reach out to Stanford Web Services [through this form](https://docs.google.com/forms/u/1/d/e/1FAIpQLSdZ8N06DW8LOKdGlcCfUIF8q8rQILh4A697qR5SoZ6-eWfG7g/viewform) for more information, and to talk you through options. 
 
-#### Drupal: Stanford's Jumpstart Platform
+#### Drupal: Stanford Sites Platform
 
 Created through University IT's Web Services team. \
-[Learn more about Jumpstart](https://sites-jumpstart.stanford.edu/)\
+[Learn more about Jumpstart](https://sites.stanford.edu/)\
 [Learn more about Web Services](https://uit.stanford.edu/sws)
 
 #### Wordpress
 
-Created through our University Communications team. \
+Stay tuned to learn more about the Decanter-based Redwood theme created by our University Communications team. \
 [Learn more about Wordpress options](https://identity.stanford.edu/web-mobile.html)
 
 ### Custom Websites
