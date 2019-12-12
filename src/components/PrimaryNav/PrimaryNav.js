@@ -7,7 +7,7 @@ const PrimaryNav = (props) => {
   var items = pages.concat(components);
   return (
     <>
-      <nav className="su-secondary-nav su-secondary-nav--buttons-dark no-js" aria-label="main menu">
+      <nav className="su-secondary-nav no-js" aria-label="main menu">
         <ul className="su-secondary-nav__menu-lv1 su-secondary-nav__menu">
           {items.map((item, index) => (
             <li className="su-secondary-nav__item su-secondary-nav__item--parent" key={"lv1-" + index}>

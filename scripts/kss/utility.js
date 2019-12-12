@@ -91,8 +91,9 @@ data.getNavItems = async function() {
     items.items[0].children[ref].children.push({
       path: '/component/' + slug,
       label: label
-    })
+    });
   });
+
   return items;
 }
 
