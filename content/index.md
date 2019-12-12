@@ -4,8 +4,8 @@ date: 2019-03-17T19:31:20.591Z
 ---
 <section class="section section--welcome fullwidth narrow-content padding-vertical-md">
     <h1>Welcome to the Decanter Style Guide and Pattern Library.</h1>
-    <p class="su-intro-text">Decanter is a web design and development system for Stanford University.  It includes a responsive layout system and a browsable collection of design patterns that can be used in any Stanford project.</p>
-    <p><a class="su-button">Download Version 6.0</a></p>
+    <p class="su-intro-text">Decanter is a web design and development system for Stanford University. It includes a responsive layout system and a browsable collection of design patterns that can be used in any Stanford project.</p>
+    <p><a class="su-button">Use Decanter version 6.0</a></p>
 </section>
 
 <section class="section section--start fullwidth wide-content padding-vertical-md">
@@ -14,8 +14,8 @@ date: 2019-03-17T19:31:20.591Z
     <div class="su-card__contents">
       <h2>Getting Started</h2>
       <p>Learn about how to use Decanter components with our onboarding guides, tailored to designers or developers.</p>
-      <a href="page/use-decanter-as-a-developer/" class="su-link su-link--action">View Developer Guide</a>
-      <a href="page/use-decanter-as-a-designer/" class="su-link su-link--action">View Designer Guide</a>
+      <a href="page/use-decanter-as-a-developer/" class="su-link su-link--action">View developer guide</a>
+      <a href="page/use-decanter-as-a-designer/" class="su-link su-link--action">View designer guide</a>
     </div>
   </div>
 </section>
@@ -33,8 +33,8 @@ date: 2019-03-17T19:31:20.591Z
     <div class="su-card__contents">
       <h2>Explore our Design Styles + Components</h2>
       <p>From typography and color, to buttons,  rows of cards, and the brand bar, Decanter builds foundational design elements into thoughfully crafted components allowing your content to be displayed exactly the way you want.</p>
-      <a href="page/brand-design-elements/" class="su-link su-link--action">Explore Brand + Design Elements</a>
-      <a href="page/components/" class="su-link su-link--action">Explore Components</a>
+      <a href="page/brand-design-elements/" class="su-link su-link--action">Explore brand + design elements</a>
+      <a href="page/components/" class="su-link su-link--action">Explore components</a>
     </div>
     <img src='http://decanter5.local/kss-assets/ui-components.png' alt='' />
   </div>
@@ -47,7 +47,7 @@ date: 2019-03-17T19:31:20.591Z
         <img src="/assets/cubes.png" alt="Cubes" role="presentation" />
         <h3>Decanter Figma Design System</h3>
         <p>Familiarize yourself with our foundational styles, components, and naming conventions using the Decanter Figma Design System and start using the toolkit.</p>
-        <a href="/section-components.html" class="su-link su-link--action">Browse the Decanter Figma Design System</a>
+        <a href="/section-components.html" class="su-link su-link--action">Learn more about the Decanter Design System on Figma</a>
     </section>
     <section class="flex-md-6-of-12">
         <img src="/assets/file.png" alt="File" role="presentation" />
@@ -64,8 +64,8 @@ date: 2019-03-17T19:31:20.591Z
     <section class="flex-md-6-of-12">
         <img src="/assets/file.png" alt="File" role="presentation" />
         <h3>Feedback + Support</h3>
-        <p>The Decanter team welcomes contributions from the community. Learn how to become a pilot contributor.</p>
-        <a href="page/about-contributing-feedback-questions/" class="su-link su-link--action">Get feedback & support</a>
+        <p>There are various ways to connect with the Decanter community. Find out how to get support, submit bug report and request features.</p>
+        <a href="page/about-contributing-how-to-communicate/" class="su-link su-link--action">Connecting with the Decanter community</a>
     </section>
     </div>
 </section>
