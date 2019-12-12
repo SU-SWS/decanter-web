@@ -2,11 +2,11 @@ import { useRouter } from 'next/router';
 import Twig from 'twig';
 import Layout from '../../src/components/layouts/TwoCol.js';
 import KSSComponent from '../../src/components/KSSComponent/KSSComponent.js';
+const prettifyHtml = require('prettify-html')
 const path = require('path');
 const fs = require('fs');
 const decanter_src = "node_modules/decanter/core/src";
 const decanter_scss = "node_modules/decanter/core/src/scss/components";
-
 
 /**
  * [Index description]
@@ -47,10 +47,12 @@ ComponentPage.getInitialProps = async function(context) {
   data.kssdata = await component;
 
   let twig_path = path.join(decanter_src, twig_short);
-  Twig.renderFile(twig_path, schema, (err, html) => {
-    data.markup = html;
+  var twigg = await Twig.twig({
+    path: twig_path,
+    namespaces: { 'decanter': path.join(decanter_src, "templates") }
   });
-
+  data.markup = await twigg.render(schema);
+  data.markup = prettifyHtml(await data.markup);
   return await data;
 };
 

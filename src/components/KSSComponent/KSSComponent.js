@@ -1,11 +1,10 @@
 const hljs = require('highlight.js');
-const beautify = require('beautify');
 
 const KSSComponent = (props) => {
 
   const example = <div dangerouslySetInnerHTML={{ __html: props.markup }} />;
   const markup = <div dangerouslySetInnerHTML={{ __html:
-      hljs.highlight('html', beautify(props.markup, {format: 'html'})).value
+      hljs.highlight('html', props.markup).value
   }} />;
 
   return (
