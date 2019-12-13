@@ -1,8 +1,8 @@
 ---
-title: Brand
+title: Identity
 date: 2019-11-28T14:11:13.000Z
 ---
-https://github.com/SU-SWS/decanter/issues/575
+READY FOR REVIEW
 
 ### Tools for brand compliance
 
@@ -41,4 +41,3 @@ Your **main navigation** is one of the most critical parts of your website. That
 The Stanford global footer is recommended to be placed at the bottom of all official university websites. It is designed to enhance sites with consistent Stanford branding and navigation, much like the brand bar and local header. 
 
 ![The Stanford global footer](/img/universal-footer.png "The Stanford global footer")
-
