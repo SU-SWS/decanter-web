@@ -31,7 +31,7 @@ main {
 
     > article {
       > header {
-        background-color: $su-color-cool-grey;
+        background-color: #373637;
 
         &:empty {
           display: none;
@@ -50,7 +50,7 @@ main {
       > div {
         > * {
           @include margin(null auto);
-          max-width: 1000px;
+          max-width: 800px;
         }
       }
 
@@ -61,6 +61,7 @@ main {
         }
 
         // Vertical rhythm for content
+
         h2,
         h3,
         h4,
@@ -69,9 +70,30 @@ main {
           @include margin(null null 0.6em);
           clear: none;
 
-          &:not(:first-child) {
-            @include margin(1em null null);
+          &:first-child {
+            @include margin(0 null null);
           }
+        }
+
+        h2,
+        h3 {
+          @include margin(2em null null);
+        }
+
+        h4 {
+          @include margin(1.4em null null);
+        }
+
+        h4,
+        h5,
+        h6 {
+          @include margin(1em null null);
+        }
+
+
+        h2 + h3,
+        h3 + h4 {
+          @include margin(1em null null);
         }
       }
 

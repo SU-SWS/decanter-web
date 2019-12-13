@@ -4,6 +4,8 @@ date: 2019-11-28T14:11:13.000Z
 ---
 https://github.com/SU-SWS/decanter/issues/575
 
+Note: A refreshed Stanford color palette is currently 
+
 Below are the colors that are approved by Stanford University branding guidelines. All colors are available as variables in Decanter prefixed by <code>su-</code>. Some colors come with tints and shades to achieve functional contrast.
 
 ## Primary Colors
@@ -45,15 +47,15 @@ Our primary palette consists of Cardinal Red, White, Black and Cool Grey. Our de
             <p>$su-color-cool-grey</p>
         </div>
         <div class="variant inverse" style="background-color: rgba(77,79,83,0.75);">
-            <p>#a09993</p>
+            <p>rgba(77,79,83,0.75)</p>
             <p>Coming soon</p>
         </div>
         <div class="variant" style="background-color: rgba(77,79,83,0.5);">
-            <p>#a09993</p>
+            <p>rgba(77,79,83,0.5)</p>
             <p>Coming soon</p>
         </div>
         <div class="variant" style="background-color: rgba(77,79,83,0.25);">
-            <p>#a09993</p>
+            <p>rgba(77,79,83,0.25)</p>
             <p>Coming soon</p>
         </div>
     </div>
@@ -240,3 +242,8 @@ Although our primary palette should drive most materials, in certain instances o
 ## Color Related Tools
 
 ## Accessibility
+Color is often used in web design for grouping related items, denoting required fields on a form, or distinguishing one piece of text from another, e.g., hyperlinks. Color enhances the aesthetics, usability, and even the accessibility of a website. However, some users have difficulty perceiving color so, when color is used, it must not be the only means of conveying information.
+
+All Stanford Websites and web‐based applications are required to be accessible to its students, faculty, staff and participants in the University’s programs and activities who have disabilities by conforming to WCAG 2.0 Level AA.
+
+<a href="https://soap.stanford.edu/tips-and-tools/tips/color" class="su-link--action">Learn more about colors and accessibility on the Stanford Online Accessibility Program site</a>
