@@ -16,7 +16,7 @@
     "monospaceLinks": false
   },
   "opts": {
-    "template": "templates/default",
+    "template": "./jsdoc-theme",
     "encoding": "utf8",
     "destination": "./public/docs/js",
     "recurse": true
