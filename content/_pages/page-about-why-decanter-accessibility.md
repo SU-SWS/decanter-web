@@ -2,7 +2,7 @@
 title: Accessibility
 date: 2019-11-28T14:11:13.000Z
 ---
-https://github.com/SU-SWS/decanter/issues/571
+READY FOR REVIEW
 
 <p class="su-intro-text">This project conforms to level <a href="https://www.w3.org/WAI/GL/WCAG20/"> AA WCAG 2.0</a> standards as required by the university's accessibility policy. For more information on the policy please visit University Communications <a href= "https://ucomm.stanford.edu/policies/accessibility-policy.html"> accessibility policy</a> and the <a href="https://soap.stanford.edu"> Stanford Online Accessibility Program</a>.</p>
 
