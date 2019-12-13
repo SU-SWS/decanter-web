@@ -10,7 +10,7 @@ The following fonts are recommended for use on Stanford websites. Our primary fo
 
 ### Source Sans Pro
 
-Source Sans Pro is our primary sans-serif font. It should be used in headings and body text as the primary sans-serif font on your website.
+Source Sans Pro is our primary sans-serif font. It should be used in headings and body text as the primary sans-serif font on your website. When Sources Sans Pro is not available, we have a fallback sans-serif font stack with Helvetica Neue, Helvetica and Arial.
 
 <section class="typography">
 <h3>The quick brown fox jumps over the lazy dog</h3>
@@ -19,8 +19,6 @@ Source Sans Pro is our primary sans-serif font. It should be used in headings an
 
 #### Available Variants
 <section class="typography">
-  <div class="font-light">Extra-Light | font-weight: 200</div>
-  <div class="font-light italic">Extra-Light Italic</div>
   <div style="font-weight: 300;">Light | font-weight: 300</div>
   <div style="font-weight: 300" class="italic">Light Italic</div>
   <div >Regular | font-weight: 400</div>
@@ -34,10 +32,10 @@ Source Sans Pro is our primary sans-serif font. It should be used in headings an
 </section>
 
 #### How to Use
-Apply this font by using the <code>@sans</code> SCSS mixin, or by adding the class name <code>.su-sans</code> to your element.
+Use the Decanter sans-serif font stack by applying the <code>@sans</code> SCSS mixin or using the <code>$su-font-sans</code> SCSS variable, or by adding the class name <code>.su-sans</code> to your element.
 
 ### Source Serif Pro
-Source Serif Pro is our primary serif font. It should be used in headings and body text as the primary serif font on your website.
+Source Serif Pro is our primary serif font. It should be used in headings and body text as the primary serif font on your website. When Sources Sans Pro is not available, we have a fallback serif font stack with Georgia, Times and Times New Roman.
 
 <section class="typography su-serif">
 <h3>The quick brown fox jumps over the lazy dog</h3>
@@ -46,8 +44,6 @@ Source Serif Pro is our primary serif font. It should be used in headings and bo
 
 #### Available Variants
 <section class="typography su-serif">
-  <div class="font-light">Extra-Light | font-weight: 200</div>
-  <div class="font-light italic">Extra-Light Italic</div>
   <div style="font-weight: 300;">Light | font-weight: 300</div>
   <div style="font-weight: 300" class="italic">Light Italic</div>
   <div >Regular | font-weight: 400</div>
@@ -61,7 +57,7 @@ Source Serif Pro is our primary serif font. It should be used in headings and bo
 </section>
 
 #### How to Use
-Apply this font by using the <code>@serif</code> SCSS mixin, or by adding the class name <code>.su-serif</code> to your element.
+Use the Decanter serif font stack by applying the <code>@serif</code> SCSS mixin or using the <code>$su-font-serif</code> SCSS variable, or by adding the class name <code>.su-serif</code> to your element.
 
 ### Roboto Slab
 Roboto Slab is a secondary font. It should only be used as a display font - it is not appropriate for blocks of text.
@@ -81,7 +77,7 @@ Roboto Slab is a secondary font. It should only be used as a display font - it i
 </section>
 
 #### How to Use
-Apply this font by using the <code>@slab</code> SCSS mixin, or by adding the class name <code>.su-slab</code> to your element.
+Use the Decanter slab font stack by applying the <code>@slab</code> SCSS mixin or using the <code>$su-font-slab</code> SCSS variable, or by adding the class name <code>.su-slab</code> to your element.
 
 ### Kalam (Handwriting)
 Kalam is a secondary font. It should only be used as a display font - it is not appropriate for blocks of text.
@@ -101,11 +97,13 @@ Kalam is a secondary font. It should only be used as a display font - it is not 
 </section>
 
 #### How to Use
-Apply this font by using the <code>@handwriting</code> SCSS mixin, or by adding the class name <code>.su-handwriting</code> to your element.
+Use the Decanter handwriting font stack by applying the <code>@handwriting</code> SCSS mixin or using the <code>$su-font-handwriting</code> SCSS variable, or by adding the class name <code>.su-handwriting</code> to your element.
 
 ### Noto Sans Devanagari (Sanskrit) Subset
-
 Noto Sans should only be used when Sanskrit font support is needed.
+
+#### How to Use
+Use the Decanter handwriting Sanskrit font by applying the <code>@sanskrit</code> SCSS mixin or using the <code>$su-font-sanskrit</code> SCSS variable, or by adding the class name <code>.su-sanskrit</code> to your element.
 
 ## Typography Styles
 
