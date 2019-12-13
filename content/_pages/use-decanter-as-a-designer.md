@@ -13,7 +13,7 @@ Decanter includes both the Decanter Design System in Figma, and the implementati
 
 ## The tools
 
-We build the living Decanter Design System in Figma. [Figma](https://www.figma.com/) is design software that our team at Stanford Web Services and University Communications specifically selected for the following reasons. 
+We currently build the living Decanter Design System in Figma. [Figma](https://www.figma.com/) is design software that our team at Stanford Web Services and University Communications specifically selected for the following reasons. 
 
 **Collaboration**: the software is cloud-based and allows for synchronized, multi-person editing in real time. All files are stored through Figma itself. No checking-in or checking-out files at any time. 
 
