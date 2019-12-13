@@ -11,8 +11,9 @@ Use Decanter as a starting point for your project, or straight out of the box.\
 
 ## As a Designer
 
-Use Decanter components to quickly get your project started. Spend your time on the unique aspects of your projects, while taking advantage of Decanter's tested accessible and brand compliant designs.\
-[Learn more about designing with Decanter](https://elegant-poitras-87214a.netlify.com/page/use-decanter-as-a-designer/)
+Use Decanter components to quickly get your project started. Spend your time on the unique aspects of your projects, while taking advantage of Decanter's tested accessible and brand compliant designs.
+[]()
+<p><a href="/page/use-decanter-as-a-designer/" class="su-link su-link--action"> Learn more about designing with Decanter</a></p>
 
 ## Decanter across Stanford 
 
