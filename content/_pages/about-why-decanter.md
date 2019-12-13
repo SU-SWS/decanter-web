@@ -4,7 +4,7 @@ date: 2019-11-28T14:11:13.000Z
 ---
 READY FOR REVIEW
 
-Decanter is a foundation and starting point. Our goal with Decanter is to be able to enable you—as campus designers, developers, web teams, and vendors—to focus time, effort, and creativity solving the deeper challenges _unique_ to your project. We want you to be able to spend your time innovating, not re-creating.  
+<p class="su-intro-text">Decanter is a foundation and starting point. Our goal with Decanter is to be able to enable you—as campus designers, developers, web teams, and vendors—to focus time, effort, and creativity solving the deeper challenges <em>unique</em> to your project. We want you to be able to spend your time innovating, not re-creating.</p>
 
 Decanter can be used out of the box to create a project, or it can be extended and modified to the extent that your project needs. We believe that by sharing design and development efforts, we can co-create solutions that are elegant, usable and accessible. We can give your teams the opportunity to focus on creativity and functionality (_without duplicating effort on the foundational framework that any project needs. Let us do those things for you_). 
 
@@ -14,14 +14,14 @@ Decanter can be used out of the box to create a project, or it can be extended a
 
 Usability and accessibility are increasingly critical markers to the success of our Stanford sites. Decanter components have been intentionally created and vetted to meet requirements. Teams in University IT and University Communications devote time and effort to see that these areas are not just a part of our work, but fundamental to the success and acceptance criteria of each piece of Decanter.
 
-[Learn more about Accessibility practices](/page/page-about-why-decanter-accessibility/)\
-[Learn more about Usability practices](/page/usability/)
+<p><a href="/page/page-about-why-decanter-accessibility/" class="su-link su-link--action">Learn more about Accessibility practices</a></p>
+<p><a href="/page/usability/" class="su-link su-link--action">Learn more about Usability practices</a></p>
 
 ### Brand Compliance
 
 Decanter has been developed in cooperation with University Communications to ensure that elements are in alignment with the [Stanford identity system](identity.stanford.edu). 
 
-[Learn more about how Decanter has achieved brand compliance](/page/brand-compliance/)
+<p><a href="/page/brand-compliance/" class="su-link su-link--action">Learn more about how Decanter has achieved brand compliance</a></p>
 
 ### Get Started Quickly
 
@@ -40,4 +40,4 @@ Even if your project is likely to go in a very different visual direction, Decan
 * External facing marketing or campaign websites
 * News and communications websites
 
-[Learn more about projects that are already using Decanter](/page/about-projects-that-use-decanter/)
+<p><a href="/page/about-projects-that-use-decanter/" class="su-link su-link--action">Learn more about projects that are already using Decanter</a></p>
