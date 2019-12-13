@@ -19,7 +19,7 @@ We currently build the living Decanter Design System in Figma. [Figma](https://w
 
 **Libraries**: type, color, and master components can be created as shared, master libraries. There is no limit to the number of libraries a team can make. You can also use elements in a library as a starting place, detach them from their master, and tweak as needed for your own projects (and further turn those new components into libraries in themselves). We've designed Decanter to be a starting place or fully functional design system.
 
-<p class="su-alert">Please note:</strong> Figma does not currently have the single sign on functionality in place for the educational context that would allow us to move forward with an organizational license. We are continuing to work with them to add this functionality, but have no estimated time of delivery._</p> 
+<p class="su-alert">Please note:</strong> Figma does not currently have the single sign on functionality in place for the educational context that would allow us to move forward with an organizational license. We are continuing to work with them to add this functionality, but have no estimated time of delivery.</p> 
 
 ### Community Contribution
 
