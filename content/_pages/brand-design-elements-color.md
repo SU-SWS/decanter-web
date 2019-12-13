@@ -225,7 +225,7 @@ Although our primary palette should drive most materials, in certain instances o
         <div class="inverse" style="background-color: #006cb8;">
             <h3>Bright Blue</h3>
             <p>#006cb8</p>
-            <p>$su-color-bright-blud</p><br>
+            <p>$su-color-bright-blue</p><br>
             <p>Used for links hover state over light backgrounds</p>
         </div>
     </div>
@@ -240,6 +240,32 @@ Although our primary palette should drive most materials, in certain instances o
 </section>
 
 ## Color Related Tools
+
+### Color Maps
+A SCSS map <code>$su-core-colors</code> is available for core Decanter colors.
+
+   ```bash
+    $su-core-colors: (
+      brand:                        $su-color-cardinal-red,
+      brand--bright:                $su-color-bright-red,
+      brand--dark:                  $su-color-dark-red,
+    
+      bg:                           $su-color-white,
+      bg--reverse:                  $su-color-black,
+    
+      text:                         $su-color-black,
+      text--high-contrast:          #000,
+      text--reverse:                $su-color-white,
+    
+      link:                         $su-color-bright-blue,
+      link--hover:                  $su-color-black,
+      link--alt:                    $su-color-bright-red,
+      link--alt-hover:              $su-color-black,
+      link--reverse:                $su-color-white,
+      link--reverse-hover:          $su-color-vivid-red,
+    ) !default;
+   ```
+#### How to Use
 
 ## Accessibility
 Color is often used in web design for grouping related items, denoting required fields on a form, or distinguishing one piece of text from another, e.g., hyperlinks. Color enhances the aesthetics, usability, and even the accessibility of a website. However, some users have difficulty perceiving color so, when color is used, it must not be the only means of conveying information.
