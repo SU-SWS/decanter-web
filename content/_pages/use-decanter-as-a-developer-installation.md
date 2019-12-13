@@ -14,7 +14,7 @@ To build and deploy code, you must have the following installed on your system:
 * [KSS](https://warpspire.com/kss/)
 * [Git](https://git-scm.com/)
 
-### Installation
+## Installation
 
 Most of these tools need only to be installed globally, so if you already have them installed on your system, you are ready to use or add to the toolset.
 
