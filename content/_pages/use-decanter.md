@@ -6,17 +6,22 @@ READY FOR REVIEW
 
 <p class="su-intro-text">Decanter supports multiple tools and consumption methods. Choose the developer or designer path below to get started using Decanter.</p>
 
+<div class="flex-container">
+<section class="flex-md-6-of-12">
 ## As a Developer
 
 Use Decanter as a starting point for your project, or straight out of the box.
 
 <p><a href="/page/use-decanter-as-a-developer/" class="su-button"> Develop with Decanter</a></p>
-
+</section>
+<section class="flex-md-6-of-12">
 ## As a Designer
 
 Use the Decanter Design System to get your project started quickly. You can use Decanter components and styles out of the box, and/or spend your time customizing Decanter for your projects. In either case, you can start with the brand compliant and fully tested accessible and usable design system.
 
 <p><a href="/page/use-decanter-as-a-designer/" class="su-button"> Design with Decanter</a></p>
+</section>
+</div>
 
 ## Decanter across Stanford
 
