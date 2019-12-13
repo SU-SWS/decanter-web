@@ -4,7 +4,7 @@ date: 2019-11-28T14:11:13.000Z
 ---
 https://github.com/SU-SWS/decanter/issues/571
 
-<p class="su-intro-text">This project conforms to level AA WCAG 2.0 standards as required by the university's accessibility policy. For more information on the policy please visit: https://ucomm.stanford.edu/policies/accessibility-policy.html.</p>
+<p class="su-intro-text">This project conforms to level [AA WCAG 2.0](https://www.w3.org/WAI/GL/WCAG20/) standards as required by the university's accessibility policy. For more information on the policy please visit [University Communications accessibility policy](https://ucomm.stanford.edu/policies/accessibility-policy.html) and the [Stanford Online Accessibility Program](https://soap.stanford.edu).</p>
 
 If you have found an accessibility error or have a suggestion please create a ticket.
 
