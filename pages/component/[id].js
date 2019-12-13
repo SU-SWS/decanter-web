@@ -88,30 +88,34 @@ ComponentPage.getInitialProps = async function(context) {
     return await data;
   }
 
-  // But most of the time there is a template.
-  const twig_short = await component.markup;
-  let twig_path = path.join(decanter_src, twig_short);
-  var twigg = Twig.twig({
-    path: twig_path,
-    async: true,
-    namespaces: { 'decanter': path.join(decanter_src, "templates/") }
-  });
+  data.markup = await import(`../../content/_kss/markup/${id}.html`);
 
-  data.markup = await twigg.renderAsync(schema);
-  data.markup = prettifyHtml(await data.markup);
+  // // But most of the time there is a template.
+  // const twig_short = await component.markup;
+  // let twig_path = path.join(decanter_src, twig_short);
+  // var twigg = Twig.twig({
+  //   path: twig_path,
+  //   async: true,
+  //   namespaces: { 'decanter': path.join(decanter_src, "templates/") }
+  // });
+  //
+  // data.markup = await twigg.renderAsync(schema);
+  // data.markup = prettifyHtml(await data.markup);
+  //
+  // data.variants = [];
+  // component.modifiers.forEach(async function(mod) {
+  //   var mod_schema = schema;
+  //   mod_schema.modifier_class = mod.className;
+  //   var markup = await twigg.renderAsync(mod_schema);
+  //   mod.markup = prettifyHtml(markup);
+  //   data.variants.push(mod);
+  // });
+  //
+  // if (await data.markup && await data.variants) {
+  //   return data;
+  // }
 
-  data.variants = [];
-  component.modifiers.forEach(async function(mod) {
-    var mod_schema = schema;
-    mod_schema.modifier_class = mod.className;
-    var markup = await twigg.renderAsync(mod_schema);
-    mod.markup = prettifyHtml(markup);
-    data.variants.push(mod);
-  });
-
-  if (await data.markup && await data.variants) {
-    return data;
-  }
+  return await data;
 };
 
 // ------------------

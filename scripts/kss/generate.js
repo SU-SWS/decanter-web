@@ -48,8 +48,8 @@ kss_util.fetchSections()
  * Get the json out of the Decanter project
  * @type {[type]}
  */
-del.sync([kss_settings_dir + 'data/**', '!' + kss_settings_dir + "data"]);
-del.sync([kss_settings_dir + 'markup/**', '!' + kss_settings_dir + "markup"]);
+del.sync([kss_settings_dir + 'data/*.json']);
+del.sync([kss_settings_dir + 'markup/*.html']);
 kss_util.fetchSections()
   .then(function(sections) {
     Object.keys(sections).forEach(async function(key) {
