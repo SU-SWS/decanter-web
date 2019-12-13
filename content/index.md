@@ -23,7 +23,7 @@ date: 2019-03-17T19:31:20.591Z
 <section class="section section--who fullwidth narrow-content padding-vertical-md inverse">
   <div>
       <h2>Who should use Decanter?</h2>
-      <p>Decanter is an open source design system and frontend framework,intended for use by Stanford University teams creating websites and other digital products. </p>
+      <p>Decanter is an open source design system and frontend framework, intended for use by Stanford University teams and vendors creating websites and other digital products. </p>
       <a href="page/about-why-decanter" class="su-button">See if Decanter is right for you</a>
   </div>
 </section>
@@ -46,8 +46,8 @@ date: 2019-03-17T19:31:20.591Z
     <section class="flex-md-6-of-12">
         <img src="img/icon-cubes.png" alt="" />
         <h3>Decanter Figma Design System</h3>
-        <p>Familiarize yourself with our foundational styles, components, and naming conventions using the Decanter Figma Design System.</p>
-        <a href="/section-components.html" class="su-link su-link--action">Learn about the Decanter Design System on Figma</a>
+        <p>Familiarize yourself with our foundational styles, components, and naming conventions using the Decanter Design System in Figma.</p>
+        <a href="/section-components.html" class="su-link su-link--action">Learn about the Decanter Design System in Figma</a>
     </section>
     <section class="flex-md-6-of-12">
         <img src="img/icon-file.png" alt="" />
