@@ -12,7 +12,7 @@ Decanter is made up up two elements: the Decanter Design System and the Decanter
 
 Decanter is maintained by a core team of designers, developers, and writers at Stanford dedicated to developing and supporting the system. Decanter welcomes collaboration with the Stanford digital community to help evolve the system to suit changing product needs. 
 
-**Learn more about how to get started:**
+### Learn more about how to get started:
 
 <p><a href="/page/use-decanter-as-a-developer/" class="su-button"> As a developer</a></p>
 <p><a href="/page/use-decanter-as-a-designer/" class="su-button"> As a designer</a></p>
