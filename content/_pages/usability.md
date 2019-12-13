@@ -2,6 +2,8 @@
 title: Usability
 date: 2019-12-11T17:53:09.515Z
 ---
+READY FOR REVIEW
+
 <p class="su-intro-text">Decanter is intentionally user-centric. As a sibling to accessibility practices, user testing and research are deployed to ensure that our models function as expected. Testing and research are often performed by secondary client project teams across the University, and also directly through the Decanter project.</p>
 
 ## Our Approach
@@ -24,7 +26,7 @@ We run tests both on campus with Stanford folks, and also through unmoderated te
 
 We also heavily prescribe to a user-centered culture on our teams, and encourage all team members to participate in the tests and research as observers. Teammates as observers have the direct opportunity to learn about how users are using our products, increasing their empathy for their needs.
 
-## Explore our tests and research 
+## Explore our tests and research
 
 Our design teams have conducted tests and research year over year. We want to share some of the documentation for this work with you on our shared Google Drive folder:
 
