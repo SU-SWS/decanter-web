@@ -4,7 +4,7 @@ date: 2019-11-28T14:11:13.000Z
 ---
 https://github.com/SU-SWS/decanter/issues/576
 
-<p class="su-intro-text">Decanter supports multiple tools and consumption methods. Choose the path that suits you below to get started using Decanter.</p>
+<p class="su-intro-text">Decanter supports multiple tools and consumption methods. Choose the developer or designer path below to get started using Decanter.</p>
 
 ## As a Developer
 
