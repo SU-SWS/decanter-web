@@ -11,7 +11,7 @@
     "start": "next start",
     "export": "npm run build && next export",
     "pack": "webpack --mode production --display-error-details",
-    "kss": "node scripts/kss/generate.js",
+    "kss": "node --experimental-modules scripts/kss/generate.js ",
     "jsdoc": "node scripts/jsdoc.js",
     "sassdoc": "node scripts/sassdoc.js"
   },
@@ -71,6 +71,7 @@
     "slate": "^0.50.8",
     "style-loader": "^1.0.1",
     "twig": "^1.14.0",
+    "twig-drupal-filters": "^2.0.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "url-loader": "^3.0.0",
     "urlencode": "^1.1.0",
