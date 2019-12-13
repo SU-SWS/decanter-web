@@ -52,6 +52,8 @@ nav_items:
         path: /page/about-governance/
       - label: Connecting with the Decanter Community
         path: /page/about-contributing-how-to-communicate/
+      - label: Design System
+        path: /page/decanter-design-system/
     label: Contribute to Decanter
     path: /page/about-contributing-what-can-i-contribute/
   - children:
