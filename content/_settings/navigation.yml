@@ -38,13 +38,22 @@ nav_items:
             path: /page/use-decanter-as-a-developer-code-standards/
         label: As a Developer
         path: /page/use-decanter-as-a-developer/
-      - children:
-          - label: Using Figma
-            path: /page/using-figma/
+      - children: []
         label: As a Designer
         path: /page/use-decanter-as-a-designer/
     label: Use Decanter
     path: /page/use-decanter/
+  - children:
+      - label: Technical Contribution Guidelines
+        path: /page/about-contributing
+      - label: Visual Guidelines
+        path: 'https://elegant-poitras-87214a.netlify.com/page/visual-guidelines'
+      - label: Governance
+        path: /page/about-governance/
+      - label: Connecting with the Decanter Community
+        path: /page/about-contributing-how-to-communicate/
+    label: Contribute to Decanter
+    path: /page/about-contributing-what-can-i-contribute/
   - children:
       - label: Brand
         path: /page/brand-design-elements-brand/
@@ -67,16 +76,3 @@ nav_items:
         path: /page/layouts-examples/
     label: Layouts
     path: /page/layouts/
-  - label: Components
-    path: /page/components/
-  - children:
-      - label: Technical Contribution Guidelines
-        path: /page/about-contributing
-      - label: Visual Guidelines
-        path: 'https://elegant-poitras-87214a.netlify.com/page/visual-guidelines'
-      - label: Governance
-        path: /page/about-governance/
-      - label: Connecting with the Decanter Community
-        path: /page/about-contributing-how-to-communicate/
-    label: Contributing to Decanter
-    path: /page/about-contributing-what-can-i-contribute/
