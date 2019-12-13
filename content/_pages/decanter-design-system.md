@@ -10,7 +10,6 @@ If you are still interested in collaborating on the Decanter Design System, plea
 
 ## Our design backlog 
 
-We maintain a backlog in Figma
-<a href:"https://www.figma.com/file/Kmd4utmJFPRMVeCFEEBQhLtx/Decanter-Design-System?node-id=3814%3A13" class="su-link--action"</a>See our backlog
+We maintain a backlog in our Figma documentation. <a href="https://www.figma.com/file/Kmd4utmJFPRMVeCFEEBQhLtx/Decanter-Design-System?node-id=3814%3A13" class="su-link su-link--action">See our backlog</a>
 
 If you are in need of one of these components faster than others, or don't see a component that you need please contact [Kerri Augenstein](https://stanford.rimeto.io/search/kerri%20augenstein?tab=all) at Stanford Web Services.
