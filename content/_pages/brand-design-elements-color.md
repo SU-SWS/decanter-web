@@ -244,7 +244,7 @@ Although our primary palette should drive most materials, in certain instances o
 ### Color Maps
 A SCSS map <code>$su-core-colors</code> is available for core Decanter colors.
 
-   ```bash
+   ```scss
     $su-core-colors: (
       brand:                        $su-color-cardinal-red,
       brand--bright:                $su-color-bright-red,
