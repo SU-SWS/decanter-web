@@ -12,12 +12,12 @@ Our primary palette consists of Cardinal Red, White, Black and Cool Grey. Our de
     <div class="color">
         <div class="inverse" style="background-color: #8c1515;">
             <h3>Cardinal Red</h3>
-            <p>#8c1515</p><button class="copy-button">copy</button>
-            <p>$su-color-cardinal-red</p><button class="copy-button">copy</button>
+            <p>#8c1515</p>
+            <p>$su-color-cardinal-red</p>
         </div>
         <div class="variant inverse" style="background-color: #b8434c;">
             <p>#b8434c</p>
-            <p>$su-color-cardinal-red-tint</p>
+            <p>Coming soon</p>
         </div>
     </div>
     <div class="color">
@@ -35,7 +35,7 @@ Our primary palette consists of Cardinal Red, White, Black and Cool Grey. Our de
         </div>
         <div class="variant inverse" style="background-color: #373637;">
             <p>#373637</p>
-            <p>$su-color-black-tint</p>
+            <p>Coming soon</p>
         </div>
     </div>
     <div class="color">
@@ -46,15 +46,15 @@ Our primary palette consists of Cardinal Red, White, Black and Cool Grey. Our de
         </div>
         <div class="variant inverse" style="background-color: rgba(77,79,83,0.75);">
             <p>#a09993</p>
-            <p>$su-color-cool-grey-75</p>
+            <p>Coming soon</p>
         </div>
         <div class="variant" style="background-color: rgba(77,79,83,0.5);">
             <p>#a09993</p>
-            <p>$su-color-cool-grey-50</p>
+            <p>Coming soon</p>
         </div>
         <div class="variant" style="background-color: rgba(77,79,83,0.25);">
             <p>#a09993</p>
-            <p>$su-color-cool-grey-25</p>
+            <p>Coming soon</p>
         </div>
     </div>
 </section>
@@ -70,7 +70,7 @@ The secondary color set provides a broader range of tonal expression to the four
         </div>
         <div class="variant inverse" style="background-color: #772A40;">
             <p>#772A40</p>
-            <p>$su-color-dark-red-tint</p>
+            <p>Coming soon</p>
         </div>
     </div>
     <div class="color" style="background-color: #b1040e">
@@ -81,7 +81,7 @@ The secondary color set provides a broader range of tonal expression to the four
         </div>
         <div class="variant inverse" style="background-color: #e64a53;">
             <p>#e64a53</p>
-            <p>$su-color-bright-red-tint</p>
+            <p>Coming soon</p>
         </div>        
     </div>
     <div class="color">
@@ -91,16 +91,16 @@ The secondary color set provides a broader range of tonal expression to the four
             <p>$su-color-cloud</p>
         </div>
         <div class="variant" style="background-color: #e3ded4;">
-            <p>#a09993</p>
-            <p>$su-color-cloud-75</p>
+            <p>#e3ded4</p>
+            <p>Coming soon</p>
         </div>
         <div class="variant" style="background-color: rgba(218,215,203,0.5);">
-            <p>#a09993</p>
-            <p>$su-color-cloud-50</p>
+            <p>rgba(218,215,203,0.5)</p>
+            <p>Coming soon</p>
         </div>
         <div class="variant" style="background-color: rgba(218,215,203,0.25);">
-            <p>#a09993</p>
-            <p>$su-color-cloud-25</p>
+            <p>rgba(218,215,203,0.25)</p>
+            <p>Coming soon</p>
         </div>        
     </div>
     <div class="color">
@@ -111,15 +111,15 @@ The secondary color set provides a broader range of tonal expression to the four
         </div>
         <div class="variant" style="background-color: #cac6bf;">
             <p>#cac6bf</p>
-            <p>$su-color-driftwood-75</p>
+            <p>Coming soon</p>
         </div>
         <div class="variant" style="background-color: rgba(182,177,169,0.5);">
-            <p>#a09993</p>
-            <p>$su-color-cool-grey-50</p>
+            <p>rgba(182,177,169,0.5)</p>
+            <p>Coming soon</p>
         </div>
         <div class="variant" style="background-color: rgba(182,177,169,0.25);">
-            <p>#a09993</p>
-            <p>$su-color-cool-grey-25</p>
+            <p>rgba(182,177,169,0.25)</p>
+            <p>Coming soon</p>
         </div>           
     </div>
     <div class="color">
@@ -130,15 +130,15 @@ The secondary color set provides a broader range of tonal expression to the four
         </div>
         <div class="variant" style="background-color: #a69f99;">
             <p>#a69f99</p>
-            <p>$su-color-stone-75</p>
+            <p>Coming soon</p>
         </div>
         <div class="variant" style="background-color: rgba(146,139,129,0.5);">
-            <p>#a09993</p>
-            <p>$su-color-stone-50</p>
+            <p>rgba(146,139,129,0.5)</p>
+            <p>Coming soon</p>
         </div>
         <div class="variant" style="background-color: rgba(146,139,129,0.25);">
-            <p>#a09993</p>
-            <p>$su-color-stone-25</p>
+            <p>rgba(146,139,129,0.25)</p>
+            <p>Coming soon</p>
         </div>           
     </div>    
 </section>
@@ -149,7 +149,7 @@ Although our primary palette should drive most materials, in certain instances o
     <div class="color">
         <div class="variant inverse" style="background-color: #014240;">
             <p>#014240</p>
-            <p>$su-color-palo-alto-shade</p>
+            <p>Coming soon</p>
         </div>
         <div class="inverse" style="background-color: #175e54">
             <h3>Palo Alto</h3>
@@ -158,13 +158,13 @@ Although our primary palette should drive most materials, in certain instances o
         </div>
         <div class="variant inverse" style="background-color: #2d716f;">
             <p>#2d716f</p>
-            <p>$su-color-palo-alto-tint</p>
+            <p>Coming soon</p>
         </div>      
     </div>  
     <div class="color">
         <div class="variant inverse" style="background-color: #350d36;">
             <p>#350d36</p>
-            <p>$su-color-purple-shade</p>
+            <p>Coming soon</p>
         </div>
         <div class="inverse" style="background-color: #53284f">
             <h3>Purple</h3>
@@ -173,13 +173,13 @@ Although our primary palette should drive most materials, in certain instances o
         </div>
         <div class="variant inverse" style="background-color: #613863;">
             <p>#613863</p>
-            <p>$su-color-purple-tint</p>
+            <p>Coming soon</p>
         </div>      
     </div>  
     <div class="color">
         <div class="variant inverse" style="background-color: #006b81;">
             <p>#006b81</p>
-            <p>$su-color-lagunita-shade</p>
+            <p>Coming soon</p>
         </div>
         <div class="inverse" style="background-color: #007c92">
             <h3>Lagunita</h3>
@@ -188,13 +188,13 @@ Although our primary palette should drive most materials, in certain instances o
         </div>
         <div class="variant inverse" style="background-color: #009ab4;">
             <p>#009ab4</p>
-            <p>$su-color-lagunita-tint</p>
+            <p>Coming soon</p>
         </div>      
     </div>  
     <div class="color">
         <div class="variant inverse" style="background-color: #d48029;">
             <p>#d48029</p>
-            <p>$su-color-poppy-shade</p>
+            <p>Coming soon</p>
         </div>      
         <div style="background-color: #e98300">
             <h3>Poppy</h3>
@@ -203,11 +203,39 @@ Although our primary palette should drive most materials, in certain instances o
         </div>
         <div class="variant" style="background-color: #f9a44a;">
             <p>#f9a44a</p>
-            <p>$su-color-poppy-tint</p>
+            <p>Coming soon</p>
         </div>
     </div>              
 </section>
 
+## Web-Only Colors
+
+<section class="color-palette">
+    <div class="color">
+        <div class="inverse" style="background-color: #00548f;">
+            <h3>Blue</h3>
+            <p>#00548f</p>
+            <p>$su-color-blue</p><br>
+            <p>Used for links over light backgrounds</p>
+        </div>
+    </div>
+    <div class="color">
+        <div class="inverse" style="background-color: #006cb8;">
+            <h3>Bright Blue</h3>
+            <p>#006cb8</p>
+            <p>$su-color-bright-blud</p><br>
+            <p>Used for links hover state over light backgrounds</p>
+        </div>
+    </div>
+    <div class="color">
+        <div class="inverse" style="background-color: #ec0513">
+            <h3>Vivid Red</h3>
+            <p>#ec0513</p>
+            <p>$su-color-vivid-red</p><br>
+            <p>Used for accent over dark backgrounds</p>
+        </div>
+    </div>
+</section>
 
 ## Color Related Tools
 

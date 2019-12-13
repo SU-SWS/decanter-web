@@ -105,3 +105,154 @@ Apply this font by using the <code>@handwriting</code> SCSS mixin, or by adding 
 ### Noto Sans Devanagari (Sanskrit) Subset
 
 Noto Sans should only be used when Sanskrit font support is needed.
+
+## Typography Styles
+
+Default typography styling for base HTML typography elements, including paragraphs and headings. Also includes special type treatment classes such as splash font and lead font.
+
+### Paragraph Font
+Default body paragraph font uses <strong>Source Sans Pro</strong>. Font size is <strong>19px</strong> for the <code>2xl</code> breakpoint, <strong>18px</strong> for <code>md</code>, <code>lg</code> and <code>xl</code> breakpoints and <strong>16px</strong> for <code>xs</code> and <code>sm</code> breakpoints.
+
+<section class="typography">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum consectetur mi, non accumsan sapien porttitor in. Cras dapibus non mauris eu lacinia. Vestibulum congue, nisl a hendrerit egestas, erat eros vulputate sem, sit amet ullamcorper ligula magna sed est. Donec leo orci, laoreet id faucibus vitae, rhoncus sit amet diam.</p>
+</section>
+
+### Splash Font
+Extra large display font style for hero area.
+
+<section class="typography">
+<p class="su-font-splash">Lorem ipsum dolor sit amet. Nullam vestibulum consectetur mi.</p>
+</section>
+
+#### How to Use
+Apply this font style by using the <code>@font-splash</code> SCSS mixin, or by adding the class name <code>.su-font-splash</code> to your element.
+
+### Display Type A
+Display font style (also used for default Decanter <code>h1</code> headings). Could be applied to other elements.
+
+<section class="typography">
+<p class="su-type-a">Lorem ipsum dolor sit amet. Nullam vestibulum consectetur mi.</p>
+</section>
+
+#### How to Use
+Apply this font style by using the <code>@type-a</code> and <code>@types</code> SCSS mixins together, or by adding the class name <code>.su-type-a</code> to your element. If you import the Decanter core styles in your project, default <code>h1</code> headings already takes on this style.
+
+### Display Type B
+Display font style (also used for default Decanter <code>h2</code> headings). Could be applied to other elements.
+
+<section class="typography">
+<p class="su-type-b">Lorem ipsum dolor sit amet. Nullam vestibulum consectetur mi.</p>
+</section>
+
+#### How to Use
+Apply this font style by using the <code>@type-b</code> and <code>@types</code> SCSS mixins together, or by adding the class name <code>.su-type-b</code> to your element. If you import the Decanter core styles in your project, default <code>h2</code> headings already takes on this style.
+
+### Display Type C
+Display font style (also used for default Decanter <code>h3</code> headings). Could be applied to other elements.
+
+<section class="typography">
+<p class="su-type-c">Lorem ipsum dolor sit amet. Nullam vestibulum consectetur mi.</p>
+</section>
+
+#### How to Use
+Apply this font style by using the <code>@type-c</code> and <code>@types</code> SCSS mixins together, or by adding the class name <code>.su-type-c</code> to your element. If you import the Decanter core styles in your project, default <code>h3</code> headings already takes on this style.
+
+### Display Type D
+Display font style (also used for default Decanter <code>h4</code> headings). Could be applied to other elements.
+
+<section class="typography">
+<p class="su-type-d">Lorem ipsum dolor sit amet. Nullam vestibulum consectetur mi.</p>
+</section>
+
+#### How to Use
+Apply this font style by using the <code>@type-d</code> and <code>@types</code> SCSS mixins together, or by adding the class name <code>.su-type-d</code> to your element. If you import the Decanter core styles in your project, default <code>h4</code> headings already takes on this style.
+
+### Display Type E
+Display font style (also used for default Decanter <code>h5</code> headings). Could be applied to other elements.
+
+<section class="typography">
+<p class="su-type-e">Lorem ipsum dolor sit amet. Nullam vestibulum consectetur mi.</p>
+</section>
+
+#### How to Use
+Apply this font style by using the <code>@type-e</code> and <code>@types</code> SCSS mixins together, or by adding the class name <code>.su-type-e</code> to your element. If you import the Decanter core styles in your project, default <code>h5</code> headings already takes on this style.
+
+### Display Type F
+Display font style (also used for default Decanter <code>h6</code> headings). Could be applied to other elements.
+
+<section class="typography">
+<p class="su-type-f">Lorem ipsum dolor sit amet. Nullam vestibulum consectetur mi.</p>
+</section>
+
+#### How to Use
+Apply this font style by using the <code>@type-f</code> and <code>@types</code> SCSS mixins together, or by adding the class name <code>.su-type-f</code> to your element. If you import the Decanter core styles in your project, default <code>h6</code> headings already takes on this style.
+
+### Subheading
+Font style used for subheadings.
+
+<section class="typography">
+<p class="su-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</section>
+
+#### How to Use
+Apply this font style by using the <code>@subheading</code> SCSS mixin, or by adding the class name <code>.su-subheading</code> to your element.
+
+### Intro Text
+Font style used for intro text/lede/teaser.
+
+<section class="typography">
+<p class="su-intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</section>
+
+#### How to Use
+Apply this font style by using the <code>@intro-text</code> SCSS mixin, or by adding the class name <code>.su-intro-text</code> to your element.
+
+### Quote Text
+Font style used for quotes.
+
+<section class="typography">
+<p class="su-quote-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</section>
+
+#### How to Use
+Apply this font style by using the <code>@quote-text</code> SCSS mixin, or by adding the class name <code>.su-quote-text</code> to your element.
+
+### Caption
+Font style used for captions for images, videos, charts, etc.
+
+<section class="typography">
+<p class="su-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</section>
+
+#### How to Use
+Apply this font style by using the <code>@caption</code> SCSS mixin, or by adding the class name <code>.su-caption</code> to your element.
+
+### Credits
+Font style used for credits for images, video, charts, etc.
+
+<section class="typography">
+<p class="su-credits">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</section>
+
+#### How to Use
+Apply this font style by using the <code>@credits</code> SCSS mixin, or by adding the class name <code>.su-credits</code> to your element.
+
+### Big Paragraph
+Font style that is slightly larger than the default body font at non-mobile breakpoints.
+
+<section class="typography">
+<p class="su-big-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</section>
+
+#### How to Use
+Apply this font style by using the <code>@big-paragraph</code> SCSS mixin, or by adding the class name <code>.su-big-paragraph</code> to your element.
+
+### Small Paragraph
+Font style that is slightly smaller than the default body font at non-mobile breakpoints.
+
+<section class="typography">
+<p class="su-small-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</section>
+
+#### How to Use
+Apply this font style by using the <code>@small-paragraph</code> SCSS mixin, or by adding the class name <code>.su-small-paragraph</code> to your element.

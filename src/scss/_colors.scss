@@ -32,7 +32,7 @@
     @include padding(0.7em);
 
     &:not(.variant){
-      height: 170px;
+      min-height: 170px;
     }
 
     > h3 {
