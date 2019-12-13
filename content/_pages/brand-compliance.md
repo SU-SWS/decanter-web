@@ -26,7 +26,8 @@ The inception for the brand bar came out of a usability need to provide a "home"
 
 This bar—containing the Stanford logo—anchors to the top of your website, above your local header. It serves visually as the main Stanford University mark, and functionally, it links back to stanford.edu. Because of the enormity of Stanford University and the thousands of web properties across the organization, by providing a consistent global "bar" at the top of sites with the ability for users to "go home" makes our ecosystem of sites feel deliberate and understandable to users. 
 
-<p><a href="https://www.nngroup.com/articles/killing-global-navigation-one-trend-avoid/" class="su-link su-link--action">Explore additional research </a>from the Nielson Norman Group</p>
+<i>From the Nielson Norman Group:</i>
+<a href="https://www.nngroup.com/articles/killing-global-navigation-one-trend-avoid/" class="su-link su-link--action">Explore additional research </a></p>
 
 #### Local header overview
 
@@ -52,9 +53,10 @@ The Stanford global footer is recommended to be placed at the bottom of all offi
 
 Our brand team at University Communications has documented all of the tools, best practices, and guidance on the Brand Guidelines website. 
 
-<p><a href="https:/identity.stanford.edu/">Learn more about Stanford brand guidelines</a></p>
+<a href="https:/www.identity.stanford.edu/" class="su-link su-link--action">Learn more about Stanford brand guidelines</a></p>
+
 
 ## Decanter Components
 
 Our Decanter Design System is fully outfitted with your brand needs.
-<p><a href="https:/page/brand-design-elements/">Explore our Brand + Design Elements section</a></p>
+<p><a href="https:/page/brand-design-elements/" class="su-link su-link--action">Explore our Brand + Design Elements section</a></p>
