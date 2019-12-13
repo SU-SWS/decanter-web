@@ -88,7 +88,13 @@ ComponentPage.getInitialProps = async function(context) {
     return await data;
   }
 
-  data.markup = await import(`../../content/_kss/markup/${id}.html`);
+  var render;
+  try {
+    render = require(`../../content/_kss/markup/${id}.html`);
+  }
+  catch(err) {
+    console.log(err);
+  }
 
   // // But most of the time there is a template.
   // const twig_short = await component.markup;
