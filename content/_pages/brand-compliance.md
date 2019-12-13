@@ -2,7 +2,7 @@
 title: Brand Compliance
 date: 2019-12-11T18:02:16.854Z
 ---
-<p The collaborative work between University Communications and Stanford Web Services is key to achieving our goals in brand compliance.</p>
+<p class="su-intro-text">The collaborative work between University Communications and Stanford Web Services is key to achieving our goals in brand compliance.</p>
 
 ## Achieving brand compliance with Decanter
 
@@ -20,11 +20,13 @@ Outside of these three components, we urge website creators to adhere to typogra
 
 #### Brand bar overview
 
-The inception for the brand bar came out of a usability need to provide a "home" for all Stanford websites both visually and functionally. This bar—containing the Stanford logo—anchors to the top of your website, above your local header. It serves visually as the main Stanford University mark, and functionally, it links back to stanford.edu. Because of the enormity of Stanford University and the thousands of web properties across the organization, by providing a consistent global "bar" at the top of sites with the ability for users to "go home" makes our ecosystem of sites feel deliberate and understandable to users. 
+The inception for the brand bar came out of a usability need to provide a "home" for all Stanford websites both visually and functionally. 
 
 ![The four brand bar options for website creators across Stanford. ](/img/brand-bar-options.png "Four brand bar options")
 
-Some additional [research on approaches to global navigation](https://www.nngroup.com/articles/killing-global-navigation-one-trend-avoid/) here, from the Nielson Norman Group. 
+This bar—containing the Stanford logo—anchors to the top of your website, above your local header. It serves visually as the main Stanford University mark, and functionally, it links back to stanford.edu. Because of the enormity of Stanford University and the thousands of web properties across the organization, by providing a consistent global "bar" at the top of sites with the ability for users to "go home" makes our ecosystem of sites feel deliberate and understandable to users. 
+
+Explore additional [research on approaches to global navigation](https://www.nngroup.com/articles/killing-global-navigation-one-trend-avoid/), from the Nielson Norman Group. 
 
 #### Local header overview
 
