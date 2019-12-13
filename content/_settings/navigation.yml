@@ -57,7 +57,7 @@ nav_items:
     label: Contribute to Decanter
     path: /page/about-contributing-what-can-i-contribute/
   - children:
-      - label: Brand
+      - label: Identity
         path: /page/brand-design-elements-brand/
       - label: Typography
         path: /page/brand-design-elements-typography/
@@ -65,7 +65,7 @@ nav_items:
         path: /page/brand-design-elements-color/
       - label: Icons
         path: /page/brand-design-elements-icons/
-    label: Brand + Design Elements
+    label: Identity + Design Elements
     path: /page/brand-design-elements/
   - children:
       - label: Grid System
