@@ -6,7 +6,7 @@ date: 2019-11-28T14:11:13.000Z
 
 The resources below should help you get started using Decanter in your project.
 
-## [Getting Started](/page/use-decanter-as-a-developer-installation/)
+## [Installation](/page/use-decanter-as-a-developer-installation/)
 Learn more about requirements and get Decanter up and running on your local environment.
 
 ## [Build Tools](/page/use-decanter-as-a-developer-build-tools/)
