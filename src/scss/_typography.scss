@@ -3,8 +3,7 @@
 .typography {
   @include modular-spacing('padding', 0);
   @include margin(null null 3rem);
-  @include box-shadow($depth: paper);
-  border: 1px solid #ccc;
+  @include box-shadow(paper, '1px solid #E3E3E3');
 
   > *:last-child {
     @include margin(null null 0);
