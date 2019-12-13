@@ -26,7 +26,7 @@ The inception for the brand bar came out of a usability need to provide a "home"
 
 This bar—containing the Stanford logo—anchors to the top of your website, above your local header. It serves visually as the main Stanford University mark, and functionally, it links back to stanford.edu. Because of the enormity of Stanford University and the thousands of web properties across the organization, by providing a consistent global "bar" at the top of sites with the ability for users to "go home" makes our ecosystem of sites feel deliberate and understandable to users. 
 
-Explore additional [research on approaches to global navigation](https://www.nngroup.com/articles/killing-global-navigation-one-trend-avoid/), from the Nielson Norman Group. 
+<p><a href="https://www.nngroup.com/articles/killing-global-navigation-one-trend-avoid/" class="su-link su-link--action">Explore additional research </a>from the Nielson Norman Group</p>
 
 #### Local header overview
 
@@ -40,7 +40,7 @@ The **local search**—though becoming less important to many users because of t
 
 Your **main navigation** is one of the most critical parts of your website. That top level of navigation serves as the main buckets of entry for your users—regardless of how they enter your site, sideways or directly from the homepage. It is critical that this navigation—which collapses to a mobile navigation for smaller devices—and your in-page left sidebar of secondary navigation on interior pages is both usable and accessible. Our developers have fully tested and vetted the accessibility of this feature. [Learn more about achieving accessibility](https://elegant-poitras-87214a.netlify.com/page/page-about-why-decanter-accessibility/). Additionally, our user experience team has gone to great lengths to test the usability of the navigation. Both from conceptual questions around whether users are "likely" to hit certain pages, and from confirmation that users can use the tool as we have built it. 
 
-[Explore our documentation on navigation testing here, on our shared Decanter Usability Drive folder](https://drive.google.com/drive/folders/15Jr7zIWphRb92VAP2_gOenZDY2HJ_HiQ). 
+[Explore our navigation testing](https://drive.google.com/drive/folders/15Jr7zIWphRb92VAP2_gOenZDY2HJ_HiQ) documentation on our shared Google Drive folder.
 
 #### Global Footer overview
 
@@ -52,9 +52,9 @@ The Stanford global footer is recommended to be placed at the bottom of all offi
 
 Our brand team at University Communications has documented all of the tools, best practices, and guidance on the Brand Guidelines website. 
 
-[Learn more about Stanford brand guidelines](https://identity.stanford.edu/)
+<p><a href="https:/identity.stanford.edu/">Learn more about Stanford brand guidelines</a></p>
 
 ## Decanter Components
 
-Our Decanter Design System is fully outfitted with your brand needs. \
-[Explore our Brand + Design Elements section](https://elegant-poitras-87214a.netlify.com/page/brand-design-elements/)
+Our Decanter Design System is fully outfitted with your brand needs.
+<p><a href="https:/page/brand-design-elements/">Explore our Brand + Design Elements section</a></p>
