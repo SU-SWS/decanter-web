@@ -73,3 +73,14 @@ The following steps need to be performed once to get your local copy of Decanter
 ### Starting Your Environment
 
 * Decanter comes with a built-in development server. After installing the required packages with npm you should be ready to go. Simply run `npm run dev` and that command will fire up a server and a watch task for you. Your default browser should open up at `localhost:9000` and with the watch task running you should be able to start editing and saving files to have them compile. 
+
+### Development
+
+Development work is done on a feature branch, which is then peer reviewed and merged into master.
+
+* `cd decanter`
+* `npm run build` to confirm it is building
+* `npm run dev` to start the server and watch task
+* `git checkout master` to ensure that you have the most current branch
+* `git checkout -b [new-branch-name]` to create a new branch on which to work
+* After you commit your final changes to the repository, create a pull request in Github for review.
