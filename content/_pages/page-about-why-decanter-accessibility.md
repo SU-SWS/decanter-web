@@ -4,7 +4,7 @@ date: 2019-11-28T14:11:13.000Z
 ---
 https://github.com/SU-SWS/decanter/issues/571
 
-This project conforms to level AA WCAG 2.0 standards as required by the university's accessibility policy. For more information on the policy please visit: https://ucomm.stanford.edu/policies/accessibility-policy.html.
+<p class="su-intro-text">This project conforms to level AA WCAG 2.0 standards as required by the university's accessibility policy. For more information on the policy please visit: https://ucomm.stanford.edu/policies/accessibility-policy.html.</p>
 
 If you have found an accessibility error or have a suggestion please create a ticket.
 
@@ -19,6 +19,7 @@ If you have found an accessibility error or have a suggestion please create a ti
 * We added a wrapper `<div>` with `role="search"` outside the `<form>` element instead of adding `role="search"` directly to the `<form>` element. The reason is that `<form>` elements explicitly have `role="form"`. If we add `role="search"` to it, we would be changing its default semantic.
 
 https://github.com/SU-SWS/decanter/issues/563
+</br>
 
 ## Building an Accessible Site Navigation
 
