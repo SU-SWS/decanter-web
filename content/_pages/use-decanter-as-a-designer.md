@@ -6,7 +6,7 @@ READY FOR REVIEW
 
 ## Learn about Decanter Design System
 
-<p class="su-intro-text">Decanter includes both the Decanter Design System in Figma, and the implementation of that system in as a frontend framework (whose code is hosted on this site). The Decanter Design System in Figma has been implemented for two purposes.</p>
+<p class="su-intro-text">Decanter includes both the Decanter Design System in Figma, and the implementation of that system in as a frontend framework (<i>whose code is hosted on this site</i>). The Decanter Design System in Figma has been implemented for two purposes.</p>
 
 * To articulate new ideas and see them through the collaborative ideation process where requirements, functionality, UX, and UI are defined. 
 * It’s second purpose is to become a rapid prototyping library for our communication and design teams across the University, where efficiencies can be made by using elements we all want to be sharing anyway, so we can spend our time where we want to—on other work, or on new and innovative ideas, instead of duplicative work. 
@@ -19,7 +19,7 @@ We currently build the living Decanter Design System in Figma. [Figma](https://w
 
 **Libraries**: type, color, and master components can be created as shared, master libraries. There is no limit to the number of libraries a team can make. You can also use elements in a library as a starting place, detach them from their master, and tweak as needed for your own projects (and further turn those new components into libraries in themselves). We've designed Decanter to be a starting place or fully functional design system.
 
-<p class="su-alert">_**Please note:** Figma does not currently have the single sign on functionality in place for the educational context that would allow us to move forward with an organizational license. We are continuing to work with them to add this functionality, but have no estimated time of delivery._</p> 
+<p class="su-alert">Please note:</strong> Figma does not currently have the single sign on functionality in place for the educational context that would allow us to move forward with an organizational license. We are continuing to work with them to add this functionality, but have no estimated time of delivery._</p> 
 
 ### Community Contribution
 
@@ -29,7 +29,7 @@ Having a shared central source for all Stanford digital design provides us the o
 
 ## Using Figma at Stanford
 
-<p class="su-alert">_**Please note:** Figma does not currently have the single sign on functionality in place for the educational context that would allow us to move forward with an organizational license. We are continuing to work with them to add this functionality, but have no estimated time of delivery._</p>
+<p class="su-alert"><strong>Please note:</strong> Figma does not currently have the single sign on functionality in place for the educational context that would allow us to move forward with an organizational license. We are continuing to work with them to add this functionality, but have no estimated time of delivery._</p>
 
 At this time, if you would like to use Figma, your team will need to sign up to use Figma. Luckily, Figma is free to use for those in education. Unfortunately, this does mean that the Decanter Design System is not ready to be used as a shared library, but can be copied and pasted to _your_ team Figma at current state. (Clearly there are tradeoffs here, as copying a "state" of the library may cause future manual updates when the library syncing does become available.)
 
