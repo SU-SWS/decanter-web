@@ -29,7 +29,7 @@ Having a shared central source for all Stanford digital design provides us the o
 
 ## Using Figma at Stanford
 
-<p class="su-alert"><strong>Please note:</strong> Figma does not currently have the single sign on functionality in place for the educational context that would allow us to move forward with an organizational license. We are continuing to work with them to add this functionality, but have no estimated time of delivery._</p>
+<p class="su-alert"><strong>Please note:</strong> Figma does not currently have the single sign on functionality in place for the educational context that would allow us to move forward with an organizational license. We are continuing to work with them to add this functionality, but have no estimated time of delivery.</p>
 
 At this time, if you would like to use Figma, your team will need to sign up to use Figma. Luckily, Figma is free to use for those in education. Unfortunately, this does mean that the Decanter Design System is not ready to be used as a shared library, but can be copied and pasted to _your_ team Figma at current state. (Clearly there are tradeoffs here, as copying a "state" of the library may cause future manual updates when the library syncing does become available.)
 
