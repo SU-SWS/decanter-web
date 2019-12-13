@@ -29,7 +29,7 @@ Type, color, and master components can be created as shared, master libraries. T
 
 At this time, if you would like to use Figma, your team will need to sign up to use Figma. Luckily, Figma is free to use for those in education. Unfortunately, this does mean that the Decanter Design System is not ready to be used as a shared library, but can be copied and pasted to _your_ team Figma at current state. (Clearly there are tradeoffs here, as copying a "state" of the library may cause future manual updates when the library syncing does become available.)
 
-Please contact [Kerri Augenstein](https://stanford.rimeto.io/search/kerri%20augenstein?tab=all) at Stanford Web Services for more information.
+Please contact us on Slack if you are interested in collaborating and contributing to the Stanford Design System.
 
 ## Community Contribution
 
