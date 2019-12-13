@@ -2,7 +2,8 @@
 title: Projects Using Decanter
 date: 2019-11-28T14:11:13.000Z
 ---
-https://github.com/SU-SWS/decanter/issues/569
+READY FOR REVIEW
+
 <h2>Examples</h2>
 <section class="section section--components fullwidth wide-content padding-vertical-md">
   <div class="su-card su-card--horizontal su-card--minimal">
@@ -12,7 +13,7 @@ https://github.com/SU-SWS/decanter/issues/569
       <p>We used Decanter when creating this website.</p>
       <a href="/" class="su-link su-link--action">Visit the Decanter Homepage</a>
     </div>
-    <img src="https://decanter.stanford.edu/kss-assets/ui-components.png" alt="PLACEHOLDER" width=300px>
+    <img src="blob:https://elegant-poitras-87214a.netlify.com/a32810d0-98de-4539-9937-68ed13429495" alt="Decanter Website Screenshot" title="" data-reactroot="" width=600px>
   </div>
 </section>
 <section class="section section--components fullwidth wide-content padding-vertical-md">
@@ -22,7 +23,7 @@ https://github.com/SU-SWS/decanter/issues/569
     <p>The theme for the new Stanford Sites Drupal 8 platform uses Decanter.</p>
     <a href="https://uit.stanford.edu/sws/drupal-projects" class="su-link su-link--action">Learn more about Drupal 8 at Stanford</a>
   </div>
-  <img src="https://decanter.stanford.edu/kss-assets/ui-components.png" alt="PLACEHOLDER" width=300px>
+  <img src="blob:https://elegant-poitras-87214a.netlify.com/c3dd215a-1451-491a-b695-7cd460810c65" alt="Stanford Basic Drupal 8 Theme Screenshot" title="" data-reactroot="" width=600>
 </div>
 </section>
 <section class="section section--components fullwidth wide-content padding-vertical-md">
@@ -34,7 +35,7 @@ https://github.com/SU-SWS/decanter/issues/569
     <p>The Stanford Redwood theme created by University Communications uses Decanter.</p>
     <a href="https://identity.stanford.edu" class="su-link su-link--action">Learn more about Stanford Identity for the Web</a>
   </div>
-  <img src="https://decanter.stanford.edu/kss-assets/ui-components.png" alt="PLACEHOLDER" width=300px>
+ <img src="blob:https://elegant-poitras-87214a.netlify.com/4a26b003-7f33-48b5-a4c4-6d8dbe908199" alt="Screenshot of Stanford Redwood Theme" title="" data-reactroot="" width=600>
 </div>
 </section>
 <section class="section section--components fullwidth wide-content padding-vertical-md">
@@ -45,7 +46,7 @@ https://github.com/SU-SWS/decanter/issues/569
     <p>The Stanford School of Earth used Decanter to jumpstart their early development efforts.</p>
     <a href="https://earth.stanford.edu" class="su-link su-link--action">Visit the School of Earth Website</a>
   </div>
-  <img src="https://decanter.stanford.edu/kss-assets/ui-components.png" alt="PLACEHOLDER" width=300px>
+  <img src="blob:https://elegant-poitras-87214a.netlify.com/4fd6326d-06b7-459d-be15-881fa3ceffdc" alt="School of Earth Website Screensot" title="" data-reactroot="" width=600>
 </div>
 </section>
 <section class="section section--components fullwidth wide-content padding-vertical-md">
@@ -56,7 +57,7 @@ https://github.com/SU-SWS/decanter/issues/569
     <p>The Stanford homepage uses an early version of Decanter.</p>
     <a href="https://www.stanford.edu" class="su-link su-link--action">Visit the Stanford Homepage</a>
   </div>
-  <img src="https://decanter.stanford.edu/kss-assets/ui-components.png" alt="PLACEHOLDER" width=300px>
+ <img src="blob:https://elegant-poitras-87214a.netlify.com/2cd02993-06e3-4203-ab1f-c08d384c495e" alt="" title="" data-reactroot="" width=600>
 </div>
 </section>
 <h2>Share your Project</h2>

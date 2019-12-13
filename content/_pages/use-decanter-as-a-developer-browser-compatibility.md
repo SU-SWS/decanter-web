@@ -8,13 +8,13 @@ https://github.com/SU-SWS/decanter/issues/576
 
 Decanter will officially support the latest version and one back of the following browsers:
 
-* Edge 
-* iOS Safari 
-* OSX Safari
-* Chrome Android 
 * Chrome Desktop
+* Chrome Android 
 * FireFox Desktop
 * FireFox Android
+* OSX Safari
+* iOS Safari
+* Edge 
 
 Limited Support For:
 

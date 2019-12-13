@@ -2,17 +2,15 @@
 title: Get Started Quickly
 date: 2019-12-11T18:03:24.367Z
 ---
-## How does Decanter make your development faster?
-
-lorem ipsum...
+IN PROGRESS
 
 ## Developers
 
-Lorem ipsum...
+Coming soon!
 
 ## Designers
 
-_Note: Figma does not currently have the single sign on functionality in place for the educational context that would allow us to move forward with an organizational license. We are continuing to work with them to add this functionality, but have no estimated time of delivery._
+<p class="su-alert"><strong>Please note:</strong> Figma does not currently have the single sign on functionality in place for the educational context that would allow us to move forward with an organizational license. We are continuing to work with them to add this functionality, but have no estimated time of delivery.</p> 
 
 Through our Decanter Design System in Figma, you will be able to start with a preexisting library of components with built in type and color styles. Grids, modular spacing, and responsive design have also been fully implemented in this design system. Take all of the foundational objects that are useful to you and unsync from an object's master component to generate a starting point for modifying your cards, banners, buttons, etc. It's a great resource to use directly or to modify to fit your project needs. 
 

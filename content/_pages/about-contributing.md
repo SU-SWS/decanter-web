@@ -6,10 +6,7 @@ READY FOR REVIEW
 
 # Contributing to Decanter
 
-This project is meant to be open source and freely shared. If you find something
-broken, confusing, or wrong, please first check the issue queue. For new issues
-or feature requests, those that post with patches or pull requests and are
-respectful will be handled first.
+<p class="su-intro-text">This project is meant to be open source and freely shared. If you find something broken, confusing, or wrong, please first check the issue queue. For new issues or feature requests, those that post with patches or pull requests and are respectful will be handled first.</p>
 
 ## Using the issue tracker
 
@@ -18,7 +15,7 @@ The issue tracker is the preferred channel for [bug reports](#bugs),
 requests](#pull-requests), but please respect the following restrictions:
 
 * Please **do not** use the issue tracker for personal support requests.
-* Please **do** assign a maintainer for review
+* Please **do** assign a maintainer for review.
 
 ## Bug reports
 
@@ -41,7 +38,7 @@ your environment? What steps will reproduce the issue? What browser(s) and OS
 experience the problem? What would you expect to be the outcome? All these
 details will help people to fix any potential bugs.
 
-Example:
+### Example:
 
 > Short and descriptive example bug report title
 >
@@ -58,6 +55,7 @@ Example:
 > reported. This might include the lines of code that you have identified as
 > causing the bug, and potential solutions (and your opinions on their
 > merits).
+</br>
 
 ## Feature requests
 
@@ -185,7 +183,7 @@ Supports browsers:
 4. Create an annotated tag for the version: `git tag -m "v0.0.0" 0.0.0`.
 5. Push the changes and tags to GitHub: `git push --tags origin master`
 
-### Semver strategy
+### Server strategy
 
 [Semver](http://semver.org/) is a widely accepted method for deciding how
 version numbers are incremented in a project. Versions are written as
