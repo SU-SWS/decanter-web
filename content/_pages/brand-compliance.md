@@ -2,9 +2,11 @@
 title: Brand Compliance
 date: 2019-12-11T18:02:16.854Z
 ---
+<p The collaborative work between University Communications and Stanford Web Services is key to achieving our goals in brand compliance.</p>
+
 ## Achieving brand compliance with Decanter
 
-The collaborative work between University Communications and Stanford Web Services is key to achieving our goals in brand compliance. Since the inception of web platforms for Stanford—in html, and on Drupal and Wordpress—our teams have been working to solve these challenges for the University with a primary goal: make it easy for websites to be brand compliant and make the treatment of the brand consistent in a select number of areas. 
+Since the inception of web platforms for Stanford—in html, and on Drupal and Wordpress—our teams have been working to solve these challenges for the University with a primary goal: make it easy for websites to be brand compliant and make the treatment of the brand consistent in a select number of areas. 
 
 ### Tools for brand compliance
 
