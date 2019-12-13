@@ -97,7 +97,7 @@ ComponentPage.getInitialProps = async function(context) {
     namespaces: { 'decanter': path.join(decanter_src, "templates/") }
   });
 
-  data.markup = await twigg.renderAsync(schema);
+  data.markup = await twigg.render(schema);
   data.markup = prettifyHtml(await data.markup);
 
   data.variants = [];
