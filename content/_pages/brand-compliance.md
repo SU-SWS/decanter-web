@@ -21,8 +21,9 @@ Outside of these three components, we urge website creators to adhere to typogra
 #### Brand bar overview
 
 The inception for the brand bar came out of a usability need to provide a "home" for all Stanford websites both visually and functionally. 
-
+</br>
 ![The four brand bar options for website creators across Stanford. ](/img/brand-bar-options.png "Four brand bar options")
+</br>
 
 This bar—containing the Stanford logo—anchors to the top of your website, above your local header. It serves visually as the main Stanford University mark, and functionally, it links back to stanford.edu. Because of the enormity of Stanford University and the thousands of web properties across the organization, by providing a consistent global "bar" at the top of sites with the ability for users to "go home" makes our ecosystem of sites feel deliberate and understandable to users. 
 
@@ -33,7 +34,9 @@ This bar—containing the Stanford logo—anchors to the top of your website, ab
 
 The local header is a complex component, including some of the most critical parts of your website—your logo, Stanford or not, your local site search, and your main navigation.
 
+</br>
 ![Header example including the Stanford | Biology logo lockup in the far left, the search in the top far right, and the main navigation in the bottom right.](/img/header-right_02.png "Stanford branded header")
+</br>
 
 Our Decanter team has gone to great lengths to create **logos** for your websites that are compliant with identity guidelines depending on how your organization is situated in the organization. 
 
@@ -47,7 +50,9 @@ Your **main navigation** is one of the most critical parts of your website. That
 
 The Stanford global footer is recommended to be placed at the bottom of all official university websites. It is designed to enhance sites with consistent Stanford branding and navigation, much like the brand bar and local header. 
 
+</br>
 ![The Stanford global footer](/img/universal-footer.png "The Stanford global footer")
+</br>
 
 ### Typography, color, and more
 
