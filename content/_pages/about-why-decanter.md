@@ -16,12 +16,14 @@ Usability and accessibility are increasingly critical markers to the success of 
 
 <p><a href="/page/page-about-why-decanter-accessibility/" class="su-link su-link--action">Learn more about Accessibility practices</a></p>
 <p><a href="/page/usability/" class="su-link su-link--action">Learn more about Usability practices</a></p>
+</br>
 
 ### Brand Compliance
 
 Decanter has been developed in cooperation with University Communications to ensure that elements are in alignment with the [Stanford identity system](identity.stanford.edu). 
 
 <p><a href="/page/brand-compliance/" class="su-link su-link--action">Learn more about how Decanter has achieved brand compliance</a></p>
+</br>
 
 ### Get Started Quickly
 
@@ -33,6 +35,7 @@ Even if your project is likely to go in a very different visual direction, Decan
 * A large palette of colors exist in code as SASS variables as well, ready to be used directly from the Stanford Brand. 
 * Headers and footers (including the brand bar, local header, local footer, and global footer) in complete alignment with Stanford's recommendations on logos and fully tested navigation for usability and accessibility from desktop to mobile.
 * Simple baseline components that often make up so much of the content that is created for websites, including banners with overlay text, buttons, cards, and a family of icons ready for you to tweak and adjust to whatever extent your content needs. 
+</br>
 
 ## Use Decanter for:
 
