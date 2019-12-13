@@ -35,6 +35,8 @@ Even if your project is likely to go in a very different visual direction, Decan
 * A large palette of colors exist in code as SASS variables as well, ready to be used directly from the Stanford Brand. 
 * Headers and footers (including the brand bar, local header, local footer, and global footer) in complete alignment with Stanford's recommendations on logos and fully tested navigation for usability and accessibility from desktop to mobile.
 * Simple baseline components that often make up so much of the content that is created for websites, including banners with overlay text, buttons, cards, and a family of icons ready for you to tweak and adjust to whatever extent your content needs. 
+</p>
+
 </br>
 
 ## Use Decanter for:
