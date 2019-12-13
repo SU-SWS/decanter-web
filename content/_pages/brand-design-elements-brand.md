@@ -1,14 +1,16 @@
 ---
-title: Brand
+title: Identity
 date: 2019-11-28T14:11:13.000Z
 ---
+READY FOR REVIEW
+
 ### Tools for brand compliance
 
-<p class="su-intro-text">All websites across our University are encouraged to have three critical components that allow them to achieve their brand compliance.</p>
+All websites across our University are encouraged to have three critical components to align their sites with Stanford's Identity system:
 
-* Brand bar
-* Local header 
-* Global footer 
+* Stanford Brand bar
+* Local header (Lockup)
+* Stanford Global footer 
 
 Outside of these three components, we urge website creators to adhere to typographic recommendations and some color recommendations, but in general terms, the brand wants teams to feel free to be innovative and creative in how they interpret and express the Stanford brand. 
 
@@ -32,11 +34,10 @@ The **local search**—though becoming less important to many users because of t
 
 Your **main navigation** is one of the most critical parts of your website. That top level of navigation serves as the main buckets of entry for your users—regardless of how they enter your site, sideways or directly from the homepage. It is critical that this navigation—which collapses to a mobile navigation for smaller devices—and your in-page left sidebar of secondary navigation on interior pages is both usable and accessible. Our developers have fully tested and vetted the accessibility of this feature. [Learn more about achieving accessibility](https://elegant-poitras-87214a.netlify.com/page/page-about-why-decanter-accessibility/). Additionally, our user experience team has gone to great lengths to test the usability of the navigation. Both from conceptual questions around whether users are "likely" to hit certain pages, and from confirmation that users can use the tool as we have built it. 
 
-<p><a href="https://drive.google.com/drive/folders/15Jr7zIWphRb92VAP2_gOenZDY2HJ_HiQ" class="su-link su-link--action">Explore our documentation on navigation testing here, on our shared Decanter Usability Drive folder</a></p>
+[Explore our documentation on navigation testing here, on our shared Decanter Usability Drive folder](https://drive.google.com/drive/folders/15Jr7zIWphRb92VAP2_gOenZDY2HJ_HiQ). 
 
 #### Global Footer overview
 
 The Stanford global footer is recommended to be placed at the bottom of all official university websites. It is designed to enhance sites with consistent Stanford branding and navigation, much like the brand bar and local header. 
 
 ![The Stanford global footer](/img/universal-footer.png "The Stanford global footer")
-
