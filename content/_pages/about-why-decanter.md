@@ -29,7 +29,7 @@ Decanter has been developed in cooperation with University Communications to ens
 
 Even if your project is likely to go in a very different visual direction, Decanter provides foundational style frameworks and elements that can get you started quickly, whether it be designing layouts in Figma or implementing those designs in SASS. 
 
-**What makes it quick?**
+#### What makes it quick?
 
 * Your typography variables exist to be tweaked and modified where you want (perhaps only necessary at the display level). 
 * A large palette of colors exist in code as SASS variables as well, ready to be used directly from the Stanford Brand. 
