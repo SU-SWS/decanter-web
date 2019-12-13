@@ -29,10 +29,10 @@
   }
 
   > div {
-    @include padding(0.7em 1em);
+    @include padding(0.7em);
 
     &:not(.variant){
-      height: 170px;
+      min-height: 170px;
     }
 
     > h3 {
@@ -41,8 +41,8 @@
 
     > p {
       @include margin(null null 0);
-      font-size: 0.9em;
-
+      font-size: 1.54rem;
+      font-weight: $su-font-semi-bold;
     }
   }
 }

@@ -1,0 +1,53 @@
+@charset 'UTF-8';
+
+.typography {
+  @include modular-spacing('padding', 0);
+  @include margin(null null 3rem);
+  @include box-shadow($depth: paper);
+  border: 1px solid #ccc;
+
+  > *:last-child {
+    @include margin(null null 0);
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+.font-light {
+  font-weight: $su-font-light;
+}
+
+.font-semi-bold {
+  font-weight: $su-font-semi-bold;
+}
+
+.font-bold {
+  font-weight: $su-font-bold;
+}
+
+.font-black {
+  font-weight: $su-font-black;
+}
+
+code, pre {
+  font-family: 'Menlo', 'Consolas', 'Monaco', 'Andale Mono', monospace;
+  font-size: 0.85em;
+}
+
+p,
+li {
+  code {
+    @include padding(2px 4px);
+    color: $su-color-bright-red;
+    background-color: $su-color-fog;
+    border-radius: $su-border-radius;
+  }
+}
+
+pre .hljs,
+pre.hljs {
+  padding: 1.6em;
+  overflow-x: auto;
+}
