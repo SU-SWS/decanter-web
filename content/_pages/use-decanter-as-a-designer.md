@@ -37,4 +37,6 @@ At this time, if you would like to use Figma, your team will need to sign up to 
 
 ## Decanter Design System backlog
 
-If you are interested in understanding what our priorities are for design development in Figma, [you can find our backlog here](https://www.figma.com/file/Kmd4utmJFPRMVeCFEEBQhLtx/Decanter-Design-System?node-id=3814%3A13). If you are in need of design that you do not see included in this backlog, please let us know, by contacting [Kerri Augenstein](https://stanford.rimeto.io/search/kerri%20augenstein?tab=all) at Stanford Web Services.
+If you are interested in understanding what our priorities are for design development in Figma, [you can find our backlog here](https://www.figma.com/file/Kmd4utmJFPRMVeCFEEBQhLtx/Decanter-Design-System?node-id=3814%3A13). If you are in need of design that you do not see included in this backlog, please let us know. 
+
+Contact [Kerri Augenstein](https://stanford.rimeto.io/search/kerri%20augenstein?tab=all) at Stanford Web Services.
