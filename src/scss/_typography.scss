@@ -79,3 +79,11 @@ pre.hljs {
   text-decoration: none;
 }
 
+.su-intro-text {
+  max-width: 1000px;
+
+  .typography & {
+    max-width: 85rem;
+  }
+}
+
