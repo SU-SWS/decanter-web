@@ -2,13 +2,11 @@
 title: Get Started Quickly
 date: 2019-12-11T18:03:24.367Z
 ---
-## How does Decanter make your development faster?
-
-lorem ipsum...
+IN PROGRESS
 
 ## Developers
 
-Lorem ipsum...
+Coming soon!
 
 ## Designers
 
