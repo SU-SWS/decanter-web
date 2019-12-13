@@ -34,3 +34,7 @@ Having a shared central source for all Stanford digital design provides us the o
 At this time, if you would like to use Figma, your team will need to sign up to use Figma. Luckily, Figma is free to use for those in education. Unfortunately, this does mean that the Decanter Design System is not ready to be used as a shared library, but can be copied and pasted to _your_ team Figma at current state. (Clearly there are tradeoffs here, as copying a "state" of the library may cause future manual updates when the library syncing does become available.)
 
 [Please contact Kerri Augenstein at Stanford Web Services for more information](https://stanford.rimeto.io/search/kerri%20augenstein?tab=all)
+
+## Decanter Design System backlog
+
+If you are interested in understanding what our priorities are for design development in Figma, [you can find our backlog here](https://www.figma.com/file/Kmd4utmJFPRMVeCFEEBQhLtx/Decanter-Design-System?node-id=3814%3A13). If you are in need of design that you do not see included in this backlog, please let us know, by contacting [Kerri Augenstein](https://stanford.rimeto.io/search/kerri%20augenstein?tab=all) at Stanford Web Services.
