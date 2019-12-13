@@ -7,12 +7,12 @@ import PrimaryNav from '../PrimaryNav/PrimaryNav.js';
 import Logo from '../Logo/Logo.js';
 import FooterScripts from '../partials/global-footer-scripts.js';
 
-const Layout = props => (
+const Layout = (props) => (
   <>
   <HTMLHead />
   <SkipLink />
   <MastHead />
-  <main>
+  <main className={props.type}>
     <aside aria-label="left sidebar" id="left-sidebar">
       <Logo />
       <PrimaryNav props={props} />
@@ -27,6 +27,7 @@ const Layout = props => (
         {props.title && (
           <h1>{props.title}</h1>
         )}
+        {props.header}
         </header>
         {props.content}
       </article>

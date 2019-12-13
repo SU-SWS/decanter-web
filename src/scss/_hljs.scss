@@ -1,0 +1,6 @@
+@import 'highlight.js/scss/androidstudio.scss';
+
+.hljs {
+  @include modular-spacing('padding', 1);
+  line-height: 1.5em;
+}

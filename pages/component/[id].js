@@ -17,31 +17,43 @@ function ComponentPage(props) {
   var cont = "Undefined";
   var title = "Undefined";
 
-  if (!props.page && !props.kssdata) {
+  // We got a page instead. Render that and quit.
+  if (props.page) {
+    title = props.page.attributes.title;
+    cont = <div dangerouslySetInnerHTML={{ __html: props.page.html }} />;
     return (
       <Layout
-        content=<p>Loading...</p>
-        title="Loading"
+        type="page-component"
+        content={cont}
+        title={title}
+        header={hed}
       />
     )
   }
 
-  if (props.kssdata && props.markup) {
-    title = props.kssdata.header;
-    cont = <KSSComponent kssdata={props.kssdata} markup={props.markup} variants={props.variants} />;
-  }
+  // We should have KSS data at this point.
+  title = props.kssdata.header;
+  cont = <KSSComponent kssdata={props.kssdata} markup={props.markup} variants={props.variants} />;
 
-  if (props.page) {
-    title = props.page.attributes.title;
-    cont = <div dangerouslySetInnerHTML={{ __html: props.page.html }} />;
+  let twig_source;
+  if (props.kssdata.source_twig) {
+    var fp = "https://github.com/SU-SWS/decanter/blob/master/core/src/" + props.kssdata.source_twig;
+    twig_source = <a href={fp}>core/src/{props.kssdata.source_twig}</a>;
   }
+  var fps = "https://github.com/SU-SWS/decanter/blob/master/core/src/scss/components/" + props.kssdata.source.filename;
+  let scss_source = <a href={fps}>core/src/scss/components/{props.kssdata.source.filename}</a>;
+  var hed = <div className="component__resources">
+    <p><strong>SCSS Source:</strong> {scss_source}</p>
+    {twig_source ? <p><strong>Twig Source:</strong> {twig_source}</p> : ''}
+  </div>;
 
   return (
     <Layout
       content={cont}
       title={title}
+      header={hed}
     />
-  )
+  );
 }
 
 /**
@@ -56,7 +68,9 @@ ComponentPage.getInitialProps = async function(context) {
   var data = {};
 
   try {
+    // We found a KSS entry. Let's do stuff with it.
     component = require(`../../content/_kss/info/${id}.json`);
+    data.kssdata = await component;
   }
   // Could be a missing json, or could be a top level group. Check for a page.
   catch(err) {
@@ -64,9 +78,6 @@ ComponentPage.getInitialProps = async function(context) {
     data = { page: await fileContent };
     return await data;
   }
-
-  // We found a KSS entry. Let's do stuff with it.
-  data.kssdata = await component;
 
   // Sometimes there is straight up markup in the markup.
   try {
@@ -80,15 +91,11 @@ ComponentPage.getInitialProps = async function(context) {
   // But most of the time there is a template.
   const twig_short = await component.markup;
   let twig_path = path.join(decanter_src, twig_short);
-  var twigg = await Twig.twig({
+  var twigg = Twig.twig({
     path: twig_path,
     async: true,
     namespaces: { 'decanter': path.join(decanter_src, "templates/") }
   });
-
-  if (await twigg === true) {
-    return data;
-  }
 
   data.markup = await twigg.renderAsync(schema);
   data.markup = prettifyHtml(await data.markup);
@@ -101,7 +108,10 @@ ComponentPage.getInitialProps = async function(context) {
     mod.markup = prettifyHtml(markup);
     data.variants.push(mod);
   });
-  return await data;
+
+  if (await data.markup && await data.variants) {
+    return data;
+  }
 };
 
 // ------------------

@@ -1,15 +1,21 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const autoprefixer = require('autoprefixer')({ grid: true });
 const withSass = require('@zeit/next-sass');
+const withCSS = require('@zeit/next-css');
+const withImages = require('next-images');
+const withFonts = require('next-fonts');
 const path = require('path');
 const fs = require('fs');
 const sass = require('sass');
 const highlight = require('highlight.js');
 const npmPackage = "node_modules";
-var glob = require("glob");
-const Entities = require('html-entities').AllHtmlEntities;
+const glob = require("glob");
 
-module.exports = withSass({
+module.exports = withSass(
+  withImages(
+  withFonts(
+  withCSS({
+  cssModules: false,
   sassLoaderOptions: {
     implementation: require('sass'),
     sassOptions: {
@@ -21,6 +27,9 @@ module.exports = withSass({
       lineNumbers: true,
       precision: 10
     }
+  },
+  cssLoaderOptions: {
+    url: false
   },
   webpack: (cfg, options) => {
 
@@ -52,13 +61,11 @@ module.exports = withSass({
         }
       },
       {
-        test: /\.(woff2?|ttf|otf|eot)$/,
-        loader: 'file-loader'
-      },
-      // Apply plugins to image assets.
-      {
-        test: /\.(png|svg|jpg|gif)$/i,
-        loader: "file-loader"
+        test: /\.(jpg|png|gif|svg)$/,
+        loader: 'url-loader',
+        options: {
+          limit: 100000
+        }
       },
       {
         test: /\.(yaml|yml)$/,
@@ -66,8 +73,8 @@ module.exports = withSass({
       }
     );
 
-    cfg.resolve.modules.push(path.resolve('./'));
-    cfg.resolve.alias['decanter-img'] = path.resolve(__dirname, "node_modules/decanter/core/src/img");
+    cfg.resolve.alias['?decanter-img'] = path.resolve(__dirname, "node_modules/decanter/core/src/img");
+    cfg.resolve.alias['@fortawesome'] = path.resolve(__dirname, "node_modules/@fortawesome");
 
     return cfg;
   },
@@ -118,4 +125,5 @@ module.exports = withSass({
     });
     return pages;
   }
-});
+}
+))));

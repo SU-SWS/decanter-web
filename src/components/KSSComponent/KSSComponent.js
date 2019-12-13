@@ -3,61 +3,54 @@ import Alert from '../Alert/Alert.js';
 import Variant from '../Variant/Variant.js';
 
 const KSSComponent = (props) => {
-  let example = "DATA MISSING";
-  let markup = "DATA MISSING";
-  let description = <div dangerouslySetInnerHTML={{ __html: props.kssdata.description }} />;
-  let twig_source;
-  if (props.kssdata.source_twig) {
-    var fp = "https://github.com/SU-SWS/decanter/blob/master/core/src/" + props.kssdata.source_twig;
-    twig_source = <a href={fp}>core/src/{props.kssdata.source_twig}</a>;
-  }
-  var fps = "https://github.com/SU-SWS/decanter/blob/master/core/src/scss/components/" + props.kssdata.source.filename;
-  let scss_source = <a href={fps}>core/src/scss/components/{props.kssdata.source.filename}</a>;
+  const description = <div dangerouslySetInnerHTML={{ __html: props.kssdata.description }} />;
+  const example = <div dangerouslySetInnerHTML={{ __html: props.markup }} />;
+  const markup = <div dangerouslySetInnerHTML={{ __html: hljs.highlight('html', props.markup).value}} />;
 
-  if (props.markup) {
-    example = <div dangerouslySetInnerHTML={{ __html: props.markup }} />;
-    markup = <div dangerouslySetInnerHTML={{ __html:
-      hljs.highlight('html', props.markup).value
-    }} />;
-  };
   let variants = props.variants || [];
 
+  // THE TEMPLATE.
   return (
-  <>
-    <article className="component">
-      {props.kssdata.deprecated || props.kssdata.experimental ? <Alert deprecated={props.kssdata.deprecated} experimental={props.kssdata.experimental} /> : '' }
-      <section>
-        <div className="component__description">
-        <h2>Description</h2>
-        {description}
+    <>
+    {props.kssdata.deprecated || props.kssdata.experimental ? <Alert deprecated={props.kssdata.deprecated} experimental={props.kssdata.experimental} /> : '' }
+    <div className="component">
+      <div className="component__description fullwidth">
+        <div className="component__centered">
+          <h2>Description</h2>
+          {description}
         </div>
-        <div className="component__resources">
-          <h2>Source Files</h2>
-          <p><strong>SCSS Path:</strong> {scss_source}</p>
-          {twig_source ? <p><strong>Twig Path:</strong> {twig_source} </p> : ''}
-        </div>
-        <div className="component__example">
-          <h2>Default Render</h2>
+      </div>
+
+      <div className="component__example fullwidth">
+        <h3 className="component__title centered">Default Display</h3>
+        <div className="component__centered">
           {example}
         </div>
-        <div className="component__modifiers">
-          <h2>Modifiers</h2>
-          {variants.map((val) => {
-            return <Variant data={val} />;
-          })}
+      </div>
+
+      {variants.length ?
+      <div className="component__modifiers">
+        <div className="component__centered">
+          <h3>Display Modifiers</h3>
         </div>
-        <div className="component__markup">
-        <h2>Source Markup</h2>
+          {variants.map((val) => {
+            return <Variant key={val.name} data={val} />;
+          })}
+      </div>
+      : ''}
+
+      <div className="component__markup">
+        <div className="component__centered">
+          <h2>Source Markup</h2>
           <pre>
             <code className="language-html hljs">
             {markup}
             </code>
           </pre>
         </div>
-        <p>Additional notes go here.</p>
-      </section>
-    </article>
-  </>
+      </div>
+    </div>
+    </>
   );
 };
 

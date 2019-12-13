@@ -1,5 +1,4 @@
 @charset 'UTF-8';
-@import 'highlight.js/scss/androidstudio.scss';
 
 body {
   @include font-smoothing;
@@ -75,7 +74,7 @@ main {
         }
       }
 
-      > header:not(:empty) + div,
+      > .content,
       > header {
         @include modular-spacing('padding', 3 null);
 
