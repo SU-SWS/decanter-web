@@ -46,6 +46,14 @@ li {
   }
 }
 
+pre {
+  code {
+    @include padding(0);
+    background-color: transparent;
+    font-size: 1em;
+  }
+}
+
 pre .hljs,
 pre.hljs {
   padding: 1.6em;
