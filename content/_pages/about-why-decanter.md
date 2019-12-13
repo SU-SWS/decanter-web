@@ -14,8 +14,8 @@ Decanter can be used out of the box to create a project, or it can be extended a
 
 Usability and accessibility are increasingly critical markers to the success of our Stanford sites. Decanter components have been intentionally created and vetted to meet requirements. Teams in University IT and University Communications devote time and effort to see that these areas are not just a part of our work, but fundamental to the success and acceptance criteria of each piece of Decanter.
 
-<p><a href="/page/page-about-why-decanter-accessibility/" class="su-link su-link--action">Learn more about Accessibility practices</a></p>
-<p><a href="/page/usability/" class="su-link su-link--action">Learn more about Usability practices</a></p>
+<p><a href="/page/page-about-why-decanter-accessibility/" class="su-button">Explore accessibility practices</a></p>
+<p><a href="/page/usability/" class="su-button">Explore usability practices</a></p>
 
 ### Brand Compliance
 
