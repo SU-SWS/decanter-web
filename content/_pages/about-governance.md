@@ -17,6 +17,10 @@ We look for contributions that are:
 * Accessible
 * Meet our [Coding Standards](page/use-decanter-as-a-developer-code-standards)
 
-New components will be reviewed by at least one member each of our design and technical teams. Code submitted from contributors outside the core Decanter team will be reviewed by at least two Decanter team members. We are active believers in peer review, so expect questions, comments, and suggestions throughout.
+New components will be reviewed by the Decanter product team for appropriateness. The review will include at least one member from our design and technical teams. 
+
+Code submitted from contributors outside the core Decanter team will be reviewed by at least two Decanter technical team members. We are active believers in peer review, so expect questions, comments, and suggestions throughout.
+
+If you have questions about whether your work is appropriate for Decanter, or if you should fork the project, please contact us.
 
 Please see both our [Technical Contribution Guidelines](/page/about-contributing/) and our [Visual Guidelines](/page/visual-guidelines/) for more details.

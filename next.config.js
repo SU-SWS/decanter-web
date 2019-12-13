@@ -61,6 +61,10 @@ module.exports = withSass(
         }
       },
       {
+        test: /\.(txt|html)$/,
+        loader: 'raw-loader'
+      },
+      {
         test: /\.(jpg|png|gif|svg)$/,
         loader: 'url-loader',
         options: {

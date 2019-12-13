@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router';
+import Twig from 'twig';
 import Layout from '../../src/components/layouts/TwoCol.js';
 import KSSComponent from '../../src/components/KSSComponent/KSSComponent.js';
 const prettifyHtml = require('prettify-html')
 const path = require('path');
-const twig = require('twig');
 const fs = require('fs');
 const decanter_src = "node_modules/decanter/core/src";
 const decanter_scss = "node_modules/decanter/core/src/scss/components";
@@ -88,30 +88,24 @@ ComponentPage.getInitialProps = async function(context) {
     return await data;
   }
 
-  // But most of the time there is a template.
-  const twig_short = await component.markup;
-  let twig_path = path.join(decanter_src, twig_short);
-  var twigg = twig.twig({
-    path: twig_path,
-    async: true,
-    namespaces: { 'decanter': path.join(decanter_src, "templates/") }
-  });
-
-  data.markup = await twigg.render(schema);
-  data.markup = prettifyHtml(await data.markup);
+  var render;
+  try {
+    render = require(`../../content/_kss/markup/${id}.html`);
+  }
+  catch(err) {
+    console.log(err);
+  }
 
   data.variants = [];
+  data.markup = await render.default;
+  data.markup = prettifyHtml(data.markup);
+
   component.modifiers.forEach(async function(mod) {
-    var mod_schema = schema;
-    mod_schema.modifier_class = mod.className;
-    var markup = await twigg.renderAsync(mod_schema);
-    mod.markup = prettifyHtml(markup);
+    mod.markup = render.default.replace("[ modifier_class ]", mod.className);
     data.variants.push(mod);
   });
 
-  if (await data.markup && await data.variants) {
-    return data;
-  }
+  return await data;
 };
 
 // ------------------

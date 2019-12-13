@@ -6,31 +6,34 @@ https://github.com/SU-SWS/decanter/issues/575
 
 ## Brand Elements
 
-Stanford websites deserve consistency for visual language, and also for ease of use in the user experience.\
-[Learn more about brand elements offered through Decanter](https://elegant-poitras-87214a.netlify.com/page/brand-design-elements-brand/) 
+Stanford websites deserve consistency for visual language, and also for ease of use in the user experience.
+<p><a href="/page/brand-design-elements-brand/" class="su-link su-link--action">Learn more about brand elements offered through Decanter</a></p>
 
 ## Typography
 
-Keeping our visual design system feel consistent is very often through our use of brand approved fonts.\
-[Learn more about the typographic styles created for Decanter](https://elegant-poitras-87214a.netlify.com/page/brand-design-elements-typography/) 
+Keeping our visual design system feel consistent is very often through our use of brand approved fonts.
+<p><a href="/page/brand-design-elements-typography/" class="su-link su-link--action">Learn more about the typographic styles created for Decanter</a></p>
 
 ## Color
 
-Beside our name and emblems, the most recognizable part of our Identity system is our color palette.\
-[Learn more about the color palette offered through Decanter](https://elegant-poitras-87214a.netlify.com/page/brand-design-elements-color/)
+Beside our name and emblems, the most recognizable part of our Identity system is our color palette.
+<p><a href="/page/brand-design-elements-color/" class="su-link su-link--action">Learn more about the color palette offered through Decanter</a></p>
+
 
 ## Icons
 
-Becoming more and more important to our University communications, particularly in our digital communications, we've made a variety of icon packs available through Decanter.\
-[Learn more about the icons offered through Decanter](https://elegant-poitras-87214a.netlify.com/page/brand-design-elements-icons/)
+Becoming more and more important to our University communications, particularly in our digital communications, we've made a variety of icon packs available through Decanter.
+<p><a href="/page/brand-design-elements-icons/" class="su-link su-link--action">Learn more about the icons offered through Decanter</a></p>
 
 ## Standards
 
 ### Stanford websites must be accessible.
 
-Stanford University is committed to providing an online environment that is accessible to everyone, including individuals with disabilities.\
-[Stanford Online Accessibility Policy](https://ucomm.stanford.edu/policies/accessibility-policy/)\
-[Stanford's Accessibility Guidelines website](https://soap.stanford.edu/)
+Stanford University is committed to providing an online environment that is accessible to everyone, including individuals with disabilities.
+
+<p><a href="https://ucomm.stanford.edu/policies/accessibility-policy/" class="su-link su-link--action">Stanford Online Accessibility Policy</a></p>
+<p><a href:"https://soap.stanford.edu/" class="su-link su-link--action">
+Stanford's Accessibility Guidelines website</a></p>
 
 ### Design for all sized screens.
 

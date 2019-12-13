@@ -3,12 +3,24 @@
 // Homepage
 
 .section {
-
   &.inverse {
     color: $su-color-white;
 
     .su-link--action {
       color: #6FC3FF;
+
+      &:hover,
+      &:focus {
+        color: $su-color-white;
+
+        &::after {
+          background-color: $su-color-white;
+        }
+      }
+
+      &::after {
+        background-color: #6FC3FF;
+      }
     }
   }
 
@@ -59,6 +71,7 @@
   &--start {
     @include linear-gradient(to right, $su-color-black, #620059);
     @include padding(5rem null null);
+    @include modular-spacing('padding', null null 8);
   }
 
   &--who {
@@ -93,5 +106,15 @@
 
   &--more-info {
     background-color: #373637;
+
+    > div {
+      > section {
+        @include modular-spacing(margin, 2 null null);
+      }
+    }
+
+    h3 {
+      @include type-d;
+    }
   }
 }
