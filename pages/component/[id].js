@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router';
-import Twig from 'twig';
 import Layout from '../../src/components/layouts/TwoCol.js';
 import KSSComponent from '../../src/components/KSSComponent/KSSComponent.js';
 const prettifyHtml = require('prettify-html')
 const path = require('path');
+const twig = require('twig');
 const fs = require('fs');
 const decanter_src = "node_modules/decanter/core/src";
 const decanter_scss = "node_modules/decanter/core/src/scss/components";
@@ -91,7 +91,7 @@ ComponentPage.getInitialProps = async function(context) {
   // But most of the time there is a template.
   const twig_short = await component.markup;
   let twig_path = path.join(decanter_src, twig_short);
-  var twigg = Twig.twig({
+  var twigg = twig.twig({
     path: twig_path,
     async: true,
     namespaces: { 'decanter': path.join(decanter_src, "templates/") }
