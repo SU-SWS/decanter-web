@@ -2,9 +2,7 @@
 title: As a Designer
 date: 2019-11-28T14:11:13.000Z
 ---
-https://github.com/SU-SWS/decanter/issues/574
-
-_Note: Unfortunately, we currently do not have an enterprise-wide solution through Figma, which means that the Decanter Design System is not yet currently available for design adoption. But your individual designers and teams can still adopt Figma as design software and make a copy of Decanter for your use. Learn more about how to adopt Figma below._ 
+READY FOR REVIEW
 
 ## Learn about Decanter Design System
 
