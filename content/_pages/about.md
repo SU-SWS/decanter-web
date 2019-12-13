@@ -17,8 +17,6 @@ Decanter is maintained by a core team of designers, developers, and writers at S
 <p><a href="/page/use-decanter-as-a-developer/" class="su-button"> As a developer</a></p>
 <p><a href="/page/use-decanter-as-a-designer/" class="su-button"> As a designer</a></p>
 
-</br>
-
 
 ## Open Source
 
