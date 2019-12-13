@@ -3,6 +3,7 @@ title: Projects Using Decanter
 date: 2019-11-28T14:11:13.000Z
 ---
 https://github.com/SU-SWS/decanter/issues/569
+
 <h2>Examples</h2>
 <section class="section section--components fullwidth wide-content padding-vertical-md">
   <div class="su-card su-card--horizontal su-card--minimal">
@@ -12,7 +13,7 @@ https://github.com/SU-SWS/decanter/issues/569
       <p>We used Decanter when creating this website.</p>
       <a href="/" class="su-link su-link--action">Visit the Decanter Homepage</a>
     </div>
-    <img src="https://decanter.stanford.edu/kss-assets/ui-components.png" alt="PLACEHOLDER" width=300px>
+    <img src="blob:https://elegant-poitras-87214a.netlify.com/a32810d0-98de-4539-9937-68ed13429495" alt="Decanter Website Screenshot" title="" data-reactroot="" width=600px>
   </div>
 </section>
 <section class="section section--components fullwidth wide-content padding-vertical-md">
