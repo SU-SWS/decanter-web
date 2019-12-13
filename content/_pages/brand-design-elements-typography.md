@@ -10,7 +10,7 @@ The following fonts are recommended for use on Stanford websites. Our primary fo
 
 ### Source Sans Pro
 
-Source Sans Pro is our primary sans-serif font. It should be used in unit signatures alongside the Stanford wordmark and should be used as the primary sans-serif font in your print, web and social media communications. For situations where Source Sans cannot be used, use News Gothic or Gill Sans as fallback fonts.
+Source Sans Pro is our primary sans-serif font. It should be used in headings and body text as the primary sans-serif font on your website.
 
 <section class="typography">
 <h3>The quick brown fox jumps over the lazy dog</h3>
@@ -37,7 +37,8 @@ Source Sans Pro is our primary sans-serif font. It should be used in unit signat
 Apply this font by using the <code>@sans</code> SCSS mixin, or by adding the class name <code>.su-sans</code> to your element.
 
 ### Source Serif Pro
-Source Serif Pro is our primary serif font. It should be used in headlines and body copy as the primary serif font in your web and social media communications. For situations where Source Serif Pro cannot be used, use Minion Pro or Times New Roman.
+Source Serif Pro is our primary serif font. It should be used in headings and body text as the primary serif font on your website.
+
 <section class="typography su-serif">
 <h3>The quick brown fox jumps over the lazy dog</h3>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum consectetur mi, non accumsan sapien porttitor in. Cras dapibus non mauris eu lacinia. Vestibulum congue, nisl a hendrerit egestas, erat eros vulputate sem, sit amet ullamcorper ligula magna sed est. Donec leo orci, laoreet id faucibus vitae, rhoncus sit amet diam.</p>
