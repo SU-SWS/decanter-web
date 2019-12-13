@@ -75,6 +75,20 @@
 
   &--resources {
     background-color: $su-color-fog;
+
+    > h2 {
+      @include margin(null null 0);
+    }
+
+    > div {
+      > section {
+        @include modular-spacing(margin, 5 null null);
+      }
+    }
+
+    img {
+      height: 70px;
+    }
   }
 
   &--more-info {

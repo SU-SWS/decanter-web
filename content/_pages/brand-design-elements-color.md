@@ -12,8 +12,8 @@ Our primary palette consists of Cardinal Red, White, Black and Cool Grey. Our de
     <div class="color">
         <div class="inverse" style="background-color: #8c1515;">
             <h3>Cardinal Red</h3>
-            <p>#8c1515</p>
-            <p>$su-color-cardinal-red</p>
+            <p>#8c1515</p><button class="copy-button">copy</button>
+            <p>$su-color-cardinal-red</p><button class="copy-button">copy</button>
         </div>
         <div class="variant inverse" style="background-color: #b8434c;">
             <p>#b8434c</p>
@@ -23,7 +23,7 @@ Our primary palette consists of Cardinal Red, White, Black and Cool Grey. Our de
     <div class="color">
         <div style="background-color: #fff;">
             <h3>White</h3>
-            <p>#ffffff</p>
+            <p>#FFFFFF</p>
             <p>$su-color-white</p>
         </div>
     </div>

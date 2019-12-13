@@ -10,7 +10,7 @@ date: 2019-03-17T19:31:20.591Z
 
 <section class="section section--start fullwidth wide-content padding-vertical-lg inverse">
   <div class="su-card su-card--horizontal su-card--minimal">
-    <img src='http://decanter5.local/kss-assets/ui-components.png' alt='' />
+    <img src='img/ui-components.png' alt='' />
     <div class="su-card__contents">
       <h2>Getting Started</h2>
       <p>Learn about how to use Decanter components with our onboarding guides, tailored to designers or developers.</p>
@@ -36,7 +36,7 @@ date: 2019-03-17T19:31:20.591Z
       <a href="page/brand-design-elements/" class="su-link su-link--action">Explore brand + design elements</a>
       <a href="page/components/" class="su-link su-link--action">Explore components</a>
     </div>
-    <img src='http://decanter5.local/kss-assets/ui-components.png' alt='' />
+    <img src='img/components-homepage.jpg' alt='' />
   </div>
 </section>
 
@@ -44,25 +44,25 @@ date: 2019-03-17T19:31:20.591Z
     <h2>Resources</h2>
     <div class="flex-container">
     <section class="flex-md-6-of-12">
-        <img src="img/widgets-24px.svg" alt="" role="presentation" />
+        <img src="img/icon-cubes.png" alt="" />
         <h3>Decanter Figma Design System</h3>
-        <p>Familiarize yourself with our foundational styles, components, and naming conventions using the Decanter Figma Design System and start using the toolkit.</p>
+        <p>Familiarize yourself with our foundational styles, components, and naming conventions using the Decanter Figma Design System.</p>
         <a href="/section-components.html" class="su-link su-link--action">Learn about the Decanter Design System on Figma</a>
     </section>
     <section class="flex-md-6-of-12">
-        <img src="/assets/file.png" alt="File" role="presentation" />
+        <img src="img/icon-file.png" alt="" />
         <h3>Developer Documentation</h3>
         <p>From coding standards to best practices, build tools, documentation, and browser compatibility. Get what you need to use and contribute to Decanter.</p>
         <a href="page/use-decanter-as-a-developer/" class="su-link su-link--action">Review developer documention</a>
     </section>
     <section class="flex-md-6-of-12">
-        <img src="/assets/file.png" alt="File" role="presentation" />
+        <img src="img/icon-pencil.png" alt="" />
         <h3>Contribute to Decanter</h3>
         <p>The Decanter team welcomes contributions from the community. Learn how to become a pilot contributor.</p>
         <a href="page/about-contributing/" class="su-link su-link--action">Help build Decanter</a>
     </section>
     <section class="flex-md-6-of-12">
-        <img src="/assets/file.png" alt="File" role="presentation" />
+        <img src="img/icon-comment-alt.png" alt="" />
         <h3>Feedback + Support</h3>
         <p>There are various ways to connect with the Decanter community. Find out how to get support, submit bug report and request features.</p>
         <a href="page/about-contributing-how-to-communicate/" class="su-link su-link--action">Connect with the Decanter community</a>
