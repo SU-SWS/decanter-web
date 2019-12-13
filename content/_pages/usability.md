@@ -24,5 +24,8 @@ We run tests both on campus with Stanford folks, and also through unmoderated te
 
 We also heavily prescribe to a user-centered culture on our teams, and encourage all team members to participate in the tests and research as observers. Teammates as observers have the direct opportunity to learn about how users are using our products, increasing their empathy for their needs.
 
-<p><a href="https://drive.google.com/drive/folders/15Jr7zIWphRb92VAP2_gOenZDY2HJ_HiQ" class="su-button">See test and research examples</a></p>
+## Explore our tests and research 
 
+Our design teams have conducted tests and research year over year. We want to share some of the documentation for this work with you on our shared Google Drive folder:
+
+<p><a href="https://drive.google.com/drive/folders/15Jr7zIWphRb92VAP2_gOenZDY2HJ_HiQ" class="su-button">See test and research examples</a></p>
