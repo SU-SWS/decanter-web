@@ -4,7 +4,7 @@ date: 2019-11-28T14:11:13.000Z
 ---
 https://github.com/SU-SWS/decanter/issues/569
 <h2>Examples</h2>
-<section class="section section--components fullwidth wide-content padding-vertical-lg">
+<section class="section section--components fullwidth wide-content padding-vertical-md">
   <div class="su-card su-card--horizontal su-card--minimal">
     <div class="class="su-card__contents">
       <h3>Decanter</h3>
@@ -15,7 +15,7 @@ https://github.com/SU-SWS/decanter/issues/569
     <img src="https://decanter.stanford.edu/kss-assets/ui-components.png" alt="PLACEHOLDER" width=300px>
   </div>
 </section>
-<section class="section section--components fullwidth wide-content padding-vertical-lg">
+<section class="section section--components fullwidth wide-content padding-vertical-md">
   <div class="su-card su-card--horizontal su-card--minimal">
     <div class="class="su-card__contents">
     <h3>Stanford Basic Drupal Theme</h3><span class=".su-caption">Drupal 8</span>
@@ -25,8 +25,8 @@ https://github.com/SU-SWS/decanter/issues/569
   <img src="https://decanter.stanford.edu/kss-assets/ui-components.png" alt="PLACEHOLDER" width=300px>
 </div>
 </section>
-<section class="section section--components fullwidth wide-content padding-vertical-lg">
-  <img src="https://decanter.stanford.edu/kss-assets/ui-components.png" alt="PLACEHOLDER" width=300px>
+<section class="section section--components fullwidth wide-content padding-vertical-md">
+
   <div class="su-card su-card--horizontal su-card--minimal">
   <div class="class="su-card__contents">
     <h3>Stanford Redwood WordPress Theme</h3>
@@ -34,20 +34,21 @@ https://github.com/SU-SWS/decanter/issues/569
     <p>The Stanford Redwood theme created by University Communications uses Decanter.</p>
     <a href="https://identity.stanford.edu" class="su-link su-link--action">Learn more about Stanford Identity for the Web</a>
   </div>
+  <img src="https://decanter.stanford.edu/kss-assets/ui-components.png" alt="PLACEHOLDER" width=300px>
 </div>
 </section>
-<section class="section section--components fullwidth wide-content padding-vertical-lg">
+<section class="section section--components fullwidth wide-content padding-vertical-md">
   <div class="su-card su-card--horizontal su-card--minimal">
   <div class="class="su-card__contents">
     <h3>Stanford School of Earth, Energy and Environmental Sciences</h3>
     <span class=".su-caption">Drupal 8</span>
     <p>The Stanford School of Earth used Decanter to jumpstart their early development efforts.</p>
     <a href="https://earth.stanford.edu" class="su-link su-link--action">Visit the School of Earth Website</a>
-  </div><img src="https://decanter.stanford.edu/kss-assets/ui-components.png" alt="PLACEHOLDER" width=300px>
+  </div>
+  <img src="https://decanter.stanford.edu/kss-assets/ui-components.png" alt="PLACEHOLDER" width=300px>
 </div>
 </section>
-<section class="section section--components fullwidth wide-content padding-vertical-lg">
-  <img src="https://decanter.stanford.edu/kss-assets/ui-components.png" alt="PLACEHOLDER" width=300px>
+<section class="section section--components fullwidth wide-content padding-vertical-md">
   <div class="su-card su-card--horizontal su-card--minimal">
   <div class="class="su-card__contents">
     <h3>The Stanford Homepage</h3>
@@ -55,6 +56,7 @@ https://github.com/SU-SWS/decanter/issues/569
     <p>The Stanford homepage uses an early version of Decanter.</p>
     <a href="https://www.stanford.edu" class="su-link su-link--action">Visit the Stanford Homepage</a>
   </div>
+  <img src="https://decanter.stanford.edu/kss-assets/ui-components.png" alt="PLACEHOLDER" width=300px>
 </div>
 </section>
 <h2>Share your Project</h2>
