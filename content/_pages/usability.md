@@ -2,7 +2,7 @@
 title: Usability
 date: 2019-12-11T17:53:09.515Z
 ---
-Decanter is intentionally user-centric. As a sibling to accessibility practices, user testing and research are deployed to ensure that our models function as expected. Testing and research are often performed by secondary client project teams across the University, and also directly through the Decanter project. 
+<p class="su-intro-text">Decanter is intentionally user-centric. As a sibling to accessibility practices, user testing and research are deployed to ensure that our models function as expected. Testing and research are often performed by secondary client project teams across the University, and also directly through the Decanter project.</p>
 
 ## Our Approach
 
