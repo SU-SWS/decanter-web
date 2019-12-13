@@ -6,10 +6,8 @@ READY FOR REVIEW
 
 # Contributing to Decanter
 
-This project is meant to be open source and freely shared. If you find something
-broken, confusing, or wrong, please first check the issue queue. For new issues
-or feature requests, those that post with patches or pull requests and are
-respectful will be handled first.
+<p class="su-intro-text">This project is meant to be open source and freely shared. If you find something broken, confusing, or wrong, please first check the issue queue. For new issues or feature requests, those that post with patches or pull requests and are respectful will be handled first.</p>
+</br>
 
 ## Using the issue tracker
 
@@ -19,6 +17,7 @@ requests](#pull-requests), but please respect the following restrictions:
 
 * Please **do not** use the issue tracker for personal support requests.
 * Please **do** assign a maintainer for review
+</br>
 
 ## Bug reports
 
@@ -41,7 +40,7 @@ your environment? What steps will reproduce the issue? What browser(s) and OS
 experience the problem? What would you expect to be the outcome? All these
 details will help people to fix any potential bugs.
 
-Example:
+### Example:
 
 > Short and descriptive example bug report title
 >
@@ -58,6 +57,7 @@ Example:
 > reported. This might include the lines of code that you have identified as
 > causing the bug, and potential solutions (and your opinions on their
 > merits).
+</br>
 
 ## Feature requests
 
@@ -67,6 +67,7 @@ case to convince the project's developers of the merits of this feature. Please
 provide as much detail and context as possible.
 
 <a href="/page/about-contributing-what-can-i-contribute/" class="su-link su-link--action">Learn more about how we evaluate feature requests</a>
+</br>
 
 ## Pull requests
 
@@ -81,6 +82,8 @@ information on standards, conventions, and best practices.
 
 Follow this process if you'd like your work considered for inclusion in the
 project:
+
+</br>
 
 ## Pull request workflow
 
