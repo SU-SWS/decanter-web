@@ -6,16 +6,18 @@ https://github.com/SU-SWS/decanter/issues/576
 
 ## As a Developer
 
-Use Decanter as a starting point for your project, or straight out of the box.\
-[Learn more about developing with Decanter](https://elegant-poitras-87214a.netlify.com/page/use-decanter-as-a-developer/)
+Use Decanter as a starting point for your project, or straight out of the box.
+<p><a href="/page/use-decanter-as-a-developer/" class="su-link su-link--action"> Learn more about developing with Decanter</a></p>
+</br>
 
 ## As a Designer
 
 Use Decanter components to quickly get your project started. Spend your time on the unique aspects of your projects, while taking advantage of Decanter's tested accessible and brand compliant designs.
-[]()
 <p><a href="/page/use-decanter-as-a-designer/" class="su-link su-link--action"> Learn more about designing with Decanter</a></p>
+</br>
 
 ## Decanter across Stanford 
 
-Decanter is in use on a number of sites across campus today. \
-[See projects that use Decanter](page/about-projects-that-use-decanter/)
+Decanter is in use on a number of sites across campus today.
+<p><a href="/page/about-projects-that-use-decanter/" class="su-link su-link--action"> See projects that use Decanter</a></p>
+
