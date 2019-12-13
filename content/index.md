@@ -73,17 +73,17 @@ date: 2019-03-17T19:31:20.591Z
 <section class="section section--more-info fullwidth wide-content padding-vertical-lg inverse">
     <h2>More from Stanford University</h2>
     <div class="flex-container">
-        <section class="flex-md-4-of-12">
+        <section class="flex-lg-4-of-12">
             <h3>Stanford Web Services</h3>
             <p>Providing the Stanford community a full range of website planning, design, development, and maintenance support at below-market rates.</p>
             <a href="https://uit.stanford.edu/sws" class="su-link--action">Learn more about Stanford Web Services</a>
         </section>
-        <section class="flex-md-4-of-12">
+        <section class="flex-lg-4-of-12">
             <h3>University Communications</h3>
             <p>Providing information about Stanford University; coordinating the university's public and media relations efforts; and producing the university's main web pages, social media channels and central publications.</p>
             <a href="https://ucomm.stanford.edu" class="su-link--action">Learn more about Stanford University Communications</a>
         </section>
-        <section class="flex-md-4-of-12">
+        <section class="flex-lg-4-of-12">
             <h3>Stanford Identity Toolkit</h3>
             <p>If you’re inside Stanford, and looking for guidelines applying the identity, logo files, policies, or support, this is your resource.</p>
             <a href="https://identity.stanford.edu/" class="su-link--action">Use the Identity Toolkit</a>

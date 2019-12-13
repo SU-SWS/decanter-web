@@ -107,5 +107,15 @@
 
   &--more-info {
     background-color: #373637;
+
+    > div {
+      > section {
+        @include modular-spacing(margin, 2 null null);
+      }
+    }
+
+    h3 {
+      @include type-d;
+    }
   }
 }
