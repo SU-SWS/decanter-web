@@ -2,13 +2,13 @@
 title: As a Developer
 date: 2019-11-28T14:11:13.000Z
 ---
-## Getting Started
+## Start Using Decanter
 
 The resources below should help you get started using Decanter in your project.
 
-## Installation
+## Getting Started
 Learn more about requirements and get Decanter up and running on your local environment.
-<p><a href="/page/use-decanter-as-a-developer-installation/" class="su-button">Learn more about Installation</a></p>
+<p><a href="/page/use-decanter-as-a-developer-installation/" class="su-button">Learn more about Getting Started</a></p>
 
 ## Build Tools
 Learn more about the build tools we use for Decanter.
