@@ -6,16 +6,20 @@ READY FOR REVIEW
 
 ## What we accept
 
-When considering new components and functionality for Decanter, we need to ensure it will serve the needs of the broader University community and does not duplicate existing functionality. The following criteria should be met for the design of new features as well as functional enhancements:
+<p class="su-intro-text">When considering new components and functionality for Decanter, we need to ensure it will serve the needs of the broader University community and does not duplicate existing functionality.</p> 
+
+The following criteria should be met for the design of new features as well as functional enhancements:
 
 * Reusable (content-agnostic)
 * Component/element has a clear use case
 * Addresses accessibility and usability (see accessibility
 * Considers evolving web trends
+</br>
 
 ### Out of Scope for Decanter
 
 * Content-specific design elements
+</br>
 
 ## Report an Issue
 
@@ -26,6 +30,7 @@ The team will address bugs depending on the severity of the issue and the sprint
 If you have a fix for the bug and would like to submit a PR for it, please reach out in Slack at #decanter or visit the [Contributing to Decanter](/page/about-contributing-what-can-i-contribute/) page to learn more about contribution opportunities.
 
 <a href="/page/about-contributing/" class="su-link su-link--action">Learn more about technical contribution guidelines.</a>
+</br>
 
 ## Join the Decanter Design community
 
