@@ -1,14 +1,21 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const autoprefixer = require('autoprefixer')({ grid: true });
 const withSass = require('@zeit/next-sass');
+const withCSS = require('@zeit/next-css');
+const withImages = require('next-images');
+const withFonts = require('next-fonts');
 const path = require('path');
+const fs = require('fs');
 const sass = require('sass');
 const highlight = require('highlight.js');
 const npmPackage = "node_modules";
-var glob = require("glob");
-const Entities = require('html-entities').AllHtmlEntities;
+const glob = require("glob");
 
-module.exports = withSass({
+module.exports = withSass(
+  withImages(
+  withFonts(
+  withCSS({
+  cssModules: false,
   sassLoaderOptions: {
     implementation: require('sass'),
     sassOptions: {
@@ -20,6 +27,9 @@ module.exports = withSass({
       lineNumbers: true,
       precision: 10
     }
+  },
+  cssLoaderOptions: {
+    url: false
   },
   webpack: (cfg, options) => {
 
@@ -51,13 +61,15 @@ module.exports = withSass({
         }
       },
       {
-        test: /\.(woff2?|ttf|otf|eot)$/,
-        loader: 'file-loader'
+        test: /\.(txt|html)$/,
+        loader: 'raw-loader'
       },
-      // Apply plugins to image assets.
       {
-        test: /\.(png|svg|jpg|gif)$/i,
-        loader: "file-loader"
+        test: /\.(jpg|png|gif|svg)$/,
+        loader: 'url-loader',
+        options: {
+          limit: 100000
+        }
       },
       {
         test: /\.(yaml|yml)$/,
@@ -65,8 +77,8 @@ module.exports = withSass({
       }
     );
 
-    cfg.resolve.modules.push(path.resolve('./'));
-    cfg.resolve.alias['decanter-img'] = path.resolve(__dirname, "node_modules/decanter/core/src/img");
+    cfg.resolve.alias['?decanter-img'] = path.resolve(__dirname, "node_modules/decanter/core/src/img");
+    cfg.resolve.alias['@fortawesome'] = path.resolve(__dirname, "node_modules/@fortawesome");
 
     return cfg;
   },
@@ -77,7 +89,8 @@ module.exports = withSass({
   // What to export as static pages that are dynamically generated.
   exportPathMap: function() {
     var pages = {
-      '/': { page: '/' }
+      '/': { page: '/' },
+      '/page/components': { page: '/page/[id]', query: {id: 'components'}}
     };
 
     var files = glob.sync('content/_pages/*.md');
@@ -85,6 +98,36 @@ module.exports = withSass({
       var key = filename.replace("content/_pages/", "").replace(".md", "");
       pages['/page/' + key] = { page: '/page/[id]', query: { id: key } };
     });
+
+    var kssinfo = path.resolve(__dirname, "content/_settings/kss.json");
+    var data = fs.readFileSync(kssinfo);
+    var components = JSON.parse(data);
+    components.items[0].children.forEach(function(val) {
+      if (val.children) {
+        val.children.forEach(function(child1) {
+          if (child1.children) {
+            child1.children.forEach(function(child2) {
+              if (child2.children) {
+                child2.children.forEach(function(child3) {
+                  pages[child3.path] = { page: '/component/[id]', query: { id: child3.key }};
+                });
+              }
+              else {
+                pages[child2.path] = { page: '/component/[id]', query: { id: child2.key }};
+              }
+
+            });
+          }
+          else {
+            pages[child1.path] = { page: '/component/[id]', query: { id: child1.key }};
+          }
+        });
+      }
+      else {
+        pages[val.path] = { page: '/component/[id]', query: { id: val.key }};
+      }
+    });
     return pages;
   }
-});
+}
+))));

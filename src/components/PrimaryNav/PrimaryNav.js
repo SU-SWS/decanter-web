@@ -1,10 +1,13 @@
 import Navigation from '../../../content/_settings/navigation.yml';
+import Components from '../../../content/_settings/kss.json';
 
 const PrimaryNav = (props) => {
-  var items = Navigation.nav_items;
+  var pages = Navigation.nav_items;
+  var components = Components.items;
+  var items = pages.concat(components);
   return (
     <>
-      <nav className="su-secondary-nav su-secondary-nav--buttons-dark no-js" aria-label="main menu">
+      <nav className="su-secondary-nav no-js" aria-label="main menu">
         <ul className="su-secondary-nav__menu-lv1 su-secondary-nav__menu">
           {items.map((item, index) => (
             <li className="su-secondary-nav__item su-secondary-nav__item--parent" key={"lv1-" + index}>

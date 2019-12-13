@@ -15,9 +15,10 @@ const Page = props => {
   }
 
   const title = props.page.attributes.title;
-  const cont = <div dangerouslySetInnerHTML={{ __html: props.page.html }} />;
+  const cont = <div className="content" dangerouslySetInnerHTML={{ __html: props.page.html }} />;
   return (
     <Layout
+      type="page"
       content={cont}
       title={title}
     />

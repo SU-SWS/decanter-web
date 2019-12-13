@@ -32,6 +32,12 @@ var webpackConfig = {
     filename: "[name].js",
     path: path.resolve(__dirname, "public/dist/js")
   },
+  resolve: {
+    alias: {
+      'decanter-img': path.resolve(npmPackage + "/decanter/core/src/img"),
+      '@fortawesome': path.resolve(npmPackage + '@fortawesome')
+    }
+  },
   // Additional module rules.
   module: {
     rules: [

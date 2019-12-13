@@ -1,5 +1,4 @@
 @charset 'UTF-8';
-@import 'highlight.js/scss/dark.scss';
 
 body {
   @include font-smoothing;
@@ -96,7 +95,7 @@ main {
         }
       }
 
-      > header:not(:empty) + div,
+      > .content,
       > header {
         @include grid-media-only('xs') {
           @include padding(null map_get($su-screen-margins, xs));

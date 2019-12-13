@@ -9,6 +9,8 @@ site_url: https://elegant-poitras-87214a.netlify.com
 collections:
   - name: settings
     label: Settings
+    editor:
+      preview: false
     files:
       - file: content/_settings/navigation.yml
         label: Navigation
@@ -55,22 +57,31 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "components"
     label: "Components"
-    delete: false
     description: "Component pages."
     folder: "content/_components"
     preview_path: component/{{slug}}
     create: true
+    summary: "{{title}} | {{group}} | {{modifier_css}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - label: "Variants"
-        name: "variants"
-        widget: "list"
+      - { label: "Unique ID", name: "uid", widget: "string" }
+      - label: "Component Group"
+        name: "group"
+        widget: "select"
+        options: ["basic", "advanced", "identity"]
+      - { label: "Experimental", name: "experimental", widget: "boolean", default: false }
+      - { label: "Deprecated", name: "deprecated", widget: "boolean", default: false }
+      - { label: "Browser compatibility", name: "browsers", widget: "string" }
+      - { label: "Description", name: "body", widget: "markdown" }
+      - label: Modifier Classes
+        name: modifier_css
+        widget: list
         fields:
-          - label: "Variant"
-            name: "variant"
-            widget: object
-            fields:
-              - { label: "Class Name", description: "eg: su-card--tall", name: "class_name", widget: "string" }
-              - { label: "Human friendly title", name: "human_title", widget: "string" }
-              - { label: "Description", name: "description", widget: "markdown" }
+          - { label: "CSS Class", name: css_class, widget: string, hint: "No preceeding period. eg: su-card" }
+          - { label: "Experimental", name: "experimental", widget: "boolean", default: false }
+          - { label: "Deprecated", name: "deprecated", widget: "boolean", default: false }
+          - { label: "Source Data", name: "source_json", widget: "text", hint: "JSON data to populate the template with. Leave empty to use what is in the Decanter repo." }
+      - { label: "SCSS Path", name: "scss_path", widget: "string", hint: "Relative to the Decanter project root." }
+      - { label: "Template Path", name: "template_path", widget: "string", hint: "Relative to the Decanter project root." }
+      - { label: "Template Markup", name: "template_markup", widget: "text", hint: "This overrides the template path." }
+      - { label: "Notes", name: "notes", widget: "markdown" }

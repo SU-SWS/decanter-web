@@ -1,0 +1,2 @@
+
+<a  class="su-logo [ modifier_class ]" href="https://www.stanford.edu">Stanford<br>University</a>
