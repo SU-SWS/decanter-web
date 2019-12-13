@@ -1,7 +1,9 @@
 ---
-title: Brand Compliance
+title: Stanford Identity
 date: 2019-12-11T18:02:16.854Z
 ---
+READY FOR REVIEW
+
 <p class="su-intro-text">The collaborative work between University Communications and Stanford Web Services is key to achieving our goals in brand compliance.</p>
 
 ## Achieving brand compliance with Decanter
@@ -67,8 +69,8 @@ Our brand team at University Communications has documented all of the tools, bes
 
 <a href="https:/www.identity.stanford.edu/" class="su-link su-link--action">Learn more about Stanford brand guidelines</a></p>
 
-
 ## Decanter Components
 
 Our Decanter Design System is fully outfitted with your brand needs.
+
 <p><a href="https:/page/brand-design-elements/" class="su-link su-link--action">Explore our Brand + Design Elements section</a></p>
