@@ -98,8 +98,6 @@ main {
 
       > header:not(:empty) + div,
       > header {
-        @include modular-spacing('padding', 3 null);
-
         @include grid-media-only('xs') {
           @include padding(null map_get($su-screen-margins, xs));
         }
@@ -115,7 +113,14 @@ main {
         @include grid-media('lg') {
           @include padding(null map_get($su-screen-margins, lg));
         }
+      }
 
+      > header {
+        @include modular-spacing('padding', 3 null);
+      }
+
+      > header:not(:empty) + div {
+        @include modular-spacing('padding', 4 null 8);
       }
     }
   }
