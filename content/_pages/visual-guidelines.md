@@ -2,9 +2,9 @@
 title: Visual Guidelines
 date: 2019-12-09T23:39:06.389Z
 ---
-https://github.com/SU-SWS/decanter/issues/567
+IN PROGRESS
 
-The following guidelines are meant to help designers and developers who are contributing new visual work to Decanter. To find out if visual work is already in progress on a similar component CHECK HERE (Kerri to add link. Yvonne mentioned you had a page.)
+The following guidelines are meant to help designers and developers who are contributing new visual work to Decanter. To find out if visual work is already in progress on a similar component \[LINK HERE]
 
 ## Criteria for acceptance for new work
 
