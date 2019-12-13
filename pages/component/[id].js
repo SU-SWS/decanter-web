@@ -96,30 +96,14 @@ ComponentPage.getInitialProps = async function(context) {
     console.log(err);
   }
 
-  // // But most of the time there is a template.
-  // const twig_short = await component.markup;
-  // let twig_path = path.join(decanter_src, twig_short);
-  // var twigg = Twig.twig({
-  //   path: twig_path,
-  //   async: true,
-  //   namespaces: { 'decanter': path.join(decanter_src, "templates/") }
-  // });
-  //
-  // data.markup = await twigg.renderAsync(schema);
-  // data.markup = prettifyHtml(await data.markup);
-  //
-  // data.variants = [];
-  // component.modifiers.forEach(async function(mod) {
-  //   var mod_schema = schema;
-  //   mod_schema.modifier_class = mod.className;
-  //   var markup = await twigg.renderAsync(mod_schema);
-  //   mod.markup = prettifyHtml(markup);
-  //   data.variants.push(mod);
-  // });
-  //
-  // if (await data.markup && await data.variants) {
-  //   return data;
-  // }
+  data.variants = [];
+  data.markup = await render.default;
+  data.markup = prettifyHtml(data.markup);
+
+  component.modifiers.forEach(async function(mod) {
+    mod.markup = render.default.replace("[ modifier_class ]", mod.className);
+    data.variants.push(mod);
+  });
 
   return await data;
 };
