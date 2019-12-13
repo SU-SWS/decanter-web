@@ -2,7 +2,7 @@
 title: Use Decanter
 date: 2019-11-28T14:11:13.000Z
 ---
-https://github.com/SU-SWS/decanter/issues/576
+READY FOR REVIEW
 
 <p class="su-intro-text">Decanter supports multiple tools and consumption methods. Choose the developer or designer path below to get started using Decanter.</p>
 
