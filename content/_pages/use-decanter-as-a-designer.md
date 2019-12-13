@@ -25,7 +25,7 @@ We currently build the living Decanter Design System in Figma. [Figma](https://w
 
 Having a shared central source for all Stanford digital design provides us the opportunity to share our work quickly and easily. Though the Decanter Design System is intentionally meant to be a baseline framework—deliberately simple and succinct—that doesn’t mean that new custom  libraries that we all create for other purposes cannot be shared between us as well. 
 
-Learn more about contributing design
+<p><a href="/page/use-decanter-as-a-developer/" class="su-button"> Learn more about contributing design</a></p>
 
 ## Using Figma at Stanford
 
