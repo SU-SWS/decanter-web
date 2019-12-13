@@ -53,4 +53,6 @@ Stanford uses [AMP](https://stanford.levelaccess.net/index.php) from Level Acces
 
 ## Decanter Design System backlog
 
-If you are interested in understanding what our priorities are for design development in Figma, [you can find our backlog here](https://www.figma.com/file/Kmd4utmJFPRMVeCFEEBQhLtx/Decanter-Design-System?node-id=3814%3A13). If you are in need of design that you do not see included in this backlog, please let us know, by contacting [Kerri Augenstein](https://stanford.rimeto.io/search/kerri%20augenstein?tab=all) at Stanford Web Services.
+If you are interested in understanding what our priorities are for design development in Figma, [you can find our backlog here](https://www.figma.com/file/Kmd4utmJFPRMVeCFEEBQhLtx/Decanter-Design-System?node-id=3814%3A13). 
+
+If you are in need of design that you do not see included in this backlog please [contact us on Slack](/page/about-contributing-how-to-communicate/) for more information.
