@@ -6,7 +6,7 @@ READY FOR REVIEW
 
 ## Slack
 
-The Decanter team is on Slack, which is the best way to learn about new releases and find support. Some relevant Slack channels are:
+The Decanter team is on Slack, which is the best way to learn about new releases and find support. Some relevant Slack channels are: 
 
 Slack:
 
