@@ -55,7 +55,7 @@ details will help people to fix any potential bugs.
 > reported. This might include the lines of code that you have identified as
 > causing the bug, and potential solutions (and your opinions on their
 > merits).
-</br>
+> </br>
 
 ## Feature requests
 
@@ -125,7 +125,7 @@ license your work under the same license as that used by the project.
 
 CSS conventions are maintained through sass and scss linting. Please run your
 work against the linter configuration files in this directory. For your
-convenience an NPM/Grunt based sass linter has been packaged in this repository.
+convenience an NPM based sass linter has been packaged in this repository.
 
 To install you must have NPM installed.
 
@@ -133,7 +133,7 @@ Then run:
 
 ```bash
 npm install
-grunt sasslint
+npm run sasslint
 ```
 
 This should output any errors the linter can find. Please fix those before
@@ -148,7 +148,7 @@ cutting new releases.
 
 1. Check that a PR is within the scope and philosophy of the project.
 2. Test the patch locally.
-3. Run PR against linter through either Grunt or Code Climate.
+3. Run PR against linter through either node linters or Code Climate.
 4. Ensure all documentation and commenting is in place.
 5. Squash and merge using command line or Github's merge button.
 
