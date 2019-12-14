@@ -4,28 +4,31 @@
 .component__centered,
 .component__variant-info,
 .centered {
-  @include margin(0 auto);
-  max-width: 1000px;
+  @include margin(0 auto null);
+  max-width: 800px;
 }
 
 .component__centered {
+  @include margin(1rem null null);
+  position: relative;
   background: $su-color-white;
 }
 
 .component__resources {
-  position: relative;
-  bottom: -20px;
+  @include margin(1em null null);
+
   p {
-    @include padding(0);
-    @include margin(0);
-    font-size: .75em;
+    @include margin(null null 0.6rem);
+    @include modular-typography(-1);
   }
+
   a {
     &:link,
     &:visited {
-      color: $su-color-white;
+      color: #6FC3FF;
       text-decoration: none;
     }
+
     &:hover,
     &:focus {
       text-decoration: underline;
@@ -34,43 +37,44 @@
 }
 
 .component {
-  > div {
-    @include modular-spacing('margin', 2 null);
+  h2 {
+    @include type-c;
   }
 
+  .component__modifiers,
+  .component__markup,
   .component__example {
-    .component__title {
-      @include modular-spacing('padding', 0 2);
-      color: $su-color-white;
-      background: $su-color-lagunita;
-    }
+    @include modular-spacing('margin', 5 null null);
+  }
 
-    .component__centered {
-      border: solid 1px $su-color-cool-grey;
-      @include modular-spacing('padding', 2 null);
+  .component__markup {
+    pre {
+      max-height: 400px;
+      overflow: auto;
     }
   }
 
-  .component__variant {
-    @include modular-spacing('margin-top', 2);
+  .component__variant-info {
+    p {
+      @include margin(0);
+    }
+  };
 
-    .component__variant-info {
-      @include modular-spacing('padding', 0 2);
-      background: $su-color-fog;
+  .component__modifiers {
+    > .component__variant {
+      @include modular-spacing('margin-top', 4);
+    }
 
-      p {
-        @include margin(0);
+    > .component__centered {
+      + .component__variant {
+        @include margin(2em null null);
       }
-    };
-
-    .component__centered {
-      @include modular-spacing('padding', 2);
-    }
-
-    .component__variant-info,
-    .component__centered {
-      border: solid 1px $su-color-cool-grey;
     }
   }
+}
 
+.su-alert {
+  h4 {
+    @include margin(null null 0);
+  }
 }

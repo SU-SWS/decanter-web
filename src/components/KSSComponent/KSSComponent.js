@@ -22,7 +22,7 @@ const KSSComponent = (props) => {
       </div>
 
       <div className="component__example fullwidth">
-        <h3 className="component__title centered">Default Display</h3>
+        <h2 className="component__title centered">Default Display</h2>
         <div className="component__centered">
           {example}
         </div>
@@ -31,7 +31,7 @@ const KSSComponent = (props) => {
       {variants.length ?
       <div className="component__modifiers">
         <div className="component__centered">
-          <h3>Display Modifiers</h3>
+          <h2>Display Modifiers</h2>
         </div>
           {variants.map((val) => {
             return <Variant key={val.name} data={val} />;

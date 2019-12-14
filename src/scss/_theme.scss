@@ -61,11 +61,11 @@ main {
 
         // Vertical rhythm for content
 
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
+        > h2,
+        > h3,
+        > h4,
+        > h5,
+        > h6 {
           @include margin(null null 0.6em);
           clear: none;
 
@@ -74,23 +74,23 @@ main {
           }
         }
 
-        h2,
-        h3 {
+        > h2,
+        > h3 {
           @include margin(2em null null);
         }
 
-        h4 {
+        > h4 {
           @include margin(1.4em null null);
         }
         
-        h5,
-        h6 {
+        > h5,
+        > h6 {
           @include margin(1em null null);
         }
 
 
-        h2 + h3,
-        h3 + h4 {
+        > h2 + h3,
+        > h3 + h4 {
           @include margin(1em null null);
         }
       }
@@ -118,7 +118,8 @@ main {
         @include modular-spacing('padding', 3 null);
       }
 
-      > header:not(:empty) + div {
+      > .content,
+      > .component {
         @include modular-spacing('padding', 4 null 8);
       }
     }
