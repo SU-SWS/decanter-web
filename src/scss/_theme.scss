@@ -15,6 +15,11 @@ main {
   display: flex;
   flex-direction: row;
 
+  > aside,
+  > section {
+    min-width: 0; // fix overflow within
+  }
+
   @include grid-media-max("sm") {
     flex-direction: column;
 
@@ -96,6 +101,7 @@ main {
       }
 
       > .content,
+      > .component,
       > header {
         @include grid-media-only('xs') {
           @include padding(null map_get($su-screen-margins, xs));
