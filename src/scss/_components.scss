@@ -37,10 +37,6 @@
 }
 
 .component {
-  h2 {
-    @include type-c;
-  }
-
   .component__modifiers,
   .component__markup,
   .component__example {

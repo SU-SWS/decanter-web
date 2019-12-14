@@ -41,7 +41,7 @@ const KSSComponent = (props) => {
 
       <section className="component__markup">
         <div className="component__centered">
-          <h2>Source Markup</h2>
+          <h3>Source Markup</h3>
           <pre>
             <code className="language-html hljs">
             {markup}
