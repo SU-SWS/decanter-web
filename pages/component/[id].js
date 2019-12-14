@@ -49,6 +49,7 @@ function ComponentPage(props) {
 
   return (
     <Layout
+      type="page-component"
       content={cont}
       title={title}
       header={hed}

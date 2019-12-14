@@ -13,33 +13,33 @@ const KSSComponent = (props) => {
   return (
     <>
     {props.kssdata.deprecated || props.kssdata.experimental ? <Alert deprecated={props.kssdata.deprecated} experimental={props.kssdata.experimental} /> : '' }
-    <div className="component">
-      <div className="component__description fullwidth">
+    <section className="component">
+      <section className="component__description fullwidth">
         <div className="component__centered">
           <h2>Description</h2>
           {description}
         </div>
-      </div>
+      </section>
 
-      <div className="component__example fullwidth">
-        <h2 className="component__title centered">Default Display</h2>
+      <section className="component__example fullwidth">
+        <h2 className="component__title centered">Default Style</h2>
         <div className="component__centered">
           {example}
         </div>
-      </div>
+      </section>
 
       {variants.length ?
-      <div className="component__modifiers">
-        <div className="component__centered">
-          <h2>Display Modifiers</h2>
-        </div>
+      <section className="component__modifiers">
+        <header className="component__centered">
+          <h2>Style Variants</h2>
+        </header>
           {variants.map((val) => {
             return <Variant key={val.name} data={val} />;
           })}
-      </div>
+      </section>
       : ''}
 
-      <div className="component__markup">
+      <section className="component__markup">
         <div className="component__centered">
           <h2>Source Markup</h2>
           <pre>
@@ -48,8 +48,8 @@ const KSSComponent = (props) => {
             </code>
           </pre>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
     </>
   );
 };
