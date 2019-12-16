@@ -1,5 +1,9 @@
 @charset 'UTF-8';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @include font-smoothing;
 }

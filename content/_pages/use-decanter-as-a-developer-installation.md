@@ -30,10 +30,10 @@ Visit Node's website to download the [installer](http://nodejs.org/).
 
 ### Grunt
 
-The only requirement for Grunt is Grunts CLI(Command Line Utility).
+The only requirement for Grunt is Grunt's CLI (Command Line Interface).
 
 If you don't already have that installed, install globally, this is not project specific.
-In NPM we do so with the -g flag.
+In NPM we do so with the `-g` flag.
 
 ```
 npm install -g grunt-cli
