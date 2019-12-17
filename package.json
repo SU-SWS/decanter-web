@@ -40,6 +40,7 @@
     "bourbon": "^5.1",
     "decanter": "git+https://github.com/su-sws/decanter.git#v6",
     "del": "^5.1.0",
+    "fibers": "^4.0.2",
     "file-loader": "^5.0.2",
     "filemanager-webpack-plugin": "^2.0.5",
     "frontmatter-markdown-loader": "^3.1.0",
