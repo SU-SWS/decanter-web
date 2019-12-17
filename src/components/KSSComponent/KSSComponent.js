@@ -22,6 +22,7 @@ const KSSComponent = (props) => {
       </section>
 
       <section className="component__example fullwidth">
+        <button className="fullwidth-toggle"><i></i> Toggle fullwidth view</button>
         <h2 className="component__title centered">Default Style</h2>
         <div className="component__centered">
           {example}
