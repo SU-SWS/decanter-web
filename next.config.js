@@ -12,15 +12,15 @@ const npmPackage = "node_modules";
 const glob = require("glob");
 
 module.exports = withSass(
-  withImages(
+  withCSS(
   withFonts(
-  withCSS({
+  withImages({
   cssModules: false,
   sassLoaderOptions: {
-    implementation: require('sass'),
+    implementation: sass,
     sassOptions: {
       includePaths: [
-        parh.resolve(__dirname, "src/scss"),
+        path.resolve(__dirname, "src/scss"),
         path.resolve(__dirname, npmPackage)
       ],
       sourceMap: true,
@@ -29,7 +29,7 @@ module.exports = withSass(
     }
   },
   cssLoaderOptions: {
-    url: false
+    url: true
   },
   webpack: (cfg, options) => {
 
@@ -67,11 +67,38 @@ module.exports = withSass(
       {
         test: /\.(yaml|yml)$/,
         use: 'js-yaml-loader'
+      },
+      {
+        test: /\.(woff2?|ttf|otf|eot)$/,
+        loader: 'file-loader',
+        options: {
+          publicPath: "/fonts",
+          outputPath: "/fonts"
+        }
+      },
+      // Apply plugins to image assets.
+      {
+        test: /\.(png|svg|jpg|gif)$/i,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 8192,
+              fallback: {
+                loader: 'file-loader',
+                options: {
+                  publicPath: '/img',
+                  outputPath: '/img'
+                }
+              }
+            }
+          }
+        ]
       }
     );
 
-    cfg.resolve.alias['#decanter-img'] = path.resolve(__dirname, "node_modules/decanter/core/src/img/");
-    cfg.resolve.alias['@fortawesome'] = path.resolve(__dirname, "node_modules/@fortawesome");
+    cfg.resolve.alias['#decanter-img'] = path.join(__dirname, "node_modules/decanter/core/src/img");
+    cfg.resolve.alias['#fa-fonts'] = path.resolve(__dirname, 'node_modules/@fortawesome/fontawesome-free/webfonts');
 
     return cfg;
   },
@@ -123,4 +150,7 @@ module.exports = withSass(
     return pages;
   }
 }
-))));
+)
+)
+)
+);

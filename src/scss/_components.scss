@@ -40,6 +40,11 @@
   .component__modifiers,
   .component__example {
     @include modular-spacing('margin', 5 null null);
+    .component__centered {
+      min-height: 50px;
+      position: relative;
+      clear: both;
+    }
   }
 
   .component__variant-markup,
