@@ -47,7 +47,7 @@ nav_items:
       - label: Technical Contribution Guidelines
         path: /page/about-contributing
       - label: Visual Guidelines
-        path: 'https://elegant-poitras-87214a.netlify.com/page/visual-guidelines'
+        path: '/page/visual-guidelines'
       - label: Governance
         path: /page/about-governance/
       - label: Connecting with the Decanter Community

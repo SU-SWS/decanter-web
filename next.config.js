@@ -20,7 +20,7 @@ module.exports = withSass(
     implementation: require('sass'),
     sassOptions: {
       includePaths: [
-        path.resolve(npmPackage, "bourbon/core"),
+        parh.resolve(__dirname, "src/scss"),
         path.resolve(__dirname, npmPackage)
       ],
       sourceMap: true,
@@ -65,19 +65,12 @@ module.exports = withSass(
         loader: 'raw-loader'
       },
       {
-        test: /\.(jpg|png|gif|svg)$/,
-        loader: 'url-loader',
-        options: {
-          limit: 100000
-        }
-      },
-      {
         test: /\.(yaml|yml)$/,
         use: 'js-yaml-loader'
       }
     );
 
-    cfg.resolve.alias['?decanter-img'] = path.resolve(__dirname, "node_modules/decanter/core/src/img");
+    cfg.resolve.alias['#decanter-img'] = path.resolve(__dirname, "node_modules/decanter/core/src/img/");
     cfg.resolve.alias['@fortawesome'] = path.resolve(__dirname, "node_modules/@fortawesome");
 
     return cfg;
