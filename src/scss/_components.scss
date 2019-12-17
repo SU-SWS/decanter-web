@@ -38,11 +38,11 @@
 
 .component {
   .component__modifiers,
-  .component__markup,
   .component__example {
     @include modular-spacing('margin', 5 null null);
   }
 
+  .component__variant-markup,
   .component__markup {
     pre {
       max-height: 400px;

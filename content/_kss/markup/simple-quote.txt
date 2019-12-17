@@ -1,6 +1,0 @@
-
-<figure  class="su-quote [ modifier_class ]"><img class="su-quote__img" src="https://placeimg.com/640/480/people" alt="Jane Doe"><section class="su-quote__body"><h3 class="su-quote__heading">Jane Doe</h3><p class="su-quote__bio">Jane Doe's title<br/>Jane Doe's company</p><blockquote>
-      <p class="su-quote__quote">"This is the actual quote. Lorem ipsur adipisicing elit, sed do eiusmod tempor incididunt ut labore et..."</p>
-    </blockquote>
-  </section>
-</figure>

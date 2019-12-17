@@ -29,6 +29,16 @@ const KSSComponent = (props) => {
         </div>
       </section>
 
+      <section className="component__markup">
+        <div className="component__centered">
+          <pre>
+            <code className="language-html hljs">
+            {markup}
+            </code>
+          </pre>
+        </div>
+      </section>
+
       {variants.length ?
       <section className="component__modifiers">
         <header className="component__centered">
@@ -40,16 +50,6 @@ const KSSComponent = (props) => {
       </section>
       : ''}
 
-      <section className="component__markup">
-        <div className="component__centered">
-          <h3>Source Markup</h3>
-          <pre>
-            <code className="language-html hljs">
-            {markup}
-            </code>
-          </pre>
-        </div>
-      </section>
     </section>
     </>
   );

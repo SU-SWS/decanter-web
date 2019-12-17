@@ -1,2 +1,0 @@
-
-<button  class="su-nav-toggle [ modifier_class ]" aria-expanded="false" aria-label="expand menu" >+</button>

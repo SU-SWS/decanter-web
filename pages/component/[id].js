@@ -102,7 +102,13 @@ ComponentPage.getInitialProps = async function(context) {
   data.markup = prettifyHtml(data.markup);
 
   component.modifiers.forEach(async function(mod) {
-    mod.markup = render.default.replace("[ modifier_class ]", mod.className);
+    var name = mod.className;
+    try {
+      mod.markup = require(`../../content/_kss/markup/${id}-${name}.html`);
+    }
+    catch(err) {
+      return;
+    }
     data.variants.push(mod);
   });
 

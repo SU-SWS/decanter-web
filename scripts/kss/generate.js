@@ -77,17 +77,31 @@ kss_util.fetchSections()
       var options = {
         ...schema,
         settings: {
+          async: false,
           'twig options': {
             namespaces: { decanter: path.join(decanter_src, "templates/") },
-            allowAsync: false
+            allowAsync: false,
+            async: false
           }
         }
       };
 
-      Twig.renderFile(full_twig_path, options, function(err, html) {
+      // Render the default markup.
+      Twig.renderFile(full_twig_path, options, (err, html) => {
         let filepath = path.join(kss_settings_dir, "markup", key + ".html");
-        fs.writeFileSync(filepath, html);
+        fs.writeFile(filepath, html, (err2) => { if (err2) { console.log(err2) } } );
       });
+
+      // Render each modifier.
+      var modifiers = await section.modifiers();
+      modifiers.forEach(function(modifier, index) {
+        var modnam = modifier.className();
+        options.modifier_class = modnam;
+        Twig.renderFile(full_twig_path, options, function(err3, html2) {
+          let filepath = path.join(kss_settings_dir, "markup", key + "-" + modnam + ".html");
+          fs.writeFile(filepath, html2, (err4) => { if (err4) { console.log(err4) } });
+        });
+      })
     });
   }
 );
