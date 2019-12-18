@@ -1,17 +1,44 @@
 @charset 'UTF-8';
 
 .su-alert__body,
-.component__centered,
+.component__description,
+.component__default > header,
+.component__markup,
+.component__modifiers > header,
 .component__variant-info,
-.centered {
-  @include margin(0 auto null);
-  max-width: 800px;
+.component__variant-markup,
+.component__demo,
+.component__variant-demo {
+  > * {
+    @include margin(null auto);
+    max-width: 800px;
+  }
 }
 
-.component__centered {
-  @include margin(1rem null null);
-  position: relative;
-  background: $su-color-white;
+.component__demo,
+.component__variant-demo {
+  @include margin(null auto);
+
+  > div {
+    min-height: 50px;
+    position: relative;
+    clear: both;
+  }
+}
+
+.component__variant-name {
+  @include margin(null null 6px);
+  @include modular-typography(1);
+  font-weight: $su-font-bold;
+}
+
+.component__markup,
+.component__variant-markup {
+  @include modular-spacing('margin', 3 null null);
+
+  h3 {
+    @include type-d;
+  }
 }
 
 .component__resources {
@@ -36,34 +63,23 @@
   }
 }
 
-.component {
-  .component__modifiers,
-  .component__example {
-    @include modular-spacing('margin', 5 null null);
-    .component__centered {
-      min-height: 50px;
-      position: relative;
-      clear: both;
-    }
-  }
+.component__default,
+.component__modifiers {
+  @include modular-spacing('margin', 5 null null);
+}
 
+.component {
   .component__variant-markup,
   .component__markup {
     pre {
-      max-height: 400px;
+      max-height: 300px;
       overflow: auto;
     }
   }
 
-  .component__variant-info {
-    p {
-      @include margin(0);
-    }
-  };
-
   .component__modifiers {
     > .component__variant {
-      @include modular-spacing('margin-top', 4);
+      @include modular-spacing('margin-top', 5);
     }
 
     > .component__centered {
@@ -89,7 +105,6 @@ button {
     &::before {
       @include fa-icon;
       color: $su-color-black;
-      font-family: 'Font Awesome 5 Brands';
       transition: color 0.25s ease-out;
     }
   }
@@ -108,9 +123,8 @@ button {
     display: none;
   }
   .su-alert__body,
-  .component__centered,
-  .component__variant-info,
-  .centered {
+  .component__demo > div,
+  .component__variant-demo > div {
     max-width: 100%;
   }
 

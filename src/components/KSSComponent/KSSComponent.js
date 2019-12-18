@@ -14,34 +14,34 @@ const KSSComponent = (props) => {
     <>
     {props.kssdata.deprecated || props.kssdata.experimental ? <Alert deprecated={props.kssdata.deprecated} experimental={props.kssdata.experimental} /> : '' }
     <section className="component">
-      <section className="component__description fullwidth">
-        <div className="component__centered">
+        <section className="component__description">
           <h2>Description</h2>
           {description}
-        </div>
-      </section>
+        </section>
 
-      <section className="component__example fullwidth">
-        <button className="fullwidth-toggle"><i></i> Toggle fullwidth view</button>
-        <h2 className="component__title centered">Default Style</h2>
-        <div className="component__centered">
+      <section className="component__default">
+        <header>
+          <p><button className="fullwidth-toggle su-button--secondary"><i> </i>Toggle fullwidth view</button></p>
+          <h2>Default Style</h2>
+        </header>
+        <section className="component__demo">
           {example}
-        </div>
-      </section>
+        </section>
 
-      <section className="component__markup">
-        <div className="component__centered">
+        <section className="component__markup">
+          <h3>Example Markup</h3>
           <pre>
             <code className="language-html hljs">
             {markup}
             </code>
           </pre>
-        </div>
+        </section>
       </section>
+
 
       {variants.length ?
       <section className="component__modifiers">
-        <header className="component__centered">
+        <header>
           <h2>Style Variants</h2>
         </header>
           {variants.map((val) => {

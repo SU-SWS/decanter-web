@@ -3,6 +3,42 @@
 // Homepage
 
 .section {
+  &.fullwidth {
+    > * {
+      @include padding(null 2rem);
+    }
+
+    &.wide-content {
+      > * {
+        @include margin(null auto);
+        max-width: 1200px;
+      }
+    }
+
+    &.narrow-content {
+      > * {
+        @include margin(null auto);
+        max-width: 900px;
+      }
+    }
+  }
+
+  .su-card {
+    h2 {
+      @include type-b;
+    }
+
+    p {
+      @include modular-typography(1);
+
+      & + .su-link--action {
+        @include margin(40px null null);
+      }
+    }
+  }
+}
+
+.section {
   &.inverse {
     color: $su-color-white;
 

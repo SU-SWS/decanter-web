@@ -7,20 +7,19 @@ const Variant = (props) => {
   return (
     <section className="component__variant">
       <header className="component__variant-info">
-        <p><strong>{props.data.name}</strong><br />
-        {props.data.description}</p>
+        <p className="component__variant-name"><code>{props.data.name}</code></p>
+        <p>{props.data.description}</p>
       </header>
-      <section className="component__centered">
+      <section className="component__variant-demo">
         {mkd}
       </section>
       <section className="component__variant-markup">
-        <div className="component__centered">
-          <pre>
-            <code className="language-html hljs">
-            {markup}
-            </code>
-          </pre>
-        </div>
+        <h3>Example Markup</h3>
+        <pre>
+          <code className="language-html hljs">
+          {markup}
+          </code>
+        </pre>
       </section>
     </section>
   );
