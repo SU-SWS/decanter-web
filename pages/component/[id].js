@@ -53,6 +53,7 @@ function ComponentPage(props) {
       content={cont}
       title={title}
       header={hed}
+      {...props}
     />
   );
 }
@@ -66,7 +67,7 @@ ComponentPage.getInitialProps = async function(context) {
   const { id } = context.query;
   var component = false;
   var schema = false;
-  var data = {};
+  var data = { id: id };
 
   try {
     // We found a KSS entry. Let's do stuff with it.
@@ -76,7 +77,7 @@ ComponentPage.getInitialProps = async function(context) {
   // Could be a missing json, or could be a top level group. Check for a page.
   catch(err) {
     const fileContent = await import(`../../content/_pages/${id}.md`);
-    data = { page: await fileContent };
+    data = { page: await fileContent, id: id };
     return await data;
   }
 

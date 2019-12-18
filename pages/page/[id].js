@@ -21,6 +21,7 @@ const Page = props => {
       type="page"
       content={cont}
       title={title}
+      {...props}
     />
   )
 }
@@ -33,7 +34,7 @@ const Page = props => {
 Page.getInitialProps = async function(context) {
   const { id } = context.query;
   const fileContent = await import(`../../content/_pages/${id}.md`);
-  return { page: await fileContent };
+  return { page: await fileContent, id: id };
 }
 
 export default Page;
