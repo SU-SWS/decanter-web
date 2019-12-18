@@ -15,7 +15,7 @@ const Layout = (props) => (
   <main className={props.type}>
     <aside aria-label="left sidebar" id="left-sidebar">
       <Logo />
-      <PrimaryNav props={props} />
+      <PrimaryNav {...props} />
       <a href="https://www.netlify.com">
         <img src="https://www.netlify.com/img/global/badges/netlify-dark.svg" />
       </a>
