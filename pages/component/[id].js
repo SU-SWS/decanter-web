@@ -27,6 +27,7 @@ function ComponentPage(props) {
         content={cont}
         title={title}
         header={hed}
+        {...props}
       />
     )
   }
@@ -77,8 +78,7 @@ ComponentPage.getInitialProps = async function(context) {
   // Could be a missing json, or could be a top level group. Check for a page.
   catch(err) {
     const fileContent = await import(`../../content/_pages/${id}.md`);
-    data = { page: await fileContent, id: id };
-    return await data;
+    data.page = await fileContent;
   }
 
   // Sometimes there is straight up markup in the markup.
@@ -86,7 +86,7 @@ ComponentPage.getInitialProps = async function(context) {
     schema = require(`../../content/_kss/data/${id}.json`);
   }
   catch(err) {
-    data.markup = await component.markup;
+    data.markup = await component.markup;;
     return await data;
   }
 

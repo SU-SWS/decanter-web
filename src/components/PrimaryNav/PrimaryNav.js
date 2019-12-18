@@ -11,12 +11,12 @@ import Components from '../../../content/_settings/kss.json';
  * @param  {String} [test="page"] [description]
  * @return {[type]}               [description]
  */
-function dynamicAsLink(item, index, test = "page") {
+function dynamicAsLink(item, index, test = ["page", "component"]) {
 
   var parts = item.path.split("/");
-  if (parts[1] == test) {
-    item.path = "/" + test + "/[id]";
-    item.as = "/" + test + "/" + parts[2] + "/";
+  if (test.includes(parts[1])) {
+    item.path = "/" + parts[1] + "/[id]";
+    item.as = "/" + parts[1] + "/" + parts[2] + "/";
     item.id = parts[2];
   }
 
@@ -32,8 +32,7 @@ function dynamicAsLink(item, index, test = "page") {
  */
 function dynamicActiveSearch(item, key) {
   item.class = ['su-secondary-nav__link'];
-
-  if (item.id == key) {
+  if (item.id && item.id == key) {
     item.class.push('su-secondary-nav__item--current');
   }
 
@@ -42,17 +41,12 @@ function dynamicActiveSearch(item, key) {
   }
 }
 
-Navigation.nav_items.map((item, index) => dynamicAsLink(item, index, 'page'));
-Components.items.map((item, index) => dynamicAsLink(item, index, 'component'));
-Components.items.map((item, index) => dynamicAsLink(item, index, 'page'));
+Navigation.nav_items.map((item, index) => dynamicAsLink(item, index));
+Components.items.map((item, index) => dynamicAsLink(item, index));
 
 class PrimaryNav extends React.Component {
 
-  /**
-   * [componentDidMount description]
-   * @return {[type]} [description]
-   */
-  componentDidMount() {
+  doExpandThingy() {
     var decanterNav = document.getElementById('decanter-nav');
     let actives = decanterNav.querySelectorAll('.su-secondary-nav__item--current');
     if (actives.length) {
@@ -82,6 +76,35 @@ class PrimaryNav extends React.Component {
   }
 
   /**
+   * [componentDidMount description]
+   * @return {[type]} [description]
+   */
+  componentDidMount() {
+    this.doExpandThingy();
+  }
+
+  /**
+   * [routeChangeComplete description]
+   * @param  {[type]} url [description]
+   * @return {[type]}     [description]
+   */
+  componentDidUpdate() {
+    this.doExpandThingy();
+  }
+
+
+  /**
+   * [shouldComponentUpdate description]
+   * @param  {[type]} nextProps [description]
+   * @param  {[type]} nextState [description]
+   * @return {[type]}           [description]
+   */
+  refreshNav() {
+    // this.forceUpdate();
+    this.setState({});
+  }
+
+  /**
    * [setActivePath description]
    * @param {[type]} items [description]
    */
@@ -107,7 +130,7 @@ class PrimaryNav extends React.Component {
             {items.map((item, index) => (
               <li className="su-secondary-nav__item su-secondary-nav__item--parent" key={"lv1-" + index}>
                 <Link href={item.path} as={item.as}>
-                  <a className={item.class.join(' ')}>{item.label}</a>
+                  <a className={item.class.join(' ')} onClick={this.refreshNav}>{item.label}</a>
                 </Link>
                 {item.children && (
                   <ul className="su-secondary-nav__menu-lv2 su-secondary-nav__menu">

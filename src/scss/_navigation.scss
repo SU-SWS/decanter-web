@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+
+// Copy the secondary styles.
+.decanter-nav {
+  @extend .su-secondary-nav;
+
+  .su-secondary-nav__item--parent {
+    > .su-secondary-nav__menu {
+      display: none;
+    }
+  }
+
+  .su-secondary-nav__item--expanded,
+  .active-trail {
+    > .su-secondary-nav__menu {
+      display: flex;
+    }
+  }
+}
