@@ -24,7 +24,7 @@ nav_items:
     path: /page/about-why-decanter/
   - children:
       - children:
-          - label: Getting Started
+          - label: Get Started
             path: /page/use-decanter-as-a-developer-installation/
           - label: Build Tools
             path: /page/use-decanter-as-a-developer-build-tools/
@@ -47,7 +47,7 @@ nav_items:
       - label: Technical Contribution Guidelines
         path: /page/about-contributing
       - label: Visual Guidelines
-        path: '/page/visual-guidelines'
+        path: /page/visual-guidelines
       - label: Governance
         path: /page/about-governance/
       - label: Connecting with the Decanter Community
