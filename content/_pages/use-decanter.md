@@ -25,6 +25,6 @@ Use the Decanter Design System to get your project started quickly. You can use 
 
 ## Decanter across Stanford
 
-Decanter is in use on a number of sites across campus today.
+Decanter is in use on a number of websites across campus today.
 
 <p><a href="/page/about-projects-that-use-decanter/" class="su-link su-link--action"> See projects that use Decanter</a></p>
