@@ -67,7 +67,6 @@ collections:
       - { label: "Component URL Key", name: "component", widget: "string", hint: "eg: composite-card from /components/composite-card", required: true}
       - { label: "Bottom Content", name: "bottomcontent", widget: "markdown" }
       - { label: "Browser compatibility", name: "browsers", widget: "string" }
-      - { label: "Top Content", name: "topcontent", widget: "markdown" }
       - { label: "Background Color (eg: /#FF00FF)", name: "bgcolor", widget: "string" }
       - { label: "Example width (%|px)", name: "egwidth", widget: "string", required: false}
       - label: Modifier Classes
