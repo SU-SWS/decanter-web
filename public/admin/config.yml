@@ -63,15 +63,16 @@ collections:
     identifier_field: component
     fields:
       - { label: "Title", name: "title", widget: "string", required: true}
-      - { label: "Top Content", name: "body", widget: "markdown" }
-      - { label: "Component URL Key", name: "component", widget: "string", hint: "eg: composite-card from /components/composite-card", required: true}
-      - { label: "Bottom Content", name: "bottomcontent", widget: "markdown" }
-      - { label: "Browser compatibility", name: "browsers", widget: "string" }
-      - { label: "Background Color (eg: /#FF00FF)", name: "bgcolor", widget: "string" }
-      - { label: "Example width (%|px)", name: "egwidth", widget: "string", required: false}
+      - { label: "Top Content", name: "body", widget: "markdown", required: false}
+      - { label: "Component URL Key", name: "component", widget: "string", hint: "eg: composite-card from /components/composite-card", required: true }
+      - { label: "Bottom Content", name: "bottomcontent", widget: "markdown", required: false }
+      - { label: "Browser compatibility", name: "browsers", widget: "string", required: false }
+      - { label: "Background Color (eg: #FF00FF)", name: "bgcolor", widget: "string", required: false }
+      - { label: "Example width (%|px)", name: "egwidth", widget: "string", required: false }
       - label: Modifier Classes
         name: modifier_css
         widget: list
+        required: false
         fields:
           - { label: "Variant CSS Class", name: css_class, widget: string, hint: "No preceeding period. eg: su-card--minimal", required: true }
           - { label: "Source Data", name: "source_json", widget: "text", hint: "JSON data to populate the template with. Leave empty to use what is in the Decanter repo.", required: false }
