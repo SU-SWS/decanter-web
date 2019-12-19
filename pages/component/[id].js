@@ -34,7 +34,7 @@ function ComponentPage(props) {
 
   // We should have KSS data at this point.
   title = props.kssdata.header;
-  cont = <KSSComponent kssdata={props.kssdata} markup={props.markup} variants={props.variants} />;
+  cont = <KSSComponent {...props} />;
 
   let twig_source;
   if (props.kssdata.source_twig) {
@@ -112,6 +112,19 @@ ComponentPage.getInitialProps = async function(context) {
     }
     data.variants.push(mod);
   });
+
+  // Fetch the local editor data to supplement with if available.
+  var localContent;
+  try {
+    localContent = await import(`../../content/_components/${id}.md`);
+  }
+  catch(err) {
+    return data;
+  }
+
+  var localData = await localContent.attributes;
+  localData.body = localContent.html;
+  data.local = await localData;
 
   return await data;
 };
