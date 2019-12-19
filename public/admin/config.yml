@@ -62,21 +62,21 @@ collections:
     create: true
     identifier_field: component
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Title", name: "title", widget: "string", required: true}
       - { label: "Top Content", name: "body", widget: "markdown" }
-      - { label: "Component URL Key", name: "component", widget: "string", hint: "eg: composite-card from /components/composite-card" }
+      - { label: "Component URL Key", name: "component", widget: "string", hint: "eg: composite-card from /components/composite-card", required: true}
       - { label: "Bottom Content", name: "bottomcontent", widget: "markdown" }
       - { label: "Browser compatibility", name: "browsers", widget: "string" }
       - { label: "Top Content", name: "topcontent", widget: "markdown" }
       - { label: "Background Color (eg: /#FF00FF)", name: "bgcolor", widget: "string" }
-      - { label: "Example width (%|px)", name: "egwidth", widget: "string" }
+      - { label: "Example width (%|px)", name: "egwidth", widget: "string", required: false}
       - label: Modifier Classes
         name: modifier_css
         widget: list
         fields:
-          - { label: "Variant CSS Class", name: css_class, widget: string, hint: "No preceeding period. eg: su-card" }
-          - { label: "Source Data", name: "source_json", widget: "text", hint: "JSON data to populate the template with. Leave empty to use what is in the Decanter repo." }
-          - { label: "Background Color (eg: /#FF00FF)", name: "bgcolor", widget: "string" }
-          - { label: "Example width (%|px)", name: "egwidth", widget: "string", hint: "defaults to the global value if set." }
-          - { label: "Description Override", name: "description", widget: "markdown", hint: "overrides the description from KSS" }
-          - { label: "Notes", name: "notes", widget: "markdown", hint: "Shows up between the example and the markup code block." }
+          - { label: "Variant CSS Class", name: css_class, widget: string, hint: "No preceeding period. eg: su-card--minimal", required: true }
+          - { label: "Source Data", name: "source_json", widget: "text", hint: "JSON data to populate the template with. Leave empty to use what is in the Decanter repo.", required: false }
+          - { label: "Background Color (eg: /#FF00FF)", name: "bgcolor", widget: "string", required: false }
+          - { label: "Example width (%|px)", name: "egwidth", widget: "string", hint: "defaults to the global value if set.", required: false }
+          - { label: "Description Override", name: "description", widget: "markdown", hint: "overrides the description from KSS", required: false }
+          - { label: "Notes", name: "notes", widget: "markdown", hint: "Shows up between the example and the markup code block.", required: false }
