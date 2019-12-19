@@ -2,26 +2,24 @@
 title: Contributing to Decanter
 date: 2019-11-28T14:11:13.000Z
 ---
-READY FOR REVIEW
-
 ## What we accept
 
 <p class="su-intro-text">When considering new components and functionality for Decanter, we need to ensure it will serve the needs of the broader University community and does not duplicate existing functionality.</p> 
 
 The following criteria should be met for the design of new features as well as functional enhancements:
 
-* Reusable (content-agnostic)
+* Reusable, content-agnostic
 * Component/element has a clear use case
-* Addresses accessibility and usability (see accessibility
+* Expressly addresses [accessibility](/page/page-about-why-decanter-accessibility/) and [usability](/page/usability/)
 * Considers evolving web trends
 
 ### Out of Scope for Decanter
 
 * Content-specific design elements
 
-## Report an Issue
+## Report an issue
 
-The Decanter team is committed to maintaining consistent, high-quality components. If you encounter any issues with the Figma Toolkit, components, or on the documentation site, please [submit an issue to our Github project](https://github.com/SU-SWS/decanter) and it will be added to the backlog.
+The Decanter team is committed to maintaining consistent, high-quality components. If you encounter any issues with the Decanter Design System in Figma, elements of the Decanter Frontend Framework, or on the documentation site, please [submit an issue to our Github project](https://github.com/SU-SWS/decanter) and it will be added to the backlog.
 
 The team will address bugs depending on the severity of the issue and the sprint capacity. Please include as much relevant information as possible when submitting a bug report, including steps to reproduce, urgency, and impact to help prioritize the task.
 
