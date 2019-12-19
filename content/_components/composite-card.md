@@ -1,17 +1,14 @@
 ---
-title: "My Test Component"
-component: "composite-card"
-browsers: ""
-bgcolor: "#F0F"
-egwidth: "100%"
+title: Card
+component: composite-card
+bottomcontent: ''
+browsers: ''
+bgcolor: ''
+egwidth: 450px
 modifier_css:
-  -
-    css_class: "su-card--minimal"
-    experimental: false
-    deprecated: false
-    source_json: ""
-    description: "This is my description"
-bottomcontent: ""
-
+  - css_class: su-card--minimal
+    description: ''
+    egwidth: 100%
+    source_json: ''
 ---
-This is my test component page on local.
+
