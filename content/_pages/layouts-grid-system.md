@@ -4,7 +4,7 @@ date: 2019-11-28T14:11:13.000Z
 ---
 https://github.com/SU-SWS/decanter/issues/576
 
-### Grid Systems
+## Grid Systems
 
 There are now two grid systems available in this project, one of which is built
 with Flexbox and the other of which is built with CSS Grid. The systems can be
@@ -17,7 +17,7 @@ only the Flexbox system requires an upgrade from the previous version. You are
 encouraged to explore the CSS Grid system for enhancement and usability in your
 project.
 
-#### Flexbox Grid System
+### Flexbox Grid System
 
 While the available Flexbox grid system still remains a class-based system, the
 class names have changed and are processed dynamically, using a combination of new
@@ -26,50 +26,102 @@ and `/core/src/scss/utilities/mixins/flex`, respectively.
 
 Example: `grid--6-of-12` is now `flex-6-of-12`
 
-##### Responsive Classes
+#### Responsive Classes
 
 The grid includes five tiers of predefined classes for building complex responsive
-layouts. You can customize the size of your columns (or items inside of your columns)
-on small, medium, large, extra large, or extra extra large devices.
+layouts. You can customize the width of an element within the Flexbox grid on devices with a wide range of resolutions.
 
-For grids that are the same from the smallest of devices to the largest, use the
-`.flex-*-of-*`and `.flex-*-*-of-*`classes. Specify a numbered class when you need
-a particularly sized column; otherwise, feel free to stick to `.flex-*-of-*`.
+At the smallest breakpoint `xs`, all the predefined classes take up 100% width (12 out of 12 columns) of the parent container.
 
-Example: if you want to produce a layout where a column spans two of the available
-twelve columns at every breakpoint, you would do the following: `class="flex-2-of-12"`
+For an element that spans x out of 12 columns from the `sm` breakpoint and up, use the
+`.flex-x-of-12` classes.
 
-If you wanted to produce a layout that would span two of the available
-twelve columns, you would do the following: `class="flex-lg-2-of-12 flex-xl-2-of-12 flex-2xl-2-of-12"`
+**Example:** If you want to produce a layout where a column spans two of the available 12 columns from `sm` breakpoint and up, you would do the following: `class="flex-2-of-12"`
 
-###### Example: Basic 
+For an element that spans x out of 12 columns from a particular breakpoint `bp` and up, use the `.flex-bp-x-of-12`classes where `bp` is one of `sm`, `md`, `lg`, `xl` and `2xl`. Note: `.flex-sm-x-of-12` behaves the same as `.flex-x-of-12`.
 
-```
-<div class="layout ">
-    <header class="flex-container centered-container">
-    <div class="flex-12-of-12">
-      <h1>Header</h1>
-    </div>
-  </header>
-  
-    <section class="flex-container centered-container">
+**Example:** If you wanted to produce a layout that would span two of the available
+twelve columns from `lg` breakpoint and up, you would do the following: `class="flex-lg-2-of-12"`
+
+#### Demo
+
+<div class="layout">
+    <header class="flex-container flex-container--row-gap">
         <div class="flex-12-of-12">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h5>.flex-12-of-12</h5>
+          <p>12 of 12 for all except xs breakpoint</p>
         </div>
-    </section>
-  
-    <footer class="flex-container centered-container">
-    <div class="flex-12-of-12">
-      <h6>This is the footer</h6>
-    </div>
+    </header>  
+    <section class="flex-container flex-container--row-gap">
+        <div class="flex-8-of-12">
+            <h5>.flex-8-of-12</h5>
+            <p>8 of 12 for all except xs breakpoint</p>
+        </div>
+  </section>
+    <section class="flex-container flex-container--row-gap">
+        <div class="flex-md-6-of-12">
+            <h5>.flex-md-6-of-12</h5>
+            <p>6 of 12 for md breakpoint and up</p>
+        </div>
+        <div class="flex-md-6-of-12">
+            <h5>.flex-md-6-of-12</h5>
+            <p>6 of 12 for md breakpoint and up</p>
+        </div>
+  </section>
+    <footer class="flex-container flex-container--row-gap">
+        <div class="flex-lg-4-of-12">
+            <h5>.flex-lg-4-of-12</h5>
+            <p>4 of 12 for lg breakpoint and up</p>
+        </div>
+        <div class="flex-lg-4-of-12">
+            <h5>.flex-lg-4-of-12</h5>
+            <p>4 of 12 for lg breakpoint and up</p>
+        </div>
+        <div class="flex-lg-4-of-12">
+            <h5>.flex-lg-4-of-12</h5>
+            <p>4 of 12 for lg breakpoint and up</p>
+        </div>
   </footer>
-  
+</div>
+
+#### Markup
+```html
+<div class="layout">
+    <header class="flex-container flex-container--row-gap">
+        <div class="flex-12-of-12">
+          <h5>.flex-12-of-12</h5>
+          <p>12 of 12 for all except xs breakpoint</p>
+        </div>
+    </header>  
+    <section class="flex-container flex-container--row-gap">
+        <div class="flex-8-of-12">
+            <h5>.flex-8-of-12</h5>
+            <p>8 of 12 for all except xs breakpoint</p>
+        </div>
+  </section>
+    <section class="flex-container flex-container--row-gap">
+        <div class="flex-md-6-of-12">
+            <h5>.flex-md-6-of-12</h5>
+            <p>6 of 12 for md breakpoint and up</p>
+        </div>
+        <div class="flex-md-6-of-12">
+            <h5>.flex-md-6-of-12</h5>
+            <p>6 of 12 for md breakpoint and up</p>
+        </div>
+  </section>
+    <footer class="flex-container flex-container--row-gap">
+        <div class="flex-lg-4-of-12">
+            <h5>.flex-lg-4-of-12</h5>
+            <p>4 of 12 for lg breakpoint and up</p>
+        </div>
+        <div class="flex-lg-4-of-12">
+            <h5>.flex-lg-4-of-12</h5>
+            <p>4 of 12 for lg breakpoint and up</p>
+        </div>
+        <div class="flex-lg-4-of-12">
+            <h5>.flex-lg-4-of-12</h5>
+            <p>4 of 12 for lg breakpoint and up</p>
+        </div>
+  </footer>
 </div>
 ```
-
-##### Pushing Columns
-
-You can now push grid columns with responsive classes. The classes are sized to
-match columns.
-
-Example: `.flex-push-xs-5`

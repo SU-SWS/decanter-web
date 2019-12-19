@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+
+.content {
+  .layout {
+    background: $su-color-fog;
+    > * {
+      > * {
+        @include padding(1em);
+        background: $su-color-cloud;
+
+        > * {
+          @include margin(null null 0);
+        }
+      }
+    }
+  }
+}
