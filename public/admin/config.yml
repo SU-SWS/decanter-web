@@ -60,6 +60,7 @@ collections:
     description: "Component pages."
     folder: "content/_components"
     create: true
+    identifier_field: component
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Top Content", name: "body", widget: "markdown" }
