@@ -10,7 +10,7 @@ const KSSComponent = (props) => {
   let variants = props.variants || [];
 
   // If no local data.
-  if (!props.local) {
+  if (!props.local || !props.local.body.length) {
     description = <div dangerouslySetInnerHTML={{ __html: props.kssdata.description }} />;
   }
 
