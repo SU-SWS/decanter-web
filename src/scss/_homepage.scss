@@ -95,7 +95,7 @@
   &--more-info {
     .su-link--action {
       display: block;
-      font-size: 1.1em;
+      font-size: 2.2rem;
       width: fit-content;
     }
   }
@@ -136,7 +136,8 @@
     }
 
     img {
-      height: 70px;
+      @include margin(null null 1.4rem);
+      height: 7rem;
     }
   }
 
