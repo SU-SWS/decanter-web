@@ -7,7 +7,7 @@ const Variant = (props) => {
   var demoStyles = [];
   var demoStylesWrapper = [];
   var notes;
-  var description = <p>props.data.description</p>;
+  var description = <p>{props.data.description}</p>;
 
   // If there is local data.
   if (props.local) {
