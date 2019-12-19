@@ -20,13 +20,12 @@ function ComponentPage(props) {
   // We got a page instead. Render that and quit.
   if (props.page) {
     title = props.page.attributes.title;
-    cont = <div dangerouslySetInnerHTML={{ __html: props.page.html }} />;
+    cont = <div className="content" dangerouslySetInnerHTML={{ __html: props.page.html }} />;
     return (
       <Layout
-        type="page-component"
+        type="page"
         content={cont}
         title={title}
-        header={hed}
         {...props}
       />
     )
