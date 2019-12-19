@@ -69,7 +69,7 @@ collections:
       - { label: "Browser compatibility", name: "browsers", widget: "string" }
       - { label: "Top Content", name: "topcontent", widget: "markdown" }
       - { label: "Background Color (eg: /#FF00FF)", name: "bgcolor", widget: "string" }
-      - { label: "Example width (%|px)", name:"egwidth", widget: "string" }
+      - { label: "Example width (%|px)", name: "egwidth", widget: "string" }
       - label: Modifier Classes
         name: modifier_css
         widget: list
@@ -77,6 +77,6 @@ collections:
           - { label: "Variant CSS Class", name: css_class, widget: string, hint: "No preceeding period. eg: su-card" }
           - { label: "Source Data", name: "source_json", widget: "text", hint: "JSON data to populate the template with. Leave empty to use what is in the Decanter repo." }
           - { label: "Background Color (eg: /#FF00FF)", name: "bgcolor", widget: "string" }
-          - { label: "Example width (%|px)", name:"egwidth", widget: "string", hint: "defaults to the global value if set." }
+          - { label: "Example width (%|px)", name: "egwidth", widget: "string", hint: "defaults to the global value if set." }
           - { label: "Description Override", name: "description", widget: "markdown", hint: "overrides the description from KSS" }
           - { label: "Notes", name: "notes", widget: "markdown", hint: "Shows up between the example and the markup code block." }
