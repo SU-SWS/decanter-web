@@ -25,12 +25,12 @@ The team will address bugs depending on the severity of the issue and the sprint
 
 If you have a fix for the bug and would like to submit a PR for it, please reach out in Slack at #decanter or visit the [Contributing to Decanter](/page/about-contributing-what-can-i-contribute/) page to learn more about contribution opportunities.
 
-<a href="/page/about-contributing/" class="su-link su-link--action">Learn more about technical contribution guidelines</a>
+<a href="/page/about-contributing/" class="su-link su-link--action">Learn more about our technical contribution guidelines</a>
 
 ## Join the Decanter Design community
 
-Our teams at Stanford Web Services and University Communication encourage contribution to the Stanford Design System. Though our goal remains to be the to keep the system as succinct and simplified as possible—to provide a baseline framework of the essential elements—we are very aware that that baseline is not there yet, and will need perpetual refactoring and optimization. 
+Our teams at Stanford Web Services and University Communication encourage contribution to the Decanter Design System. Our goal is to keep the system as succinct and simplified as possible—to provide a baseline framework for all essential elements.  Achieving this requires collaboration across the University. We want this to be a living system that grows as standards and needs evolve. 
 
-Please [contact us on Slack](/page/about-contributing-how-to-communicate/) if you are interested in collaborating and contributing to the Stanford Design System.
+Please [contact us on Slack](/page/about-contributing-how-to-communicate/) if you are interested in collaborating and contributing to the Decanter Design System or the Decanter Frontend Framework.
 
 <a href="/page/visual-guidelines/" class="su-link su-link--action"> Read more about our Visual Guidelines</a>
