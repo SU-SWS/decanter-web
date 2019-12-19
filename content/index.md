@@ -4,7 +4,7 @@ date: 2019-03-17T19:31:20.591Z
 ---
 <section class="homepage">
 <section class="section section--welcome fullwidth narrow-content padding-vertical-md inverse">
-    <h1>Welcome to the Decanter Style Guide and Pattern Library.</h1>
+    <h1>Welcome to the Decanter Style Guide and Pattern Library</h1>
     <p class="su-intro-text">Decanter is a web design and development system for Stanford University. It includes a responsive layout system and a browsable collection of design patterns that can be used in any Stanford project.</p>
     <p><a class="su-button" href="page/use-decanter-as-a-developer-installation/">Use Decanter version 6.0</a></p>
 </section>
@@ -13,7 +13,7 @@ date: 2019-03-17T19:31:20.591Z
   <div class="su-card su-card--horizontal su-card--minimal">
     <img src='https://media.githubusercontent.com/media/SU-SWS/decanter-web/nextjs/public/img/ui-components.png' alt='' />
     <div class="su-card__contents">
-      <h2>Getting Started</h2>
+      <h2>Get Started</h2>
       <p>Learn about how to use Decanter components with our onboarding guides, tailored to designers or developers.</p>
       <p><a href="page/use-decanter-as-a-developer/" class="su-link su-link--action">View developer guide</a></p>
       <p><a href="page/use-decanter-as-a-designer/" class="su-link su-link--action">View designer guide</a></p>
@@ -32,7 +32,7 @@ date: 2019-03-17T19:31:20.591Z
 <section class="section section--components fullwidth wide-content padding-vertical-lg">
   <div class="su-card su-card--horizontal su-card--minimal">
     <div class="su-card__contents">
-      <h2>Explore our Design Styles + Components</h2>
+      <h2>Explore our design styles + components</h2>
       <p>From typography and color, to buttons,  rows of cards, and the brand bar, Decanter builds foundational design elements into thoughfully crafted components allowing your content to be displayed exactly the way you want.</p>
       <p><a href="page/brand-design-elements/" class="su-link su-link--action">Explore brand + design elements</a></p>
       <p><a href="page/components/" class="su-link su-link--action">Explore components</a></p>
