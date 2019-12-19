@@ -10,6 +10,7 @@ modifier_css:
     experimental: false
     deprecated: false
     source_json: ""
+    description: "This is my description"
 bottomcontent: ""
 
 ---

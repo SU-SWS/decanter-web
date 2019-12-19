@@ -7,6 +7,7 @@ const Variant = (props) => {
   var demoStyles = [];
   var demoStylesWrapper = [];
   var notes;
+  var description = <p>props.data.description</p>;
 
   // If there is local data.
   if (props.local) {
@@ -40,6 +41,10 @@ const Variant = (props) => {
         notes = <div dangerouslySetInnerHTML={{ __html: modifier.notes }} />
       }
 
+      if (modifier.description) {
+        description = <p>{modifier.description}</p>;
+      }
+
     }
   }
 
@@ -50,7 +55,7 @@ const Variant = (props) => {
     <section className="component__variant">
       <header className="component__variant-info">
         <p className="component__variant-name"><code>{props.data.name}</code></p>
-        <p>{props.data.description}</p>
+        {description}
       </header>
       <section className="component__variant-demo">
       <style jsx>{`
