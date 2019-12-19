@@ -83,9 +83,21 @@
       @include modular-spacing('margin-top', 5);
     }
 
+    > header + .component__variant {
+      @include margin(2em null null);
+    }
+
     > .component__centered {
       + .component__variant {
         @include margin(2em null null);
+      }
+    }
+  }
+
+  .su-card {
+    h2 {
+      a {
+        color: color(text);
       }
     }
   }

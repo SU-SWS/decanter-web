@@ -140,17 +140,43 @@ main {
 
 // Left sidebar
 #left-sidebar {
-  display: grid;
-  grid-template-areas: "logo" "sidebar-nav" "netlify";
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  flex: 0 0 27rem;
-  width: 27rem;
   background: color(bg, $su-nav-colors);
+
+  @include grid-media-max('sm') {
+    .brand-logo {
+      float: left;
+    }
+
+    > button {
+      @include margin(3rem 2rem null);
+      @include padding(null null 2.8rem);
+      float: right;
+    }
+
+    > nav {
+      clear: both;
+    }
+  }
+
+  @include grid-media('md') {
+    display: grid;
+    grid-template-areas: "logo" "sidebar-nav" "netlify";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
 
   @include grid-media-only("md") {
     flex: 0 0 24%;
     width: 24%;
+  }
+
+  @include grid-media('lg') {
+    flex: 0 0 27rem;
+    width: 27rem;
+  }
+
+  > button {
+    grid-area: hamburger;
   }
 
   .brand-logo {
