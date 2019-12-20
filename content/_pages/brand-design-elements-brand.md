@@ -24,8 +24,6 @@ Some additional [research on approaches to global navigation](https://www.nngrou
 
 The local header is a complex component, including some of the most critical parts of your website—your logo, Stanford or not, your local site search, and your main navigation.
 
-![Header example including the Stanford | Biology logo lockup in the far left, the search in the top far right, and the main navigation in the bottom right.](/img/header-right_02.png "Stanford branded header")
-
 Our Decanter team has gone to great lengths to create **logos** for your websites that are compliant with identity guidelines depending on how your organization is situated in the organization. 
 
 The **local search**—though becoming less important to many users because of traffic coming into your sites "sideways" (Google dominates deep searches, leading users directly to content pages within the site, instead of starting at your homepage)—is still a very important tool to your users, the ones that use it. This functionality has been fully accessibility tested, as are all of our components. 
