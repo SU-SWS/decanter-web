@@ -2,27 +2,28 @@
 title: Brand + Design Elements
 date: 2019-11-28T14:11:13.000Z
 ---
-https://github.com/SU-SWS/decanter/issues/575
-
-## Brand Elements
+## Brand elements
 
 Stanford websites deserve consistency for visual language, and also for ease of use in the user experience.
-<p><a href="/page/brand-design-elements-brand/" class="su-link su-link--action">Learn more about brand elements offered through Decanter</a></p>
+
+<p><a href="/page/brand-design-elements-brand/" class="su-link su-link--action">Learn more about Stanford identity elements offered through Decanter</a></p>
 
 ## Typography
 
-Keeping our visual design system feel consistent is very often through our use of brand approved fonts.
+Keeping our visual design system consistent is very often through our use of approved fonts.
+
 <p><a href="/page/brand-design-elements-typography/" class="su-link su-link--action">Learn more about the typographic styles created for Decanter</a></p>
 
 ## Color
 
 Beside our name and emblems, the most recognizable part of our Identity system is our color palette.
-<p><a href="/page/brand-design-elements-color/" class="su-link su-link--action">Learn more about the color palette offered through Decanter</a></p>
 
+<p><a href="/page/brand-design-elements-color/" class="su-link su-link--action">Learn more about the color palette offered through Decanter</a></p>
 
 ## Icons
 
 Becoming more and more important to our University communications, particularly in our digital communications, we've made a variety of icon packs available through Decanter.
+
 <p><a href="/page/brand-design-elements-icons/" class="su-link su-link--action">Learn more about the icons offered through Decanter</a></p>
 
 ## Standards
@@ -49,4 +50,4 @@ We should follow code best practices with semantic HTML and CSS. This also helps
 
 ### Create unity, not uniformity.
 
-Our brand guidelines for websites make the Stanford web experience consistent while providing the flexibility needed to communicate unique messages. We have two essential web branding elements – the Stanford Brand Bar and Global Footer – that should be included in all Stanford websites. These are built into all our available templates.
+Our identity guidelines make the Stanford web experience consistent while still providing the flexibility needed to communicate unique messages. We have two essential web branding elements – the Stanford Brand Bar and Global Footer – that should be included in all Stanford websites. These are built into all our available templates.
