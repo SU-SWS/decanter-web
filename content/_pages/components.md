@@ -14,4 +14,4 @@ Check out the [As a Designer page](/page/use-decanter-as-a-designer/) for more o
 
 <a href="/component/simple/" class="su-button">View Simple</a> <a href="/component/composite/" class="su-button">View Composite</a> <a href="/component/identity/" class="su-button">View Identity</a>
 
-Don't see what you are looking for in any of those sections? Check out our [contributing page](/page/about-contributing/) for more information on how you can help, or request features.
+Don't see what you are looking for in any of those sections? Check out our [contributing page](/page/about-contributing/) for more information on how you can help or request features.
