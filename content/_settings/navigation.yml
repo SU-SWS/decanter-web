@@ -74,7 +74,5 @@ nav_items:
         path: /page/layouts-modular-spacing/
       - label: Responsive Design
         path: /page/layouts-responsive-design/
-      - label: Examples
-        path: /page/layouts-examples/
     label: Layouts
     path: /page/layouts/
