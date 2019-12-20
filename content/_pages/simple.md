@@ -4,7 +4,7 @@ date: 2019-11-28T14:11:13.000Z
 ---
 <p class="su-intro-text">Simple components are foundational or structural components and are often the building blocks for the composite components. Explore more by choosing one in the navigation.</p>
 
-Not seeing what you are looking for? Check out the [Brand + Design Element section](/page/brand-design-elements/) for more simple html elements. The elements section contains html element styles for things like headings, paragraphs, icons, and color. 
+Not seeing what you are looking for? Check out the [Identity + Design Element section](/page/brand-design-elements/) for more simple html elements. The elements section contains html element styles for things like headings, paragraphs, icons, and color. 
 
 <ul>
 <li><a href="/component/simple-alert" class="su-button">Alert</a> </li>
