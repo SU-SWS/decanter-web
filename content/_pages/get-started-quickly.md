@@ -4,9 +4,9 @@ date: 2019-12-11T18:03:24.367Z
 ---
 ## Developers
 
-* [Fork us on Github](https://github.com/SU-SWS/decanter)
-* [Find us on NPM](https://www.npmjs.com/package/decanter)
-* [Find us on Packagist](https://packagist.org/packages/su-sws/decanter)
+<a href="https://github.com/SU-SWS/decanter" class="su-button">Fork us on Github</a>
+<a href="https://www.npmjs.com/package/decanter" class="su-button">Find us on NPM</a>
+<a href="https://packagist.org/packages/su-sws/decanter" class="su-button">Find us on Packagist</a>
 
 To get up and running with Decanter in your project please see our [Use Decanter](/page/use-decanter-as-a-developer-installation/) section for tips, strategies, and more on how to integrate it with your work. Alternatively, you may want to use one of our already integrated projects. Below is a non-exhaustive, incomplete list, of officially supported projects that use Decanter.  
 
