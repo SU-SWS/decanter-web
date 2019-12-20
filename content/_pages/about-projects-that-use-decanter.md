@@ -54,10 +54,10 @@ date: 2019-11-28T14:11:13.000Z
     <h3>The Stanford Homepage</h3>
     <span class=".su-caption">WordPress</span>
     <p>The Stanford homepage uses an early version of Decanter.</p>
-    <a href="https://www.stanford.edu" class="su-link su-link--action">Visit the Stanford Homepage</a>
+    <a href="https://www.stanford.edu" class="su-link su-link--action">Visit the Stanford homepage</a>
   </div>
  <img src="/img/stanfordhomepage.png" alt="" title="" data-reactroot="" width=600>
 </div>
 </section>
-<h2>Share your Project</h2>
+<h2>Share your project</h2>
 <a href="https://stanfordwebservices.slack.com/archives/C9SL2179B">Find us on Slack in the #decanter channel</a> to share your project made with Decanter.
