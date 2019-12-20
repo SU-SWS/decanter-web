@@ -2,26 +2,20 @@
 title: Accessibility
 date: 2019-11-28T14:11:13.000Z
 ---
-READY FOR REVIEW
-
 <p class="su-intro-text">This project conforms to level <a href="https://www.w3.org/WAI/GL/WCAG20/"> AA WCAG 2.0</a> standards as required by the university's accessibility policy. For more information on the policy please visit University Communications <a href= "https://ucomm.stanford.edu/policies/accessibility-policy.html"> accessibility policy</a> and the <a href="https://soap.stanford.edu"> Stanford Online Accessibility Program</a>.</p>
 
 If you have found an accessibility error or have a suggestion please create a ticket.
 
-## Component Specific Information
+## Component specific information
 
-### Site Navigation
-
-* See "[About the Main Nav Component](https://github.com/SU-SWS/decanter/wiki/About-the-Main-Nav-Component)" for information on how we build our accessible navigation.
-
-### Site Search
+### Site search
 
 * We added a wrapper `<div>` with `role="search"` outside the `<form>` element instead of adding `role="search"` directly to the `<form>` element. The reason is that `<form>` elements explicitly have `role="form"`. If we add `role="search"` to it, we would be changing its default semantic.
 
 https://github.com/SU-SWS/decanter/issues/563
 </br>
 
-## Building an Accessible Site Navigation
+### Building an accessible site navigation
 
 While many resources exist today on building an accessible website navigation menu, the truth is that there is still no perfect solution out there. In fact, one can often find conflicting ideas on this topic which can cause great confusion for developers. For example, developers might try to follow [W3C's "WAI-ARIA Authoring Practices"](https://www.w3.org/TR/wai-aria-practices/) when building their site navigations without knowing that the guidelines under ["Menu or Menu Bar"](https://www.w3.org/TR/wai-aria-practices/#menu) and ["Menu Button"](https://www.w3.org/TR/wai-aria-practices/#menubutton) are in fact meant for desktop web application menus and not website navigation menus.
 
@@ -31,13 +25,13 @@ _Note:_
 
 * _In the text that follows, **AT** stands for Assistive Technology (or Assistive Technologies)._
 
-## Scope
+#### Scope
 
 The current scope of the Main Nav component as described on this page includes maximum 2 levels of menu links. One of the variants include a site search form for the mobile version when the Main Nav is expanded.
 
 In the future, it is possible that we would include support for more than 2 levels of menu links and perhaps a mega menu component.
 
-## Research
+#### Research
 
 There are mainly two ways of handling accessible website navigation with drop down menus out there currently:
 
@@ -50,7 +44,7 @@ During our search for a good example solution, we found that the majority of exi
 
 We also looked at the main menu on the [Stanford Identity Toolkit](https://identity.stanford.edu) website, since the menu has some similarities to the one that we are building. There are certain properties that we adopt from this menu - the click behaviors and some of the existing keyboard behaviors (`Escape`, `Enter`). However, there are also practices that we would like to move away from (the use of ARIA roles) and features that we want to add (e.g. more keyboard bindings).
 
-## Our Approach
+#### Our Approach
 
 Since Decanter components are adopted by developers who would likely tweak them to fit specific projects' needs, due to the unforgiving nature of ARIA menus, we choose not to go with that approach. Instead, we implement our component as simply links organized in a nested `<ul>` structure inside the native `<nav>` element, and without the use of ARIA roles. However, we do include most, if not all, of the keyboard behaviors expected of ARIA menus so keyboard users can navigate the menu more conveniently. We also include some ARIA attributes that allow AT to communicate to the user if there is hidden content that needs to be expanded and any change of state of the elements (e.g., when a submenu is expanded or collapsed) within the component.
 
