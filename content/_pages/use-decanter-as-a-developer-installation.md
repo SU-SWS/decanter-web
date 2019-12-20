@@ -14,6 +14,19 @@ You're in luck, Decanter has pre-compiled assets ready for you to add to your pr
 4. Add the javascript (decanter.js) to the `<head>` or just below the `<body>` tag of your html
 5. Profit!
 
+<pre><code>
+|
+— core
+  |— dist
+    |— assets  <--
+    |— css     <--
+    |— js      <--
+  |— src
+— examples
+— package.json
+— webpack.config.js
+</code></pre>
+
 ## I'm using a package manager
 
 **NPM - Recommended** 
@@ -32,7 +45,7 @@ TBD
 TBD
 
 ## I'm using webpack
-Our webpack configuration is a little complicated you may say. 
+Our webpack configuration is a little complicated you may say but it does an awesome job. 
 
 ## I'm using Drupal 
 If you are using Drupal 8+ and would like to have Decanter in your project you can check out these projects.
