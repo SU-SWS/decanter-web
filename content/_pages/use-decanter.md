@@ -8,14 +8,14 @@ READY FOR REVIEW
 
 <div class="flex-container">
 <section class="flex-md-6-of-12">
-## As a Developer
+<h2>As a Developer</h2>
 
 Use Decanter as a starting point for your project, or straight out of the box.
 
 <p><a href="/page/use-decanter-as-a-developer/" class="su-button"> Develop with Decanter</a></p>
 </section>
 <section class="flex-md-6-of-12">
-## As a Designer
+<h2>As a Designer</h2>
 
 Use the Decanter Design System to get your project started quickly. You can use Decanter components and styles out of the box, and/or spend your time customizing Decanter for your projects. In either case, you can start with the brand compliant and fully tested accessible and usable design system.
 
