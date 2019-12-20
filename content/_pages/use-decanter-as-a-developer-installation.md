@@ -2,7 +2,7 @@
 title: Get Started
 date: 2019-11-28T14:11:13.000Z
 ---
-<p clas="su-intro-text">So, you want to use Decanter in your project? Good choice! Here are a couple of options on how to integrate Decanter with your work.</p>
+<p class="su-intro-text">So, you want to use Decanter in your project? Good choice! Here are a couple of options on how to integrate Decanter with your work.</p>
 
 ## I just need the static assets
 
@@ -14,13 +14,12 @@ You're in luck, Decanter has pre-compiled assets ready for you to add to your pr
 4. Add the javascript (decanter.js) to the `<head>` or just below the `<body>` tag of your html
 5. Profit!
 
-<pre><code>
-|
+<pre><code class="hljs">|
 — core
   |— dist
-    |— assets  <--
-    |— css     <--
-    |— js      <--
+    |— assets  <-- copy this to your project
+    |— css     <-- copy this to your project
+    |— js      <-- copy this to your project
   |— src
 — examples
 — package.json
@@ -33,7 +32,7 @@ _example.html_
 <html>
   <head>
     <title>Decanter Static</title>
-      <link rel="stylesheet" href="/css/decanter.css" />
+    <link rel="stylesheet" href="/css/decanter.css" />
   </head>
   <body>
     <section class="su-brand-bar">
@@ -52,7 +51,7 @@ _example.html_
 
 ## I'm using a package manager
 
-**NPM - Recommended** 
+**NPM - Recommended**
 
 `npm i decanter`
 
@@ -60,17 +59,56 @@ _example.html_
 
 `composer install su-sws/decanter`
 
-
 ## I'm using my own SASS compiler
-TBD
+
+So, you've got grunt, gulp, or some other preferred tool for compiling your SASS. Cool, you can use some of the most powerful features of Decanter but you'll need to configure a few things. Before we can configure anything you will need to get the Decanter source files and we would recommend that you add Decanter to your project through NPM.
+
+1. Get Decanter source files.
+
+`npm i decanter`
+
+2. Add Decanter.scss
+
+Include the `decanter.scss` file in your work by importing `/core/src/scss/decanter.scss`. You should include Decanter SCSS files through a relative path from `node_modules`. You should import it after your configuration file so you may override the default variables in Decanter.
+
+*example.scss roll up file*
+```scss
+@charset 'UTF-8';
+@import 'my-config';
+@import 'decanter/core/src/scss/decanter';
+@import 'my-project-styles'
+```
+
+3. Make sure your sass include_path includes node_modules. eg: https://github.com/SU-SWS/decanter-web/blob/nextjs/next.config.js#L24
+
+4. Set the file path variables.
+When the CSS compiles you will need to have the image and font assets at a relative path to the css files so that they load. You can configure the path that is outputted in the css by setting the following variables.
+
+`$su-image-path` & `$fa-font-path`;
+
+*example.scss*
+```scss
+@charset 'UTF-8';
+$su-image-path: "../assets"; // <-- Relative path to your css directory
+$fa-font-path: "../assets"; // <-- Relative path to your css directory
+```
+
+5. Copy the assets to a relative path from your css output.
+All the image and file assets you will need are in `/core/dist/assets`. Copy them over to your project.
+
+<pre><code class="hljs">|
+— core
+  |— dist
+    |— assets  <-- copy this to your project
+</code></pre>
 
 ## I want to use the twig templates
 TBD
 
 ## I'm using webpack
-Our webpack configuration is a little complicated you may say but it does an awesome job. 
+Our webpack configuration is a little complicated you may say but it does an awesome job.
 
-## I'm using Drupal 
+## I'm using Drupal
 If you are using Drupal 8+ and would like to have Decanter in your project you can check out these projects.
 
 **Themes**
@@ -81,7 +119,7 @@ If you are using Drupal 8+ and would like to have Decanter in your project you c
 
 ## I'm using Wordpress
 
-Redwood theme coming soon... 
+Redwood theme coming soon...
 
 ## I'm using React, or Angular, or Vue.js
 
