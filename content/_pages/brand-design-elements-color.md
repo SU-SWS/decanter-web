@@ -2,14 +2,14 @@
 title: Color
 date: 2019-11-28T14:11:13.000Z
 ---
-https://github.com/SU-SWS/decanter/issues/575
-
 <p class="su-alert"><strong>Note:</strong> The Stanford color palette is currently being updated. Please check back soon for the final version.</p>
 
-<p class="su-intro-text">Below are the colors that are approved by Stanford University branding guidelines. All colors are available as variables in Decanter prefixed by <code>su-</code>. Some colors come with tints and shades to achieve functional contrast.</p>
+<p class="su-intro-text">Below are the colors that are approved by Stanford University branding guidelines for use on the web. All colors are available as variables in Decanter prefixed by <code>su-</code>. Some colors come with tints and shades to achieve functional contrast.</p>
 
 ## Primary Colors
+
 Our primary palette consists of Cardinal Red, White, Black and Cool Grey. Our designs lean heavily on these colors, mixing in the secondary and accent palettes to build color schemes that are complementary and balanced.
+
 <section class="color-palette">
     <div class="color">
         <div class="inverse" style="background-color: #8c1515;">
@@ -62,7 +62,9 @@ Our primary palette consists of Cardinal Red, White, Black and Cool Grey. Our de
 </section>
 
 ## Secondary Colors
+
 The secondary color set provides a broader range of tonal expression to the four primary colors. Be sure to use these as supporting colors rather than the main driving colors in layout and materials.
+
 <section class="color-palette">
     <div class="color" style="background-color: #820000">
         <div class="inverse">
@@ -146,7 +148,9 @@ The secondary color set provides a broader range of tonal expression to the four
 </section>
 
 ## Accent Colors
+
 Although our primary palette should drive most materials, in certain instances other colors can be added. For those circumstances, we have developed this accent palette. These colors are intended to compliment our Stanford primary colors. They should not become the predominant color for a school, center, institute or department.
+
 <section class="color-palette">
     <div class="color">
         <div class="variant inverse" style="background-color: #014240;">
@@ -242,32 +246,35 @@ Although our primary palette should drive most materials, in certain instances o
 ## Color Related Tools
 
 ### Color Maps
+
 A SCSS map <code>$su-core-colors</code> is available for core Decanter colors.
 
-   ```scss
-    $su-core-colors: (
-      brand:                        $su-color-cardinal-red,
-      brand--bright:                $su-color-bright-red,
-      brand--dark:                  $su-color-dark-red,
-    
-      bg:                           $su-color-white,
-      bg--reverse:                  $su-color-black,
-    
-      text:                         $su-color-black,
-      text--high-contrast:          #000,
-      text--reverse:                $su-color-white,
-    
-      link:                         $su-color-bright-blue,
-      link--hover:                  $su-color-black,
-      link--alt:                    $su-color-bright-red,
-      link--alt-hover:              $su-color-black,
-      link--reverse:                $su-color-white,
-      link--reverse-hover:          $su-color-vivid-red,
-    ) !default;
-   ```
+```scss
+ $su-core-colors: (
+   brand:                        $su-color-cardinal-red,
+   brand--bright:                $su-color-bright-red,
+   brand--dark:                  $su-color-dark-red,
+ 
+   bg:                           $su-color-white,
+   bg--reverse:                  $su-color-black,
+ 
+   text:                         $su-color-black,
+   text--high-contrast:          #000,
+   text--reverse:                $su-color-white,
+ 
+   link:                         $su-color-bright-blue,
+   link--hover:                  $su-color-black,
+   link--alt:                    $su-color-bright-red,
+   link--alt-hover:              $su-color-black,
+   link--reverse:                $su-color-white,
+   link--reverse-hover:          $su-color-vivid-red,
+ ) !default;
+```
+
 #### How to Use
 
 ## Accessibility
+
 Color is often used in web design for grouping related items, denoting required fields on a form, or distinguishing one piece of text from another, e.g., hyperlinks. Color enhances the aesthetics, usability, and even the accessibility of a website. However, some users have difficulty perceiving color so, when color is used, it must not be the only means of conveying information.
 
 All Stanford Websites and web‐based applications are required to be accessible to its students, faculty, staff and participants in the University’s programs and activities who have disabilities by conforming to WCAG 2.0 Level AA.
