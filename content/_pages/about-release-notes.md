@@ -2,6 +2,10 @@
 title: Release Notes
 date: 2019-11-28T14:11:13.000Z
 ---
+## Version 6                      
+
+Coming soon!
+
 ## Version 5.1.0                      2019-10-31
 
 * Updated codeclimate linting settings
