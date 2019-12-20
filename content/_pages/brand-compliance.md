@@ -18,13 +18,13 @@ All official websites across our University are strongly encouraged to have thre
 
 Outside of these three components, we urge website creators to adhere to typographic recommendations and some color recommendations, but in general terms, the University wants teams to feel free to be innovative and creative in how they interpret and express the Stanford brand. 
 
-<p><a href="https:/page/brand-design-elements/" class="su-link su-link--action">Explore our Identity + Design Elements section</a></p>
+<p><a href="https:/page/brand-design-elements/" class="su-link su-link--action">Explore our Identity + Design elements </a></p>
 
 ### Typography, color, and more
 
 Our brand team at University Communications has documented all of the tools, best practices, and guidance on the Stanford Identity website. 
 
-<a href="https:/www.identity.stanford.edu/" class="su-link su-link--action">Learn more about the Stanford Identity</a></p>
+<a href="https://identity.stanford.edu/" class="su-link su-link--action">Learn more about the Stanford Identity</a></p>
 
 ## Decanter components
 
