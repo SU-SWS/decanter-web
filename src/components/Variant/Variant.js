@@ -1,5 +1,5 @@
 const hljs = require('highlight.js');
-const prettifyHtml = require('prettify-html')
+const prettifyHtml = require('prettify-html');
 
 const Variant = (props) => {
   var mkd = <div dangerouslySetInnerHTML={{ __html: props.data.markup.default }} />;
