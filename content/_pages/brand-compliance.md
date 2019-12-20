@@ -2,23 +2,21 @@
 title: Stanford Identity
 date: 2019-12-11T18:02:16.854Z
 ---
-READY FOR REVIEW
-
 <p class="su-intro-text">The collaborative work between University Communications and Stanford Web Services is key to achieving our goals in brand compliance.</p>
 
-## Achieving brand compliance with Decanter
+## Aligning with the Stanford brand using Decanter
 
-Since the inception of web platforms for Stanford—in html, and on Drupal and Wordpress—our teams have been working to solve these challenges for the University with a primary goal: make it easy for websites to be brand compliant and make the treatment of the brand consistent in a select number of areas. 
+Since the inception of web platforms for Stanford—in html, and on Drupal and Wordpress—our teams have been working to solve these challenges for the University with a primary goal: make it easy for websites to easily use elements from the Stanford Identity and make the treatment of the brand consistent in a select number of areas. 
 
 ### Tools for brand compliance
 
-All websites across our University are encouraged to have three critical components that allow them to achieve their brand compliance. 
+All official websites across our University are strongly encouraged to have three critical components to align with the Stanford identity. 
 
 * Brand bar
 * Local header 
 * Global footer 
 
-Outside of these three components, we urge website creators to adhere to typographic recommendations and some color recommendations, but in general terms, the brand wants teams to feel free to be innovative and creative in how they interpret and express the Stanford brand. 
+Outside of these three components, we urge website creators to adhere to typographic recommendations and some color recommendations, but in general terms, the University wants teams to feel free to be innovative and creative in how they interpret and express the Stanford brand. 
 
 #### Brand bar overview
 
@@ -53,7 +51,7 @@ Your **main navigation** is one of the most critical parts of your website. That
 
 [Explore our navigation testing](https://drive.google.com/drive/folders/15Jr7zIWphRb92VAP2_gOenZDY2HJ_HiQ) documentation on our shared Google Drive folder.
 
-#### Global Footer overview
+#### Global footer overview
 
 The Stanford global footer is recommended to be placed at the bottom of all official university websites. It is designed to enhance sites with consistent Stanford branding and navigation, much like the brand bar and local header. 
 
@@ -65,12 +63,12 @@ The Stanford global footer is recommended to be placed at the bottom of all offi
 
 ### Typography, color, and more
 
-Our brand team at University Communications has documented all of the tools, best practices, and guidance on the Brand Guidelines website. 
+Our brand team at University Communications has documented all of the tools, best practices, and guidance on the Stanford Identity website. 
 
-<a href="https:/www.identity.stanford.edu/" class="su-link su-link--action">Learn more about Stanford brand guidelines</a></p>
+<a href="https:/www.identity.stanford.edu/" class="su-link su-link--action">Learn more about the Stanford Identity</a></p>
 
-## Decanter Components
+## Decanter components
 
-Our Decanter Design System is fully outfitted with your brand needs.
+Our Decanter Design System is fully outfitted with components that complement the core elements of the Stanford Identity.
 
 <p><a href="https:/page/brand-design-elements/" class="su-link su-link--action">Explore our Brand + Design Elements section</a></p>
