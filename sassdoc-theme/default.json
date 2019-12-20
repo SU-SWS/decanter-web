@@ -12,7 +12,7 @@
     "watermark": true
   },
   "groups": {
-    "undefined": "Undefined Sass",
+    "undefined": "General",
     "brand": "Brand",
     "function": "Function",
     "mixin": "Mixin",
