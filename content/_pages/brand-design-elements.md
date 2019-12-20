@@ -1,8 +1,8 @@
 ---
-title: Brand + Design Elements
+title: Identity + Design Elements
 date: 2019-11-28T14:11:13.000Z
 ---
-## Brand elements
+## Identity elements
 
 Stanford websites deserve consistency for visual language, and also for ease of use in the user experience.
 
