@@ -1,5 +1,5 @@
 ---
-title: Contributing to Decanter
+title: Contribute to Decanter
 date: 2019-11-28T14:11:13.000Z
 ---
 ## What we accept
