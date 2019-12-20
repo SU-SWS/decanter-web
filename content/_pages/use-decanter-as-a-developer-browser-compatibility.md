@@ -4,7 +4,7 @@ date: 2019-11-28T14:11:13.000Z
 ---
 ## Browsers
 
-Decanter will officially support the latest version and one back of the following browsers:
+Decanter supports the latest version and one version back of the following browsers:
 
 * Chrome Desktop
 * Chrome Android 
