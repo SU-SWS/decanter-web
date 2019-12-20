@@ -2,8 +2,6 @@
 title: Modular Spacing
 date: 2019-11-28T14:11:13.000Z
 ---
-https://github.com/SU-SWS/decanter/issues/576
-
 Decanter includes a range of spacing types that impact a page's or an element’s appearance. These spacing types are: gutters, screen edge, element spacing, vertical rhythm, and typography scale.
 
 ## Gutters
@@ -22,7 +20,7 @@ Config is stored in a SASS map.
 
 **Namespace:** `flex_`, `grid_`, or `gutter_`
 
-## Screen Edge
+## Screen edge
 
 Screen edge is the minimal amount of space between the outside edge of a layout and the window frame. Its margins are set at each breakpoint, up to and not including the biggest breakpoint (`2XL`). The total width of the 12 column grid is not fixed at each breakpoint, but rather expands as the viewport expands, with the exception of the `2XL` breakpoint, which is a centered beginning at `1700px` (`1500px` breakpoint plus `100px` margin on each side). Screen edge values are curated and do not mathematically scale.
 
@@ -34,7 +32,7 @@ Config is stored in a SASS map.
 
 **Namespace:** `screen_`
 
-## Element Spacing
+## Element spacing
 
 Element spacing is the space between elements within a component. This spacing can be between several elements, or between an element and the edge of the component's container. The values are set at each breakpoint and scale off of a set base value, which are set at each breakpoint. Element spacing values are curated and do not mathematically scale.
 
@@ -48,7 +46,7 @@ Config is stored in three SASS maps.
 
 **Namespace:** `modular_spacing`
 
-## Vertical Rhythm
+## Vertical rhythm
 
 Vertical rhythm is the amount of space between the baseline of a text element and the next element. The values are set for each heading level at each breakpoint. The values are determined by a calculation of the relative font size for the text element multiplied by the corresponding breakpoint scale value.
 
@@ -58,7 +56,7 @@ The scale value is set in a SASS map.
 
 **Namespace:** `typography_`
 
-## Typography Scale
+## Typography scale
 
 While not directly related to whitespace, Typography scale is a sizing system that is related to vertical rhythm. 
 

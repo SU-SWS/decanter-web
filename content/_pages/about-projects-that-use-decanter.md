@@ -2,8 +2,6 @@
 title: Projects Using Decanter
 date: 2019-11-28T14:11:13.000Z
 ---
-READY FOR REVIEW
-
 <h2>Examples</h2>
 <section class="section section--components fullwidth wide-content padding-vertical-md">
   <div class="su-card su-card--horizontal su-card--minimal">

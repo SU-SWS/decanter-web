@@ -2,8 +2,6 @@
 title: About Decanter
 date: 2019-11-28T14:11:13.000Z
 ---
-READY FOR REVIEW
-
 <p class="su-intro-text">Decanter is Stanford’s open source design and frontend framework for digital products and experiences. Decanter includes the resources to create user interfaces consistent with Stanford’s brand guidelines and best practices.</p>
 
 As a foundation for digital product development, Decanter provides a set of reusable components, style variables, design assets, and a responsive layout system that can be used in any Stanford project. Guidance for teams to efficiently build high-quality, user friendly, and accessible websites is also provided. 

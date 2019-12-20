@@ -12,6 +12,13 @@
     "watermark": true
   },
   "groups": {
-    "undefined": "General"
+    "undefined": "General",
+    "brand": "Brand",
+    "function": "Function",
+    "mixin": "Mixin",
+    "placeholder": "Placeholder",
+    "variable": "Variable",
+    "typography": "Typography",
+    "pre-vendor": "Pre-vendor"
   }
 }

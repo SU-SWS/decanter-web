@@ -2,7 +2,7 @@
 title: Build Tools
 date: 2019-11-28T14:11:13.000Z
 ---
-IN PROGRESS
+**Note: This content of this page is in progress and may not yet reflect current use.**
 
 Webpack is the tool that processes the source SCSS and JS and generates the distribution CSS and JS files. npm scripts are used to run webpack and other tools, e.g. kss, eslint. Please see note about Grunt below.
 

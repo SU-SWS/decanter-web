@@ -2,8 +2,6 @@
 title: Identity
 date: 2019-11-28T14:11:13.000Z
 ---
-READY FOR REVIEW
-
 ### Tools for brand compliance
 
 All websites across our University are encouraged to have three critical components to align their sites with Stanford's Identity system:
