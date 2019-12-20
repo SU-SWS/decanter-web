@@ -31,7 +31,7 @@ Through our Decanter Design System in Figma, you will be able to start with a pr
 
 If you're also in need of a content management solution, Stanford has invested in website templates and themes for your use across the University on two platforms. If you're unsure where to start, see the options below, and also feel free to reach out to Stanford Web Services [through this form](https://docs.google.com/forms/u/1/d/e/1FAIpQLSdZ8N06DW8LOKdGlcCfUIF8q8rQILh4A697qR5SoZ6-eWfG7g/viewform) for more information, and to talk you through options. 
 
-#### Drupal: Stanford Sites Platform
+#### Drupal: Stanford Sites platform
 
 Created through University IT's Web Services team. \
 [Learn more about Stanford Sites](https://uit.stanford.edu/sws/drupal-projects)\
