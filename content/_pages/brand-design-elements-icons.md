@@ -2,6 +2,8 @@
 title: Icons
 date: 2019-11-28T14:11:13.000Z
 ---
+This page is under construction. Check back to see our icons!
+
 ## Standard Icons
 
 Decanter currently uses [FontAwesome](https://fontawesome.com/) for icons.
