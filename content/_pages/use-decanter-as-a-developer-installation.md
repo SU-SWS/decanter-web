@@ -27,6 +27,29 @@ You're in luck, Decanter has pre-compiled assets ready for you to add to your pr
 — webpack.config.js
 </code></pre>
 
+_example.html_
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Decanter Static</title>
+      <link rel="stylesheet" href="/css/decanter.css" />
+  </head>
+  <body>
+    <section class="su-brand-bar">
+      <div class="su-brand-bar__container">
+        <a class="su-brand-bar__logo" href="https://stanford.edu">Stanford University</a>
+      </div>
+    </section>
+    <h1>Welcome,</h1>
+    <p>I should have Decanter styles.</p>
+
+  <script src="/js/decanter.js"></script>
+  </body>
+</html>
+```
+
+
 ## I'm using a package manager
 
 **NPM - Recommended** 
