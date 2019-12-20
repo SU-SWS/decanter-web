@@ -10,9 +10,9 @@ date: 2019-11-28T14:11:13.000Z
 
 ## View Details:
 
-<a href="/component/identity-card" class="su-button">Brand Bar</a> 
-<a href="/component/identity-card" class="su-button">Global Footer</a> 
-<a href="/component/identity-card" class="su-button">Local Footer</a> 
-<a href="/component/identity-card" class="su-button">Lockup</a> 
-<a href="/component/identity-card" class="su-button">Logo</a> 
-<a href="/component/identity-card" class="su-button">Masthead</a> 
+<a href="/component/identity-button" class="su-button">Brand Bar</a> 
+<a href="/component/identity-global-footer" class="su-button">Global Footer</a> 
+<a href="/component/identity-local-footer" class="su-button">Local Footer</a> 
+<a href="/component/identity-lockup" class="su-button">Lockup</a> 
+<a href="/component/identity-logo" class="su-button">Logo</a> 
+<a href="/component/identity-masthead" class="su-button">Masthead</a> 
