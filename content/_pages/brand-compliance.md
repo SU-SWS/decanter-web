@@ -4,7 +4,7 @@ date: 2019-12-11T18:02:16.854Z
 ---
 <p class="su-intro-text">The collaborative work between University Communications and Stanford Web Services is key to achieving our goals in brand compliance.</p>
 
-## Aligning with the Stanford brand using Decanter
+## Aligning with the Stanford identity using Decanter
 
 Since the inception of web platforms for Stanford—in html, and on Drupal and Wordpress—our teams have been working to solve these challenges for the University with a primary goal: make it easy for websites to easily use elements from the Stanford Identity and make the treatment of the brand consistent in a select number of areas. 
 
