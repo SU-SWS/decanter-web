@@ -4,7 +4,7 @@ date: 2019-11-28T14:11:13.000Z
 ---
 ## Learn about the Decanter Design System
 
-<p class="su-intro-text">Decanter includes both the Decanter Design System in Figma, and the implementation of that system in as a frontend framework (<i>whose code is hosted on this site</i>). The Decanter Design System in Figma has been implemented for two purposes.</p>
+<p class="su-intro-text">Decanter includes both the Decanter Design System in Figma, and the implementation of that system in as a frontend framework (see our[ As a Developer](/page/use-decanter-as-a-developer/) pages.) The Decanter Design System in Figma has been implemented for two purposes.</p>
 
 * To articulate new ideas and see them through the collaborative ideation process where requirements, functionality, UX, and UI are defined. 
 * To become a rapid prototyping library for our communication and design teams across the University, where efficiencies can be made by using elements we all want to be sharing anyway, so we can spend our time where we want to—on other work, or on new and innovative ideas, instead of duplicative work. 
