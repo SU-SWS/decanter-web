@@ -2,11 +2,20 @@
 title: Get Started Quickly
 date: 2019-12-11T18:03:24.367Z
 ---
-IN PROGRESS
-
 ## Developers
 
-Coming soon!
+<span class="su-button su-button--big">[Fork us on Github](https://github.com/SU-SWS/decanter)</span>
+
+To get up and running with Decanter in your project please see our [Use Decanter](/page/use-decanter-as-a-developer-installation/) section for tips, strategies, and more on how to integrate it with your work. Alternatively, you may want to use one of our already integrated projects. Below is a non-exhaustive, incomplete list, of officially supported projects that use Decanter.  
+
+**Drupal:** 
+
+* [Jumpstart UI - Module](https://github.com/SU-SWS/jumpstart_ui)
+* [Stanford Basic - Theme](https://github.com/SU-SWS/stanford_basic)
+
+**Wordpress:**
+
+* Redwood Theme (soon!)
 
 ## Designers
 
