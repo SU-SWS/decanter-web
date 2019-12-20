@@ -2,9 +2,7 @@
 title: Visual Guidelines
 date: 2019-12-09T23:39:06.389Z
 ---
-IN PROGRESS
-
-The following guidelines are meant to help designers and developers who are contributing new visual work to Decanter. To find out if visual work is already in progress on a similar component \[LINK HERE]
+The following guidelines are meant to help designers and developers who are contributing new visual work to Decanter. To find out if visual work is already in progress on a similar component, [please check our design backlog.](https://www.figma.com/file/Kmd4utmJFPRMVeCFEEBQhLtx/Decanter-Design-System?node-id=3814%3A13)
 
 ## Criteria for acceptance for new work
 
