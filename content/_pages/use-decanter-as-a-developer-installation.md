@@ -26,6 +26,8 @@ You're in luck, Decanter has pre-compiled assets ready for you to add to your pr
 — webpack.config.js
 </code></pre>
 
+6. Compile with ❤️
+
 _example.html_
 ```html
 <!DOCTYPE html>
@@ -103,10 +105,59 @@ All the image and file assets you will need are in `/core/dist/assets`. Copy the
 </code></pre>
 
 ## I want to use the twig templates
-TBD
+
+The twig templating system is a wonderful templating system. It has many amazing features and has both a PHP and Node/JS implementation so you can use it in your PHP or Node/JS based projects. All of our components are built from a Twig template and thus allow you to reuse the same core source we generate our markup from. You can find the templates at `/core/src/templates/`
+
+<pre><code class="hljs">|
+— core
+  |— src
+    |— templates
+      |— components <-- This is where the goodies are
+      |– core
+      |- elements
+      |- layout
+</code></pre>
+
+*Namespaces*
+Twig allows you to use [namespaces](https://symfony.com/doc/4.1/templating/namespaced_paths.html) in your templates and we take full advantage of it. If you want to use the component templates as we do you will need to ensure your twig compiler has a `decanter` namespace pointed at the templates directory. Implementation will differ but here are a couple of examples.
+
+**Drupal**
+*module.info.yml*
+```yml
+component-libraries:
+  decanter:
+    paths:
+      - decanter/core/src/templates
+```
+
+**Twig.js**
+*example.js*
+```js
+const Twig = require('twig');
+
+var options = {
+  ...schema,
+  settings: {
+    'twig options': {
+      namespaces: {
+        decanter: "decanter/core/src/templates/"
+      }
+    }
+  }
+};
+
+Twig.renderFile("/path/to/template.twig", options, (err, html) => {
+  // html is the rendered html of the template and schema values.
+});
+```
 
 ## I'm using webpack
-Our webpack configuration is a little complicated you may say but it does an awesome job.
+Our webpack configuration is a little complicated. You will need several plugins and loaders to accomplish a build. Check out this example file for a starting point.
+
+https://github.com/SU-SWS/decanter-web/blob/nextjs/webpack.config.js
+
+*Resolve Aliases*
+You will notice that this configuration has an alias for the Decanter assets and for the fontawesome assets. This allows webpack to move and re-write the paths to the static file assets. These resolve aliases are being standardized and this documentation will be updated then.
 
 ## I'm using Drupal
 If you are using Drupal 8+ and would like to have Decanter in your project you can check out these projects.
