@@ -2,15 +2,13 @@
 title: Usability
 date: 2019-12-11T17:53:09.515Z
 ---
-READY FOR REVIEW
+<p class="su-intro-text">Decanter design is intentionally user-centric. As a sibling to accessibility practices, user testing and research are deployed to ensure that our models function as expected. Testing and research are often performed by secondary client project teams across the University, and also directly through the Decanter project.</p>
 
-<p class="su-intro-text">Decanter is intentionally user-centric. As a sibling to accessibility practices, user testing and research are deployed to ensure that our models function as expected. Testing and research are often performed by secondary client project teams across the University, and also directly through the Decanter project.</p>
-
-## Our Approach
+## Our approach
 
 With any design and code system, it is expected that over time our components will need to be refactored, redesigned, and deprecated. For this reason, teams at Stanford Web Services and University Communications are in perpetual cycles of testing and user experience research on our Decanter components. As user behavior and technology changes, so too our design systems. 
 
-## Testing + Research Methodologies
+## Testing + research methodologies
 
 ### Plans
 
