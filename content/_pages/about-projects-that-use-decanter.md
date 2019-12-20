@@ -30,7 +30,7 @@ date: 2019-11-28T14:11:13.000Z
   <div class="su-card su-card--horizontal su-card--minimal">
   <div class="class="su-card__contents">
     <h3>Stanford Redwood WordPress Theme</h3>
-    <span class=".su-caption">Drupal 8</span>
+    <span class=".su-caption">WordPress</span>
     <p>The Stanford Redwood theme created by University Communications uses Decanter.</p>
     <a href="https://identity.stanford.edu" class="su-link su-link--action">Learn more about Stanford Identity for the Web</a>
   </div>
