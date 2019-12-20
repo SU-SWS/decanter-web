@@ -17,4 +17,4 @@ modifier_css:
     notes: ''
     source_json: ''
 ---
-
+[Learn more about accessibility and the main navigation component.](/page/page-about-why-decanter-accessibility/)
