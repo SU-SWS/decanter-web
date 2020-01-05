@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: nextjs
+  branch: master
 media_folder: "public/img"
 public_folder: "/img"
 # This creates PRs for every change. Only enable after go-live.
