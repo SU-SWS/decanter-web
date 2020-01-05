@@ -12,9 +12,16 @@ modifier_css:
   - css_class: su-link--video
     notes: ''
     source_json: '{ "link_content": "Play Video" }'
-  - css_class: su-link--button
+  - css_class: su-button
+    notes: >-
+      When using this style, please ask yourself, should I use a real button
+      instead?
+  - css_class: su-button--secondary
+    notes: >-
+      When using this style, please ask yourself, should I use a real button
+      instead?
+  - css_class: su-button--big
     notes: >-
       When using this style, please ask yourself, should I use a real button
       instead?
 ---
-

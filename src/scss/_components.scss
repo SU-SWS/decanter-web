@@ -9,7 +9,8 @@
 .component__variant-info,
 .component__variant-markup,
 .component__demo,
-.component__variant-demo {
+.component__variant-demo,
+.component__variant-notes {
   > * {
     @include margin(null auto);
     max-width: 800px;
@@ -129,6 +130,10 @@ button {
       }
     }
   }
+}
+
+.component__variant-notes {
+  @include modular-spacing('margin-top', 1);
 }
 
 .fullwidth-view {
