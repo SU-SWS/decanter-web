@@ -1,8 +1,6 @@
 import React from 'react';
-import Link from 'next/link';
 import Navigation from '../../../content/_settings/navigation.yml';
 import Components from '../../../content/_settings/kss.json';
-// import ActivePath from 'decanter/core/src/js/components/nav/ActivePath';
 
 /**
  * [dynamicAsLink description]
@@ -83,26 +81,26 @@ class PrimaryNav extends React.Component {
     this.doExpandThingy();
   }
 
-  /**
-   * [routeChangeComplete description]
-   * @param  {[type]} url [description]
-   * @return {[type]}     [description]
-   */
-  componentDidUpdate() {
-    this.doExpandThingy();
-  }
-
-
-  /**
-   * [shouldComponentUpdate description]
-   * @param  {[type]} nextProps [description]
-   * @param  {[type]} nextState [description]
-   * @return {[type]}           [description]
-   */
-  refreshNav() {
-    // this.forceUpdate();
-    this.setState({});
-  }
+  // /**
+  //  * [routeChangeComplete description]
+  //  * @param  {[type]} url [description]
+  //  * @return {[type]}     [description]
+  //  */
+  // componentDidUpdate() {
+  //   this.doExpandThingy();
+  // }
+  //
+  //
+  // /**
+  //  * [shouldComponentUpdate description]
+  //  * @param  {[type]} nextProps [description]
+  //  * @param  {[type]} nextState [description]
+  //  * @return {[type]}           [description]
+  //  */
+  // refreshNav() {
+  //   // this.forceUpdate();
+  //   this.setState({});
+  // }
 
   /**
    * [setActivePath description]
@@ -129,30 +127,22 @@ class PrimaryNav extends React.Component {
           <ul className="su-secondary-nav__menu-lv1 su-secondary-nav__menu">
             {items.map((item, index) => (
               <li className="su-secondary-nav__item su-secondary-nav__item--parent" key={"lv1-" + index}>
-                <Link href={item.path} as={item.as}>
-                  <a className={item.class.join(' ')} onClick={this.refreshNav}>{item.label}</a>
-                </Link>
+                  <a className={item.class.join(' ')} href={item.as}>{item.label}</a>
                 {item.children && (
                   <ul className="su-secondary-nav__menu-lv2 su-secondary-nav__menu">
                     {item.children.map((lv2, index2) => (
                       <li className="su-secondary-nav__item su-secondary-nav__item--parent" key={"lv2-" + index2}>
-                        <Link href={lv2.path} as={lv2.as}>
-                          <a className={lv2.class.join(' ')}>{lv2.label}</a>
-                        </Link>
+                          <a className={lv2.class.join(' ')} href={lv2.as}>{lv2.label}</a>
                         {lv2.children && (
                           <ul className="su-secondary-nav__menu-lv3 su-secondary-nav__menu">
                             {lv2.children.map((lv3, index3) => (
                               <li className="su-secondary-nav__item" key={"lv3-" + index3}>
-                                <Link href={lv3.path} as={lv3.as}>
-                                  <a className={lv3.class.join(' ')}>{lv3.label}</a>
-                                </Link>
+                                  <a className={lv3.class.join(' ')} href={lv3.as}>{lv3.label}</a>
                                 {lv3.children && (
                                   <ul className="su-secondary-nav__menu-lv4 su-secondary-nav__menu">
                                     {lv3.children.map((lv4, index4) => (
                                       <li className="su-secondary-nav__item" key={"lv4-" + index4}>
-                                        <Link href={lv4.path} as={lv4.as}>
-                                          <a className={lv4.class.join(' ')}>{lv4.label}</a>
-                                        </Link>
+                                          <a className={lv4.class.join(' ')} href={lv4.as}>{lv4.label}</a>
                                       </li>
                                     ))}
                                   </ul>
