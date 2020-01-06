@@ -2,8 +2,6 @@
 title: Decanter Design System
 date: 2019-03-17T19:31:20.591Z
 ---
-![]()
-
 <section class="homepage">
 <section class="section section--welcome fullwidth narrow-content padding-vertical-md inverse">
     <h1>Welcome to the Decanter Style Guide and Pattern Library</h1>
