@@ -47,7 +47,7 @@ const Variant = (props) => {
 
     }
   }
-console.log(props);
+
   demoStyles = demoStyles.join("\n");
   demoStylesWrapper = demoStylesWrapper.join("\n");
   return (

@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router';
-import Twig from 'twig';
 import Layout from '../../src/components/layouts/TwoCol.js';
 import KSSComponent from '../../src/components/KSSComponent/KSSComponent.js';
 const prettifyHtml = require('prettify-html');

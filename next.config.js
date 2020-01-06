@@ -110,7 +110,10 @@ module.exports = withSass(
   exportPathMap: function() {
     var pages = {
       '/': { page: '/' },
-      '/page/components': { page: '/page/[id]', query: {id: 'components'}}
+      '/page/components': { page: '/page/[id]', query: {id: 'components'}},
+      '/component/simple': { page: '/component/[id]', query: {id: 'simple'}},
+      '/component/composite': { page: '/component/[id]', query: {id: 'composite'}},
+      '/component/identity': { page: '/component/[id]', query: {id: 'identity'}}
     };
 
     var files = glob.sync('content/_pages/*.md');
