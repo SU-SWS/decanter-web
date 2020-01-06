@@ -17,6 +17,9 @@ function dynamicAsLink(item, index, test = ["page", "component"]) {
     item.as = "/" + parts[1] + "/" + parts[2] + "/";
     item.id = parts[2];
   }
+  else {
+    item.as = item.path;
+  }
 
   if (item.children) {
     item.children.map((item2, index2) => dynamicAsLink(item2, index2, test))
