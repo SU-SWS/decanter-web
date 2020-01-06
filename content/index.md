@@ -11,8 +11,10 @@ date: 2019-03-17T19:31:20.591Z
 
 <section class="section section--start fullwidth wide-content padding-vertical-lg inverse">
   <div class="su-card su-card--horizontal su-card--minimal">
-    <img src='https://media.githubusercontent.com/media/SU-SWS/decanter-web/nextjs/public/img/ui-components.png' alt='' />
-    <div class="su-card__contents">
+
+![](/img/ui-components.png)
+
+<div class="su-card__contents">
       <h2>Get started</h2>
       <p>Learn about how to use Decanter components with our onboarding guides, tailored to designers or developers.</p>
       <p><a href="page/use-decanter-as-a-developer/" class="su-link su-link--action">View developer guide</a></p>
