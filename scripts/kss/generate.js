@@ -37,7 +37,15 @@ kss_util.fetchSections()
         section.markup(short_path);
         section.custom('source_twig', short_path);
       }
-      let data = JSON.stringify(section);
+      function replacer(key,value) {
+        if (key==="path") {
+          return undefined;
+        }
+        else {
+          return value;
+        }
+      }
+      let data = JSON.stringify(section, replacer);
       let filepath = path.join(kss_settings_dir, "info", key + ".json");
       fs.writeFileSync(filepath, data);
     });
