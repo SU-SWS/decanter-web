@@ -133,7 +133,7 @@ kss_util.fetchSections()
           my_options = Object.assign(my_options, component_contents.modifier_schema[modnam]);
         }
 
-        // Do the render baby.
+        // Do the render.
         Twig.renderFile(full_twig_path, my_options, function(err3, html2) {
           let filepath = path.join(kss_settings_dir, "markup", key + "-" + modnam + ".html");
           fs.writeFile(filepath, html2, (err4) => { if (err4) { console.log(err4) } });
