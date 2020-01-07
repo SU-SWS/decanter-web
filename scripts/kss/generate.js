@@ -2,10 +2,12 @@ const path = require('path');
 const fs = require('fs');
 const del = require('del');
 const Twig = require('twig');
+const yamlFront = require('yaml-front-matter');
 const twigDrupal = require('twig-drupal-filters');
 const kss_util = require('./utility.js');
 const kss_nav_json = path.resolve(__dirname, '../../content/_settings/kss.json');
 const kss_settings_dir = path.resolve(__dirname, '../../content/_kss');
+const content_components_dir = path.resolve(__dirname, '../../content/_components');
 const decanter_src = path.resolve(__dirname, "../../node_modules/decanter/core/src");
 
 // Add de filters.
@@ -104,8 +106,35 @@ kss_util.fetchSections()
       var modifiers = await section.modifiers();
       modifiers.forEach(function(modifier, index) {
         var modnam = modifier.className();
-        options.modifier_class = modnam;
-        Twig.renderFile(full_twig_path, options, function(err3, html2) {
+        var my_options = JSON.parse(JSON.stringify(options));
+        my_options.modifier_class = modnam;
+        var key = kss_util.stringToClassName(modifier.meta.section.data.reference);
+        var component_path = path.join(content_components_dir, key + ".md");
+        var component_contents;
+
+        try {
+          component_contents = fs.readFileSync(component_path);
+          component_contents = yamlFront.loadFront(component_contents);
+          if (component_contents.modifier_css) {
+            component_contents.modifier_schema = {};
+            component_contents.modifier_css.forEach(async function(val) {
+              if (val.source_json) {
+                component_contents.modifier_schema[val.css_class] = JSON.parse(val.source_json);
+              }
+            });
+          }
+        }
+        catch(err) {
+          component_contents = null;
+        }
+
+        // If we have an override merge the override data in with the default.
+        if (component_contents && component_contents.modifier_schema && component_contents.modifier_schema[modnam]) {
+          my_options = Object.assign(my_options, component_contents.modifier_schema[modnam]);
+        }
+
+        // Do the render baby.
+        Twig.renderFile(full_twig_path, my_options, function(err3, html2) {
           let filepath = path.join(kss_settings_dir, "markup", key + "-" + modnam + ".html");
           fs.writeFile(filepath, html2, (err4) => { if (err4) { console.log(err4) } });
         });
