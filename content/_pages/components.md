@@ -10,8 +10,24 @@ Check out the [Get Started page](/page/use-decanter-as-a-developer-installation/
 
 Check out the [As a Designer page](/page/use-decanter-as-a-designer/) for more on how to use the Decanter design assets. 
 
-## View the components:
+## See what's currently available:
 
-<a href="/component/simple/" class="su-button">View Simple</a> <a href="/component/composite/" class="su-button">View Composite</a> <a href="/component/identity/" class="su-button">View Identity</a>
+### Simple Components
+
+Foundational or structural components and are often the building blocks for the composite components, e.g., buttons.
+
+<a href="/component/simple/" class="su-button">View simple components</a> 
+
+### Composite Components
+
+More complex than simple components and have less branding than the identity components. They usually have nested simple components or have more moving parts, e.g., cards and navigation menus.
+
+<a href="/component/composite/" class="su-button">View composite components</a> 
+
+### Identity Components
+
+Heavily branded components that are used to identify your website with the Stanford identity, e.g., brand bar and global footer.
+
+<a href="/component/identity/" class="su-button">View Identity components</a>
 
 Don't see what you are looking for in any of those sections? Check out our [contributing page](/page/about-contributing/) for more information on how you can help or request features.
