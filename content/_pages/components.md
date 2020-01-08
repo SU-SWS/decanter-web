@@ -12,6 +12,16 @@ Check out the [As a Designer page](/page/use-decanter-as-a-designer/) for more o
 
 ## View the components:
 
-<a href="/component/simple/" class="su-button">View Simple</a> <a href="/component/composite/" class="su-button">View Composite</a> <a href="/component/identity/" class="su-button">View Identity</a>
+**Simple components** are foundational or structural components and are often the building blocks for the composite components, e.g., buttons.
+
+<a href="/component/simple/" class="su-button">View simple components</a> 
+
+**Composite components** are more complex than simple components and have less branding than the identity components. They usually have nested simple components or have more moving parts, e.g., cards.
+
+<a href="/component/composite/" class="su-button">View composite components</a> 
+
+**Identity components** are heavily branded components that are used to identify your website with the Stanford identity, e.g., the global footer.
+
+<a href="/component/identity/" class="su-button">View Identity components</a>
 
 Don't see what you are looking for in any of those sections? Check out our [contributing page](/page/about-contributing/) for more information on how you can help or request features.
