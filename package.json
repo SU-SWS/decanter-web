@@ -77,7 +77,8 @@
     "urlencode": "^1.1.0",
     "webpack": "^4.41.4",
     "webpack-assets-manifest": "^3.1.1",
-    "webpack-fix-style-only-entries": "^0.4.0"
+    "webpack-fix-style-only-entries": "^0.4.0",
+    "yaml-front-matter": "^4.1.0"
   },
   "devDependencies": {
     "eslint": "^5.16",
