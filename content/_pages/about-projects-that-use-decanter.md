@@ -59,5 +59,17 @@ date: 2019-11-28T14:11:13.000Z
  <img src="/img/stanfordhomepage.png" alt="" title="" data-reactroot="" width=600>
 </div>
 </section>
+
+<section class="section section--components fullwidth wide-content padding-vertical-md">
+  <div class="su-card su-card--horizontal su-card--minimal">
+  <div class="class="su-card__contents">
+    <h3>The Stanford Events Calendar</h3>
+    <span class=".su-caption">Custom</span>
+    <p>The Stanford Events calendar uses an earlier release of Decanter.</p>
+    <a href="https://events.stanford.edu" class="su-link su-link--action">Visit Stanford Events</a>
+  </div>
+ <img src="/img/events.png" alt="" title="" data-reactroot="" width=600>
+</div>
+</section>
 <h2>Share your project</h2>
 <a href="https://stanfordwebservices.slack.com/archives/C9SL2179B">Find us on Slack in the #decanter channel</a> to share your project made with Decanter.
