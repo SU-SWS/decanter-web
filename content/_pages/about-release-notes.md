@@ -2,9 +2,34 @@
 title: Release Notes
 date: 2019-11-28T14:11:13.000Z
 ---
-## Version 6                      
+## Version 6.0.1                      2020-1-13
 
-Coming soon!
+* Fixed tugboat builds for previews on PRs.
+* Restored the `centered-container` class. Totally did not mean to remove it along with the other layouts.
+* Fixed empty cell logic in `lockup.twig`.
+* Fixed failing webpack build. Shea is sorry about that one.
+
+## Version 6.0.0                      2019-12-20
+
+* Deprecated: `su-aspect-ratio-1x1` & `su-aspect-ratio-4x3` classes.
+* Removed all of the KSS Styleguide build in favor of new website.
+* Removed `lando.default.yml` as you should be using the npm servers.
+* Removed `Gruntfile.js` and fully switched over to npm scripts.
+* Removed webpack url-loader and added `/core/dist/assets` so that images are no longer embedded in the css
+* Removed `/core/dist/css/decanter-grid.css` as it was empty anyhow.
+* Removed `/core/dist/css/decanter-no-markup.css` as it was empty anyhow.
+* Removed `/core/dist/js/decanter-grid.js` as it was empty except for webpack stuff.
+* Removed `/core/src/js/decanter-grid.js` as we now use the `decanter-grid.scss` as our webpack entry point.
+* Removed the scss file import from `/core/src/js/decanter-no-markup.js` so that it includes just javascript and no sass.
+* Removed nearly all of the layouts found in `/core/src/scss/layout` as they added 4500 lines of css bloat that were not being used. The files and css have been moved to an examples folder.
+* Removed all the deprecated code from Version 5.
+* New Component: Secondary Navigation
+* `/core/src/js/decanter.js` no imports both the SASS and Javascript files.
+* New SASSDOCs code commenting conventions for all SASS files instead of abusing the KSS style.
+* New JSDOCs code commenting conventions for all JavaScript files instead of just whatever.
+* New Variant: Card Icon
+* New Examples folder for adding examples of templates/recipies/documentation/whatever.
+* New Dependency: Font Awesome because, well, it's awesome.
 
 ## Version 5.1.0                      2019-10-31
 
