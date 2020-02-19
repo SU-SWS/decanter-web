@@ -10,7 +10,7 @@ date: 2019-11-28T14:11:13.000Z
 
 ## View Details:
 
-<a href="/component/identity-brandbar" class="su-button">Brand Bar</a> 
+<a href="/component/identity-brand-bar/" class="su-button">Brand Bar</a> 
 <a href="/component/identity-global-footer" class="su-button">Global Footer</a> 
 <a href="/component/identity-local-footer" class="su-button">Local Footer</a> 
 <a href="/component/identity-lockup" class="su-button">Lockup</a> 
