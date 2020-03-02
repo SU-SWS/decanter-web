@@ -81,7 +81,7 @@ Include the `decanter.scss` file in your work by importing `/core/src/scss/decan
 @import 'my-project-styles'
 ```
 
-3. Make sure your sass include_path includes node_modules. eg: https://github.com/SU-SWS/decanter-web/blob/nextjs/next.config.js#L24
+3. Make sure your sass include_path includes node_modules. eg: https://github.com/SU-SWS/decanter-web/blob/master/next.config.js#L24
 
 4. Set the file path variables.
 When the CSS compiles you will need to have the image and font assets at a relative path to the css files so that they load. You can configure the path that is outputted in the css by setting the following variables.
@@ -154,7 +154,7 @@ Twig.renderFile("/path/to/template.twig", options, (err, html) => {
 ## I'm using webpack
 Our webpack configuration is a little complicated. You will need several plugins and loaders to accomplish a build. Check out this example file for a starting point.
 
-https://github.com/SU-SWS/decanter-web/blob/nextjs/webpack.config.js
+https://github.com/SU-SWS/decanter-web/blob/master/webpack.config.js
 
 *Resolve Aliases*
 You will notice that this configuration has an alias for the Decanter assets and for the fontawesome assets. This allows webpack to move and re-write the paths to the static file assets. These resolve aliases are being standardized and this documentation will be updated then.
