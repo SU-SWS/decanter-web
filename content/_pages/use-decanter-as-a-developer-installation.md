@@ -166,7 +166,7 @@ If you are using Drupal 8+ and would like to have Decanter in your project you c
 * [Stanford Basic](https://github.com/su-sws/stanford_basic/)
 
 **Modules**
-* [Jumpstart UI](https://github.com/su-sws/jumpstart-ui/)
+* [Jumpstart UI](https://github.com/su-sws/jumpstart_ui/)
 
 ## I'm using Wordpress
 
