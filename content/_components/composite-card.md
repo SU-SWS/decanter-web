@@ -63,7 +63,7 @@ modifier_css:
         "card_super_headline": "This is a super headline",
         "card_headline": "Headline goes here",
         "card_allow_headline_link": false,
-        "card_body": "<p>This is a card with a self-hosted video that autoplays and keeps looping. This example has a button link as the call-to-action. The video container has the <i>.su-aspect-ratio</i> class which restricts the video's aspect ratio to the default 16:9.</p>",
+        "card_body": "<p>This variant allows for a self-hosted video to be displayed. In this example, the video autoplays and loops, and it has a button link as the call-to-action. The example video container has the <i>.su-aspect-ratio</i> class which restricts the video's aspect ratio to the default 16:9.</p>",
         "card_link": "https://stanford.edu",
         "card_cta_attributes": "rel='nofollow noopener'",
         "card_cta_label": "",
