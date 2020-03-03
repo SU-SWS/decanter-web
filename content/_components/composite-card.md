@@ -49,7 +49,7 @@ modifier_css:
         "card_allow_media_link": false,
         "card_body": "<p>This whole card is a link so there are no link buttons nor CTA-links.</p>",
         "card_link": "https://stanford.edu",
-        "card_cta_attributes": "rel='nofollow noopener'",
+        "card_cta_attributes": "rel='nofollow noopener'"
       }
 ---
 
