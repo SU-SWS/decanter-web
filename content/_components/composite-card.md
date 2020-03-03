@@ -24,7 +24,7 @@ modifier_css:
         "card_cta_label": "",
         "card_button_label": "Button Label"
       }
-  - css_class: su-card--icon
+  - css_class: su-card--icon su-card--horizontal
     egwidth: 450px
     source_json: |-
       {
