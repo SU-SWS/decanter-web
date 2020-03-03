@@ -43,6 +43,7 @@ modifier_css:
     egwidth: 450px
     source_json: |-
       {
+        "allow_links": false,
         "card_super_headline": "This is a super headline",
         "card_headline": "Headline goes here",
         "card_allow_headline_link": false,
