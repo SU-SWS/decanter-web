@@ -33,7 +33,7 @@ modifier_css:
         "card_super_headline": "This is a super headline",
         "card_headline": "Headline goes here",
         "card_allow_headline_link": false,
-        "card_body": "<p>This is an icon card. This example has a call-to-action link and no button. Everything is center-aligned.</p>",
+        "card_body": "<p>This is an icon card. This example has a call-to-action link and no button. Everything is center-aligned in this variant. Also, the icon is shown for all device widths where in the other variants, the media element is hidden for the smallest device widths.</p>",
         "card_link": "https://stanford.edu",
         "card_cta_attributes": "rel='nofollow noopener'",
         "card_cta_label": "CTA link label",
