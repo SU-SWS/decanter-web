@@ -33,11 +33,23 @@ modifier_css:
         "card_super_headline": "This is a super headline",
         "card_headline": "Headline goes here",
         "card_allow_headline_link": false,
-        "card_body": "<p>This is an icon card a call-to-action link and no button. Everything is center-aligned.</p>",
+        "card_body": "<p>This is an icon card with a call-to-action link and no button. Everything is center-aligned.</p>",
         "card_link": "https://stanford.edu",
         "card_cta_attributes": "rel='nofollow noopener'",
-        "card_cta_label": "This is a call-to-action link",
+        "card_cta_label": "CTA link label",
         "card_button_label": ""
+      }
+  - css_class: su-card--link
+    egwidth: 450px
+    source_json: |-
+      {
+        "card_super_headline": "This is a super headline",
+        "card_headline": "Headline goes here",
+        "card_allow_headline_link": false,
+        "card_allow_media_link": false,
+        "card_body": "<p>This whole card is a link so there are no link buttons nor CTA-links.</p>",
+        "card_link": "https://stanford.edu",
+        "card_cta_attributes": "rel='nofollow noopener'",
       }
 ---
 
