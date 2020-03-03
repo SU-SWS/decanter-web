@@ -43,11 +43,11 @@ modifier_css:
     egwidth: 450px
     source_json: |-
       {
-        "allow_links": false,
         "card_super_headline": "This is a super headline",
         "card_headline": "Headline goes here",
         "card_allow_headline_link": false,
         "card_allow_media_link": false,
+        "card_media_link": "",
         "card_body": "<p>This whole card is a link so there are no link buttons nor CTA-links.</p>",
         "card_link": "https://stanford.edu",
         "card_cta_attributes": "rel='nofollow noopener'"
