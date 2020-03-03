@@ -24,7 +24,7 @@ modifier_css:
         "card_cta_label": "",
         "card_button_label": "Button Label"
       }
-  - css_class: su-card--icon su-card--horizontal
+  - css_class: su-card--icon
     egwidth: 450px
     source_json: |-
       {
@@ -51,6 +51,22 @@ modifier_css:
         "card_body": "<p>This whole card is a link so there are no link buttons nor CTA-links.</p>",
         "card_link": "https://stanford.edu",
         "card_cta_attributes": "rel='nofollow noopener'"
+      }
+  - css_class: su-card--video
+    source_json: |-
+      {
+        "card_media_video_src": "https://news-media.stanford.edu/wp-content/uploads/2018/01/18153719/palau_swimmerloop_final.mp4",
+        "card_media_wrapper_modifier_class": "su-aspect-ratio",
+        "card_media_content_attributes": "autoplay loop muted",
+        "card_allow_media_link": false,
+        "card_super_headline": "This is a super headline",
+        "card_headline": "Headline goes here",
+        "card_allow_headline_link": false,
+        "card_body": "<p>This is a card with a self-hosted video that autoplays and keeps looping. It has a button link as the call-to-action. The video container has the <i>.su-aspect-ratio</i> class which restricts the video's aspect ratio to the default 16:9.</p>",
+        "card_link": "https://stanford.edu",
+        "card_cta_attributes": "rel='nofollow noopener'",
+        "card_cta_label": "",
+        "card_button_label": "Button Label"
       }
 ---
 
