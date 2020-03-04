@@ -8,10 +8,12 @@ body {
   @include font-smoothing;
 }
 
-.su-brand-bar {
-  .su-brand-bar__container {
-    max-width: calc(100% - 40px);
-    width: calc(100% - 40px);
+#__next {
+  > .su-brand-bar {
+    .su-brand-bar__container {
+      max-width: calc(100% - 40px);
+      width: calc(100% - 40px);
+    }
   }
 }
 
