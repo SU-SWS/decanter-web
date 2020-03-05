@@ -39,7 +39,7 @@
     "autoprefixer": "^9.7.3",
     "babel-plugin-module-resolver": "^4.0.0",
     "bourbon": "^5.1",
-    "decanter": "git+https://github.com/su-sws/decanter.git#6.0.5",
+    "decanter": "^6.0.5",
     "del": "^5.1.0",
     "fibers": "^4.0.2",
     "file-loader": "^5.0.2",
