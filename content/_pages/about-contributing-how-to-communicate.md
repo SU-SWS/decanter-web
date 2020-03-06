@@ -6,6 +6,10 @@ date: 2019-11-28T14:11:13.000Z
 
 The Decanter team is on Slack, which is the best way for Stanford Community members to learn about new releases and ask questions. Our Slack channel is called: [\#decanter](https://stanfordwebservices.slack.com/archives/C9SL2179B)
 
+## Email List
+
+The Decanter team can also be reached via email at [decanter-discuss@lists.stanford.edu](mailto:decanter-discuss@lists.stanford.edu)
+
 ## CoP
 
 As more campus partners and vendors use Decanter, the Decanter team is considering a Community of Practice around Decanter. If you are interested, please let us know on Slack.
