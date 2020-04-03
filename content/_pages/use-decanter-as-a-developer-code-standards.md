@@ -6,4 +6,4 @@ IN PROGRESS
 
 Coding Standards and Definition of Done for Decanter will be found on this page.
 
-In the meantime, please see our [Technical Contribution Guidelines](https://elegant-poitras-87214a.netlify.com/page/about-contributing/).
+In the meantime, please see our [Technical Contribution Guidelines](https://elegant-poitras-87214a.netlify.app/page/about-contributing/).
