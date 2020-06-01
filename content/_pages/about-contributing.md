@@ -4,14 +4,14 @@ date: 2019-11-28T14:11:13.000Z
 ---
 # Contributing to Decanter
 
-<p class="su-intro-text">This project is open source. If you find something broken, confusing, or wrong, please first check the[ issue queue](https://github.com/SU-SWS/decanter/issues). For new issues or feature requests, contributors who post with patches or pull requests and are respectful will be handled first. </p>
+<p class="su-intro-text">This project is open source. If you find something broken, confusing, or wrong, please first check the\[ issue queue](https://github.com/SU-SWS/decanter/issues). For new issues or feature requests, contributors who post with patches or pull requests and are respectful will be handled first. </p>
 
 Please see our[ Code of Conduct](https://github.com/SU-SWS/decanter/blob/master/CODE_OF_CONDUCT.md) for contributors.
 
 ## Using the issue tracker
 
-The issue tracker is the preferred channel for [bug reports](#bugs),[ features requests](#features) and [submitting pull
-requests](#pull-requests). Please respect the following restrictions:
+The issue tracker is the preferred channel for bug reports, features requests and submitting pull
+requests. Please respect the following restrictions:
 
 * Please **do not** use the issue tracker for personal support requests.
 * Please **do** assign a maintainer for review.
@@ -58,7 +58,6 @@ Feature requests are welcome. But take a moment to find out whether your idea fi
 Good pull requests - patches, improvements, new features - are a fantastic help. They should remain focused in scope and avoid containing unrelated commits.
 
 Please adhere to the coding conventions used throughout a project (whitespace, accurate comments, etc.) and any other requirements (such as test coverage).
-
 
 Linting is performed on every pull request. Please see STANDARDS.md for more information on standards, conventions, and best practices.
 
