@@ -4,7 +4,7 @@ date: 2019-11-28T14:11:13.000Z
 ---
 ## Learn about the Decanter Design System
 
-<p class="su-intro-text">Decanter includes both the Decanter Design System in Figma, and the implementation of that system in as a frontend framework (see our[ As a Developer](/page/use-decanter-as-a-developer/) pages.) The Decanter Design System in Figma has been implemented for two purposes.</p>
+<p class="su-intro-text">Decanter includes both the Decanter Design System in Figma, and the implementation of that system in as a frontend framework (see our\[ As a Developer](/page/use-decanter-as-a-developer/) pages.) The Decanter Design System in Figma has been implemented for two purposes.</p>
 
 * To articulate new ideas and see them through the collaborative ideation process where requirements, functionality, UX, and UI are defined. 
 * To become a rapid prototyping library for our communication and design teams across the University, where efficiencies can be made by using elements we all want to be sharing anyway, so we can spend our time where we want to—on other work, or on new and innovative ideas, instead of duplicative work. 
@@ -33,7 +33,7 @@ Please [contact us on Slack](/page/about-contributing-how-to-communicate/) if yo
 
 Having a shared central starting point for all Stanford digital design provides us the opportunity to share our work quickly and easily. Though the Decanter Design System is intentionally meant to be a baseline framework—deliberately simple and succinct—that doesn’t mean that new custom libraries we create for other purposes cannot be shared between us as well. 
 
-<p><a href="/pages/entries/decanter-design-system" class="su-button"> Learn more about contributing design</a></p>
+<p><a href="/page/visual-guidelines/" class="su-button"> Learn more about contributing design</a></p>
 
 ## Decanter Design System backlog
 
