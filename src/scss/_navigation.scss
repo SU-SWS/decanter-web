@@ -5,7 +5,7 @@
   @extend .su-secondary-nav;
 
   .su-secondary-nav {
-    // inherits from Decanter
+    // inherits from Decanter, then override:
     @include padding(1.2rem 4.8rem 1.2rem 2.4rem);
   }
 
@@ -22,7 +22,7 @@
     }
   }
   .su-secondary-nav__menu-lv2 .su-secondary-nav__item:last-child a:last-child {
-    padding-bottom: .5rem;
+    padding-bottom: .25rem;
   }
 }
 
