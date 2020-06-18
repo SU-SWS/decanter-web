@@ -4,6 +4,11 @@
 .decanter-nav {
   @extend .su-secondary-nav;
 
+  .su-secondary-nav {
+    // inherits from Decanter
+    @include padding(1.2rem 4.8rem 1.2rem 2.4rem);
+  }
+
   .su-secondary-nav__item--parent {
     > .su-secondary-nav__menu {
       display: none;
@@ -15,6 +20,9 @@
     > .su-secondary-nav__menu {
       display: flex;
     }
+  }
+  .su-secondary-nav__menu-lv2 .su-secondary-nav__item:last-child a:last-child {
+    padding-bottom: .5rem;
   }
 }
 
