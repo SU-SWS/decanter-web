@@ -24,19 +24,20 @@ Accessibility
 Evaluation Date: 201X-XX-XX
 This project conforms to level AA WCAG 2.0 standards as required by the university's accessibility policy. For more information on the policy please visit: [https://ucomm.stanford.edu/policies/accessibility-policy.html](https://ucomm.stanford.edu/policies/accessibility-policy.html).
 
-Configuration and Installation
+Installation and Configuration
 ---
 ###Local Setup
 ```
 git clone https://github.com/SU-SWS/decanter-web.git
 cd decanter-web
-npm install # Install node_modules dependencies
+nvm use         # Node Version Manager is used for version control
+npm install     # Install node_modules dependencies
 ```
 
 ###Build Command(s)
 ```
-npm build # Builds Applciation
-npm start # Starts development server at http://localhost:3000/
+npm run build   # Builds all the things
+npm run dev     # Starts development server at http://localhost:3000/
 ```
 
 ###Symlink local Decanter project
