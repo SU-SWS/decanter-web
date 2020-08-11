@@ -54,12 +54,14 @@ modifier_css:
         "line4": ""
       }
   - css_class: su-lockup--option-h
+    description: School + Unit (2 lines)
     source_json: |-
       {
         "line2": "",
         "line5": ""
       }
   - css_class: su-lockup--option-i
+    description: School + Unit + Level
     source_json: |-
       {
         "line2": "",
