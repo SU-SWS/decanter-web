@@ -3,6 +3,7 @@ title: Lockup (Department Signature)
 component: identity-lockup
 modifier_css:
   - css_class: su-lockup--option-a
+    description: Multidisciplinary (or Long School Name + Unit)
     source_json: |-
       {
         "line2": "",
@@ -10,6 +11,7 @@ modifier_css:
         "line4": ""
       }
   - css_class: su-lockup--option-b
+    description: 'Unit (2 lines, big/small)'
     source_json: |-
       {
         "line3": "",
@@ -30,6 +32,7 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-e
+    description: Unit + Level
     source_json: |-
       {
         "line4": "",
