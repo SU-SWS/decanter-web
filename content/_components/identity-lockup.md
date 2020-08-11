@@ -40,6 +40,7 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-f
+    description: 'Unit (2 lines, big/small)'
     source_json: |-
       {
         "line3": "",
