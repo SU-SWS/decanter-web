@@ -25,6 +25,7 @@ modifier_css:
         "line4": ""
       }
   - css_class: su-lockup--option-d
+    description: Unit + Level
     source_json: |-
       {
         "line2": "",
@@ -32,7 +33,7 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-e
-    description: Unit + Level
+    description: Unit(2 Lines) + Level
     source_json: |-
       {
         "line4": "",
