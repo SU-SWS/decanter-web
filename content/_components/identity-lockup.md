@@ -68,12 +68,14 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-j
+    description: Multidisciplinary (or Long School Name) + Unit(2 Lines)
     source_json: |-
       {
         "line3": "",
         "line4": ""
       }
   - css_class: su-lockup--option-k
+    description: Alt School + Unit (1 line)
     source_json: |-
       {
         "line2": "",
