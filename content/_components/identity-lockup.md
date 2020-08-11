@@ -11,7 +11,7 @@ modifier_css:
         "line4": ""
       }
   - css_class: su-lockup--option-b
-    description: 'Unit (2 lines, big/small)'
+    description: '### Unit (2 lines, big/small)'
     source_json: |-
       {
         "line3": "",
@@ -25,7 +25,7 @@ modifier_css:
         "line4": ""
       }
   - css_class: su-lockup--option-d
-    description: Unit + Level
+    description: '### Unit + Level'
     source_json: |-
       {
         "line2": "",
@@ -33,14 +33,14 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-e
-    description: Unit(2 Lines) + Level
+    description: '### Unit (2 Lines) + Level'
     source_json: |-
       {
         "line4": "",
         "line5": ""
       }
   - css_class: su-lockup--option-f
-    description: 'Unit (2 lines, big/small)'
+    description: '### Unit (2 lines, big/small)'
     source_json: |-
       {
         "line3": "",
@@ -54,28 +54,28 @@ modifier_css:
         "line4": ""
       }
   - css_class: su-lockup--option-h
-    description: School + Unit (2 lines)
+    description: '### School + Unit (2 lines)'
     source_json: |-
       {
         "line2": "",
         "line5": ""
       }
   - css_class: su-lockup--option-i
-    description: School + Unit + Level
+    description: '### School + Unit + Level'
     source_json: |-
       {
         "line2": "",
         "line5": ""
       }
   - css_class: su-lockup--option-j
-    description: Multidisciplinary (or Long School Name) + Unit(2 Lines)
+    description: '### Multidisciplinary (or Long School Name) + Unit (2 Lines)'
     source_json: |-
       {
         "line3": "",
         "line4": ""
       }
   - css_class: su-lockup--option-k
-    description: Alt School + Unit (1 line)
+    description: '### Alt School + Unit (1 line)'
     source_json: |-
       {
         "line2": "",
@@ -83,7 +83,7 @@ modifier_css:
         "line4": ""
       }
   - css_class: su-lockup--option-l
-    description: School Only
+    description: '### School Only'
     source_json: |-
       {
         "line2": "",
@@ -92,7 +92,7 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-m
-    description: Unit (2 lines)
+    description: '### Unit (2 lines)'
     source_json: |-
       {
         "line3": "",
@@ -100,7 +100,7 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-n
-    description: Unit (1 line)
+    description: '### Unit (1 line)'
     source_json: |-
       {
         "line2": "",
@@ -109,7 +109,7 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-o
-    description: Vertical – School
+    description: '### Vertical – School'
     source_json: |-
       {
         "line1": "",
@@ -118,7 +118,7 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-p
-    description: School + Unit (1 line)
+    description: '### School + Unit (1 line)'
     source_json: |-
       {
         "line2": "",
@@ -134,7 +134,7 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-r
-    description: Vertical – Unit
+    description: '### Vertical – Unit'
     source_json: |-
       {
         "line1": "",
@@ -143,14 +143,14 @@ modifier_css:
         "line4": ""
       }
   - css_class: su-lockup--option-s
-    description: Vertical – School + Unit
+    description: '### Vertical – School + Unit'
     source_json: |-
       {
         "line3": "",
         "line5": ""
       }
   - css_class: su-lockup--option-t
-    description: Vertical – School + Unit + Level
+    description: '### Vertical – School + Unit + Level'
     source_json: |-
       {
         "line5": ""
