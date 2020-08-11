@@ -103,7 +103,6 @@ modifier_css:
     description: Unit (1 line)
     source_json: |-
       {
-        "line1": "Department Name",
         "line2": "",
         "line3": "",
         "line4": "",
