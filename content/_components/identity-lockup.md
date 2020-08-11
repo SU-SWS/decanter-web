@@ -109,6 +109,7 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-o
+    description: Vertical – School
     source_json: |-
       {
         "line1": "",
@@ -117,6 +118,7 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-p
+    description: School + Unit (1 line)
     source_json: |-
       {
         "line2": "",
@@ -124,6 +126,7 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-q
+    description: ''
     source_json: |-
       {
         "line2": "",
@@ -131,6 +134,7 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-r
+    description: Vertical – Unit
     source_json: |-
       {
         "line1": "",
@@ -139,12 +143,14 @@ modifier_css:
         "line4": ""
       }
   - css_class: su-lockup--option-s
+    description: Vertical – School + Unit
     source_json: |-
       {
         "line3": "",
         "line5": ""
       }
   - css_class: su-lockup--option-t
+    description: Vertical – School + Unit + Level
     source_json: |-
       {
         "line5": ""
