@@ -138,6 +138,8 @@ modifier_css:
         "line5": ""
       }
 ---
+![Department Signature with one line for the department name](/img/unit-1-line.png)
+
 At Stanford, department signatures, also called lockups, are used to identify university departments, units or groups. There is more than one correct way to create a department signature logo. The lockup can communicate organization hierarchy depending on how formal or informal you need to be. For designers and developers, it is important to note that with the Stanford department signature system, text styles and sizes are used to communicate _specific levels of hierarchy_ relative to the department, unit or group in question.
 
 [Learn more about department signatures and how to use them in accordance with the Stanford Identity](https://identity.stanford.edu/department-branding.html)
