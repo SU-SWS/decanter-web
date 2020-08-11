@@ -83,6 +83,7 @@ modifier_css:
         "line4": ""
       }
   - css_class: su-lockup--option-l
+    description: School Only
     source_json: |-
       {
         "line2": "",
