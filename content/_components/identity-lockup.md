@@ -92,6 +92,7 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-m
+    description: Unit (2 lines)
     source_json: |-
       {
         "line3": "",
