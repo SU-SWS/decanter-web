@@ -33,8 +33,12 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-e
+    description: <h3>Unit (2 lines) + Level</h3>
     source_json: |-
       {
+        "line1": "Your Department",
+        "line2": "Name on Two Lines",
+        "line3": "Parent Unit Level",
         "line4": "",
         "line5": ""
       }
