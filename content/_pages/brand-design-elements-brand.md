@@ -6,9 +6,9 @@ date: 2019-11-28T14:11:13.000Z
 
 All websites across our University are encouraged to have three critical components to align their sites with Stanford's Identity system:
 
-* Stanford Brand bar
-* Local header (Lockup)
-* Stanford Global footer 
+* [Stanford brand bar](https://decanter.stanford.edu/component/identity-brand-bar/)
+* Local header (including the [department signature/lockup](https://decanter.stanford.edu/component/identity-lockup/))
+* [Stanford global footer](https://decanter.stanford.edu/component/identity-global-footer/) 
 
 Outside of these three components, we urge website creators to adhere to typographic recommendations and some color recommendations, but in general terms, the brand wants teams to feel free to be innovative and creative in how they interpret and express the Stanford brand. 
 
@@ -24,11 +24,11 @@ Some additional [research on approaches to global navigation](https://www.nngrou
 
 The local header is a complex component, including some of the most critical parts of your website—your logo, Stanford or not, your local site search, and your main navigation.
 
-Our Decanter team has gone to great lengths to create **logos** for your websites that are compliant with identity guidelines depending on how your organization is situated in the organization. 
+**Department Signature/Lockup**: Our Decanter team has gone to great lengths to create **logos** for your websites that are compliant with identity guidelines depending on how your organization is situated in the organization. 
 
-The **local search**—though becoming less important to many users because of traffic coming into your sites "sideways" (Google dominates deep searches, leading users directly to content pages within the site, instead of starting at your homepage)—is still a very important tool to your users, the ones that use it. This functionality has been fully accessibility tested, as are all of our components. 
+**Search:** The **local search**—though becoming less important to many users because of traffic coming into your sites "sideways" (Google dominates deep searches, leading users directly to content pages within the site, instead of starting at your homepage)—is still a very important tool to your users, the ones that use it. This functionality has been fully accessibility tested, as are all of our components. 
 
-Your **main navigation** is one of the most critical parts of your website. That top level of navigation serves as the main buckets of entry for your users—regardless of how they enter your site, sideways or directly from the homepage. It is critical that this navigation—which collapses to a mobile navigation for smaller devices—and your in-page left sidebar of secondary navigation on interior pages is both usable and accessible. Our developers have fully tested and vetted the accessibility of this feature. [Learn more about achieving accessibility](/page/page-about-why-decanter-accessibility/). Additionally, our user experience team has gone to great lengths to test the usability of the navigation. Both from conceptual questions around whether users are "likely" to hit certain pages, and from confirmation that users can use the tool as we have built it. 
+**Navigation:** Your **main navigation** is one of the most critical parts of your website. That top level of navigation serves as the main buckets of entry for your users—regardless of how they enter your site, sideways or directly from the homepage. It is critical that this navigation—which collapses to a mobile navigation for smaller devices—and your in-page left sidebar of secondary navigation on interior pages is both usable and accessible. Our developers have fully tested and vetted the accessibility of this feature. [Learn more about achieving accessibility](/page/page-about-why-decanter-accessibility/). Additionally, our user experience team has gone to great lengths to test the usability of the navigation. Both from conceptual questions around whether users are "likely" to hit certain pages, and from confirmation that users can use the tool as we have built it. 
 
 [Explore our documentation on navigation testing here, on our shared Decanter Usability Drive folder](https://drive.google.com/drive/folders/15Jr7zIWphRb92VAP2_gOenZDY2HJ_HiQ). 
 
