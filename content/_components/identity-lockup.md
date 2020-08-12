@@ -3,7 +3,7 @@ title: Lockup
 component: identity-lockup
 modifier_css:
   - css_class: su-lockup--option-a
-    description: '### Multidisciplinary (or Long School Name + Unit)'
+    description: '## Multidisciplinary (or Long School Name + Unit)'
     source_json: |-
       {
         "line2": "",
@@ -11,7 +11,7 @@ modifier_css:
         "line4": ""
       }
   - css_class: su-lockup--option-b
-    description: '### Unit (2 lines, big/small)'
+    description: '## Unit (2 lines, big/small)'
     source_json: |-
       {
         "line3": "",
@@ -19,12 +19,10 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-c
-    description: >-
-      ### Unit (2 lines, big/small) + Multidisciplinary (or Long School Name) 
+    description: |-
+      ## Unit (2 lines, big/small) + Multidisciplinary (or Long School Name)
 
-
-      * Note: this is not one of the recommended department signature patterns.
-      *
+      _Note: this is not one of the recommended department signature patterns._
     source_json: |-
       {
         "line3": "",
@@ -32,7 +30,7 @@ modifier_css:
       }
   - css_class: su-lockup--option-d
     description: |-
-      ### Unit + Level
+      ## Unit + Level
 
       _Note: this is not one of the recommended department signature patterns._
     source_json: |-
@@ -150,6 +148,6 @@ modifier_css:
         "line5": ""
       }
 ---
-At Stanford, department signatures, also called _lockups_, are used to identify university departments, units or groups. There is more than one correct way to create a department signature logo. The lockup can communicate organization hierarchy depending on how formal or informal you need to be. For designers and developers, it is important to note that with the Stanford department signature system, text styles and sizes are used to communicate _specific levels of hierarchy_ relative to the department, unit or group in question.
+At Stanford, department signatures, also called _lockups_, are used to identify university departments, units or groups. There is more than one correct way to create a department signature logo. The lockup can communicate organization hierarchy depending on how formal or informal you need to be. For designers and developers, it is important to note that with the Stanford department signature system, text styles and sizes are used to communicate **_specific levels of hierarchy_** relative to the department, unit or group in question.
 
 [Learn more about how to use department signatures](https://identity.stanford.edu/department-branding.html)
