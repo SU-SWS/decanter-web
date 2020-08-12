@@ -43,8 +43,11 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-f
+    description: '<h3>Unit (2 lines, big/small)</h3>'
     source_json: |-
       {
+        "line1": "Your Department",
+        "line2": "Small first line of",
         "line3": "",
         "line4": "",
         "line5": ""
