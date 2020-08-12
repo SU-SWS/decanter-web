@@ -3,7 +3,7 @@ title: Lockup
 component: identity-lockup
 modifier_css:
   - css_class: su-lockup--option-a
-    description: '\### Multidisciplinary (or Long School Name + Unit)'
+    description: '### Multidisciplinary (or Long School Name + Unit)'
     source_json: |-
       {
         "line2": "",
