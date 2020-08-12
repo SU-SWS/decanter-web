@@ -16,22 +16,11 @@ modifier_css:
     description: '<h3>Unit (2 lines, big/small)</h3>'
     source_json: |-
       {
+        "line1": "Your Department Name",
+        "line2": "Small first line of",
         "line3": "",
         "line4": "",
         "line5": ""
-      }
-  - css_class: su-lockup--option-c
-    description: >-
-      <h3>Unit (2 lines, big/small) + Multidisciplinary (or Long School
-      Name)</h3>
-
-
-      <i>Note: this is not one of the recommended department signature
-      patterns.</i>
-    source_json: |-
-      {
-        "line3": "",
-        "line4": ""
       }
   - css_class: su-lockup--option-d
     description: >-
@@ -158,3 +147,5 @@ modifier_css:
 At Stanford, department signatures, also called _lockups_, are used to identify university departments, units or groups. There is more than one correct way to create a department signature logo. The lockup can communicate organization hierarchy depending on how formal or informal you need to be. For designers and developers, it is important to note that with the Stanford department signature system, text styles and sizes are used to communicate **_specific levels of hierarchy_** relative to the department, unit or group in question.
 
 [Learn more about how to use department signatures](https://identity.stanford.edu/department-branding.html)
+
+Please note that the Decanter default style shown below shows the different text areas and styles available in the Decanter lockup. For actual usage information, please refer to the variant styles listed below.
