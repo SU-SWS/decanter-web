@@ -22,13 +22,16 @@ Some additional [research on approaches to global navigation](https://www.nngrou
 
 #### Local header overview
 
-The local header is a complex component, including some of the most critical parts of your website—your logo, Stanford or not, your local site search, and your main navigation.
+The local header is a complex component, including some of the most critical parts of your website—your logo, Stanford or not, your local site search, and your main navigation. The local header includes:
 
-**Department Signature/Lockup**: Our Decanter team has gone to great lengths to create **logos** for your websites that are compliant with identity guidelines depending on how your organization is situated in the organization. 
+##### Department Signature/Lockup 
+Our Decanter team has gone to great lengths to create **logos** for your websites that are compliant with identity guidelines depending on how your organization is situated in the organization. 
 
-**Search:** The **local search**—though becoming less important to many users because of traffic coming into your sites "sideways" (Google dominates deep searches, leading users directly to content pages within the site, instead of starting at your homepage)—is still a very important tool to your users, the ones that use it. This functionality has been fully accessibility tested, as are all of our components. 
+##### Search
+The **local search**—though becoming less important to many users because of traffic coming into your sites "sideways" (Google dominates deep searches, leading users directly to content pages within the site, instead of starting at your homepage)—is still a very important tool to your users, the ones that use it. This functionality has been fully accessibility tested, as are all of our components. 
 
-**Navigation:** Your **main navigation** is one of the most critical parts of your website. That top level of navigation serves as the main buckets of entry for your users—regardless of how they enter your site, sideways or directly from the homepage. It is critical that this navigation—which collapses to a mobile navigation for smaller devices—and your in-page left sidebar of secondary navigation on interior pages is both usable and accessible. Our developers have fully tested and vetted the accessibility of this feature. [Learn more about achieving accessibility](/page/page-about-why-decanter-accessibility/). Additionally, our user experience team has gone to great lengths to test the usability of the navigation. Both from conceptual questions around whether users are "likely" to hit certain pages, and from confirmation that users can use the tool as we have built it. 
+##### Navigation
+Your **main navigation** is one of the most critical parts of your website. That top level of navigation serves as the main buckets of entry for your users—regardless of how they enter your site, sideways or directly from the homepage. It is critical that this navigation—which collapses to a mobile navigation for smaller devices—and your in-page left sidebar of secondary navigation on interior pages is both usable and accessible. Our developers have fully tested and vetted the accessibility of this feature. [Learn more about achieving accessibility](/page/page-about-why-decanter-accessibility/). Additionally, our user experience team has gone to great lengths to test the usability of the navigation. Both from conceptual questions around whether users are "likely" to hit certain pages, and from confirmation that users can use the tool as we have built it. 
 
 [Explore our documentation on navigation testing here, on our shared Decanter Usability Drive folder](https://drive.google.com/drive/folders/15Jr7zIWphRb92VAP2_gOenZDY2HJ_HiQ). 
 
