@@ -23,15 +23,12 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-d
-    description: >-
-      <h3>Unit + Level</h3>
-
-
-      <i>Note: this is not one of the recommended department signature
-      patterns.</i>
+    description: <h3>Unit + Level</h3>
     source_json: |-
       {
+        "line1": "Department Name",
         "line2": "",
+        "line3": "Parent Unit Level",
         "line4": "",
         "line5": ""
       }
