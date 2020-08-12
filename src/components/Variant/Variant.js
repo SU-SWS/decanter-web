@@ -42,7 +42,7 @@ const Variant = (props) => {
       }
 
       if (modifier.description) {
-        description = <p>{modifier.description}</p>;
+        description = <div dangerouslySetInnerHTML={{ __html: modifier.description }} />
       }
 
     }
