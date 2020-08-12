@@ -16,22 +16,19 @@ modifier_css:
     description: '<h3>Unit (2 lines, big/small)</h3>'
     source_json: |-
       {
-        "line1": "Your Department Name",
-        "line2": "Small first line of",
+        "line1": "Small first line of",
+        "line2": "Your Department Name",
         "line3": "",
         "line4": "",
         "line5": ""
       }
   - css_class: su-lockup--option-d
-    description: >-
-      <h3>Unit + Level</h3>
-
-
-      <i>Note: this is not one of the recommended department signature
-      patterns.</i>
+    description: <h3>Unit + Level</h3>
     source_json: |-
       {
-        "line2": "",
+        "line1": "Your Department Name",
+        "line2": "Parent Unit Level",
+        "line3": "",
         "line4": "",
         "line5": ""
       }
