@@ -3,7 +3,7 @@ title: Lockup
 component: identity-lockup
 modifier_css:
   - css_class: su-lockup--option-a
-    description: '## Multidisciplinary (or Long School Name + Unit)'
+    description: <h3>Multidisciplinary (or Long School Name + Unit)</h3>
     source_json: |-
       {
         "line2": "",
@@ -11,7 +11,7 @@ modifier_css:
         "line4": ""
       }
   - css_class: su-lockup--option-b
-    description: '## Unit (2 lines, big/small)'
+    description: '<h3>Unit (2 lines, big/small)</h3>'
     source_json: |-
       {
         "line3": "",
@@ -19,20 +19,25 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-c
-    description: |-
-      ## Unit (2 lines, big/small) + Multidisciplinary (or Long School Name)
+    description: >-
+      <h3>Unit (2 lines, big/small) + Multidisciplinary (or Long School
+      Name)</h3>
 
-      _Note: this is not one of the recommended department signature patterns._
+
+      <i>Note: this is not one of the recommended department signature
+      patterns.</i>
     source_json: |-
       {
         "line3": "",
         "line4": ""
       }
   - css_class: su-lockup--option-d
-    description: |-
-      ## Unit + Level
+    description: >-
+      <h3>Unit + Level</h3>
 
-      _Note: this is not one of the recommended department signature patterns._
+
+      <i>Note: this is not one of the recommended department signature
+      patterns.</i>
     source_json: |-
       {
         "line2": "",
