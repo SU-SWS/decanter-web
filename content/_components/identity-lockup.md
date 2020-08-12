@@ -10,7 +10,7 @@ modifier_css:
         "line2": "",
         "line3": "",
         "line4": "",
-        "line4": "Long School Name or a Second School Name"
+        "line5": "Long School Name or a Second School Name"
       }
   - css_class: su-lockup--option-b
     description: '<h3>Unit (2 lines, big/small)</h3>'
