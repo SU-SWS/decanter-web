@@ -11,6 +11,7 @@ modifier_css:
         "line4": ""
       }
   - css_class: su-lockup--option-b
+    description: '### Unit (2 lines, big/small)'
     source_json: |-
       {
         "line3": "",
@@ -18,12 +19,24 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-c
+    description: >-
+      ### Unit (2 lines, big/small) + Multidisciplinary (or Long School Name) 
+
+
+      * Note: this is not one of the recommended department signature patterns.
+      *
     source_json: |-
       {
         "line3": "",
         "line4": ""
       }
   - css_class: su-lockup--option-d
+    description: >-
+      ### Unit + Level
+
+
+      * Note: this is not one of the recommended department signature patterns.
+      *
     source_json: |-
       {
         "line2": "",
