@@ -31,12 +31,10 @@ modifier_css:
         "line4": ""
       }
   - css_class: su-lockup--option-d
-    description: >-
+    description: |-
       ### Unit + Level
 
-
-      * Note: this is not one of the recommended department signature patterns.
-      *
+      _Note: this is not one of the recommended department signature patterns._
     source_json: |-
       {
         "line2": "",
