@@ -43,22 +43,23 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-f
+    description: '<h3>Unit (2 lines, big/small)</h3>'
     source_json: |-
       {
+        "line1": "Small first line of",
+        "line2": "Your Department Name",
         "line3": "",
         "line4": "",
         "line5": ""
       }
-  - css_class: su-lockup--option-g
-    source_json: |-
-      {
-        "line3": "",
-        "line4": ""
-      }
   - css_class: su-lockup--option-h
+    description: <h3>School + Unit (2 lines)</h3>
     source_json: |-
       {
-        "line2": "",
+        "line1": "Your Department",
+        "line2": "Name on Two Lines",
+        "line3": "",
+        "line4": "NameOfSchool",
         "line5": ""
       }
   - css_class: su-lockup--option-i
