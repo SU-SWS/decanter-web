@@ -63,9 +63,13 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-i
+    description: <h3>School + Unit + Level</h3>
     source_json: |-
       {
+        "line1": "Department Name",
         "line2": "",
+        "line3": "Parent Unit Level",
+        "line4": "NameOfSchool",
         "line5": ""
       }
   - css_class: su-lockup--option-j
