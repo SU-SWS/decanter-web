@@ -82,8 +82,10 @@ modifier_css:
         "line4": ""
       }
   - css_class: su-lockup--option-l
+    description: <h3>School Only</h3>
     source_json: |-
       {
+        "line1": "School Name",
         "line2": "",
         "line3": "",
         "line4": "",
