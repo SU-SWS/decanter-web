@@ -27,8 +27,8 @@ modifier_css:
     source_json: |-
       {
         "line1": "Your Department Name",
-        "line2": "Parent Unit Level",
-        "line3": "",
+        "line2": "",
+        "line3": "Parent Unit Level",
         "line4": "",
         "line5": ""
       }
