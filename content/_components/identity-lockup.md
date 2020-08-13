@@ -96,8 +96,10 @@ modifier_css:
         "line5": "Long School Name or a Second School Name"
       }
   - css_class: su-lockup--option-l
+    description: <h3>School Only</h3>
     source_json: |-
       {
+        "line1": "School Name",
         "line2": "",
         "line3": "",
         "line4": "",
