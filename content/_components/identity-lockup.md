@@ -86,11 +86,14 @@ modifier_css:
         "line5": "Long School Name or a Second School Name"
       }
   - css_class: su-lockup--option-k
+    description: <h3>Multidisciplinary (or Long School Name) + Unit</h3>
     source_json: |-
       {
+        "line1": "Department Name",
         "line2": "",
         "line3": "",
-        "line4": ""
+        "line4": "",
+        "line5": "Long School Name or a Second School Name"
       }
   - css_class: su-lockup--option-l
     source_json: |-
