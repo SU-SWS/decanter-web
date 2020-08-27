@@ -1,5 +1,5 @@
 ---
-title: Lockup
+title: Department Branding (Lockup)
 component: identity-lockup
 modifier_css:
   - css_class: su-lockup--option-a
@@ -152,7 +152,9 @@ modifier_css:
         "line5": ""
       }
 ---
-At Stanford, department signatures, also called _lockups_, are used to identify university departments, units or groups. There is more than one correct way to create a department signature logo. The lockup can communicate organization hierarchy depending on how formal or informal you need to be. For designers and developers, it is important to note that with the Stanford department signature system, text styles and sizes are used to communicate **_specific levels of hierarchy_** relative to the department, unit or group in question.
+At Stanford, department branding, also called a _lockup_, is used to identify a university department, unit or group. 
+
+There is more than one correct way to create these department signature logos. The lockup can communicate organization hierarchy depending on how formal or informal you need to be. For designers and developers, it is important to note that with the Stanford department signature system, text styles and sizes are used to communicate **_specific levels of hierarchy_** relative to the department, unit or group in question.
 
 [Learn more about how to use department signatures](https://identity.stanford.edu/department-branding.html)
 
