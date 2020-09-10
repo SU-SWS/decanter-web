@@ -99,8 +99,11 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-m
+    description: <h3>School + Unit (2 lines)</h3>
     source_json: |-
       {
+        "line1": "Your Department",
+        "line2": "Name on Two Lines",
         "line3": "",
         "line4": "",
         "line5": ""
