@@ -69,7 +69,7 @@ modifier_css:
         "line1": "Department Name",
         "line2": "",
         "line3": "Parent Unit Level",
-        "line4": "NameOfSchool",
+        "line4": "Engineering",
         "line5": ""
       }
   - css_class: su-lockup--option-j
