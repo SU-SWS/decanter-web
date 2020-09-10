@@ -109,14 +109,17 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-n
+    description: <h3>Unit (1 line)</h3>
     source_json: |-
       {
+        "line1": "Department Name",
         "line2": "",
         "line3": "",
         "line4": "",
         "line5": ""
       }
   - css_class: su-lockup--option-o
+    description: <h3>Vertical – School</h3>
     source_json: |-
       {
         "line1": "",
