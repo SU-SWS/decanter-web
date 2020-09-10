@@ -109,7 +109,7 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-n
-    description: <h3>Unit (1 line)</h3>
+    description: <h3>School + Unit (1 line)</h3>
     source_json: |-
       {
         "line1": "Department Name",
@@ -128,10 +128,13 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-p
+    description: <h3>School + Unit (1 line)</h3>
     source_json: |-
       {
+        "line1": "Department Name",
         "line2": "",
         "line3": "",
+        "line4": "Engineering",
         "line5": ""
       }
   - css_class: su-lockup--option-q
