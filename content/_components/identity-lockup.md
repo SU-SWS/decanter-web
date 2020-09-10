@@ -145,12 +145,14 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-r
+    description: <h3>Vertical – Unit</h3>
     source_json: |-
       {
         "line1": "",
         "line2": "",
         "line3": "",
-        "line4": ""
+        "line4": "",
+        "line5": "Department Name"
       }
   - css_class: su-lockup--option-s
     source_json: |-
