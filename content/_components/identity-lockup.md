@@ -161,12 +161,17 @@ modifier_css:
         "line1": "Your Department Name",
         "line2": "on One or Two Lines",
         "line3": "",
-        "line4": "Engineering",
+        "line4": "School Name",
         "line5": ""
       }
   - css_class: su-lockup--option-t
+    description: <h3>Vertical – School + Unit + Level</h3>
     source_json: |-
       {
+        "line1": "Your Department Name",
+        "line2": "on One or Two Lines",
+        "line3": "Parent Unit Level",
+        "line4": "School Name",
         "line5": ""
       }
 ---
