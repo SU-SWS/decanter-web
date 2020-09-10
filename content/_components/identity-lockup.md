@@ -59,7 +59,7 @@ modifier_css:
         "line1": "Your Department",
         "line2": "Name on Two Lines",
         "line3": "",
-        "line4": "NameOfSchool",
+        "line4": "Engineering",
         "line5": ""
       }
   - css_class: su-lockup--option-i
