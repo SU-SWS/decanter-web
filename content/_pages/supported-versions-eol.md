@@ -2,7 +2,7 @@
 title: Supported Versions & EOL
 date: 2020-09-10T17:30:04.991Z
 ---
-The Decanter team supports the most recent version and one back. The current version will be fully supported until the day the next major version is released and then at that point the previous version will go into bug and accessibility fixes only support. Bugfix support will last for one year. 
+The Decanter team supports the most recent version and one back. The current version will be fully supported until the day the next major version is released. At that point the previous version will go into bug and accessibility fix-only support for one year. 
 
 For example, if the current major version is 6.0.0 and version 7.0.0 is released next week, version 7.0.0 will become the new fully supported version and version 6.0.0 will go into bugfix and accessibility support for one year. Version 5.0.0 will then be marked as deprecated and no longer supported.
 
