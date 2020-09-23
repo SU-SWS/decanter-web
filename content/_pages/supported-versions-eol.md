@@ -20,6 +20,6 @@ Version 7 release date: TBD [See work in progress](https://github.com/SU-SWS/dec
 
 ## Upcoming Version 7
 
-The upcoming version 7 will have a major overhaul to the very core of Decanter. We will be switching to use a new tool and methadology called [TailwindCSS](https://tailwindcss.com/). We will strive to deprecate and create backwards compatibility where we can but with major versions and major change some things may break. 
+The upcoming version 7 will have a major overhaul to the very core of Decanter. We will be switching to use a new tool and methodology called [TailwindCSS](https://tailwindcss.com/). We will strive to deprecate and create backwards compatibility where we can, but with major versions and major change some things may break. 
 
-The good news is that with the plans for the new Version 7 release, we should be able to be much more compatible with javascript based apps like those built on React, Vue, or Angular for example.
+The good news is that with the plans for the new Version 7 release, we should be much more compatible with javascript-based apps like those built on React, Vue, or Angular, for example.
