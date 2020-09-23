@@ -63,7 +63,8 @@ _example.html_
 
 ## I'm using Grunt
 
-We use the "~" convention when importing references from npm dependencies. You will need to make sure you have your \`includePaths\` option set to point to the node_modules directory and you will need the `[grunt-sass-tilde-importer](https://www.npmjs.com/package/grunt-sass-tilde-importer)` plugin. 
+
+We use the "~" convention when importing references from npm dependencies. You will need to make sure you have your \`includePaths\` option set to point to the node_modules directory and you will need the [grunt-sass-tilde-importer](https://www.npmjs.com/package/grunt-sass-tilde-importer) plugin. 
 
 **Example Repository**: <https://github.com/SU-SWS/decanter-grunt-example/>
 
