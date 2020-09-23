@@ -29,6 +29,7 @@ You're in luck, Decanter has pre-compiled assets ready for you to add to your pr
 6. Compile with ❤️
 
 _example.html_
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -50,7 +51,6 @@ _example.html_
 </html>
 ```
 
-
 ## I'm using a package manager
 
 **NPM - Recommended**
@@ -60,6 +60,12 @@ _example.html_
 **Composer**
 
 `composer install su-sws/decanter`
+
+## I'm using Grunt
+
+We use the "~" convention when importing references from npm dependencies. You will need to make sure you have your \`includePaths\` option set to point to the node_modules directory and you will need the `[grunt-sass-tilde-importer](https://www.npmjs.com/package/grunt-sass-tilde-importer)` plugin. 
+
+**Example Repository**: <https://github.com/SU-SWS/decanter-grunt-example/>
 
 ## I'm using my own SASS compiler
 
@@ -73,7 +79,8 @@ So, you've got grunt, gulp, or some other preferred tool for compiling your SASS
 
 Include the `decanter.scss` file in your work by importing `/core/src/scss/decanter.scss`. You should include Decanter SCSS files through a relative path from `node_modules`. You should import it after your configuration file so you may override the default variables in Decanter.
 
-*example.scss roll up file*
+_example.scss roll up file_
+
 ```scss
 @charset 'UTF-8';
 @import 'my-config';
@@ -82,13 +89,13 @@ Include the `decanter.scss` file in your work by importing `/core/src/scss/decan
 ```
 
 3. Make sure your sass include_path includes node_modules. eg: https://github.com/SU-SWS/decanter-web/blob/master/next.config.js#L24
-
 4. Set the file path variables.
-When the CSS compiles you will need to have the image and font assets at a relative path to the css files so that they load. You can configure the path that is outputted in the css by setting the following variables.
+   When the CSS compiles you will need to have the image and font assets at a relative path to the css files so that they load. You can configure the path that is outputted in the css by setting the following variables.
 
 `$su-image-path` & `$fa-font-path`;
 
-*example.scss*
+_example.scss_
+
 ```scss
 @charset 'UTF-8';
 $su-image-path: "../assets"; // <-- Relative path to your css directory
@@ -96,7 +103,7 @@ $fa-font-path: "../assets"; // <-- Relative path to your css directory
 ```
 
 5. Copy the assets to a relative path from your css output.
-All the image and file assets you will need are in `/core/dist/assets`. Copy them over to your project.
+   All the image and file assets you will need are in `/core/dist/assets`. Copy them over to your project.
 
 <pre><code class="hljs">|
 — core
@@ -118,11 +125,12 @@ The twig templating system is a wonderful templating system. It has many amazing
       |- layout
 </code></pre>
 
-*Namespaces*
+_Namespaces_
 Twig allows you to use [namespaces](https://symfony.com/doc/4.1/templating/namespaced_paths.html) in your templates and we take full advantage of it. If you want to use the component templates as we do you will need to ensure your twig compiler has a `decanter` namespace pointed at the templates directory. Implementation will differ but here are a couple of examples.
 
 **Drupal**
-*module.info.yml*
+_module.info.yml_
+
 ```yml
 component-libraries:
   decanter:
@@ -131,7 +139,8 @@ component-libraries:
 ```
 
 **Twig.js**
-*example.js*
+_example.js_
+
 ```js
 const Twig = require('twig');
 
@@ -152,20 +161,24 @@ Twig.renderFile("/path/to/template.twig", options, (err, html) => {
 ```
 
 ## I'm using webpack
+
 Our webpack configuration is a little complicated. You will need several plugins and loaders to accomplish a build. Check out this example file for a starting point.
 
 https://github.com/SU-SWS/decanter-web/blob/master/webpack.config.js
 
-*Resolve Aliases*
+_Resolve Aliases_
 You will notice that this configuration has an alias for the Decanter assets and for the fontawesome assets. This allows webpack to move and re-write the paths to the static file assets. These resolve aliases are being standardized and this documentation will be updated then.
 
 ## I'm using Drupal
+
 If you are using Drupal 8+ and would like to have Decanter in your project you can check out these projects.
 
 **Themes**
+
 * [Stanford Basic](https://github.com/su-sws/stanford_basic/)
 
 **Modules**
+
 * [Jumpstart UI](https://github.com/su-sws/jumpstart_ui/)
 
 ## I'm using Wordpress
