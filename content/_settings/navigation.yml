@@ -36,6 +36,8 @@ nav_items:
             path: /page/use-decanter-as-a-developer-code-standards/
           - label: Strategies & Conventions
             path: /page/use-decanter-as-a-developer-strategies-and-conventions/
+          - label: Supported Versions
+            path: /page/supported-versions-eol/
         label: As a Developer
         path: /page/use-decanter-as-a-developer/
       - children: []
