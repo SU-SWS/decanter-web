@@ -1,6 +1,4 @@
 nav_items:
-  - label: Home
-    path: /
   - children:
       - label: Projects that use Decanter
         path: /page/about-projects-that-use-decanter/
@@ -38,6 +36,8 @@ nav_items:
             path: /page/use-decanter-as-a-developer-code-standards/
           - label: Strategies & Conventions
             path: /page/use-decanter-as-a-developer-strategies-and-conventions/
+          - label: Supported Versions
+            path: /page/supported-versions-eol/
         label: As a Developer
         path: /page/use-decanter-as-a-developer/
       - children: []
@@ -45,19 +45,6 @@ nav_items:
         path: /page/use-decanter-as-a-designer/
     label: Use Decanter
     path: /page/use-decanter/
-  - children:
-      - label: Technical Contribution Guidelines
-        path: /page/about-contributing
-      - label: Visual Guidelines
-        path: /page/visual-guidelines
-      - label: Governance
-        path: /page/about-governance/
-      - label: Connecting with the Decanter Community
-        path: /page/about-contributing-how-to-communicate/
-      - label: Design System
-        path: /page/decanter-design-system/
-    label: Contribute to Decanter
-    path: /page/about-contributing-what-can-i-contribute/
   - children:
       - label: Identity
         path: /page/brand-design-elements-brand/
@@ -78,3 +65,16 @@ nav_items:
         path: /page/layouts-responsive-design/
     label: Layouts
     path: /page/layouts/
+  - children:
+      - label: Technical Contribution Guidelines
+        path: /page/about-contributing
+      - label: Visual Guidelines
+        path: /page/visual-guidelines
+      - label: Governance
+        path: /page/about-governance/
+      - label: Connecting with the Decanter Community
+        path: /page/about-contributing-how-to-communicate/
+      - label: Design System
+        path: /page/decanter-design-system/
+    label: Contribute to Decanter
+    path: /page/about-contributing-what-can-i-contribute/
