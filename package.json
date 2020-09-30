@@ -84,7 +84,7 @@
   "devDependencies": {
     "eslint": "^5.16",
     "jsdoc": "^3.6.4",
-    "sassdoc": "^2.7.1",
+    "sassdoc": "^2.7.3",
     "webpack-cli": "^3.3.11"
   }
 }

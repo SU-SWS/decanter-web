@@ -47,6 +47,9 @@ kss_util.fetchSections()
           return value;
         }
       }
+      let source = section.source();
+      source.filename = source.filename.replace("node_modules/decanter/core/src/scss/components/", "");
+      section.source(source);
       let data = JSON.stringify(section, replacer);
       let filepath = path.join(kss_settings_dir, "info", key + ".json");
       fs.writeFileSync(filepath, data);
@@ -121,7 +124,9 @@ kss_util.fetchSections()
               if (val.source_json) {
                 component_contents.modifier_schema[val.css_class] = JSON.parse(val.source_json);
               }
-            });
+            }.catch(function(e) {
+              console.log(e);
+            }));
           }
         }
         catch(err) {

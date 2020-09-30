@@ -104,7 +104,7 @@ module.exports = withSass(
   },
 
   // Output trailing slashes on urls.
-  exportTrailingSlash: true,
+  trailingSlash: true,
 
   // What to export as static pages that are dynamically generated.
   exportPathMap: function() {
