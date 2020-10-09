@@ -41,6 +41,7 @@
     "gatsby-plugin-sharp": "^2.6.38",
     "gatsby-plugin-sitemap": "^2.4.14",
     "gatsby-source-filesystem": "^2.3.32",
+    "gatsby-source-storyblok": "^1.1.1",
     "gatsby-transformer-sharp": "^2.5.16",
     "netlify-lambda": "^2.0.1",
     "prop-types": "^15.7.2",
@@ -48,6 +49,10 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-refresh": "^0.8.3",
-    "sanitize-html": "^1.27.5"
+    "sanitize-html": "^1.27.5",
+    "storyblok-react": "^0.1.1"
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
   }
 }

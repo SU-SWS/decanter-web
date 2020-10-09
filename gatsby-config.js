@@ -32,11 +32,21 @@ module.exports = {
       options: {
         policy: [
           { userAgent: '*', allow: '/' },
+          { userAgent: '*', disallow: '/editor/' }
         ]
       }
     },
     {
       resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [
+          `/editor/*`,
+          `/editor/`,
+          `/editor`,
+          `/global-components/*`,
+          `/global-components`,
+        ],
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -44,6 +54,23 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: 'gatsby-source-storyblok',
+      options: {
+        accessToken: process.env.GATSBY_STORYBLOK_ACCESS_TOKEN,
+        homeSlug: 'home',
+        resolveRelations: [
+          "oodQuoteSlider.quotes",
+          "globalFooterPicker.globalFooter",
+          "localFooterPicker.localFooter",
+          "localHeaderPicker.localHeader",
+          "contentMenuPicker.contentMenu",
+          "storyPicker.story",
+        ],
+        version: process.env.NODE_ENV == 'production' ? 'published' : 'draft'  // show only published on the front end site
+        // version: 'draft'  // would show any including drafts
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
