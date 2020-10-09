@@ -5,6 +5,8 @@ Changelog: [CHANGELOG.md](CHANGELOG.md)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/5ad9555da4ffa2086204/maintainability)](https://codeclimate.com/github/SU-SWS/decanter/maintainability)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3e19db99-cdd6-447b-87ab-c7b0fdd985de/deploy-status)](https://app.netlify.com/sites/decanter-preview/deploys)
+
 Demo
 ---
 
