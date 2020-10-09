@@ -3,7 +3,7 @@ import React from 'react'
 const HtmlHead = (props) => {
   return (
     <>
-    <title>Giving to Stanford</title>
+    <title>Decanter</title>
     <link rel="apple-touch-icon" sizes="57x57" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-60x60.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-72x72.png" />
