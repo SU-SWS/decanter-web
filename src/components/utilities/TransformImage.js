@@ -2,7 +2,7 @@
 // See all the "param" options on the website
 // https://www.storyblok.com/docs/image-service
 
-const transformImage = (image, param = null) => {
+const TransformImage = (image, param = null) => {
   const imageService = "//img2.storyblok.com";
 
   if (image === null) {
@@ -20,4 +20,4 @@ const transformImage = (image, param = null) => {
   }
 };
 
-export default transformImage
+export default TransformImage

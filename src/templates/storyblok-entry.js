@@ -27,9 +27,9 @@ class StoryblokEntry extends React.Component {
     let content = this.state.story.content
 
     return (
-      <div>
+      <>
         {React.createElement(Components(content.component), {key: content._uid, blok: content})}
-      </div>
+      </>
     )
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import SbEditable from 'storyblok-react'
 
-const globalFooter = (props) => (
+const GlobalFooter = (props) => (
   <SbEditable content={props.blok}>
     <div className={props.blok.color ? "su-global-footer " + props.blok.color : "su-global-footer"}>
       <div className="su-global-footer__container">
@@ -65,4 +65,4 @@ const globalFooter = (props) => (
   </SbEditable>
 )
 
-export default globalFooter
+export default GlobalFooter

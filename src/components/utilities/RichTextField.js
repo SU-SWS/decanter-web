@@ -17,7 +17,12 @@ function createMarkup(storyblokHTML) {
 }
 
 const RichTextField = ({ data }) => {
-  return <div dangerouslySetInnerHTML={createMarkup(data)} />;
+  return (
+    <>
+    <h2>More stuff for you</h2>
+    <div dangerouslySetInnerHTML={createMarkup(data)} />
+    </>
+  )
 };
 
 export default RichTextField

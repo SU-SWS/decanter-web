@@ -1,5 +1,5 @@
 import React from 'react'
-import HtmlHead from './components/partials/htmlHead'
+import HtmlHead from './components/global/HtmlHead'
 
 export default class HTML extends React.Component {
   render() {
