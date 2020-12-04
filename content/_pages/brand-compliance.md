@@ -10,9 +10,9 @@ Our goal is to make it easy for websites to  use elements from the Stanford Iden
 
 All official websites across our University are strongly encouraged to have three components to align with the Stanford identity. 
 
-* Global identity bar
+* Stanford global identity bar
 * Local header 
-* Global footer 
+* Stanford Global footer 
 
 Outside of these three components, we urge you to adhere to typographic recommendations and color recommendations, particularly as it impacts accessibility. In general terms, the we want you to be innovative and creative in how you interpret and express the Stanford Identity. At the same time we want to make it easy to implement those components that will identify your site as part of the Stanford web ecosystem and provide better usability across all of Stanford's websites.
 
