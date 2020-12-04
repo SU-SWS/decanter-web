@@ -33,7 +33,7 @@ Becoming more and more important to our University communications, particularly 
 Stanford University is committed to providing an online environment that is accessible to everyone, including individuals with disabilities.
 
 <p><a href="https://ucomm.stanford.edu/policies/accessibility-policy/" class="su-link su-link--action">Stanford Online Accessibility Policy</a></p>
-<p><a href:"https://soap.stanford.edu/" class="su-link su-link--action">
+<p><a href="https://soap.stanford.edu/" class="su-link su-link--action">
 Stanford's Accessibility Guidelines website</a></p>
 
 ### Design for all sized screens.
@@ -50,4 +50,4 @@ We should follow code best practices with semantic HTML and CSS. This also helps
 
 ### Create unity, not uniformity.
 
-Our identity guidelines make the Stanford web experience consistent while still providing the flexibility needed to communicate unique messages. We have two essential web branding elements – the Stanford Brand Bar and Global Footer – that should be included in all Stanford websites. These are built into all our available templates.
+Our identity guidelines make the Stanford web experience consistent while still providing the flexibility needed to communicate unique messages. We have two essential web branding elements – the Stanford global identity bar and Stanford global footer – that should be included in all official Stanford websites. These are built into all Decanter templates.
