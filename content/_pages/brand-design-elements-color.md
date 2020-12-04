@@ -2,9 +2,8 @@
 title: Color
 date: 2019-11-28T14:11:13.000Z
 ---
-<p class="su-alert"><strong>Note:</strong> The Stanford color palette is currently being updated. Please check back soon for the final version.</p>
 
-<p class="su-intro-text">Below are the colors that are approved by Stanford University branding guidelines for use on the web. All colors are available as variables in Decanter prefixed by <code>su-</code>. Some colors come with tints and shades to achieve functional contrast.</p>
+<p class="su-intro-text">Below are the colors that are approved by Stanford University Communications for use on the web. All colors are available as variables in Decanter prefixed by <code>su-</code>. Some colors come with tints and shades to achieve functional contrast.</p>
 
 ## Primary Colors
 
