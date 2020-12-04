@@ -1,5 +1,5 @@
 ---
-title: Brand Compliance
+title: Using the Stanford Identity
 date: 2019-12-11T18:02:16.854Z
 ---
 <p class="su-intro-text">The collaborative work between University Communications and Stanford Web Services is key to achieving our goals in brand compliance.</p>
