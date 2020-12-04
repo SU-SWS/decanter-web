@@ -6,15 +6,15 @@ date: 2019-11-28T14:11:13.000Z
 
 All Stanford department, program, lab, school, and administrative unit websites are encouraged to include three components to align their websites with Stanford's Identity system:
 
-* [Stanford brand bar](https://decanter.stanford.edu/component/identity-brand-bar/)
+* [Stanford global identity bar](https://decanter.stanford.edu/component/identity-brand-bar/)
 * Local header (including the [department signature/lockup](https://decanter.stanford.edu/component/identity-lockup/))
 * [Stanford global footer](https://decanter.stanford.edu/component/identity-global-footer/) 
 
 Outside of these three components, we urge you to adhere to typographic recommendations and color recommendations, particularly as it impacts accessibility. In general terms, the Stanford Identity team wants you to be innovative and creative in how you interpret and express the Stanford Identity. 
 
-#### Brand bar overview
+#### Stanford global identity bar overview
 
-The Stanford brand bar came out of a need to provide a "home" for all Stanford websites, both visually and functionally. This bar, containing the Stanford logo, anchors to the top of your website, above your local header. It serves visually as the main Stanford University mark, and functionally, it links back to homesite, www.stanford.edu. By providing a consistent global "bar" at the top of websites, our ecosystem of sites feel deliberate and understandable to users. 
+The Stanford global identity bar came out of a need to provide a "home" for all Stanford websites, both visually and functionally. This bar, containing the Stanford logo, anchors to the top of your website, above your local header. It serves visually as the main Stanford University mark, and functionally, it links back to homesite, www.stanford.edu. By providing a consistent global "bar" at the top of websites, our ecosystem of sites feel deliberate and understandable to users. 
 
 ![The four brand bar options for website creators across Stanford. ](/img/brand-bar-options.png "Four brand bar options")
 
@@ -36,7 +36,7 @@ Additionally, Decanter's user experience team has gone to great lengths to test 
 
 [Explore our documentation on navigation testing here, on our shared Decanter Usability Drive folder](https://drive.google.com/drive/folders/15Jr7zIWphRb92VAP2_gOenZDY2HJ_HiQ). 
 
-#### Global Footer overview
+#### Stanford global footer overview
 
 The Stanford global footer is strongly recommended to be placed at the bottom of all official university websites. It is designed to enhance sites with consistent Stanford branding and navigation, much like the brand bar and local header. It also contains crucial links for emergency information and satisfying legal requirements. 
 
