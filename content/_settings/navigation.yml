@@ -54,6 +54,8 @@ nav_items:
         path: /page/brand-design-elements-color/
       - label: Icons
         path: /page/brand-design-elements-icons/
+      - label: Forms
+        path: /page/forms/
     label: Identity + Design Elements
     path: /page/brand-design-elements/
   - children:
