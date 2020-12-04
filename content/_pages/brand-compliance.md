@@ -2,7 +2,6 @@
 title: Using the Stanford Identity
 date: 2019-12-11T18:02:16.854Z
 ---
-
 ## Aligning with the Stanford Identity using Decanter
 
 Our goal is to make it easy for websites to  use elements from the Stanford Identity and make the treatment of that identity consistent in a select number of areas. 
@@ -11,7 +10,7 @@ Our goal is to make it easy for websites to  use elements from the Stanford Iden
 
 All official websites across our University are strongly encouraged to have three components to align with the Stanford identity. 
 
-* Brand bar
+* Global identity bar
 * Local header 
 * Global footer 
 
