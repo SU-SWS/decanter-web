@@ -47,7 +47,7 @@
     "filemanager-webpack-plugin": "^2.0.5",
     "frontmatter-markdown-loader": "^3.5.0",
     "glob": "^7.1.6",
-    "highlight.js": "^9.18.1",
+    "highlight.js": "^10.4.1",
     "js-yaml-loader": "^1.2.2",
     "jsdoc-api": "^5.0.4",
     "kss": "^3.0.1",
