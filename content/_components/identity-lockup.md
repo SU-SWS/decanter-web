@@ -13,7 +13,7 @@ modifier_css:
         "line5": "Long School Name or a Second School Name"
       }
   - css_class: su-lockup--option-b
-    description: '<h3>Unit (2 lines, big/small)</h3>'
+    description: "<h3>Unit (2 lines, big/small)</h3>"
     source_json: |-
       {
         "line1": "Small first line of",
@@ -43,7 +43,7 @@ modifier_css:
         "line5": ""
       }
   - css_class: su-lockup--option-f
-    description: '<h3>Unit (2 lines, big/small)</h3>'
+    description: "<h3>Unit (2 lines, big/small)</h3>"
     source_json: |-
       {
         "line1": "Small first line of",
@@ -166,7 +166,7 @@ modifier_css:
       }
   - css_class: su-lockup--option-t
     description: <h3>Vertical – School + Unit + Level</h3>
-    notes: ''
+    notes: ""
     source_json: |-
       {
         "line1": "Your Department Name",
@@ -176,10 +176,13 @@ modifier_css:
         "line5": ""
       }
 ---
-At Stanford, a department logo or signature, also called a _lockup_, is used to identify a university department, unit or group. 
+
+At Stanford, a department logo or signature, also called a _lockup_, is used to identify a university department, unit or group.
 
 There is more than one correct way to create these department logos. The lockup can communicate organization hierarchy depending on how formal or informal you need to be. For designers and developers, it is important to note that with the Stanford department signature system, text styles and sizes are used to communicate _**specific levels of hierarchy**_ relative to the department, unit or group in question.
 
-[Learn more about how to use department signatures](https://identity.stanford.edu/department-branding.html)
+[Learn more about how to use department signatures](https://identity.stanford.edu/visual-identity/stanford-logos/department-branding/)
 
 Please note that the Decanter default style shown below shows the different text areas and styles available in the Decanter lockup. For actual usage information, please refer to the variant styles listed below.
+
+**Important Notice:** Stanford University lockup options C, G, J, and Q will be removed in Decanter Version 7.
