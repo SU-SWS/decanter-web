@@ -80,18 +80,6 @@ var webpackConfig = {
         ]
       },
     ]
-  },
-  // Build optimizations.
-  optimization: {
-    // Uglify the Javascript & and CSS.
-    minimizer: [
-      // Shrink JS.
-      new UglifyJsPlugin({
-        cache: true,
-        parallel: true,
-        sourceMap: true
-      })
-    ],
   }
 };
 
