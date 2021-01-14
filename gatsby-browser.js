@@ -5,5 +5,8 @@
  */
 
 // You can delete this file if you're not using it
+import "decanter/dist/decanter.css"
 import "./src/css/index.css";
+
+import "decanter/dist/decanter.js"
 import "./src/js/index.js";
