@@ -19,8 +19,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
@@ -39,17 +37,19 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Decanter`,
         start_url: `/`,
+        include_favicon: false,
+        crossOrigin: `use-credentials`,
+        icons: [],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        mergeSecurityHeaders: false,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

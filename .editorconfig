@@ -1,7 +1,6 @@
-# Editor configuration normalization
-# @see http://editorconfig.org/
+# EditorConfig is awesome: http://EditorConfig.org
 
-# This is the top-most .editorconfig file; do not search in parent directories.
+# top-most EditorConfig file
 root = true
 
 # All files.

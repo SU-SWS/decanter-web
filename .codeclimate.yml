@@ -1,0 +1,63 @@
+version: '2'
+checks:
+  editorconfig:
+    enabled: true
+  argument-count:
+    enabled: false
+  complex-logic:
+    enabled: false
+  method-lines:
+    enabled: false
+  file-lines:
+    enabled: false
+  method-complexity:
+    enabled: false
+  method-count:
+    enabled: false
+  nested-control-flow:
+    enabled: false
+  return-statements:
+    config:
+      threshold: 6
+  similar-code:
+    enabled: true
+  identical-code:
+    enabled: true
+plugins:
+  duplication:
+    enabled: true
+    config:
+      languages:
+        javascript:
+          mass_threshold: 75
+  eslint:
+    enabled: false
+  fixme:
+    enabled: true
+    config:
+      strings:
+        - FIXME
+        - BUG
+        - TODO
+        - todo
+  nodesecurity:
+    enabled: true
+  markdownlint:
+    enabled: false
+  csslint:
+    enabled: false
+  stylelint:
+    enabled: false
+  coffeelint:
+    enabled: false
+  sass-lint:
+    enabled: false
+exclude_patterns:
+  - node_modules/
+  - 'test/'
+  - '**/__tests__/'
+  - '**/tests/**/*'
+  - 'package.json'
+  - '**.min.*'
+  - 'public'
+  - 'static'

@@ -1,50 +1,7 @@
-# Numerous always-ignore extensions
-*.diff
-*.err
-*.orig
-*.log
-*.rej
-*.swo
-*.swp
-*.vi
-*~
-
-# OS or Editor folders
-.DS_Store
-.cache
-.idea
-.sass-cache
-.project
-.settings
-.tmproj
-.styleguide_site
-nbproject
-Thumbs.db
-config.rb
-*.scssc
-*.sassc
-*.map
-
-# Folders to ignore
-.hg
-.svn
-.CVS
-cgi-bin
-node_modules
-public/docs
-
-# Ignore as they are customized on the user end.
-.lando.yml
-
-# Local Netlify folder
-.netlify
-
 # Logs
 logs
 *.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # Runtime data
 pids
@@ -92,25 +49,17 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
-# dotenv environment variable files
+# dotenv environment variables file
 .env*
-
-# gatsby files
-.cache/
-public
-
-# Mac files
-.DS_Store
-
-# Yarn
-yarn-error.log
-.pnp/
-.pnp.js
-
-# Yarn Integrity file
-.yarn-integrity
 
 # Editors
 .vscode
 .idea/
-components.89985.json
+
+.cache/
+public
+yarn-error.log
+.DS_Store
+
+# Local Netlify folder
+.netlify

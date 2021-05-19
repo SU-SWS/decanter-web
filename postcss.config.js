@@ -1,3 +1,7 @@
+// postcss.config.js
 module.exports = {
-  plugins: [require('autoprefixer')({ grid: true })],
-};
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  }
+}
