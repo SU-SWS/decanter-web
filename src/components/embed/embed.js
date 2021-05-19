@@ -12,9 +12,8 @@
  */
 
 import React, { useEffect, useRef } from "react";
-import SbEditable from "storyblok-react";
 
-const Embed = ({ blok: { markup, pre_markup, post_markup }, blok }) => {
+const Embed = ({ pre_markup, post_markup, markup, ...props }) => {
   let premarkup;
   let postmarkup;
   const myEmbed = useRef(null);
@@ -65,11 +64,11 @@ const Embed = ({ blok: { markup, pre_markup, post_markup }, blok }) => {
   }, [markup]);
 
   return (
-    <SbEditable content={blok}>
+    <>
       {premarkup}
       <div ref={myEmbed} />
       {postmarkup}
-    </SbEditable>
+    </>
   );
 };
 

@@ -1,10 +1,11 @@
-import React from "react"
+import React from "react";
+import BasicPage from "../components/pageTypes/basicPage";
 
 const HomePage = () => (
-  <div>
+  <BasicPage>
     <h1>HI</h1>
     <p>You have a site</p>
-  </div>
-)
+  </BasicPage>
+);
 
-export default HomePage
+export default HomePage;
