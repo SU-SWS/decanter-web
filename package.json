@@ -55,7 +55,6 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
-    "react-refresh": "^0.10.0",
     "sanitize-html": "^2.3.3",
     "tailwindcss-children": "^2.1.0",
     "tailwindcss-interaction-variants": "^5.0.0"

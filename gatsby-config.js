@@ -1,13 +1,13 @@
-const path = require('path');
+const path = require("path");
 
 const activeEnv =
-  process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development"
+  process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development";
 
-console.log(`Using environment config: '${activeEnv}'`)
+console.log(`Using environment config: '${activeEnv}'`);
 
 require("dotenv").config({
   path: `.env.${activeEnv}`,
-})
+});
 
 module.exports = {
   siteMetadata: {
@@ -22,16 +22,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
-        siteUrl: 'https://decanter-preview.netlify.app',
+        siteUrl: "https://decanter-preview.netlify.app",
       },
     },
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        policy: [
-          { userAgent: '*', allow: '/' },
-        ]
-      }
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
     },
     {
       resolve: `gatsby-plugin-sitemap`,
@@ -56,4 +54,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
