@@ -17,12 +17,6 @@ const MainNav = (props) => (
               Projects that use Decanter
             </Link>
           </li>
-          <li>
-            <Link to="/about/release-notes/">Release Notes</Link>
-          </li>
-          <li>
-            <Link to="/about/roadmap/">Release Road Map</Link>
-          </li>
         </ul>
       </li>
       <li>
@@ -50,6 +44,38 @@ const MainNav = (props) => (
           </li>
           <li>
             <Link to="/use-decanter/developer/">As a Developer</Link>
+            <ul>
+              <li>
+                <Link to="/use-decanter/developer/get-started">
+                  Get Started
+                </Link>
+              </li>
+              <li>
+                <Link to="/use-decanter/developer/build-tools">
+                  Build Tools
+                </Link>
+              </li>
+              <li>
+                <Link to="/use-decanter/developer/browser-compatibility">
+                  Browser Compatibility
+                </Link>
+              </li>
+              <li>
+                <Link to="/use-decanter/developer/code-standards">
+                  Code Standards
+                </Link>
+              </li>
+              <li>
+                <Link to="/use-decanter/developer/starter-projects">
+                  Starter Projects
+                </Link>
+              </li>
+              <li>
+                <Link to="/use-decanter/developer/supported-versions">
+                  Supported Versions
+                </Link>
+              </li>
+            </ul>
           </li>
         </ul>
       </li>
@@ -70,20 +96,6 @@ const MainNav = (props) => (
           </li>
           <li>
             <Link to="/identity-design/forms/">Forms</Link>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <Link to="/layouts/">Layouts</Link>
-        <ul>
-          <li>
-            <Link to="/layouts/grid-system/">Grid System</Link>
-          </li>
-          <li>
-            <Link to="/layouts/modular-spacing/">Modular Spacing</Link>
-          </li>
-          <li>
-            <Link to="/layouts/responsive-design/">Responsive Design</Link>
           </li>
         </ul>
       </li>
@@ -110,13 +122,28 @@ const MainNav = (props) => (
         </ul>
       </li>
       <li>
-        <Link to="/components/">Components</Link>
+        <Link to="/code/">Code</Link>
         <ul>
           <li>
-            <Link to="/components/react/">React</Link>
+            <Link to="/code/release-notes/">Release Notes</Link>
           </li>
           <li>
-            <Link to="/components/twig/">Twig</Link>
+            <Link to="/code/react/">React</Link>
+          </li>
+          <li>
+            <Link to="/code/twig/">Twig</Link>
+          </li>
+          <li>
+            <Link to="/code/">Layouts</Link>
+          </li>
+          <li>
+            <Link to="/code/grid-system/">Grid System</Link>
+          </li>
+          <li>
+            <Link to="/code/modular-spacing/">Modular Spacing</Link>
+          </li>
+          <li>
+            <Link to="/code/responsive-design/">Responsive Design</Link>
           </li>
         </ul>
       </li>

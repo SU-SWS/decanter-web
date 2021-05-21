@@ -1,10 +1,10 @@
 import React from "react";
 import BasicPage from "../../components/pageTypes/basicPage";
 
-const AboutReleaseNotesPage = () => (
+const LayoutsPage = () => (
   <BasicPage>
-    <h1>Release Notes</h1>
+    <h1>Layouts</h1>
   </BasicPage>
 );
 
-export default AboutReleaseNotesPage;
+export default LayoutsPage;

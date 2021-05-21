@@ -1,10 +1,10 @@
 import React from "react";
 import BasicPage from "../components/pageTypes/basicPage";
 
-const LayoutsPage = () => (
+const CodePage = () => (
   <BasicPage>
-    <h1>Layouts</h1>
+    <h1>Code</h1>
   </BasicPage>
 );
 
-export default LayoutsPage;
+export default CodePage;

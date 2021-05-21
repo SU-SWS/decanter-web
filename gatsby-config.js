@@ -50,6 +50,31 @@ module.exports = {
         mergeSecurityHeaders: false,
       },
     },
+    {
+      resolve: `gatsby-source-github-api`,
+      options: {
+        token: process.env.GITHUBTOKEN,
+        variables: {},
+        graphQLQuery: `query {
+          repository(name: "decanter", owner: "SU-SWS") {
+            releases(orderBy: { field: CREATED_AT, direction: DESC }, first: 25) {
+              edges {
+                node {
+                  description
+                  descriptionHTML
+                  isLatest
+                  isPrerelease
+                  name
+                  tagName
+                  url
+                  publishedAt
+                }
+              }
+            }
+          }
+        }`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
