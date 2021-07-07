@@ -89,7 +89,7 @@ function getSignatureAttributes({optional, nullable}) {
   if (nullable === true) {
     attributes.push('nullable');
   }
- else if (nullable === false) {
+  else if (nullable === false) {
     attributes.push('non-null');
   }
 
@@ -274,7 +274,7 @@ function generateSourceFiles(sourceFiles, encoding = 'utf8') {
         )
       };
     }
- catch (e) {
+    catch (e) {
       logger.error(
         'Error while generating source file %s: %s',
         file,
@@ -342,11 +342,11 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
       if (!hasOwnProp.call(item, 'longname')) {
         itemsNav += `<li>${linktoFn('', item.name)}</li>`;
       }
- else if (!hasOwnProp.call(itemsSeen, item.longname)) {
+      else if (!hasOwnProp.call(itemsSeen, item.longname)) {
         if (env.conf.templates.default.useLongnameInNav) {
           displayName = item.longname;
         }
- else {
+        else {
           displayName = item.name;
         }
         itemsNav += `<li>${linktoFn(
@@ -390,7 +390,7 @@ function linktoExternal(longName, name) {
  */
 function buildNav(members) {
   let globalNav;
-  let nav = '<h2><a href="index.html">Home</a></h2>';
+  let nav = '<h3><a href="index.html">Home</a></h3>';
   const seen = {};
   const seenTutorials = {};
 
@@ -422,7 +422,7 @@ function buildNav(members) {
       // turn the heading into a link so you can actually get to the global page
       nav += `<h3>${linkto('global', 'Global')}</h3>`;
     }
- else {
+    else {
       nav += `<h3>Global</h3><ul>${globalNav}</ul>`;
     }
   }
@@ -608,7 +608,7 @@ exports.publish = (taffyData, opts, tutorials) => {
     if (url.includes('#')) {
       doclet.id = helper.longnameToUrl[doclet.longname].split(/#/).pop();
     }
- else {
+    else {
       doclet.id = doclet.name;
     }
 
