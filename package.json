@@ -40,7 +40,7 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "bourbon": "^5.1",
-    "decanter": "^6.0.6",
+    "decanter": "^6.2.3",
     "del": "^5.1.0",
     "fibers": "^4.0.3",
     "file-loader": "^5.1.0",
