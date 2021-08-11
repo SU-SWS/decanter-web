@@ -4,7 +4,7 @@ date: 2019-11-28T14:11:13.000Z
 ---
 <p class="su-intro-text">Below are the colors that are approved by Stanford University Communications for use on the web. All colors are available as variables in Decanter prefixed by <code>su-</code>. Some colors come with tints and shades to achieve functional contrast.</p>
 
-**Important Note:** the following colors have been depreciated.
+**Important Notice:** the following colors have been depreciated.
 
 * `$su-color-digital-blue-dark` replaces `$su-color-blue` as the new variable
 * `$su-color-digital-blue` replaces `$su-color-bright-blue` as the new variable
