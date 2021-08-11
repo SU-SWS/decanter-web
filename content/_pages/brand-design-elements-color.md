@@ -327,6 +327,14 @@ They should not become the predominant colors for a school, center, institute or
 
 ## Web Interactive Colors
 
+All Stanford websites should meet [WCAG AA color contrast standards of a minimum 3.0 color contrast](http://webaim.org/resources/contrastchecker/) ratio for headings/bold text and 4.5 color contrast ratio for paragraph text. To use colors in an accessible way, pair light text on dark backgrounds or dark text on light backgrounds. 
+
+**Digital red** is not a replacement for Cardinal red—it can be used as an accent color on digital communications to add energy and emphasis. The light version can be used for interactive elements over dark backgrounds for contrast. The dark version can be used for smaller text over light backgrounds.
+
+Use **digital blue** for links over light backgrounds, the dark version for link hover/focus states, and the light version for links over dark backgrounds. Do not use these shades of blue in contexts other than links.
+
+Use **digital green** for things such as form validation, the dark version for link hover/focus states, and the light version for links over dark backgrounds.
+
 <section class="color-palette">
     <div class="color">
         <div class="variant inverse" style="background-color: #820000;">
@@ -336,8 +344,7 @@ They should not become the predominant colors for a school, center, institute or
         <div class="inverse" style="background-color: #b1040e;">
             <h3>Digital Red</h3>
             <p>#b1040e</p>
-            <p>$su-color-digital-red</p><br>
-            <p>Used for links over light backgrounds, the dark version for link hover/focus states, and the light version for links over dark backgrounds.</p>
+            <p>$su-color-digital-red</p>
         </div>
         <div class="variant inverse" style="background-color: #e50808;">
             <p>#e50808</p>
@@ -352,8 +359,7 @@ They should not become the predominant colors for a school, center, institute or
         <div class="inverse" style="background-color: #006cb8;">
             <h3>Digital Blue</h3>
             <p>#006cb8</p>
-            <p>$su-color-bright-blue</p><br>
-            <p>Used for links over light backgrounds, the dark version for link hover/focus states, and the light version for links over dark backgrounds. Do not use these shades of blue in contexts other than links.</p>
+            <p>$su-color-bright-blue</p>
         </div>
         <div class="variant inverse" style="background-color: #6fc3ff;">
             <p>#6fc3ff</p>
@@ -368,8 +374,7 @@ They should not become the predominant colors for a school, center, institute or
         <div class="inverse" style="background-color: #008566">
             <h3>Digital Green</h3>
             <p>#008566</p>
-            <p>$su-color-digital-green</p><br>
-            <p>Used for things such as form validation, the dark version for link hover/focus states, and the light version for links over dark backgrounds.</p>
+            <p>$su-color-digital-green</p>
         </div>
         <div class="variant inverse" style="background-color: #1aecba;">
             <p>#1aecba</p>
@@ -417,11 +422,12 @@ All Stanford Websites and web‐based applications are required to be accessible
 <a href="https://soap.stanford.edu/tips-and-tools/tips/color" class="su-link--action">Learn more about colors and accessibility on the Stanford Online Accessibility Program site</a>
 
 <a name="depreciated-colors"></a>
+
 ## Depreciated Colors:
 
 * `$su-color-digital-blue-dark` replaces `$su-color-blue` as the new variable
 * `$su-color-digital-blue` replaces `$su-color-bright-blue` as the new variable
-* `$su-color-digital-red` replaces `$su-color-bright-red `as the new variable
+* `$su-color-digital-red` replaces `$su-color-bright-red`as the new variable
 * `$su-color-archway-dark` replaces `$su-color-chocolate` as the new variable
 * `$su-color-foggy` replaces `$su-color-cloud` as the new variable
 * $`su-color-cardinal-red-dark` replaces `$su-color-dark-red` as the new variable
@@ -441,4 +447,4 @@ All Stanford Websites and web‐based applications are required to be accessible
 * `$su-color-sun` will be removed in Decanter v7
 * `$su-color-teal` will be removed in Decanter v7
 * `$su-color-warm-grey` will be removed in Decanter v7
-* `$su-color-cool-grey-75 `will be removed in Decanter v7
+* `$su-color-cool-grey-75`will be removed in Decanter v7
