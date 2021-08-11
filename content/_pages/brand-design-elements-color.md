@@ -4,33 +4,7 @@ date: 2019-11-28T14:11:13.000Z
 ---
 <p class="su-intro-text">Below are the colors that are approved by Stanford University Communications for use on the web. All colors are available as variables in Decanter prefixed by <code>su-</code>. Some colors come with tints and shades to achieve functional contrast.</p>
 
-**Important Notice:** the following colors have been depreciated.
-
-* `$su-color-digital-blue-dark` replaces `$su-color-blue` as the new variable
-* `$su-color-digital-blue` replaces `$su-color-bright-blue` as the new variable
-* `$su-color-digital-red` replaces `$su-color-bright-red `as the new variable
-* `$su-color-archway-dark` replaces `$su-color-chocolate` as the new variable
-* `$su-color-foggy` replaces `$su-color-cloud` as the new variable
-* $`su-color-cardinal-red-dark` replaces `$su-color-dark-red` as the new variable
-* `$su-color-digital-red-light` replaces `$su-color-vivid-red` as the new variable
-* `$su-color-foggy-dark` replaces `$su-color-driftwood` as the new variable
-* `$su-color-foggy-light` replaces `$su-color-fog` as the new variable
-* `$su-color-brown` will be removed in Decanter v7
-* `$su-color-clay` will be removed in Decanter v7
-* `$su-color-gold` will be removed in Decanter v7
-* `$su-color-light-sage` will be removed in Decanter v7
-* `$su-color-mint` will be removed in Decanter v7
-* `$su-color-purple` will be removed in Decanter v7
-* `$su-color-redwood` will be removed in Decanter v7
-* `$su-color-sandhill` will be removed in Decanter v7
-* `$su-color-sandstone` will be removed in Decanter v7
-* `$su-color-light-sandstone` will be removed in Decanter v7
-* `$su-color-sun` will be removed in Decanter v7
-* `$su-color-teal` will be removed in Decanter v7
-* `$su-color-warm-grey` will be removed in Decanter v7
-* `$su-color-cool-grey-75 `will be removed in Decanter v7
-
-
+**Important Notice:**  colors have been depreciated. The full list can be viewed at the [end of this page](#depreciated-colors).
 
 ## Primary Colors
 
@@ -441,3 +415,30 @@ Color is often used in web design for grouping related items, denoting required 
 All Stanford Websites and web‐based applications are required to be accessible to its students, faculty, staff and participants in the University’s programs and activities who have disabilities by conforming to WCAG 2.0 Level AA.
 
 <a href="https://soap.stanford.edu/tips-and-tools/tips/color" class="su-link--action">Learn more about colors and accessibility on the Stanford Online Accessibility Program site</a>
+
+<a name="depreciated-colors"></a>
+## Depreciated Colors:
+
+* `$su-color-digital-blue-dark` replaces `$su-color-blue` as the new variable
+* `$su-color-digital-blue` replaces `$su-color-bright-blue` as the new variable
+* `$su-color-digital-red` replaces `$su-color-bright-red `as the new variable
+* `$su-color-archway-dark` replaces `$su-color-chocolate` as the new variable
+* `$su-color-foggy` replaces `$su-color-cloud` as the new variable
+* $`su-color-cardinal-red-dark` replaces `$su-color-dark-red` as the new variable
+* `$su-color-digital-red-light` replaces `$su-color-vivid-red` as the new variable
+* `$su-color-foggy-dark` replaces `$su-color-driftwood` as the new variable
+* `$su-color-foggy-light` replaces `$su-color-fog` as the new variable
+* `$su-color-brown` will be removed in Decanter v7
+* `$su-color-clay` will be removed in Decanter v7
+* `$su-color-gold` will be removed in Decanter v7
+* `$su-color-light-sage` will be removed in Decanter v7
+* `$su-color-mint` will be removed in Decanter v7
+* `$su-color-purple` will be removed in Decanter v7
+* `$su-color-redwood` will be removed in Decanter v7
+* `$su-color-sandhill` will be removed in Decanter v7
+* `$su-color-sandstone` will be removed in Decanter v7
+* `$su-color-light-sandstone` will be removed in Decanter v7
+* `$su-color-sun` will be removed in Decanter v7
+* `$su-color-teal` will be removed in Decanter v7
+* `$su-color-warm-grey` will be removed in Decanter v7
+* `$su-color-cool-grey-75 `will be removed in Decanter v7
