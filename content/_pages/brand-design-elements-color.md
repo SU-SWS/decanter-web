@@ -10,14 +10,18 @@ Our primary palette consists of Cardinal Red, White, Black and Cool Grey. Our de
 
 <section class="color-palette">
     <div class="color">
+        <div class="variant inverse" style="background-color: #820000;">
+            <p>#820000</p>
+            <p>$su-color-cardinal-red-dark</p>
+        </div>
         <div class="inverse" style="background-color: #8c1515;">
             <h3>Cardinal Red</h3>
             <p>#8c1515</p>
             <p>$su-color-cardinal-red</p>
         </div>
-        <div class="variant inverse" style="background-color: #b8434c;">
-            <p>#b8434c</p>
-            <p>Coming soon</p>
+        <div class="variant inverse" style="background-color: #b83a4b;">
+            <p>#b83a4b</p>
+            <p>$su-color-cardinal-red-light</p>
         </div>
     </div>
     <div class="color">
@@ -33,10 +37,6 @@ Our primary palette consists of Cardinal Red, White, Black and Cool Grey. Our de
             <p>#2e2d29</p>
             <p>$su-color-black</p>
         </div>
-        <div class="variant inverse" style="background-color: #373637;">
-            <p>#373637</p>
-            <p>Coming soon</p>
-        </div>
     </div>
     <div class="color">
         <div class="inverse" style="background-color: #4d4f53">
@@ -44,17 +44,62 @@ Our primary palette consists of Cardinal Red, White, Black and Cool Grey. Our de
             <p>#4d4f53</p>
             <p>$su-color-cool-grey</p>
         </div>
-        <div class="variant inverse" style="background-color: rgba(77,79,83,0.75);">
-            <p>rgba(77,79,83,0.75)</p>
-            <p>Coming soon</p>
+    </div>
+    <div class="color">
+        <div class="inverse" style="background-color: #000;">
+            <h3>True Black</h3>
+            <p>#000</p>
+            <p>$su-color-black-true</p>
         </div>
-        <div class="variant" style="background-color: rgba(77,79,83,0.5);">
-            <p>rgba(77,79,83,0.5)</p>
-            <p>Coming soon</p>
+        <div class="inverse" style="background-color: #2e2d29;">
+            <h3>100% Black</h3>
+            <p>#2e2d29</p>
+            <p>$su-color-black</p>
         </div>
-        <div class="variant" style="background-color: rgba(77,79,83,0.25);">
-            <p>rgba(77,79,83,0.25)</p>
-            <p>Coming soon</p>
+        <div class="inverse" style="background-color: #43423e;">
+            <h3>90% Black</h3>
+            <p>#43423e</p>
+            <p>$su-color-black-90</p>
+        </div>
+        <div class="inverse" style="background-color: #585754;">
+            <h3>80% Black</h3>
+            <p>#585754</p>
+            <p>$su-color-black-80</p>
+        </div>
+        <div class="inverse" style="background-color: #6d6c69;">
+            <h3>70% Black</h3>
+            <p>#6d6c69</p>
+            <p>$su-color-black-70</p>
+        </div>
+        <div class="inverse" style="background-color: #767674;">
+            <h3>60% Black</h3>
+            <p>#767674</p>
+            <p>$su-color-black-60</p>
+        </div>
+        <div class="inverse" style="background-color: #979694;">
+            <h3>50% Black</h3>
+            <p>#979694</p>
+            <p>$su-color-black-50</p>
+        </div>
+        <div class="inverse" style="background-color: #ababa9;">
+            <h3>40% Black</h3>
+            <p>#ababa9</p>
+            <p>$su-color-black-40</p>
+        </div>
+        <div class="inverse" style="background-color: #c0c0bf;">
+            <h3>30% Black</h3>
+            <p>#c0c0bf</p>
+            <p>$su-color-black-30</p>
+        </div>
+        <div class="inverse" style="background-color: #d5d5d4;">
+            <h3>20% Black</h3>
+            <p>#d5d5d4</p>
+            <p>$su-color-black-20</p>
+        </div>
+        <div class="inverse" style="background-color: #eaeaea;">
+            <h3>10% Black</h3>
+            <p>#eaeaea</p>
+            <p>$su-color-black-10</p>
         </div>
     </div>
 </section>
