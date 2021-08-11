@@ -2,7 +2,6 @@
 title: Color
 date: 2019-11-28T14:11:13.000Z
 ---
-
 <p class="su-intro-text">Below are the colors that are approved by Stanford University Communications for use on the web. All colors are available as variables in Decanter prefixed by <code>su-</code>. Some colors come with tints and shades to achieve functional contrast.</p>
 
 ## Primary Colors
@@ -154,7 +153,7 @@ Although our primary palette should drive most materials, in certain instances o
     <div class="color">
         <div class="variant inverse" style="background-color: #014240;">
             <p>#014240</p>
-            <p>Coming soon</p>
+            <p>$su-color-palo-alto-dark</p>
         </div>
         <div class="inverse" style="background-color: #175e54">
             <h3>Palo Alto</h3>
@@ -163,28 +162,73 @@ Although our primary palette should drive most materials, in certain instances o
         </div>
         <div class="variant inverse" style="background-color: #2d716f;">
             <p>#2d716f</p>
-            <p>Coming soon</p>
+            <p>$su-color-palo-alto-light</p>
         </div>      
-    </div>  
+    </div>
     <div class="color">
-        <div class="variant inverse" style="background-color: #350d36;">
-            <p>#350d36</p>
-            <p>Coming soon</p>
+        <div class="variant inverse" style="background-color: #017e7c;">
+            <p>#017e7c</p>
+            <p>$su-color-palo-verde-dark</p>
         </div>
-        <div class="inverse" style="background-color: #53284f">
-            <h3>Purple</h3>
-            <p>#53284f</p>
-            <p>$su-color-purple</p>
+        <div class="inverse" style="background-color: #279989">
+            <h3>Palo Verde</h3>
+            <p>#279989</p>
+            <p>$su-color-palo-verde</p>
         </div>
-        <div class="variant inverse" style="background-color: #613863;">
-            <p>#613863</p>
-            <p>Coming soon</p>
+        <div class="variant inverse" style="background-color: #59b3a9;">
+            <p>#59b3a9</p>
+            <p>$su-color-palo-verde-light</p>
         </div>      
-    </div>  
+    </div>
+    <div class="color">
+        <div class="variant inverse" style="background-color: #7a863b;">
+            <p>#7a863b</p>
+            <p>$su-color-olive-dark</p>
+        </div>
+        <div class="inverse" style="background-color: #8f993e">
+            <h3>Olive</h3>
+            <p>#8f993e</p>
+            <p>$su-color-olive</p>
+        </div>
+        <div class="variant inverse" style="background-color: #a6b168;">
+            <p>#a6b168</p>
+            <p>$su-color-olive-light</p>
+        </div>      
+    </div>
+    <div class="color">
+        <div class="variant inverse" style="background-color: #417865;">
+            <p>#417865</p>
+            <p>$su-color-bay-dark</p>
+        </div>
+        <div class="inverse" style="background-color: #6fa287">
+            <h3>Bay</h3>
+            <p>#6fa287</p>
+            <p>$su-color-bay</p>
+        </div>
+        <div class="variant inverse" style="background-color: #8ab8a7;">
+            <p>#8ab8a7</p>
+            <p>$su-color-bay-light</p>
+        </div>      
+    </div>
+    <div class="color">
+        <div class="variant inverse" style="background-color: #016895;">
+            <p>#016895</p>
+            <p>$su-color-sky-dark</p>
+        </div>
+        <div class="inverse" style="background-color: #4298b5">
+            <h3>Sky</h3>
+            <p>#4298b5</p>
+            <p>$su-color-sky</p>
+        </div>
+        <div class="variant inverse" style="background-color: #67afd2;">
+            <p>#67afd2</p>
+            <p>$su-color-sky-light</p>
+        </div>      
+    </div>
     <div class="color">
         <div class="variant inverse" style="background-color: #006b81;">
             <p>#006b81</p>
-            <p>Coming soon</p>
+            <p>$su-color-lagunita-dark</p>
         </div>
         <div class="inverse" style="background-color: #007c92">
             <h3>Lagunita</h3>
@@ -193,13 +237,13 @@ Although our primary palette should drive most materials, in certain instances o
         </div>
         <div class="variant inverse" style="background-color: #009ab4;">
             <p>#009ab4</p>
-            <p>Coming soon</p>
+            <p>$su-color-lagunita-light</p>
         </div>      
-    </div>  
+    </div>
     <div class="color">
         <div class="variant inverse" style="background-color: #d48029;">
             <p>#d48029</p>
-            <p>Coming soon</p>
+            <p>$su-color-poppy-dark</p>
         </div>      
         <div style="background-color: #e98300">
             <h3>Poppy</h3>
@@ -208,36 +252,135 @@ Although our primary palette should drive most materials, in certain instances o
         </div>
         <div class="variant" style="background-color: #f9a44a;">
             <p>#f9a44a</p>
-            <p>Coming soon</p>
-        </div>
-    </div>              
-</section>
-
-## Web-Only Colors
-
-<section class="color-palette">
-    <div class="color">
-        <div class="inverse" style="background-color: #00548f;">
-            <h3>Blue</h3>
-            <p>#00548f</p>
-            <p>$su-color-blue</p><br>
-            <p>Used for links over light backgrounds</p>
+            <p>$su-color-poppy-light</p>
         </div>
     </div>
     <div class="color">
+        <div class="variant inverse" style="background-color: #c74632;">
+            <p>#c74632</p>
+            <p>$su-color-spirited-dark</p>
+        </div>      
+        <div style="background-color: #e04f39">
+            <h3>Spirited</h3>
+            <p>#e04f39</p>
+            <p>$su-color-spirited</p>
+        </div>
+        <div class="variant" style="background-color: #f4795b;">
+            <p>#f4795b</p>
+            <p>$su-color-spirited-light</p>
+        </div>
+    </div>
+    <div class="color">
+        <div class="variant inverse" style="background-color: #fec51d;">
+            <p>#fec51d</p>
+            <p>$su-color-illuminating-dark</p>
+        </div>      
+        <div style="background-color: #fedd5c">
+            <h3>Illuminating</h3>
+            <p>#fedd5c</p>
+            <p>$su-color-illuminating</p>
+        </div>
+        <div class="variant" style="background-color: #ffe781;">
+            <p>#ffe781</p>
+            <p>$su-color-illuminating-light</p>
+        </div>
+    </div>
+    <div class="color">
+        <div class="variant inverse" style="background-color: #350d36;">
+            <p>#350d36</p>
+            <p>$su-color-plum-dark</p>
+        </div>
+        <div class="inverse" style="background-color: #620059">
+            <h3>Plum</h3>
+            <p>#620059</p>
+            <p>$su-color-plum</p>
+        </div>
+        <div class="variant inverse" style="background-color: #734675;">
+            <p>#734675</p>
+            <p>$su-color-plum-light</p>
+        </div>      
+    </div>
+    <div class="color">
+        <div class="variant inverse" style="background-color: #42081b;">
+            <p>#42081b</p>
+            <p>$su-color-brick-dark</p>
+        </div>
+        <div class="inverse" style="background-color: #651c32">
+            <h3>Brick</h3>
+            <p>#651c32</p>
+            <p>$su-color-brick</p>
+        </div>
+        <div class="variant inverse" style="background-color: #7f2d48;">
+            <p>#7f2d48</p>
+            <p>$su-color-brick-light</p>
+        </div>      
+    </div>
+    <div class="color">
+        <div class="variant inverse" style="background-color: #2f2424;">
+            <p>#2f2424</p>
+            <p>$su-color-archway-dark</p>
+        </div>
+        <div class="inverse" style="background-color: #5d4b3c">
+            <h3>Archway</h3>
+            <p>#5d4b3c</p>
+            <p>$su-color-archway</p>
+        </div>
+        <div class="variant inverse" style="background-color: #766253;">
+            <p>#766253</p>
+            <p>$su-color-archway-light</p>
+        </div>      
+    </div>  
+</section>
+
+## Web Interactive Colors
+
+<section class="color-palette">
+    <div class="color">
+        <div class="variant inverse" style="background-color: #820000;">
+            <p>#820000</p>
+            <p>$su-color-digital-red-dark</p>
+        </div>
+        <div class="inverse" style="background-color: #b1040e;">
+            <h3>Digital Red</h3>
+            <p>#b1040e</p>
+            <p>$su-color-digital-red</p><br>
+            <p>Used for links over light backgrounds</p>
+        </div>
+        <div class="variant inverse" style="background-color: #e50808;">
+            <p>#e50808</p>
+            <p>$su-color-digital-red-light</p>
+        </div>
+    </div>
+    <div class="color">
+        <div class="variant inverse" style="background-color: #00548f;">
+            <p>#00548f</p>
+            <p>$su-color-digital-blue-dark</p>
+        </div>
         <div class="inverse" style="background-color: #006cb8;">
-            <h3>Bright Blue</h3>
+            <h3>Digital Blue</h3>
             <p>#006cb8</p>
             <p>$su-color-bright-blue</p><br>
             <p>Used for links hover state over light backgrounds</p>
         </div>
+        <div class="variant inverse" style="background-color: #6fc3ff;">
+            <p>#6fc3ff</p>
+            <p>$su-color-digital-blue-light</p>
+        </div>
     </div>
     <div class="color">
-        <div class="inverse" style="background-color: #ec0513">
-            <h3>Vivid Red</h3>
-            <p>#ec0513</p>
-            <p>$su-color-vivid-red</p><br>
+        <div class="variant inverse" style="background-color: #006f54;">
+            <p>#006f54</p>
+            <p>$su-color-digital-green-light</p>
+        </div>
+        <div class="inverse" style="background-color: #008566">
+            <h3>Digital Green</h3>
+            <p>#008566</p>
+            <p>$su-color-digital-green</p><br>
             <p>Used for accent over dark backgrounds</p>
+        </div>
+        <div class="variant inverse" style="background-color: #1aecba;">
+            <p>#1aecba</p>
+            <p>$su-color-digital-green-light</p>
         </div>
     </div>
 </section>
