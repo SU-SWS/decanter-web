@@ -344,7 +344,7 @@ Although our primary palette should drive most materials, in certain instances o
             <h3>Digital Red</h3>
             <p>#b1040e</p>
             <p>$su-color-digital-red</p><br>
-            <p>Used for links over light backgrounds</p>
+            <p>Used for links over light backgrounds, the dark version for link hover/focus states, and the light version for links over dark backgrounds.</p>
         </div>
         <div class="variant inverse" style="background-color: #e50808;">
             <p>#e50808</p>
@@ -360,7 +360,7 @@ Although our primary palette should drive most materials, in certain instances o
             <h3>Digital Blue</h3>
             <p>#006cb8</p>
             <p>$su-color-bright-blue</p><br>
-            <p>Used for links hover state over light backgrounds</p>
+            <p>Used for links over light backgrounds, the dark version for link hover/focus states, and the light version for links over dark backgrounds. Do not use these shades of blue in contexts other than links.</p>
         </div>
         <div class="variant inverse" style="background-color: #6fc3ff;">
             <p>#6fc3ff</p>
@@ -376,7 +376,7 @@ Although our primary palette should drive most materials, in certain instances o
             <h3>Digital Green</h3>
             <p>#008566</p>
             <p>$su-color-digital-green</p><br>
-            <p>Used for accent over dark backgrounds</p>
+            <p>Used for things such as form validation, the dark version for link hover/focus states, and the light version for links over dark backgrounds.</p>
         </div>
         <div class="variant inverse" style="background-color: #1aecba;">
             <p>#1aecba</p>
