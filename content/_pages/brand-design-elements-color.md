@@ -4,6 +4,34 @@ date: 2019-11-28T14:11:13.000Z
 ---
 <p class="su-intro-text">Below are the colors that are approved by Stanford University Communications for use on the web. All colors are available as variables in Decanter prefixed by <code>su-</code>. Some colors come with tints and shades to achieve functional contrast.</p>
 
+**Important Note:** the following colors have been depreciated.
+
+* `$su-color-digital-blue-dark` replaces `$su-color-blue` as the new variable
+* `$su-color-digital-blue` replaces `$su-color-bright-blue` as the new variable
+* `$su-color-digital-red` replaces `$su-color-bright-red `as the new variable
+* `$su-color-archway-dark` replaces `$su-color-chocolate` as the new variable
+* `$su-color-foggy` replaces `$su-color-cloud` as the new variable
+* $`su-color-cardinal-red-dark` replaces `$su-color-dark-red` as the new variable
+* `$su-color-digital-red-light` replaces `$su-color-vivid-red` as the new variable
+* `$su-color-foggy-dark` replaces `$su-color-driftwood` as the new variable
+* `$su-color-foggy-light` replaces `$su-color-fog` as the new variable
+* `$su-color-brown` will be removed in Decanter v7
+* `$su-color-clay` will be removed in Decanter v7
+* `$su-color-gold` will be removed in Decanter v7
+* `$su-color-light-sage` will be removed in Decanter v7
+* `$su-color-mint` will be removed in Decanter v7
+* `$su-color-purple` will be removed in Decanter v7
+* `$su-color-redwood` will be removed in Decanter v7
+* `$su-color-sandhill` will be removed in Decanter v7
+* `$su-color-sandstone` will be removed in Decanter v7
+* `$su-color-light-sandstone` will be removed in Decanter v7
+* `$su-color-sun` will be removed in Decanter v7
+* `$su-color-teal` will be removed in Decanter v7
+* `$su-color-warm-grey` will be removed in Decanter v7
+* `$su-color-cool-grey-75 `will be removed in Decanter v7
+
+
+
 ## Primary Colors
 
 Our primary palette consists of Cardinal Red, White, Black and Cool Grey. Our designs lean heavily on these colors, mixing in the secondary and accent palettes to build color schemes that are complementary and balanced.
@@ -104,95 +132,11 @@ Our primary palette consists of Cardinal Red, White, Black and Cool Grey. Our de
     </div>
 </section>
 
-## Secondary Colors
-
-The secondary color set provides a broader range of tonal expression to the four primary colors. Be sure to use these as supporting colors rather than the main driving colors in layout and materials.
-
-<section class="color-palette">
-    <div class="color" style="background-color: #820000">
-        <div class="inverse">
-            <h3>Dark Red</h3>
-            <p>#820000</p>
-            <p>$su-color-dark-red</p>
-        </div>
-        <div class="variant inverse" style="background-color: #772A40;">
-            <p>#772A40</p>
-            <p>Coming soon</p>
-        </div>
-    </div>
-    <div class="color" style="background-color: #b1040e">
-        <div class="inverse">
-            <h3>Bright Red</h3>
-            <p>#b1040e</p>
-            <p>$su-color-bright-red</p>
-        </div>
-        <div class="variant inverse" style="background-color: #e64a53;">
-            <p>#e64a53</p>
-            <p>Coming soon</p>
-        </div>        
-    </div>
-    <div class="color">
-        <div style="background-color: #dad7cb">
-            <h3>Cloud</h3>
-            <p>#dad7cb</p>
-            <p>$su-color-cloud</p>
-        </div>
-        <div class="variant" style="background-color: #e3ded4;">
-            <p>#e3ded4</p>
-            <p>Coming soon</p>
-        </div>
-        <div class="variant" style="background-color: rgba(218,215,203,0.5);">
-            <p>rgba(218,215,203,0.5)</p>
-            <p>Coming soon</p>
-        </div>
-        <div class="variant" style="background-color: rgba(218,215,203,0.25);">
-            <p>rgba(218,215,203,0.25)</p>
-            <p>Coming soon</p>
-        </div>        
-    </div>
-    <div class="color">
-        <div style="background-color: #b6b1a9">
-            <h3>Driftwood</h3>
-            <p>#b6b1a9</p>
-            <p>$su-color-driftwood</p>
-        </div>
-        <div class="variant" style="background-color: #cac6bf;">
-            <p>#cac6bf</p>
-            <p>Coming soon</p>
-        </div>
-        <div class="variant" style="background-color: rgba(182,177,169,0.5);">
-            <p>rgba(182,177,169,0.5)</p>
-            <p>Coming soon</p>
-        </div>
-        <div class="variant" style="background-color: rgba(182,177,169,0.25);">
-            <p>rgba(182,177,169,0.25)</p>
-            <p>Coming soon</p>
-        </div>           
-    </div>
-    <div class="color">
-        <div class="inverse" style="background-color: #544948">
-            <h3>Stone</h3>
-            <p>#544948</p>
-            <p>$su-color-stone</p>
-        </div>
-        <div class="variant" style="background-color: #a69f99;">
-            <p>#a69f99</p>
-            <p>Coming soon</p>
-        </div>
-        <div class="variant" style="background-color: rgba(146,139,129,0.5);">
-            <p>rgba(146,139,129,0.5)</p>
-            <p>Coming soon</p>
-        </div>
-        <div class="variant" style="background-color: rgba(146,139,129,0.25);">
-            <p>rgba(146,139,129,0.25)</p>
-            <p>Coming soon</p>
-        </div>           
-    </div>    
-</section>
-
 ## Accent Colors
 
-Although our primary palette should drive most materials, in certain instances other colors can be added. For those circumstances, we have developed this accent palette. These colors are intended to compliment our Stanford primary colors. They should not become the predominant color for a school, center, institute or department.
+Although our primary palette should drive most Stanford communications materials, other colors can be added as appropriate. For those circumstances, we have developed this accent palette. These colors are intended to compliment our Stanford primary colors.
+
+They should not become the predominant colors for a school, center, institute or department, but can be used as is or as inspiration for a custom secondary palette.
 
 <section class="color-palette">
     <div class="color">
@@ -374,7 +318,37 @@ Although our primary palette should drive most materials, in certain instances o
             <p>#766253</p>
             <p>$su-color-archway-light</p>
         </div>      
-    </div>  
+    </div>
+    <div class="color">
+        <div class="variant" style="background-color: #544948;">
+            <p>#544948</p>
+            <p>$su-color-stone-dark</p>
+        </div>
+        <div class="inverse" style="background-color: #544948">
+            <h3>Stone</h3>
+            <p>#544948</p>
+            <p>$su-color-stone</p>
+        </div>
+        <div class="variant" style="background-color: #d4d1d1;">
+            <p>#d4d1d1</p>
+            <p>$su-color-stone-light</p>
+        </div>       
+    </div>
+    <div class="color">
+        <div class="variant" style="background-color: #b6b1a9;">
+            <p>#b6b1a9</p>
+            <p>$su-color-foggy-dark</p>
+        </div>
+        <div class="inverse" style="background-color: #dad7cb">
+            <h3>Fog</h3>
+            <p>#dad7cb</p>
+            <p>$su-color-foggy</p>
+        </div>
+        <div class="variant" style="background-color: #f4f4f4;">
+            <p>#f4f4f4</p>
+            <p>$su-color-foggy-light</p>
+        </div>       
+    </div>
 </section>
 
 ## Web Interactive Colors
