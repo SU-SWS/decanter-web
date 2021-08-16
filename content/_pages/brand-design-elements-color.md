@@ -159,16 +159,16 @@ They should not become the predominant colors for a school, center, institute or
         </div>      
     </div>
     <div class="color">
-        <div class="variant inverse" style="background-color: #417865;">
+        <div class="inverse" style="background-color: #417865;">
             <p>#417865</p>
             <p>$su-color-bay-dark</p>
         </div>
-        <div class="inverse" style="background-color: #6fa287">
+        <div style="background-color: #6fa287">
             <h3>Bay</h3>
             <p>#6fa287</p>
             <p>$su-color-bay</p>
         </div>
-        <div class="variant inverse" style="background-color: #8ab8a7;">
+        <div style="background-color: #8ab8a7;">
             <p>#8ab8a7</p>
             <p>$su-color-bay-light</p>
         </div>      
@@ -178,12 +178,12 @@ They should not become the predominant colors for a school, center, institute or
             <p>#016895</p>
             <p>$su-color-sky-dark</p>
         </div>
-        <div class="inverse" style="background-color: #4298b5">
+        <div style="background-color: #4298b5">
             <h3>Sky</h3>
             <p>#4298b5</p>
             <p>$su-color-sky</p>
         </div>
-        <div class="variant inverse" style="background-color: #67afd2;">
+        <div style="background-color: #67afd2;">
             <p>#67afd2</p>
             <p>$su-color-sky-light</p>
         </div>      
@@ -198,7 +198,7 @@ They should not become the predominant colors for a school, center, institute or
             <p>#007c92</p>
             <p>$su-color-lagunita</p>
         </div>
-        <div class="variant inverse" style="background-color: #009ab4;">
+        <div style="background-color: #009ab4;">
             <p>#009ab4</p>
             <p>$su-color-lagunita-light</p>
         </div>      
