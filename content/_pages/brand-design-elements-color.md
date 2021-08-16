@@ -53,7 +53,7 @@ Our primary palette consists of Cardinal Red, White, Black and Cool Grey. Our de
             <p>#000</p>
             <p>$su-color-black-true</p>
         </div>
-        <div class="inverse" style="background-color: #2e2d29;">
+        <div class="inverse variant" style="background-color: #2e2d29;">
             <h3>100% Black</h3>
             <p>#2e2d29</p>
             <p>$su-color-black</p>
