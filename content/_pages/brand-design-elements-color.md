@@ -73,32 +73,32 @@ Our primary palette consists of Cardinal Red, White, Black and Cool Grey. Our de
             <p>#6d6c69</p>
             <p>$su-color-black-70</p>
         </div>
-        <div class="inverse" style="background-color: #767674;">
+        <div style="background-color: #767674;">
             <h3>60% Black</h3>
             <p>#767674</p>
             <p>$su-color-black-60</p>
         </div>
-        <div class="inverse" style="background-color: #979694;">
+        <div style="background-color: #979694;">
             <h3>50% Black</h3>
             <p>#979694</p>
             <p>$su-color-black-50</p>
         </div>
-        <div class="inverse" style="background-color: #ababa9;">
+        <div style="background-color: #ababa9;">
             <h3>40% Black</h3>
             <p>#ababa9</p>
             <p>$su-color-black-40</p>
         </div>
-        <div class="inverse" style="background-color: #c0c0bf;">
+        <div style="background-color: #c0c0bf;">
             <h3>30% Black</h3>
             <p>#c0c0bf</p>
             <p>$su-color-black-30</p>
         </div>
-        <div class="inverse" style="background-color: #d5d5d4;">
+        <div style="background-color: #d5d5d4;">
             <h3>20% Black</h3>
             <p>#d5d5d4</p>
             <p>$su-color-black-20</p>
         </div>
-        <div class="inverse" style="background-color: #eaeaea;">
+        <div style="background-color: #eaeaea;">
             <h3>10% Black</h3>
             <p>#eaeaea</p>
             <p>$su-color-black-10</p>
