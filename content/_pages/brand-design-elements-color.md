@@ -376,7 +376,7 @@ Use **digital green** for things such as form validation, the dark version for l
             <p>#008566</p>
             <p>$su-color-digital-green</p>
         </div>
-        <div class="variant inverse" style="background-color: #1aecba;">
+        <div style="background-color: #1aecba;">
             <p>#1aecba</p>
             <p>$su-color-digital-green-light</p>
         </div>
