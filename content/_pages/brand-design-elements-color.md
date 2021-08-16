@@ -133,27 +133,27 @@ They should not become the predominant colors for a school, center, institute or
             <p>#017e7c</p>
             <p>$su-color-palo-verde-dark</p>
         </div>
-        <div class="inverse" style="background-color: #279989">
+        <div style="background-color: #279989">
             <h3>Palo Verde</h3>
             <p>#279989</p>
             <p>$su-color-palo-verde</p>
         </div>
-        <div class="variant inverse" style="background-color: #59b3a9;">
+        <div style="background-color: #59b3a9;">
             <p>#59b3a9</p>
             <p>$su-color-palo-verde-light</p>
         </div>      
     </div>
     <div class="color">
-        <div class="variant inverse" style="background-color: #7a863b;">
+        <div class="inverse" style="background-color: #7a863b;">
             <p>#7a863b</p>
             <p>$su-color-olive-dark</p>
         </div>
-        <div class="inverse" style="background-color: #8f993e">
+        <div style="background-color: #8f993e">
             <h3>Olive</h3>
             <p>#8f993e</p>
             <p>$su-color-olive</p>
         </div>
-        <div class="variant inverse" style="background-color: #a6b168;">
+        <div style="background-color: #a6b168;">
             <p>#a6b168</p>
             <p>$su-color-olive-light</p>
         </div>      
