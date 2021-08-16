@@ -390,28 +390,28 @@ Use **digital green** for things such as form validation, the dark version for l
 A SCSS map <code>$su-core-colors</code> is available for core Decanter colors.
 
 ```scss
- $su-core-colors: (
-   brand:                        $su-color-cardinal-red,
-   brand--bright:                $su-color-bright-red,
-   brand--dark:                  $su-color-dark-red,
- 
-   bg:                           $su-color-white,
-   bg--reverse:                  $su-color-black,
- 
-   text:                         $su-color-black,
-   text--high-contrast:          #000,
-   text--reverse:                $su-color-white,
- 
-   link:                         $su-color-bright-blue,
-   link--hover:                  $su-color-black,
-   link--alt:                    $su-color-bright-red,
-   link--alt-hover:              $su-color-black,
-   link--reverse:                $su-color-white,
-   link--reverse-hover:          $su-color-vivid-red,
- ) !default;
-```
+$su-core-colors: (
+  brand:                        $su-color-cardinal-red,
+  brand--bright:                $su-color-digital-red,
+  brand--dark:                  $su-color-digital-red-dark,
 
-#### How to Use
+  bg:                           $su-color-white,
+  bg--reverse:                  $su-color-black,
+
+  text:                         $su-color-black,
+  text--high-contrast:          $su-color-black-true,
+  text--reverse:                $su-color-white,
+
+  link:                         $su-color-digital-blue,
+  link--hover:                  $su-color-black,
+  link--alt:                    $su-color-digital-red,
+  link--alt-hover:              $su-color-black,
+  link--reverse:                $su-color-white,
+  link--reverse-hover:          $su-color-digital-red-light,
+
+  card-border:                  #e3e3e3,
+) !default;
+```
 
 ## Accessibility
 
