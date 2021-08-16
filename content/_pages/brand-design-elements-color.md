@@ -138,13 +138,13 @@ They should not become the predominant colors for a school, center, institute or
             <p>#279989</p>
             <p>$su-color-palo-verde</p>
         </div>
-        <div style="background-color: #59b3a9;">
+        <div class="variant" style="background-color: #59b3a9;">
             <p>#59b3a9</p>
             <p>$su-color-palo-verde-light</p>
         </div>      
     </div>
     <div class="color">
-        <div class="inverse" style="background-color: #7a863b;">
+        <div class="inverse variant" style="background-color: #7a863b;">
             <p>#7a863b</p>
             <p>$su-color-olive-dark</p>
         </div>
@@ -153,13 +153,13 @@ They should not become the predominant colors for a school, center, institute or
             <p>#8f993e</p>
             <p>$su-color-olive</p>
         </div>
-        <div style="background-color: #a6b168;">
+        <div class="variant" style="background-color: #a6b168;">
             <p>#a6b168</p>
             <p>$su-color-olive-light</p>
         </div>      
     </div>
     <div class="color">
-        <div class="inverse" style="background-color: #417865;">
+        <div class="inverse variant" style="background-color: #417865;">
             <p>#417865</p>
             <p>$su-color-bay-dark</p>
         </div>
@@ -168,7 +168,7 @@ They should not become the predominant colors for a school, center, institute or
             <p>#6fa287</p>
             <p>$su-color-bay</p>
         </div>
-        <div style="background-color: #8ab8a7;">
+        <div class="variant" style="background-color: #8ab8a7;">
             <p>#8ab8a7</p>
             <p>$su-color-bay-light</p>
         </div>      
@@ -183,7 +183,7 @@ They should not become the predominant colors for a school, center, institute or
             <p>#4298b5</p>
             <p>$su-color-sky</p>
         </div>
-        <div style="background-color: #67afd2;">
+        <div class="variant" style="background-color: #67afd2;">
             <p>#67afd2</p>
             <p>$su-color-sky-light</p>
         </div>      
@@ -198,13 +198,13 @@ They should not become the predominant colors for a school, center, institute or
             <p>#007c92</p>
             <p>$su-color-lagunita</p>
         </div>
-        <div style="background-color: #009ab4;">
+        <div class="variant" style="background-color: #009ab4;">
             <p>#009ab4</p>
             <p>$su-color-lagunita-light</p>
         </div>      
     </div>
     <div class="color">
-        <div style="background-color: #d48029;">
+        <div class="variant" style="background-color: #d48029;">
             <p>#d48029</p>
             <p>$su-color-poppy-dark</p>
         </div>      
@@ -213,13 +213,13 @@ They should not become the predominant colors for a school, center, institute or
             <p>#e98300</p>
             <p>$su-color-poppy</p>
         </div>
-        <div style="background-color: #f9a44a;">
+        <div class="variant" style="background-color: #f9a44a;">
             <p>#f9a44a</p>
             <p>$su-color-poppy-light</p>
         </div>
     </div>
     <div class="color">
-        <div class="inverse" style="background-color: #c74632;">
+        <div class="inverse variant" style="background-color: #c74632;">
             <p>#c74632</p>
             <p>$su-color-spirited-dark</p>
         </div>      
@@ -228,13 +228,13 @@ They should not become the predominant colors for a school, center, institute or
             <p>#e04f39</p>
             <p>$su-color-spirited</p>
         </div>
-        <div style="background-color: #f4795b;">
+        <div class="variant" style="background-color: #f4795b;">
             <p>#f4795b</p>
             <p>$su-color-spirited-light</p>
         </div>
     </div>
     <div class="color">
-        <div style="background-color: #fec51d;">
+        <div class="variant" style="background-color: #fec51d;">
             <p>#fec51d</p>
             <p>$su-color-illuminating-dark</p>
         </div>      
@@ -243,7 +243,7 @@ They should not become the predominant colors for a school, center, institute or
             <p>#fedd5c</p>
             <p>$su-color-illuminating</p>
         </div>
-        <div style="background-color: #ffe781;">
+        <div class="variant" style="background-color: #ffe781;">
             <p>#ffe781</p>
             <p>$su-color-illuminating-light</p>
         </div>
@@ -294,7 +294,7 @@ They should not become the predominant colors for a school, center, institute or
         </div>      
     </div>
     <div class="color">
-        <div class="inverse" style="background-color: #544948;">
+        <div class="variant inverse" style="background-color: #544948;">
             <p>#544948</p>
             <p>$su-color-stone-dark</p>
         </div>
@@ -303,7 +303,7 @@ They should not become the predominant colors for a school, center, institute or
             <p>#7f7776</p>
             <p>$su-color-stone</p>
         </div>
-        <div style="background-color: #d4d1d1;">
+        <div class="variant" style="background-color: #d4d1d1;">
             <p>#d4d1d1</p>
             <p>$su-color-stone-light</p>
         </div>       
@@ -376,7 +376,7 @@ Use **digital green** for things such as form validation, the dark version for l
             <p>#008566</p>
             <p>$su-color-digital-green</p>
         </div>
-        <div style="background-color: #1aecba;">
+        <div class="variant" style="background-color: #1aecba;">
             <p>#1aecba</p>
             <p>$su-color-digital-green-light</p>
         </div>
