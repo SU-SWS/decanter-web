@@ -298,9 +298,9 @@ They should not become the predominant colors for a school, center, institute or
             <p>#544948</p>
             <p>$su-color-stone-dark</p>
         </div>
-        <div style="background-color: #544948">
+        <div style="background-color: #7f7776">
             <h3>Stone</h3>
-            <p>#544948</p>
+            <p>#7f7776</p>
             <p>$su-color-stone</p>
         </div>
         <div style="background-color: #d4d1d1;">
