@@ -58,47 +58,47 @@ Our primary palette consists of Cardinal Red, White, Black and Cool Grey. Our de
             <p>#2e2d29</p>
             <p>$su-color-black</p>
         </div>
-        <div class="inverse" style="background-color: #43423e;">
+        <div class="inverse variant" style="background-color: #43423e;">
             <h3>90% Black</h3>
             <p>#43423e</p>
             <p>$su-color-black-90</p>
         </div>
-        <div class="inverse" style="background-color: #585754;">
+        <div class="inverse variant" style="background-color: #585754;">
             <h3>80% Black</h3>
             <p>#585754</p>
             <p>$su-color-black-80</p>
         </div>
-        <div class="inverse" style="background-color: #6d6c69;">
+        <div class="inverse variant" style="background-color: #6d6c69;">
             <h3>70% Black</h3>
             <p>#6d6c69</p>
             <p>$su-color-black-70</p>
         </div>
-        <div style="background-color: #767674;">
+        <div class="variant" style="background-color: #767674;">
             <h3>60% Black</h3>
             <p>#767674</p>
             <p>$su-color-black-60</p>
         </div>
-        <div style="background-color: #979694;">
+        <div class="variant" style="background-color: #979694;">
             <h3>50% Black</h3>
             <p>#979694</p>
             <p>$su-color-black-50</p>
         </div>
-        <div style="background-color: #ababa9;">
+        <div class="variant" style="background-color: #ababa9;">
             <h3>40% Black</h3>
             <p>#ababa9</p>
             <p>$su-color-black-40</p>
         </div>
-        <div style="background-color: #c0c0bf;">
+        <div class="variant" style="background-color: #c0c0bf;">
             <h3>30% Black</h3>
             <p>#c0c0bf</p>
             <p>$su-color-black-30</p>
         </div>
-        <div style="background-color: #d5d5d4;">
+        <div class="variant" style="background-color: #d5d5d4;">
             <h3>20% Black</h3>
             <p>#d5d5d4</p>
             <p>$su-color-black-20</p>
         </div>
-        <div style="background-color: #eaeaea;">
+        <div class="variant" style="background-color: #eaeaea;">
             <h3>10% Black</h3>
             <p>#eaeaea</p>
             <p>$su-color-black-10</p>
