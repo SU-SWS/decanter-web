@@ -430,7 +430,7 @@ All Stanford Websites and web‐based applications are required to be accessible
 * `$su-color-digital-red` replaces `$su-color-bright-red`as the new variable
 * `$su-color-archway-dark` replaces `$su-color-chocolate` as the new variable
 * `$su-color-foggy` replaces `$su-color-cloud` as the new variable
-* $`su-color-cardinal-red-dark` replaces `$su-color-dark-red` as the new variable
+* `$su-color-cardinal-red-dark` replaces `$su-color-dark-red` as the new variable
 * `$su-color-digital-red-light` replaces `$su-color-vivid-red` as the new variable
 * `$su-color-foggy-dark` replaces `$su-color-driftwood` as the new variable
 * `$su-color-foggy-light` replaces `$su-color-fog` as the new variable
