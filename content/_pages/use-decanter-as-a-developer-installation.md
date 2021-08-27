@@ -63,7 +63,6 @@ _example.html_
 
 ## I'm using Grunt
 
-
 We use the "~" convention when importing references from npm dependencies. You will need to make sure you have your \`includePaths\` option set to point to the node_modules directory and you will need the [grunt-sass-tilde-importer](https://www.npmjs.com/package/grunt-sass-tilde-importer) plugin. 
 
 **Example Repository**: <https://github.com/SU-SWS/decanter-grunt-example/>
@@ -186,6 +185,14 @@ If you are using Drupal 8+ and would like to have Decanter in your project you c
 
 Redwood theme coming soon...
 
-## I'm using React, or Angular, or Vue.js
+## I'm using React
 
-First off, very cool, secondly, things can get complicated. This package is currently not ideal for a CSS-In-JS type approach as it uses SASS with BEM for the styles. That said, this site is built with React on NextJS and we were able to quickly copy over some of the html and CSS into React components and it worked beautifully. We would love to hear about your use case and examples.
+Great! So are we!
+
+[Check out Decanter React.](https://github.com/SU-SWS/decanter-react/) 
+
+[Check out Decanter React in Storybook.](https://decanter-react.netlify.app/)
+
+## I'm using something else
+
+Very cool! We would love to hear about your use case and examples. [Drop us a note!](mailto:decanter-discuss@lists.stanford.edu)
