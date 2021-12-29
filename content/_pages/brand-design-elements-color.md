@@ -4,7 +4,7 @@ date: 2019-11-28T14:11:13.000Z
 ---
 <p class="su-intro-text">Below are the colors that are approved by Stanford University Communications for use on the web. All colors are available as variables in Decanter prefixed by <code>su-</code>. Some colors come with tints and shades to achieve functional contrast.</p>
 
-**Important Notice:**  colors have been depreciated. The full list can be viewed at the [end of this page](#depreciated-colors).
+**Important Notice:**  colors have been deprecated. The full list can be viewed at the [end of this page](#depreciated-colors).
 
 ## Primary Colors
 
@@ -419,11 +419,13 @@ Color is often used in web design for grouping related items, denoting required 
 
 All Stanford Websites and web‐based applications are required to be accessible to its students, faculty, staff and participants in the University’s programs and activities who have disabilities by conforming to WCAG 2.0 Level AA.
 
-<a href="https://soap.stanford.edu/tips-and-tools/tips/color" class="su-link--action">Learn more about colors and accessibility on the Stanford Online Accessibility Program site</a>
+If in doubt, you can check the color contrast of colors in Stanford's palette by using the [Stanford Color Contrast Chart tool](https://uit.stanford.edu/accessibility/concepts/color/checker).
+
+<a href="https://uit.stanford.edu/accessibility/concepts/color" class="su-link--action">Learn more about colors and accessibility on the Stanford Office of Digital Accessibility (SODA) site</a> 
 
 <a name="depreciated-colors"></a>
 
-## Depreciated Colors:
+## Deprecated Colors:
 
 * `$su-color-digital-blue-dark` replaces `$su-color-blue` as the new variable
 * `$su-color-digital-blue` replaces `$su-color-bright-blue` as the new variable
