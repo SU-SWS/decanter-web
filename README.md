@@ -1,57 +1,54 @@
-# [Decanter Website](https://github.com/SU-SWS/decanter-website)
-##### Version: 1.0.0
+<p align="center">
+  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby minimal TypeScript starter
+</h1>
 
-Changelog: [CHANGELOG.md](CHANGELOG.md)
+## 🚀 Quick start
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/5ad9555da4ffa2086204/maintainability)](https://codeclimate.com/github/SU-SWS/decanter/maintainability)
+1.  **Create a Gatsby site.**
 
-Demo
----
+    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
 
-To see a live demo of Decanter please [view the styleguide.](https://decanter.stanford.edu)
+    ```shell
+    # create a new Gatsby site using the minimal TypeScript starter
+    npm init gatsby
+    ```
 
-Description
----
+2.  **Start developing.**
 
-Decanter is a web design and development system for Stanford University.
-It includes a responsive layout system and a browsable collection of design patterns
-that can be used in any Stanford project.
+    Navigate into your new site’s directory and start it up.
 
-Accessibility
----
-[![WCAG Conformance 2.0 AA Badge](https://www.w3.org/WAI/wcag2AA-blue.png)](https://www.w3.org/TR/WCAG20/)
+    ```shell
+    cd my-gatsby-site/
+    npm run develop
+    ```
 
-Evaluation Date: 201X-XX-XX
-This project conforms to level AA WCAG 2.0 standards as required by the university's accessibility policy. For more information on the policy please visit: [https://ucomm.stanford.edu/policies/accessibility-policy.html](https://ucomm.stanford.edu/policies/accessibility-policy.html).
+3.  **Open the code and start customizing!**
 
-Installation and Configuration
----
-### Local Setup
-```
-git clone https://github.com/SU-SWS/decanter-web.git
-cd decanter-web
-nvm use         # Node Version Manager is used for version control
-npm install     # Install node_modules dependencies
-```
+    Your site is now running at http://localhost:8000!
 
-### Build Command(s)
-```
-npm run build   # Builds all the things
-npm run dev     # Starts development server at http://localhost:3000/
-```
+    Edit `src/pages/index.tsx` to see your site update in real-time!
 
-### Symlink local Decanter project
-Use [npm-link](https://docs.npmjs.com/cli/link) to symlink a package folder.
+4.  **Learn more**
 
-1. Clone [Decanter](https://github.com/SU-SWS/decanter) to your local.
-2. Navigate to the Decanter dependency folder within the Decanter-web directory:\
-``
-cd decanter-web/node_modules/decanter
-``
-3. Within that directory, run the following command:\
-``
-npm link /path/to/my/local-decanter-project
-``
-\
-\
-Your decanter-web project should now be linked to your local decanter project.
+    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+
+    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+
+    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+
+    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+
+    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+
+    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+
+## 🚀 Quick start (Gatsby Cloud)
+
+Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+
+[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
