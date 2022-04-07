@@ -2,9 +2,18 @@ import type { GatsbyConfig } from "gatsby"
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Decanter v7 Site`,
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `content`,
+      }
+    },
+    "gatsby-plugin-mdx"
+  ],
 }
 
 export default config
