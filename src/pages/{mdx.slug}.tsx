@@ -4,12 +4,19 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 const BlogPost = ({ data }) => {
   return (
-    <main>
-      <h1>{data.mdx.frontmatter.title}</h1>
-      <MDXRenderer>
-        {data.mdx.body}
-      </MDXRenderer>
-    </main>
+    <>
+      <div class="su-cc su-identity-bar su-pt-5 su-pb-1 su-bg-cardinal-red">
+        <a class="su-logo su-text-white hocus:su-text-white su-text-20 su-leading-none" href="https://www.stanford.edu">
+          Stanford University
+        </a>
+      </div>
+      <main>
+        <h1>{data.mdx.frontmatter.title}</h1>
+        <MDXRenderer>
+          {data.mdx.body}
+        </MDXRenderer>
+      </main>
+    </>
   )
 }
 

@@ -12,7 +12,8 @@ const config: GatsbyConfig = {
         path: `content`,
       }
     },
-    "gatsby-plugin-mdx"
+    `gatsby-plugin-mdx`,
+    `gatsby-plugin-postcss`,
   ],
 }
 

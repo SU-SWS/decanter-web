@@ -19,7 +19,10 @@
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "gatsby": "^4.11.1",
+    "gatsby-link": "^4.11.1",
     "gatsby-plugin-mdx": "^3.11.1",
+    "gatsby-plugin-postcss": "^5.11.0",
+    "gatsby-react-router-scroll": "^5.11.0",
     "gatsby-source-filesystem": "^4.11.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
@@ -28,6 +31,7 @@
     "@types/node": "^17.0.23",
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.14",
+    "decanter": "github:su-sws/decanter#ADAPT-4155-alt",
     "typescript": "^4.6.3"
   }
 }
