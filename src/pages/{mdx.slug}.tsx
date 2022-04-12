@@ -5,8 +5,8 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 const BlogPost = ({ data }) => {
   return (
     <>
-      <div class="su-cc su-identity-bar su-pt-5 su-pb-1 su-bg-cardinal-red">
-        <a class="su-logo su-text-white hocus:su-text-white su-text-20 su-leading-none" href="https://www.stanford.edu">
+      <div className="su-cc su-identity-bar su-pt-5 su-pb-1 su-bg-cardinal-red">
+        <a className="su-logo su-text-white hocus:su-text-white su-text-20 su-leading-none" href="https://www.stanford.edu">
           Stanford University
         </a>
       </div>
