@@ -18,16 +18,30 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "cnbuilder": "^3.1.0",
     "gatsby": "^4.11.1",
+    "gatsby-link": "^4.11.1",
     "gatsby-plugin-mdx": "^3.11.1",
+    "gatsby-plugin-postcss": "^5.12.1",
+    "gatsby-react-router-scroll": "^5.11.0",
     "gatsby-source-filesystem": "^4.11.1",
+    "postcss": "^8.4.12",
+    "prop-types": "^15.8.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "tailwindcss": "^2.2.15",
+    "tailwindcss-children": "^2.1.0",
+    "tailwindcss-interaction-variants": "^5.0.0",
+    "@heroicons/react": "^1.0.4",
+    "glob": "^7.1.7"
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.14",
-    "typescript": "^4.6.3"
+    "decanter": "^7.0.0-beta.2",
+    "typescript": "^4.6.3",
+    "@tailwindcss/aspect-ratio": "^0.3.0",
+    "@tailwindcss/forms": "^0.3.3"
   }
 }
