@@ -181,9 +181,9 @@ If you are using Drupal 8+ and would like to have Decanter in your project you c
 
 * [Jumpstart UI](https://github.com/su-sws/jumpstart_ui/)
 
-## I'm using Wordpress
+## I'm using WordPress
 
-Redwood theme coming soon...
+* [Stanford Redwood theme](http://goto.stanford.edu/redwood-wp-theme)
 
 ## I'm using React
 
