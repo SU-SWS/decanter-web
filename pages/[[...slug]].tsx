@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { allPages, Page } from '../.contentlayer/generated';
 import { useMDXComponent } from 'next-contentlayer/hooks'
+import Layout from 'components/layout';
 import { Counter } from '../components/counter';
 
 export async function getStaticProps({ params: { slug = [] } }) {
@@ -24,7 +25,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
   const MdxBody = useMDXComponent(page.body.code);
 
   return (
-    <div>
+    <Layout>
       <Head>
         <title>{page.title}</title>
         <link rel="icon" href="/favicon.ico" />
@@ -47,7 +48,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
           ))}
         </ul>
       </aside>
-    </div>
+    </Layout>
   )
 }
 

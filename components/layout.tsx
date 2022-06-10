@@ -38,7 +38,7 @@ export default function Layout({
       </header>
       <main>{children}</main>
       {!home && (
-        <div>
+        <div className='su-pt-10'>
           <Link href="/">
             <a>← Back to home</a>
           </Link>
