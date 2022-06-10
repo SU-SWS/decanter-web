@@ -24,6 +24,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".contentlayer/generated"
-  ],
+, "components/hooks/useActivePath.jsx"  ],
   "exclude": ["node_modules"]
 }

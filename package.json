@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "cnbuilder": "^3.1.0",
     "contentlayer": "^0.2.5",
     "date-fns": "^2.28.0",
     "decanter": "7.0.0-rc.0",

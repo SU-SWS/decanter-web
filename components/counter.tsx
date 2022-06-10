@@ -8,6 +8,6 @@ export function Counter() {
   }
   
   return (
-    <button onClick={handleClick}>Clicked {count} times!</button>
+    <button className="su-button" onClick={handleClick}>Clicked {count} times!</button>
   );
 }
