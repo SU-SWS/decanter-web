@@ -1,14 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-// import { allPages, Page } from 'contentlayer/generated';
 import { allPages, Page } from '../.contentlayer/generated';
 import { useMDXComponent } from 'next-contentlayer/hooks'
 import { Counter } from '../components/counter';
 
 export async function getStaticProps({ params: { slug = [] } }) {
   const pagePath = '/' + slug.join('/');
-
-  // TODO get list of path + title for sidebar
 
   return {
     props: {
@@ -34,7 +31,13 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
       </Head>
 
       <main>
-        <MdxBody components={{ Counter }} />
+        <article className="su-max-w-xl su-mx-auto py-8">
+          <div className="su-text-center su-mb-8">
+            <h1>{page.title}</h1>
+            <MdxBody components={{ Counter }} />
+          </div>
+          {/* <div dangerouslySetInnerHTML={{ __html: page.body.html }} /> */}
+      </article>
       </main>
 
       <aside>
