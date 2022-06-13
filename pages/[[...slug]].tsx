@@ -24,7 +24,6 @@ export async function getStaticPaths() {
 
 const Home: NextPage<{ page: Page }> = ({ page }) => {
   const MdxBody = useMDXComponent(page.body.code);
-  console.log(allPages);
 
   return (
     <Container width='full'>
