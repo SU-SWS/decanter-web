@@ -44,14 +44,14 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
       </header>
       <div className='su-grid su-grid-gap su-grid-cols-12 su-cc su-rs-pb-8 su-rs-pt-2'>
         <div className='basic-page-left-sidebar su-col-span-12 lg:su-col-span-4 2xl:su-col-span-3 su-basefont-21 su-relative'>
-          <Container as="aside" className='su-absolute su-top-0 su-left-0 su-sticky'>
+          <Container as="aside" width="full" className='su-absolute su-top-0 su-left-0 su-sticky'>
             {/* <ul>
               {allPages.map((page) => (
                 <a key={page._id} href={`/${page._raw.flattenedPath}`}>{page.title} </a>
               ))}
             </ul> */}
             <Link href='/'>
-              <a className="su-font-bold su-type-5 su-no-underline hocus:su-underline">Decanter V7</a>
+              <a className="su-font-bold su-type-4 xl:su-type-5 su-no-underline hocus:su-underline">Decanter V7</a>
             </Link>
             <nav
               className='su-vertical-nav su-relative'
@@ -87,10 +87,10 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
           </Container>
         </div>
         <div className='basic-page-main-content su-col-span-12 lg:su-col-span-8 2xl:su-col-start-5 su-basefont-23 su-ml-0'>
-          <Container as="main">
-            <Container as="article" className='su-max-w-xl su-mx-auto py-8'>
+          <Container as="main" width="full">
+            <Container as="article" width="full">
               <div className='su-mb-8'>
-                <h1>{page.title}</h1>
+                <h1 className="su-type-4 xl:su-type-5">{page.title}</h1>
                 <MdxBody components={{ Counter }} />
               </div>
               {/* <div dangerouslySetInnerHTML={{ __html: page.body.html }} /> */}
