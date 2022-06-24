@@ -156,7 +156,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
                   </a>
                 </li>
                 <li className="sm:su-mr-10 md:su-mr-20 lg:su-mr-27">
-                  <a href="http://exploredegrees.stanford.edu/nonacademicregulations/nondiscrimination/" title="Non-discrimination policy" className="hover:su-underline focus:su-underline">
+                  <a href="https://studentservices.stanford.edu/more-resources/student-policies/non-academic/non-discrimination" title="Non-discrimination policy" className="hover:su-underline focus:su-underline">
                     Non-Discrimination
                     <span className="su-sr-only">(link is external)</span>
                   </a>
