@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { dcnb } from 'cnbuilder';
 // eslint-disable-next-line import/no-cycle
 import { Group } from './VerticalNav.Group';
-import useActivePath from '../hooks/useActivePath';
+import useActivePath from './useActivePath';
 
 /**
  *
