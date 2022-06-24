@@ -21,7 +21,7 @@ const GlobalFooter = () => (
                    title="Report alleged copyright infringement">Copyright</a></li>
             <li><a href="https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4"
                    title="Ownership and use of Stanford trademarks and images">Trademarks</a></li>
-            <li><a href="http://exploredegrees.stanford.edu/nonacademicregulations/nondiscrimination/"
+            <li><a href="https://studentservices.stanford.edu/more-resources/student-policies/non-academic/non-discrimination"
                    title="Non-discrimination policy">Non-Discrimination</a></li>
             <li><a href="https://www.stanford.edu/site/accessibility"
                    title="Report web accessibility issues">Accessibility</a></li>
