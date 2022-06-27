@@ -1,9 +1,10 @@
+// eslint-disable-next-line import/no-cycle
 import React from 'react';
+import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
 import { dcnb } from 'cnbuilder';
-// eslint-disable-next-line import/no-cycle
 import { Group } from './VerticalNav.Group';
-import useActivePath from '../hooks/useActivePath';
+import useActivePath from './useActivePath';
 
 /**
  *
@@ -46,15 +47,23 @@ export const Item = ({
     className: linkClasses,
   });
 
+  let nestLevels = showNestedLevels || false;
+  const router = useRouter();
+  const path = router.asPath;
+  const groupPath = LinkObj.props.href;
+  if (path === groupPath|| path.includes(groupPath)) {
+    nestLevels = true;
+  }
+
   const inPath = useActivePath(items);
 
   return (
     <li className={dcnb('su-nav-item su-m-0', className)} {...props}>
       {LinkObj}
-      {Array.isArray(items) && (inPath || showNestedLevels) && (
+      {Array.isArray(items) && (inPath || nestLevels) && (
         <Group
           menuTree={items}
-          showNestedLevels={showNestedLevels}
+          showNestedLevels={nestLevels}
           activeClasses={activeClasses}
           className="su-list-none su-pb-15 su-pl-20 children:children:su-py-6 children:children:su-text-20"
         />

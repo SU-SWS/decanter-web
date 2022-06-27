@@ -1,6 +1,6 @@
+// eslint-disable-next-line import/no-cycle
 import React from 'react';
 import PropTypes from 'prop-types';
-// eslint-disable-next-line import/no-cycle
 import { Item } from './VerticalNav.Item';
 
 /**
