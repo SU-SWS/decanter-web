@@ -123,7 +123,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
             <Link href='/'>
               <a className="su-font-bold su-type-4 xl:su-type-5 su-no-underline hocus:su-underline">Decanter V7</a>
             </Link>
-            <VerticalNav menu={menuTree} className="" activeClasses="" showNestedLevels />
+            <VerticalNav menu={menuTree} className="" activeClasses="" showNestedLevels={false} />
           </Container>
         </div>
         <div className='basic-page-main-content su-col-span-12 lg:su-col-span-8 2xl:su-col-start-5 su-basefont-23 su-ml-0'>
