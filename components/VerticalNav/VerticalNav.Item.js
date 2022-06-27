@@ -47,9 +47,11 @@ export const Item = ({
     className: linkClasses,
   });
 
-  const router = useRouter();
   let nestLevels = showNestedLevels || false;
-  if (router.asPath === LinkObj.props.href) {
+  const router = useRouter();
+  const path = router.asPath;
+  const groupPath = LinkObj.props.href;
+  if (path === groupPath|| path.includes(groupPath)) {
     nestLevels = true;
   }
 

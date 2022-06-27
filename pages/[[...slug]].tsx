@@ -60,6 +60,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
   allPages.map((page) => {
     if (page._raw.flattenedPath.includes('about')) {
       about = {
+        id: page._id,
         link: (
           <a href={`/${page._raw.flattenedPath}`}>{page.title}</a>
         )
@@ -68,6 +69,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
     if (page._raw.flattenedPath.includes('for-designers')) {
       forDesigners.children.push(
         {
+          id: page._id,
           link: (
             <a href={`/${page._raw.flattenedPath}`}>{page.title}</a>
           )
@@ -77,6 +79,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
     if (page._raw.flattenedPath.includes('for-developers')) {
       forDevelopers.children.push(
         {
+          id: page._id,
           link: (
             <a href={`/${page._raw.flattenedPath}`}>{page.title}</a>
           )
@@ -86,6 +89,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
     if (page._raw.flattenedPath.includes('examples')) {
       examples.children.push(
         {
+          id: page._id,
           link: (
             <a href={`/${page._raw.flattenedPath}`}>{page.title}</a>
           )
