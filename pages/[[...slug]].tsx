@@ -30,19 +30,19 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
   let about = {};
   let forDesigners: any = {
     link: (
-      <Link href={`/for-designers`}>For Designers</Link>
+      <a href={`/for-designers`}>For Designers</a>
     ),
     children: [],
   }
   let forDevelopers: any = {
     link: (
-      <Link href={`/for-developers`}>For Developers</Link>
+      <a href={`/for-developers`}>For Developers</a>
     ),
     children: [],
   }
   let examples: any = {
     link: (
-      <Link href={`/examples`}>Examples</Link>
+      <a href={`/examples`}>Examples</a>
     ),
     children: [],
   }
@@ -61,7 +61,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
     if (page._raw.flattenedPath.includes('about')) {
       about = {
         link: (
-          <Link href={`/${page._raw.flattenedPath}`}>{page.title}</Link>
+          <a href={`/${page._raw.flattenedPath}`}>{page.title}</a>
         )
       }
     }
@@ -69,7 +69,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
       forDesigners.children.push(
         {
           link: (
-            <Link href={`/${page._raw.flattenedPath}`}>{page.title}</Link>
+            <a href={`/${page._raw.flattenedPath}`}>{page.title}</a>
           )
         }
       )
@@ -78,7 +78,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
       forDevelopers.children.push(
         {
           link: (
-            <Link href={`/${page._raw.flattenedPath}`}>{page.title}</Link>
+            <a href={`/${page._raw.flattenedPath}`}>{page.title}</a>
           )
         }
       )
@@ -87,7 +87,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
       examples.children.push(
         {
           link: (
-            <Link href={`/${page._raw.flattenedPath}`}>{page.title}</Link>
+            <a href={`/${page._raw.flattenedPath}`}>{page.title}</a>
           )
         }
       )
