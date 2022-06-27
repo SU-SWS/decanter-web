@@ -28,19 +28,19 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
 
   let menuTree = [];
   let about = {};
-  let forDesigners = {
+  let forDesigners: any = {
     link: (
       <a key={page._id} href={`/for-designers`}>For Designers</a>
     ),
     children: [],
   }
-  let forDevelopers = {
+  let forDevelopers: any = {
     link: (
       <a key={page._id} href={`/for-developers`}>For Developers</a>
     ),
     children: [],
   }
-  let examples = {
+  let examples: any = {
     link: (
       <a key={page._id} href={`/examples`}>Examples</a>
     ),
