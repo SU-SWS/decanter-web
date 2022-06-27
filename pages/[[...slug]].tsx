@@ -30,19 +30,19 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
   let about = {};
   let forDesigners: any = {
     link: (
-      <a key={page._id} href={`/for-designers`}>For Designers</a>
+      <Link href={`/for-designers`}>For Designers</Link>
     ),
     children: [],
   }
   let forDevelopers: any = {
     link: (
-      <a key={page._id} href={`/for-developers`}>For Developers</a>
+      <Link href={`/for-developers`}>For Developers</Link>
     ),
     children: [],
   }
   let examples: any = {
     link: (
-      <a key={page._id} href={`/examples`}>Examples</a>
+      <Link href={`/examples`}>Examples</Link>
     ),
     children: [],
   }
@@ -61,7 +61,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
     if (page._raw.flattenedPath.includes('about')) {
       about = {
         link: (
-          <a key={page._id} href={`/${page._raw.flattenedPath}`}>{page.title} </a>
+          <Link href={`/${page._raw.flattenedPath}`}>{page.title}</Link>
         )
       }
     }
@@ -69,7 +69,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
       forDesigners.children.push(
         {
           link: (
-            <a key={page._id} href={`/${page._raw.flattenedPath}`}>{page.title} </a>
+            <Link href={`/${page._raw.flattenedPath}`}>{page.title}</Link>
           )
         }
       )
@@ -78,7 +78,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
       forDevelopers.children.push(
         {
           link: (
-            <a key={page._id} href={`/${page._raw.flattenedPath}`}>{page.title} </a>
+            <Link href={`/${page._raw.flattenedPath}`}>{page.title}</Link>
           )
         }
       )
@@ -87,7 +87,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
       examples.children.push(
         {
           link: (
-            <a key={page._id} href={`/${page._raw.flattenedPath}`}>{page.title} </a>
+            <Link href={`/${page._raw.flattenedPath}`}>{page.title}</Link>
           )
         }
       )
