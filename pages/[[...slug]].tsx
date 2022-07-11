@@ -122,22 +122,22 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
         </div>
       </header>
       <div className='su-grid su-grid-cols-12'>
-        <div className='basic-page-left-sidebar su-col-span-12 lg:su-col-span-3 su-basefont-20 su-relative su-bg-black'>
+        <div className='basic-page-left-sidebar su-col-span-12 lg:su-col-span-3 2xl:su-col-span-2 su-basefont-20 su-relative su-bg-black'>
           <Container as="aside" width="full" >
             <Link href='/'>
-              <a className="su-font-bold su-type-3 xl:su-type-3 su-pl-26 su-py-20 su-no-underline su-text-white hocus:su-text-white">Decanter V7</a>
+              <a className="su-font-bold su-type-3 su-pl-26 su-py-30 su-no-underline su-text-white hocus:su-text-white su-inline-block">Decanter V7</a>
             </Link>
             <VerticalNav menu={menuTree} className="" activeClasses="" showNestedLevels={false} />
           </Container>
         </div>
-        <div className='basic-page-main-content su-col-span-12 lg:su-col-span-9 su-basefont-23 su-ml-0'>
+        <div className='basic-page-main-content su-col-span-12 lg:su-col-span-9 2xl:su-col-span-10 su-basefont-23 su-ml-0'>
           <Container as="main" width="full">
             <Container as="article" width="full">
               <div className='su-mb-8'>
                 <h1 className="su-type-4 xl:su-type-5 su-cc 2xl:su-px-80 su-py-30 su-mb-0 su-bg-black-90 su-text-white">{page.title}</h1>
-                <div className='su-cc 2xl:su-px-80 su-pt-50 md:su-pt-58 2xl:su-pt-61 su-pb-114 md:su-pb-126 2xl:su-pb-133'>
+                <Container className='2xl:su-px-80 su-rs-pt-4 su-rs-pb-8'>
                   <MdxBody components={{ Counter }} />
-                </div>
+                </Container>
               </div>
               {/* <div dangerouslySetInnerHTML={{ __html: page.body.html }} /> */}
             </Container>
