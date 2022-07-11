@@ -112,7 +112,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <header>
-        <div className='su-cc su-identity-bar su-pt-5 su-pb-3 su-bg-cardinal-red'>
+        <div className='su-identity-bar su-pt-5 su-pb-3 su-pl-26 su-bg-digital-red'>
           <a
             className='su-logo su-text-white hocus:su-text-white su-text-20 su-leading-none'
             href='https://www.stanford.edu'
@@ -121,21 +121,23 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
           </a>
         </div>
       </header>
-      <div className='su-grid su-grid-gap su-grid-cols-12 su-cc su-rs-pb-8 su-rs-pt-2'>
-        <div className='basic-page-left-sidebar su-col-span-12 lg:su-col-span-4 2xl:su-col-span-3 su-basefont-21 su-relative'>
-          <Container as="aside" width="full" className='su-absolute su-top-0 su-left-0 su-sticky'>
+      <div className='su-grid su-grid-cols-12'>
+        <div className='basic-page-left-sidebar su-col-span-12 lg:su-col-span-3 su-basefont-20 su-relative su-bg-black'>
+          <Container as="aside" width="full" >
             <Link href='/'>
-              <a className="su-font-bold su-type-4 xl:su-type-5 su-no-underline hocus:su-underline">Decanter V7</a>
+              <a className="su-font-bold su-type-3 xl:su-type-3 su-pl-26 su-py-20 su-no-underline su-text-white hocus:su-text-white">Decanter V7</a>
             </Link>
             <VerticalNav menu={menuTree} className="" activeClasses="" showNestedLevels={false} />
           </Container>
         </div>
-        <div className='basic-page-main-content su-col-span-12 lg:su-col-span-8 2xl:su-col-start-5 su-basefont-23 su-ml-0'>
+        <div className='basic-page-main-content su-col-span-12 lg:su-col-span-9 su-basefont-23 su-ml-0'>
           <Container as="main" width="full">
             <Container as="article" width="full">
               <div className='su-mb-8'>
-                <h1 className="su-type-4 xl:su-type-5">{page.title}</h1>
-                <MdxBody components={{ Counter }} />
+                <h1 className="su-type-4 xl:su-type-5 su-cc 2xl:su-px-80 su-py-30 su-mb-0 su-bg-black-90 su-text-white">{page.title}</h1>
+                <div className='su-cc 2xl:su-px-80 su-pt-50 md:su-pt-58 2xl:su-pt-61 su-pb-114 md:su-pb-126 2xl:su-pb-133'>
+                  <MdxBody components={{ Counter }} />
+                </div>
               </div>
               {/* <div dangerouslySetInnerHTML={{ __html: page.body.html }} /> */}
             </Container>

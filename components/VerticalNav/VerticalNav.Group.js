@@ -18,7 +18,7 @@ export const Group = ({
   <ul
     className={
       className ||
-      'su-nav-group su-list-none su-p-0 children:su-border-t children:su-border-solid children:su-border-black-20 children:children:su-text-21'
+      'su-nav-group su-list-none su-p-0 children:su-border-t children:su-border-solid children:su-border-cool-grey children:children:su-text-21 su-absolute su-sticky'
     }
     {...props}
   >

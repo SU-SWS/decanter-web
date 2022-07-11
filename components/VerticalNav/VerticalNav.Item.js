@@ -37,7 +37,7 @@ export const Item = ({
   }
 
   let linkClasses = dcnb(
-    'su-group su-no-underline hocus:su-underline su-border-l-5 su-py-14 su-block su-pl-10 su-transition-all hocus:su-text-digital-blue-dark hocus:su-border-digital-blue-dark',
+    'su-group su-no-underline hocus:su-underline su-border-l-5 su-py-16 su-block su-pl-26 su-pr-48 su-transition-all su-duration-300 su-text-white hocus:su-text-white su-border-transparent hocus:su-border-white',
     activeClass,
     elementClasses
   );
