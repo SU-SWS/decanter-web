@@ -134,7 +134,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
           <Container as="main" width="full">
             <Container as="article" width="full">
               <div className='su-mb-8'>
-                <h1 className="su-type-4 xl:su-type-5 su-cc 2xl:su-px-80 su-py-30 su-mb-0 su-bg-black-90 su-text-white">{page.title}</h1>
+                <h1 className="su-type-3 su-cc 2xl:su-px-80 su-rs-py-3 su-mb-0 su-bg-black-90 su-text-white">{page.title}</h1>
                 <Container className='2xl:su-px-80 su-rs-pt-4 su-rs-pb-8'>
                   <MdxBody components={{ Counter }} />
                 </Container>
