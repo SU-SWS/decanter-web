@@ -1,4 +1,10 @@
 import { defineDocumentType, makeSource } from 'contentlayer/source-files';
+// Remark packages
+import remarkGfm from 'remark-gfm'
+import remarkCodeTitles from './lib/remark-code-title'
+// Rehype packages
+import rehypePrismPlus from 'rehype-prism-plus'
+import rehypePresetMinify from 'rehype-preset-minify'
 
 export const Page = defineDocumentType(() => ({
   name: 'Page',
@@ -27,4 +33,15 @@ export const Page = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: 'content',
   documentTypes: [Page],
+  mdx: {
+    cwd: process.cwd(),
+    remarkPlugins: [
+      remarkGfm,
+      remarkCodeTitles,
+    ],
+    rehypePlugins: [
+      [rehypePrismPlus, { ignoreMissing: true }],
+      rehypePresetMinify,
+    ],
+  },
 });
