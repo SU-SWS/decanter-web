@@ -10,9 +10,9 @@ export const Page = defineDocumentType(() => ({
       description: 'The title of the page',
       required: true,
     },
-    date: {
+    lastUpdatedDate: {
       type: 'date',
-      description: 'The date of the post',
+      description: 'Last updated date of the post',
       required: true,
     },
   },
