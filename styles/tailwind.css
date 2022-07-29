@@ -1,0 +1,9 @@
+@import 'decanter/fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  @apply su-no-underline hocus:su-underline
+}
