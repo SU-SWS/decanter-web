@@ -120,7 +120,7 @@ They should not become the predominant colors for a school, center, institute or
         </div>
         <div class="inverse" style="background-color: #175e54">
             <h3>Palo Alto</h3>
-            <p>#544948</p>
+            <p>#175e54</p>
             <p>$su-color-palo-alto</p>
         </div>
         <div class="variant inverse" style="background-color: #2d716f;">
