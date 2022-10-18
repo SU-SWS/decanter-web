@@ -6,9 +6,9 @@ This project conforms to level [AA WCAG 2.0](https://www.w3.org/WAI/GL/WCAG20/) 
 
 If you have found an accessibility error or have a suggestion please create a ticket.
 
-## Component specific information (h2)
+## Component specific information
 
-### Site search(h3)
+### Site search
 
 We added a wrapper `<div>` with role="search" outside the `form` element instead of adding role="search" directly to the `<form>` element. The reason is that `<form>` elements explicitly have role="form". If we add role="search" to it, we would be changing its default semantic.
 [https://github.com/SU-SWS/decanter/issues/563](https://github.com/SU-SWS/decanter/issues/563)
@@ -21,14 +21,13 @@ When designing and building the Main Navigation component in Decanter, we want i
 *Note:*
 - In the text that follows, AT stands for Assistive Technology (or Assistive Technologies).
 
-
-#### Scope(h4)
+#### Scope
 
 The current scope of the Main Nav component as described on this page includes maximum 2 levels of menu links. One of the variants include a site search form for the mobile version when the Main Nav is expanded.
 
 In the future, it is possible that we would include support for more than 2 levels of menu links and perhaps a mega menu component.
 
-#### Research (h4)
+#### Research
 
 There are mainly two ways of handling accessible website navigation with drop down menus out there currently:
 
@@ -42,13 +41,13 @@ During our search for a good example solution, we found that the majority of exi
 
 We also looked at the main menu on the [Stanford Identity Toolkit](https://identity.stanford.edu/) website, since the menu has some similarities to the one that we are building. There are certain properties that we adopt from this menu - the click behaviors and some of the existing keyboard behaviors (Escape, Enter). However, there are also practices that we would like to move away from (the use of ARIA roles) and features that we want to add (e.g. more keyboard bindings).
 
-#### Our Approach (h4)
+#### Our Approach
 
 Since Decanter components are adopted by developers who would likely tweak them to fit specific projects’ needs, due to the unforgiving nature of ARIA menus, we choose not to go with that approach. Instead, we implement our component as simply links organized in a nested `<ul>` structure inside the native `<nav>` element, and without the use of ARIA roles. However, we do include most, if not all, of the keyboard behaviors expected of ARIA menus so keyboard users can navigate the menu more conveniently. We also include some ARIA attributes that allow AT to communicate to the user if there is hidden content that needs to be expanded and any change of state of the elements (e.g., when a submenu is expanded or collapsed) within the component.
 
 WAI-ARIA Landmark, Roles, States, and Properties (h4)
 
-##### Main Menu (h5)
+##### Main Menu
 
 - The [first rule of ARIA use](https://www.w3.org/TR/using-aria/#rule1) states that developers should use native semantic HTML element over using ARIA attributes (e.g., role) whenever possible. Following this rule, we define our navigation landmark using the semantic HTML5 `<nav>` element. There is no need for an ARIA role="navigation" attribute since `<nav>` already communicates that this component has a role of navigation.
 
@@ -58,7 +57,7 @@ WAI-ARIA Landmark, Roles, States, and Properties (h4)
 
 -When a parent menu item (has submenu) is expanded/collapsed, the attribute aria-expanded is toggled "true" or "false" in the triggering element `<a>`.
 
-##### Menu Button (XS, SM & MD breakpoints)(h5)
+##### Menu Button (XS, SM & MD breakpoints)
 
 - For browser width at max MD breakpoint or smaller, a “hamburger” menu button (HTML `<button>` element) is used to toggle the expand/collapse state of the main menu.
 
@@ -68,9 +67,9 @@ WAI-ARIA Landmark, Roles, States, and Properties (h4)
 
 - When the main menu is collapsed, the menu button has aria-expanded set to false which communicates to AT that there is hidden content. When the button is activated, aria-expanded is set to true to communicate the change of state.
 
-#### Keyboard Behaviors (h4)
+#### Keyboard Behaviors
 
-##### Tab (h5)
+##### Tab
 
 - While on top level link, hitting Tab/Shift-Tab will focus on the next/previous top level link.
 
@@ -78,7 +77,7 @@ WAI-ARIA Landmark, Roles, States, and Properties (h4)
 
 - If on the last link in a submenu, hitting Tab will close the submenu and place focus on the next top level link.
 
-##### Spacebar/Enter (h5)
+##### Spacebar/Enter
 
 - Hitting Spacebar/Enter on the mobile menu button will expand the menu (and site-search on a variant) and place focus on the first top level menu link. Also, the menu button text is changed from “Menu” (or other custom button label text) to “Close”.
 
@@ -86,19 +85,19 @@ WAI-ARIA Landmark, Roles, States, and Properties (h4)
 
 - Hitting Spacebar/Enter on a regular link (not a submenu trigger) will take the user to the target link.
 
-##### Escape (h5)
+##### Escape
 
 - If a submenu is open and the focus is within the Main Nav component (any links, menu button, search form), hitting Escape closes the submenu. If the focus is on a submenu link, hitting Escape closes the submenu and return focus to its parent link.
 
 - If on mobile and no submenus are open, if focus is within the Main Nav component, hitting Escape closes the mobile menu and return focus to the menu button. Also, the menu button text is changed from “Close” back to “Menu”.
 
-##### Up Arrow (h5)
+##### Up Arrow
 
 - On the desktop menu, while on a submenu link, hitting the Up Arrow will move focus to the previous submenu link. Allows wrapping from first to last submenu link.
 
 - On the mobile menu, hitting the Up Arrow will move focus to the next same-level link. Allows wrapping from first to last same-level link.
 
-##### Down Arrow (h5)
+##### Down Arrow
 
 - On the desktop menu, while on a top level parent link (has submenu), hitting the Down Arrow will open the submenu and place focus on the first submenu link.
 
@@ -106,37 +105,38 @@ WAI-ARIA Landmark, Roles, States, and Properties (h4)
 
 - On the mobile menu, hitting the Down Arrow will move focus to the next same-level link. Allows wrapping from last to first same-level link.
 
-##### Right Arrow (h5)
+##### Right Arrow
 
 - On the desktop menu, while on a top level link, hitting the Right Arrow will move focus to the next top level link. Allows wrapping from last to first top level link.
 
 - While on a submenu link, hitting the Right Arrow will close the current submenu and move focus to the next top level link. If there is no next top level link (already the last top level link), it will move focus back to the first top level link in the menu.
 
-##### Left Arrow (h5)
+##### Left Arrow
 
 - On the desktop menu, while on a top level link, hitting the Left Arrow will move focus to the previous top level link. Allows wrapping from first to last top level link.
 
 - While on a submenu link, hitting the Left Arrow will close the current submenu and move focus to the previous top level link. If there is no previous top level link (already the first top level link), it will move focus to the last top level link in the menu.
 
-##### Home (h5)
+##### Home
 
 - While on a top level link, hitting the Home key will move focus to the first top level link.
 
 - While on a submenu link, hitting the Home key will move focus to the first same-level submenu link.
 
-##### End (h5)
+##### End
 - While on a top level link, hitting the End key will move focus to the last top level link.
 
 - While on a submenu link, hitting the End key will move focus to the last same-level submenu link.
 
-#### Click Behaviors (h4)
+#### Click Behaviors
+
 - Clicking the mobile menu button will toggle the expand/collapse state of the menu (and site-search on a variant) . Also, the menu button text is changed between “Menu” (or custom button label text) and “Close”.
 
 - If a submenu is closed, clicking on its parent link will expand the submenu and close any other open submenus. If a submenu is expanded, clicking on its parent link will close the submenu.
 
 - On desktop, when a submenu is open, clicking anywhere on the page will close the submenu.
 
-#### Variant With Site Search (h4)
+#### Variant With Site Search
 
 - There is a variant of the Main Nav component that includes the site search in XS, SM and MD breakpoint ranges.
 
@@ -144,7 +144,8 @@ WAI-ARIA Landmark, Roles, States, and Properties (h4)
 
 - When a user is on the last top level menu link, hitting Tab will move focus to the site search.
 
-### Resources(h3)
+### Resources
+
 - [https://www.levelaccess.com/challenges-mega-menus-standard-menus-make-accessible/](https://www.levelaccess.com/challenges-mega-menus-standard-menus-make-accessible/)
 - [https://www.w3.org/TR/wai-aria-practices/](https://www.w3.org/TR/wai-aria-practices/)
 - [https://a11y-style-guide.com/style-guide/section-navigation.html](https://a11y-style-guide.com/style-guide/section-navigation.html)
@@ -154,8 +155,7 @@ WAI-ARIA Landmark, Roles, States, and Properties (h4)
 - [http://adrianroselli.com/2017/10/dont-use-aria-menu-roles-for-site-nav.html](http://adrianroselli.com/2017/10/dont-use-aria-menu-roles-for-site-nav.html)
 - [https://identity.stanford.edu/](https://identity.stanford.edu/)
 
-
-### More Documentation (h3)
+### More Documentation
 
 Accessibility practices across Stanford:
 - [Stanford Online Accessibility Policy](https://ucomm.stanford.edu/policies/accessibility-policy/)
