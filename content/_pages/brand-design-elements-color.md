@@ -369,7 +369,7 @@ Use **digital green** for things such as form validation, the dark version for l
     <div class="color">
         <div class="variant inverse" style="background-color: #006f54;">
             <p>#006f54</p>
-            <p>$su-color-digital-green-light</p>
+            <p>$su-color-digital-green-dark</p>
         </div>
         <div class="inverse" style="background-color: #008566">
             <h3>Digital Green</h3>
