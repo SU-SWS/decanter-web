@@ -1,5 +1,13 @@
 ---
 title: The `su-` prefix
-lastUpdatedDate: 2022-04-06T12:00:00.000Z
+lastUpdatedDate: 2022-10-21T12:00:00.000Z
 ---
-The `su-` prefix
+
+
+To avoid conflict with class names that come with other packages, we add the “su-” (stands for Stanford University) prefix to namespace all Decanter 7 Tailwind CSS classes.
+
+**For Tailwind classes without variant/breakpoint modifiers**, just add `su-` in front of the class name, e.g., `su-text-black`, `su-border-solid`.
+
+**For classes with modifiers**, add the `su-` prefix after the colon that comes with the last modifier, e.g., `md:su-text-20`, `hover:su-bg-white`, `xl:print:su-hidden`, `lg:first:focus:su-border-black`.
+
+**To use the `!important` flag**, add the exclamation mark before the su prefix, e.g., `!su-inline-block`, `hover:!su-text-white`.
