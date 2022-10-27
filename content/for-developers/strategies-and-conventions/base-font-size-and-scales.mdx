@@ -1,5 +1,33 @@
 ---
 title: Base font size and scales
-lastUpdatedDate: 2022-04-06T12:00:00.000Z
+lastUpdatedDate: 2022-10-27T12:00:00.000Z
 ---
-Base font size and scales
+
+
+In Decanter v7, we added five custom classes that give users some flexibility over the base font sizes of their sites. These classes also provide responsive font sizes for smaller breakpoints. Most of the other typography classes and base settings in Decanter use the em units so that they scale appropriately when the base font size changes, e.g., the font size of a default H1 would be larger at all breakpoints if you use the `su-basefont-23 class` compared to the `su-basefont-19` class for the document.
+Other than using these classes in the root HTML tag, one could also use them within regions or components, e.g., to set the base font size of a card, or a form. Below are the five classes available:
+
+**Note:** The HTML root font size is set to 10px in Decanter’s base configuration, thus, **1rem = 10px**.
+
+- **`su-basefont-19`**
+  - XS to SM: 1.6rem
+  - MD to XL: 1.8rem
+  - 2XL: 1.9rem
+- **`su-basefont-20`**
+  - XS to SM: 1.8rem
+  - MD to XL: 1.9rem
+  - 2XL: 2rem
+- **`su-basefont-21`**
+  - XS to SM: 1.8rem
+  - MD to XL: 1.9rem
+  - 2XL: 2.1rem
+- **`su-basefont-22`**
+  - XS to SM: 1.8rem
+  - MD to XL: 2rem
+  - 2XL: 2.2rem
+- **`su-basefont-23`**\
+(This is the setting we use for the Alumni homesite and Giving websites)\
+  - XS to SM: 1.8rem
+  - MD to XL: 2.1rem
+  - 2XL: 2.3rem
+
