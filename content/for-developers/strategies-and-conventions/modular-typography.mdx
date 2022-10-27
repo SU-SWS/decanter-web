@@ -1,5 +1,22 @@
 ---
 title: Modular typography
-lastUpdatedDate: 2022-04-06T12:00:00.000Z
+lastUpdatedDate: 2022-10-27T12:00:00.000Z
 ---
-Modular typography
+
+
+Modular typography provides a convenient way to scale font sizes and keep them proportional for all breakpoints. The “modular” part comes from the [modular scale concept](https://alistapart.com/article/more-meaningful-typography/#section2), which is a set of numbers that increase by a fixed ratio or multiplier between them. If this multiplier is bigger, the series of numbers increases faster, i.e., each step is further part.
+
+In Decanter, the modular typography classes use the em unit and we set `su-type-0` (type stands for typography) to equal `1em`, meaning if you use the `su-basefont-23` class ([see previous section on base font size](/for-developers/strategies-and-conventions/base-font-size-and-scales)) in the root, `su-type-0` would be `2.3rem` or `23px`. From then on, we provide 9 typography steps from `su-type-1` to `su-type-9` with a fixed ratio (modular scale multiplier) between each step.
+
+We also realize that font sizes should go up at a different rate between mobile, tablet and desktop breakpoints. It makes sense to have really large “splash” typography in the hero banner on the desktop version of a site that is e.g., `160px`, which would look enormous on a phone screen. For this reason, we have 3 different modular scale multipliers for the different device sizes as below:
+- Mobile (XS-SM): 1.15
+- Tablet (MD): 1.2
+- Desktop (LG to 2XL): 1.25
+
+What does this all mean? Let’s look at an example. Let’s say we using the class `su-type-7` for a hero banner headline, below would be the rendered font sizes at each breakpoint range assuming one uses the `su-basefont-23` class (`18px` for XS-SM, `21px` for MD-XL, `23px` for 2XL) in root:
+- Mobile: `18px` * 1.15<sup>7</sup> = `48px` (base font size for mobile multiply by 1.15 7 times since we’re on step #7)
+- Tablet: `21px` * 1.2<sup>7</sup> = `75px`
+- Desktop between LG to XL = `21px` * 1.25<sup>7</sup> = `100px`
+- Desktop from 2XL breakpoint and up: `23px` * 1.25<sup>7</sup> = `109px`
+
+As you can see, by applying the single modular typography class `su-type-7` to the headline, you get an appropriately sized typography element for all breakpoint ranges.
