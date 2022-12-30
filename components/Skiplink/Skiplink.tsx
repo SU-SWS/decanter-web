@@ -22,7 +22,7 @@ export const Skiplink = ({
       href={href}
       className={dcnb('su-skiplink', className)}
       ref={ref}
-      onFocus={() => ref.current.scrollIntoView()}
+      onFocus={() => ref?.current?.scrollIntoView()}
       {...rest}
     >
       {children}
