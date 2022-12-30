@@ -5,6 +5,7 @@ import { allPages, Page } from '../.contentlayer/generated';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import {
   Counter,
+  FlexBox,
   Container,
   GlobalFooter,
   Logo,
@@ -110,7 +111,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
   ]
 
   return (
-    <Container width='full'>
+    <FlexBox direction="col" className="su-w-full su-h-screen">
       <Head>
         <title>{page.title}</title>
         <link rel='icon' href='/favicon.ico' />
@@ -125,7 +126,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
           />
         </div>
       </header>
-      <div className='su-grid su-grid-cols-12'>
+      <div className='su-grid su-grid-cols-12 su-grow'>
         <div className='basic-page-left-sidebar su-col-span-12 lg:su-col-span-3 2xl:su-col-span-2 su-basefont-20 su-relative su-bg-black'>
           <Container as="aside" width="full">
             <Link href='/'>
@@ -148,8 +149,8 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
           </Container>
         </div>
       </div>
-      <GlobalFooter />
-    </Container>
+      <GlobalFooter className="su-w-full" />
+    </FlexBox>
   );
 };
 

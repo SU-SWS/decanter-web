@@ -13,6 +13,7 @@ type DCNBAttributes = Omit<HTMLAttributes<HTMLDivElement>, 'className'>;
 
 export const GlobalFooter = ({ className, ...props }: GlobalFooterProps & DCNBAttributes) => (
   <Container
+    as="footer"
     className={dcnb('su-global-footer su-basefont-20 su-rs-py-1 su-text-white su-bg-digital-red', className)}
     width="site"
     {...props}
