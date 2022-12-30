@@ -14,30 +14,34 @@ export const Group = ({
   showNestedLevels,
   activeClasses,
   ...props
-}) => (
-  <ul
-    className={
-      className ||
-      'su-nav-group su-list-none su-p-0 children:su-border-t children:su-border-solid children:su-border-cool-grey children:children:su-text-21 su-absolute su-sticky'
-    }
-    {...props}
-  >
-    {menuTree.map((group) => (
-      <>
-        {group.link && (
-          <Item
-            key={group.id || group.link.href || group.link.to}
-            element={group.link}
-            active={group.active}
-            items={group.children}
-            showNestedLevels={showNestedLevels}
-            activeClasses={activeClasses}
-          />
-        )}
-      </>
-    ))}
-  </ul>
-);
+}) => {
+  // Sort menu tree by 
+
+  return (
+    <ul
+      className={
+        className ||
+        'su-nav-group su-list-none su-p-0 children:su-border-t children:su-border-solid children:su-border-cool-grey children:children:su-text-21 su-absolute su-sticky'
+      }
+      {...props}
+    >
+      {menuTree.map((group) => (
+        <>
+          {group.link && (
+            <Item
+              key={group.id || group.link.href || group.link.to}
+              element={group.link}
+              //active={group.active}
+              items={group.children}
+              showNestedLevels={showNestedLevels}
+              activeClasses={activeClasses}
+            />
+          )}
+        </>
+      ))}
+    </ul>
+  );
+};
 
 Group.displayName = 'VerticalNav.Group';
 

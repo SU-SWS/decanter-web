@@ -21,7 +21,7 @@ const VerticalNavRoot = ({
   <nav
     className={dcnb('su-vertical-nav su-relative', className)}
     {...props}
-    aria-label="Section Menu"
+    aria-label="Main menu"
   >
     <Group
       menuTree={menu}

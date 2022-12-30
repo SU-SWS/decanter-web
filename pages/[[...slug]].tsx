@@ -9,7 +9,8 @@ import {
   Container,
   GlobalFooter,
   Logo,
-  VerticalNav,
+  SidebarNav,
+  SidebarNavData,
 } from '../components';
 import { Homepage } from 'components/Homepage/Homepage';
 
@@ -29,120 +30,13 @@ export async function getStaticPaths() {
   return { paths, fallback: false };
 }
 
-export const sortByPath = (menuGroup) => {
-  menuGroup.children.sort((a, b) => {
-    if (a.link.props.href < b.link.props.href) {
-      return -1;
-    }
-    if (a.link.props.href > b.link.props.href) {
-      return 1;
-    }
-    return 0;
-  })
-}
-
 const Home: NextPage<{ page: Page }> = ({ page }) => {
   const MdxBody = useMDXComponent(page.body.code);
 
-  let menuTree = [];
-  let about = {};
-  let forDesigners: any = {
-    link: (
-      <a href={`/for-designers`}>For designers</a>
-    ),
-    children: [],
-  }
-  let forDevelopers: any = {
-    link: (
-      <a href={`/for-developers`}>For developers</a>
-    ),
-    children: [],
-  }
-  let examples: any = {
-    link: (
-      <a href={`/examples`}>Examples</a>
-    ),
-    children: [],
-  }
-  let faq = {};
-
-  // Giant if condition that checks if the url path contains any of the following.
-  // 1. Home
-  // 2. About
-  // 3. For Designers
-  //     |-> Nested pages
-  // 4. For Developers
-  //     |-> Nested pages
-  // 5. Examples
-  // 6. Any additional pages added later/not sorted into the design/dev bucket
-  // If it does contain it, then store that <a> into its respect var
-  allPages.map((page) => {
-    if (page._raw.flattenedPath.includes('about')) {
-      about = {
-        id: page._id,
-        link: (
-          <a href={`/${page._raw.flattenedPath}`}>{page.title}</a>
-        )
-      }
-    }
-    if (page._raw.flattenedPath.includes('for-designers/')) {
-      forDesigners.children.push(
-        {
-          id: page._id,
-          link: (
-            <a href={`/${page._raw.flattenedPath}`}>{page.title}</a>
-          )
-        }
-      )
-    }
-    if (page._raw.flattenedPath.includes('for-developers/')) {
-      forDevelopers.children.push(
-        {
-          id: page._id,
-          link: (
-            <a href={`/${page._raw.flattenedPath}`}>{page.title}</a>
-          )
-        }
-      )
-    }
-    if (page._raw.flattenedPath.includes('examples/')) {
-      examples.children.push(
-        {
-          id: page._id,
-          link: (
-            <a href={`/${page._raw.flattenedPath}`}>{page.title}</a>
-          )
-        }
-      )
-    }
-    if (page._raw.flattenedPath.includes('decanter-faq')) {
-      faq = {
-        id: page._id,
-        link: (
-          <a href={`/${page._raw.flattenedPath}`}>{page.title}</a>
-        )
-      }
-    }
-  })
-
-  // Sort by flattenedPath alphabetically
-  sortByPath(forDevelopers);
-  sortByPath(forDesigners);
-  sortByPath(examples);
-
-  menuTree = [
-    about,
-    forDevelopers,
-    forDesigners,
-    examples,
-    faq
-  ]
-
   return (
-    <FlexBox direction="col" className="su-w-full su-h-screen">
+    <FlexBox direction="col" className="su-w-full su-min-h-screen">
       <Head>
         <title>{page.title}</title>
-        <link rel='icon' href='/favicon.ico' />
       </Head>
       <header>
         <div className='su-identity-bar su-pl-30 su-pt-5 su-pb-1 su-bg-digital-red'>
@@ -154,16 +48,15 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
           />
         </div>
       </header>
-      <div className='su-grid su-grid-cols-12 su-grow'>
-        <div className='basic-page-left-sidebar su-col-span-12 lg:su-col-span-3 2xl:su-col-span-2 su-basefont-20 su-relative su-bg-black'>
-          <Container as="aside" width="full">
-            <Link href='/'>
-              <a className="su-font-bold su-type-3 su-pl-26 su-py-30 su-no-underline su-text-white hocus:su-text-white su-inline-block">Decanter V7</a>
-            </Link>
-            <VerticalNav menu={menuTree} className="" activeClasses="" showNestedLevels={false} />
-          </Container>
-        </div>
-        <div className='basic-page-main-content su-col-span-12 lg:su-col-span-9 2xl:su-col-span-10 su-basefont-23 su-ml-0'>
+      <FlexBox direction="col" className="lg:su-flex-row su-grow">
+        <aside className="su-shrink-0 lg:su-w-300 su-min-w-[30rem] su-basefont-20 su-bg-black">
+          <Link href='/'>
+            <a className="su-font-bold su-type-3 su-pl-26 su-py-30 su-no-underline su-text-white hocus:su-text-white su-inline-block">Decanter V7</a>
+          </Link>
+          {/* <VerticalNav menu={menuTree} className="su-sticky su-top-0" activeClasses="!su-text-plum" showNestedLevels={false} /> */}
+          <SidebarNav navItems={SidebarNavData} className="lg:su-sticky lg:su-top-0" />
+        </aside>
+        <div className='su-basefont-23 su-w-full su-grow su-ml-0'>
           {page.title !== 'Decanter Homepage' ? (
             <Container as="main" width="full">
               <Container as="article" width="full">
@@ -180,7 +73,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
             <Homepage />
           )}
         </div>
-      </div>
+      </FlexBox>
       <GlobalFooter className="su-w-full" />
     </FlexBox>
   );
