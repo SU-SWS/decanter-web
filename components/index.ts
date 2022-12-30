@@ -11,4 +11,3 @@ export * from './FlexBox';
 export * from './SidebarNav';
 export * from './Skiplink';
 export * from './SrOnlyText';
-export * from './VerticalNav';

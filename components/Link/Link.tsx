@@ -40,3 +40,5 @@ export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
     </NextLink>
   )
 );
+
+Link.displayName = 'Link';

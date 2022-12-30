@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { dcnb } from 'cnbuilder';
 import { useRouter } from 'next/router';
-import { Link } from '../Link';
 import { SidebarMenuLink, SidebarMenuLinkProps } from './SidebarMenuLink';
 import * as styles from './SidebarNav.styles';
 
@@ -14,11 +13,11 @@ export interface SidebarMenuGroupProps {
 }
 
 export const SidebarMenuGroup = ({
- href,
- label,
- menuLinks,
- parentPath,
- className,
+  href,
+  label,
+  menuLinks,
+  parentPath,
+  className,
 }: SidebarMenuGroupProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const toggleExpanded = () => setIsExpanded(!isExpanded);
@@ -27,27 +26,27 @@ export const SidebarMenuGroup = ({
 
   // Expand the child menu if the current page is a child of the parentPath
   useEffect(() => {
-   if (parentPath && router.asPath.includes(parentPath)) {
-    setIsExpanded(true);
-   }
+    if (parentPath && router.asPath.includes(parentPath)) {
+      setIsExpanded(true);
+    }
   }, [parentPath, router.asPath]);
 
   return (
-   <li className={styles.parentListItem}>
-    {href ? (
-     <SidebarMenuLink href={href} label={label} className={className} />
-    ) : (
-     <>
-      <button type="button" onClick={toggleExpanded} aria-expanded={isExpanded} className={styles.parentItem}>
-       {label}
-      </button>
-      <ul className={styles.childMenu} aria-hidden={!isExpanded}>
-       {menuLinks?.map((menuItem) => (
-        <SidebarMenuLink key={menuItem.label} label={menuItem.label} href={menuItem.href} isSecondLevel />
-       ))}
-      </ul>
-     </>
-    )}
-   </li>
+    <li className={styles.parentListItem}>
+      {href ? (
+        <SidebarMenuLink href={href} label={label} className={className} />
+      ) : (
+        <>
+          <button type="button" onClick={toggleExpanded} aria-expanded={isExpanded} className={styles.parentItem}>
+          {label}
+          </button>
+          <ul className={styles.childMenu} aria-hidden={!isExpanded}>
+          {menuLinks?.map((menuItem) => (
+            <SidebarMenuLink key={menuItem.label} label={menuItem.label} href={menuItem.href} isSecondLevel />
+          ))}
+          </ul>
+        </>
+      )}
+    </li>
   );
 };
