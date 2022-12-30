@@ -29,6 +29,18 @@ export async function getStaticPaths() {
   return { paths, fallback: false };
 }
 
+export const sortByPath = (menuGroup) => {
+  menuGroup.children.sort((a, b) => {
+    if (a.link.props.href < b.link.props.href) {
+      return -1;
+    }
+    if (a.link.props.href > b.link.props.href) {
+      return 1;
+    }
+    return 0;
+  })
+}
+
 const Home: NextPage<{ page: Page }> = ({ page }) => {
   const MdxBody = useMDXComponent(page.body.code);
 
@@ -36,13 +48,13 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
   let about = {};
   let forDesigners: any = {
     link: (
-      <a href={`/for-designers`}>For Designers</a>
+      <a href={`/for-designers`}>For designers</a>
     ),
     children: [],
   }
   let forDevelopers: any = {
     link: (
-      <a href={`/for-developers`}>For Developers</a>
+      <a href={`/for-developers`}>For developers</a>
     ),
     children: [],
   }
@@ -52,6 +64,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
     ),
     children: [],
   }
+  let faq = {};
 
   // Giant if condition that checks if the url path contains any of the following.
   // 1. Home
@@ -102,13 +115,27 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
         }
       )
     }
+    if (page._raw.flattenedPath.includes('decanter-faq')) {
+      faq = {
+        id: page._id,
+        link: (
+          <a href={`/${page._raw.flattenedPath}`}>{page.title}</a>
+        )
+      }
+    }
   })
 
+  // Sort by flattenedPath alphabetically
+  sortByPath(forDevelopers);
+  sortByPath(forDesigners);
+  sortByPath(examples);
+
   menuTree = [
-    about, 
-    forDesigners,
+    about,
     forDevelopers,
-    examples
+    forDesigners,
+    examples,
+    faq
   ]
 
   return (
