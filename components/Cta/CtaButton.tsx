@@ -7,6 +7,7 @@ export type CtaButtonProps = React.ComponentPropsWithoutRef<'button'> & CtaCommo
   href?: undefined;
 }
 
+// eslint-disable-next-line react/display-name
 export const CtaButton = React.forwardRef<HTMLButtonElement, CtaButtonProps>(
   (props, ref) => {
     const {

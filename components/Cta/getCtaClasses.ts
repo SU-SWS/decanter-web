@@ -18,12 +18,6 @@ export const getCtaClasses = (
     case 'ghost':
       ctaSize = size || 'default';
       break;
-    case 'facet':
-      ctaSize = size || 'facet';
-      break;
-    case 'filter':
-      ctaSize = size || 'filter';
-      break;
     case 'footer':
       ctaSize = size || 'footer';
       break;
@@ -32,15 +26,6 @@ export const getCtaClasses = (
       break;
     case 'masthead':
       ctaSize = size || 'masthead';
-      break;
-    case 'user':
-      ctaSize = size || 'user';
-      break;
-    case 'user-light':
-      ctaSize = size || 'user-light';
-      break;
-    case 'user-header':
-      ctaSize = size || 'user-header';
       break;
     case 'link':
       ctaSize = size || 'unset';
@@ -59,15 +44,6 @@ export const getCtaClasses = (
       break;
     case 'chip':
       ctaSize = size || 'chip';
-      break;
-    case 'showmore':
-      ctaSize = size || 'showmore';
-      break;
-    case 'showmore-button':
-      ctaSize = size || 'showmore-button';
-      break;
-    case 'showmore-panel':
-      ctaSize = size || 'showmore-panel';
       break;
     default:
       ctaSize = size;

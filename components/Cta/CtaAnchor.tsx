@@ -7,6 +7,7 @@ export type CtaAnchorProps = React.ComponentPropsWithoutRef<'a'> & CtaCommonProp
   href?: string;
 }
 
+// eslint-disable-next-line react/display-name
 export const CtaAnchor = React.forwardRef<HTMLAnchorElement, CtaAnchorProps>(
   (props, ref) => {
     const {

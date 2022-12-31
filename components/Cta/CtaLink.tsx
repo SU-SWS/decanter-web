@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React from 'react';
 import { Link, LinkProps } from '../Link';
 import { CtaContent } from './CtaContent';

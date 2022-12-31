@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React from 'react';
 import { CtaAnchor } from './CtaAnchor';
 import { CtaButton, CtaButtonProps } from './CtaButton';

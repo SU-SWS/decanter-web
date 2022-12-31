@@ -32,20 +32,6 @@ export const CtaContent = (props: CtaCommonProps) => {
     case 'back-external':
       heroicon = icon || 'back';
       break;
-    case 'user':
-      heroicon = icon || 'arrow-right';
-      break;
-    case 'showmore':
-    case 'showmore-button':
-    case 'showmore-panel':
-      heroicon = icon || 'chevron-down';
-      break;
-    case 'facet':
-      heroicon = icon || 'chevron-right';
-      break;
-    case 'filter':
-      heroicon = icon || 'filter';
-      break;
     default:
       heroicon = icon;
   }
