@@ -1,4 +1,5 @@
-import React, { useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
+import { useRouter } from 'next/router';
 import MUISwipeableDrawer from '@mui/material/SwipeableDrawer';
 import { dcnb, ClassValue } from 'cnbuilder';
 import { Cta } from '../Cta';
@@ -22,6 +23,16 @@ export const NavContent = ({ navItems }: SidebarNavProps) => (
 export const SidebarNav = ({ navItems, className }: SidebarNavProps) => {
   const [menuOpened, setMenuOpened] = useState<boolean>(false);
   const toggleMenu = (): void => setMenuOpened(!menuOpened);
+
+  // Close Drawer on route change
+  const router = useRouter();
+  const prevPath = useRef(router.asPath);
+  useEffect(() => {
+    if (prevPath.current !== router.asPath) {
+      setMenuOpened(false);
+    }
+    prevPath.current = router.asPath;
+  }, [router.asPath]);
 
   return (
     <>
