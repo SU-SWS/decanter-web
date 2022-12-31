@@ -11,6 +11,7 @@ import {
   Logo,
   SidebarNav,
   SidebarNavData,
+  Skiplink,
 } from '../components';
 import { Homepage } from 'components/Homepage/Homepage';
 
@@ -39,6 +40,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
         <title>{page.title}</title>
       </Head>
       <header>
+        <Skiplink />
         <div className='su-identity-bar su-pl-30 su-pt-5 su-pb-1 su-bg-digital-red'>
           <Logo
             isLink
@@ -58,7 +60,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
         </aside>
         <div className='su-basefont-23 su-w-full su-grow su-ml-0'>
           {page.title !== 'Decanter Homepage' ? (
-            <Container as="main" width="full">
+            <Container as="main" width="full" id="main-content">
               <Container as="article" width="full">
                 <div className='su-mb-8'>
                   <h1 className="su-type-3 su-cc 2xl:su-px-80 su-rs-py-3 su-mb-0 su-bg-black-90 su-text-white">{page.title}</h1>
