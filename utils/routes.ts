@@ -34,6 +34,7 @@ export const logo = () => `${examples()}/logo`;
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
+  home,
   about,
   forDevelopers,
   forDesigners,

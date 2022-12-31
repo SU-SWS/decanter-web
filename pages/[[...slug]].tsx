@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Link from 'next/link';
 import { allPages, Page } from '../.contentlayer/generated';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import {
@@ -8,6 +7,7 @@ import {
   FlexBox,
   Container,
   GlobalFooter,
+  Link,
   Logo,
   Section,
   SectionNav,
@@ -17,6 +17,7 @@ import {
   Skiplink,
 } from '../components';
 import { Homepage } from 'components/Homepage/Homepage';
+import routes from 'utils/routes';
 
 export async function getStaticProps({ params: { slug = [] } }) {
   const pagePath = '/' + slug.join('/');
@@ -54,12 +55,12 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
         </div>
       </header>
       <FlexBox direction="col" className="lg:su-flex-row su-grow">
-        <aside className="su-shrink-0 lg:su-w-300 su-min-w-[30rem] su-basefont-20 su-bg-black">
-          <Link href='/'>
-            <a className="su-font-bold su-type-3 su-pl-26 su-py-30 su-no-underline su-text-white hocus:su-text-white su-inline-block">Decanter V7</a>
+        <aside className="su-flex su-items-center su-justify-between lg:su-block su-shrink-0 lg:su-w-300 lg:su-min-w-[30rem] su-basefont-20 su-bg-black">
+          <Link href={routes.home()} className="su-leading-none su-font-bold su-type-3 su-pl-26 su-py-30 su-no-underline su-text-white hocus:su-text-white su-inline-block su-w-fit">
+            Decanter V7
           </Link>
           {/* <VerticalNav menu={menuTree} className="su-sticky su-top-0" activeClasses="!su-text-plum" showNestedLevels={false} /> */}
-          <SidebarNav navItems={SidebarNavData} className="lg:su-sticky lg:su-top-0" />
+          <SidebarNav navItems={SidebarNavData} className="su-mr-30 lg:su-sticky lg:su-top-0" />
         </aside>
         <div className='su-basefont-21 su-w-full su-grow su-ml-0'>
           {page.title !== 'Decanter Homepage' ? (

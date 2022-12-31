@@ -17,3 +17,9 @@ export const itemLink = (isActive?: boolean, isSecondLevel?: boolean) => dcnb('s
   'su-text-18 su-py-8': isSecondLevel,
   'su-text-21 su-py-16 su-pr-48': !isSecondLevel,
 });
+
+// Mobile Drawer
+export const hamburger = 'su-w-30 su-relative su-top-2 hocus:su-text-digital-red-light';
+export const drawer = '!su-w-[90%] sm:!su-w-400 su-bg-black';
+export const closeButtonWrapper = 'su-py-20 su-px-[2.2rem]';
+export const closeButton = 'su-flex su-items-center su-justify-center su-w-30 su-h-30 su-rounded-full hocus:su-bg-digital-red-light su-ml-auto su-mr-0 su-text-white su-text-24';
