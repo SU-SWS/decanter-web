@@ -2,124 +2,144 @@
 title: Strategies and conventions
 lastUpdatedDate: 2022-04-06T12:00:00.000Z
 ---
-- [The su- prefix](#the-su-prefix)
-- [Breakpoints](#breakpoints)
-- [Fonts](#fonts)
-- [Centered container and screen edge](#centered-container-and-screen-edge)
-- [Grid and grid gaps](#grid-and-grid-gaps)
-- [Margins and padding](#margins-and-padding)
-- [Responsive spacing](#responsive-spacing)
-- [Base font size and scales](#base-font-size-and-scales)
-- [Modular typography](#modular-typography)
-- [Other typography styles](#other-typography-styles)
-- [Accessibility](#accessibility)
+<div className="su-flex su-flex-col 2xl:su-flex-row-reverse">
+  <div className="2xl:su-sticky 2xl:su-top-0 2xl:su-pl-26 2xl:su-shrink-0 su-rs-mb-5 2xl:su-mb-0">
+    <SectionNav>
+      <SectionNavItem href="#the-su-prefix" label="The su- prefix" />
+      <SectionNavItem href="#breakpoints" label="Breakpoints" />
+      <SectionNavItem href="#fonts" label="Fonts" />
+      <SectionNavItem href="#centered-container-and-screen-edge" label="Centered container and screen edge" />
+      <SectionNavItem href="#grid-and-grid-gaps" label="Grid and grid gaps" />
+      <SectionNavItem href="#margins-and-padding" label="Margins and padding" />
+      <SectionNavItem href="#responsive-spacing" label="Responsive spacing" />
+      <SectionNavItem href="#base-font-size-and-scales" label="Base font size and scales" />
+      <SectionNavItem href="#modular-typography" label="Modular typography" />
+      <SectionNavItem href="#other-typography-styles" label="Other typography styles" />
+      <SectionNavItem href="#accessibility" label="Accessibility" />
+    </SectionNav>
+  </div>
 
-## [#](#the-su-prefix) The su- prefix<a id='the-su-prefix'></a>
+  <div className="su-grow">
+    <Section heading="The su- prefix" id="the-su-prefix">
+    To avoid conflict with class names that come with other packages, we add the “su-” (stands for Stanford University) prefix to namespace all Decanter 7 Tailwind CSS classes.
 
-<div className="su-max-w-prose-wide">
-To avoid conflict with class names that come with other packages, we add the “su-” (stands for Stanford University) prefix to namespace all Decanter 7 Tailwind CSS classes.
+    **For Tailwind classes without variant/breakpoint modifiers**, just add `su-` in front of the class name, e.g., `su-text-black`, `su-border-solid`.
 
-**For Tailwind classes without variant/breakpoint modifiers**, just add `su-` in front of the class name, e.g., `su-text-black`, `su-border-solid`.
+    **For classes with modifiers**, add the `su-` prefix after the colon that comes with the last modifier, e.g., `md:su-text-20`, `hover:su-bg-white`, `xl:print:su-hidden`, `lg:first:focus:su-border-black`.
 
-**For classes with modifiers**, add the `su-` prefix after the colon that comes with the last modifier, e.g., `md:su-text-20`, `hover:su-bg-white`, `xl:print:su-hidden`, `lg:first:focus:su-border-black`.
+    **To use the `!important` flag**, add the exclamation mark before the su prefix, e.g., `!su-inline-block`, `hover:!su-text-white`.
+    </Section>
 
-**To use the `!important` flag**, add the exclamation mark before the su prefix, e.g., `!su-inline-block`, `hover:!su-text-white`.
+    <Section heading="Breakpoints" id="breakpoints">
+    - XS: 0 - 575px
+    - SM: 576 - 767px
+    - MD: 768 - 991px
+    - LG: 992 - 1199px
+    - XL: 1200 - 1499px
+    - 2XL: 1500px and up
+    </Section>
+
+    <Section heading="Fonts" id="fonts">
+    We have 5 font family classes available that allow one to use Decanter’s font stack.
+
+    **Note:** You will still need to import these fonts on your own.
+
+    All fonts except the Stanford ligature font are available on [Google Fonts](https://fonts.google.com/). The Stanford font is available through the University Communications CDN.
+
+    - **`su-font-sans`**\
+    **Font stack:** Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif\
+    **Example:** <span class="su-bg-black-10 su-px-05em su-py-01em">The quick brown fox jumps over the lazy dog.</span>
+    - **`su-font-serif`**\
+    **Font stack:** Source Serif Pro, Georgia, Times, Times New Roman, serif\
+    **Example:** <span class="su-font-serif su-bg-black-10 su-px-05em su-py-01em">The quick brown fox jumps over the lazy dog.</span>
+    - **`su-font-stanford`** (use for Stanford logo)\
+    **Font stack:** Stanford, Source Serif Pro, Georgia, Times, Times New Roman, serif\
+    **Example:** <span class="su-font-stanford su-bg-black-10 su-px-05em su-py-01em">Stanford University</span>
+    - **`su-font-slab`**\
+    **Font stack:** Roboto Slab, Georgia, Times, Times New Roman, serif\
+    **Example:** <span class="su-font-slab su-bg-black-10 su-px-05em su-py-01em">The quick brown fox jumps over the lazy dog.</span>
+    - **`su-font-mono`**\
+    **Font stack:** Roboto Mono, Menlo, Courier New, monospace\
+    **Example:** <span class="su-font-mono su-bg-black-10 su-px-05em su-py-01em">The quick brown fox jumps over the lazy dog.</span>
+    </Section>
+
+    <Section heading="Centered container and screen edge" id="centered-container-and-screen-edge">
+    Centered container and screen edge
+    </Section>
+
+    <Section heading="Grid and grid gaps" id="grid-and-grid-gaps">
+    Grid and grid gaps
+    </Section>
+
+    <Section heading="Margins and padding" id="margins-and-padding">
+    Margins and padding
+    </Section>
+
+    <Section heading="Responsive spacing" id="responsive-spacing">
+    Responsive spacing
+    </Section>
+
+    <Section heading="Base font size and scales" id="base-font-size-and-scales">
+    In Decanter v7, we added five custom classes that give users some flexibility over the base font sizes of their sites. These classes also provide responsive font sizes for smaller breakpoints. Most of the other typography classes and base settings in Decanter use the em units so that they scale appropriately when the base font size changes, e.g., the font size of a default H1 would be larger at all breakpoints if you use the `su-basefont-23 class` compared to the `su-basefont-19` class for the document.
+
+    Other than using these classes in the root HTML tag, one could also use them within regions or components, e.g., to set the base font size of a card, or a form. Below are the five classes available:
+
+    **Note:** The HTML root font size is set to 10px in Decanter’s base configuration, thus, **1rem = 10px**.
+
+    - **`su-basefont-19`**
+      - XS to SM: 1.6rem
+      - MD to XL: 1.8rem
+      - 2XL: 1.9rem
+    - **`su-basefont-20`**
+      - XS to SM: 1.8rem
+      - MD to XL: 1.9rem
+      - 2XL: 2rem
+    - **`su-basefont-21`**
+      - XS to SM: 1.8rem
+      - MD to XL: 1.9rem
+      - 2XL: 2.1rem
+    - **`su-basefont-22`**
+      - XS to SM: 1.8rem
+      - MD to XL: 2rem
+      - 2XL: 2.2rem
+    - **`su-basefont-23`**\
+    (This is the setting we use for the Alumni homesite and Giving websites)
+      - XS to SM: 1.8rem
+      - MD to XL: 2.1rem
+      - 2XL: 2.3rem
+    </Section>
+
+    <Section heading="Modular typography" id="modular-typography">
+    Modular typography provides a convenient way to scale font sizes and keep them proportional for all breakpoints. The “modular” part comes from the [modular scale concept](https://alistapart.com/article/more-meaningful-typography/#section2), which is a set of numbers that increase by a fixed ratio or multiplier between them. If this multiplier is bigger, the series of numbers increases faster, i.e., each step is further apart.
+
+    In Decanter, the modular typography classes use the em unit and we set `su-type-0` (type stands for typography) to equal `1em`, meaning if you use the `su-basefont-23` class ([see previous section on base font size](/for-developers/strategies-and-conventions/base-font-size-and-scales)) in the root, `su-type-0` would be `2.3rem` or `23px`. From then on, we provide 9 typography steps from `su-type-1` to `su-type-9` with a fixed ratio (modular scale multiplier) between each step.
+
+    We also realize that font sizes should go up at a different rate between mobile, tablet and desktop breakpoints. It makes sense to have really large “splash” typography in the hero banner on the desktop version of a site that is e.g., `160px`, which would look enormous on a phone screen. For this reason, we have 3 different modular scale multipliers for the different device sizes as below:
+    - Mobile (XS-SM): 1.15
+    - Tablet (MD): 1.2
+    - Desktop (LG to 2XL): 1.25
+
+    What does this all mean? Let’s look at an example. Let’s say we using the class `su-type-7` for a hero banner headline, below would be the rendered font sizes at each breakpoint range assuming one uses the `su-basefont-23` class (`18px` for XS-SM, `21px` for MD-XL, `23px` for 2XL) in root:
+    - Mobile: `18px` * 1.15<sup>7</sup> = `48px` (base font size for mobile multiply by 1.15 7 times since we’re on step #7)
+    - Tablet: `21px` * 1.2<sup>7</sup> = `75px`
+    - Desktop between LG to XL = `21px` * 1.25<sup>7</sup> = `100px`
+    - Desktop from 2XL breakpoint and up: `23px` * 1.25<sup>7</sup> = `109px`
+
+    As you can see, by applying the single modular typography class `su-type-7` to the headline, you get an appropriately sized typography element for all breakpoint ranges.
+    </Section>
+
+    <Section heading="Other typography styles" id="other-typography-styles">
+    - **`su-display`**
+    - **`su-card-paragraph`**
+    - **`su-big-paragraph`**
+    - **`su-intro-text`**
+    - **`su-splash`**
+    - **`su-caption`**
+    - **`su-credit`**
+    </Section>
+
+    <Section heading="Accessibility" id="accessibility">
+    Accessibility
+    </Section>
+  </div>
 </div>
-
-## [#](#breakpoints) Breakpoints<a id='breakpoints'></a>
-
-- XS: 0 - 575px
-- SM: 576 - 767px
-- MD: 768 - 991px
-- LG: 992 - 1199px
-- XL: 1200 - 1499px
-- 2XL: 1500px and up
-
-## [#](#fonts) Fonts<a id='fonts'></a>
-
-We have 5 font family classes available that allow one to use Decanter’s font stack.
-
-**Note:** You will still need to import these fonts on your own.
-
-All fonts except the Stanford ligature font are available on [Google Fonts](https://fonts.google.com/). The Stanford font is available through the University Communications CDN.
-
-- **`su-font-sans`**\
-**Font stack:** Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif\
-**Example:** <span class="su-bg-black-10 su-px-05em su-py-01em">The quick brown fox jumps over the lazy dog.</span>
-- **`su-font-serif`**\
-**Font stack:** Source Serif Pro, Georgia, Times, Times New Roman, serif\
-**Example:** <span class="su-font-serif su-bg-black-10 su-px-05em su-py-01em">The quick brown fox jumps over the lazy dog.</span>
-- **`su-font-stanford`** (use for Stanford logo)\
-**Font stack:** Stanford, Source Serif Pro, Georgia, Times, Times New Roman, serif\
-**Example:** <span class="su-font-stanford su-bg-black-10 su-px-05em su-py-01em">Stanford University</span>
-- **`su-font-slab`**\
-**Font stack:** Roboto Slab, Georgia, Times, Times New Roman, serif\
-**Example:** <span class="su-font-slab su-bg-black-10 su-px-05em su-py-01em">The quick brown fox jumps over the lazy dog.</span>
-- **`su-font-mono`**\
-**Font stack:** Roboto Mono, Menlo, Courier New, monospace\
-**Example:** <span class="su-font-mono su-bg-black-10 su-px-05em su-py-01em">The quick brown fox jumps over the lazy dog.</span>
-
-## [#](#centered-container-and-screen-edge) Centered container and screen edge<a id='centered-container-and-screen-edge'></a>
-## [#](#grid-and-grid-gaps) Grid and grid gaps<a id='grid-and-grid-gaps'></a>
-## [#](#margins-and-padding) Margins and padding<a id='margins-and-padding'></a>
-## [#](#responsive-spacing) Responsive spacing<a id='responsive-spacing'></a>
-## [#](#base-font-size-and-scales) Base font size and scales<a id='base-font-size-and-scales'></a>
-
-In Decanter v7, we added five custom classes that give users some flexibility over the base font sizes of their sites. These classes also provide responsive font sizes for smaller breakpoints. Most of the other typography classes and base settings in Decanter use the em units so that they scale appropriately when the base font size changes, e.g., the font size of a default H1 would be larger at all breakpoints if you use the `su-basefont-23 class` compared to the `su-basefont-19` class for the document.
-
-Other than using these classes in the root HTML tag, one could also use them within regions or components, e.g., to set the base font size of a card, or a form. Below are the five classes available:
-
-**Note:** The HTML root font size is set to 10px in Decanter’s base configuration, thus, **1rem = 10px**.
-
-- **`su-basefont-19`**
-  - XS to SM: 1.6rem
-  - MD to XL: 1.8rem
-  - 2XL: 1.9rem
-- **`su-basefont-20`**
-  - XS to SM: 1.8rem
-  - MD to XL: 1.9rem
-  - 2XL: 2rem
-- **`su-basefont-21`**
-  - XS to SM: 1.8rem
-  - MD to XL: 1.9rem
-  - 2XL: 2.1rem
-- **`su-basefont-22`**
-  - XS to SM: 1.8rem
-  - MD to XL: 2rem
-  - 2XL: 2.2rem
-- **`su-basefont-23`**\
-(This is the setting we use for the Alumni homesite and Giving websites)
-  - XS to SM: 1.8rem
-  - MD to XL: 2.1rem
-  - 2XL: 2.3rem
-
-## [#](#modular-typography) Modular typography<a id='modular-typography'></a>
-
-Modular typography provides a convenient way to scale font sizes and keep them proportional for all breakpoints. The “modular” part comes from the [modular scale concept](https://alistapart.com/article/more-meaningful-typography/#section2), which is a set of numbers that increase by a fixed ratio or multiplier between them. If this multiplier is bigger, the series of numbers increases faster, i.e., each step is further apart.
-
-In Decanter, the modular typography classes use the em unit and we set `su-type-0` (type stands for typography) to equal `1em`, meaning if you use the `su-basefont-23` class ([see previous section on base font size](/for-developers/strategies-and-conventions/base-font-size-and-scales)) in the root, `su-type-0` would be `2.3rem` or `23px`. From then on, we provide 9 typography steps from `su-type-1` to `su-type-9` with a fixed ratio (modular scale multiplier) between each step.
-
-We also realize that font sizes should go up at a different rate between mobile, tablet and desktop breakpoints. It makes sense to have really large “splash” typography in the hero banner on the desktop version of a site that is e.g., `160px`, which would look enormous on a phone screen. For this reason, we have 3 different modular scale multipliers for the different device sizes as below:
-- Mobile (XS-SM): 1.15
-- Tablet (MD): 1.2
-- Desktop (LG to 2XL): 1.25
-
-What does this all mean? Let’s look at an example. Let’s say we using the class `su-type-7` for a hero banner headline, below would be the rendered font sizes at each breakpoint range assuming one uses the `su-basefont-23` class (`18px` for XS-SM, `21px` for MD-XL, `23px` for 2XL) in root:
-- Mobile: `18px` * 1.15<sup>7</sup> = `48px` (base font size for mobile multiply by 1.15 7 times since we’re on step #7)
-- Tablet: `21px` * 1.2<sup>7</sup> = `75px`
-- Desktop between LG to XL = `21px` * 1.25<sup>7</sup> = `100px`
-- Desktop from 2XL breakpoint and up: `23px` * 1.25<sup>7</sup> = `109px`
-
-As you can see, by applying the single modular typography class `su-type-7` to the headline, you get an appropriately sized typography element for all breakpoint ranges.
-
-## [#](#other-typography-styles) Other typography styles<a id='other-typography-styles'></a>
-
-- **`su-display`**
-- **`su-card-paragraph`**
-- **`su-big-paragraph`**
-- **`su-intro-text`**
-- **`su-splash`**
-- **`su-caption`**
-- **`su-credit`**
-
-## [#](#accessibility) Accessibility<a id='accessibility'></a>
