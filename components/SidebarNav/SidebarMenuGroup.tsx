@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { dcnb } from 'cnbuilder';
 import { useRouter } from 'next/router';
+import { HeroIcon } from '../HeroIcon';
 import { SidebarMenuLink, SidebarMenuLinkProps } from './SidebarMenuLink';
 import * as styles from './SidebarNav.styles';
 
@@ -37,8 +38,14 @@ export const SidebarMenuGroup = ({
         <SidebarMenuLink href={href} label={label} className={className} />
       ) : (
         <>
-          <button type="button" onClick={toggleExpanded} aria-expanded={isExpanded} className={styles.parentItem}>
-          {label}
+          <button
+            type="button"
+            onClick={toggleExpanded}
+            aria-expanded={isExpanded}
+            className={styles.parentItem}
+          >
+            {label}
+            <HeroIcon icon="chevron-down" className={styles.chevron(isExpanded)} />
           </button>
           <ul className={styles.childMenu} aria-hidden={!isExpanded}>
           {menuLinks?.map((menuItem) => (

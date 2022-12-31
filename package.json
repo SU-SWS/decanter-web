@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "cnbuilder": "^3.1.0",
     "contentlayer": "^0.2.5",
     "date-fns": "^2.28.0",
