@@ -61,7 +61,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
           {/* <VerticalNav menu={menuTree} className="su-sticky su-top-0" activeClasses="!su-text-plum" showNestedLevels={false} /> */}
           <SidebarNav navItems={SidebarNavData} className="lg:su-sticky lg:su-top-0" />
         </aside>
-        <div className='su-basefont-23 su-w-full su-grow su-ml-0'>
+        <div className='su-basefont-21 su-w-full su-grow su-ml-0'>
           {page.title !== 'Decanter Homepage' ? (
             <Container as="main" width="full" id="main-content">
               <Container as="article" width="full">

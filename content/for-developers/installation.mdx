@@ -3,83 +3,85 @@ title: Installation
 lastUpdatedDate: 2022-07-25T12:00:00.000Z
 ---
 
-<div className="su-max-w-prose-wide">
-Decanter uses Tailwindcss to generate an optimized css file for your project. Before you begin, please read and review the installation process on the official [Tailwind CSS website](https://tailwindcss.com/docs/installation). Please also become familiar with [Tailwind CSS presets](https://tailwindcss.com/docs/presets) as Decanter uses this functionality to make it even easir for you to use. 
+<Section>
+Decanter uses Tailwind CSS to generate an optimized css file for your project. Before you begin, please read and review the installation process on the official [Tailwind CSS website](https://tailwindcss.com/docs/installation). Please also become familiar with [Tailwind CSS presets](https://tailwindcss.com/docs/presets) as Decanter uses this functionality to make it even easir for you to use.
+</Section>
 
-## Install the resources
-
+<Section heading="Install the resources">
 If you are adding Decanter to an existing project please have a review of the [Framework Guides](https://tailwindcss.com/docs/installation/framework-guides) available from Tailwind CSS and then skip to the tailwind.config.js settings below.
 
-*1. Install Decanter +Tailwindcss*
+<div className="children:children:su-rs-mb-4">
+1. **Install Decanter Tailwindcss**
 
-The easiest way to add Decanter to your project is to use the npm package manager.
+    The easiest way to add Decanter to your project is to use the npm package manager.
 
-```shell
-npm install -D decanter
-npx tailwind init
-```
+    ```shell
+    npm install -D decanter
+    npx tailwind init
+    ```
 
-*2. Configure your tailwind.config.js file*
+2. **Configure your tailwind.config.js file**
 
-Configure your project to use the Decanter preset of Tailwindcss and point 
+    Configure your project to use the Decanter preset of Tailwind CSS and point 
 
-```javascript
-module.exports = {
- // Prefix is optional but this is the Decanter convention
-  prefix: 'su-',
-  // This preset option pulls in all of the tailwind configuration.
-  presets: [
-    require('decanter')
-  ],
-  // This should point to your source files as Tailwindcss scans your files for the css classes you use.
-  content: ["./src/**/*.{html,js}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-```
+    ```js
+    module.exports = {
+    // Prefix is optional but this is the Decanter convention
+      prefix: 'su-',
+      // This preset option pulls in all of the Tailwind CSS configuration.
+      presets: [
+        require('decanter')
+      ],
+      // This should point to your source files as Tailwind CSS scans your files for the css classes you use.
+      content: ["./src/**/*.{html,js}"],
+      theme: {
+        extend: {},
+      },
+      plugins: [],
+    }
+    ```
 
 
-*3. Add the tailwind directives to your main CSS file.*
+3. **Add the tailwind directives to your main CSS file.**
 
-`/src/css/main.css`
+    `/src/css/main.css`
 
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
+    ```css
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    ```
 
-*4. Compile using the tailwind CLI tool*
+4. **Compile using the Tailwind CSS CLI tool**
 
-Run the CLI tool to scan your template files for classes and build your CSS.
+    Run the CLI tool to scan your template files for classes and build your CSS.
 
-```shell
-npx tailwindcss -i ./src/css/main.css -o ./dist/css/styles.css --watch
-```
+    ```shell
+    npx tailwindcss -i ./src/css/main.css -o ./dist/css/styles.css --watch
+    ```
 
-*5. Add the compiled css to your project*
+5. **Add the compiled css to your project**
 
-Add your compiled CSS file to the `<head>` and start using Tailwind's utility classes to style your content.
+    Add your compiled CSS file to the `<head>` and start using Tailwind's utility classes to style your content.
 
-```html
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/css/styles.css" rel="stylesheet">
-</head>
-<body>
-  <h2 class="su-type-1 su-font-bold su-underline">
-    Hello world!
-  </h2>
-</body>
-</html>
-```
+    ```html
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="/dist/css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+      <h2 class="su-type-1 su-font-bold su-underline">
+        Hello world!
+      </h2>
+    </body>
+    </html>
+    ```
 
-*6. Start developing*
+6. **Start developing**
 
-You can now use the Tailwind CSS classes available from Decanter and Tailwind CSS. Please continue reading about how to use Tailwind CSS in their [core concepts section](https://tailwindcss.com/docs/utility-first) and then come back and have a look at the examples and conventions sectioins in this website.
+    You can now use the Tailwind CSS classes available from Decanter and Tailwind CSS. Please continue reading about how to use Tailwind CSS in their [core concepts section](https://tailwindcss.com/docs/utility-first) and then come back and have a look at the examples and conventions sectioins in this website.
 </div>
+</Section>

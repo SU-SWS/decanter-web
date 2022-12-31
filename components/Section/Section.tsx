@@ -20,7 +20,7 @@ export const Section = ({
 }: SectionProps) => (
   <section id={id} className={dcnb('su-rs-mb-5 last:su-mb-0 su-wysiwyg', className)}>
     {heading && (
-      <Heading as={headingLevel} size={3}>
+      <Heading as={headingLevel} size={2} className="su-max-w-900">
        {heading} {id && <a href={`#${id}`} className="su-text-black-40">#</a>}
       </Heading>
     )}

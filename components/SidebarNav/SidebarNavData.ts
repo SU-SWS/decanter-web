@@ -10,11 +10,11 @@ export const SidebarNavData = [
     parentPath: routes.forDevelopers(),
     menuLinks: [
       { label: 'Installation', href: routes.installation() },
-      { label: 'Browser compatibility', href: routes.browserCompatibility() },
       { label: 'Strategies and conventions', href: routes.strategiesAndConventions() },
+      { label: 'Browser compatibility', href: routes.browserCompatibility() },
       { label: 'Support and versions', href: routes.supportAndVersions() },
       { label: 'How to extend', href: routes.howToExtend() },
-      { label: 'TailwindCSS plugins', href: routes.tailwindcssPlugins() },
+      { label: 'Tailwind CSS plugins', href: routes.tailwindcssPlugins() },
     ],   
   },
   {
