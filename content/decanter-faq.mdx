@@ -1,6 +1,116 @@
 ---
 title: Decanter FAQs
-lastUpdatedDate: 2022-12-30T12:00:00.000Z
+lastUpdatedDate: 2022-12-31T12:00:00.000Z
 ---
+<div className="su-flex su-flex-col 2xl:su-flex-row-reverse">
+  <div className="2xl:su-sticky 2xl:su-top-0 2xl:su-pl-26 2xl:su-shrink-0 su-rs-mb-5 2xl:su-mb-0">
+    <SectionNav>
+      <SectionNavItem href="#audience" label="What is the audience for the design system?" />
+      <SectionNavItem href="#implementation" label="What is the implementation process for wordpress? e.g., do they use classes, is it all in the base theme?" />
+      <SectionNavItem href="#governance" label="What is the governance process like?" />
+      <SectionNavItem href="#how-decide" label="How do you decide to add new components / design variations?" />
+      <SectionNavItem href="#problem-solving-ds" label="What specific problems does your DS solve?" />
+      <SectionNavItem href="#then-and-now" label="How was the project design/implementation process vs. how is it now?" />
+      <SectionNavItem href="#inspiration" label="Before you started, were there comparable(s) that inspired your approach?" />
+      <SectionNavItem href="#lesson" label="What lessons have emerged and what might you have done differently?" />
+      <SectionNavItem href="#time" label="How much time (and what types of people) do you allocate quarterly/annually?" />
+      <SectionNavItem href="#value" label="How do you quantify/qualify/articulate the value?" />
+      <SectionNavItem href="#documentation" label="What does documentation look like?" />
 
-lalala
+      <SectionNavItem href="#public-or-internal" label="Is it all public on the website or is there also something internal?" />
+      <SectionNavItem href="#who" label="And who is responsible for documentation?" />
+      <SectionNavItem href="#criteria" label="What process did you follow when deciding which types of components to feature in the DS, and the amount of detail(s) to include?" />
+      <SectionNavItem href="#types-website" label="What types of university websites or apps is the DS meant to inform/apply to?" />
+    </SectionNav>
+  </div>
+
+<div className="su-grow">
+<Section heading="What is the audience for the design system?" id="audience">
+Decanter is for developers and designers alike, both inside of Stanford or with external partners creating digital products.
+</Section>
+
+<Section heading="What is the implementation process for wordpress? e.g., do they use classes, is it all in the base theme?" id="implementation">
+There are a few ways that one can incorporate Decanter into WordPress.
+
+**Decanter Version 6 (Twig templates + SCSS):**
+Without installing the Decanter package, it is possible to add the compiled Decanter CSS file(s) and use some of the styling (base HTML styles and class based). However, to take full advantage of what Decanter has to offer, it is best to install the package in your codebase. One will then be able to use the custom SCSS mixins to style their site. To use the Twig templates (templates for the components markup) in Decanter, one can install the Timber WordPress plugin in their WordPress site.
+
+**Decanter Version 7 (Tailwind CSS):**
+Similar to version 6, without installing the Decanter package, one can pull in the compiled Decanter CSS file with the TailwindCSS classes generated. These classes can then be used in your WordPress theme markup for styling. However, this is not encouraged as the Tailwind CSS generated file is very large (~ 10 MB) in size. Instead, one can either use PurgeCSS along with the compiled CSS file, or install Decanter with TailwindCSS and pull in the Decanter elements in your Tailwind CSS configuration file to generate only classes that are used in your markup. The most common way to use Tailwind CSS is to use the classes in the markup, but one can also use the @apply method along with your preprocessor of choice.
+</Section>
+
+<Section heading="What is the governance process like?" id="governance">
+Our core Decanter team is comprised of developers and designers, namely from within the Web Services team, who own the governance process for code and design. Most of the decision making is segregated to this group of experts who are also the core stewards of the code and design. Currently this works well and easily because the core team makeup a majority faction of the Decanter users. In the future, as more groups and projects begin using Decanter without Web Services involved, this will likely become more complex.
+</Section>
+
+<Section heading="How do you decide to add new components / design variations?" id="how-decide">
+The web today has evolved to a point where generalized “components” are conventional and ubiquitous. Like the evolution of a book or newspaper, there aren’t many “new” graphic patterns to display content that influence this general library. With that in mind, our goal with Decanter is to keep the library as trim and foundational to this generalized set of patterns as possible. We build the lego blocks, but the users of Decanter assemble, and style those building blocks however they see fit. As a designer, I’ll want to make sure there is a button in a few sizes, and possibly provide solid and outlined button variants additionally, perhaps leading and trailing icons, but there isn’t much more we can (or want) to add to this foundational component. It’ll employ Stanford’s primary identity colors and typography, and “feel” like Stanford. There may be a few different types of hero banners to allow for consumers of Decanter to employ these components without building from scratch, but again, they tend to be basic in their implementation, and serve a generalized purpose. This works well for platforms like our Stanford Basic product on Drupal where the free service can employ Decanter out of the box, and partners who want something tailored to their visual aesthetic can style on top of this base layer.
+</Section>
+
+<Section heading="What specific problems does your DS solve?" id="problem-solving-ds">
+- Accelerate the design/development process for teams in need of a systemic solution to their frontends and design
+- Brand compliant
+- Accessibility standards met for AA compliance
+</Section>
+
+<Section heading="How was the project design/implementation process vs. how is it now?" id="then-and-now">
+The original V1 of Decanter was designed and implemented by the then lead designer, John Holloman, and lead frontend developer, Kevin Garcia at the time when they were working on our University Communications team rebuilding the stanford.edu website in 2017. Following this project, our Web Services architect, Shea McKinney began to discuss the potential future for Decanter with John and Kevin, and the beginnings of V2 was born.
+
+From there, the case was made to the leadership of both teams to continue evolving and maintaining both the codebase and the design system naming it’s mutually beneficial use cases for our own projects, and for projects across the University. Particularly, meeting accessibility standards (and reducing duplicative effort here for dozens of teams at Stanford) continues to be a primary driver in creating and maintaining Decanter. The Wordpress and Drupal platforms servicing thousands of websites across the University both began employing Decanter in 2019 (and still do today). From 2018-2019 designers and developers met bi-weekly to plan, enhance, and maintain code and design and while we also held bi-annual Decanter sprints with a team of about three designers, and five developers taking us to V4. Since then, devoted Decanter sprints haven’t been as necessary, as large “project-sponsors” have become the source of advancing design and development (not unlike the birth of the project). 
+
+We continue to meet bi-weekly, with an open Decanter forum to discuss enhancements, learn what our community needs, and plan for upcoming work. We have an open Decanter Slack channel. And community members across Stanford are invited to participate in any way they’re supported to do so. But as the source of enhancements have shifted to project-based roadmaps, we’re currently in a period where Decanter is influenced largely by our project sponsors. Design and code decisions are led namely by the Web Services architects and implementors who are the primary users of Decanter V7 to keep the project evolving and reduce stagnation. 
+
+When the DS project started, how did you decide what was the original scope and what did you decide to tackle first?
+The initial scope was stanford.edu as the original source came from the last redesign of that property. We decided that since the Stanford Sites platform was “related” that it would be great if we could collaborate with the University Communications team (at the time) to ensure consistency as well as improve efficiency.
+</Section>
+
+<Section heading="Before you started, were there comparable(s) that inspired your approach?" id="inspiration">
+Original inspiration?
+
+More recent inspiration includes the [Rivet Design System](https://rivet.iu.edu/) and the [Folwell Design System](https://folwell.umn.edu/.)
+</Section>
+
+<Section heading="What lessons have emerged and what might you have done differently?" id="lesson">
+lorem ipsum
+</Section>
+
+<Section heading="How much time (and what types of people) do you allocate quarterly/annually?" id="time">
+Our team crosses functional units at the University, including Web Services, University Communications, University IT Communications, and the Office of Digital Accessibility. We are made up of front-end developers, accessibility specialists, and UX and visual designers. 
+
+We do not have consistent annual staffing for this project. It is cobbled together through a combination of project-specific work and donated time from staff members who believe in making this resource available.
+</Section>
+
+<Section heading="How do you quantify/qualify/articulate the value?" id="value">
+We would love to do a better job of this! It would be great to be able to show the time and money saved by sharing design resources.
+
+How do you communicate changes to the design system/get users on board with these changes? 
+We communicate primarily through individual projects or through the project website (https://decanter.stanford.edu) and a Slack channel. Many of the changes come directly from University Communications as part of the brand guidelines, so those changes are communicated via the brand identity website (https://identity.stanford.edu)
+</Section>
+
+<Section heading="What does documentation look like?" id="documentation">
+The documentation lives on this website and on the Decanter repo on Github.
+</Section>
+
+<Section heading="Is it all public on the website or is there also something internal?" id="public-or-internal">
+The code is completely public. The Figma assets do require some manual hand-off.
+</Section>
+
+<Section heading="And who is responsible for documentation?" id="who">
+We have several team members who pitch in periodically to keep it up to date.
+</Section>
+
+<Section heading="What process did you follow when deciding which types of components to feature in the DS, and the amount of detail(s) to include?" id="criteria">
+We follow this criteria for determining what should go in the system and what would be better to stay in individual projects/products:
+
+Components should be:
+- Reusable, content-agnostic
+- Have a clear use case
+- Expressly address accessibility and usability
+- Considers evolving web trends
+</Section>
+
+<Section heading="What types of university websites or apps is the DS meant to inform/apply to?" id="types-website">
+We hope that it is used for all administrative, departmental, school, lab and institute websites.
+</Section>
+</div>
+</div>
