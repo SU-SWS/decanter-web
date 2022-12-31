@@ -1,44 +1,48 @@
+import routes from "utils/routes";
+
 export const SidebarNavData = [
   {
     label: 'About',
-    href: '/about',
+    href: routes.about(),
   },
   {
     label: 'For developers',
-    parentPath: '/for-developers',
+    parentPath: routes.forDevelopers(),
     menuLinks: [
-      { label: 'Installation', href: '/for-developers/installation' },
-      { label: 'Browser compatibility', href: '/for-developers/browser-compatibility' },
-      { label: 'Strategies and conventions', href: '/for-developers/strategies-and-conventions' },
-      { label: 'Support and versions', href: '/for-developers/support-and-versions' },
-      { label: 'How to extend', href: '/for-developers/how-to-extend' },
-      { label: 'TailwindCSS plugins', href: '/for-developers/tailwindcss-plugins' },
+      { label: 'Installation', href: routes.installation() },
+      { label: 'Browser compatibility', href: routes.browserCompatibility() },
+      { label: 'Strategies and conventions', href: routes.strategiesAndConventions() },
+      { label: 'Support and versions', href: routes.supportAndVersions() },
+      { label: 'How to extend', href: routes.howToExtend() },
+      { label: 'TailwindCSS plugins', href: routes.tailwindcssPlugins() },
     ],   
   },
   {
     label: 'For designers',
-    parentPath: '/for-designers',
+    parentPath: routes.forDesigners(),
     menuLinks: [
-      { label: 'Figma', href: '/for-designers/figma' },
-      { label: 'Stanford identity and brand compliance', href: '/for-designers/stanford-identity-and-brand-compliance' },
-      { label: 'Accessibility', href: '/for-designers/accessibility-notes' },
-      { label: 'Type, grids and color', href: '/for-designers/type-grids-and-color' },
-      { label: 'Patterns and examples', href: '/for-designers/patterns-and-examples' },
+      { label: 'Figma', href: routes.figma() },
+      { label: 'Stanford identity and brand compliance', href: routes.stanfordIdentity() },
+      { label: 'Accessibility', href: routes.accessibilityNotes() },
+      { label: 'Type, grids and color', href: routes.typeGridsAndColor() },
+      { label: 'Patterns and examples', href: routes.patternsAndExamples() },
     ],   
   },
   {
     label: 'Examples',
     parentPath: '/examples',
     menuLinks: [
-      { label: 'Figma', href: '/examples/figma' },
-      { label: 'Stanford identity and brand compliance', href: '/for-designers/stanford-identity-and-brand-compliance' },
-      { label: 'Accessibility', href: '/for-designers/accessibility-notes' },
-      { label: 'Type, grids and color', href: '/for-designers/type-grids-and-color' },
-      { label: 'Patterns and examples', href: '/for-designers/patterns-and-examples' },
+      { label: 'Containers', href: routes.containers() },
+      { label: 'Form elements', href: routes.formElements() },
+      { label: 'Global footer', href: routes.globalFooter() },
+      { label: 'Grid - CSS Grid', href: routes.gridCssGrid() },
+      { label: 'Grid - Flex', href: routes.gridFlex() },
+      { label: 'Identity bar', href: routes.identityBar() },
+      { label: 'Logo', href: routes.logo() },
     ],   
   },
   {
     label: 'Decanter FAQ',
-    href: '/decanter-faq',
+    href: routes.decanterFaq(),
   },
 ];
