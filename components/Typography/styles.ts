@@ -45,6 +45,7 @@ export const textAlign = {
 };
 
 export const textColor = {
+  white: 'su-text-white',
   black: '', // Interit from the base which already sets text to black
   'black-60': 'su-text-black-60', // For headings on eg., Education info and text on eg, Names and pronouns
   'black-80': 'su-text-black-80', // Validation rules color

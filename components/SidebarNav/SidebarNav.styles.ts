@@ -11,7 +11,7 @@ export const chevron = (isActive?: boolean) => dcnb('su-inline-block su-transiti
 export const childMenu = 'su-list-unstyled su-m-0 su-ml-26 su-mb-12 aria-hidden:su-hidden';
 
 // Menu Item
-export const itemLink = (isActive?: boolean, isSecondLevel?: boolean) => dcnb('su-group su-no-underline hocus:su-underline su-border-l-5  su-block su-pl-26  su-transition-all su-duration-300 su-text-white hocus:su-text-white hocus:su-border-white hocus:su-underline', {
+export const itemLink = (isActive?: boolean, isSecondLevel?: boolean) => dcnb('su-group su-no-underline hocus:su-underline su-border-l-5  su-block su-pl-26 su-transition su-text-white hocus:su-text-white hocus:su-border-white hocus:su-underline', {
   'su-border-white': isActive,
   'su-border-transparent': !isActive,
   'su-text-18 su-py-8': isSecondLevel,

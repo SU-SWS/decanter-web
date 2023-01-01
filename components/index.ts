@@ -4,6 +4,7 @@
 export * from './Container';
 export * from './counter';
 export * from './date';
+export * from './IdentityBar';
 export * from './Link';
 export * from './Logo';
 export * from './GlobalFooter';

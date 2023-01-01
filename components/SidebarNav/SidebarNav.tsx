@@ -40,7 +40,13 @@ export const SidebarNav = ({ navItems, className }: SidebarNavProps) => {
         <NavContent navItems={navItems} />
       </nav>
       <nav className={dcnb('lg:su-hidden', className)} aria-label="Main menu">
-        <button type="button" onClick={toggleMenu} className="su-text-white su-inline-block">
+        <button
+          type="button"
+          onClick={toggleMenu}
+          className="su-text-white su-inline-block"
+          aria-label={menuOpened ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpened}
+        >
           <HeroIcon icon="menu" noBaseStyle className={styles.hamburger} />
         </button>
         <MUISwipeableDrawer
@@ -55,6 +61,7 @@ export const SidebarNav = ({ navItems, className }: SidebarNavProps) => {
               variant="close-x"
               onClick={() => setMenuOpened(false)}
               className={styles.closeButton}
+              srText="Close menu"
             />
           </div>
           <NavContent navItems={navItems} />

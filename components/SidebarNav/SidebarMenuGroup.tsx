@@ -34,6 +34,7 @@ export const SidebarMenuGroup = ({
 
   return (
     <li className={styles.parentListItem}>
+      {/* If the item has a href, then it's a top level link, otherwise it's a button to open a child menu */}
       {href ? (
         <SidebarMenuLink href={href} label={label} className={className} />
       ) : (
