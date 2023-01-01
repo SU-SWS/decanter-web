@@ -31,12 +31,12 @@ lastUpdatedDate: 2022-04-06T12:00:00.000Z
     </Section>
 
     <Section heading="Breakpoints" id="breakpoints">
-    - XS: 0 - 575px
-    - SM: 576 - 767px
-    - MD: 768 - 991px
-    - LG: 992 - 1199px
-    - XL: 1200 - 1499px
-    - 2XL: 1500px and up
+    - XS: **0 - 575px**
+    - SM: **576 - 767px**
+    - MD: **768 - 991px**
+    - LG: **992 - 1199px**
+    - XL: **1200 - 1499px**
+    - 2XL: **1500px** and up
     </Section>
 
     <Section heading="Fonts" id="fonts">
@@ -48,27 +48,40 @@ lastUpdatedDate: 2022-04-06T12:00:00.000Z
 
     - **`su-font-sans`**\
     **Font stack:** Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif\
-    **Example:** <span class="su-bg-black-10 su-px-05em su-py-01em">The quick brown fox jumps over the lazy dog.</span>
+    **Example:** <span className="su-bg-black-10 su-px-05em su-py-01em">The quick brown fox jumps over the lazy dog.</span>
     - **`su-font-serif`**\
     **Font stack:** Source Serif Pro, Georgia, Times, Times New Roman, serif\
-    **Example:** <span class="su-font-serif su-bg-black-10 su-px-05em su-py-01em">The quick brown fox jumps over the lazy dog.</span>
+    **Example:** <span className="su-font-serif su-bg-black-10 su-px-05em su-py-01em">The quick brown fox jumps over the lazy dog.</span>
     - **`su-font-stanford`** (use for Stanford logo)\
     **Font stack:** Stanford, Source Serif Pro, Georgia, Times, Times New Roman, serif\
-    **Example:** <span class="su-font-stanford su-bg-black-10 su-px-05em su-py-01em">Stanford University</span>
+    **Example:** <span className="su-font-stanford su-bg-black-10 su-px-05em su-py-01em">Stanford University</span>
     - **`su-font-slab`**\
     **Font stack:** Roboto Slab, Georgia, Times, Times New Roman, serif\
-    **Example:** <span class="su-font-slab su-bg-black-10 su-px-05em su-py-01em">The quick brown fox jumps over the lazy dog.</span>
+    **Example:** <span className="su-font-slab su-bg-black-10 su-px-05em su-py-01em">The quick brown fox jumps over the lazy dog.</span>
     - **`su-font-mono`**\
     **Font stack:** Roboto Mono, Menlo, Courier New, monospace\
-    **Example:** <span class="su-font-mono su-bg-black-10 su-px-05em su-py-01em">The quick brown fox jumps over the lazy dog.</span>
+    **Example:** <span className="su-font-mono su-bg-black-10 su-px-05em su-py-01em">The quick brown fox jumps over the lazy dog.</span>
     </Section>
 
     <Section heading="Centered container and screen edge" id="centered-container-and-screen-edge">
-    Centered container and screen edge
+      In Decanter, we use a fluid “[centered container](https://github.com/SU-SWS/decanter/blob/v7/src/plugins/components/layout/centered-container.js)” (`su-cc` class) to constrain the width of the content area on a website by setting proportional “screen edge” at each breakpoint.
+
+      Screen edge is the minimal amount of space between the outside edge of this centered container and the edge of the browser window. Its margins are set at each breakpoint, up to and not including the largest breakpoint (2XL). The total width of the centered container is not fixed, but rather expands (fluid) as the viewport expands up to 1700px. At which point, the centered container reaches its maximum width of 1500px with screen edge of 100px margin on either side of the container.
+
+      [Screen edge values](https://github.com/SU-SWS/decanter/blob/9442bddc27bd699acdb25c25a1b84b07f905245a/src/plugins/theme/decanter.js#L47) are curated and do not follow a mathematical pattern:
+        - XS: **20px**
+        - SM: **30px**
+        - MD: **50px**
+        - LG: **80px**
+        - XL and 2XL up to 1700px: **100px**
     </Section>
 
     <Section heading="Grid and grid gaps" id="grid-and-grid-gaps">
-    Grid and grid gaps
+      We have [curated grid gaps](https://github.com/SU-SWS/decanter/blob/v7/src/plugins/theme/gap.js) that are proportional within each breakpoint range. Our current values:
+      - XS to MD: **20px**
+      - LG: **36px**
+      - XL: **40px**
+      - 2XL: **48px**
     </Section>
 
     <Section heading="Margins and padding" id="margins-and-padding">
@@ -139,7 +152,12 @@ lastUpdatedDate: 2022-04-06T12:00:00.000Z
     </Section>
 
     <Section heading="Accessibility" id="accessibility">
-    Accessibility
+    <Section headingLevel="h3" headingSize={1} heading="Screen readers">
+      Use the `su-sr-only` class to hide an element visually without hiding it from screen readers.
+    </Section>
+    <Section headingLevel="h3" headingSize={1} heading="Interactive elements">
+      Other than using the `hover:` Tailwind modifier (e.g., `hover:su-underline`) to add hover styles for interactive elements, please remember to also use the `focus:` modifier (e.g., `focus:su-text-lagunita`) to add focus styles for keyboard users. You can use the custom `hocus:` modifier (e.g., `hocus:su-bg-plum`) for styles that have the same hover and focus states.
+    </Section>
     </Section>
   </div>
 </div>
