@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { dcnb } from 'cnbuilder';
 import { useRouter } from 'next/router';
 import { HeroIcon } from '../HeroIcon';
 import { SidebarMenuLink, SidebarMenuLinkProps } from './SidebarMenuLink';
@@ -49,9 +48,9 @@ export const SidebarMenuGroup = ({
             <HeroIcon icon="chevron-down" className={styles.chevron(isExpanded)} />
           </button>
           <ul className={styles.childMenu} aria-hidden={!isExpanded}>
-          {menuLinks?.map((menuItem) => (
-            <SidebarMenuLink key={menuItem.label} label={menuItem.label} href={menuItem.href} isSecondLevel />
-          ))}
+            {menuLinks?.map((menuItem) => (
+              <SidebarMenuLink key={menuItem.label} label={menuItem.label} href={menuItem.href} isSecondLevel />
+            ))}
           </ul>
         </>
       )}

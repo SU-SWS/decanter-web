@@ -15,7 +15,7 @@ export const SidebarMenuLink = ({
   href,
   label,
   isSecondLevel,
-  className
+  className,
 }: SidebarMenuLinkProps) => {
   const router = useRouter();
   const isActive = href === router.asPath;

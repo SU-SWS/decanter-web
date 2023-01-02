@@ -1,4 +1,4 @@
-import { dcnb } from "cnbuilder";
+import { dcnb } from 'cnbuilder';
 // First level parent menu item
 export const parentListItem = 'su-m-0 su-border-t su-border-cool-grey last:su-border-b';
 export const parentItem = 'su-relative su-group su-w-full su-text-left su-text-21 su-no-underline hocus:su-underline su-border-l-5 su-py-16 su-block su-pl-26 su-pr-48 su-transition su-font-semibold su-text-white hocus:su-text-white su-border-transparent hocus:su-border-white hocus:su-underline';

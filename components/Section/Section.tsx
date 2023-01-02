@@ -22,7 +22,7 @@ export const Section = ({
   id,
   width = 'default',
   className,
-  children
+  children,
 }: SectionProps) => (
   <section id={id} className={dcnb('last:su-mb-0 su-wysiwyg', headingLevel === 'h2' ? 'su-rs-mb-5' : '', className)}>
     {heading && (

@@ -1,4 +1,4 @@
-import routes from "utils/routes";
+import * as routes from 'utils/routes';
 
 export const SidebarNavData = [
   {
@@ -15,7 +15,7 @@ export const SidebarNavData = [
       { label: 'Support and versions', href: routes.supportAndVersions() },
       { label: 'How to extend', href: routes.howToExtend() },
       { label: 'Tailwind CSS plugins', href: routes.tailwindcssPlugins() },
-    ],   
+    ],
   },
   {
     label: 'For designers',
@@ -26,7 +26,7 @@ export const SidebarNavData = [
       { label: 'Accessibility', href: routes.accessibilityNotes() },
       { label: 'Type, grids and color', href: routes.typeGridsAndColor() },
       { label: 'Patterns and examples', href: routes.patternsAndExamples() },
-    ],   
+    ],
   },
   {
     label: 'Examples',
@@ -39,7 +39,7 @@ export const SidebarNavData = [
       { label: 'Grid - Flex', href: routes.gridFlex() },
       { label: 'Identity bar', href: routes.identityBar() },
       { label: 'Logo', href: routes.logo() },
-    ],   
+    ],
   },
   {
     label: 'Decanter FAQ',
