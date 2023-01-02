@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Collapse } from '@mui/material';
 import { useRouter } from 'next/router';
 import { HeroIcon } from '../HeroIcon';
 import { SidebarMenuLink, SidebarMenuLinkProps } from './SidebarMenuLink';
@@ -47,11 +48,13 @@ export const SidebarMenuGroup = ({
             {label}
             <HeroIcon icon="chevron-down" className={styles.chevron(isExpanded)} />
           </button>
-          <ul className={styles.childMenu} aria-hidden={!isExpanded}>
-            {menuLinks?.map((menuItem) => (
-              <SidebarMenuLink key={menuItem.label} label={menuItem.label} href={menuItem.href} isSecondLevel />
-            ))}
-          </ul>
+          <Collapse in={isExpanded} unmountOnExit>
+            <ul className={styles.childMenu}>
+              {menuLinks?.map((menuItem) => (
+                <SidebarMenuLink key={menuItem.label} label={menuItem.label} href={menuItem.href} isSecondLevel />
+              ))}
+            </ul>
+          </Collapse>
         </>
       )}
     </li>
