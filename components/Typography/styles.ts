@@ -47,10 +47,8 @@ export const textAlign = {
 export const textColor = {
   white: 'su-text-white',
   black: '', // Interit from the base which already sets text to black
-  'black-60': 'su-text-black-60', // For headings on eg., Education info and text on eg, Names and pronouns
-  'black-80': 'su-text-black-80', // Validation rules color
-  'digital-red-light': 'su-text-digital-red-light', // For error messages
-  'digital-green': 'su-text-digital-green',
+  'black-60': 'su-text-black-60',
+  'black-80': 'su-text-black-80',
 };
 
 export const textVariant = {
@@ -61,16 +59,7 @@ export const textVariant = {
   card: 'su-card-paragraph',
   intro: 'su-intro-text',
   subheading: 'su-subheading',
-  // Below variants prefixed with "ma-" are specific to the My Account project
-  // The CSS associated with these classes are in /src/tailwind/plugins/components/typography/ma-typography.js
-  'ma-body': 'su-ma-body', // 18px for all breakpoints. Called "MA Body" in Figma.
-  'ma-card': 'su-ma-card', // 16px for all breakpoints. Called "MA Card" in Figma.
-  'ma-intro': 'su-ma-intro', // Used for page intro text
-  'ma-big': 'su-ma-big', // 23px for all breakpoints. Called "MA Big" in Figma.
-  // My Account heading sizes (not necessarily associated with heading levels)
-  'ma-level-1': 'su-ma-level-1', // Called "Level 1" in Figma
-  'ma-level-2': 'su-ma-level-2', // Called "Level 2" in Figma
-  'ma-level-3': 'su-ma-level-3', // Called "Level 3" in Figma
+  splash: 'su-splash',
 };
 
 export const iconStyle = 'su-inline-block su-shrink-0 su-w-[1.2em] su-mr-04em';

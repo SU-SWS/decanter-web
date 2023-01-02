@@ -1,10 +1,14 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import MUISwipeableDrawer from '@mui/material/SwipeableDrawer';
 import { dcnb, ClassValue } from 'cnbuilder';
 import { Cta } from '../Cta';
 import { HeroIcon } from '../HeroIcon';
+import { Text } from 'components/Typography';
 import { SidebarMenuGroup, SidebarMenuGroupProps } from './SidebarMenuGroup';
+import figmaIcon from '../../images/figma.svg';
+import githubIcon from '../../images/github.svg';
 import * as styles from './SidebarNav.styles';
 
 export interface SidebarNavProps {
@@ -13,11 +17,36 @@ export interface SidebarNavProps {
 }
 
 export const NavContent = ({ navItems }: SidebarNavProps) => (
-  <ul className="su-list-unstyled">
-    {navItems.map((navItem) => (
-      <SidebarMenuGroup key={navItem.label} {...navItem} />
-    ))}
-  </ul>
+  <>
+    <ul className="su-list-unstyled">
+      {navItems.map((navItem) => (
+        <SidebarMenuGroup key={navItem.label} {...navItem} />
+      ))}
+    </ul>
+    <div className="su-pl-30 su-py-20 su-flex">
+      <a href="https://github.com/SU-SWS/decanter/tree/v7" className="su-flex su-items-center su-text-white hocus:su-text-white hocus:su-underline">
+        <div className="su-w-30 su-h-30 su-mr-8" aria-hidden>
+          <Image
+            src={githubIcon}
+            alt="Decanter Github repo"
+          />
+        </div>
+        <Text leading="none" weight="regular" variant="card">GitHub</Text>
+      </a>
+      <a
+        href="https://www.figma.com/file/HoInlUbZRxyN3ikCJ0K03V/Decanter-v7.0?node-id=0%3A1&t=jT60s0dZMGYJi0FX-1"
+        className="su-flex su-items-center su-ml-30 su-text-white hocus:su-text-white hocus:su-underline"
+      >
+        <div className="su-w-[2.2rem] su-mt-2 su-mr-9" aria-hidden>
+          <Image
+            src={figmaIcon}
+            alt="Decanter Figma library"
+          />
+        </div>
+        <Text leading="none" weight="regular" variant="card">Figma</Text>
+      </a>
+    </div>
+  </>
 );
 
 export const SidebarNav = ({ navItems, className }: SidebarNavProps) => {

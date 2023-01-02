@@ -6,6 +6,7 @@ import {
   Counter,
   FlexBox,
   Heading,
+  Text,
   Container,
   GlobalFooter,
   IdentityBar,
@@ -52,9 +53,10 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
         <aside className="su-flex su-items-center su-justify-between lg:su-block su-shrink-0 lg:su-w-300 lg:su-min-w-[30rem] su-basefont-20 su-bg-black">
           <Link
             href={routes.home()}
-            className="su-leading-none su-font-bold su-type-3 su-pl-20 md:su-pl-30 su-py-30 su-no-underline su-text-white hocus:su-text-white su-inline-block su-w-fit"
+            className="su-px-20 sm:su-px-30 md:su-px-50 su-rs-py-1 lg:su-px-30 su-leading-none su-no-underline hocus:su-text-white su-inline-block su-w-fit"
           >
-            Decanter V7
+            <Text color="white" weight="bold" size={2} className="su-inline-block">Decanter</Text>
+            <Text weight="semibold" className="su-text-white/90 su-inline-block su-ml-10 su--top-5 su-relative su-text-16 su-bg-black-80 su-pt-3 su-pb-5 su-px-8 su-rounded">v7</Text>
           </Link>
           <SidebarNav navItems={SidebarNavData} className="su-mr-30 lg:su-mr-0 lg:su-sticky lg:su-top-0" />
         </aside>
@@ -62,28 +64,26 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
           {page.title !== 'Decanter Homepage' ? (
             <Container as="main" width="full" id="main-content">
               <Container as="article" width="full">
-                <div className='su-mb-8'>
-                  <Heading
-                    as="h1"
-                    size={3}
-                    color="white"
-                    className="su-cc 2xl:su-px-80 su-rs-py-3 su-mb-0 su-bg-gradient-to-r su-from-black-90 su-to-plum"
-                  >
-                    {page.title}
-                  </Heading>
-                  <Container className='2xl:su-px-80 su-rs-pt-4 su-rs-pb-8 su-ml-0'>
-                    <MdxBody
-                      components={{
-                        Counter,
-                        Section,
-                        SectionNav,
-                        SectionNavItem,
-                        GlobalFooter,
-                        IdentityBar,
-                      }}
-                    />
-                  </Container>
-                </div>
+                <Heading
+                  as="h1"
+                  size={3}
+                  color="white"
+                  className="su-px-20 sm:su-px-30 md:su-px-50 lg:su-px-80 xl:px-100 su-rs-py-3 su-mb-0 su-bg-gradient-to-r su-from-black-90 su-to-plum"
+                >
+                  {page.title}
+                </Heading>
+                <Container className='2xl:su-px-80 su-rs-pt-4 su-rs-pb-8 su-ml-0'>
+                  <MdxBody
+                    components={{
+                      Counter,
+                      Section,
+                      SectionNav,
+                      SectionNavItem,
+                      GlobalFooter,
+                      IdentityBar,
+                    }}
+                  />
+                </Container>
                 {/* <div dangerouslySetInnerHTML={{ __html: page.body.html }} /> */}
               </Container>
             </Container>
