@@ -13,22 +13,14 @@ export const getCtaClasses = (
   switch (variant) {
     case 'primary':
     case 'secondary':
-    case 'red':
-    case 'cancel':
     case 'ghost':
       ctaSize = size || 'default';
       break;
-    case 'footer':
-      ctaSize = size || 'footer';
-      break;
-    case 'footer-featured':
-      ctaSize = size || 'footer-featured';
-      break;
-    case 'masthead':
-      ctaSize = size || 'masthead';
-      break;
     case 'link':
       ctaSize = size || 'unset';
+      break;
+    case 'action':
+      ctaSize = size || 'action';
       break;
     case 'dismiss':
       ctaSize = size || 'dismiss';
