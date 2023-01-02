@@ -15,6 +15,7 @@ lastUpdatedDate: 2022-04-06T12:00:00.000Z
       <SectionNavItem href="#base-font-size-and-scales" label="Base font size and scales" />
       <SectionNavItem href="#modular-typography" label="Modular typography" />
       <SectionNavItem href="#other-typography-styles" label="Other typography styles" />
+      <SectionNavItem href="#icons" label="Icons" />
       <SectionNavItem href="#accessibility" label="Accessibility" />
     </SectionNav>
   </div>
@@ -37,6 +38,16 @@ lastUpdatedDate: 2022-04-06T12:00:00.000Z
     - LG: **992 - 1199px**
     - XL: **1200 - 1499px**
     - 2XL: **1500px** and up
+    </Section>
+
+    <Section heading="Colors" id="colors">
+      We have [customized the Tailwind theme](https://github.com/SU-SWS/decanter/blob/v7/src/plugins/theme/colors.js) to include [all the colors from the Stanford Identity Guide](https://identity.stanford.edu/design-elements/color/) to generate all the color-related utility classes your projects need, e.g., `su-bg-cardinal-red`, `su-text-black`, `su-border-palo-alto`.
+
+      **Light and dark variants:** For colors from the identity guide with light and dark variants, add `-light` or `-dark` to the end of the class name, e.g., `su-bg-digital-red-light`, `su-text-lagunita-dark`.
+
+      **Variants of color black:** We have 10 variants of black color available that correspond to the identity guide - `-black`, `-black-90` (the number after the last - is the percentage, so this is 90% black), `-black-80`, `-black-70`, `-black-60`, `-black-50`, `-black-40`, `-black-30`, `-black-20`, `-black-10`. We also have `-black-true` for `#000000`.
+
+      **Color opacity:** To apply opacity to a color, add `/` and a number to the end of the class name, e.g., `su-bg-digital-red/50` (digital red at 50% opacity), `su-text-white/20` (white at 20% opacity). See the [Tailwind documentation on changing color opacity](https://tailwindcss.com/docs/text-color#changing-the-opacity).
     </Section>
 
     <Section heading="Fonts" id="fonts">
@@ -151,13 +162,17 @@ lastUpdatedDate: 2022-04-06T12:00:00.000Z
     - **`su-credit`**
     </Section>
 
+    <Section heading="Icons" id="icons">
+      We use [Heroicons](https://heroicons.com/) for many of our projects that use Decanter v7. Heroicons is developed by the Tailwind CSS team and we found it to pair well with the Tailwind utilities, e.g., you can use classes like `su-text-cardinal-red` or `su-w-30` to style the icons. We also use [FontAwesome](https://fontawesome.com/) in some of our projects for a larger variety of icons as well as social media/brand icons.
+    </Section>
+
     <Section heading="Accessibility" id="accessibility">
-    <Section headingLevel="h3" headingSize={1} heading="Screen readers">
-      Use the `su-sr-only` class to hide an element visually without hiding it from screen readers.
-    </Section>
-    <Section headingLevel="h3" headingSize={1} heading="Interactive elements">
-      Other than using the `hover:` Tailwind modifier (e.g., `hover:su-underline`) to add hover styles for interactive elements, please remember to also use the `focus:` modifier (e.g., `focus:su-text-lagunita`) to add focus styles for keyboard users. You can use the custom `hocus:` modifier (e.g., `hocus:su-bg-plum`) for styles that have the same hover and focus states.
-    </Section>
+      <Section headingLevel="h3" headingSize={1} heading="Screen readers">
+        Use the `su-sr-only` class to hide an element visually without hiding it from screen readers.
+      </Section>
+      <Section headingLevel="h3" headingSize={1} heading="Interactive elements">
+        Other than using the `hover:` Tailwind modifier (e.g., `hover:su-underline`) to add hover styles for interactive elements, please remember to also use the `focus:` modifier (e.g., `focus:su-text-lagunita`) to add focus styles for keyboard users. You can use the custom `hocus:` modifier (e.g., `hocus:su-bg-plum`) for styles that have the same hover and focus states.
+      </Section>
     </Section>
   </div>
 </div>
