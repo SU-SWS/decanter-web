@@ -31,31 +31,3 @@ export const gridCssGrid = () => `${examples()}/grid-css-grid`;
 export const gridFlex = () => `${examples()}/grid-flex`;
 export const identityBar = () => `${examples()}/identity-bar`;
 export const logo = () => `${examples()}/logo`;
-
-// eslint-disable-next-line import/no-anonymous-default-export
-// export default {
-//   home,
-//   about,
-//   forDevelopers,
-//   forDesigners,
-//   examples,
-//   decanterFaq,
-//   installation,
-//   browserCompatibility,
-//   strategiesAndConventions,
-//   supportAndVersions,
-//   howToExtend,
-//   tailwindcssPlugins,
-//   figma,
-//   stanfordIdentity,
-//   accessibilityNotes,
-//   typeGridsAndColor,
-//   patternsAndExamples,
-//   containers,
-//   formElements,
-//   globalFooter,
-//   gridCssGrid,
-//   gridFlex,
-//   identityBar,
-//   logo,
-// };
