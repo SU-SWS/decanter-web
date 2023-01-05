@@ -25,7 +25,8 @@ export const Homepage = () => (
           <div className="">
             <Heading as="h2" size={3} color="white">Get Started</Heading>
             <Paragraph size={1} className="su-rs-mb-2 su-text-black-10">
-              Learn about how to use Decanter components with our onboarding guides, tailored to designers or developers.
+              Learn about how to use Decanter components with our onboarding guides,
+              tailored to designers or developers.
             </Paragraph>
             <Cta variant="action" href={routes.installation()} icon="arrow-right" animate="right" className="su-block su-w-fit">
               View developer guide
