@@ -1,21 +1,15 @@
-module.exports = {
-  content: [],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+/* eslint-disable global-require */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-    "./content/**/*.mdx"
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './content/**/*.mdx',
   ],
   presets: [
-    require('decanter')
+    require('decanter'),
   ],
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};
