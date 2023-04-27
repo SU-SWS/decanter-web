@@ -25,19 +25,117 @@ lastUpdatedDate: 2022-04-06T12:00:00.000Z
 
 <Section heading="Available Attributes" width="full" className="su-max-w-1200">
   <div>
-    - className
-    - as
-    <div>The required html tag for the flex wrapper</div>
-    - direction
-    <div>Options: 'row', 'col'</div>
-    - wrap
-    <div>Options: 'wrap', 'nowrap'</div>
-    - gap: boolean;
-    - justifyContent
-    <div>Options: 'start', 'end', 'center', 'between', 'around', 'evenly'</div>
-    - alignContent
-    <div>Options: 'start', 'end', 'center', 'between', 'around', 'evenly'</div>
-    - alignItems
-    <div>Options: 'start', 'end', 'center', 'baseline', 'stretch'</div>
+    - <strong>className</strong>
+      <div>
+        ```html
+        <FlexBox className="su-space-x-10">
+          ...
+        </FlexBox>
+        ```
+        <div className="su-flex su-space-x-10 su-text-white">
+          <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue">01</div>
+          <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue">02</div>
+          <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue">03</div>
+        </div>
+      </div>
+    - <strong>as</strong>
+      <div className="su-mb-20">
+        <div className="su-mb-10">The required html tag for the flex wrapper</div>
+
+        ```html
+        <FlexBox as="button">
+          Flex button
+        </FlexBox>
+        ```
+        <span>would result in:</span>
+        ```html
+        <button className="su-flex">Flex button</button>
+        ```
+      </div>
+
+
+
+    - <strong>direction</strong>
+      <div>Options: 'row', 'col'</div>
+
+      <div>
+        ```html
+        <FlexBox direction="col">
+          ...
+        </FlexBox>
+        ```
+      </div>
+
+      <div>
+        <div class="su-flex su-flex-col su-space-y-10"><div class="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue">01</div><div class="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue">02</div><div class="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue">03</div></div>
+      </div>
+
+    - <strong>wrap</strong>
+      <div>Options: 'wrap', 'nowrap'</div>
+      <div>
+        ```html
+        <FlexBox wrap="wrap">
+          ...
+        </FlexBox>
+        ```
+      would result in:
+      ```html
+      <div class="su-flex su-flex-wrap">...</div>
+      ```
+      </div>
+
+    - <strong>gap</strong>: boolean;
+      <div>
+        ```html
+        <FlexBox gap>
+          ...
+        </FlexBox>
+        ```
+      </div>
+      <div className="su-flex su-grid-gap">
+        <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue">01</div>
+        <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue">02</div>
+        <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue">03</div>
+      </div>
+    - <strong>justifyContent</strong>
+      <div>Options: 'start', 'end', 'center', 'between', 'around', 'evenly'</div>
+
+      <div>
+        ```html
+        <FlexBox justifyContent="start">
+          ...
+        </FlexBox>
+        ```
+        would result in:
+        ```html
+        <div className="su-flex su-justify-start">...</div>
+        ```
+      </div>
+    - <strong>alignContent</strong>
+      <div>Options: 'start', 'end', 'center', 'between', 'around', 'evenly'</div>
+      <div>
+        ```html
+        <FlexBox alignContent="start">
+          ...
+        </FlexBox>
+        ```
+        would result in:
+        ```html
+        <div className="su-flex su-content-start">...</div>
+        ```
+      </div>
+    - <strong>alignItems</strong>
+      <div>Options: 'start', 'end', 'center', 'baseline', 'stretch'</div>
+      <div>
+        ```html
+        <FlexBox alignItems="start">
+          ...
+        </FlexBox>
+        ```
+        would result in:
+        ```html
+        <div className="su-flex su-items-start">...</div>
+        ```
+      </div>
   </div>
 </Section>
