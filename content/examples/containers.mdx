@@ -1,5 +1,31 @@
 ---
 title: Containers
-lastUpdatedDate: 2022-04-06T12:00:00.000Z
+lastUpdatedDate: 2023-04-28T12:00:00.000Z
 ---
-Containers
+
+<Section heading="Usage:" width="full" className="su-max-w-1200">
+  ```html
+    <Container
+      as="footer"
+      className=""
+      width="site"
+    ></Container>
+  ```
+
+  <footer className="su-cc su-rs-py-2 su-px-20 su-bg-black-10 su-mb-40">
+    <div>This is a container example</div>
+  </footer>
+
+  **As** attribute will determine what html element will the container be.
+
+  <div>Available options:</div>
+  <p>'div', 'section', 'article', 'main', 'footer', 'aside', 'header', 'nav', 'form'</p>
+
+  **width** attribute options:
+  - full: 'su-w-full'
+    <div>width: 100%; default</div>
+  - site: 'su-cc'
+    <div>Use Decanter custom screen margins and sets max content width of 1500px</div>
+  - screen: 'su-w-screen'
+    <div>width: 100vw</div>
+</Section>
