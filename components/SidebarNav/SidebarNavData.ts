@@ -32,6 +32,7 @@ export const SidebarNavData = [
     label: 'Examples',
     parentPath: '/examples',
     menuLinks: [
+      { label: 'HTML Elements', href: routes.htmlElements() },
       { label: 'Containers', href: routes.containers() },
       { label: 'Form elements', href: routes.formElements() },
       { label: 'Global footer', href: routes.globalFooter() },
