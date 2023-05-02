@@ -1,5 +1,163 @@
 ---
 title: Form elements
-lastUpdatedDate: 2022-04-06T12:00:00.000Z
+lastUpdatedDate: 2023-05-02T12:00:00.000Z
 ---
-Form elements
+<Section heading="Form Elements">
+  <div>
+    <form>
+      <fieldset id="forms__input" className="su-fieldset su-rs-mb-3">
+        <legend className="su-legend">Input fields</legend>
+        <p>
+          <label for="input__text" className="su-label">Text Input</label>
+          <input className="su-input" id="input__text" type="text" />
+        </p>
+        <p>
+          <label for="input__password" className="su-label">Password</label>
+          <input className="su-input" id="input__password" type="password" />
+        </p>
+        <p>
+          <label for="input__webaddress" className="su-label">Web Address</label>
+          <input className="su-input" id="input__webaddress" type="url" />
+        </p>
+        <p>
+          <label for="input__emailaddress" className="su-label">Email Address</label>
+          <input className="su-input" id="input__emailaddress" type="email" />
+        </p>
+        <p>
+          <label for="input__phone" className="su-label">Phone Number</label>
+          <input className="su-input" id="input__phone" type="tel" />
+        </p>
+        <p>
+          <label for="input__search" className="su-label">Search</label>
+          <input className="su-input" id="input__search" type="search" />
+        </p>
+        <p>
+          <label for="input__text2" className="su-label">Number Input</label>
+          <input className="su-input" id="input__text2" type="number" />
+        </p>
+        <p>
+          <label for="input__text3" className="su-label error">Error</label>
+          <input className="su-input is-error" id="input__text3" type="text" />
+        </p>
+        <p>
+          <label for="input__text4" className="su-label valid">Valid</label>
+          <input className="su-input is-valid" id="input__text4" type="text" />
+        </p>
+      </fieldset>
+
+      <fieldset id="forms__select" className="su-fieldset su-rs-mb-3">
+        <legend className="su-legend">Select menus</legend>
+        <p>
+          <label for="select" className="su-label">Select</label>
+          <select className="su-select" id="select">
+            <optgroup label="Option Group">
+              <option>Option One</option>
+              <option>Option Two</option>
+              <option>Option Three</option>
+            </optgroup>
+          </select>
+        </p>
+      </fieldset>
+
+      <fieldset id="forms__checkbox" className="su-fieldset su-rs-mb-3">
+        <legend className="su-legend">Checkboxes</legend>
+        <ul>
+          <li>
+            <input className="su-checkbox" id="checkbox1" name="checkbox" type="checkbox" checked="checked" />
+            <label className="su-label" for="checkbox1">Choice A</label>
+          </li>
+          <li>
+            <input className="su-checkbox" id="checkbox2" name="checkbox" type="checkbox" />
+            <label className="su-label" for="checkbox2">Choice B</label>
+          </li>
+          <li>
+            <input className="su-checkbox" id="checkbox3" name="checkbox" type="checkbox" />
+            <label className="su-label" for="checkbox3">Choice C</label>
+          </li>
+          <li>
+            <input className="su-checkbox" id="checkbox4" name="checkbox" type="checkbox" />
+            <label className="su-label" for="checkbox3">Choice D</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset id="forms__radio" className="su-fieldset su-rs-mb-3">
+        <legend className="su-legend">Radio buttons</legend>
+        <ul>
+          <li>
+            <input className="su-radio" id="radio1" name="radio" type="radio" checked="checked" />
+            <label className="su-label" for="radio1">Option 1</label>
+          </li>
+          <li>
+            <input className="su-radio" id="radio2" name="radio" type="radio" />
+            <label className="su-label" for="radio2">Option 2</label>
+          </li>
+          <li>
+            <input className="su-radio" id="radio3" name="radio" type="radio" />
+            <label className="su-label" for="radio3">Option 3</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset id="forms__textareas" className="su-fieldset su-rs-mb-3">
+        <legend className="su-legend">Textareas</legend>
+        <p>
+          <label className="su-label" for="textarea">Textarea</label>
+          <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here" className="su-textarea"></textarea>
+        </p>
+      </fieldset>
+
+      <fieldset id="forms__html5" className="su-fieldset su-rs-mb-3">
+        <legend className="su-legend">HTML5 inputs</legend>
+        <p>
+          <label className="su-label" for="ic">Color input</label>
+          <input className="su-input" type="color" id="ic" value="#000000" />
+        </p>
+        <p>
+          <label className="su-label" for="in">Number input</label>
+          <input className="su-input" type="number" id="in" min="0" max="10" value="5" />
+        </p>
+        <p>
+          <label className="su-label" for="ir">Range input</label>
+          <input className="su-input" type="range" id="ir" value="10" />
+        </p>
+        <p>
+          <label className="su-label" for="idd">Date input</label>
+          <input className="su-input" type="date" id="idd" value="1970-01-01" />
+        </p>
+        <p>
+          <label className="su-label" for="idm">Month input</label>
+          <input className="su-input" type="month" id="idm" value="1970-01" />
+        </p>
+        <p>
+          <label className="su-label" for="idw">Week input</label>
+          <input className="su-input" type="week" id="idw" value="1970-W01" />
+        </p>
+        <p>
+          <label className="su-label" for="idt">Datetime input</label>
+          <input className="su-input" type="datetime" id="idt" value="1970-01-01T00:00:00Z" />
+        </p>
+        <p>
+          <label className="su-label" for="idtl">Datetime-local input</label>
+          <input className="su-input" type="datetime-local" id="idtl" value="1970-01-01T00:00" />
+        </p>
+      </fieldset>
+
+      <fieldset id="forms__action" className="su-fieldset su-rs-mb-3">
+        <legend className="su-legend">Action buttons</legend>
+        <p className="su-flex su-gap-[4px] su-flex-wrap">
+          <input className="su-button" type="submit" value="<input type=submit>" />
+          <input className="su-button" type="button" value="<input type=button>" />
+          <input className="su-button" type="reset" value="<input type=reset>" />
+          <input className="su-button" type="submit" value="<input disabled>" disabled="" />
+        </p>
+        <p className="su-flex su-gap-[4px] su-flex-wrap">
+          <button className="su-button" type="submit">&lt;button type=submit&gt;</button>
+          <button className="su-button" type="button">&lt;button type=button&gt;</button>
+          <button className="su-button" type="reset">&lt;button type=reset&gt;</button>
+          <button className="su-button" type="button" disabled="">&lt;button disabled&gt;</button>
+        </p>
+      </fieldset>
+    </form>
+  </div>
+</Section>
