@@ -3,139 +3,119 @@ title: Grid - Flex
 lastUpdatedDate: 2022-04-06T12:00:00.000Z
 ---
 
-<Section heading="Usage:" width="full" className="su-max-w-1200">
-  <div>
+<div className="su-max-w-1200">
+  <div className="su-mb-40">
     ```html
-    <FlexBox direction="col" className="lg:su-flex-row" title="Flex Box Example">
-      ...
-    </FlexBox>
-    ```
-  </div>
-</Section>
-
-<Section heading="HTML" width="full" className="su-max-w-1200">
-  <div>
-    ```html
-    <div className="su-flex su-flex-col lg:su-flex-row" title="Flex Box Example">
+    <div className="su-flex">
       ...
     </div>
     ```
+    <div className="su-flex">
+      <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue su-text-white">01</div>
+      <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue su-text-white">02</div>
+      <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue su-text-white">03</div>
+    </div>
   </div>
-</Section>
 
-<Section heading="Available Attributes" width="full" className="su-max-w-1200">
-  <div>
-    - <strong>className</strong>
-      <div>
-        ```html
-        <FlexBox className="su-space-x-10">
-          ...
-        </FlexBox>
-        ```
-        <div className="su-flex su-space-x-10 su-text-white">
-          <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue">01</div>
-          <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue">02</div>
-          <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue">03</div>
-        </div>
-      </div>
-    - <strong>as</strong>
-      <div className="su-mb-20">
-        <div className="su-mb-10">The required html tag for the flex wrapper</div>
-
-        ```html
-        <FlexBox as="button">
-          Flex button
-        </FlexBox>
-        ```
-        <span>would result in:</span>
-        ```html
-        <button className="su-flex">Flex button</button>
-        ```
-      </div>
-
-
-
-    - <strong>direction</strong>
-      <div>Options: 'row', 'col'</div>
-
-      <div>
-        ```html
-        <FlexBox direction="col">
-          ...
-        </FlexBox>
-        ```
-      </div>
-
-      <div>
-        <div class="su-flex su-flex-col su-space-y-10"><div class="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue">01</div><div class="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue">02</div><div class="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue">03</div></div>
-      </div>
-
-    - <strong>wrap</strong>
-      <div>Options: 'wrap', 'nowrap'</div>
-      <div>
-        ```html
-        <FlexBox wrap="wrap">
-          ...
-        </FlexBox>
-        ```
-      would result in:
-      ```html
-      <div class="su-flex su-flex-wrap">...</div>
-      ```
-      </div>
-
-    - <strong>gap</strong>: boolean;
-      <div>
-        ```html
-        <FlexBox gap>
-          ...
-        </FlexBox>
-        ```
-      </div>
-      <div className="su-flex su-grid-gap">
-        <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue">01</div>
-        <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue">02</div>
-        <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue">03</div>
-      </div>
-    - <strong>justifyContent</strong>
-      <div>Options: 'start', 'end', 'center', 'between', 'around', 'evenly'</div>
-
-      <div>
-        ```html
-        <FlexBox justifyContent="start">
-          ...
-        </FlexBox>
-        ```
-        would result in:
-        ```html
-        <div className="su-flex su-justify-start">...</div>
-        ```
-      </div>
-    - <strong>alignContent</strong>
-      <div>Options: 'start', 'end', 'center', 'between', 'around', 'evenly'</div>
-      <div>
-        ```html
-        <FlexBox alignContent="start">
-          ...
-        </FlexBox>
-        ```
-        would result in:
-        ```html
-        <div className="su-flex su-content-start">...</div>
-        ```
-      </div>
-    - <strong>alignItems</strong>
-      <div>Options: 'start', 'end', 'center', 'baseline', 'stretch'</div>
-      <div>
-        ```html
-        <FlexBox alignItems="start">
-          ...
-        </FlexBox>
-        ```
-        would result in:
-        ```html
-        <div className="su-flex su-items-start">...</div>
-        ```
-      </div>
+  <div className="su-mb-40">
+    ```html
+    <button className="su-flex">Flex button</button>
+    ```
+    <button className="su-flex">Flex button</button>
   </div>
-</Section>
+
+  <div className="su-mb-40">
+    <strong>column:</strong>
+    ```html
+    <div className="su-flex su-space-x-10">
+      ...
+    </div>
+    ```
+    <div className="su-flex su-flex-col su-space-y-10">
+      <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue su-text-white">01</div>
+      <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue su-text-white">02</div>
+      <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue su-text-white">03</div>
+    </div>
+  </div>
+
+  <div className="su-mb-40">
+    <strong>gap:</strong>
+    ```html
+    <div className="su-flex su-grid-gap">
+      ...
+    </div>
+    ```
+    <div className="su-flex su-grid-gap">
+      <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue su-text-white">01</div>
+      <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue su-text-white">02</div>
+      <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue su-text-white">03</div>
+    </div>
+  </div>
+
+  <div className="su-mb-40">
+    <strong>justifyContent:</strong>
+
+    - start: 'su-justify-start',
+    - end: 'su-justify-end',
+    - center: 'su-justify-center',
+    - between: 'su-justify-between',
+    - around: 'su-justify-around',
+    - evenly: 'su-justify-evenly',
+
+    ```html
+    <div className="su-flex su-justify-start">
+      ...
+    </div>
+    ```
+
+    <div className="su-flex su-justify-start su-space-x-10">
+      <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue su-text-white">01</div>
+      <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue su-text-white">02</div>
+      <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue su-text-white">03</div>
+    </div>
+  </div>
+
+  <div className="su-mb-40">
+    <strong>alignContent:</strong>
+    - start: 'su-content-start',
+    - end: 'su-content-end',
+    - center: 'su-content-center',
+    - between: 'su-content-between',
+    - around: 'su-content-around',
+    - evenly: 'su-content-evenly',
+
+    ```html
+    <div className="su-flex su-content-start">
+      ...
+    </div>
+    ```
+
+    <div className="su-flex su-content-start su-space-x-10">
+      <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue su-text-white">01</div>
+      <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue su-text-white">02</div>
+      <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue su-text-white">03</div>
+    </div>
+  </div>
+
+  <div className="su-mb-40">
+    <strong>alignItems:</strong>
+    - start: 'su-items-start',
+    - end: 'su-items-end',
+    - center: 'su-items-center',
+    - baseline: 'su-items-baseline',
+    - stretch: 'su-items-stretch',
+
+    ```html
+    <div className="su-flex su-items-start">
+      ...
+    </div>
+    ```
+
+    <div className="su-flex su-items-start su-space-x-10">
+      <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue su-text-white">01</div>
+      <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue su-text-white">02</div>
+      <div className="su-w-50 su-h-50 su-flex su-items-center su-justify-center su-bg-digital-blue su-text-white">03</div>
+    </div>
+  </div>
+
+</div>
