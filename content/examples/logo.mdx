@@ -5,7 +5,7 @@ lastUpdatedDate: 2023-05-01T12:00:00.000Z
 <Section heading="Default" width="full" className="su-max-w-1200">
   <div className="su-logo su-text-cardinal-red">Stanford</div>
   ```html
-  <Logo />
+  <div className="su-logo su-text-cardinal-red">Stanford</div>
   ```
 </Section>
 
@@ -15,12 +15,11 @@ lastUpdatedDate: 2023-05-01T12:00:00.000Z
   </div>
 
   ```html
-    <Logo
-      isLink
-      className="su-type-3"
-      type="stacked"
-      color="white"
-    />
+  <div className="su-bg-digital-red su-rs-p-2">
+    <a href="https://www.stanford.edu" className="su-logo hocus:su-no-underline su-text-white hocus:su-text-white su-type-3">
+      Stanford <br/> University
+    </a>
+  </div>
   ```
 </Section>
 
@@ -30,12 +29,11 @@ lastUpdatedDate: 2023-05-01T12:00:00.000Z
   </div>
 
   ```html
-      <Logo
-        isLink
-        type="full"
-        color="white"
-        className="su-text-20 su-leading-none"
-      />
+  <div className="su-bg-digital-red su-rs-p-2">
+    <a className="su-logo hocus:su-no-underline su-text-white hocus:su-text-white su-text-20 su-leading-none" href="https://www.stanford.edu">
+      Stanford University
+    </a>
+  </div>
   ```
 </Section>
 
@@ -45,19 +43,8 @@ lastUpdatedDate: 2023-05-01T12:00:00.000Z
   </div>
 
   ```html
-  <Logo
-    isLink
-    type="short"
-    color="white"
-  />
+  <div className="su-bg-digital-red su-rs-p-2">
+    <a className="su-logo hocus:su-no-underline su-text-white hocus:su-text-white" href="https://www.stanford.edu">Stanford</a>
+  </div>
   ```
-</Section>
-
-
-<Section heading="Available attributes:" width="full" className="su-max-w-1200">
-
-  - className?: ClassValue;
-  - color?: LogoColorType;
-  - type?: 'short' | 'full' | 'stacked';
-  - isLink?: boolean;
 </Section>
