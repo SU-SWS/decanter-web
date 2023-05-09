@@ -7,20 +7,6 @@
 a {
   @apply su-no-underline hocus:su-underline
 }
-
-.su-content {
-  /* placeholder */
-}
-
-.su-content h2 {
-  @apply su-type-3
-}
-
-.su-content h3 {
-  @apply su-type-2
-}
-
-.su-content h4,
-.su-content h5 {
-  @apply su-type-1
+code {
+  @apply su-bg-plum-light/10 su-px-6 su-text-[0.8em] su-text-plum;
 }
