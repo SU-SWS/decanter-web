@@ -27,7 +27,7 @@ export const patternsAndExamples = () => `${forDesigners()}/patterns-and-example
 export const containers = () => `${examples()}/containers`;
 export const formElements = () => `${examples()}/form-elements`;
 export const globalFooter = () => `${examples()}/global-footer`;
-export const gridCssGrid = () => `${examples()}/grid-css-grid`;
+export const Layout = () => `${examples()}/layout`;
 export const gridFlex = () => `${examples()}/grid-flex`;
 export const identityBar = () => `${examples()}/identity-bar`;
 export const logo = () => `${examples()}/logo`;
