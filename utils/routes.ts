@@ -28,6 +28,6 @@ export const containers = () => `${examples()}/containers`;
 export const formElements = () => `${examples()}/form-elements`;
 export const globalFooter = () => `${examples()}/global-footer`;
 export const gridCssGrid = () => `${examples()}/grid-css-grid`;
-export const gridFlex = () => `${examples()}/grid-flex`;
+export const cards = () => `${examples()}/cards`;
 export const identityBar = () => `${examples()}/identity-bar`;
 export const logo = () => `${examples()}/logo`;
