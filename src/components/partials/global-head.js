@@ -1,5 +1,5 @@
 import Head from "next/head";
-import "../../scss/index.scss";
+import Script from 'next/script'
 
 const HTMLHead = props => (
   <>
@@ -28,8 +28,8 @@ const HTMLHead = props => (
     <meta name="msapplication-square70x70logo" content="https://www-media.stanford.edu/assets/favicon/mstile-70x70.png" />
     <meta name="msapplication-square150x150logo" content="https://www-media.stanford.edu/assets/favicon/mstile-150x150.png" />
     <meta name="msapplication-square310x310logo" content="https://www-media.stanford.edu/assets/favicon/mstile-310x310.png" />
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </Head>
+  <Script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
   </>
 );
 

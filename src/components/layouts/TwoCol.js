@@ -5,18 +5,17 @@ import MastHead from '../MastHead/MastHead.js';
 import GlobalFooter from '../GlobalFooter/GlobalFooter.js';
 import PrimaryNav from '../PrimaryNav/PrimaryNav.js';
 import Logo from '../Logo/Logo.js';
-import FooterScripts from '../partials/global-footer-scripts.js';
 
-const Layout = (props) => (
+const Layout = ({type, title, header, content, ...rest}) => (
   <>
   <HTMLHead />
   <SkipLink />
   <MastHead />
-  <main className={props.type}>
+  <main className={type}>
     <aside aria-label="left sidebar" id="left-sidebar">
       <Logo />
       <button className="su-main-nav__toggle" aria-expanded="false" id="hamburger">Menu</button>
-      <PrimaryNav {...props} />
+      <PrimaryNav {...rest} />
       <a href="https://www.netlify.com">
         <img src="https://www.netlify.com/img/global/badges/netlify-dark.svg" />
       </a>
@@ -25,19 +24,18 @@ const Layout = (props) => (
       <SkipLinkTarget />
       <article>
         <header>
-        {props.title && (
-          <h1>{props.title}</h1>
+        {title && (
+          <h1>{title}</h1>
         )}
-        {props.header}
+        {header}
         </header>
-        {props.content}
+        {content}
       </article>
     </section>
   </main>
   <footer>
     <GlobalFooter />
   </footer>
-  <FooterScripts />
   </>
 );
 

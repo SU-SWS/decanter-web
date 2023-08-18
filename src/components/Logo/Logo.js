@@ -1,6 +1,8 @@
+import Link from 'next/link'
+
 const Logo = () => (
   <>
-  <span className="brand-logo"><a href="/">Decanter</a></span>
+  <span className="brand-logo"><Link href="/">Decanter</Link></span>
   <style jsx>{`
     .brand-logo {
       display: block;

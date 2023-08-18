@@ -14,17 +14,17 @@ const GlobalFooter = () => (
           </ul>
           <ul className="su-global-footer__menu su-global-footer__menu--policy">
             <li><a href="https://www.stanford.edu/site/terms/"
-                   title="Terms of use for sites">Terms of Use</a></li>
+                    title="Terms of use for sites">Terms of Use</a></li>
             <li><a href="https://www.stanford.edu/site/privacy/"
-                   title="Privacy and cookie policy">Privacy</a></li>
+                    title="Privacy and cookie policy">Privacy</a></li>
             <li><a href="https://uit.stanford.edu/security/copyright-infringement"
-                   title="Report alleged copyright infringement">Copyright</a></li>
+                    title="Report alleged copyright infringement">Copyright</a></li>
             <li><a href="https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4"
-                   title="Ownership and use of Stanford trademarks and images">Trademarks</a></li>
+                    title="Ownership and use of Stanford trademarks and images">Trademarks</a></li>
             <li><a href="https://studentservices.stanford.edu/more-resources/student-policies/non-academic/non-discrimination"
-                   title="Non-discrimination policy">Non-Discrimination</a></li>
+                    title="Non-discrimination policy">Non-Discrimination</a></li>
             <li><a href="https://www.stanford.edu/site/accessibility"
-                   title="Report web accessibility issues">Accessibility</a></li>
+                    title="Report web accessibility issues">Accessibility</a></li>
           </ul>
         </nav>
         <div className="su-global-footer__copyright">

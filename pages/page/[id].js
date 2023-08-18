@@ -1,40 +1,60 @@
-import { useRouter } from 'next/router';
 import Layout from '../../src/components/layouts/TwoCol.js';
 
 /**
- * [Post description]
- * @param {[type]} props [description]
- */
-const Page = props => {
+ * Page pages.
+ **/
+const Page = ({ attributes, html, ...rest}) => {
 
-  if (!props.page.html) {
-    <Layout
-      content=<p>Loading...</p>
-      title="Loading"
-    />
-  }
+  const title = attributes.title;
+  const cont = <div className="content" dangerouslySetInnerHTML={{ __html: html }} />;
 
-  const title = props.page.attributes.title;
-  const cont = <div className="content" dangerouslySetInnerHTML={{ __html: props.page.html }} />;
   return (
     <Layout
       type="page"
       content={cont}
       title={title}
-      {...props}
+      {...rest}
     />
   )
 }
 
 /**
- * [getInitialProps description]
- * @param  {[type]} query [description]
- * @return {[type]}       [description]
+ * Set the paths.
  */
-Page.getInitialProps = async function(context) {
-  const { id } = context.query;
-  const fileContent = await import(`../../content/_pages/${id}.md`);
-  return { page: await fileContent, id: id };
+export const getStaticPaths = async () => {
+  const glob = require("glob");
+  const path = require('path');
+  const fs = require('fs');
+
+  // Hard coded paths.
+  const paths = [
+    { params: { id: 'test' } },
+    { params: { id: 'test1' } },
+    { params: { id: 'test2' } },
+    { params: { id: 'test3' } },
+  ];
+
+  // Pages.
+  // var files = glob.sync('content/_pages/*.md');
+  // files.forEach(function(filename) {
+  //   var key = filename.replace("content/_pages/", "").replace(".md", "");
+  //   pages['/page/' + key] = { page: '/page/[id]', query: { id: key } };
+  // });
+
+  return { paths, fallback: false };
 }
+
+/**
+ * Get the data.
+ */
+export const getStaticProps = ({params: { id }}) => {
+  const props = {};
+  props.attributes = {};
+  props.attributes.title = id;
+  props.html = "<p>Test</p>";
+  return { props };
+
+}
+
 
 export default Page;
