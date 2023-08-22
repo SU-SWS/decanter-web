@@ -1,35 +1,130 @@
-const ComponentPage = (props) => {
+import React from 'react';
+import Layout from '../../src/components/layouts/TwoCol.js';
+import KSSComponent from '../../src/components/KSSComponent/KSSComponent.js';
+const prettifyHtml = require('prettify-html');
 
-return (
-  <p>I am a page.</p>
-);
-  // if (!props.page.html) {
-  //   <Layout
-  //     content=<p>Loading...</p>
-  //     title="Loading"
-  //   />
-  // }
+/**
+ * ComponentPage
+ */
+const ComponentPage = ({ data, info, markup, local = null }) => {
+  const title = info.header;
+  const cont = <KSSComponent data={data} info={info} html={markup} local={local} />;
 
-  // const title = props.page.attributes.title;
-  // const cont = <div className="content" dangerouslySetInnerHTML={{ __html: props.page.html }} />;
-  // return (
-  //   <Layout
-  //     type="page"
-  //     content={cont}
-  //     title={title}
-  //     {...props}
-  //   />
-  // )
+  let twig_source;
+  if (info.source_twig) {
+    var fp = "https://github.com/SU-SWS/decanter/blob/master/core/src/" + info.source_twig;
+    twig_source = <a href={fp}>core/src/{info.source_twig}</a>;
+  }
+  const fps = "https://github.com/SU-SWS/decanter/blob/master/core/src/scss/components/" + info.source.filename;
+  const scss_source = <a href={fps}>core/src/scss/components/{info.source.filename}</a>;
+  const hed = (<div className="component__resources">
+    <p><strong>SCSS Source:</strong> {scss_source}</p>
+    {twig_source ? <p><strong>Twig Source:</strong> {twig_source}</p> : ''}
+  </div>);
+
+  return (
+    <Layout
+      type="page-component"
+      content={cont}
+      title={title}
+      header={hed}
+      data={data}
+      info={info}
+      markup={markup}
+      local={local}
+    />
+  );
 }
 
 export default ComponentPage;
 
 
+/**
+ * Parse the nested children objects.
+ */
+const parseChildren = (items, passed = []) => {
+  let ret = passed;
+
+  items.forEach(function (content) {
+    // Parse the children first.
+    if (content?.children) {
+      ret = parseChildren(content.children, ret);
+    }
+
+    // If no key just pass back the reference.
+    if (!content?.key) {
+      return ret;
+    }
+    ret.push({
+      params: {
+        id: content.key,
+        label: content.label,
+        path: content.path
+      }
+    });
+  });
+
+  return ret;
+}
+
+/**
+ * Set the paths.
+ */
+export const getStaticPaths = async () => {
+  const fs = require('fs');
+  const path = require('path');
+  const componentRaw = fs.readFileSync(path.resolve(process.cwd(), 'content/_settings/kss.json'), 'utf8');
+  const componentData = JSON.parse(componentRaw);
+  const items = componentData.items;
+
+  // Constructed paths.
+  let paths = [];
+  paths = parseChildren(items, paths);
+  return { paths, fallback: false };
+}
+
+/**
+ * Export data
+ */
+export const getStaticProps = async ({ params: { id, label, path } }) => {
+  const fs = require('fs');
+  const nodePath = require('path');
+  const componentData = JSON.parse(fs.readFileSync(nodePath.resolve(process.cwd(), `content/_kss/data/${id}.json`), 'utf8'));
+  const componentInfo = JSON.parse(fs.readFileSync(nodePath.resolve(process.cwd(), `content/_kss/info/${id}.json`), 'utf8'));
+  const componentMarkup = prettifyHtml(fs.readFileSync(nodePath.resolve(process.cwd(), `content/_kss/markup/${id}.html`), 'utf8'));
+  let localContent = {};
+  try {
+    const localData = await import(`../../content/_components/${id}.md`);
+    localContent = localData.attributes;
+    localContent.body = localData.html;
+  }
+  catch(err) {
+    console.log(err);
+  }
+
+  if (componentInfo?.modifiers) {
+      componentInfo.modifiers.forEach(function(mod, index) {
+        const modmarkup = prettifyHtml(fs.readFileSync(nodePath.resolve(process.cwd(), `content/_kss/markup/${id}-${mod.className}.html`), 'utf8'));
+        componentInfo.modifiers[index].markup = modmarkup ?? componentMarkup;
+      });
+  }
+
+  return {
+    props: {
+      data: componentData,
+      info: componentInfo,
+      markup: componentMarkup,
+      local: localContent
+    }
+  };
+}
 
 
-// import Layout from '../../src/components/layouts/TwoCol.js';
-// import KSSComponent from '../../src/components/KSSComponent/KSSComponent.js';
-// const prettifyHtml = require('prettify-html');
+
+/// OLD COMPONENT BELOW!!!!
+
+
+
 
 // /**
 //  * [Index description]

@@ -6,7 +6,7 @@ import GlobalFooter from '../GlobalFooter/GlobalFooter.js';
 import PrimaryNav from '../PrimaryNav/PrimaryNav.js';
 import Logo from '../Logo/Logo.js';
 
-const Layout = ({type, title, header, content, ...rest}) => (
+const Layout = ({ type, title, header, content, ...rest }) => (
   <>
   <HTMLHead />
   <SkipLink />

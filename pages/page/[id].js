@@ -47,7 +47,7 @@ export const getStaticPaths = async () => {
 /**
  * Get the data.
  */
-export const getStaticProps = ({params: { id }}) => {
+export const getStaticProps = ({ params: { id } }) => {
   const props = {};
   props.attributes = {};
   props.attributes.title = id;

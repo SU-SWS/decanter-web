@@ -1,41 +1,38 @@
-const hljs = require('highlight.js');
 import Alert from '../Alert/Alert.js';
 import Variant from '../Variant/Variant.js';
 
-const KSSComponent = (props) => {
-  var description;
-  var notes;
-  const example = <div dangerouslySetInnerHTML={{ __html: props.markup }} />;
-  const markup = <div dangerouslySetInnerHTML={{ __html: hljs.highlight('html', props.markup).value}} />;
-  let variants = props.variants || [];
+const KSSComponent = ({data, info, html, local = null}) => {
+  const hljs = require('highlight.js');
+  let description;
+  let notes;
+  const example = <div dangerouslySetInnerHTML={{ __html: html }} />;
+  const markup = <div dangerouslySetInnerHTML={{ __html: hljs.highlight('html', html).value}} />;
+  let variants = info?.modifiers || [];
+  let defaultDemoStyles, defaultDemoStylesWrapper;
 
   // If no local data.
-  if (!props.local || !props.local.body.length) {
-    description = <div dangerouslySetInnerHTML={{ __html: props.kssdata.description }} />;
+  if (!local || !local?.body?.length) {
+    description = <div dangerouslySetInnerHTML={{ __html: info.description }} />;
+  }
+  else if (local?.body) {
+    description = <div dangerouslySetInnerHTML={{ __html: local.body }} />;
   }
 
   // If we have local data. Do more stuff.
-  if (props.local) {
-    var lc = props.local;
-
+  if (local) {
     // Default size of the demo container.
-    if (lc.egwidth) {
-      var defaultDemoStyles = `max-width: ${lc.egwidth}`;
+    if (local.egwidth) {
+      let defaultDemoStyles = `max-width: ${local.egwidth}`;
     }
 
     // Background color of the demo container.
-    if (lc.bgcolor) {
-      var defaultDemoStylesWrapper = `background: ${lc.bgcolor}`;
-    }
-
-    // If there is a body content override.
-    if (lc.body) {
-      description = <div dangerouslySetInnerHTML={{ __html: lc.body }} />;
+    if (local.bgcolor) {
+      let defaultDemoStylesWrapper = `background: ${local.bgcolor}`;
     }
 
     // If there is bottom content notes to add.
-    if (lc.bottomcontent) {
-      notes = <div dangerouslySetInnerHTML={{ __html: lc.bottomcontent }} />;
+    if (local.bottomcontent) {
+      notes = <div dangerouslySetInnerHTML={{ __html: local.bottomcontent }} />;
     }
 
   }
@@ -52,7 +49,7 @@ const KSSComponent = (props) => {
       }
     `}
     </style>
-    {props.kssdata.deprecated || props.kssdata.experimental ? <Alert deprecated={props.kssdata.deprecated} experimental={props.kssdata.experimental} /> : '' }
+    {info.deprecated || info.experimental ? <Alert deprecated={info.deprecated} experimental={info.experimental} /> : '' }
     <section className="component">
         <section className="component__description">
           <h2>Description</h2>
@@ -84,7 +81,7 @@ const KSSComponent = (props) => {
           <h2>Style Variants</h2>
         </header>
           {variants.map((val) => {
-            return <Variant key={val.name} data={val} {...props} />;
+            return <Variant key={val.name} data={val} local={local} />;
           })}
       </section>
       : ''}
