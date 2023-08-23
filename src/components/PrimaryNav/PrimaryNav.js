@@ -1,41 +1,37 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navigation from '../../../content/_settings/navigation.yml';
 import Components from '../../../content/_settings/kss.json';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
-// doExpandThingy() {
-//   var decanterNav = document.getElementById('decanter-nav');
-//   let actives = decanterNav.querySelectorAll('.su-secondary-nav__item--current');
-//   if (actives.length) {
-//     actives.forEach(
-//       element => {
+const doExpandThingy = () => {
+  const decanterNav = document.getElementById('decanter-nav');
+  const actives = decanterNav.querySelectorAll('.su-secondary-nav__item--current');
+  if (actives.length) {
+    actives.forEach(
+      element => {
 
-//         // While we have parents go up and add the active class.
-//         while (element) {
-//           // End when we get to the parent nav item stop.
-//           if (element === decanterNav) {
-//             // Stop at the top most level.
-//             break;
-//           }
+        // While we have parents go up and add the active class.
+        while (element) {
+          // End when we get to the parent nav item stop.
+          if (element === decanterNav) {
+            // Stop at the top most level.
+            break;
+          }
 
-//           // If we are on a LI element we need to add the active class.
-//           if (element.tagName === 'LI') {
-//             element.classList.add('su-secondary-nav__item--expanded');
-//             element.classList.add('active-trail');
-//           }
+          // If we are on a LI element we need to add the active class.
+          if (element.tagName === 'LI') {
+            element.classList.add('su-secondary-nav__item--expanded');
+            element.classList.add('active-trail');
+          }
 
-//           // Always increment.
-//           element = element.parentNode;
-//         }
-//       }
-//     );
-//   }
-// }
-
-
-// componentDidMount() {
-//   this.doExpandThingy();
-// }
+          // Always increment.
+          element = element.parentNode;
+        }
+      }
+    );
+  }
+}
 
 /**
  * Search for the active path and add the active class.
@@ -53,7 +49,7 @@ const setActivePath = (items, key) => {
  */
 function dynamicActiveSearch(item, key) {
   item.class = ['su-secondary-nav__link'];
-  if (item.id && item.id == key) {
+  if (item.path && item.path == key) {
     item.class.push('su-secondary-nav__item--current');
   }
 
@@ -62,12 +58,41 @@ function dynamicActiveSearch(item, key) {
   }
 }
 
-const PrimaryNav = ({id}) => {
+const PrimaryNav = () => {
+  const pages = Navigation.nav_items;
+  const components = Components.items;
+  components.map((item) => {
+    item.path = `${item.path.replace(/\/+$/, '')}/`;
+    item.children.map((child1) => {
+      child1.path = `${child1.path.replace(/\/+$/, '')}/`;
+      child1.children.map((child2) => {
+        child2.path = `${child2.path.replace(/\/+$/, '')}/`;
+      });
+    });
+    return item;
+  });
 
-  var pages = Navigation.nav_items;
-  var components = Components.items;
-  var items = pages.concat(components);
-  setActivePath(items, id);
+  const items = pages.concat(components);
+  const { isReady, asPath } = useRouter();
+  setActivePath(items, asPath);
+
+  useEffect(() => {
+    const decanterNav = document.getElementById('decanter-nav');
+    const actives = decanterNav.querySelectorAll('.su-secondary-nav__item')
+    actives.forEach(
+      element => {
+        element.classList.remove('su-secondary-nav__item--expanded');
+        element.classList.remove('su-secondary-nav__item--current');
+        element.classList.remove('active-trail');
+      }
+    );
+
+    if (isReady && window) {
+      setActivePath(items, asPath);
+      doExpandThingy();
+    }
+
+  }, [isReady, asPath, items]);
 
   return (
     <>

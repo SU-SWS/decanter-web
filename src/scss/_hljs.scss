@@ -3,4 +3,5 @@
 .hljs {
   @include modular-spacing('padding', 1);
   line-height: 1.5em;
+  display: block;
 }

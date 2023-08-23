@@ -6,9 +6,26 @@ const prettifyHtml = require('prettify-html');
 /**
  * ComponentPage
  */
-const ComponentPage = ({ data, info, markup, local = null }) => {
+const ComponentPage = ({ data, info, markup, local = null, type = null, ...rest }) => {
   const title = info.header;
-  const cont = <KSSComponent data={data} info={info} html={markup} local={local} />;
+  let cont;
+
+  // Special Page Type for grouping pages.
+  if (type === "page" ) {
+    cont = <div className="content" dangerouslySetInnerHTML={{ __html: markup }} />;
+    return (
+      <Layout
+        type="page"
+        content={cont}
+        title={title}
+        {...rest}
+      />
+    );
+  }
+  // End special page type.
+
+  // COMPONENT PAGE.
+  cont = <KSSComponent data={data} info={info} html={markup} local={local} />;
 
   let twig_source;
   if (info.source_twig) {
@@ -78,7 +95,11 @@ export const getStaticPaths = async () => {
   const items = componentData.items;
 
   // Constructed paths.
-  let paths = [];
+  let paths = [
+    { params: { id: 'simple' } },
+    { params: { id: 'composite' } },
+    { params: { id: 'identity' } },
+  ];
   paths = parseChildren(items, paths);
   return { paths, fallback: false };
 }
@@ -89,6 +110,23 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params: { id, label, path } }) => {
   const fs = require('fs');
   const nodePath = require('path');
+
+  // Special Pages
+  if (['simple', 'composite', 'identity'].includes(id)) {
+    const pageData = await import(`../../content/_pages/${id}.md`);
+    return {
+      props: {
+        type: 'page',
+        data: {},
+        info: {
+          header: id.charAt(0).toUpperCase() + id.slice(1),
+        },
+        markup: pageData.html,
+        local: {}
+      }
+    };
+  }
+
   const componentData = JSON.parse(fs.readFileSync(nodePath.resolve(process.cwd(), `content/_kss/data/${id}.json`), 'utf8'));
   const componentInfo = JSON.parse(fs.readFileSync(nodePath.resolve(process.cwd(), `content/_kss/info/${id}.json`), 'utf8'));
   const componentMarkup = prettifyHtml(fs.readFileSync(nodePath.resolve(process.cwd(), `content/_kss/markup/${id}.html`), 'utf8'));

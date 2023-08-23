@@ -28,18 +28,15 @@ export const getStaticPaths = async () => {
 
   // Hard coded paths.
   const paths = [
-    { params: { id: 'test' } },
-    { params: { id: 'test1' } },
-    { params: { id: 'test2' } },
-    { params: { id: 'test3' } },
+    { params: { id: '' } },
   ];
 
   // Pages.
-  // var files = glob.sync('content/_pages/*.md');
-  // files.forEach(function(filename) {
-  //   var key = filename.replace("content/_pages/", "").replace(".md", "");
-  //   pages['/page/' + key] = { page: '/page/[id]', query: { id: key } };
-  // });
+  var files = glob.sync('content/_pages/*.md');
+  files.forEach(function(filename) {
+    var key = filename.replace("content/_pages/", "").replace(".md", "");
+    paths.push({ params: { id: key } });
+  });
 
   return { paths, fallback: false };
 }
@@ -47,13 +44,15 @@ export const getStaticPaths = async () => {
 /**
  * Get the data.
  */
-export const getStaticProps = ({ params: { id } }) => {
+export const getStaticProps = async ({ params: { id } }) => {
   const props = {};
-  props.attributes = {};
-  props.attributes.title = id;
-  props.html = "<p>Test</p>";
-  return { props };
+  const prettifyHtml = require('prettify-html');
 
+  const content = await import(`../../content/_pages/${id}.md`);
+  props.attributes = content.attributes;
+  props.attributes.title = content.attributes.title ?? "Page Title Missing";
+  props.html = content.html;
+  return { props };
 }
 
 
