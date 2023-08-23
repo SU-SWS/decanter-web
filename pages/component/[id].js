@@ -90,7 +90,7 @@ const parseChildren = (items, passed = []) => {
 export const getStaticPaths = async () => {
   const fs = require('fs');
   const path = require('path');
-  const componentRaw = fs.readFileSync(path.resolve(process.cwd(), 'content/_settings/kss.json'), 'utf8');
+  const componentRaw = fs.readFileSync(path.resolve(__dirname, '../../content/_settings/kss.json'), 'utf8');
   const componentData = JSON.parse(componentRaw);
   const items = componentData.items;
 
@@ -127,9 +127,9 @@ export const getStaticProps = async ({ params: { id, label, path } }) => {
     };
   }
 
-  const componentData = JSON.parse(fs.readFileSync(nodePath.resolve(process.cwd(), `content/_kss/data/${id}.json`), 'utf8'));
-  const componentInfo = JSON.parse(fs.readFileSync(nodePath.resolve(process.cwd(), `content/_kss/info/${id}.json`), 'utf8'));
-  const componentMarkup = prettifyHtml(fs.readFileSync(nodePath.resolve(process.cwd(), `content/_kss/markup/${id}.html`), 'utf8'));
+  const componentData = JSON.parse(fs.readFileSync(nodePath.resolve(__dirname, `../../content/_kss/data/${id}.json`), 'utf8'));
+  const componentInfo = JSON.parse(fs.readFileSync(nodePath.resolve(__dirname, `../../content/_kss/info/${id}.json`), 'utf8'));
+  const componentMarkup = prettifyHtml(fs.readFileSync(nodePath.resolve(__dirname, `../../content/_kss/markup/${id}.html`), 'utf8'));
   let localContent = {};
   try {
     const localData = await import(`../../content/_components/${id}.md`);
@@ -142,7 +142,7 @@ export const getStaticProps = async ({ params: { id, label, path } }) => {
 
   if (componentInfo?.modifiers) {
       componentInfo.modifiers.forEach(function(mod, index) {
-        const modmarkup = prettifyHtml(fs.readFileSync(nodePath.resolve(process.cwd(), `content/_kss/markup/${id}-${mod.className}.html`), 'utf8'));
+        const modmarkup = prettifyHtml(fs.readFileSync(nodePath.resolve(__dirname, `../../content/_kss/markup/${id}-${mod.className}.html`), 'utf8'));
         componentInfo.modifiers[index].markup = modmarkup ?? componentMarkup;
       });
   }
