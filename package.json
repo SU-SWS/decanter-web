@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "next",
-    "build": "npm run kss && npm run jsdoc && npm run sassdoc && next build",
+    "build": "npm run kss && npm run jsdoc && npm run sassdoc && npm run sync:decanter && next build",
+    "sync:decanter": "rsync -arv --delete node_modules/decanter/core/dist/ ./public/dist/",
     "start": "next start",
     "export": "npm run build",
     "kss": "node scripts/kss/generate.mjs ",

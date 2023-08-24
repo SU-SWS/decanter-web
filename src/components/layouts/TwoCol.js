@@ -35,6 +35,7 @@ const Layout = ({ type, title, header, content, ...rest }) => (
   </main>
   <footer>
     <GlobalFooter />
+    <script async defer src="/dist/js/decanter.js"></script>
   </footer>
   </>
 );
