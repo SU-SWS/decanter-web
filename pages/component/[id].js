@@ -88,8 +88,8 @@ const parseChildren = (items, passed = []) => {
  * Set the paths.
  */
 export const getStaticPaths = async () => {
-  const componentData = await import('../../content/_settings/kss.json');
-  const items = componentData.items;
+  const theComponents = await import('../../content/_settings/kss.json');
+  const items = theComponents.items;
 
   // Constructed paths.
   let paths = [
@@ -129,21 +129,22 @@ export const getStaticProps = async ({ params: { id, label, path } }) => {
     componentData = await import(`../../content/_kss/data/${id}.json`);
   }
   catch(err) {
-    console.warn(err);
+    console.warn('Could not find kss json data file for', id);
   }
 
   try {
     componentInfo = await import(`../../content/_kss/info/${id}.json`);
   }
   catch(err) {
-    console.warn(err);
+    console.warn('Could not find kss json info file for', id);
   }
 
   try {
     componentMarkup = await import(`../../content/_kss/markup/${id}.html`);
   }
   catch(err) {
-    console.warn(err);
+    console.warn('Could not find markup html file for', id);
+    componentMarkup = { default: componentInfo.default?.markup };
   }
 
   try {
@@ -152,17 +153,17 @@ export const getStaticProps = async ({ params: { id, label, path } }) => {
     localContent.body = localData.html;
   }
   catch(err) {
-    console.warn(err);
+    console.warn('Could not find local content component markdown file for', id);
   }
 
-  if (componentInfo?.modifiers) {
-      componentInfo.modifiers.forEach(async function(mod, index) {
+  if (componentInfo.default?.modifiers) {
+      componentInfo.default.modifiers.forEach(async function(mod, index) {
         try {
           const modmarkup = await import(`../../content/_kss/markup/${id}-${mod.className}.html`);
-          componentInfo.modifiers[index].markup = prettifyHtml(modmarkup.default) ?? prettifyHtml(componentMarkup.default);
+          componentInfo.default.modifiers[index].markup = prettifyHtml(modmarkup.default) ?? prettifyHtml(componentMarkup.default);
         }
         catch(err) {
-          console.warn(err);
+          console.warn('Could not find variant html file for', id);
         }
       });
   }

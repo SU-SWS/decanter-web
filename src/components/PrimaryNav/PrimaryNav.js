@@ -100,22 +100,22 @@ const PrimaryNav = () => {
         <ul className="su-secondary-nav__menu-lv1 su-secondary-nav__menu">
           {items.map((item, index) => (
             <li className="su-secondary-nav__item su-secondary-nav__item--parent" key={"lv1-" + index}>
-                <Link className={item?.class?.join(' ')} href={item.path}>{item.label}</Link>
+              <a className={item?.class?.join(' ')} href={item.path}>{item.label}</a>
               {item.children && (
                 <ul className="su-secondary-nav__menu-lv2 su-secondary-nav__menu">
                   {item.children.map((lv2, index2) => (
                     <li className="su-secondary-nav__item su-secondary-nav__item--parent" key={"lv2-" + index2}>
-                        <Link className={lv2?.class?.join(' ')} href={lv2.path}>{lv2.label}</Link>
+                      <a className={lv2?.class?.join(' ')} href={lv2.path}>{lv2.label}</a>
                       {lv2.children && (
                         <ul className="su-secondary-nav__menu-lv3 su-secondary-nav__menu">
                           {lv2.children.map((lv3, index3) => (
                             <li className="su-secondary-nav__item" key={"lv3-" + index3}>
-                                <Link className={lv3?.class?.join(' ')} href={lv3.path}>{lv3.label}</Link>
+                              <a className={lv3?.class?.join(' ')} href={lv3.path}>{lv3.label}</a>
                               {lv3.children && (
                                 <ul className="su-secondary-nav__menu-lv4 su-secondary-nav__menu">
                                   {lv3.children.map((lv4, index4) => (
                                     <li className="su-secondary-nav__item" key={"lv4-" + index4}>
-                                        <Link className={lv4?.class?.join(' ')} href={lv4.path}>{lv4.label}</Link>
+                                      <a className={lv4?.class?.join(' ')} href={lv4.path}>{lv4.label}</a>
                                     </li>
                                   ))}
                                 </ul>

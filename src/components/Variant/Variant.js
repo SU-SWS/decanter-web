@@ -2,7 +2,7 @@ import hljs from 'highlight.js';
 
 const Variant = ({ data, local, ...rest }) => {
   const renderHtml = data.markup ?? '';
-  const highlightedCode = hljs.highlightAuto(renderHtml).value;
+  const highlightedCode = hljs.highlight(renderHtml, { language: 'html' }).value
 
   const mkd = <div dangerouslySetInnerHTML={{ __html: renderHtml }} />;
   const html = <div dangerouslySetInnerHTML={{ __html: highlightedCode }} />;
