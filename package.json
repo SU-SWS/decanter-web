@@ -9,7 +9,7 @@
     "dev": "next",
     "build": "npm run kss && npm run jsdoc && npm run sassdoc && next build",
     "start": "next start",
-    "export": "npm run build && next export",
+    "export": "npm run build",
     "kss": "node scripts/kss/generate.mjs ",
     "jsdoc": "node scripts/jsdoc.js",
     "sassdoc": "node scripts/sassdoc.js",

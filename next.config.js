@@ -5,6 +5,7 @@ const npmPackage = 'node_modules';
 
 /** @type {import('next').NextConfig} */
 module.exports = withYaml({
+  output: 'export',
   trailingSlash: true,
   experimental: {
     legacyBrowsers: false
@@ -32,11 +33,15 @@ module.exports = withYaml({
               if (!lang || ['text', 'literal', 'nohighlight'].includes(lang)) {
                 return `<pre class="hljs">${code}</pre>`;
               }
-              const html = highlight.highlight(lang, code).value;
+              const html = highlight.highlight(code, { language: lang }).value;
               return `<span class="hljs">${html}</span>`;
             }
           }
         }
+    });
+    config.module.rules.push({
+      test: /\.(txt|html)$/,
+      loader: 'raw-loader'
     });
     return config;
   },

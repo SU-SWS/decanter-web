@@ -27,9 +27,7 @@ export const getStaticPaths = async () => {
   const fs = require('fs');
 
   // Hard coded paths.
-  const paths = [
-    { params: { id: '' } },
-  ];
+  const paths = [];
 
   // Pages.
   var files = glob.sync('content/_pages/*.md');
@@ -46,8 +44,6 @@ export const getStaticPaths = async () => {
  */
 export const getStaticProps = async ({ params: { id } }) => {
   const props = {};
-  const prettifyHtml = require('prettify-html');
-
   const content = await import(`../../content/_pages/${id}.md`);
   props.attributes = content.attributes;
   props.attributes.title = content.attributes.title ?? "Page Title Missing";

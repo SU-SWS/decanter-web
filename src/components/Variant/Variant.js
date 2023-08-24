@@ -1,9 +1,11 @@
-const hljs = require('highlight.js');
-const prettifyHtml = require('prettify-html');
+import hljs from 'highlight.js';
 
 const Variant = ({ data, local, ...rest }) => {
-  const mkd = <div dangerouslySetInnerHTML={{ __html: data.markup }} />;
-  const html = <div dangerouslySetInnerHTML={{ __html: hljs.highlight('html', data.markup).value }} />;
+  const renderHtml = data.markup ?? '';
+  const highlightedCode = hljs.highlightAuto(renderHtml).value;
+
+  const mkd = <div dangerouslySetInnerHTML={{ __html: renderHtml }} />;
+  const html = <div dangerouslySetInnerHTML={{ __html: highlightedCode }} />;
   let demoStylesWrapper = [];
   let demoStyles = [];
   let notes;

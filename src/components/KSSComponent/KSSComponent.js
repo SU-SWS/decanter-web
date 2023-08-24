@@ -1,12 +1,12 @@
 import Alert from '../Alert/Alert.js';
 import Variant from '../Variant/Variant.js';
+import hljs from 'highlight.js';
 
 const KSSComponent = ({data, info, html, local = null}) => {
-  const hljs = require('highlight.js');
   let description;
   let notes;
   const example = <div dangerouslySetInnerHTML={{ __html: html }} />;
-  const markup = <div dangerouslySetInnerHTML={{ __html: hljs.highlight('html', html).value}} />;
+  const markup = <div dangerouslySetInnerHTML={{ __html: hljs.highlight(html, { language: 'html' }).value}} />;
   let variants = info?.modifiers || [];
   let defaultDemoStyles, defaultDemoStylesWrapper;
 
