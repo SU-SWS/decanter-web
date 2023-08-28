@@ -12,7 +12,7 @@ const ComponentPage = ({ data, info, markup, local = null, type = null, ...rest 
 
   // Special Page Type for grouping pages.
   if (type === "page" ) {
-    cont = <div className="content" dangerouslySetInnerHTML={{ __html: markup }} />;
+    cont = <div className="content" dangerouslySetInnerHTML={{ __html: markup }} suppressHydrationWarning />;
     return (
       <Layout
         type="page"
@@ -104,7 +104,7 @@ export const getStaticPaths = async () => {
 /**
  * Export data
  */
-export const getStaticProps = async ({ params: { id, label, path } }) => {
+export const getStaticProps = async ({ params: { id } }) => {
   // Special Pages
   if (['simple', 'composite', 'identity'].includes(id)) {
     const pageData = await import(`../../content/_pages/${id}.md`);
@@ -157,16 +157,31 @@ export const getStaticProps = async ({ params: { id, label, path } }) => {
   }
 
   if (componentInfo.default?.modifiers) {
-      componentInfo.default.modifiers.forEach(async function(mod, index) {
-        try {
-          const modmarkup = await import(`../../content/_kss/markup/${id}-${mod.className}.html`);
-          componentInfo.default.modifiers[index].markup = prettifyHtml(modmarkup.default) ?? prettifyHtml(componentMarkup.default);
-        }
-        catch(err) {
-          console.warn('Could not find variant html file for', id);
-        }
-      });
+    console.log('Modifiers', componentInfo.default.modifiers);
+    const modPromises = [];
+    componentInfo.default.modifiers.forEach(function(mod, index) {
+        modPromises.push(import(`../../content/_kss/markup/${id}-${mod.className}.html`));
+    });
+
+    const modPromisesResolved = await Promise.allSettled(modPromises);
+    modPromisesResolved.forEach(function(mod, index) {
+      if (mod.status === 'fulfilled') {
+        componentInfo.default.modifiers[index].markup = prettifyHtml(mod.value.default);
+      }
+      else {
+        componentInfo.default.modifiers[index].markup = prettifyHtml(componentMarkup.default);
+      }
+    });
+    console.log(modPromisesResolved);
+
+    // componentInfo.default.modifiers[index].markup = prettifyHtml(modmarkup.default) ?? prettifyHtml(componentMarkup.default);
+
   }
+
+  // console.log('Component Data', componentData.default);
+  // console.log('Component Info', componentInfo.default);
+  // console.log('Component Markup', componentMarkup.default);
+  // console.log('Local Content', localContent);
 
   return {
     props: {

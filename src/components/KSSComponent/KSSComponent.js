@@ -5,17 +5,17 @@ import hljs from 'highlight.js';
 const KSSComponent = ({data, info, html, local = null}) => {
   let description;
   let notes;
-  const example = <div dangerouslySetInnerHTML={{ __html: html }} />;
-  const markup = <div dangerouslySetInnerHTML={{ __html: hljs.highlight(html, { language: 'html' }).value}} />;
+  const example = <div dangerouslySetInnerHTML={{ __html: html }} suppressHydrationWarning />;
+  const markup = <div dangerouslySetInnerHTML={{ __html: hljs.highlight(html, { language: 'html' }).value}} suppressHydrationWarning />;
   let variants = info?.modifiers || [];
   let defaultDemoStyles, defaultDemoStylesWrapper;
 
   // If no local data.
   if (!local || !local?.body?.length) {
-    description = <div dangerouslySetInnerHTML={{ __html: info.description }} />;
+    description = <div dangerouslySetInnerHTML={{ __html: info.description }} suppressHydrationWarning />;
   }
   else if (local?.body) {
-    description = <div dangerouslySetInnerHTML={{ __html: local.body }} />;
+    description = <div dangerouslySetInnerHTML={{ __html: local.body }} suppressHydrationWarning />;
   }
 
   // If we have local data. Do more stuff.
@@ -32,7 +32,7 @@ const KSSComponent = ({data, info, html, local = null}) => {
 
     // If there is bottom content notes to add.
     if (local.bottomcontent) {
-      notes = <div dangerouslySetInnerHTML={{ __html: local.bottomcontent }} />;
+      notes = <div dangerouslySetInnerHTML={{ __html: local.bottomcontent }} suppressHydrationWarning />;
     }
 
   }
@@ -73,7 +73,6 @@ const KSSComponent = ({data, info, html, local = null}) => {
           </pre>
         </section>
       </section>
-
 
       {variants.length ?
       <section className="component__modifiers">

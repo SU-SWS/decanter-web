@@ -6,7 +6,7 @@ import Layout from '../../src/components/layouts/TwoCol.js';
 const Page = ({ attributes, html, ...rest}) => {
 
   const title = attributes.title;
-  const cont = <div className="content" dangerouslySetInnerHTML={{ __html: html }} />;
+  const cont = <div className="content" dangerouslySetInnerHTML={{ __html: html }} suppressHydrationWarning />;
 
   return (
     <Layout

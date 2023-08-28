@@ -2,10 +2,11 @@ import hljs from 'highlight.js';
 
 const Variant = ({ data, local, ...rest }) => {
   const renderHtml = data.markup ?? '';
-  const highlightedCode = hljs.highlight(renderHtml, { language: 'html' }).value
+  const highlightedCode = hljs.highlight(renderHtml, { language: 'html' }).value;
 
-  const mkd = <div dangerouslySetInnerHTML={{ __html: renderHtml }} />;
-  const html = <div dangerouslySetInnerHTML={{ __html: highlightedCode }} />;
+  const mkd = <div dangerouslySetInnerHTML={{ __html: renderHtml }} suppressHydrationWarning />;
+  const html = <div dangerouslySetInnerHTML={{ __html: highlightedCode }} suppressHydrationWarning />;
+
   let demoStylesWrapper = [];
   let demoStyles = [];
   let notes;
@@ -25,7 +26,6 @@ const Variant = ({ data, local, ...rest }) => {
     local.modifier_css.forEach(function(vals) {
       if (data.className == vals.css_class) {
         modifier = vals;
-        return;
       }
     });
     // Found some data.
@@ -40,11 +40,11 @@ const Variant = ({ data, local, ...rest }) => {
       }
 
       if (modifier.notes) {
-        notes = <div dangerouslySetInnerHTML={{ __html: modifier.notes }} />
+        notes = <div dangerouslySetInnerHTML={{ __html: modifier.notes }} suppressHydrationWarning />
       }
 
       if (modifier.description) {
-        description = <div dangerouslySetInnerHTML={{ __html: modifier.description }} />
+        description = <div dangerouslySetInnerHTML={{ __html: modifier.description }} suppressHydrationWarning />
       }
 
     }
@@ -60,15 +60,15 @@ const Variant = ({ data, local, ...rest }) => {
         {description}
       </header>
       <section className="component__variant-demo">
-      <style jsx>{`
-        .component__variant-demo {
-          ${demoStylesWrapper}
-        }
-        .component__variant-demo :global(> div) {
-          ${demoStyles}
-        }
-      `}
-      </style>
+        <style jsx>{`
+          .component__variant-demo {
+            ${demoStylesWrapper}
+          }
+          .component__variant-demo :global(> div) {
+            ${demoStyles}
+          }
+        `}
+        </style>
         {mkd}
       </section>
       {notes ? (
@@ -80,7 +80,7 @@ const Variant = ({ data, local, ...rest }) => {
         <h3>Example Markup</h3>
         <pre>
           <code className="language-html hljs">
-          {html}
+            {html}
           </code>
         </pre>
       </section>
