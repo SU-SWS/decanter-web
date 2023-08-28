@@ -172,16 +172,7 @@ export const getStaticProps = async ({ params: { id } }) => {
         componentInfo.default.modifiers[index].markup = prettifyHtml(componentMarkup.default);
       }
     });
-    console.log(modPromisesResolved);
-
-    // componentInfo.default.modifiers[index].markup = prettifyHtml(modmarkup.default) ?? prettifyHtml(componentMarkup.default);
-
   }
-
-  // console.log('Component Data', componentData.default);
-  // console.log('Component Info', componentInfo.default);
-  // console.log('Component Markup', componentMarkup.default);
-  // console.log('Local Content', localContent);
 
   return {
     props: {
