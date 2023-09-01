@@ -10,26 +10,12 @@ export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
   (
     {
       // Destructure NextLinkProps
-      href,
-      as,
-      replace,
-      scroll,
-      shallow,
-      passHref,
-      prefetch,
       children,
       ...rest
     },
     ref
   ) => (
     <NextLink
-      href={href}
-      as={as}
-      replace={replace}
-      scroll={scroll}
-      shallow={shallow}
-      passHref={passHref}
-      prefetch={prefetch}
       {...rest}
     >
       {children}
