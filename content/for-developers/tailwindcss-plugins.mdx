@@ -1,5 +1,16 @@
 ---
 title: Tailwind CSS plugins
-lastUpdatedDate: 2022-04-06T12:00:00.000Z
+lastUpdatedDate: 2023-05-17T12:00:00.000Z
 ---
-Tailwind CSS plugins
+
+<Section>
+Tailwind allows you to register official or third-party plugins with Tailwind that can be used to generate extra utilities, components, base styles, or custom variants. Decanter [makes use](https://github.com/SU-SWS/decanter/blob/v7/tailwind.config.js) of some of these plugins, and you can add additional plugins to your project in its `tailwind.config` file. Full information regarding plugins can be found in the [Tailwind docs](<https://tailwindcss.com/docs/plugins>).
+</Section>
+
+<Section heading="Official Tailwind plugins used in Decanter v7">
+[Aspect Ratio](https://tailwindcss.com/docs/plugins#aspect-ratio): The `@tailwindcss/aspect-ratio` plugin is an alternative to native aspect-ratio support that works in older browsers, and adds `aspect-w-{n}` and `aspect-h-{n}` classes that can be combined to give an element a fixed aspect ratio.
+
+[Container Queries](https://tailwindcss.com/docs/plugins#container-queries): The `@tailwindcss/container-queries` plugin adds new `@{size}` variants like `@sm` and `@md` that let you style an element based on the dimensions of a parent marked with `@container` instead of the viewport.
+
+[Forms](https://tailwindcss.com/docs/plugins#forms): The `@tailwindcss/forms` plugin adds an opinionated form reset layer that makes it easier to style form elements with utility classes.
+</Section>
