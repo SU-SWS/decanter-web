@@ -32,6 +32,7 @@ export const SidebarNavData = [
     label: 'Examples',
     parentPath: '/examples',
     menuLinks: [
+      { label: 'Modular Typography', href: routes.modularTypography() },
       { label: 'Cards', href: routes.cards() },
       { label: 'Containers', href: routes.containers() },
       { label: 'Form elements', href: routes.formElements() },

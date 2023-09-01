@@ -24,6 +24,7 @@ export const typeGridsAndColor = () => `${forDesigners()}/type-grids-and-color`;
 export const patternsAndExamples = () => `${forDesigners()}/patterns-and-examples`;
 
 // Examples
+export const modularTypography = () => `${examples()}/modular-typography`;
 export const containers = () => `${examples()}/containers`;
 export const formElements = () => `${examples()}/form-elements`;
 export const globalFooter = () => `${examples()}/global-footer`;
