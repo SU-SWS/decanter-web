@@ -32,11 +32,13 @@ export const SidebarNavData = [
     label: 'Examples',
     parentPath: '/examples',
     menuLinks: [
+      { label: 'Cards', href: routes.cards() },
       { label: 'Containers', href: routes.containers() },
       { label: 'Form elements', href: routes.formElements() },
       { label: 'Global footer', href: routes.globalFooter() },
       { label: 'Layout', href: routes.Layout() },
       { label: 'Grid - Flex', href: routes.gridFlex() },
+      { label: 'Grid - CSS Grid', href: routes.gridCssGrid() },
       { label: 'Identity bar', href: routes.identityBar() },
       { label: 'Logo', href: routes.logo() },
     ],

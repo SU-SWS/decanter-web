@@ -29,5 +29,7 @@ export const formElements = () => `${examples()}/form-elements`;
 export const globalFooter = () => `${examples()}/global-footer`;
 export const Layout = () => `${examples()}/layout`;
 export const gridFlex = () => `${examples()}/grid-flex`;
+export const gridCssGrid = () => `${examples()}/grid-css-grid`;
+export const cards = () => `${examples()}/cards`;
 export const identityBar = () => `${examples()}/identity-bar`;
 export const logo = () => `${examples()}/logo`;
