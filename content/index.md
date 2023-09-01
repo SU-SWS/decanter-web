@@ -54,7 +54,7 @@ date: 2019-03-17T19:31:20.591Z
 
  <h3>Decanter Design System</h3>
         <p>Familiarize yourself with our foundational styles, components, and naming conventions using the Decanter Design System in Figma.</p>
-        <a href="/section-components.html" class="su-link su-link--action">Learn about the Decanter Design System</a>
+        <a href="page/components/" class="su-link su-link--action">Learn about the Decanter Design System</a>
     </section>
     <section class="flex-md-6-of-12">
 
