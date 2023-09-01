@@ -1,25 +1,25 @@
 import { dcnb } from 'cnbuilder';
 // First level parent menu item
-export const parentListItem = 'su-m-0 su-border-t su-border-cool-grey last:su-border-b';
-export const parentItem = 'su-relative su-group su-w-full su-text-left su-text-21 su-no-underline hocus:su-underline su-border-l-5 su-py-16 su-block su-pl-26 su-pr-48 su-transition su-font-semibold su-text-white hocus:su-text-white su-border-transparent hocus:su-border-white hocus:su-underline';
-export const chevron = (isActive?: boolean) => dcnb('su-inline-block su-transition su-absolute su-top-[2.4rem] su-right-26', {
-  'su-rotate-180': isActive,
-  'su-rotate-0': !isActive,
+export const parentListItem = 'm-0 border-t border-cool-grey last:border-b';
+export const parentItem = 'relative group w-full text-left text-21 no-underline hocus:underline border-l-5 py-16 block pl-26 pr-48 transition font-semibold text-white hocus:text-white border-transparent hocus:border-white hocus:underline';
+export const chevron = (isActive?: boolean) => dcnb('inline-block transition absolute top-[2.4rem] right-26', {
+  'rotate-180': isActive,
+  'rotate-0': !isActive,
 });
 
 // Child Menu
-export const childMenu = 'su-list-unstyled su-m-0 su-ml-26 su-mb-12 aria-hidden:su-hidden';
+export const childMenu = 'list-unstyled m-0 ml-26 mb-12 aria-hidden:hidden';
 
 // Menu Item
-export const itemLink = (isActive?: boolean, isSecondLevel?: boolean) => dcnb('su-group su-no-underline hocus:su-underline su-border-l-5 su-block su-transition su-text-white hocus:su-text-white hocus:su-border-white hocus:su-underline', {
-  'su-border-white': isActive,
-  'su-border-transparent': !isActive,
-  'su-text-18 su-py-8 su-px-20': isSecondLevel,
-  'su-text-21 su-py-16 su-pl-26 su-pr-48': !isSecondLevel,
+export const itemLink = (isActive?: boolean, isSecondLevel?: boolean) => dcnb('group no-underline hocus:underline border-l-5 block transition text-white hocus:text-white hocus:border-white hocus:underline', {
+  'border-white': isActive,
+  'border-transparent': !isActive,
+  'text-18 py-8 px-20': isSecondLevel,
+  'text-21 py-16 pl-26 pr-48': !isSecondLevel,
 });
 
 // Mobile Drawer
-export const hamburger = 'su-w-30 su-relative su-top-2 hocus:su-text-digital-red-light';
-export const drawer = '!su-w-[90%] sm:!su-w-400 !su-bg-black';
-export const closeButtonWrapper = 'su-py-20 su-px-[2.2rem]';
-export const closeButton = 'su-flex su-items-center su-justify-center su-w-30 su-h-30 su-rounded-full hocus:su-bg-digital-red-light su-ml-auto su-mr-0 su-text-white su-text-24';
+export const hamburger = 'w-30 relative top-2 hocus:text-digital-red-light';
+export const drawer = '!w-[90%] sm:!w-400 !bg-black';
+export const closeButtonWrapper = 'py-20 px-[2.2rem]';
+export const closeButton = 'flex items-center justify-center w-30 h-30 rounded-full hocus:bg-digital-red-light ml-auto mr-0 text-white text-24';

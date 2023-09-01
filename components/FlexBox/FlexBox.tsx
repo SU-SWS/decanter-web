@@ -44,13 +44,13 @@ export const FlexBox = ({
   levers.justifyContent = flexJustifyContent[justifyContent];
   levers.alignContent = flexAlignContent[alignContent];
   levers.alignItems = flexAlignItems[alignItems];
-  levers.gap = gap ? 'su-grid-gap' : '';
+  levers.gap = gap ? 'grid-gap' : '';
 
   return React.createElement(
     as,
     {
       className: dcnb(
-        'su-flex',
+        'flex',
         levers.direction,
         levers.wrap,
         levers.gap,

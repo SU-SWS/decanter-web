@@ -17,6 +17,7 @@ export const HeroIcon = ({
   noBaseStyle,
   srText,
   className,
+  ref,
   ...props
 }: HeroIconProps & React.ComponentProps<'svg'>) => {
   const Icon = iconMap[icon];
@@ -24,7 +25,7 @@ export const HeroIcon = ({
   // Set default base style so icon has reasonable size if used out of the box
   // noBaseStyle boolean allows for user to not attach any base styles if needed
   const baseStyle = noBaseStyle ? '' : iconBaseStyle[icon] || iconBaseStyle.default;
-  const heroIconStyle = dcnb('su-transition', baseStyle);
+  const heroIconStyle = dcnb('transition', baseStyle);
 
   return (
     <>

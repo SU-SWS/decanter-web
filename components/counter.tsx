@@ -8,6 +8,6 @@ export const Counter = () => {
   }
 
   return (
-    <button type="button" className="su-button" onClick={handleClick}>Clicked {count} times!</button>
+    <button type="button" className="button" onClick={handleClick}>Clicked {count} times!</button>
   );
 };

@@ -10,7 +10,7 @@ type DCNBAttributes = Omit<HTMLAttributes<HTMLSpanElement>, 'className'>;
 export const SrOnlyText = ({ srText, className, ...props }: SrOnlyTextProps & DCNBAttributes) => {
   const txt: string = srText ?? '(link is external)';
   return (
-    <span className={dcnb('su-sr-only', className)} {...props}>
+    <span className={dcnb('sr-only', className)} {...props}>
       {txt}
     </span>
   );

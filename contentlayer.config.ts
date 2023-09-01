@@ -41,8 +41,10 @@ export default makeSource({
       remarkCodeTitles,
     ],
     rehypePlugins: [
-      [rehypePrismPlus, { ignoreMissing: true }],
-      rehypePresetMinify,
+      [
+        rehypePrismPlus,
+        { ignoreMissing: true },
+      ],
     ],
   },
 });

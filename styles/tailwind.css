@@ -5,8 +5,8 @@
 @tailwind utilities;
 
 a {
-  @apply su-no-underline hocus:su-underline
+  @apply no-underline hocus:underline
 }
 code {
-  @apply su-bg-plum-light/10 su-px-6 su-text-[0.8em] su-text-plum;
+  @apply bg-plum-light/10 px-6 text-[0.8em] text-plum;
 }
