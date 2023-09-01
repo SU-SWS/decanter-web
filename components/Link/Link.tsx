@@ -17,10 +17,8 @@ export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
       shallow,
       passHref,
       prefetch,
-      locale,
       children,
-      // And pass the rest to the anchor
-      ...anchorProps
+      ...rest
     },
     ref
   ) => (
@@ -32,11 +30,9 @@ export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
       shallow={shallow}
       passHref={passHref}
       prefetch={prefetch}
+      {...rest}
     >
-      {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-      <a {...anchorProps} ref={ref}>
-        {children}
-      </a>
+      {children}
     </NextLink>
   )
 );
