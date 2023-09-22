@@ -1,46 +1,43 @@
-import { useRouter } from 'next/router';
+import React from 'react';
 import Layout from '../../src/components/layouts/TwoCol.js';
 import KSSComponent from '../../src/components/KSSComponent/KSSComponent.js';
 const prettifyHtml = require('prettify-html');
 
 /**
- * [Index description]
- * @param       {[type]} props [description]
- * @constructor
+ * ComponentPage
  */
-function ComponentPage(props) {
-  var cont = "Undefined";
-  var title = "Undefined";
+const ComponentPage = ({ data, info, markup, local = null, type = null, ...rest }) => {
+  const title = info.header;
+  let cont;
 
-  // We got a page instead. Render that and quit.
-  if (props.page) {
-    title = props.page.attributes.title;
-    cont = <div className="content" dangerouslySetInnerHTML={{ __html: props.page.html }} />;
+  // Special Page Type for grouping pages.
+  if (type === "page" ) {
+    cont = <div className="content" dangerouslySetInnerHTML={{ __html: markup }} suppressHydrationWarning />;
     return (
       <Layout
         type="page"
         content={cont}
         title={title}
-        {...props}
+        {...rest}
       />
-    )
+    );
   }
+  // End special page type.
 
-  // We should have KSS data at this point.
-  title = props.kssdata.header;
-  cont = <KSSComponent {...props} />;
+  // COMPONENT PAGE.
+  cont = <KSSComponent data={data} info={info} html={markup} local={local} />;
 
   let twig_source;
-  if (props.kssdata.source_twig) {
-    var fp = "https://github.com/SU-SWS/decanter/blob/master/core/src/" + props.kssdata.source_twig;
-    twig_source = <a href={fp}>core/src/{props.kssdata.source_twig}</a>;
+  if (info.source_twig) {
+    var fp = "https://github.com/SU-SWS/decanter/blob/master/core/src/" + info.source_twig;
+    twig_source = <a href={fp}>core/src/{info.source_twig}</a>;
   }
-  var fps = "https://github.com/SU-SWS/decanter/blob/master/core/src/scss/components/" + props.kssdata.source.filename;
-  let scss_source = <a href={fps}>core/src/scss/components/{props.kssdata.source.filename}</a>;
-  var hed = <div className="component__resources">
+  const fps = "https://github.com/SU-SWS/decanter/blob/master/core/src/scss/components/" + info.source.filename;
+  const scss_source = <a href={fps}>core/src/scss/components/{info.source.filename}</a>;
+  const hed = (<div className="component__resources">
     <p><strong>SCSS Source:</strong> {scss_source}</p>
     {twig_source ? <p><strong>Twig Source:</strong> {twig_source}</p> : ''}
-  </div>;
+  </div>);
 
   return (
     <Layout
@@ -48,80 +45,141 @@ function ComponentPage(props) {
       content={cont}
       title={title}
       header={hed}
-      {...props}
+      data={data}
+      info={info}
+      markup={markup}
+      local={local}
     />
   );
 }
 
+export default ComponentPage;
+
+
 /**
- * [description]
- * @param  {[type]} context [description]
- * @return {[type]}         [description]
+ * Parse the nested children objects.
  */
-ComponentPage.getInitialProps = async function(context) {
-  const { id } = context.query;
-  var component = false;
-  var schema = false;
-  var data = { id: id };
+const parseChildren = (items, passed = []) => {
+  let ret = passed;
 
-  try {
-    // We found a KSS entry. Let's do stuff with it.
-    component = require(`../../content/_kss/info/${id}.json`);
-    data.kssdata = await component;
-  }
-  // Could be a missing json, or could be a top level group. Check for a page.
-  catch(err) {
-    const fileContent = await import(`../../content/_pages/${id}.md`);
-    data.page = await fileContent;
-  }
-
-  // Sometimes there is straight up markup in the markup.
-  try {
-    schema = require(`../../content/_kss/data/${id}.json`);
-  }
-  catch(err) {
-    data.markup = await component.markup;;
-    return await data;
-  }
-
-  var render;
-  try {
-    render = require(`../../content/_kss/markup/${id}.html`);
-  }
-  catch(err) {
-    console.log(err);
-  }
-
-  data.variants = [];
-  data.markup = await render.default;
-  data.markup = prettifyHtml(data.markup);
-
-  component.modifiers.forEach(async function(mod) {
-    var name = mod.className;
-    try {
-      mod.markup = require(`../../content/_kss/markup/${id}-${name}.html`);
+  items.forEach(function (content) {
+    // Parse the children first.
+    if (content?.children) {
+      ret = parseChildren(content.children, ret);
     }
-    catch(err) {
-      return;
+
+    // If no key just pass back the reference.
+    if (!content?.key) {
+      return ret;
     }
-    data.variants.push(mod);
+    ret.push({
+      params: {
+        id: content.key,
+        label: content.label,
+        path: content.path
+      }
+    });
   });
 
-  // Fetch the local editor data to supplement with if available.
-  var localContent;
+  return ret;
+}
+
+/**
+ * Set the paths.
+ */
+export const getStaticPaths = async () => {
+  const theComponents = await import('../../content/_settings/kss.json');
+  const items = theComponents.items;
+
+  // Constructed paths.
+  let paths = [
+    { params: { id: 'simple' } },
+    { params: { id: 'composite' } },
+    { params: { id: 'identity' } },
+  ];
+  paths = parseChildren(items, paths);
+  return { paths, fallback: false };
+}
+
+/**
+ * Export data
+ */
+export const getStaticProps = async ({ params: { id } }) => {
+  // Special Pages
+  if (['simple', 'composite', 'identity'].includes(id)) {
+    const pageData = await import(`../../content/_pages/${id}.md`);
+    return {
+      props: {
+        type: 'page',
+        data: pageData.default,
+        info: {
+          header: id.charAt(0).toUpperCase() + id.slice(1),
+        },
+        markup: pageData.html,
+        local: {}
+      }
+    };
+  }
+
+  // Setup defaults.
+  let componentData, componentInfo, componentMarkup = { default: {} };
+  let localContent = {};
+
   try {
-    localContent = await import(`../../content/_components/${id}.md`);
+    componentData = await import(`../../content/_kss/data/${id}.json`);
   }
   catch(err) {
-    return data;
+    console.warn('Could not find kss json data file for', id);
   }
 
-  var localData = await localContent.attributes;
-  localData.body = localContent.html;
-  data.local = await localData;
+  try {
+    componentInfo = await import(`../../content/_kss/info/${id}.json`);
+  }
+  catch(err) {
+    console.warn('Could not find kss json info file for', id);
+  }
 
-  return await data;
-};
+  try {
+    componentMarkup = await import(`../../content/_kss/markup/${id}.html`);
+  }
+  catch(err) {
+    console.warn('Could not find markup html file for', id);
+    componentMarkup = { default: componentInfo.default?.markup };
+  }
 
-// ------------------
-export default ComponentPage;
+  try {
+    const localData = await import(`../../content/_components/${id}.md`);
+    localContent = localData.attributes;
+    localContent.body = localData.html;
+  }
+  catch(err) {
+    console.warn('Could not find local content component markdown file for', id);
+  }
+
+  if (componentInfo.default?.modifiers) {
+    console.log('Modifiers', componentInfo.default.modifiers);
+    const modPromises = [];
+    componentInfo.default.modifiers.forEach(function(mod, index) {
+        modPromises.push(import(`../../content/_kss/markup/${id}-${mod.className}.html`));
+    });
+
+    const modPromisesResolved = await Promise.allSettled(modPromises);
+    modPromisesResolved.forEach(function(mod, index) {
+      if (mod.status === 'fulfilled') {
+        componentInfo.default.modifiers[index].markup = prettifyHtml(mod.value.default);
+      }
+      else {
+        componentInfo.default.modifiers[index].markup = prettifyHtml(componentMarkup.default);
+      }
+    });
+  }
+
+  return {
+    props: {
+      data: componentData.default,
+      info: componentInfo.default,
+      markup: prettifyHtml(componentMarkup.default),
+      local: localContent
+    }
+  };
+}

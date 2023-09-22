@@ -1,17 +1,17 @@
-const path = require('path');
-const fs = require('fs');
-const del = require('del');
-const Twig = require('twig');
-const yamlFront = require('yaml-front-matter');
-const twigDrupal = require('twig-drupal-filters');
-const kss_util = require('./utility.js');
-const kss_nav_json = path.resolve(__dirname, '../../content/_settings/kss.json');
-const kss_settings_dir = path.resolve(__dirname, '../../content/_kss');
-const content_components_dir = path.resolve(__dirname, '../../content/_components');
-const decanter_src = path.resolve(__dirname, "../../node_modules/decanter/core/src");
+import { deleteAsync, deleteSync} from 'del';
+import * as path from 'path';
+import * as fs from 'fs';
+import twig from 'twig';
+import * as yamlFront from 'yaml-front-matter';
+import twigDrupal from 'twig-drupal-filters';
+import kss_util from './utility.js';
+const kss_nav_json = path.resolve('./content/_settings/kss.json');
+const kss_settings_dir = path.resolve('./content/_kss');
+const content_components_dir = path.resolve('./content/_components');
+const decanter_src = path.resolve("./node_modules/decanter/core/src");
 
 // Add de filters.
-twigDrupal(Twig);
+twigDrupal(twig);
 
 /**
  * Generate the navigation json.
@@ -28,7 +28,7 @@ kss_util.getNavItems()
  * Generate the KSS sections data json files.
  * @type {[type]}
  */
-del.sync([kss_settings_dir + 'info/**', '!' + kss_settings_dir + "info"]);
+deleteSync([kss_settings_dir + 'info/**', '!' + kss_settings_dir + "info"]);
 kss_util.fetchSections()
   .then(function(sections) {
     Object.keys(sections).forEach(function(key) {
@@ -61,8 +61,8 @@ kss_util.fetchSections()
  * Get the json out of the Decanter project
  * @type {[type]}
  */
-del.sync([kss_settings_dir + 'data/*.json']);
-del.sync([kss_settings_dir + 'markup/*.html']);
+deleteSync([kss_settings_dir + 'data/*.json']);
+deleteSync([kss_settings_dir + 'markup/*.html']);
 kss_util.fetchSections()
   .then(function(sections) {
     Object.keys(sections).forEach(async function(key) {
@@ -100,7 +100,7 @@ kss_util.fetchSections()
       };
 
       // Render the default markup.
-      Twig.renderFile(full_twig_path, options, (err, html) => {
+      twig.renderFile(full_twig_path, options, (err, html) => {
         let filepath = path.join(kss_settings_dir, "markup", key + ".html");
         fs.writeFile(filepath, html, (err2) => { if (err2) { console.log(err2) } } );
       });
@@ -139,7 +139,7 @@ kss_util.fetchSections()
         }
 
         // Do the render.
-        Twig.renderFile(full_twig_path, my_options, function(err3, html2) {
+        twig.renderFile(full_twig_path, my_options, function(err3, html2) {
           let filepath = path.join(kss_settings_dir, "markup", key + "-" + modnam + ".html");
           fs.writeFile(filepath, html2, (err4) => { if (err4) { console.log(err4) } });
         });

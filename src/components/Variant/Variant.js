@@ -1,29 +1,31 @@
-const hljs = require('highlight.js');
-const prettifyHtml = require('prettify-html');
+import hljs from 'highlight.js';
 
-const Variant = (props) => {
-  var mkd = <div dangerouslySetInnerHTML={{ __html: props.data.markup.default }} />;
-  const markup = <div dangerouslySetInnerHTML={{ __html: hljs.highlight('html', prettifyHtml(props.data.markup.default)).value}} />;
-  var demoStyles = [];
-  var demoStylesWrapper = [];
-  var notes;
-  var description = <p>{props.data.description}</p>;
+const Variant = ({ data, local, ...rest }) => {
+  const renderHtml = data.markup ?? '';
+  const highlightedCode = hljs.highlight(renderHtml, { language: 'html' }).value;
+
+  const mkd = <div dangerouslySetInnerHTML={{ __html: renderHtml }} suppressHydrationWarning />;
+  const html = <div dangerouslySetInnerHTML={{ __html: highlightedCode }} suppressHydrationWarning />;
+
+  let demoStylesWrapper = [];
+  let demoStyles = [];
+  let notes;
+  let description = <p>{ data.description }</p>;
 
   // If there is local data.
-  if (props.local) {
-    if (props.local.egwidth) {
-      demoStyles[0] = `max-width: ${props.local.egwidth}`;
+  if (local) {
+    if (local?.egwidth) {
+      demoStyles[0] = `max-width: ${local.egwidth}`;
     }
   }
 
   // Find variant data.
-  if (props.local && props.local.modifier_css) {
+  if (local && local.modifier_css) {
     var modifier;
     // Look through and match keys for data.
-    props.local.modifier_css.forEach(function(vals) {
-      if (props.data.className == vals.css_class) {
+    local.modifier_css.forEach(function(vals) {
+      if (data.className == vals.css_class) {
         modifier = vals;
-        return;
       }
     });
     // Found some data.
@@ -38,11 +40,11 @@ const Variant = (props) => {
       }
 
       if (modifier.notes) {
-        notes = <div dangerouslySetInnerHTML={{ __html: modifier.notes }} />
+        notes = <div dangerouslySetInnerHTML={{ __html: modifier.notes }} suppressHydrationWarning />
       }
 
       if (modifier.description) {
-        description = <div dangerouslySetInnerHTML={{ __html: modifier.description }} />
+        description = <div dangerouslySetInnerHTML={{ __html: modifier.description }} suppressHydrationWarning />
       }
 
     }
@@ -54,19 +56,19 @@ const Variant = (props) => {
     <>
     <section className="component__variant">
       <header className="component__variant-info">
-        <p className="component__variant-name"><code>{props.data.name}</code></p>
+        <p className="component__variant-name"><code>{data.name}</code></p>
         {description}
       </header>
       <section className="component__variant-demo">
-      <style jsx>{`
-        .component__variant-demo {
-          ${demoStylesWrapper}
-        }
-        .component__variant-demo :global(> div) {
-          ${demoStyles}
-        }
-      `}
-      </style>
+        <style jsx>{`
+          .component__variant-demo {
+            ${demoStylesWrapper}
+          }
+          .component__variant-demo :global(> div) {
+            ${demoStyles}
+          }
+        `}
+        </style>
         {mkd}
       </section>
       {notes ? (
@@ -78,7 +80,7 @@ const Variant = (props) => {
         <h3>Example Markup</h3>
         <pre>
           <code className="language-html hljs">
-          {markup}
+            {html}
           </code>
         </pre>
       </section>

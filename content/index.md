@@ -57,7 +57,7 @@ date: 2019-03-17T19:31:20.591Z
         <a href="page/components/" class="su-link su-link--action">Learn about the Decanter Design System</a>
     </section>
     <section class="flex-md-6-of-12">
-        
+
 
 ![](/img/icon-file.png)
 
@@ -75,7 +75,7 @@ date: 2019-03-17T19:31:20.591Z
 
 </section>
 <section class="flex-md-6-of-12">
-    
+
 
 ![](/img/icon-comment-alt.png)
 
