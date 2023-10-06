@@ -43,7 +43,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
   const MdxBody = useMDXComponent(page.body.code);
 
   return (
-    <FlexBox direction="col" className="su-w-full su-min-h-screen">
+    <FlexBox direction="col" className="w-full min-h-screen">
       <Head>
         <title>{page.title}</title>
       </Head>
@@ -51,18 +51,18 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
         <Skiplink />
         <IdentityBar />
       </header>
-      <FlexBox direction="col" className="lg:su-flex-row su-grow">
-        <aside className="su-flex su-items-center su-justify-between lg:su-block su-shrink-0 lg:su-w-300 lg:su-min-w-[30rem] su-basefont-20 su-bg-black">
+      <FlexBox direction="col" className="lg:flex-row grow">
+        <aside className="flex items-center justify-between lg:block shrink-0 lg:w-300 lg:min-w-[30rem] basefont-20 bg-black">
           <Link
             href={home()}
-            className="su-px-20 sm:su-px-30 md:su-px-50 su-rs-py-1 lg:su-px-30 su-leading-none su-no-underline hocus:su-text-white su-inline-block su-w-fit"
+            className="px-20 sm:px-30 md:px-50 rs-py-1 lg:px-30 leading-none no-underline hocus:text-white inline-block w-fit"
           >
-            <Text color="white" weight="bold" size={2} className="su-inline-block">Decanter</Text>
-            <Text weight="semibold" className="su-text-white/90 su-inline-block su-ml-10 su--top-5 su-relative su-text-16 su-bg-black-80 su-pt-3 su-pb-5 su-px-8 su-rounded">v7</Text>
+            <Text color="white" weight="bold" size={2} className="inline-block">Decanter</Text>
+            <Text weight="semibold" className="text-white/90 inline-block ml-10 -top-5 relative text-16 bg-black-80 pt-3 pb-5 px-8 rounded">v7</Text>
           </Link>
-          <SidebarNav navItems={SidebarNavData} className="su-mr-30 lg:su-mr-0 lg:su-sticky lg:su-top-0" />
+          <SidebarNav navItems={SidebarNavData} className="mr-30 lg:mr-0 lg:sticky lg:top-0" />
         </aside>
-        <div className="su-basefont-21 su-w-full su-grow su-ml-0">
+        <div className="basefont-21 w-full grow ml-0">
           {page.title !== 'Decanter Homepage' ? (
             <Container as="main" width="full" id="main-content">
               <Container as="article" width="full">
@@ -70,11 +70,11 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
                   as="h1"
                   size={3}
                   color="white"
-                  className="su-px-20 sm:su-px-30 md:su-px-50 lg:su-px-80 xl:px-100 su-rs-py-3 su-mb-0 su-bg-gradient-to-r su-from-black-90 su-to-plum"
+                  className="px-20 sm:px-30 md:px-50 lg:px-80 xl:px-100 rs-py-3 mb-0 bg-gradient-to-r from-black-90 to-plum"
                 >
                   {page.title}
                 </Heading>
-                <Container className="2xl:su-px-80 su-rs-pt-4 su-rs-pb-8 su-ml-0">
+                <Container className="2xl:px-80 rs-pt-4 rs-pb-8 ml-0">
                   <MdxBody
                     components={{
                       Counter,
@@ -94,7 +94,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
           )}
         </div>
       </FlexBox>
-      <GlobalFooter className="su-w-full" />
+      <GlobalFooter className="w-full" />
     </FlexBox>
   );
 };

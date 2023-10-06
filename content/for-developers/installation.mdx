@@ -4,20 +4,48 @@ lastUpdatedDate: 2022-12-31T12:00:00.000Z
 ---
 
 <Section>
-[Decanter v7](https://github.com/SU-SWS/decanter/tree/v7) customizes Tailwind CSS for you to generate utility classes that works with our design system. Before you begin, please read and review the installation process on the official [Tailwind CSS website](https://tailwindcss.com/docs/installation). Please also become familiar with [Tailwind CSS presets](https://tailwindcss.com/docs/presets) as Decanter uses this functionality to make it even easier for you to use.
+[Decanter v7](https://github.com/SWS/decanter/tree/v7) customizes Tailwind CSS for you to generate utility classes that works with our design system. Before you begin, please read and review the installation process on the official [Tailwind CSS website](https://tailwindcss.com/docs/installation). Please also become familiar with [Tailwind CSS presets](https://tailwindcss.com/docs/presets) as Decanter uses this functionality to make it even easier for you to use.
 </Section>
 
-<Section heading="Install the resources">
-If you are adding Decanter to an existing project please have a review of the [Framework Guides](https://tailwindcss.com/docs/installation/framework-guides) available from Tailwind CSS and then skip to the tailwind.config.js settings below.
+<Section heading="Frameworks">
+If you are adding Decanter to an existing project please have a review of the [Framework Guides](https://tailwindcss.com/docs/installation/framework-guides) available from Tailwind CSS.
 
-<div className="children:children:su-rs-mb-4">
+1. **Install Tailwind into your framework of choice.**
+
+    Some options include:
+
+    [Next.js](https://tailwindcss.com/docs/guides/nextjs) | [Nuxt](https://tailwindcss.com/docs/guides/nuxtjs) | [SvelteKit](https://tailwindcss.com/docs/guides/sveltekit) | [Angular](https://tailwindcss.com/docs/guides/angular) | [Vite](https://tailwindcss.com/docs/guides/vite) | [Laravel](https://tailwindcss.com/docs/guides/laravel) | [Symfony](https://tailwindcss.com/docs/guides/symfony) | [Astro](https://tailwindcss.com/docs/guides/astro) | [Create React App](https://tailwindcss.com/docs/guides/create-react-app)
+
+2. **Add Decanter as a dependency through your favorite package manager.**
+    ```bash
+     // Bash, shell, zsh, fish, etc.
+      yarn add -D decanter
+      npm install -D decanter
+      pnpm install -D decanter
+    ```
+
+3. **Add Decanter to your tailwind.config.js file as a preset.**
+    ```js
+     // tailwind.config.js
+      module.exports = {
+        ...
+        presets: [
+          require('decanter')
+        ],
+        ...
+      }
+    ```
+</Section>
+
+<Section heading="Standalone">
+
+<div className="children:children:rs-mb-4">
 1. **Install Decanter Tailwindcss**
 
     The easiest way to add Decanter to your project is to use the npm package manager.
-
-    ```shell
-    npm install -D decanter
-    npx tailwind init
+    ```bash
+     npm install -D decanter
+      npx tailwind init
     ```
 
 2. **Configure your tailwind.config.js file**
@@ -26,37 +54,36 @@ If you are adding Decanter to an existing project please have a review of the [F
 
     ```js
     module.exports = {
-    // Prefix is optional but this is the Decanter convention
-      prefix: 'su-',
       // This preset option pulls in all of the Tailwind CSS configuration.
       presets: [
         require('decanter')
       ],
       // This should point to your source files as Tailwind CSS scans your files for the css classes you use.
       content: ["./src/**/*.{html,js}"],
+      // You can still extend and mdify Tailwind CSS as you normally would.
       theme: {
         extend: {},
       },
+      // You can still add plugins as you normally would.
       plugins: [],
     }
     ```
-
 
 3. **Add the tailwind directives to your main CSS file.**
 
     `/src/css/main.css`
 
     ```css
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
+     @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
     ```
 
 4. **Compile using the Tailwind CSS CLI tool**
 
     Run the CLI tool to scan your template files for classes and build your CSS.
 
-    ```shell
+    ```sh
     npx tailwindcss -i ./src/css/main.css -o ./dist/css/styles.css --watch
     ```
 
@@ -65,19 +92,19 @@ If you are adding Decanter to an existing project please have a review of the [F
     Add your compiled CSS file to the `<head>` and start using Tailwind's utility classes to style your content.
 
     ```html
-    <!doctype html>
-    <html>
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="/dist/css/styles.css" rel="stylesheet">
-    </head>
-    <body>
-      <h2 class="su-type-1 su-font-bold su-underline">
-        Hello world!
-      </h2>
-    </body>
-    </html>
+     <!doctype html>
+      <html>
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/dist/css/styles.css" rel="stylesheet">
+      </head>
+      <body>
+        <h2 class="type-1 font-bold underline">
+          Hello world!
+        </h2>
+      </body>
+      </html>
     ```
 
 6. **Start developing**

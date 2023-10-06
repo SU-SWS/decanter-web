@@ -4,7 +4,6 @@ import { defineDocumentType, makeSource } from 'contentlayer/source-files';
 import remarkGfm from 'remark-gfm';
 // Rehype packages
 import rehypePrismPlus from 'rehype-prism-plus';
-import rehypePresetMinify from 'rehype-preset-minify';
 import remarkCodeTitles from './lib/remark-code-title';
 
 export const Page = defineDocumentType(() => ({

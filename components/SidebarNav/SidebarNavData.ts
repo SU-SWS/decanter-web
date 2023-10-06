@@ -25,7 +25,6 @@ export const SidebarNavData = [
       { label: 'Stanford identity and brand compliance', href: routes.stanfordIdentity() },
       { label: 'Accessibility', href: routes.accessibilityNotes() },
       { label: 'Type, grids and color', href: routes.typeGridsAndColor() },
-      { label: 'Patterns and examples', href: routes.patternsAndExamples() },
     ],
   },
   {
