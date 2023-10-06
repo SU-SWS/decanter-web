@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "prebuild": "contentlayer build",
+    "build": "contentlayer build && next build",
+    "build:next": "next build",
+    "build:content": "contentlayer build",
     "start": "next start",
     "lint": "eslint \"**/*.{ts,tsx,js,jsx}\"",
     "lint:fix": "eslint \"**/*.{ts,tsx,js,jsx}\" --quiet --fix",
