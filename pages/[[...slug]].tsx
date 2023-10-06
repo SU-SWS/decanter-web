@@ -5,7 +5,7 @@ import Head from 'next/head';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import { home } from 'utils/routes';
 import { Homepage } from 'components/Homepage/Homepage';
-import { allPages, Page } from '../.contentlayer/generated';
+import { allPages, type Page } from '../.contentlayer/generated';
 import {
   Counter,
   FlexBox,
