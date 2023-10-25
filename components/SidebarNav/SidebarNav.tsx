@@ -24,7 +24,7 @@ export const NavContent = ({ navItems }: SidebarNavProps) => (
       ))}
     </ul>
     <div className="pl-30 py-20 flex">
-      <a href="https://github.com/SWS/decanter/tree/v7" className="flex items-center text-white hocus:text-white hocus:underline">
+      <a href="https://github.com/SU-SWS/decanter" className="flex items-center text-white hocus:text-white hocus:underline">
         <div className="w-30 h-30 mr-8" aria-hidden>
           <Image
             src={githubIcon}

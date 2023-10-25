@@ -2,6 +2,7 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Image from 'next/image';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import { home } from 'utils/routes';
 import { Homepage } from 'components/Homepage/Homepage';
@@ -49,9 +50,9 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
       </Head>
       <header>
         <Skiplink />
-        <IdentityBar />
+        <IdentityBar className="bg-digital-red" />
       </header>
-      <FlexBox direction="col" className="lg:flex-row grow">
+      <FlexBox direction="col" className="lg:flex-row grow relative">
         <aside className="flex items-center justify-between lg:block shrink-0 lg:w-300 lg:min-w-[30rem] basefont-20 bg-black">
           <Link
             href={home()}
@@ -86,15 +87,19 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
                     }}
                   />
                 </Container>
-                {/* <div dangerouslySetInnerHTML={{ __html: page.body.html }} /> */}
               </Container>
             </Container>
           ) : (
             <Homepage />
           )}
+          <div className="absolute md:right-0 bottom-[-5px]">
+            <a href="https://www.netlify.com" className="inline-block">
+              <Image src="https://www.netlify.com/img/global/badges/netlify-dark.svg" height={50} width={114} alt="Hosting By Netlify" />
+            </a>
+          </div>
         </div>
       </FlexBox>
-      <GlobalFooter className="w-full" />
+      <GlobalFooter className="w-full bg-digital-red" />
     </FlexBox>
   );
 };
