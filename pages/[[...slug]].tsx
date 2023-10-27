@@ -75,7 +75,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
                 >
                   {page.title}
                 </Heading>
-                <Container className="2xl:px-80 rs-pt-4 rs-pb-8 ml-0">
+                <Container className="2xl:px-100 rs-pt-4 rs-pb-8 ml-0">
                   <MdxBody
                     components={{
                       Counter,

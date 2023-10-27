@@ -10,12 +10,17 @@ export const Homepage = () => (
     <section className="rs-py-5 cc">
       <div className="max-w-900 mx-auto">
         <Heading as="h1" size={4} color="white">Welcome to the Decanter Style Guide and Pattern Library</Heading>
-        <Paragraph variant="intro" className="rs-mb-2 text-black-10">
+        <Paragraph variant="intro" className="text-black-10">
           Decanter is a web design and development system for Stanford University.
           It includes a responsive layout system and a browsable collection
           of design patterns that can be used in any Stanford project.
         </Paragraph>
-        <Cta variant="primary" href={routes.installation()} icon="arrow-right" animate="right">Use Decanter v7</Cta>
+        <Cta variant="primary" href={routes.installation()} icon="arrow-right" animate="right" className="rs-mb-2 inline-block">Use Decanter v7</Cta>
+        <Paragraph variant="subheading" className="rs-mb-1 text-black-10">
+          Looking for Decanter v6?
+          <br />
+        </Paragraph>
+        <Cta variant="primary" href="https://decanter6.stanford.edu" icon="arrow-right" animate="right">See Decanter v6</Cta>
       </div>
     </section>
     <section className="rs-pt-5 cc">
