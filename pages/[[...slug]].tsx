@@ -12,6 +12,7 @@ import {
   FlexBox,
   Heading,
   Text,
+  Paragraph,
   Container,
   GlobalFooter,
   IdentityBar,
@@ -84,6 +85,10 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
                       SectionNavItem,
                       GlobalFooter,
                       IdentityBar,
+                      Heading,
+                      Paragraph,
+                      Text,
+                      Container,
                     }}
                   />
                 </Container>
