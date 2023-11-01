@@ -14,9 +14,9 @@ export const SectionNav = ({
   children,
   className,
 }: SectionNavProps) => (
-  <nav className={dcnb('su-sticky su-top-10', className)} aria-label="Section menu">
+  <nav className={dcnb('sticky top-10', className)} aria-label="Section menu">
     <Heading as="h3" size={1}>On this page</Heading>
-    <ul className="su-list-unstyled">
+    <ul className="list-unstyled">
       {children}
     </ul>
   </nav>

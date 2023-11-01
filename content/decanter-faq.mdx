@@ -2,9 +2,10 @@
 title: Decanter FAQs
 lastUpdatedDate: 2022-12-31T12:00:00.000Z
 ---
-<div className="su-flex su-flex-col 2xl:su-flex-row-reverse">
-  <div className="2xl:su-sticky 2xl:su-top-0 2xl:su-pl-26 2xl:su-shrink-0 su-rs-mb-5 2xl:su-mb-0">
+<div className="flex flex-col 2xl:flex-row-reverse">
+  <div className="2xl:sticky 2xl:top-0 2xl:pl-26 2xl:shrink-0 rs-mb-5 2xl:mb-0">
     <SectionNav>
+      <SectionNavItem href="#decanter-6" label="Where can I find Decanter 6 documentation" />
       <SectionNavItem href="#audience" label="What is the audience for the design system?" />
       <SectionNavItem href="#implementation" label="What is the implementation process for wordpress? e.g., do they use classes, is it all in the base theme?" />
       <SectionNavItem href="#governance" label="What is the governance process like?" />
@@ -24,19 +25,18 @@ lastUpdatedDate: 2022-12-31T12:00:00.000Z
     </SectionNav>
   </div>
 
-<div className="su-grow">
+<div className="grow">
+<Section heading="Where can I find Decanter 6 documentation" id="decanter-6">
+Decanter 6 documentation can be found [on the decanter 6 website](https://decanter6.stanford.edu/).
+</Section>
+
 <Section heading="What is the audience for the design system?" id="audience">
 Decanter is for developers and designers alike, both inside of Stanford or with external partners creating digital products.
 </Section>
 
 <Section heading="What is the implementation process for wordpress? e.g., do they use classes, is it all in the base theme?" id="implementation">
-There are a few ways that one can incorporate Decanter into WordPress.
-
-**Decanter Version 6 (Twig templates + SCSS):**
-Without installing the Decanter package, it is possible to add the compiled Decanter CSS file(s) and use some of the styling (base HTML styles and class based). However, to take full advantage of what Decanter has to offer, it is best to install the package in your codebase. One will then be able to use the custom SCSS mixins to style their site. To use the Twig templates (templates for the components markup) in Decanter, one can install the Timber WordPress plugin in their WordPress site.
-
 **Decanter Version 7 (Tailwind CSS):**
-Similar to version 6, without installing the Decanter package, one can pull in the compiled Decanter CSS file with the Tailwind CSS classes generated. These classes can then be used in your WordPress theme markup for styling. However, this is not encouraged as the Tailwind CSS generated file is very large (~ 10 MB) in size. Instead, one can either use PurgeCSS along with the compiled CSS file, or install Decanter with Tailwind CSS and pull in the Decanter elements in your Tailwind CSS configuration file to generate only classes that are used in your markup. The most common way to use Tailwind CSS is to use the classes in the markup, but one can also use the @apply method along with your preprocessor of choice.
+CSS Trick's Greg Sullivan has a great article about the ins and outs of adding a Tailwind CSS design system to a WordPress theme. [Read it here](https://css-tricks.com/adding-a-tailwind-css-design-system-to-a-wordpress-theme/).
 </Section>
 
 <Section heading="What is the governance process like?" id="governance">
@@ -58,7 +58,7 @@ The original V1 of Decanter was designed and implemented by the then lead design
 
 From there, the case was made to the leadership of both teams to continue evolving and maintaining both the codebase and the design system naming it’s mutually beneficial use cases for our own projects, and for projects across the University. Particularly, meeting accessibility standards (and reducing duplicative effort here for dozens of teams at Stanford) continues to be a primary driver in creating and maintaining Decanter. The Wordpress and Drupal platforms servicing thousands of websites across the University both began employing Decanter in 2019 (and still do today). From 2018-2019 designers and developers met bi-weekly to plan, enhance, and maintain code and design and while we also held bi-annual Decanter sprints with a team of about three designers, and five developers taking us to V4. Since then, devoted Decanter sprints haven’t been as necessary, as large “project-sponsors” have become the source of advancing design and development (not unlike the birth of the project).
 
-We continue to meet bi-weekly, with an open Decanter forum to discuss enhancements, learn what our community needs, and plan for upcoming work. We have an open Decanter Slack channel. And community members across Stanford are invited to participate in any way they’re supported to do so. But as the source of enhancements have shifted to project-based roadmaps, we’re currently in a period where Decanter is influenced largely by our project sponsors. Design and code decisions are led namely by the Web Services architects and implementors who are the primary users of Decanter V7 to keep the project evolving and reduce stagnation.
+We continue to meet regularly, with an open Decanter forum to discuss enhancements, learn what our community needs, and plan for upcoming work. We have an open Decanter Slack channel. And community members across Stanford are invited to participate in any way they’re supported to do so. But as the source of enhancements have shifted to project-based roadmaps, we’re currently in a period where Decanter is influenced largely by our project sponsors. Design and code decisions are led namely by the Web Services architects and implementors who are the primary users of Decanter V7 to keep the project evolving and reduce stagnation.
 
 When the DS project started, how did you decide what was the original scope and what did you decide to tackle first?
 The initial scope was stanford.edu as the original source came from the last redesign of that property. We decided that since the Stanford Sites platform was “related” that it would be great if we could collaborate with the University Communications team (at the time) to ensure consistency as well as improve efficiency.
@@ -68,10 +68,6 @@ The initial scope was stanford.edu as the original source came from the last red
 Original inspiration?
 
 More recent inspiration includes the [Rivet Design System](https://rivet.iu.edu/) and the [Folwell Design System](https://folwell.umn.edu/.)
-</Section>
-
-<Section heading="What lessons have emerged and what might you have done differently?" id="lesson">
-lorem ipsum
 </Section>
 
 <Section heading="How much time (and what types of people) do you allocate quarterly/annually?" id="time">

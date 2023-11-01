@@ -2,15 +2,57 @@
 title: Identity bar
 lastUpdatedDate: 2022-04-06T12:00:00.000Z
 ---
-<div className="su-rs-mb-5">
-  <IdentityBar />
-</div>
-<Section heading="HTML" width="full" className="su-max-w-1200">
+<div className="lg:max-w-600 xl:max-w-800 2xl:max-w-1000">
+
+  <Section heading="Digital Red" width="full">
   ```html
-    <div class="su-pl-20 md:su-pl-30 su-pt-5 su-pb-1 su-bg-digital-red">
-      <a class="su-logo hocus:su-no-underline su-text-white hocus:su-text-white su-text-20 su-leading-none" href="https://www.stanford.edu">
+    <div class="pl-20 md:pl-30 pt-5 pb-1 bg-digital-red">
+      <a class="logo hocus:no-underline text-white hocus:text-white text-20 leading-none" href="https://www.stanford.edu">
         Stanford University
       </a>
     </div>
   ```
-</Section>
+  <div className="rs-mb-5">
+    <IdentityBar className="bg-digital-red" />
+  </div>
+  </Section>
+
+  <Section heading="Cardinal Red" width="full">
+    ```html
+      <div class="pl-20 md:pl-30 pt-5 pb-1 cardinal-red">
+        <a class="logo hocus:no-underline text-white hocus:text-white text-20 leading-none" href="https://www.stanford.edu">
+          Stanford University
+        </a>
+      </div>
+    ```
+    <div className="rs-mb-5">
+      <IdentityBar className="bg-cardinal-red" />
+    </div>
+  </Section>
+
+  <Section heading="Black" width="full">
+    ```html
+      <div class="pl-20 md:pl-30 pt-5 pb-1 bg-black">
+        <a class="logo hocus:no-underline text-white hocus:text-white text-20 leading-none" href="https://www.stanford.edu">
+          Stanford University
+        </a>
+      </div>
+    ```
+    <div className="rs-mb-5">
+      <IdentityBar className="bg-black" />
+    </div>
+  </Section>
+
+  <Section heading="White" width="full">
+    ```html
+      <div class="px-20 sm:px-30 md:px-50 lg:px-30 pt-5 pb-1 bg-white">
+        <a class="logo hocus:no-underline text-cardinal-red hocus:text-cardinal-red text-20 leading-none" href="https://www.stanford.edu">Stanford University</a>
+      </div>
+    ```
+    <div className="rs-mb-5 bg-black-90 p-5">
+      <div class="px-20 sm:px-30 md:px-50 lg:px-30 pt-5 pb-1 bg-white">
+        <a class="logo hocus:no-underline text-cardinal-red hocus:text-cardinal-red text-20 leading-none" href="https://www.stanford.edu">Stanford University</a>
+      </div>
+    </div>
+  </Section>
+</div>

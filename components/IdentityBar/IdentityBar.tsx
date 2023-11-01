@@ -1,13 +1,14 @@
 import React from 'react';
+import { dcnb } from 'cnbuilder';
 import { Logo } from '../Logo';
 
-export const IdentityBar = () => (
-  <div className="su-px-20 sm:su-px-30 md:su-px-50 lg:su-px-30 su-pt-5 su-pb-1 su-bg-digital-red">
+export const IdentityBar = ({ className }) => (
+  <div className={dcnb('px-20 sm:px-30 md:px-50 lg:px-30 pt-5 pb-1', className)}>
     <Logo
       isLink
       type="full"
       color="white"
-      className="su-text-20 su-leading-none"
+      className="text-20 leading-none"
     />
   </div>
 );

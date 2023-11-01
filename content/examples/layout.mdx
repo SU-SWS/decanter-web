@@ -3,140 +3,23 @@ title: Layout
 lastUpdatedDate: 2022-05-17T12:00:00.000Z
 ---
 
-<Section width="full" className="su-max-w-1200">
+<Section width="full" className="max-w-1200">
   Complex layout systems can be created with decanter by utilizing the provided Tailwind CSS flex and CSS grid classes. A full list of these classes can be found in the <a href="https://tailwindcss.com/docs/flex-basis" rel="nofollow">Flexbox &amp; Grid</a> section of the Tailwind docs.
 </Section>
 
-<Section heading="CSS Grid" width="full" className="su-max-w-1200">
+<Section heading="Page layout example:" width="full" className="max-w-1200">
   ```html
-  <div className="su-grid su-grid-cols-3 su-grid-gap">
-    <div className="su-bg-sky-light su-flex su-justify-center su-items-center su-rs-p-3 su-type-3 su-font-bold">
-      1
-    </div>
-    <div className="su-bg-sky-light su-flex su-justify-center su-items-center su-rs-p-3 su-type-3 su-font-bold">
-      2
-    </div>
-    <div className="su-bg-sky-light su-flex su-justify-center su-items-center su-rs-p-3 su-type-3 su-font-bold">
-      3
-    </div>
-    <div className="su-col-span-2 su-bg-sky-dark su-text-white su-flex su-justify-center su-items-center su-rs-p-3 su-type-3 su-font-bold">
-      4
-    </div>
-    <div className="su-bg-sky-light su-flex su-justify-center su-items-center su-rs-p-3 su-type-3 su-font-bold">
-      5
-    </div>
-    <div className="su-bg-sky-light su-flex su-justify-center su-items-center su-rs-p-3 su-type-3 su-font-bold">
-      6
-    </div>
-    <div className="su-col-span-2 su-bg-sky-dark su-text-white su-flex su-justify-center su-items-center su-rs-p-3 su-type-3 su-font-bold">
-      7
-    </div>
-    <div className="su-col-span-3 su-bg-sky su-text-white su-flex su-justify-center su-items-center su-rs-p-3 su-type-3 su-font-bold">
-      8
-    </div>
-  </div>
-  ```
-  <div className="su-grid su-grid-cols-3 su-grid-gap">
-    <div className="su-bg-sky-light su-flex su-justify-center su-items-center su-rs-p-3 su-type-3 su-font-bold">
-      1
-    </div>
-    <div className="su-bg-sky-light su-flex su-justify-center su-items-center su-rs-p-3 su-type-3 su-font-bold">
-      2
-    </div>
-    <div className="su-bg-sky-light su-flex su-justify-center su-items-center su-rs-p-3 su-type-3 su-font-bold">
-      3
-    </div>
-    <div className="su-col-span-2 su-bg-sky-dark su-text-white su-flex su-justify-center su-items-center su-rs-p-3 su-type-3 su-font-bold">
-      4
-    </div>
-    <div className="su-bg-sky-light su-flex su-justify-center su-items-center su-rs-p-3 su-type-3 su-font-bold">
-      5
-    </div>
-    <div className="su-bg-sky-light su-flex su-justify-center su-items-center su-rs-p-3 su-type-3 su-font-bold">
-      6
-    </div>
-    <div className="su-col-span-2 su-bg-sky-dark su-text-white su-flex su-justify-center su-items-center su-rs-p-3 su-type-3 su-font-bold">
-      7
-    </div>
-    <div className="su-col-span-3 su-bg-sky su-text-white su-flex su-justify-center su-items-center su-rs-p-3 su-type-3 su-font-bold">
-      8
-    </div>
-  </div>
-
-</Section>
-
-<Section heading="Flex Grid:" width="full" className="su-max-w-1200">
-  ```html
-  <div className="su-flex su-flex-col md:su-flex-row su-gap-xs lg:su-gap-lg xl:su-gap-xl 2xl:su-gap-2xl su-text-white su-rs-mb-2">
-    <div className="su-w-full md:su-w-1/2 su-bg-palo-verde-light su-rs-p-2">
-      <h3>6 of 12 columns</h3>
-      <p className="su-card-paragraph">This column stacks vertically for XS-SM breakpoints and spans 6 of 12
-        columns for MD and up; responsive grid gaps.</p>
-    </div>
-    <div className="su-w-full md:su-w-1/2 su-bg-palo-verde-dark su-rs-p-2">
-      <h3>6 of 12 columns</h3>
-      <p className="su-card-paragraph">This column stacks vertically for XS-SM breakpoints and spans 6 of 12
-        columns for MD and up; responsive grid gaps.</p>
-    </div>
-  </div>
-  ```
-
-  <div className="su-flex su-flex-col md:su-flex-row su-gap-xs lg:su-gap-lg xl:su-gap-xl 2xl:su-gap-2xl su-text-white su-rs-mb-2">
-    <div className="su-w-full md:su-w-1/2 su-bg-palo-verde-light su-rs-p-2">
-      <h3>6 of 12 columns</h3>
-      <p className="su-card-paragraph">This column stacks vertically for XS-SM breakpoints and spans 6 of 12
-        columns for MD and up; responsive grid gaps.</p>
-    </div>
-    <div className="su-w-full md:su-w-1/2 su-bg-palo-verde-dark su-rs-p-2">
-      <h3>6 of 12 columns</h3>
-      <p className="su-card-paragraph">This column stacks vertically for XS-SM breakpoints and spans 6 of 12
-        columns for MD and up; responsive grid gaps.</p>
-    </div>
-  </div>
-
-  ```html
-  <div className="su-flex su-flex-col sm:su-flex-row su-grid-gap su-rs-mb-2 su-text-white">
-    <div className="su-w-full sm:su-w-1/2 lg:su-w-3/4 su-bg-spirited su-rs-p-2">
-      <h3>8 of 12 columns</h3>
-      <p className="su-card-paragraph">This column stacks vertically for XS breakpoint; spans 6 of 12 columns for
-        SM-MD; spans 8 of 12 columns for LG and up; responsive column gaps using .su-grid-gap class.</p>
-    </div>
-    <div className="su-w-full sm:su-w-1/2 lg:su-w-1/4 su-bg-spirited-dark su-rs-p-2">
-      <h3>4 of 12 columns</h3>
-      <p className="su-card-paragraph">This column stacks vertically for XS breakpoint; spans 6 of 12 columns for
-        SM-MD; spans 4 of 12 columns for LG and up; responsive column gaps using .su-grid-gap class.</p>
-    </div>
-  </div>
-  ```
-
-  <div className="su-flex su-flex-col sm:su-flex-row su-grid-gap su-rs-mb-2 su-text-white">
-    <div className="su-w-full sm:su-w-1/2 lg:su-w-3/4 su-bg-spirited su-rs-p-2">
-      <h3>8 of 12 columns</h3>
-      <p className="su-card-paragraph">This column stacks vertically for XS breakpoint; spans 6 of 12 columns for
-        SM-MD; spans 8 of 12 columns for LG and up; responsive column gaps using .su-grid-gap class.</p>
-    </div>
-    <div className="su-w-full sm:su-w-1/2 lg:su-w-1/4 su-bg-spirited-dark su-rs-p-2">
-      <h3>4 of 12 columns</h3>
-      <p className="su-card-paragraph">This column stacks vertically for XS breakpoint; spans 6 of 12 columns for
-        SM-MD; spans 4 of 12 columns for LG and up; responsive column gaps using .su-grid-gap class.</p>
-    </div>
-  </div>
-</Section>
-
-
-<Section heading="Page layout example:" width="full" className="su-max-w-1200">
-  ```html
-  <div className="su-grid md:su-grid-cols-4 su-grid-gap">
-    <header className="md:su-col-span-4">Header</header>
+  <div className="grid md:grid-cols-4 grid-gap">
+    <header className="md:col-span-4">Header</header>
     <aside>Sidebar</aside>
-    <main className="md:su-col-span-3">Main Content</main>
-    <footer className="md:su-col-span-4">Footer</footer>
+    <main className="md:col-span-3">Main Content</main>
+    <footer className="md:col-span-4">Footer</footer>
   </div>
   ```
-  <div className="su-grid md:su-grid-cols-4 su-grid-gap">
-    <header className="su-p-4 su-rounded-lg su-shadow-lg su-bg-digital-blue su-text-white md:su-col-span-4">Header</header>
-    <aside className="su-p-4 su-rounded-lg su-shadow-lg su-bg-digital-blue su-text-white">Sidebar</aside>
-    <main className="su-p-4 su-rounded-lg su-shadow-lg su-bg-digital-blue su-text-white md:su-col-span-3">Main Content</main>
-    <footer className="su-p-4 su-rounded-lg su-shadow-lg su-bg-digital-blue su-text-white md:su-col-span-4">Footer</footer>
+  <div className="grid md:grid-cols-4 grid-gap">
+    <header className="p-4 rounded-lg shadow-lg bg-digital-blue text-white md:col-span-4">Header</header>
+    <aside className="p-4 rounded-lg shadow-lg bg-digital-blue text-white">Sidebar</aside>
+    <main className="p-4 rounded-lg shadow-lg bg-digital-blue text-white md:col-span-3">Main Content</main>
+    <footer className="p-4 rounded-lg shadow-lg bg-digital-blue text-white md:col-span-4">Footer</footer>
   </div>
 </Section>

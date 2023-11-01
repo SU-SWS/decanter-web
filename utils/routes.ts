@@ -24,6 +24,7 @@ export const typeGridsAndColor = () => `${forDesigners()}/type-grids-and-color`;
 export const patternsAndExamples = () => `${forDesigners()}/patterns-and-examples`;
 
 // Examples
+export const alerts = () => `${examples()}/alerts`;
 export const modularTypography = () => `${examples()}/modular-typography`;
 export const containers = () => `${examples()}/containers`;
 export const formElements = () => `${examples()}/form-elements`;
@@ -34,3 +35,4 @@ export const gridCssGrid = () => `${examples()}/grid-css-grid`;
 export const cards = () => `${examples()}/cards`;
 export const identityBar = () => `${examples()}/identity-bar`;
 export const logo = () => `${examples()}/logo`;
+export const heros = () => `${examples()}/heros`;

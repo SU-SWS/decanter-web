@@ -2,13 +2,119 @@
 title: Type, grids and color
 lastUpdatedDate: 2022-12-30T12:00:00.000Z
 ---
-- [Typography](#typography)
-- [Grids, breakpoints, & spacing](#grids-breakpoints-spacing)
-- [Color](#color)
+<div className="flex flex-col 2xl:flex-row-reverse">
+  <div className="2xl:sticky 2xl:top-0 2xl:pl-26 2xl:shrink-0 rs-mb-5 2xl:mb-0">
+    <SectionNav>
+      <SectionNavItem href="#typography" label="Typography" />
+      <SectionNavItem href="#line-line-font" label="Line length, line height, font size" />
+      <SectionNavItem href="#modular-responsive" label="Modular and Responsive Typography" />
+      <SectionNavItem href="#grids-breakpoints-spacing" label="Grids, breakpoints, & spacing" />
+      <SectionNavItem href="#Color" label="color" />
+    </SectionNav>
+  </div>
+  <div className="grow">
+    <Section heading="Typography" id="typography">
+      <Paragraph><a href="https://decanter-v7.netlify.app/#text">See examples of typography in our example website -></a></Paragraph>
+        <Heading as="h4" className="font-sans">Source Sans 3</Heading>
+        <p>Source Sans 3 is our primary sans-serif font. It should be used in headings and body text as the primary sans-serif font on your website. When Sources Sans Pro is not available, we have a fallback sans-serif font stack with Helvetica Neue, Helvetica and Arial.</p>
 
-## [#](#typography) Typography<a id='typography'></a>
+        <Heading as="h5" className="font-sans">Weights</Heading>
+        <p className="font-sans">Regular | font-weight: 400</p>
+        <p className="font-sans italic">Regular Italic</p>
+        <p className="font-sans font-semibold">Semi-Bold | font-weight: 600</p>
+        <p className="font-sans font-semibold italic">Semi-Bold Italic</p>
+        <p className="font-sans font-bold">Bold | font-weight: 700</p>
+        <p className="font-sans font-bold italic">Bold Italic</p>
+        <p className="font-sans font-black">Black | font-weight: 900</p>
+        <p className="font-sans font-black italic">Black Italic</p>
 
-## [#](#grids-breakpoints-spacing) Grids, breakpoints, & spacing<a id='grids-breakpoints-spacing'></a>
+        <Heading as="h4" className="font-serif">Source Serif 4</Heading>
+        <p>Source Serif 4 is our primary serif font. It should be used in headings and body text as the primary serif font on your website. When Sources Sans Pro is not available, we have a fallback serif font stack with Georgia, Times and Times New Roman.</p>
 
-## [#](#color) Color<a id='color'></a>
+        <Heading as="h5" className="font-serif">Weights</Heading>
+        <p className="font-serif">Regular | font-weight: 400</p>
+        <p className="font-serif italic">Regular Italic</p>
+        <p className="font-serif font-semibold">Semi-Bold | font-weight: 600</p>
+        <p className="font-serif font-semibold italic">Semi-Bold Italic</p>
+        <p className="font-serif font-bold">Bold | font-weight: 700</p>
+        <p className="font-serif font-bold italic">Bold Italic</p>
+        <p className="font-serif font-black">Black | font-weight: 900</p>
+        <p className="font-serif font-black italic">Black Italic</p>
 
+
+        <Heading as="h4" className="font-slab">Roboto Slab</Heading>
+        <p className="font-slab">Roboto Slab is a secondary font. It should only be used as a display font (headings) - it is not appropriate for blocks of text.</p>
+
+        <Heading as="h5" className="font-slab">Weights</Heading>
+        <p className="font-slab">Regular | font-weight: 400</p>
+        <p className="font-slab italic">Regular Italic</p>
+        <p className="font-slab font-bold">Bold | font-weight: 700</p>
+        <p className="font-slab font-bold italic">Bold Italic</p>
+
+
+        <Heading as="h4" className="font-mono">Roboto Mono</Heading>
+        <p className="font-mono">Roboto Mono should only be used for monospaced HTML elements like the pre or code tag</p>
+    </Section>
+
+    <Section heading="Line length, line height, font size" id="line-line-font">
+      <p>Ideally, there’s a symbiotic relationship between each of these three elements of typography in order to create an optimal reading experience for paragraphs of text (this does not apply to headings). Lines that are not too long, not too short, and not too far away from each other, in proportion to font size.</p>
+      <p><strong>Font size</strong> is your starting place. For longer form text (like the body of an article) your font size should make a comfortable reading experience for someone sitting a natural distance from their screens, without hunching forward or squinting. Tip: we generally set our longer form text to anywhere between 20-23 pixels. For shorter lengths (like in card summaries) smaller font weights can be employed because the line lengths are often much shorter, and reading time is also much shorter. Tip: we generally set our shorter lengths of text between 18-20px. </p>
+      <p><strong>Line length</strong> should be somewhere between 45-75 characters long (though we’ll go up to 90 characters to accommodate our grid structure). </p>
+      <p><strong>Line height</strong> should be somewhat more open for longer form text (like the body of an article) and more compact for shorter lengths (like in card summaries). Tip: we recommend employing ems for your unit of measurement so that the line height will respond to your font size as Decanter employs modular type to accommodate responsive design. For longer form text, we’ll set the line height to 1.4-1.5ems, and for shorter lengths 1.2-1.3ems works well. (A more compact line height is also desirable for headings to keep the lines tight together so your eyes see them as a single group, rather than disparate lines of text.) </p>
+    </Section>
+
+    <Section heading="Modular and Responsive Typography" id="modular-responsive">
+      <p>Typography styles throughout Decanter employ a modular scaling system that affords for sizes of type to scale down or up depending on your screen size.  This system allows designers the ability to set type styles for one screen size without having to manually scale them down at each breakpoint.</p>
+    </Section>
+
+
+    <Section heading="Grids, breakpoints, & spacing" id="grids-breakpoints-spacing">
+      [See examples of grids, breakpoints and spacing in our example website](https://decanter-v7.netlify.app/#layouts)
+
+    #### Breakpoints
+    - XS: **0 - 575px**
+    - SM: **576 - 767px**
+    - MD: **768 - 991px**
+    - LG: **992 - 1199px**
+    - XL: **1200 - 1499px**
+    - 2XL: **1500px** and up
+
+    <p></p>
+    #### Grids
+
+      <div className="flex flex-col md:flex-row gap-xs lg:gap-lg xl:gap-xl 2xl:gap-2xl text-white rs-mb-2">
+      <div className="w-full md:w-1/2 bg-palo-verde-light rs-p-2">
+        <h3>6 of 12 columns</h3>
+        <p className="card-paragraph">This column stacks vertically for XS-SM breakpoints and spans 6 of 12
+          columns for MD and up; responsive grid gaps.</p>
+      </div>
+      <div className="w-full md:w-1/2 bg-palo-verde-dark rs-p-2">
+        <h3>6 of 12 columns</h3>
+        <p className="card-paragraph">This column stacks vertically for XS-SM breakpoints and spans 6 of 12
+          columns for MD and up; responsive grid gaps.</p>
+      </div>
+    </div>
+    <div className="flex flex-col sm:flex-row grid-gap rs-mb-2 text-white">
+      <div className="w-full sm:w-1/2 lg:w-3/4 bg-spirited rs-p-2">
+        <h3>8 of 12 columns</h3>
+        <p className="card-paragraph">This column stacks vertically for XS breakpoint; spans 6 of 12 columns for
+          SM-MD; spans 8 of 12 columns for LG and up; responsive column gaps using .grid-gap class.</p>
+      </div>
+      <div className="w-full sm:w-1/2 lg:w-1/4 bg-spirited-dark rs-p-2">
+        <h3>4 of 12 columns</h3>
+        <p className="card-paragraph">This column stacks vertically for XS breakpoint; spans 6 of 12 columns for
+          SM-MD; spans 4 of 12 columns for LG and up; responsive column gaps using .grid-gap class.</p>
+      </div>
+    </div>
+
+    </Section>
+
+    <Section heading="Colors" id="color">
+      [See examples of colors in our example website](https://decanter-v7.netlify.app/#color-palette)
+
+      Decanter employs the Stanford identity color palette guidelines. You can learn more about color usage at Stanford on the [identity website](https://identity.stanford.edu/design-elements/color/).
+
+
+    </Section>
+  </div>
+</div>

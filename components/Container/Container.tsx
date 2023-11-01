@@ -5,9 +5,9 @@ const containerElements = ['div', 'section', 'article', 'main', 'footer', 'aside
 type ContainerElementType = typeof containerElements[number];
 
 const containerWidths = {
-  full: 'su-w-full', // width: 100%;
-  site: 'su-cc', // Use Decanter custom screen margins and sets max content width of 1500px
-  screen: 'su-w-screen', // width: 100vw
+  full: 'w-full', // width: 100%;
+  site: 'cc', // Use Decanter custom screen margins and sets max content width of 1500px
+  screen: 'w-screen', // width: 100vw
 };
 type ContainerWidthType = keyof typeof containerWidths;
 

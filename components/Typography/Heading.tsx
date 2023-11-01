@@ -47,9 +47,9 @@ export const Heading = ({
       fontWeight[weight],
       textColor[color],
       textVariant[variant],
-      italic ? 'su-italic' : '',
-      srOnly ? 'su-sr-only' : '',
-      uppercase ? 'su-uppercase' : '',
+      italic ? 'italic' : '',
+      srOnly ? 'sr-only' : '',
+      uppercase ? 'uppercase' : '',
       className
     )
   }

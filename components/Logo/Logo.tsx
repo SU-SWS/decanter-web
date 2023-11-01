@@ -46,14 +46,14 @@ export const Logo = ({
   // Render logo as link or simple div
   if (isLink) {
     return (
-      <a className={dcnb('su-logo', root, logoColor, className)} href="https://www.stanford.edu" {...props}>
+      <a className={dcnb('logo', root, logoColor, className)} href="https://www.stanford.edu" {...props}>
         {logoText}
       </a>
     );
   }
 
   return (
-    <div className={dcnb('su-logo', logoColor, className)} {...props}>
+    <div className={dcnb('logo', logoColor, className)} {...props}>
       {logoText}
     </div>
   );

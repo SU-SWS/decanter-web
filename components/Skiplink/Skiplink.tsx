@@ -20,7 +20,7 @@ export const Skiplink = ({
   return (
     <a
       href={href}
-      className={dcnb('su-skiplink', className)}
+      className={dcnb('skiplink', className)}
       ref={ref}
       onFocus={() => ref?.current?.scrollIntoView()}
       {...rest}

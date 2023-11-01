@@ -6,43 +6,48 @@ import uiComponents from 'images/ui-components.png';
 import * as routes from 'utils/routes';
 
 export const Homepage = () => (
-  <div id="main-content" className="su-w-full su-h-full su-basefont-20 su-bg-gradient-to-r su-from-black su-to-plum">
-    <section className="su-rs-py-5 su-cc">
-      <div className="su-max-w-900 su-mx-auto">
+  <div id="main-content" className="w-full h-full basefont-20 bg-gradient-to-r from-black to-plum">
+    <section className="rs-py-5 cc">
+      <div className="max-w-900 mx-auto">
         <Heading as="h1" size={4} color="white">Welcome to the Decanter Style Guide and Pattern Library</Heading>
-        <Paragraph variant="intro" className="su-rs-mb-2 su-text-black-10">
+        <Paragraph variant="intro" className="text-black-10">
           Decanter is a web design and development system for Stanford University.
           It includes a responsive layout system and a browsable collection
           of design patterns that can be used in any Stanford project.
         </Paragraph>
-        <Cta variant="primary" href={routes.installation()} icon="arrow-right" animate="right">Use Decanter v7</Cta>
+        <Cta variant="primary" href={routes.installation()} icon="arrow-right" animate="right" className="rs-mb-2 inline-block">Use Decanter v7</Cta>
+        <Paragraph variant="subheading" className="rs-mb-1 text-black-10">
+          Looking for Decanter v6?
+          <br />
+        </Paragraph>
+        <Cta variant="primary" href="https://decanter6.stanford.edu" icon="arrow-right" animate="right">See Decanter v6</Cta>
       </div>
     </section>
-    <section className="su-rs-pt-5 su-cc">
-      <div className="su-max-w-1200 su-mx-auto">
-        <div className="su-grid su-grid-gap lg:su-grid-cols-2">
+    <section className="rs-pt-5 cc">
+      <div className="max-w-1200 mx-auto">
+        <div className="grid grid-gap lg:grid-cols-2">
           <Image src={uiComponents} alt="Decanter UI Components" />
           <div className="">
             <Heading as="h2" size={3} color="white">Get Started</Heading>
-            <Paragraph size={1} className="su-rs-mb-2 su-text-black-10">
+            <Paragraph size={1} className="rs-mb-2 text-black-10">
               Learn about how to use Decanter components with our onboarding guides,
               tailored to designers or developers.
             </Paragraph>
-            <Cta variant="action" href={routes.installation()} icon="arrow-right" animate="right" className="su-block su-w-fit">
+            <Cta variant="action" href={routes.installation()} icon="arrow-right" animate="right" className="block w-fit">
               View developer guide
             </Cta>
-            <Cta variant="action" href={routes.figma()} icon="arrow-right" animate="right" className="su-block su-w-fit su-rs-mt-0">
+            <Cta variant="action" href={routes.figma()} icon="arrow-right" animate="right" className="block w-fit rs-mt-0">
               View designer guide
             </Cta>
           </div>
         </div>
       </div>
     </section>
-    <section className="su-bg-cool-grey">
-      <div className="su-rs-pt-5 su-rs-pb-6 su-rs-mt-8 su-cc">
-        <div className="su-max-w-900 su-mx-auto">
+    <section className="bg-cool-grey">
+      <div className="rs-pt-5 rs-pb-6 rs-mt-8 cc">
+        <div className="max-w-900 mx-auto">
           <Heading as="h2" color="white" size={3}>Who should use Decanter?</Heading>
-          <Paragraph size={1} className="su-rs-mb-2 su-text-black-10">
+          <Paragraph size={1} className="rs-mb-2 text-black-10">
             Decanter is an open source design system and frontend framework,
             intended for use by Stanford University teams and vendors creating websites and other digital products.
           </Paragraph>

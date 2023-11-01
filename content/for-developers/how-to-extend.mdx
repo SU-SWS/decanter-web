@@ -2,4 +2,27 @@
 title: How to extend
 lastUpdatedDate: 2022-04-06T12:00:00.000Z
 ---
-How to Extend
+
+<Section heading="Decanter / Tailwind Overrides">
+  The Decanter Design System uses Tailwind CSS as a base. This means that you can use almost all of the Tailwind utilities in your project. You can also override the default Decanter Tailwind configuration to suit your needs. Decanter has overriden and not extended the following Tailwind configuration:
+  * Font Family - [Documentation](https://tailwindcss.com/docs/font-family#customizing-your-theme) | [Source](https://github.com/SU-SWS/decanter/blob/v7/src/plugins/theme/fontFamily.js)
+  * Screens - [Documentation](https://tailwindcss.com/docs/screens#overriding-the-defaults) | [Source](https://github.com/SU-SWS/decanter/blob/v7/src/plugins/theme/screens.js)
+  * Spacing - [Documentation](https://tailwindcss.com/docs/customizing-spacing#overriding-the-default-spacing-scale) | [Source](https://github.com/SU-SWS/decanter/blob/v7/src/plugins/theme/spacing.js)
+  * CSS Reset - [Documentation](https://tailwindcss.com/docs/preflight) | [Source](https://github.com/SU-SWS/decanter/blob/v7/src/plugins/base/base.js)
+</Section>
+
+<Section heading="Extending Decanter Tailwind Configuration">
+
+  [Tailwind Documentation](https://tailwindcss.com/docs/configuration)
+
+  You can extend the Tailwind configuration as you would in any other Tailwind project. The Decanter Design System utilizes presets which allow you to continue to extend the configuration for your project on top of the Decanter configuration.
+
+</Section>
+
+
+<Section heading="Extend with your own preset">
+  [Tailwind Documentation](https://tailwindcss.com/docs/presets)
+
+  You can create your own preset as well! Read the tailwindcss documentation on how to create your own preset. This would be a great way of bundling your own custom components and utilities for your projects and keeping them separate from the Decanter Design System.
+
+</Section>
