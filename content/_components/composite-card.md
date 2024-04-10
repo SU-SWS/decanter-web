@@ -39,19 +39,6 @@ modifier_css:
         "card_cta_label": "CTA link label",
         "card_button_label": ""
       }
-  - css_class: su-card--link
-    egwidth: 450px
-    source_json: |-
-      {
-        "card_super_headline": "This is a super headline",
-        "card_headline": "Headline goes here",
-        "card_allow_headline_link": false,
-        "card_allow_media_link": false,
-        "card_media_link": "",
-        "card_body": "<p>This whole card is a link so there are no link buttons nor CTA-links within.</p>",
-        "card_link": "https://stanford.edu",
-        "card_cta_attributes": "rel='nofollow noopener'"
-      }
   - css_class: su-card--video
     source_json: |-
       {
@@ -79,7 +66,7 @@ modifier_css:
         "card_super_headline": "This is a super headline",
         "card_headline": "Headline goes here",
         "card_allow_headline_link": false,
-        "card_body": "<p>The minimal card variant has no border, drop shadow or background color. This example has a call-to-action link and no link button. Do not use the <i>.su-card--minimal</i> variant with the <i>.su-card--link</i> variant.</p>",
+        "card_body": "<p>The minimal card variant has no border, drop shadow or background color. This example has a call-to-action link and no link button.</p>",
         "card_link": "https://stanford.edu",
         "card_cta_attributes": "rel='nofollow noopener'",
         "card_cta_label": "CTA link label",
