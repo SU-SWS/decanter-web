@@ -95,7 +95,7 @@ modifier_css:
         "card_super_headline": "This is a super headline",
         "card_headline": "Headline goes here",
         "card_allow_headline_link": false,
-        "card_media_custom": "<iframe width='560' height='315' src='https://www.youtube.com/embed/tZ2GZhND7s0' frameborder='0' allowfullscreen></iframe>",
+        "card_media_custom": "<iframe width='560' height='315' src='https://www.youtube.com/embed/tZ2GZhND7s0' title='Island Universe melds art and science at Stanfords Cantor Arts Center' frameborder='0' allowfullscreen></iframe>",
         "card_body": "<p>This is a card with an embedded media element, e.g., a YouTube or Vimeo video. This example has a button link as the call-to-action.</p>",
         "card_link": "https://stanford.edu",
         "card_cta_attributes": "rel='nofollow noopener'",

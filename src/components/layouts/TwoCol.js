@@ -18,7 +18,7 @@ const Layout = ({ type, title, header, content, ...rest }) => {
         <button className="su-main-nav__toggle" aria-expanded="false" id="hamburger">Menu</button>
         <PrimaryNav {...rest} />
         <a href="https://www.netlify.com">
-          <img src="https://www.netlify.com/img/global/badges/netlify-dark.svg" />
+          <img src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="netlify badge" />
         </a>
       </aside>
       <section>
