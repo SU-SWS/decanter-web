@@ -1,9 +1,5 @@
-import Head from "next/head";
-import Script from 'next/script'
-
 const HTMLHead = props => (
   <>
-  <Head>
     <link rel="apple-touch-icon" sizes="57x57" href="https://www-media.stanford.edu/assets/favicon/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="https://www-media.stanford.edu/assets/favicon/apple-touch-icon-60x60.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="https://www-media.stanford.edu/assets/favicon/apple-touch-icon-72x72.png" />
@@ -28,8 +24,6 @@ const HTMLHead = props => (
     <meta name="msapplication-square70x70logo" content="https://www-media.stanford.edu/assets/favicon/mstile-70x70.png" />
     <meta name="msapplication-square150x150logo" content="https://www-media.stanford.edu/assets/favicon/mstile-150x150.png" />
     <meta name="msapplication-square310x310logo" content="https://www-media.stanford.edu/assets/favicon/mstile-310x310.png" />
-  </Head>
-  <Script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
   </>
 );
 
