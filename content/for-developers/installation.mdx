@@ -35,6 +35,24 @@ If you are adding Decanter to an existing project please have a review of the [F
         ...
       }
     ```
+
+4. **Install fonts**
+    It is recommended that you follow your framework's convention for installing fonts. You'll want to install Source Sans 3 and Source Serif 4 from Google Fonts and include the ligature font for the Stanford Logo if you are using it. Here is an example or file you can include in your build to install the fonts.
+
+    https://github.com/SU-SWS/decanter/blob/main/fonts.css
+
+    ```css
+    @charset "UTF-8";
+
+    /** Source Sans 3, Source Serif 4, Roboto Slab, Roboto Mono (regular only) from Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab:wght@300;400;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+    @font-face {
+      font-family: "Stanford";
+      src: url("https://www-media.stanford.edu/assets/fonts/stanford.woff") format("woff"), url("https://www-media.stanford.edu/assets/fonts/stanford.ttf") format("truetype");
+      font-weight: 300;
+      font-display: swap;
+    }
+    ```
 </Section>
 
 <Section heading="Standalone">
