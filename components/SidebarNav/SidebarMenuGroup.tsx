@@ -51,7 +51,7 @@ export const SidebarMenuGroup = ({
           <Collapse in={isExpanded} unmountOnExit>
             <ul className={styles.childMenu}>
               {menuLinks?.map((menuItem) => (
-                <li className="mb-0" key={ "list-" + menuItem.label }>
+                <li className="mb-0" key={'List Item: ' + menuItem.label}>
                   <SidebarMenuLink key={menuItem.label} label={menuItem.label} href={menuItem.href} isSecondLevel />
                 </li>
               ))}
