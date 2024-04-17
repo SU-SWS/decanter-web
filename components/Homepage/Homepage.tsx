@@ -16,11 +16,6 @@ export const Homepage = () => (
           of design patterns that can be used in any Stanford project.
         </Paragraph>
         <Cta variant="primary" href={routes.installation()} icon="arrow-right" animate="right" className="rs-mb-2 inline-block">Use Decanter v7</Cta>
-        <Paragraph variant="subheading" className="rs-mb-1 text-black-10">
-          Looking for Decanter v6?
-          <br />
-        </Paragraph>
-        <Cta variant="primary" href="https://decanter6.stanford.edu" icon="arrow-right" animate="right">See Decanter v6</Cta>
       </div>
     </section>
     <section className="rs-pt-5 cc">

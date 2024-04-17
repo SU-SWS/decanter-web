@@ -9,7 +9,9 @@ export const SectionNavItem = ({
   href,
   label,
 }: SectionNavItemProps) => (
-  <a href={href} className="block text-19 w-fit mb-10 last:mb-0 2xl:max-w-300 2xl:w-300">
-    {label}
-  </a>
+  <li className="mb-10 last:mb-0">
+    <a href={href} className="block text-19 w-fit 2xl:max-w-300 2xl:w-300">
+      {label}
+    </a>
+  </li>
 );
