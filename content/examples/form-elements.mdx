@@ -6,7 +6,7 @@ lastUpdatedDate: 2023-05-02T12:00:00.000Z
   <div className="mb-30">
     ```html
     <fieldset>
-      <legend className="legend">Label</legend>
+      <legend class="legend">Label</legend>
       ...
     </fieldset>
     ```
@@ -19,9 +19,11 @@ lastUpdatedDate: 2023-05-02T12:00:00.000Z
   <fieldset className="mb-20">
     <legend className="legend">Text Input</legend>
     ```html
-    <input className="input" id="input__text" type="text" />
+    <label for="input__text" class="sr-only">Text Input</label>
+    <input class="input" id="input__text" type="text" />
     ```
     <p>
+      <label htmlFor="input__text" className="sr-only">Text Input</label>
       <input className="input" id="input__text" type="text" />
     </p>
   </fieldset>
@@ -29,9 +31,11 @@ lastUpdatedDate: 2023-05-02T12:00:00.000Z
   <fieldset className="mb-20">
     <legend className="legend">Password</legend>
     ```html
-    <input className="input" id="input__password" type="password" />
+    <label for="input__password" class="sr-only">Password</label>
+    <input class="input" id="input__password" type="password" />
     ```
     <p>
+      <label htmlFor="input__password" className="sr-only">Password</label>
       <input className="input" id="input__password" type="password" />
     </p>
   </fieldset>
@@ -39,9 +43,11 @@ lastUpdatedDate: 2023-05-02T12:00:00.000Z
   <fieldset className="mb-20">
     <legend className="legend">Web Address</legend>
     ```html
-    <input className="input" id="input__webaddress" type="url" />
+    <label for="input__webaddress" class="sr-only">Web Address</label>
+    <input class="input" id="input__webaddress" type="url" />
     ```
     <p>
+      <label htmlFor="input__webaddress" className="sr-only">Web Address</label>
       <input className="input" id="input__webaddress" type="url" />
     </p>
   </fieldset>
@@ -49,19 +55,23 @@ lastUpdatedDate: 2023-05-02T12:00:00.000Z
   <fieldset className="mb-20">
     <legend className="legend">Email Address</legend>
     ```html
-    <input className="input" id="input__emailaddress" type="email" />
+    <label for="input__emailaddress" class="sr-only">Email Address</label>
+    <input class="input" id="input__emailaddress" type="email" />
     ```
     <p>
-      <input className="input" id="input__emailaddress" type="email" />
+      <label for="input__emailaddress" class="sr-only">Email Address</label>
+      <input class="input" id="input__emailaddress" type="email" />
     </p>
   </fieldset>
 
   <fieldset className="mb-20">
     <legend className="legend">Phone Number</legend>
     ```html
-    <input className="input" id="input__phone" type="tel" />
+    <label for="input__phone" class="sr-only">Phone Number</label>
+    <input class="input" id="input__phone" type="tel" />
     ```
     <p>
+      <label htmlFor="input__phone" className="sr-only">Phone Number</label>
       <input className="input" id="input__phone" type="tel" />
     </p>
   </fieldset>
@@ -69,9 +79,11 @@ lastUpdatedDate: 2023-05-02T12:00:00.000Z
   <fieldset className="mb-20">
     <legend className="legend">Search</legend>
     ```html
-    <input className="input" id="input__search" type="search" />
+    <label for="input__search" class="sr-only">Search</label>
+    <input class="input" id="input__search" type="search" />
     ```
     <p>
+      <label htmlFor="input__search" className="sr-only">Search</label>
       <input className="input" id="input__search" type="search" />
     </p>
   </fieldset>
@@ -79,30 +91,36 @@ lastUpdatedDate: 2023-05-02T12:00:00.000Z
   <fieldset className="mb-20">
     <legend className="legend">Number Input</legend>
     ```html
-    <input className="input" id="input__text2" type="number" />
+    <label for="input__number" class="sr-only">Number Input</label>
+    <input class="input" id="input__number" type="number" />
     ```
     <p>
-      <input className="input" id="input__text2" type="number" />
+      <label htmlFor="input__number" className="sr-only">Number Input</label>
+      <input className="input" id="input__number" type="number" />
     </p>
   </fieldset>
 
   <fieldset className="mb-20">
     <legend className="legend">Error</legend>
     ```html
-    <input className="input is-error" id="input__text3" type="text" />
+    <label for="input__is-error" class="sr-only">Error</label>
+    <input class="input is-error" id="input__is-error" type="text" />
     ```
     <p>
-      <input className="input is-error" id="input__text3" type="text" />
+      <label htmlFor="input__is-error" className="sr-only">Error</label>
+      <input className="input is-error" id="input__is-error" type="text" />
     </p>
   </fieldset>
 
   <fieldset className="mb-20">
     <legend className="legend">Valid</legend>
     ```html
-    <input className="input is-valid" id="input__text4" type="text" />
+    <label for="input__is-valid" class="sr-only">Valid</label>
+    <input class="input is-valid" id="input__valid" type="text" />
     ```
     <p>
-      <input className="input is-valid" id="input__text4" type="text" />
+      <label htmlFor="input__is-valid" className="sr-only">Valid</label>
+      <input className="input is-valid" id="input__is-valid" type="text" />
     </p>
   </fieldset>
 </Section>
@@ -111,7 +129,8 @@ lastUpdatedDate: 2023-05-02T12:00:00.000Z
   <fieldset className="mb-20">
     <legend className="legend">Select</legend>
     ```html
-    <select className="select" id="select">
+    <label for="select" class="sr-only">Select</label>
+    <select class="select" id="select">
       <optgroup label="Option Group">
         <option>Option One</option>
         <option>Option Two</option>
@@ -120,6 +139,7 @@ lastUpdatedDate: 2023-05-02T12:00:00.000Z
     </select>
     ```
     <p>
+      <label htmlFor="select" className="sr-only">Select</label>
       <select className="select" id="select">
         <optgroup label="Option Group">
           <option>Option One</option>
@@ -136,43 +156,41 @@ lastUpdatedDate: 2023-05-02T12:00:00.000Z
     ```html
     <ul>
       <li>
-        <input className="checkbox" id="checkbox1" name="checkbox" type="checkbox" checked="checked" />
-        <label className="label" for="checkbox1">Choice A</label>
+        <input class="checkbox" id="checkbox1" name="checkbox" type="checkbox" checked="true" />
+        <label class="label" for="checkbox1">Choice A</label>
       </li>
       <li>
-        <input className="checkbox" id="checkbox2" name="checkbox" type="checkbox" />
-        <label className="label" for="checkbox2">Choice B</label>
+        <input class="checkbox" id="checkbox2" name="checkbox" type="checkbox" />
+        <label class="label" for="checkbox2">Choice B</label>
       </li>
       <li>
-        <input className="checkbox" id="checkbox3" name="checkbox" type="checkbox" />
-        <label className="label" for="checkbox3">Choice C</label>
+        <input class="checkbox" id="checkbox3" name="checkbox" type="checkbox" />
+        <label class="label" for="checkbox3">Choice C</label>
       </li>
       <li>
-        <input className="checkbox" id="checkbox4" name="checkbox" type="checkbox" />
-        <label className="label" for="checkbox3">Choice D</label>
+        <input class="checkbox" id="checkbox4" name="checkbox" type="checkbox" />
+        <label class="label" for="checkbox4">Choice D</label>
       </li>
     </ul>
     ```
-    <p>
-      <ul>
-        <li>
-          <input className="checkbox" id="checkbox1" name="checkbox" type="checkbox" checked="checked" />
-          <label className="label" for="checkbox1">Choice A</label>
-        </li>
-        <li>
-          <input className="checkbox" id="checkbox2" name="checkbox" type="checkbox" />
-          <label className="label" for="checkbox2">Choice B</label>
-        </li>
-        <li>
-          <input className="checkbox" id="checkbox3" name="checkbox" type="checkbox" />
-          <label className="label" for="checkbox3">Choice C</label>
-        </li>
-        <li>
-          <input className="checkbox" id="checkbox4" name="checkbox" type="checkbox" />
-          <label className="label" for="checkbox3">Choice D</label>
-        </li>
-      </ul>
-    </p>
+    <ul>
+      <li>
+        <input className="checkbox" id="checkbox1" name="checkbox" type="checkbox" defaultChecked={true} />
+        <label className="label" htmlFor="checkbox1">Choice A</label>
+      </li>
+      <li>
+        <input className="checkbox" id="checkbox2" name="checkbox" type="checkbox" />
+        <label className="label" htmlFor="checkbox2">Choice B</label>
+      </li>
+      <li>
+        <input className="checkbox" id="checkbox3" name="checkbox" type="checkbox" />
+        <label className="label" htmlFor="checkbox3">Choice C</label>
+      </li>
+      <li>
+        <input className="checkbox" id="checkbox4" name="checkbox" type="checkbox" />
+        <label className="label" htmlFor="checkbox4">Choice D</label>
+      </li>
+    </ul>
   </fieldset>
 </Section>
 
@@ -181,42 +199,40 @@ lastUpdatedDate: 2023-05-02T12:00:00.000Z
     ```html
     <ul>
       <li>
-        <input className="radio" id="radio1" name="radio" type="radio" checked="checked" />
-        <label className="label" for="radio1">Option 1</label>
+        <input class="radio" id="radio1" name="radio" type="radio" checked="true" />
+        <label class="label" for="radio1">Option 1</label>
       </li>
       <li>
-        <input className="radio" id="radio2" name="radio" type="radio" />
-        <label className="label" for="radio2">Option 2</label>
+        <input class="radio" id="radio2" name="radio" type="radio" />
+        <label class="label" for="radio2">Option 2</label>
       </li>
       <li>
-        <input className="radio" id="radio3" name="radio" type="radio" />
-        <label className="label" for="radio3">Option 3</label>
+        <input class="radio" id="radio3" name="radio" type="radio" />
+        <label class="label" for="radio3">Option 3</label>
       </li>
     </ul>
     ```
-    <p>
-      <ul>
-        <li>
-          <input className="radio" id="radio1" name="radio" type="radio" checked="checked" />
-          <label className="label" for="radio1">Option 1</label>
-        </li>
-        <li>
-          <input className="radio" id="radio2" name="radio" type="radio" />
-          <label className="label" for="radio2">Option 2</label>
-        </li>
-        <li>
-          <input className="radio" id="radio3" name="radio" type="radio" />
-          <label className="label" for="radio3">Option 3</label>
-        </li>
-      </ul>
-    </p>
+    <ul>
+      <li>
+        <input className="radio" id="radio1" name="radio" type="radio" defaultChecked={true} />
+        <label className="label" htmlFor="radio1">Option 1</label>
+      </li>
+      <li>
+        <input className="radio" id="radio2" name="radio" type="radio" />
+        <label className="label" htmlFor="radio2">Option 2</label>
+      </li>
+      <li>
+        <input className="radio" id="radio3" name="radio" type="radio" />
+        <label className="label" htmlFor="radio3">Option 3</label>
+      </li>
+    </ul>
   </fieldset>
 </Section>
 
 <Section heading="Textarea">
   <fieldset className="mb-20">
     ```html
-    <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here" className="textarea"></textarea>
+    <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here" class="textarea"></textarea>
     ```
     <p>
       <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here" className="textarea"></textarea>
@@ -228,80 +244,96 @@ lastUpdatedDate: 2023-05-02T12:00:00.000Z
   <fieldset className="mb-20">
     <legend className="legend">Color input</legend>
     ```html
-    <input className="input" type="color" id="ic" value="#000000" />
+    <label for="ic" class="sr-only">Color input</label>
+    <input class="input" type="color" id="ic" value="#000000" />
     ```
     <p>
-      <input className="input" type="color" id="ic" value="#000000" />
+      <label htmlFor="ic" className="sr-only">Color input</label>
+      <input className="input" type="color" id="ic" defaultValue="#000000" />
     </p>
   </fieldset>
 
   <fieldset className="mb-20">
     <legend className="legend">Number input</legend>
     ```html
-    <input className="input" type="number" id="in" min="0" max="10" value="5" />
+    <label for="in" class="sr-only">Number input</label>
+    <input class="input" type="number" id="in" min="0" max="10" value="5" />
     ```
     <p>
-      <input className="input" type="number" id="in" min="0" max="10" value="5" />
+      <label htmlFor="in" className="sr-only">Number input</label>
+      <input className="input" type="number" id="in" min="0" max="10" defaultValue="5" />
     </p>
   </fieldset>
 
   <fieldset className="mb-20">
     <legend className="legend">Range input</legend>
     ```html
-    <input className="input" type="range" id="ir" value="10" />
+    <label for="ir" class="sr-only">Range input</label>
+    <input class="input" type="range" id="ir" value="10" />
     ```
     <p>
-      <input className="input" type="range" id="ir" value="10" />
+      <label htmlFor="ir" className="sr-only">Range input</label>
+      <input className="input" type="range" id="ir" defaultValue="10" />
     </p>
   </fieldset>
 
   <fieldset className="mb-20">
     <legend className="legend">Date input</legend>
     ```html
-    <input className="input" type="date" id="idd" value="1970-01-01" />
+    <label for="idd" class="sr-only">Date input</label>
+    <input class="input" type="date" id="idd" value="1970-01-01" />
     ```
     <p>
-      <input className="input" type="date" id="idd" value="1970-01-01" />
+      <label htmlFor="idd" className="sr-only">Date input</label>
+      <input className="input" type="date" id="idd" defaultValue="1970-01-01" />
     </p>
   </fieldset>
 
   <fieldset className="mb-20">
     <legend className="legend">Month input</legend>
     ```html
-    <input className="input" type="month" id="idm" value="1970-01" />
+    <label for="idm" class="sr-only">Month input</label>
+    <input class="input" type="month" id="idm" value="1970-01" />
     ```
     <p>
-      <input className="input" type="month" id="idm" value="1970-01" />
+      <label htmlFor="idm" className="sr-only">Month input</label>
+      <input className="input" type="month" id="idm" defaultValue="1970-01" />
     </p>
   </fieldset>
 
   <fieldset className="mb-20">
     <legend className="legend">Week input</legend>
     ```html
-    <input className="input" type="week" id="idw" value="1970-W01" />
+    <label for="idw" class="sr-only">Week input</label>
+    <input class="input" type="week" id="idw" value="1970-W01" />
     ```
     <p>
-      <input className="input" type="week" id="idw" value="1970-W01" />
+      <label htmlFor="idw" className="sr-only">Week input</label>
+      <input className="input" type="week" id="idw" defaultValue="1970-W01" />
     </p>
   </fieldset>
 
   <fieldset className="mb-20">
     <legend className="legend">Datetime input</legend>
     ```html
-    <input className="input" type="datetime" id="idt" value="1970-01-01T00:00:00Z" />
+    <label for="idt" class="sr-only">Datetime input</label>
+    <input class="input" type="datetime" id="idt" value="1970-01-01T00:00:00Z" />
     ```
     <p>
-      <input className="input" type="datetime" id="idt" value="1970-01-01T00:00:00Z" />
+      <label htmlFor="idt" className="sr-only">Datetime input</label>
+      <input className="input" type="datetime" id="idt" defaultValue="1970-01-01T00:00:00Z" />
     </p>
   </fieldset>
 
   <fieldset className="mb-20">
     <legend className="legend">Datetime-local input</legend>
     ```html
-    <input className="input" type="datetime-local" id="idtl" value="1970-01-01T00:00" />
+    <label for="idtl" class="sr-only">Datetime-local input</label>
+    <input class="input" type="datetime-local" id="idtl" value="1970-01-01T00:00" />
     ```
     <p>
-      <input className="input" type="datetime-local" id="idtl" value="1970-01-01T00:00" />
+      <label htmlFor="idtl" className="sr-only">Datetime-local input</label>
+      <input className="input" type="datetime-local" id="idtl" defaultValue="1970-01-01T00:00" />
     </p>
   </fieldset>
 </Section>
@@ -310,25 +342,33 @@ lastUpdatedDate: 2023-05-02T12:00:00.000Z
   <fieldset className="mb-20">
     <legend className="legend">Action buttons</legend>
     ```html
-    <input className="button" type="submit" value="<input type=submit>" />
-    <input className="button" type="button" value="<input type=button>" />
-    <input className="button" type="reset" value="<input type=reset>" />
-    <input className="button" type="submit" value="<input disabled>" disabled="" />
-    <button className="button" type="submit">&lt;button type=submit&gt;</button>
-    <button className="button" type="button">&lt;button type=button&gt;</button>
-    <button className="button" type="reset">&lt;button type=reset&gt;</button>
-    <button className="button" type="button" disabled="">&lt;button disabled&gt;</button>
+    <label for="input__submit" class="sr-only">Submit input</label>
+    <input id="input__submit" class="button" type="submit" value="<input type=submit>" />
+    <label for="input__button" class="sr-only">Button input</label>
+    <input id="input__button" class="button" type="button" value="<input type=button>" />
+    <label for="input__reset" class="sr-only">Reset input</label>
+    <input id="input__reset" class="button" type="reset" value="<input type=reset>" />
+    <label for="input__disabled" class="sr-only">Disabled submit input</label>
+    <input id="input__disabled" class="button" type="submit" value="<input disabled>" disabled />
+    <button class="button" type="submit">&lt;button type=submit&gt;</button>
+    <button class="button" type="button">&lt;button type=button&gt;</button>
+    <button class="button" type="reset">&lt;button type=reset&gt;</button>
+    <button class="button" type="button" disabled>&lt;button disabled&gt;</button>
     ```
 
     <p className="flex gap-[4px] flex-wrap">
-      <input className="button" type="submit" value="<input type=submit>" />
-      <input className="button" type="button" value="<input type=button>" />
-      <input className="button" type="reset" value="<input type=reset>" />
-      <input className="button" type="submit" value="<input disabled>" disabled="" />
+      <label htmlFor="input__submit" className="sr-only">Submit input</label>
+      <input id="input__submit" className="button" type="submit" defaultValue="<input type=submit>" />
+      <label htmlFor="input__button" className="sr-only">Button input</label>
+      <input id="input__button" className="button" type="button" defaultValue="<input type=button>" />
+      <label htmlFor="input__reset" className="sr-only">Reset input</label>
+      <input id="input__reset" className="button" type="reset" defaultValue="<input type=reset>" />
+      <label htmlFor="input__disabled" className="sr-only">Disabled submit input</label>
+      <input id="input__disabled" className="button" type="submit" defaultValue="<input disabled>" disabled />
       <button className="button" type="submit">&lt;button type=submit&gt;</button>
       <button className="button" type="button">&lt;button type=button&gt;</button>
       <button className="button" type="reset">&lt;button type=reset&gt;</button>
-      <button className="button" type="button" disabled="">&lt;button disabled&gt;</button>
+      <button className="button" type="button" disabled>&lt;button disabled&gt;</button>
     </p>
   </fieldset>
 </Section>
