@@ -18,6 +18,7 @@
     "@emotion/styled": "^11.10.5",
     "@heroicons/react": "^2.0.18",
     "@mui/material": "^5.14.7",
+    "@next/third-parties": "^14.2.7",
     "cnbuilder": "^3.1.0",
     "contentlayer": "^0.3.4",
     "date-fns": "^2.30.0",
