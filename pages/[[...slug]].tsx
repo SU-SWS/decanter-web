@@ -3,6 +3,7 @@ import React from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import { home } from 'utils/routes';
 import { Homepage } from 'components/Homepage/Homepage';
@@ -49,6 +50,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
       <Head>
         <title>{page.title}</title>
       </Head>
+      <GoogleAnalytics gaId="G-SZ6LS311C9" />
       <header>
         <Skiplink />
         <IdentityBar className="bg-digital-red" />
