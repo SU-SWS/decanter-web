@@ -6,7 +6,7 @@ import uiComponents from 'images/ui-components.png';
 import * as routes from 'utils/routes';
 
 export const Homepage = () => (
-  <div id="main-content" className="w-full h-full basefont-20 bg-gradient-to-r from-black to-plum">
+  <main id="main-content" className="w-full h-full basefont-20 bg-gradient-to-r from-black to-plum">
     <section className="rs-py-5 cc">
       <div className="max-w-900 mx-auto">
         <Heading as="h1" size={4} color="white">Welcome to the Decanter Style Guide and Pattern Library</Heading>
@@ -52,5 +52,5 @@ export const Homepage = () => (
         </div>
       </div>
     </section>
-  </div>
+  </main>
 );
