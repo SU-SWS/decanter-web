@@ -152,27 +152,31 @@ lastUpdatedDate: 2023-05-02T12:00:00.000Z
 </Section>
 
 <Section heading="Checkboxes">
-  <fieldset className="mb-20">
-    ```html
-    <ul>
-      <li>
-        <input class="checkbox" id="checkbox1" name="checkbox" type="checkbox" checked="true" />
-        <label class="label" for="checkbox1">Choice A</label>
-      </li>
-      <li>
-        <input class="checkbox" id="checkbox2" name="checkbox" type="checkbox" />
-        <label class="label" for="checkbox2">Choice B</label>
-      </li>
-      <li>
-        <input class="checkbox" id="checkbox3" name="checkbox" type="checkbox" />
-        <label class="label" for="checkbox3">Choice C</label>
-      </li>
-      <li>
-        <input class="checkbox" id="checkbox4" name="checkbox" type="checkbox" />
-        <label class="label" for="checkbox4">Choice D</label>
-      </li>
-    </ul>
-    ```
+  ```html
+    <fieldset role="group" aria-labelledby="checkbox-heading" className="mb-20">
+      <legend id="checkbox-heading">Checkbox Group</legend>
+      <ul>
+        <li>
+          <input class="checkbox" id="checkbox1" name="checkbox" type="checkbox" checked="true" />
+          <label class="label" for="checkbox1">Choice A</label>
+        </li>
+        <li>
+          <input class="checkbox" id="checkbox2" name="checkbox" type="checkbox" />
+          <label class="label" for="checkbox2">Choice B</label>
+        </li>
+        <li>
+          <input class="checkbox" id="checkbox3" name="checkbox" type="checkbox" />
+          <label class="label" for="checkbox3">Choice C</label>
+        </li>
+        <li>
+          <input class="checkbox" id="checkbox4" name="checkbox" type="checkbox" />
+          <label class="label" for="checkbox4">Choice D</label>
+        </li>
+      </ul>
+    </fieldset>
+  ```
+  <fieldset role="group" aria-labelledby="checkbox-example-heading" className="mb-20">
+    <legend id="checkbox-example-heading">Checkbox Group</legend>
     <ul>
       <li>
         <input className="checkbox" id="checkbox1" name="checkbox" type="checkbox" defaultChecked={true} />
@@ -195,8 +199,9 @@ lastUpdatedDate: 2023-05-02T12:00:00.000Z
 </Section>
 
 <Section heading="Radio buttons">
-  <fieldset className="mb-20">
-    ```html
+  ```html
+  <fieldset role="group" aria-labelledby="radio-heading" className="mb-20">
+    <legend id="radio-heading">Radio Group</legend>
     <ul>
       <li>
         <input class="radio" id="radio1" name="radio" type="radio" checked="true" />
@@ -211,7 +216,10 @@ lastUpdatedDate: 2023-05-02T12:00:00.000Z
         <label class="label" for="radio3">Option 3</label>
       </li>
     </ul>
-    ```
+  </fieldset>
+  ```
+  <fieldset role="group" aria-labelledby="radio-example-heading" className="mb-20">
+    <legend id="radio-example-heading">Radio Group</legend>
     <ul>
       <li>
         <input className="radio" id="radio1" name="radio" type="radio" defaultChecked={true} />
