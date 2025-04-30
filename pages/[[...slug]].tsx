@@ -53,7 +53,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
       <GoogleAnalytics gaId="G-SZ6LS311C9" />
       <header>
         <Skiplink />
-        <IdentityBar className="bg-digital-red" />
+        <IdentityBar className="bg-cardinal-red" />
       </header>
       <FlexBox direction="col" className="lg:flex-row grow relative">
         <aside className="flex items-center justify-between lg:block shrink-0 lg:w-300 lg:min-w-[30rem] basefont-20 bg-black">
@@ -106,7 +106,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
           </div>
         </div>
       </FlexBox>
-      <GlobalFooter className="w-full bg-digital-red" />
+      <GlobalFooter className="w-full bg-cardinal-red" />
     </FlexBox>
   );
 };
