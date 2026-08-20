@@ -14,7 +14,7 @@ type DCNBAttributes = Omit<HTMLAttributes<HTMLDivElement>, 'className'>;
 export const GlobalFooter = ({ className, ...props }: GlobalFooterProps & DCNBAttributes) => (
   <Container
     as="footer"
-    className={dcnb('global-footer basefont-20 rs-py-1 text-white', { 'bg-cardinal-red': !className }, className)}
+    className={dcnb('basefont-20 rs-py-1 text-white', { 'bg-cardinal-red': !className }, className)}
     width="site"
     {...props}
   >
@@ -39,7 +39,7 @@ export const GlobalFooter = ({ className, ...props }: GlobalFooterProps & DCNBAt
             </li>
             <li className="sm:mr-10 md:mr-20 lg:mr-27">
               <a
-                href="https://visit.stanford.edu/plan/"
+                href="https://visit.stanford.edu/basics"
                 className="text-white no-underline hocus:underline hocus:text-white"
               >
                 Maps &amp; Directions
@@ -68,7 +68,7 @@ export const GlobalFooter = ({ className, ...props }: GlobalFooterProps & DCNBAt
           <ul className="list-unstyled mb-10 sm:mb-0 ml-19 sm:ml-0 p-0 text-15 sm:text-14 md:text-15 xl:text-16 flex flex-col sm:flex-row sm:link-regular">
             <li className="sm:mr-10 md:mr-20 lg:mr-27">
               <a
-                href="https://www.stanford.edu/site/terms/"
+                href="https://www.stanford.edu/terms/"
                 title="Terms of use for sites"
                 className="text-white no-underline hocus:underline hocus:text-white"
               >
@@ -78,7 +78,7 @@ export const GlobalFooter = ({ className, ...props }: GlobalFooterProps & DCNBAt
             </li>
             <li className="sm:mr-10 md:mr-20 lg:mr-27">
               <a
-                href="https://www.stanford.edu/site/privacy/"
+                href="https://www.stanford.edu/privacy/"
                 title="Privacy and cookie policy"
                 className="text-white no-underline hocus:underline hocus:text-white"
               >
@@ -118,7 +118,7 @@ export const GlobalFooter = ({ className, ...props }: GlobalFooterProps & DCNBAt
             </li>
             <li>
               <a
-                href="https://www.stanford.edu/site/accessibility"
+                href="https://www.stanford.edu/accessibility"
                 title="Report web accessibility issues"
                 className="text-white no-underline hocus:underline hocus:text-white"
               >

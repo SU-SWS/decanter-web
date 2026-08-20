@@ -8,6 +8,7 @@ export * from './IdentityBar';
 export * from './Link';
 export * from './Logo';
 export * from './GlobalFooter';
+export * from './Deprecated';
 export * from './FlexBox';
 export * from './HeroIcon';
 export * from './Section';

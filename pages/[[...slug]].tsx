@@ -15,6 +15,7 @@ import {
   Text,
   Paragraph,
   Container,
+  Deprecated,
   GlobalFooter,
   IdentityBar,
   Link,
@@ -82,6 +83,7 @@ const Home: NextPage<{ page: Page }> = ({ page }) => {
                   <MdxBody
                     components={{
                       Counter,
+                      Deprecated,
                       Section,
                       SectionNav,
                       SectionNavItem,
