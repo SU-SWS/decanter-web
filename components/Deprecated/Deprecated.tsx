@@ -18,7 +18,7 @@ export const Deprecated = ({ inline, children, className }: DeprecatedProps) => 
       {children && <span className="normal-case tracking-normal font-normal"> — {children}</span>}
     </span>
   ) : (
-    <div className={dcnb('bg-illuminating-light/60 border-l-4 border-illuminating-dark rs-my-1 px-20 py-16 text-[0.9em] last:children:mb-0', className)}>
+    <div className={dcnb('bg-illuminating-light/60 border-l-4 border-illuminating-dark rs-my-1 px-20 py-16 text-[0.9em] last:*:mb-0', className)}>
       <strong className="block uppercase tracking-wide text-[max(1.3rem,0.7em)] mb-6">Deprecated</strong>
       {children}
     </div>

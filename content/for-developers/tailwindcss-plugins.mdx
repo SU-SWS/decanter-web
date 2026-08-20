@@ -20,4 +20,19 @@ Tailwind allows you to register official or third-party plugins with Tailwind th
 
 **[Hocus](https://github.com/iksaku/tailwindcss-plugins#hocus-variant) and [Children](https://github.com/benface/tailwindcss-children)**: are plugins that are included in Decanter's `tailwind.config.js` file, but are not official Tailwind plugins. They are included in Decanter's `tailwind.config.js` file to provide additional functionality to the framework.
 
+<Deprecated>
+  The **children** variants are deprecated and will be removed in v8. Tailwind's built-in [`*` variant](https://tailwindcss.com/docs/hover-focus-and-other-states#styling-direct-children) covers all four, with the identical selector:
+
+  | Deprecated | Use instead | Selector |
+  | --- | --- | --- |
+  | `children:` | `*:` | `& > *` |
+  | `children-hover:` | `hover:*:` | `& > *:hover` |
+  | `children-focus:` | `focus:*:` | `& > *:focus` |
+  | `children-focus-visible:` | `focus-visible:*:` | `& > *:focus-visible` |
+
+  Stacked and prefixed forms translate the same way: `children:children:` becomes `*:*:`, `last:children:` becomes `last:*:`, and `sm:children:` becomes `sm:*:`.
+
+  **Mind the order** on the state variants. `hover:*:underline` gives `& > *:hover` — each child on its own hover, which is what `children-hover:` did. Writing it the other way round, `*:hover:underline`, gives `&:hover > *` — every child styled when the *parent* is hovered. Those are different things.
+</Deprecated>
+
 </Section>
