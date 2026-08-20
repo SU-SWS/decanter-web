@@ -3,6 +3,14 @@ title: Heros
 lastUpdatedDate: 2022-04-06T12:00:00.000Z
 ---
 <div className="lg:max-w-600 xl:max-w-800 2xl:max-w-1000">
+  <Deprecated>
+    The examples below still use classes that are deprecated in Decanter v7 and removed in v8. If you copy this markup, replace them:
+
+    - `text-m1`, `text-m6` — use the modular typography classes `type-1`, `type-6`, or an arbitrary value such as `text-[1.25em]`.
+    - `font-regular` — use Tailwind's `font-normal`, which is identical (400).
+    - `rs-mt-neg1` — use responsive spacing step `0` or above, or a fixed Tailwind margin utility.
+  </Deprecated>
+
   <Section heading="Gradient and Text" width="full">
     ```html
       <div class="hero basefont-23 relative h-full max-h-500">

@@ -10,6 +10,10 @@ Tailwind allows you to register official or third-party plugins with Tailwind th
 <Section heading="Official Tailwind plugins used in Decanter v7">
 [Aspect Ratio](https://tailwindcss.com/docs/plugins#aspect-ratio): The `@tailwindcss/aspect-ratio` plugin is an alternative to native aspect-ratio support that works in older browsers, and adds `aspect-w-{n}` and `aspect-h-{n}` classes that can be combined to give an element a fixed aspect ratio.
 
+<Deprecated>
+  Decanter v8 drops the **Aspect Ratio** plugin, and the `aspect-w-{n}` / `aspect-h-{n}` classes go with it. Use Tailwind's core aspect ratio utilities instead, e.g., `aspect-[16/9]`. Note that while this plugin is loaded it suppresses the core `aspect-*` utilities, so `aspect-video` generates nothing in v7 — `aspect-[16/9]` works today and keeps working in v8.
+</Deprecated>
+
 [Container Queries](https://tailwindcss.com/docs/plugins#container-queries): The `@tailwindcss/container-queries` plugin adds new `@{size}` variants like `@sm` and `@md` that let you style an element based on the dimensions of a parent marked with `@container` instead of the viewport.
 
 [Forms](https://tailwindcss.com/docs/plugins#forms): The `@tailwindcss/forms` plugin adds an opinionated form reset layer that makes it easier to style form elements with utility classes.

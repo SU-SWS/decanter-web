@@ -4,7 +4,7 @@ export const fontStack = {
 };
 
 export const fontWeight = {
-  regular: 'font-regular',
+  regular: 'font-normal',
   semibold: 'font-semibold',
   bold: 'font-bold',
 };

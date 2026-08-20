@@ -16,7 +16,7 @@ lastUpdatedDate: 2022-12-30T12:00:00.000Z
     <Section heading="Typography" id="typography">
       <Paragraph><a href="https://decanter-v7.netlify.app/#text">See examples of typography in our example website -></a></Paragraph>
         <Heading as="h4" className="font-sans">Source Sans 3</Heading>
-        <p>Source Sans 3 is our primary sans-serif font. It should be used in headings and body text as the primary sans-serif font on your website. When Sources Sans Pro is not available, we have a fallback sans-serif font stack with Helvetica Neue, Helvetica and Arial.</p>
+        <p>Source Sans 3 is our primary sans-serif font. It should be used in headings and body text as the primary sans-serif font on your website. When Source Sans 3 is not available, we have a fallback sans-serif font stack with Helvetica Neue, Helvetica and Arial.</p>
 
         <Heading as="h5" className="font-sans">Weights</Heading>
         <p className="font-sans">Regular | font-weight: 400</p>
@@ -29,7 +29,7 @@ lastUpdatedDate: 2022-12-30T12:00:00.000Z
         <p className="font-sans font-black italic">Black Italic</p>
 
         <Heading as="h4" className="font-serif">Source Serif 4</Heading>
-        <p>Source Serif 4 is our primary serif font. It should be used in headings and body text as the primary serif font on your website. When Sources Sans Pro is not available, we have a fallback serif font stack with Georgia, Times and Times New Roman.</p>
+        <p>Source Serif 4 is our primary serif font. It should be used in headings and body text as the primary serif font on your website. When Source Serif 4 is not available, we have a fallback serif font stack with Georgia, Times and Times New Roman.</p>
 
         <Heading as="h5" className="font-serif">Weights</Heading>
         <p className="font-serif">Regular | font-weight: 400</p>
@@ -42,7 +42,10 @@ lastUpdatedDate: 2022-12-30T12:00:00.000Z
         <p className="font-serif font-black italic">Black Italic</p>
 
 
-        <Heading as="h4" className="font-slab">Roboto Slab</Heading>
+        <Heading as="h4" className="font-slab">Roboto Slab <Deprecated inline /></Heading>
+        <Deprecated>
+          Roboto Slab (`font-slab`) is not part of the Stanford Identity type system and is removed in Decanter v8, along with the `font-slab` class. Avoid it in new designs. Projects that still need it will have to define `slab` in their own Tailwind theme layer.
+        </Deprecated>
         <p className="font-slab">Roboto Slab is a secondary font. It should only be used as a display font (headings) - it is not appropriate for blocks of text.</p>
 
         <Heading as="h5" className="font-slab">Weights</Heading>
@@ -52,7 +55,10 @@ lastUpdatedDate: 2022-12-30T12:00:00.000Z
         <p className="font-slab font-bold italic">Bold Italic</p>
 
 
-        <Heading as="h4" className="font-mono">Roboto Mono</Heading>
+        <Heading as="h4" className="font-mono">Roboto Mono <Deprecated inline /></Heading>
+        <Deprecated>
+          Roboto Mono is not part of the Stanford Identity type system. The `font-mono` class keeps working in Decanter v8, but Decanter's Roboto Mono stack is removed and the class falls back to Tailwind's default monospace stack. Projects that need Roboto Mono specifically will have to define `mono` in their own Tailwind theme layer.
+        </Deprecated>
         <p className="font-mono">Roboto Mono should only be used for monospaced HTML elements like the pre or code tag</p>
     </Section>
 
@@ -113,6 +119,12 @@ lastUpdatedDate: 2022-12-30T12:00:00.000Z
       [See examples of colors in our example website](https://decanter-v7.netlify.app/#color-palette)
 
       Decanter employs the Stanford identity color palette guidelines. You can learn more about color usage at Stanford on the [identity website](https://identity.stanford.edu/design-elements/color/).
+
+      <Deprecated>
+        **Foggy** is deprecated and removed in Decanter v8 — use **Fog** instead, which is the identical colour.
+
+        The **social media brand colours** (Facebook, Twitter, Instagram, LinkedIn, YouTube) are also removed in v8. They are not part of the Stanford Identity palette and go stale as the platforms rebrand.
+      </Deprecated>
 
 
     </Section>

@@ -4,6 +4,14 @@ lastUpdatedDate: 2023-05-25T12:00:00.000Z
 ---
 
 <div className="lg:max-w-600 xl:max-w-800 2xl:max-w-1000">
+  <Deprecated>
+    The examples below still use classes that are deprecated in Decanter v7 and removed in v8. If you copy this markup, replace them:
+
+    - `text-m2` — use the modular typography class `type-2`, or an arbitrary value such as `text-[1.56em]`.
+    - `rs-mt-neg1` — use responsive spacing step `0` or above, or a fixed Tailwind margin utility.
+    - `aspect-w-3 aspect-h-2` — these come from the `@tailwindcss/aspect-ratio` plugin, which v8 drops. Use Tailwind's core `aspect-[3/2]` instead.
+  </Deprecated>
+
   <Section heading="Alumni Travel/Study Card" width="full">
     ```html
       <article class="flex flex-col group relative overflow-hidden bg-black-true break-words border-black w-full sm:max-w-[42rem] md:max-w-500">

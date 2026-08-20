@@ -39,6 +39,12 @@ lastUpdatedDate: 2022-04-06T12:00:00.000Z
       **Variants of color black:** We have 10 variants of black color available that correspond to the identity guide - `-black`, `-black-90` (the number after the last - is the percentage, so this is 90% black), `-black-80`, `-black-70`, `-black-60`, `-black-50`, `-black-40`, `-black-30`, `-black-20`, `-black-10`. We also have `-black-true` for `#000000`.
 
       **Color opacity:** To apply opacity to a color, add `/` and a number to the end of the class name, e.g., `bg-digital-red/50` (digital red at 50% opacity), `text-white/20` (white at 20% opacity). See the [Tailwind documentation on changing color opacity](https://tailwindcss.com/docs/text-color#changing-the-opacity).
+
+      <Deprecated>
+        **`foggy`** (including `foggy-light` and `foggy-dark`) is deprecated and will be removed in v8. Use **`fog`** instead — the two colors are identical, e.g., `bg-fog-light` in place of `bg-foggy-light`.
+
+        The **social media brand colors** — `facebook`, `twitter`, `instagram`, `linkedin`, `youtube` — are also deprecated and will be removed in v8. They are not part of the Stanford Identity palette and they go stale as the platforms rebrand (`twitter` predates X). Define the ones you need in your own project config.
+      </Deprecated>
     </Section>
 
     <Section heading="Fonts" id="fonts">
@@ -49,20 +55,28 @@ lastUpdatedDate: 2022-04-06T12:00:00.000Z
     All fonts except the Stanford ligature font are available on [Google Fonts](https://fonts.google.com/). The Stanford font is available through the University Communications CDN.
 
     - **`font-sans`**\
-    **Font stack:** Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif\
+    **Font stack:** Source Sans 3, ~~Source Sans Pro~~, Helvetica Neue, Helvetica, Arial, sans-serif\
     **Example:** <span className="bg-black-10 px-05em py-01em">The quick brown fox jumps over the lazy dog.</span>
     - **`font-serif`**\
-    **Font stack:** Source Serif Pro, Georgia, Times, Times New Roman, serif\
+    **Font stack:** Source Serif 4, ~~Source Serif Pro~~, Georgia, Times, Times New Roman, serif\
     **Example:** <span className="font-serif bg-black-10 px-05em py-01em">The quick brown fox jumps over the lazy dog.</span>
     - **`font-stanford`** (use for Stanford logo)\
     **Font stack:** Stanford, Source Serif Pro, Georgia, Times, Times New Roman, serif\
     **Example:** <span className="font-stanford bg-black-10 px-05em py-01em">Stanford University</span>
-    - **`font-slab`**\
+    - **`font-slab`** <Deprecated inline />\
     **Font stack:** Roboto Slab, Georgia, Times, Times New Roman, serif\
     **Example:** <span className="font-slab bg-black-10 px-05em py-01em">The quick brown fox jumps over the lazy dog.</span>
-    - **`font-mono`**\
+    - **`font-mono`** <Deprecated inline />\
     **Font stack:** Roboto Mono, Menlo, Courier New, monospace\
     **Example:** <span className="font-mono bg-black-10 px-05em py-01em">The quick brown fox jumps over the lazy dog.</span>
+
+    <Deprecated>
+      **`font-slab`** is removed in v8, along with the class itself — it is not part of the Stanford Identity type system and has no Tailwind core equivalent. If you still need Roboto Slab, define `slab` in your own project config.
+
+      **`font-mono`** keeps working in v8, but Decanter's Roboto Mono stack is removed and the class falls back to Tailwind's default monospace stack. Define `mono` in your own project config if you need Roboto Mono specifically.
+
+      **The `Source Sans Pro` and `Source Serif Pro` fallbacks** in `font-sans` and `font-serif` are removed in v8. The leading families — Source Sans 3 and Source Serif 4 — are unchanged; make sure they are loaded, because the next fallback becomes Helvetica Neue and Georgia respectively.
+    </Deprecated>
     </Section>
 
     <Section heading="Centered container and screen edge" id="centered-container-and-screen-edge">
@@ -106,6 +120,10 @@ lastUpdatedDate: 2022-04-06T12:00:00.000Z
         `rs-px-` for padding left and right<br />
         `rs-py-` for padding top and bottom<br />
 
+    <Deprecated>
+      The **`neg2`** and **`neg1`** steps are deprecated and will be removed in v8. Use step `0` or above instead, or a fixed Tailwind spacing utility if you need a value that does not scale.
+    </Deprecated>
+
     <table>
       <thead>
         <tr>
@@ -115,11 +133,11 @@ lastUpdatedDate: 2022-04-06T12:00:00.000Z
       </thead>
       <tbody>
         <tr>
-          <td>neg2</td>
+          <td>neg2 <Deprecated inline /></td>
           <td>xs: 0.8rem<br />md: 0.9rem<br />2xl: 1rem</td>
         </tr>
         <tr>
-          <td>neg1</td>
+          <td>neg1 <Deprecated inline /></td>
           <td>xs: 1.1rem<br />md: 1.2rem<br />2xl: 1.3rem</td>
         </tr>
         <tr>
@@ -734,6 +752,12 @@ lastUpdatedDate: 2022-04-06T12:00:00.000Z
     - Desktop from 2XL breakpoint and up: **23px * 1.25<sup>7</sup> = 109px**
 
     As you can see, by applying the single modular typography class `type-7` to the headline, you get an appropriately sized typography element for all breakpoint ranges.
+
+    <Deprecated>
+      The older em-based font sizes — **`text-m0`** through **`text-m9`**, **`text-09em`** and **`-text-m1`** — are deprecated and will be removed in v8. Use the modular typography classes `type-0` – `type-9` above instead: they are responsive and carry the proportional letter spacing the plain font sizes lack. For a one-off size, use an arbitrary value such as `text-[1.25em]`.
+
+      The pixel-based sizes `text-11` – `text-30` are **not** deprecated.
+    </Deprecated>
     </Section>
 
     <Section heading="Other typography styles" id="other-typography-styles">
@@ -743,7 +767,11 @@ lastUpdatedDate: 2022-04-06T12:00:00.000Z
     - **`intro-text`**
     - **`splash`**
     - **`caption`**
-    - **`credit`**
+    - **`credits`** <Deprecated inline />
+
+    <Deprecated>
+      **`credits`** is removed in v8, because small italic text is not recommended for accessibility. To reproduce the v7 styling, use `text-[max(1.6rem,0.9em)] leading-snug italic text-cool-grey`.
+    </Deprecated>
     </Section>
 
     <Section heading="Icons" id="icons">
@@ -753,6 +781,12 @@ lastUpdatedDate: 2022-04-06T12:00:00.000Z
     <Section heading="Accessibility" id="accessibility">
       <Section headingLevel="h3" headingSize={1} heading="Screen readers">
         Use the `sr-only` class to hide an element visually without hiding it from screen readers.
+
+        <Deprecated>
+          **`accessibility-hidden`** and **`a11y-hidden`** were removed in Decanter v7.5.0 and no longer generate any CSS. Use Tailwind's [`aria-hidden:` variant](https://tailwindcss.com/docs/hover-focus-and-other-states#aria-states) instead — `<span class="aria-hidden:hidden" aria-hidden="true">` compiles to the same rule these classes produced.
+
+          **Check your markup before upgrading.** The removal does not break your build — any element that relied on these classes simply becomes visible. Search your templates for `a11y-hidden` and `accessibility-hidden`. Note that these classes hid content from everyone, not just visually; if you want the screen-reader behaviour, use `sr-only` (with `focus:not-sr-only` for skip links).
+        </Deprecated>
       </Section>
       <Section headingLevel="h3" headingSize={1} heading="Interactive elements">
         Other than using the `hover:` Tailwind modifier (e.g., `hover:underline`) to add hover styles for interactive elements, please remember to also use the `focus:` modifier (e.g., `focus:text-lagunita`) to add focus styles for keyboard users. You can use the custom `hocus:` modifier (e.g., `hocus:bg-plum`) for styles that have the same hover and focus states.

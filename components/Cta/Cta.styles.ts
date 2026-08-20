@@ -1,4 +1,4 @@
-export const cta = 'group font-regular hocus:underline transition';
+export const cta = 'group font-normal hocus:underline transition';
 
 export const ctaVariants = {
   primary: 'no-underline leading-display bg-digital-red hover:bg-black focus-visible:bg-bg-black active:bg-bg-black text-white hocus:text-white hocus:border-lagunita-light shadow hocus:shadow-md hocus:decoration-1 focus:outline-none disabled:border-black-20 disabled:bg-black-20 disabled:text-black',
