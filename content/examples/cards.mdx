@@ -4,19 +4,10 @@ lastUpdatedDate: 2023-05-25T12:00:00.000Z
 ---
 
 <div className="lg:max-w-600 xl:max-w-800 2xl:max-w-1000">
-  <Deprecated>
-    The examples below still use classes that are deprecated in Decanter v7 and removed in v8. If you copy this markup, replace them:
-
-    - `text-m2` — use the modular typography class `type-2`, or an arbitrary value such as `text-[1.56em]`.
-    - `rs-mt-neg1` — use responsive spacing step `0` or above, or a fixed Tailwind margin utility.
-    - `aspect-w-3 aspect-h-2` — these come from the `@tailwindcss/aspect-ratio` plugin, which v8 drops. Use Tailwind's core `aspect-[3/2]` instead.
-    - `children:`, `last:children:` — use Tailwind's `*` variant: `*:` and `last:*:`.
-  </Deprecated>
-
   <Section heading="Alumni Travel/Study Card" width="full">
     ```html
       <article class="flex flex-col group relative overflow-hidden bg-black-true break-words border-black w-full sm:max-w-[42rem] md:max-w-500">
-        <div class="aspect-w-3 aspect-h-2 overflow-hidden">
+        <div class="aspect-[3/2] overflow-hidden">
           <img src="https://assets.stanford.edu/i/600x400/smart/filters:quality(60)/f/103430/4928x3264/b7a5d20844/giant-tortoise-san-cristobal-island-galapagos.jpg" class="object-cover w-full h-full transition-transform transform-gpu group-hover:scale-[1.03] group-focus-within:scale-[1.03] object-center" alt="" loading="lazy" width="600" height="400" />
         </div>
         <div>
@@ -27,7 +18,7 @@ lastUpdatedDate: 2023-05-25T12:00:00.000Z
                   <span class="mb-8 ml-2 uppercase leading-none text-20 lg:text-22"> Jun</span>
                   <span class="font-bold font-serif leading-trim text-[4.1rem]">24</span>
                 </time>
-                <span class="relative font-bold leading-trim top-11 text-m2 px-03em" aria-hidden="true">–</span>
+                <span class="relative font-bold leading-trim top-11 text-[1.56em] px-03em" aria-hidden="true">–</span>
                 <span class="sr-only">to</span>
                 <time datetime="2023-07-03 00:00Z" class="flex flex-col">
                   <span class="mb-8 ml-2 uppercase leading-none text-20 lg:text-22">Jul</span>
@@ -52,7 +43,7 @@ lastUpdatedDate: 2023-05-25T12:00:00.000Z
       </article>
     ```
     <article className="flex flex-col group relative overflow-hidden bg-black-true break-words border-black w-full sm:max-w-[42rem] md:max-w-500">
-      <div className="aspect-w-3 aspect-h-2 overflow-hidden">
+      <div className="aspect-[3/2] overflow-hidden">
         <img src="https://assets.stanford.edu/i/600x400/smart/filters:quality(60)/f/103430/4928x3264/b7a5d20844/giant-tortoise-san-cristobal-island-galapagos.jpg" className="object-cover w-full h-full transition-transform transform-gpu group-hover:scale-[1.03] group-focus-within:scale-[1.03] object-center" alt="" loading="lazy" width="600" height="400" />
       </div>
       <div>
@@ -63,7 +54,7 @@ lastUpdatedDate: 2023-05-25T12:00:00.000Z
                 <span className="mb-8 ml-2 uppercase leading-none text-20 lg:text-22"> Jun</span>
                 <span className="font-bold font-serif leading-trim text-[4.1rem]">24</span>
               </time>
-              <span className="relative font-bold leading-trim top-11 text-m2 px-03em" aria-hidden="true">–</span>
+              <span className="relative font-bold leading-trim top-11 text-[1.56em] px-03em" aria-hidden="true">–</span>
               <span className="sr-only">to</span>
               <time dateTime="2023-07-03 00:00Z" className="flex flex-col">
                 <span className="mb-8 ml-2 uppercase leading-none text-20 lg:text-22">Jul</span>
@@ -90,7 +81,7 @@ lastUpdatedDate: 2023-05-25T12:00:00.000Z
   <Section heading="Alumni Story Card" width="full">
     ```html
     <article class="flex flex-col story-card group relative overflow-hidden break-words basefont-23 w-full sm:max-w-[42rem] md:max-w-500 border border-solid bg-clip-padding shadow-sm focus-within:shadow-md hover:shadow-md backface-hidden border-black-20 text-black">
-      <div class="story-card-image-wrapper relative aspect-w-3 aspect-h-2" aria-hidden="true">
+      <div class="story-card-image-wrapper relative aspect-[3/2]" aria-hidden="true">
         <figure class="overflow-hidden w-full h-full">
           <img
             src="https://img2.storyblok.com/f/103430/532x353/1e9c786a10/aapi_month.PNG"
@@ -123,7 +114,7 @@ lastUpdatedDate: 2023-05-25T12:00:00.000Z
     </article>
     ```
     <article className="flex flex-col story-card group relative overflow-hidden break-words basefont-23 w-full sm:max-w-[42rem] md:max-w-500 border border-solid bg-clip-padding shadow-sm focus-within:shadow-md hover:shadow-md backface-hidden border-black-20 text-black">
-      <div className="story-card-image-wrapper relative aspect-w-3 aspect-h-2" aria-hidden="true">
+      <div className="story-card-image-wrapper relative aspect-[3/2]" aria-hidden="true">
         <figure className="overflow-hidden w-full h-full">
           <img
             src="https://img2.storyblok.com/f/103430/532x353/1e9c786a10/aapi_month.PNG"
@@ -162,7 +153,7 @@ lastUpdatedDate: 2023-05-25T12:00:00.000Z
       </div>
       <div class="flex flex-col card-body rs-px-2 rs-pt-2 rs-pb-4 items-start">
         <h3 class="font-serif type-2 font-bold leading-display mb-0">Career Connections</h3>
-        <div class="wysiwyg text-current card-paragraph children:leading-snug children:!mb-06em last:children:!mb-0 rs-mt-neg1">
+        <div class="wysiwyg text-current card-paragraph children:leading-snug children:!mb-06em last:children:!mb-0 mt-11 md:mt-12 2xl:mt-13">
           <p>Looking to make a career change or network with other alumni? Don’t miss out on our career resources.</p>
         </div>
         <div class="rs-mt-2">
@@ -188,7 +179,7 @@ lastUpdatedDate: 2023-05-25T12:00:00.000Z
       </div>
       <div className="flex flex-col card-body rs-px-2 rs-pt-2 rs-pb-4 items-start">
         <h3 className="font-serif type-2 font-bold leading-display mb-0">Career Connections</h3>
-        <div className="wysiwyg text-current card-paragraph children:leading-snug children:!mb-06em last:children:!mb-0 rs-mt-neg1">
+        <div className="wysiwyg text-current card-paragraph children:leading-snug children:!mb-06em last:children:!mb-0 mt-11 md:mt-12 2xl:mt-13">
           <p>Looking to make a career change or network with other alumni? Don’t miss out on our career resources.</p>
         </div>
         <div className="rs-mt-2">
@@ -218,7 +209,7 @@ lastUpdatedDate: 2023-05-25T12:00:00.000Z
       <div>
         <p class=" max-w-[100ch]">This collection contains Moore’s Intel lab notebooks, personal and business correspondence, Intel presentations, memos and white papers, personal notes from meetings, greeting cards, photographs, cassette tapes and videos. The materials date from 1958 to 2005, but the majority dates from 1968 to 1999.</p>
       </div>
-      <a rel="nofollow" aria-label="View the collection of Gordon Moore's papers, 1958 - 2005" class="rounded-full cta-button font-semibold leading-display block w-fit no-underline hocus:underline group transition-colors px-26 pt-10 pb-11 text-16 md:text-20 bg-digital-red hover:bg-cardinal-red-dark focus:bg-black-true active:bg-black-true text-white hocus:text-white rs-mt-neg1" href="https://searchworks.stanford.edu/view/10626780">View the collection</a>
+      <a rel="nofollow" aria-label="View the collection of Gordon Moore's papers, 1958 - 2005" class="rounded-full cta-button font-semibold leading-display block w-fit no-underline hocus:underline group transition-colors px-26 pt-10 pb-11 text-16 md:text-20 bg-digital-red hocus-visible:bg-cardinal-red-dark focus:bg-black-true active:bg-black-true text-white hocus:text-white mt-11 md:mt-12 2xl:mt-13" href="https://searchworks.stanford.edu/view/10626780">View the collection</a>
     </div>
   </div>
   ```
@@ -231,7 +222,7 @@ lastUpdatedDate: 2023-05-25T12:00:00.000Z
       <div>
         <p className=" max-w-[100ch]">This collection contains Moore’s Intel lab notebooks, personal and business correspondence, Intel presentations, memos and white papers, personal notes from meetings, greeting cards, photographs, cassette tapes and videos. The materials date from 1958 to 2005, but the majority dates from 1968 to 1999.</p>
       </div>
-      <a rel="nofollow" aria-label="View the collection of Gordon Moore's papers, 1958 - 2005" className="rounded-full cta-button font-semibold leading-display block w-fit no-underline hocus:underline group transition-colors px-26 pt-10 pb-11 text-16 md:text-20 bg-digital-red hover:bg-cardinal-red-dark focus:bg-black-true active:bg-black-true text-white hocus:text-white rs-mt-neg1" href="https://searchworks.stanford.edu/view/10626780">View the collection</a>
+      <a rel="nofollow" aria-label="View the collection of Gordon Moore's papers, 1958 - 2005" className="rounded-full cta-button font-semibold leading-display block w-fit no-underline hocus:underline group transition-colors px-26 pt-10 pb-11 text-16 md:text-20 bg-digital-red hocus-visible:bg-cardinal-red-dark focus:bg-black-true active:bg-black-true text-white hocus:text-white mt-11 md:mt-12 2xl:mt-13" href="https://searchworks.stanford.edu/view/10626780">View the collection</a>
     </div>
   </div>
   </Section>
