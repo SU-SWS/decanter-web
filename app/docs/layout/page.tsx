@@ -1,0 +1,77 @@
+import type { Metadata } from 'next';
+import { Callout } from '@/components/docs/callout';
+import { CodeBlock } from '@/components/docs/code-block';
+import { DocPage } from '@/components/docs/doc-page';
+import { breakpoints } from '@/data/decanter';
+
+export const metadata: Metadata = {
+  title: 'Layout and breakpoints',
+  description: 'Centered containers, responsive screen margins, gaps, and breakpoints in Decanter v8.',
+};
+
+export default function LayoutPage() {
+  return (
+    <DocPage
+      description="Stanford screen margins, wide-screen caps, page-level grid gaps, and breakpoints tuned for Decanter layouts."
+      eyebrow="Foundations"
+      headings={[
+        { id: 'container', title: 'Centered container' },
+        { id: 'screen-margins', title: 'Screen margins' },
+        { id: 'grid-gaps', title: 'Grid gaps' },
+        { id: 'breakpoints', title: 'Breakpoints' },
+        { id: 'core-layout', title: 'Core layout utilities' },
+      ]}
+      kind="Tailwind extended"
+      title="Layout and breakpoints"
+    >
+      <section id="container">
+        <h2>Centered container</h2>
+        <p><code>centered-container</code> and its alias <code>cc</code> provide the standard Stanford page container. They add responsive side margins, cap content at 1500px, and center it above the 3xl breakpoint.</p>
+        <CodeBlock code={`<section className="bg-fog-light rs-py-4">
+  <div className="cc">Full-bleed background, aligned content</div>
+</section>`} label="React" language="tsx" />
+        <Callout title="Safe to nest">
+          <p>A centered container nested inside another centered container does not add a second set of screen margins.</p>
+        </Callout>
+      </section>
+
+      <section id="screen-margins">
+        <h2>Screen margins</h2>
+        <div className="table-scroll"><table><thead><tr><th>Viewport</th><th>Side margin</th></tr></thead><tbody>
+          <tr><td>Below 576px</td><td>20px</td></tr>
+          <tr><td>sm, 576px+</td><td>30px</td></tr>
+          <tr><td>md, 768px+</td><td>50px</td></tr>
+          <tr><td>lg, 992px+</td><td>80px</td></tr>
+          <tr><td>xl, 1200px+</td><td>100px</td></tr>
+          <tr><td>3xl, 1700px+</td><td>1500px content centered</td></tr>
+        </tbody></table></div>
+      </section>
+
+      <section id="grid-gaps">
+        <h2>Grid gaps</h2>
+        <p>Decanter adds four page-level gap tokens and a responsive shorthand.</p>
+        <div className="table-scroll"><table><thead><tr><th>Token</th><th>Value</th></tr></thead><tbody>
+          <tr><td><code>gap-xs</code></td><td>20px</td></tr>
+          <tr><td><code>gap-lg</code></td><td>36px</td></tr>
+          <tr><td><code>gap-xl</code></td><td>40px</td></tr>
+          <tr><td><code>gap-2xl</code></td><td>48px</td></tr>
+        </tbody></table></div>
+        <p><code>grid-gap</code> applies those values progressively at the base, lg, xl, and 2xl breakpoints.</p>
+        <CodeBlock code={'<div className="grid grid-gap md:grid-cols-3">…</div>'} label="React" language="tsx" />
+      </section>
+
+      <section id="breakpoints">
+        <h2>Breakpoints</h2>
+        <div className="table-scroll"><table><thead><tr><th>Prefix</th><th>Minimum width</th><th>Tailwind default</th></tr></thead><tbody>
+          {breakpoints.map((item) => <tr key={item.name}><td><code>{item.name}:</code></td><td>{item.decanter}</td><td>{item.tailwind}</td></tr>)}
+        </tbody></table></div>
+        <p>All normal Tailwind forms work with these screens, including <code>max-lg:hidden</code> and responsive arbitrary utilities.</p>
+      </section>
+
+      <section id="core-layout">
+        <h2>Use Tailwind core for everything else</h2>
+        <p>Decanter does not redefine flexbox, CSS Grid, aspect ratio, positioning, container queries, or alignment utilities. Use Tailwind’s core documentation for those systems.</p>
+      </section>
+    </DocPage>
+  );
+}

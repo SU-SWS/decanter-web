@@ -1,34 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Decanter documentation site
 
-## Getting Started
+Developer documentation, design guidance, examples, and showcases for Decanter v8.
 
-First, run the development server:
+## Stack
+
+- Node.js 24
+- Next.js 16 App Router
+- React 19
+- Tailwind CSS 4
+- Decanter 8 beta
+- Static HTML export hosted on Netlify
+
+Content is written directly in React components and TypeScript data files. This project does not use MDX, Contentlayer, or a runtime CMS.
+
+## Local development
 
 ```bash
+nvm use
+npm install
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+The development and production scripts use Next.js with webpack because the Tailwind PostCSS worker is more predictable for this static build than Turbopack.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Validation
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+npm run lint
+npm run typecheck
+npm run build
+```
 
-## Learn More
+`npm run build` writes the static site to `out/`.
 
-To learn more about Next.js, take a look at the following resources:
+## Project structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `app/` — routes and page content
+- `components/` — shared site chrome, documentation UI, search, and examples
+- `data/` — navigation, search metadata, Decanter reference values, FAQ, and showcase entries
+- `public/` — static assets and Netlify redirects
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Decanter CSS
 
-## Deploy on Vercel
+The site imports the full Decanter entry and opt-in forms entry in `app/globals.css`:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```css
+@import 'decanter';
+@import 'decanter/forms';
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Do not add a separate `@import 'tailwindcss'`; Decanter already includes it.
+
+## Analytics
+
+Google Analytics is included only when Netlify sets `CONTEXT=production`, or when `NEXT_PUBLIC_ENABLE_ANALYTICS=true` is supplied explicitly. Deploy Previews and branch deploys do not enable analytics by default.

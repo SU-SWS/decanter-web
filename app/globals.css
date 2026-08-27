@@ -1,0 +1,183 @@
+@import 'decanter';
+@import 'decanter/forms';
+
+@source '../app';
+@source '../components';
+@source '../data';
+
+@font-face {
+  font-family: Stanford;
+  src: url('https://www-media.stanford.edu/assets/fonts/stanford.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@layer base {
+  html {
+    scroll-padding-top: 2rem;
+  }
+
+  body {
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-digital-blue-vivid);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    color: var(--color-white);
+    background: var(--color-plum);
+  }
+
+  [id] {
+    scroll-margin-top: 2rem;
+  }
+}
+
+@layer components {
+  .hero-surface {
+    background:
+      radial-gradient(circle at 82% 12%, rgb(115 70 117 / 42%), transparent 34rem),
+      linear-gradient(118deg, var(--color-black-true) 0%, var(--color-black) 45%, var(--color-plum-dark) 100%);
+  }
+
+  .homepage-grid {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+  }
+
+  .homepage-grid::before {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    content: '';
+    background-image:
+      linear-gradient(rgb(255 255 255 / 5%) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(255 255 255 / 5%) 1px, transparent 1px);
+    background-size: 4rem 4rem;
+    mask-image: linear-gradient(to bottom, black, transparent 86%);
+  }
+
+  .site-header {
+    border-bottom: 1px solid rgb(255 255 255 / 14%);
+  }
+
+  .site-mobile-menu > summary::-webkit-details-marker,
+  .docs-mobile-nav > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .search-dialog::backdrop {
+    background: rgb(46 45 41 / 78%);
+  }
+
+  .doc-prose {
+    max-width: 92rem;
+  }
+
+  .doc-prose > h2,
+  .doc-prose > section > h2 {
+    margin-top: 5rem;
+    margin-bottom: 1.6rem;
+    padding-top: 1rem;
+    font-size: clamp(2.8rem, 2.2vw, 4rem);
+    letter-spacing: -0.02em;
+  }
+
+  .doc-prose > h3,
+  .doc-prose > section > h3 {
+    margin-top: 3.6rem;
+    margin-bottom: 1.2rem;
+    font-size: clamp(2.2rem, 1.6vw, 2.8rem);
+  }
+
+  .doc-prose p,
+  .doc-prose li {
+    max-width: 75ch;
+  }
+
+  .doc-prose code:not(pre code) {
+    border: 1px solid var(--color-black-20);
+    border-radius: 0.3rem;
+    padding: 0.15em 0.35em;
+    color: var(--color-plum-dark);
+    background: var(--color-fog-light);
+    font-weight: 600;
+  }
+
+  .doc-prose .table-scroll {
+    max-width: 100%;
+    margin-block: 2.4rem;
+    overflow-x: auto;
+    border: 1px solid var(--color-black-20);
+  }
+
+  .doc-prose .table-scroll table {
+    margin: 0;
+  }
+
+  .doc-prose .table-scroll thead {
+    background: var(--color-fog-light);
+  }
+
+  .doc-prose .table-scroll tr:first-child {
+    border-top: 0;
+  }
+
+  .callout-content > :last-child {
+    margin-bottom: 0;
+  }
+
+  .preview-surface {
+    background-color: var(--color-white);
+    background-image:
+      linear-gradient(45deg, var(--color-fog-light) 25%, transparent 25%),
+      linear-gradient(-45deg, var(--color-fog-light) 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, var(--color-fog-light) 75%),
+      linear-gradient(-45deg, transparent 75%, var(--color-fog-light) 75%);
+    background-position: 0 0, 0 1rem, 1rem -1rem, -1rem 0;
+    background-size: 2rem 2rem;
+  }
+
+  .home-code {
+    box-shadow: 0 2.4rem 7rem rgb(0 0 0 / 28%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  .site-header,
+  .docs-mobile-nav,
+  .search-dialog,
+  footer,
+  aside,
+  nav {
+    display: none !important;
+  }
+
+  .doc-prose {
+    max-width: none;
+  }
+}
