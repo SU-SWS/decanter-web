@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Callout } from '@/components/docs/callout';
 import { CodeBlock } from '@/components/docs/code-block';
+import { ComponentExample } from '@/components/docs/component-example';
 import { DocPage } from '@/components/docs/doc-page';
 
 export const metadata: Metadata = {
@@ -41,21 +42,31 @@ export default function TypographyPage() {
         <div className="table-scroll"><table><thead><tr><th>Class</th><th>Leading family</th><th>Use</th></tr></thead><tbody>
           <tr><td><code>font-sans</code></td><td>Source Sans 3</td><td>Default interface and body text</td></tr>
           <tr><td><code>font-serif</code></td><td>Source Serif 4</td><td>Editorial and display text</td></tr>
+          <tr><td><code>font-mono</code></td><td>Roboto Mono <span className="text-black-60">(site override)</span></td><td>Code samples and technical data on this site</td></tr>
           <tr><td><code>font-stanford</code></td><td>Stanford</td><td>Stanford wordmark only</td></tr>
         </tbody></table></div>
+        <ComponentExample code={`<p className="font-sans">Source Sans 3</p>
+<p className="font-serif">Source Serif 4</p>
+<p className="font-mono">Roboto Mono</p>`}>
+          <div className="space-y-12">
+            <p className="m-0 font-sans text-24">Source Sans 3</p>
+            <p className="m-0 font-serif text-24">Source Serif 4</p>
+            <p className="m-0 font-mono text-20">Roboto Mono</p>
+          </div>
+        </ComponentExample>
         <Callout title="Fonts are referenced, not bundled">
-          <p>Decanter provides font-family utilities but does not download font files. Load only the families and weights the project actually uses.</p>
+          <p>Decanter provides font-family utilities but does not download font files. This documentation site overrides Tailwind’s <code>font-mono</code> token with Roboto Mono. Load only the families and weights the project actually uses.</p>
         </Callout>
       </section>
 
       <section id="loading-fonts">
         <h2>Loading fonts</h2>
-        <p>For Source Sans 3 and Source Serif 4, use framework font tooling, self-hosted files, or an optimized stylesheet link. Decanter uses weights 400, 600, and 700 plus italics.</p>
+        <p>For Source Sans 3, Source Serif 4, and this site’s Roboto Mono code face, use framework font tooling, self-hosted files, or an optimized stylesheet link. Decanter uses weights 400, 600, and 700 plus italics for its core text families.</p>
         <CodeBlock code={`<link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 <link
   rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+  href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
 />`} label="app/layout.tsx" language="tsx" />
       </section>
 

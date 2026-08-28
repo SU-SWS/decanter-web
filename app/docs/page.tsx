@@ -16,6 +16,7 @@ export default function DeveloperOverviewPage() {
       headings={[
         { id: 'documentation-scope', title: 'Documentation scope' },
         { id: 'foundations', title: 'Foundations' },
+        { id: 'components', title: 'Components' },
         { id: 'building-interfaces', title: 'Building interfaces' },
       ]}
       title="Build with Decanter"
@@ -40,10 +41,19 @@ export default function DeveloperOverviewPage() {
         </div>
       </section>
 
+      <section id="components">
+        <h2>Components</h2>
+        <div className="grid gap-16 md:grid-cols-2">
+          {docsNavigation[2].items.map((item) => (
+            <FeatureCard description={item.description} href={item.href} key={item.href} label="Component" title={item.title} />
+          ))}
+        </div>
+      </section>
+
       <section id="building-interfaces">
         <h2>Building interfaces</h2>
         <div className="grid gap-16 md:grid-cols-2">
-          {docsNavigation[2].items.map((item) => (
+          {docsNavigation[3].items.map((item) => (
             <FeatureCard description={item.description} href={item.href} key={item.href} label="Reference" title={item.title} />
           ))}
         </div>

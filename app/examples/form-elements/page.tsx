@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { CodeBlock } from '@/components/docs/code-block';
+import { ComponentExample } from '@/components/docs/component-example';
 import { PageHeader } from '@/components/page-header';
 
 export const metadata: Metadata = {
@@ -7,14 +7,44 @@ export const metadata: Metadata = {
   description: 'An accessible form example using the Decanter v8 form classes.',
 };
 
+const formCode = `<form>
+  <fieldset className="fieldset">
+    <legend className="legend">Request documentation help</legend>
+    <p id="form-instructions">All fields are required unless marked optional.</p>
+
+    <label className="label" htmlFor="name">Name</label>
+    <input aria-describedby="form-instructions" className="input" id="name" required type="text" />
+
+    <label className="label" htmlFor="email">Email</label>
+    <input className="input" id="email" required type="email" />
+
+    <label className="label" htmlFor="topic">Topic</label>
+    <select className="select" id="topic" required>
+      <option value="">Choose a topic</option>
+      <option>Installation</option>
+      <option>Typography</option>
+    </select>
+
+    <label className="label" htmlFor="question">Question</label>
+    <textarea className="textarea" id="question" required />
+
+    <input className="checkbox" id="copy" type="checkbox" />
+    <label className="label" htmlFor="copy">Email me a copy (optional)</label>
+
+    <button className="button" type="submit">Send request</button>
+  </fieldset>
+</form>`;
+
 export default function FormExamplePage() {
   return (
     <main id="main-content">
       <PageHeader description="A focused form using visible labels, useful instructions, grouped choices, and Decanter’s opt-in form classes." eyebrow="Examples" title="Form elements" />
-      <article className="cc grid gap-40 rs-py-5 lg:grid-cols-2 lg:items-start">
+      <article className="cc rs-py-5">
         <section>
-          <h2>Rendered example</h2>
-          <form className="mt-20 border border-black-20 bg-fog-light p-24">
+          <h2>Complete form</h2>
+          <p>Decanter provides the visual foundation. The application still owns submission, validation, error messaging, security, and success feedback.</p>
+          <ComponentExample code={formCode}>
+          <form className="max-w-700 border border-black-20 bg-fog-light p-24">
             <fieldset className="fieldset">
               <legend className="legend mb-6 type-2 font-bold">Request documentation help</legend>
               <p className="mb-22 text-16 leading-normal text-black-70" id="form-instructions">All fields are required unless marked optional.</p>
@@ -44,20 +74,7 @@ export default function FormExamplePage() {
               <button className="button" type="button">Send request</button>
             </fieldset>
           </form>
-        </section>
-        <section>
-          <h2>Implementation</h2>
-          <p>Decanter provides the visual foundation. The application still owns submission, validation, error messaging, security, and success feedback.</p>
-          <CodeBlock code={`<label className="label" htmlFor="email">Email</label>
-<input
-  aria-describedby="email-error"
-  aria-invalid={hasError}
-  className="input"
-  id="email"
-  required
-  type="email"
-/>
-{hasError && <p id="email-error">Enter a valid email address.</p>}`} label="React" language="tsx" />
+          </ComponentExample>
         </section>
       </article>
     </main>

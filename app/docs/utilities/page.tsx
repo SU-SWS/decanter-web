@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { Callout } from '@/components/docs/callout';
-import { CodeBlock } from '@/components/docs/code-block';
+import { ComponentExample } from '@/components/docs/component-example';
 import { DocPage } from '@/components/docs/doc-page';
 
 export const metadata: Metadata = {
@@ -33,10 +34,15 @@ export default function UtilitiesPage() {
           <tr><td><code>link-semibold</code></td><td>Uses font weight 600.</td></tr>
           <tr><td><code>link-bold</code></td><td>Uses font weight 700.</td></tr>
         </tbody></table></div>
-        <CodeBlock code={`<nav className="bg-cardinal-red link-white link-hocus-illuminating link-no-underline">
+        <ComponentExample code={`<nav className="bg-cardinal-red link-white link-hocus-illuminating link-no-underline">
   <a href="/">Home</a>
-  <a href="/about">About</a>
-</nav>`} label="React" language="tsx" />
+  <a href="/showcase">Showcase</a>
+</nav>`}>
+          <nav aria-label="Nested link utility example" className="flex gap-20 bg-cardinal-red p-18 link-white link-hocus-illuminating link-no-underline">
+            <Link href="/">Home</Link>
+            <Link href="/showcase">Showcase</Link>
+          </nav>
+        </ComponentExample>
         <Callout title="Direct links use core utilities">
           <p>When you own the link element, style it directly with utilities such as <code>text-digital-blue hocus:text-black</code>.</p>
         </Callout>

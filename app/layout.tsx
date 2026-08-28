@@ -41,7 +41,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         {/* The stylesheet is declared once in the root App Router layout. */}
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
           rel="stylesheet"
         />
       </head>

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Callout } from '@/components/docs/callout';
-import { CodeBlock } from '@/components/docs/code-block';
+import { ComponentExample } from '@/components/docs/component-example';
 import { DocPage } from '@/components/docs/doc-page';
 import { responsiveSpacing } from '@/data/decanter';
 
@@ -42,16 +42,20 @@ export default function ResponsiveSpacingPage() {
 
       <section id="examples">
         <h2>Examples</h2>
-        <CodeBlock code={`<section className="rs-py-4">
+        <ComponentExample code={`<section className="rs-py-4 bg-plum text-center text-white">
   Vertical padding: 34px → 58px → 61px
 </section>
 
 <div className="grid rs-gap-2 md:grid-cols-3">
   Responsive gutters: 30px → 36px → 38px
-</div>`} label="React" language="tsx" />
-        <div className="border border-black-20 bg-fog-light p-16">
-          <div className="rs-py-4 bg-plum text-center font-bold text-white">This area uses <code className="text-white">rs-py-4</code></div>
-        </div>
+</div>`}>
+          <div className="space-y-20">
+            <div className="rs-py-4 bg-plum text-center font-bold text-white">This area uses <code className="text-white">rs-py-4</code></div>
+            <div className="grid rs-gap-2 md:grid-cols-3">
+              {['First', 'Second', 'Third'].map((label) => <div className="bg-white p-16 text-center shadow-sm" key={label}>{label}</div>)}
+            </div>
+          </div>
+        </ComponentExample>
       </section>
 
       <section id="choosing-a-step">

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Callout } from '@/components/docs/callout';
-import { CodeBlock } from '@/components/docs/code-block';
+import { ComponentExample } from '@/components/docs/component-example';
 import { DocPage } from '@/components/docs/doc-page';
 import { fluidTypeScale } from '@/data/decanter';
 
@@ -40,10 +40,13 @@ export default function FluidTypographyPage() {
 
       <section id="example">
         <h2>Example</h2>
-        <CodeBlock code={'<h1 className="fluid-type-6">Research that changes the world.</h1>'} label="React" language="tsx" />
-        <div className="overflow-hidden border border-black-20 bg-plum-dark p-24 text-white">
+        <ComponentExample
+          code={'<h1 className="fluid-type-6 text-white">\n  Research that changes the world.\n</h1>'}
+          previewClassName="!bg-plum-dark !bg-none text-white"
+          previewTone="dark"
+        >
           <p className="fluid-type-6 mb-0 max-w-1000 leading-tight tracking-[-0.025em] text-white">Research that changes the world.</p>
-        </div>
+        </ComponentExample>
       </section>
 
       <section id="fluid-vs-modular">

@@ -96,6 +96,71 @@ export const docsNavigation: NavigationGroup[] = [
     ],
   },
   {
+    title: 'Components',
+    items: [
+      {
+        title: 'Overview',
+        href: '/docs/components',
+        description: 'The small set of framework-independent component classes included in Decanter.',
+        keywords: ['components', 'reference', 'css classes'],
+      },
+      {
+        title: 'Button',
+        href: '/docs/components/button',
+        description: 'Cardinal action treatment for buttons, links, and button-like inputs.',
+        keywords: ['button', 'action', 'link', 'submit'],
+      },
+      {
+        title: 'Centered container',
+        href: '/docs/components/centered-container',
+        description: 'The standard Stanford content container and its responsive screen margins.',
+        keywords: ['centered container', 'cc', 'layout', 'screen margin'],
+      },
+      {
+        title: 'Stanford logo',
+        href: '/docs/components/logo',
+        description: 'Horizontal, stacked, and reversed Stanford wordmark treatments.',
+        keywords: ['logo', 'wordmark', 'identity', 'stacked'],
+      },
+      {
+        title: 'Skip link',
+        href: '/docs/components/skip-link',
+        description: 'Keyboard-first navigation that becomes visible when focused.',
+        keywords: ['skiplink', 'accessibility', 'keyboard', 'focus'],
+      },
+      {
+        title: 'Stretched link',
+        href: '/docs/components/stretched-link',
+        description: 'Expand one nested link across a card or other positioned container.',
+        keywords: ['stretched link', 'card', 'clickable'],
+      },
+      {
+        title: 'Lists',
+        href: '/docs/components/lists',
+        description: 'Unstyled and horizontal list component classes.',
+        keywords: ['list', 'unstyled', 'horizontal'],
+      },
+      {
+        title: 'Tables',
+        href: '/docs/components/tables',
+        description: 'Base table treatment and the borderless table component.',
+        keywords: ['table', 'borderless', 'data'],
+      },
+      {
+        title: 'WYSIWYG content',
+        href: '/docs/components/wysiwyg',
+        description: 'Vertical rhythm for rich text and CMS output.',
+        keywords: ['wysiwyg', 'cms', 'rich text', 'typography'],
+      },
+      {
+        title: 'Forms',
+        href: '/docs/forms',
+        description: 'Opt-in form reset and Decanter form classes.',
+        keywords: ['input', 'select', 'checkbox', 'radio'],
+      },
+    ],
+  },
+  {
     title: 'Building interfaces',
     items: [
       {
@@ -103,18 +168,6 @@ export const docsNavigation: NavigationGroup[] = [
         href: '/docs/base-styles',
         description: 'Element-level defaults in the full and minimal Decanter entry points.',
         keywords: ['preflight', 'headings', 'links', 'tables'],
-      },
-      {
-        title: 'Components',
-        href: '/docs/components',
-        description: 'Buttons, logos, skip links, lists, tables, and WYSIWYG content.',
-        keywords: ['button', 'logo', 'skiplink', 'stretched link'],
-      },
-      {
-        title: 'Forms',
-        href: '/docs/forms',
-        description: 'Opt-in form reset and Decanter form classes.',
-        keywords: ['input', 'select', 'checkbox', 'radio'],
       },
       {
         title: 'Custom utilities',

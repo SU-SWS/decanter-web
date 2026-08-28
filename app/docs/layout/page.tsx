@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import { Callout } from '@/components/docs/callout';
-import { CodeBlock } from '@/components/docs/code-block';
+import Link from 'next/link';
+import { ComponentExample } from '@/components/docs/component-example';
 import { DocPage } from '@/components/docs/doc-page';
 import { breakpoints } from '@/data/decanter';
 
@@ -15,7 +15,6 @@ export default function LayoutPage() {
       description="Stanford screen margins, wide-screen caps, page-level grid gaps, and breakpoints tuned for Decanter layouts."
       eyebrow="Foundations"
       headings={[
-        { id: 'container', title: 'Centered container' },
         { id: 'screen-margins', title: 'Screen margins' },
         { id: 'grid-gaps', title: 'Grid gaps' },
         { id: 'breakpoints', title: 'Breakpoints' },
@@ -24,19 +23,9 @@ export default function LayoutPage() {
       kind="Tailwind extended"
       title="Layout and breakpoints"
     >
-      <section id="container">
-        <h2>Centered container</h2>
-        <p><code>centered-container</code> and its alias <code>cc</code> provide the standard Stanford page container. They add responsive side margins, cap content at 1500px, and center it above the 3xl breakpoint.</p>
-        <CodeBlock code={`<section className="bg-fog-light rs-py-4">
-  <div className="cc">Full-bleed background, aligned content</div>
-</section>`} label="React" language="tsx" />
-        <Callout title="Safe to nest">
-          <p>A centered container nested inside another centered container does not add a second set of screen margins.</p>
-        </Callout>
-      </section>
-
       <section id="screen-margins">
         <h2>Screen margins</h2>
+        <p>These tokens drive the <Link href="/docs/components/centered-container">centered container component</Link> and can also be used in custom page-level layout rules.</p>
         <div className="table-scroll"><table><thead><tr><th>Viewport</th><th>Side margin</th></tr></thead><tbody>
           <tr><td>Below 576px</td><td>20px</td></tr>
           <tr><td>sm, 576px+</td><td>30px</td></tr>
@@ -57,7 +46,15 @@ export default function LayoutPage() {
           <tr><td><code>gap-2xl</code></td><td>48px</td></tr>
         </tbody></table></div>
         <p><code>grid-gap</code> applies those values progressively at the base, lg, xl, and 2xl breakpoints.</p>
-        <CodeBlock code={'<div className="grid grid-gap md:grid-cols-3">…</div>'} label="React" language="tsx" />
+        <ComponentExample code={`<div className="grid grid-gap md:grid-cols-3">
+  <div>First</div>
+  <div>Second</div>
+  <div>Third</div>
+</div>`}>
+          <div className="grid grid-gap md:grid-cols-3">
+            {['First', 'Second', 'Third'].map((label) => <div className="bg-plum p-18 text-center font-semibold text-white" key={label}>{label}</div>)}
+          </div>
+        </ComponentExample>
       </section>
 
       <section id="breakpoints">

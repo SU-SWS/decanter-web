@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Callout } from '@/components/docs/callout';
-import { CodeBlock } from '@/components/docs/code-block';
+import { ComponentExample } from '@/components/docs/component-example';
 import { DocPage } from '@/components/docs/doc-page';
 import { colorGroups } from '@/data/decanter';
 
@@ -25,9 +25,15 @@ export default function ColorsPage() {
       <section id="using-colors">
         <h2>Using colors</h2>
         <p>Each token works with background, text, border, outline, gradient, fill, stroke, and other Tailwind color utilities.</p>
-        <CodeBlock code={`<div className="bg-cardinal-red text-white">…</div>
-<p className="border-b-2 border-fog-dark text-digital-blue">…</p>
-<div className="bg-linear-to-r from-black to-plum">…</div>`} label="React" language="tsx" />
+        <ComponentExample code={`<div className="bg-cardinal-red text-white">Cardinal</div>
+<p className="border-b-2 border-fog-dark text-digital-blue">Digital Blue</p>
+<div className="bg-linear-to-r from-black to-plum text-white">Gradient</div>`}>
+          <div className="grid gap-14 sm:grid-cols-3">
+            <div className="bg-cardinal-red p-18 text-center font-semibold text-white">Cardinal</div>
+            <p className="m-0 border-b-2 border-fog-dark bg-white p-18 text-center font-semibold text-digital-blue">Digital Blue</p>
+            <div className="bg-linear-to-r from-black to-plum p-18 text-center font-semibold text-white">Gradient</div>
+          </div>
+        </ComponentExample>
         <p>The same values are exposed as CSS variables such as <code>var(--color-cardinal-red)</code>. Projects that need only the palette can combine <code>decanter/colors</code> with their own Tailwind import.</p>
       </section>
 

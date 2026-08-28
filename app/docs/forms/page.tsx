@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Callout } from '@/components/docs/callout';
 import { CodeBlock } from '@/components/docs/code-block';
+import { ComponentExample } from '@/components/docs/component-example';
 import { DocPage } from '@/components/docs/doc-page';
 
 export const metadata: Metadata = {
@@ -8,11 +9,63 @@ export const metadata: Metadata = {
   description: 'Opt-in form reset and component classes in Decanter v8.',
 };
 
+const formHtml = `<form class="max-w-600">
+  <fieldset class="fieldset">
+    <legend class="legend mb-16 font-bold">Contact preferences</legend>
+
+    <div class="mb-16">
+      <label class="label mb-5" for="example-email">Email address</label>
+      <input class="input" id="example-email" type="email">
+    </div>
+
+    <div class="mb-16">
+      <label class="label mb-5" for="example-topic">Topic</label>
+      <select class="select" id="example-topic">
+        <option>Documentation</option>
+        <option>Design system</option>
+      </select>
+    </div>
+
+    <div class="flex items-center gap-8">
+      <input class="checkbox" id="example-updates" type="checkbox">
+      <label class="label mb-0" for="example-updates">
+        Send me project updates
+      </label>
+    </div>
+  </fieldset>
+</form>`;
+
+const formJsx = `<form className="max-w-600">
+  <fieldset className="fieldset">
+    <legend className="legend mb-16 font-bold">Contact preferences</legend>
+
+    <div className="mb-16">
+      <label className="label mb-5" htmlFor="example-email">Email address</label>
+      <input className="input" id="example-email" type="email" />
+    </div>
+
+    <div className="mb-16">
+      <label className="label mb-5" htmlFor="example-topic">Topic</label>
+      <select className="select" id="example-topic">
+        <option>Documentation</option>
+        <option>Design system</option>
+      </select>
+    </div>
+
+    <div className="flex items-center gap-8">
+      <input className="checkbox" id="example-updates" type="checkbox" />
+      <label className="label mb-0" htmlFor="example-updates">
+        Send me project updates
+      </label>
+    </div>
+  </fieldset>
+</form>`;
+
 export default function FormsPage() {
   return (
     <DocPage
       description="An optional forms entry combines the Tailwind forms reset with Decanter classes for accessible, Stanford-aligned controls."
-      eyebrow="Building interfaces"
+      eyebrow="Components"
       headings={[
         { id: 'setup', title: 'Setup' },
         { id: 'class-reference', title: 'Class reference' },
@@ -47,7 +100,10 @@ export default function FormsPage() {
 
       <section id="example">
         <h2>Example</h2>
-        <div className="my-20 border border-black-20 bg-fog-light p-24">
+        <ComponentExample codeTabs={[
+          { code: formHtml, label: 'HTML', language: 'html' },
+          { code: formJsx, label: 'React JSX', language: 'jsx' },
+        ]}>
           <form className="max-w-600">
             <fieldset className="fieldset">
               <legend className="legend mb-16 font-bold">Contact preferences</legend>
@@ -65,9 +121,7 @@ export default function FormsPage() {
               </div>
             </fieldset>
           </form>
-        </div>
-        <CodeBlock code={`<label className="label" htmlFor="email">Email address</label>
-<input className="input" id="email" type="email" required />`} label="React" language="tsx" />
+        </ComponentExample>
       </section>
 
       <section id="validation">

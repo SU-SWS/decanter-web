@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Callout } from '@/components/docs/callout';
-import { CodeBlock } from '@/components/docs/code-block';
+import { ComponentExample } from '@/components/docs/component-example';
 import { DocPage } from '@/components/docs/doc-page';
 import { modularTypeScale } from '@/data/decanter';
 
@@ -40,25 +40,34 @@ export default function ModularTypographyPage() {
 
       <section id="examples">
         <h2>Examples</h2>
-        <CodeBlock code={`<h2 className="type-5">Promoted heading</h2>
-<p className="types type-3">Heading treatment on a paragraph</p>`} label="React" language="tsx" />
-        <div className="overflow-hidden border border-black-20 bg-fog-light p-20">
-          {modularTypeScale.slice(0, 7).map((item) => (
-            <p className={`${item.step} mb-12 leading-display`} key={item.step}><span className="mr-10 text-12 font-normal text-black-60">{item.step}</span> Stanford</p>
-          ))}
+        <ComponentExample code={`<h2 className="type-5">Promoted heading</h2>
+<p className="types type-3">Heading treatment on a paragraph</p>`}>
+          <div>
+            <h2 className="type-5 mb-16">Promoted heading</h2>
+            <p className="types type-3 mb-0">Heading treatment on a paragraph</p>
+          </div>
+        </ComponentExample>
+        <div className="my-24 overflow-hidden border border-black-20 bg-fog-light p-20">
+          <p className="mb-16 text-11 font-bold uppercase tracking-[0.14em] text-black-60">Scale preview</p>
+          {modularTypeScale.slice(0, 7).map((item) => <p className={`${item.step} mb-12 leading-display`} key={item.step}><span className="mr-10 text-12 font-normal text-black-60">{item.step}</span> Stanford</p>)}
         </div>
       </section>
 
       <section id="container-sizing">
         <h2>Container sizing</h2>
         <p>The same modular step can be made larger or smaller by changing the container’s base size.</p>
-        <CodeBlock code={`<section className="basefont-19">
+        <ComponentExample code={`<section className="basefont-19">
   <h2 className="type-4">Compact hierarchy</h2>
 </section>
 
 <section className="basefont-23">
   <h2 className="type-4">Generous hierarchy</h2>
-</section>`} label="React" language="tsx" />
+</section>`}>
+          <div className="grid gap-24 lg:grid-cols-2">
+            <section className="basefont-19 border border-black-20 bg-white p-18"><h2 className="type-4 mb-0">Compact hierarchy</h2></section>
+            <section className="basefont-23 border border-black-20 bg-white p-18"><h2 className="type-4 mb-0">Generous hierarchy</h2></section>
+          </div>
+        </ComponentExample>
       </section>
     </DocPage>
   );

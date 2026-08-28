@@ -1,12 +1,10 @@
-import type { ReactNode } from 'react';
-
 export type PageHeading = {
   id: string;
   title: string;
 };
 
 type DocPageProps = {
-  children: ReactNode;
+  children: React.ReactNode;
   description: string;
   eyebrow: string;
   headings?: PageHeading[];
@@ -28,10 +26,10 @@ export function DocPage({ children, description, eyebrow, headings = [], kind = 
         <article className="doc-prose min-w-0 rs-py-4">
           <header className="mb-40 border-b border-black-20 pb-30">
             <div className="mb-14 flex flex-wrap items-center gap-10">
-              <span className="text-13 font-bold uppercase tracking-[0.12em] text-cardinal-red">{eyebrow}</span>
+              <span className="text-13 font-bold uppercase tracking-widest text-cardinal-red">{eyebrow}</span>
               <span className={`rounded-[999px] border px-9 py-4 text-12 font-semibold ${kindStyles[kind]}`}>{kind}</span>
             </div>
-            <h1 className="mb-16 max-w-prose-wide fluid-type-5 tracking-[-0.025em] text-black">{title}</h1>
+            <h1 className="mb-16 max-w-prose-wide fluid-type-5 text-black">{title}</h1>
             <p className="mb-0 max-w-prose text-20 leading-normal text-black-70 md:text-22">{description}</p>
           </header>
           {children}

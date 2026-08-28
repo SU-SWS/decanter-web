@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Callout } from '@/components/docs/callout';
-import { CodeBlock } from '@/components/docs/code-block';
+import { ComponentExample } from '@/components/docs/component-example';
 import { DocPage } from '@/components/docs/doc-page';
 
 export const metadata: Metadata = {
@@ -44,18 +44,29 @@ export default function VariantsPage() {
 
       <section id="examples">
         <h2>Examples</h2>
-        <CodeBlock code={`<a className="bg-digital-red text-white hocus:bg-black hocus:underline" href="/learn">
+        <ComponentExample code={`<a className="bg-digital-red px-16 py-10 text-white hocus:bg-black hocus:underline" href="/learn">
   Learn more
 </a>
 
-<button className="hocus-visible:bg-digital-blue hocus-visible:text-white">
+<button className="border border-digital-blue px-16 py-10 hocus-visible:bg-digital-blue hocus-visible:text-white">
   Save
 </button>
 
 <div className="border border-black-20 hocus-within:border-digital-green">
   <label className="label" htmlFor="search">Search</label>
   <input className="input" id="search" type="search" />
-</div>`} label="React" language="tsx" />
+</div>`}>
+          <div className="grid gap-20 sm:grid-cols-2">
+            <div className="flex flex-wrap items-start gap-14">
+              <a className="bg-digital-red px-16 py-10 text-white no-underline hocus:bg-black hocus:text-white hocus:underline" href="#choosing">Learn more</a>
+              <button className="border border-digital-blue px-16 py-10 hocus-visible:bg-digital-blue hocus-visible:text-white" type="button">Save</button>
+            </div>
+            <div className="border border-black-20 bg-white p-14 hocus-within:border-digital-green">
+              <label className="label mb-5" htmlFor="variant-search">Search</label>
+              <input className="input" id="variant-search" type="search" />
+            </div>
+          </div>
+        </ComponentExample>
       </section>
 
       <section id="choosing">

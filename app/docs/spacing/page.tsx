@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Callout } from '@/components/docs/callout';
-import { CodeBlock } from '@/components/docs/code-block';
+import { ComponentExample } from '@/components/docs/component-example';
 import { DocPage } from '@/components/docs/doc-page';
 
 export const metadata: Metadata = {
@@ -40,9 +40,19 @@ export default function SpacingPage() {
       <section id="where-it-applies">
         <h2>Where it applies</h2>
         <p>The shared scale drives padding, margin, width, height, min/max dimensions, gap, inset, translation, and other spacing-based utilities.</p>
-        <CodeBlock code={`<div className="max-w-900 px-20 py-16">
-  <div className="grid gap-24 md:grid-cols-2">…</div>
-</div>`} label="React" language="tsx" />
+        <ComponentExample code={`<div className="max-w-900 px-20 py-16">
+  <div className="grid gap-24 md:grid-cols-2">
+    <div>First item</div>
+    <div>Second item</div>
+  </div>
+</div>`}>
+          <div className="max-w-900 border border-dashed border-black-40 bg-white px-20 py-16">
+            <div className="grid gap-24 md:grid-cols-2">
+              <div className="bg-plum p-16 text-white">First item</div>
+              <div className="bg-cardinal-red p-16 text-white">Second item</div>
+            </div>
+          </div>
+        </ComponentExample>
       </section>
 
       <section id="em-spacing">

@@ -13,6 +13,10 @@
   font-weight: 300;
 }
 
+@theme {
+  --font-mono: "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 @layer base {
   html {
     scroll-padding-top: 2rem;
@@ -141,18 +145,100 @@
   }
 
   .preview-surface {
-    background-color: var(--color-white);
-    background-image:
-      linear-gradient(45deg, var(--color-fog-light) 25%, transparent 25%),
-      linear-gradient(-45deg, var(--color-fog-light) 25%, transparent 25%),
-      linear-gradient(45deg, transparent 75%, var(--color-fog-light) 75%),
-      linear-gradient(-45deg, transparent 75%, var(--color-fog-light) 75%);
-    background-position: 0 0, 0 1rem, 1rem -1rem, -1rem 0;
-    background-size: 2rem 2rem;
+    background-color: var(--color-fog-light);
+  }
+
+  /* The docs shell is itself a .cc, so restore root-container gutters only
+     inside these two isolated component previews. */
+  .centered-container-alignment-preview > div > section > .centered-container,
+  .centered-container-nesting-preview > .centered-container {
+    padding-right: var(--screen-margin-xs);
+    padding-left: var(--screen-margin-xs);
   }
 
   .home-code {
     box-shadow: 0 2.4rem 7rem rgb(0 0 0 / 28%);
+  }
+
+  .syntax-comment {
+    color: #94a3b8;
+    font-style: italic;
+  }
+
+  .syntax-keyword {
+    color: #c4b5fd;
+  }
+
+  .syntax-string {
+    color: #86efac;
+  }
+
+  .syntax-tag {
+    color: #f9a8d4;
+  }
+
+  .syntax-attribute {
+    color: #fde047;
+  }
+
+  .syntax-number {
+    color: #fdba74;
+  }
+
+  .syntax-function {
+    color: #67e8f9;
+  }
+
+  .syntax-property {
+    color: #93c5fd;
+  }
+
+  .syntax-punctuation {
+    color: #cbd5e1;
+  }
+
+  .skiplink-preview .skiplink {
+    position: static;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 0.4em 0.8em;
+    overflow: visible;
+    border: 1px solid var(--color-cool-grey);
+    border-radius: 0.3rem;
+    white-space: normal;
+  }
+}
+
+@media (min-width: 576px) {
+  .centered-container-alignment-preview > div > section > .centered-container,
+  .centered-container-nesting-preview > .centered-container {
+    padding-right: var(--screen-margin-sm);
+    padding-left: var(--screen-margin-sm);
+  }
+}
+
+@media (min-width: 768px) {
+  .centered-container-alignment-preview > div > section > .centered-container,
+  .centered-container-nesting-preview > .centered-container {
+    padding-right: var(--screen-margin-md);
+    padding-left: var(--screen-margin-md);
+  }
+}
+
+@media (min-width: 992px) {
+  .centered-container-alignment-preview > div > section > .centered-container,
+  .centered-container-nesting-preview > .centered-container {
+    padding-right: var(--screen-margin-lg);
+    padding-left: var(--screen-margin-lg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .centered-container-alignment-preview > div > section > .centered-container,
+  .centered-container-nesting-preview > .centered-container {
+    padding-right: var(--screen-margin-xl);
+    padding-left: var(--screen-margin-xl);
   }
 }
 

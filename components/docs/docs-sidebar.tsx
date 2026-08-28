@@ -11,7 +11,7 @@ function NavigationList() {
     <div className="space-y-24">
       {docsNavigation.map((group) => (
         <section key={group.title}>
-          <h2 className="mb-8 text-12 font-bold uppercase tracking-[0.12em] text-black-60">{group.title}</h2>
+          <h2 className="mb-8 text-14 font-bold uppercase tracking-widest text-cardinal-red">{group.title}</h2>
           <ul className="m-0 list-unstyled p-0">
             {group.items.map((item) => {
               const isCurrent = pathname === item.href;
