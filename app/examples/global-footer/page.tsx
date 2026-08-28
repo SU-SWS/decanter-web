@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import { ComponentExample } from '@/components/docs/component-example';
-import { PageHeader } from '@/components/page-header';
-import { GlobalFooter } from '@/components/site/global-footer';
+import { ComponentExample } from '@/components/docs/componentExample';
+import { PageHeader } from '@/components/pageHeader';
+import { GlobalFooter } from '@/components/site/globalFooter';
 
 export const metadata: Metadata = {
   title: 'Global Footer example',
@@ -15,7 +15,7 @@ export default function GlobalFooterExamplePage() {
       <article className="cc rs-py-5">
         <h2>Usage</h2>
         <p>The shared component below is the same Global Footer rendered at the bottom of every page.</p>
-        <ComponentExample code={`import { GlobalFooter } from '@/components/site/global-footer';
+        <ComponentExample code={`import { GlobalFooter } from '@/components/site/globalFooter';
 
 export default function Layout({ children }) {
   return (

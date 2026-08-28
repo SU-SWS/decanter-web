@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import { ComponentExample } from '@/components/docs/component-example';
-import { DocPage } from '@/components/docs/doc-page';
+import { ComponentExample } from '@/components/docs/componentExample';
+import { DocPage } from '@/components/docs/docPage';
 
 export const metadata: Metadata = {
   title: 'List components',

@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
-import { CodeTabs } from '@/components/docs/code-tabs';
-import { CopyButton } from '@/components/docs/copy-button';
+import { CodeTabs } from '@/components/docs/codeTabs';
+import { CopyButton } from '@/components/docs/copyButton';
 
 type CodeBlockProps = {
   className?: string;

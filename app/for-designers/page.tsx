@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowIcon } from '@/components/icons';
-import { PageHeader } from '@/components/page-header';
+import { PageHeader } from '@/components/pageHeader';
 
 export const metadata: Metadata = {
   title: 'Designer resources',

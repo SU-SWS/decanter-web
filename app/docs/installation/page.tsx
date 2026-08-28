@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { Callout } from '@/components/docs/callout';
-import { CodeBlock } from '@/components/docs/code-block';
-import { DocPage } from '@/components/docs/doc-page';
+import { CodeBlock } from '@/components/docs/codeBlock';
+import { DocPage } from '@/components/docs/docPage';
 
 export const metadata: Metadata = {
   title: 'Installation',
@@ -18,7 +19,7 @@ export default function InstallationPage() {
         { id: 'install-packages', title: 'Install packages' },
         { id: 'configure-postcss', title: 'Configure PostCSS' },
         { id: 'import-decanter', title: 'Import Decanter' },
-        { id: 'entry-points', title: 'Entry points' },
+        { id: 'entry-points', title: 'Choose an entry point' },
         { id: 'static-export', title: 'Static export' },
       ]}
       title="Install Decanter"
@@ -69,19 +70,9 @@ export default config;`}
       </section>
 
       <section id="entry-points">
-        <h2>Entry points</h2>
-        <div className="table-scroll">
-          <table>
-            <thead><tr><th>Import</th><th>Use when</th><th>Includes Tailwind</th></tr></thead>
-            <tbody>
-              <tr><td><code>decanter</code></td><td>You want Decanter’s full theme, components, utilities, variants, and element defaults.</td><td>Yes</td></tr>
-              <tr><td><code>decanter/minimal</code></td><td>Your application already owns element typography and base styling.</td><td>Yes</td></tr>
-              <tr><td><code>decanter/forms</code></td><td>You need the form reset and Decanter form classes.</td><td>No</td></tr>
-              <tr><td><code>decanter/colors</code></td><td>You only want Stanford color tokens in an otherwise stock Tailwind setup.</td><td>No</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p>Import either <code>decanter</code> or <code>decanter/minimal</code>, never both. The forms entry must be paired with one of those main entries.</p>
+        <h2>Choose an entry point</h2>
+        <p>Most new Stanford sites should use <code>decanter</code>. Applications that already own their element styles can use <code>decanter/minimal</code>, while forms and color-only integrations have separate composition rules.</p>
+        <p>See the <Link href="/docs/entry-points">complete CSS entry-point guide</Link> before choosing anything other than the default import.</p>
       </section>
 
       <section id="static-export">

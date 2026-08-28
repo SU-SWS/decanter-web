@@ -78,3 +78,16 @@ export function GitHubIcon(props: IconProps) {
     </svg>
   );
 }
+
+export function FigmaIcon(props: IconProps) {
+  return (
+    <svg aria-hidden="true" fill="currentColor" viewBox="0 0 16 24" {...props}>
+      <path d="M4 0a4 4 0 0 0 0 8h4V0H4Z" />
+      <path d="M8 0h4a4 4 0 0 1 0 8H8V0Z" />
+      <path d="M4 8a4 4 0 0 0 0 8h4V8H4Z" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="4" cy="20" r="4" />
+      <path d="M4 16h4v4H4z" />
+    </svg>
+  );
+}

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ComponentExample } from '@/components/docs/component-example';
-import { DocPage } from '@/components/docs/doc-page';
+import { ComponentExample } from '@/components/docs/componentExample';
+import { DocPage } from '@/components/docs/docPage';
 import { breakpoints } from '@/data/decanter';
 
 export const metadata: Metadata = {

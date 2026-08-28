@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import { GitHubIcon, MenuIcon } from '@/components/icons';
-import { SearchDialog } from '@/components/site/search-dialog';
+import { FigmaIcon, GitHubIcon, MenuIcon } from '@/components/icons';
+import { SearchDialog } from '@/components/site/searchDialog';
+import { decanterLinks } from '@/data/decanter';
 import { primaryNavigation } from '@/data/navigation';
 
 export function SiteHeader() {
@@ -27,11 +28,20 @@ export function SiteHeader() {
           <a
             aria-label="Decanter on GitHub (opens in a new tab)"
             className="hidden rounded-[0.3rem] p-8 text-white hocus:bg-white/10 hocus:text-white sm:inline-flex"
-            href="https://github.com/SU-SWS/decanter"
+            href={decanterLinks.github}
             rel="noreferrer"
             target="_blank"
           >
             <GitHubIcon className="size-24" />
+          </a>
+          <a
+            aria-label="Decanter design library on Figma (opens in a new tab)"
+            className="hidden rounded-[0.3rem] p-8 text-white hocus:bg-white/10 hocus:text-white sm:inline-flex"
+            href={decanterLinks.figma}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <FigmaIcon className="size-24" />
           </a>
           <details className="site-mobile-menu relative lg:hidden">
             <summary className="flex cursor-pointer list-none items-center rounded-[0.3rem] p-8 text-white hocus:bg-white/10">

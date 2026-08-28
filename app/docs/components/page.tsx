@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import { DocPage } from '@/components/docs/doc-page';
-import { FeatureCard } from '@/components/docs/feature-card';
+import { DocPage } from '@/components/docs/docPage';
+import { FeatureCard } from '@/components/docs/featureCard';
 import { docsNavigation } from '@/data/navigation';
 
 export const metadata: Metadata = {

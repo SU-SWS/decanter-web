@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 import { GoogleAnalytics } from '@next/third-parties/google';
-import { GlobalFooter } from '@/components/site/global-footer';
-import { IdentityBar } from '@/components/site/identity-bar';
-import { SiteHeader } from '@/components/site/site-header';
+import { GlobalFooter } from '@/components/site/globalFooter';
+import { IdentityBar } from '@/components/site/identityBar';
+import { SiteHeader } from '@/components/site/siteHeader';
 import './globals.css';
 
 export const metadata: Metadata = {

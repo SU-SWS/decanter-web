@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { ExternalIcon } from '@/components/icons';
-import { PageHeader } from '@/components/page-header';
+import { PageHeader } from '@/components/pageHeader';
+import { decanterLinks } from '@/data/decanter';
 
 export const metadata: Metadata = {
   title: 'Figma resources',
@@ -29,7 +30,7 @@ export default function FigmaPage() {
         <aside className="h-fit border-t-5 border-plum bg-fog-light p-24">
           <h2 className="mb-10 text-24">Open the library</h2>
           <p className="text-16 leading-normal text-black-70">The Figma file may require Stanford access or a manual handoff from the Decanter team.</p>
-          <a className="mt-8 inline-flex items-center gap-8 bg-plum px-18 py-11 font-bold text-white no-underline hocus:bg-black hocus:text-white hocus:underline" href="https://www.figma.com/file/HoInlUbZRxyN3ikCJ0K03V/Decanter-v7.0?node-id=0%3A1" rel="noreferrer" target="_blank">
+          <a className="mt-8 inline-flex items-center gap-8 bg-plum px-18 py-11 font-bold text-white no-underline hocus:bg-black hocus:text-white hocus:underline" href={decanterLinks.figma} rel="noreferrer" target="_blank">
             Open Decanter in Figma <ExternalIcon className="size-17" />
           </a>
         </aside>

@@ -35,6 +35,12 @@ export const docsNavigation: NavigationGroup[] = [
         keywords: ['npm', 'nextjs', 'postcss', 'setup'],
       },
       {
+        title: 'CSS entry points',
+        href: '/docs/entry-points',
+        description: 'Choose the full, minimal, forms, colors, or source-level Decanter CSS entry point.',
+        keywords: ['import', 'minimal', 'forms', 'colors', 'source', 'composition'],
+      },
+      {
         title: 'Tailwind overrides',
         href: '/docs/tailwind-overrides',
         description: 'The core Tailwind defaults that Decanter changes or extends.',

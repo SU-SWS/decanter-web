@@ -8,7 +8,7 @@ import {
   useRef,
   useState,
 } from 'react';
-import { CopyButton } from '@/components/docs/copy-button';
+import { CopyButton } from '@/components/docs/copyButton';
 
 export type CodeTabMetadata = {
   code: string;

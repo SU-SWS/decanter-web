@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { PageHeader } from '@/components/page-header';
+import { PageHeader } from '@/components/pageHeader';
 
 export default function NotFound() {
   return (

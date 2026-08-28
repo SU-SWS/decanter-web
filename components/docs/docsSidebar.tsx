@@ -6,23 +6,26 @@ import { docsNavigation } from '@/data/navigation';
 
 function NavigationList() {
   const pathname = usePathname();
+  const currentPath = pathname.length > 1 ? pathname.replace(/\/+$/, '') : pathname;
 
   return (
     <div className="space-y-24">
       {docsNavigation.map((group) => (
         <section key={group.title}>
-          <h2 className="mb-8 text-14 font-bold uppercase tracking-widest text-cardinal-red">{group.title}</h2>
+          <p className="mb-8 text-14 font-bold uppercase tracking-widest text-cardinal-red">{group.title}</p>
           <ul className="m-0 list-unstyled p-0">
             {group.items.map((item) => {
-              const isCurrent = pathname === item.href;
+              const itemPath = item.href.length > 1 ? item.href.replace(/\/+$/, '') : item.href;
+              const isCurrent = currentPath === itemPath;
               return (
                 <li className="m-0" key={item.href}>
                   <Link
                     aria-current={isCurrent ? 'page' : undefined}
-                    className={`block border-l-3 px-12 py-7 text-15 no-underline ${isCurrent ? 'border-cardinal-red bg-cardinal-red/5 font-bold text-cardinal-red-dark' : 'border-transparent font-normal text-black-80 hocus:border-black-30 hocus:bg-fog-light hocus:text-black hocus:underline'}`}
+                    className={`flex items-center justify-between gap-8 border-l-4 px-12 py-7 text-15 no-underline ${isCurrent ? 'border-cardinal-red bg-cardinal-red/8 font-bold text-cardinal-red-dark' : 'border-transparent font-normal text-black-80 hocus:border-black-30 hocus:bg-fog-light hocus:text-black hocus:underline'}`}
                     href={item.href}
                   >
-                    {item.title}
+                    <span>{item.title}</span>
+                    {isCurrent ? <span aria-hidden="true" className="size-7 shrink-0 rounded-full bg-cardinal-red" /> : null}
                   </Link>
                 </li>
               );

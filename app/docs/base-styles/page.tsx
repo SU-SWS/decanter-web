@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Callout } from '@/components/docs/callout';
-import { CodeBlock } from '@/components/docs/code-block';
-import { DocPage } from '@/components/docs/doc-page';
+import { CodeBlock } from '@/components/docs/codeBlock';
+import { DocPage } from '@/components/docs/docPage';
 
 export const metadata: Metadata = {
   title: 'Base styles',

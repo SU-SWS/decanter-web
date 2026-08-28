@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { PageHeader } from '@/components/page-header';
+import { PageHeader } from '@/components/pageHeader';
 
 export const metadata: Metadata = {
   title: 'Type, grids, and color',

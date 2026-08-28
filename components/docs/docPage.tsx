@@ -1,7 +1,4 @@
-export type PageHeading = {
-  id: string;
-  title: string;
-};
+import { OnThisPageNav, type PageHeading } from '@/components/docs/onThisPageNav';
 
 type DocPageProps = {
   children: React.ReactNode;
@@ -36,18 +33,7 @@ export function DocPage({ children, description, eyebrow, headings = [], kind = 
         </article>
         {headings.length > 0 ? (
           <aside className="hidden xl:block">
-            <nav aria-label="On this page" className="sticky top-24 py-40">
-              <p className="mb-10 text-12 font-bold uppercase tracking-[0.12em] text-black-60">On this page</p>
-              <ul className="m-0 list-unstyled border-l border-black-20 p-0">
-                {headings.map((heading) => (
-                  <li className="m-0" key={heading.id}>
-                    <a className="block border-l-2 border-transparent px-14 py-6 text-14 font-normal leading-snug text-black-70 no-underline hocus:border-cardinal-red hocus:text-cardinal-red hocus:underline" href={`#${heading.id}`}>
-                      {heading.title}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+            <OnThisPageNav headings={headings} />
           </aside>
         ) : null}
       </div>

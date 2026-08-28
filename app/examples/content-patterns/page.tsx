@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import { ComponentExample } from '@/components/docs/component-example';
-import { PageHeader } from '@/components/page-header';
+import { ComponentExample } from '@/components/docs/componentExample';
+import { PageHeader } from '@/components/pageHeader';
 
 export const metadata: Metadata = {
   title: 'Content pattern examples',

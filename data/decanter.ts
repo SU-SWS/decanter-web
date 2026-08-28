@@ -1,3 +1,8 @@
+export const decanterLinks = {
+  figma: 'https://www.figma.com/file/HoInlUbZRxyN3ikCJ0K03V/Decanter-v7.0?node-id=0%3A1',
+  github: 'https://github.com/SU-SWS/decanter',
+} as const;
+
 export const breakpoints = [
   { name: 'sm', decanter: '576px', tailwind: '640px' },
   { name: 'md', decanter: '768px', tailwind: '768px' },
