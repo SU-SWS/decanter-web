@@ -39,4 +39,12 @@ export const faqItems = [
     question: 'How do I get help or contribute?',
     answer: 'Open an issue or pull request in the Decanter GitHub repository. Stanford community members can also join the #decanter Slack channel to ask questions and share projects.',
   },
+  {
+    question: 'Which browsers does Decanter support?',
+    answer: 'Decanter supports many browser versions and is configurable by you through Browserslist. We recommend the Browserslist "default" preset, which covers the last 2 versions of all major browsers with good global coverage.',
+  },
+  {
+    question: 'How long are older Decanter versions supported?',
+    answer: 'Version 7 released on June 26, 2023. As a Long Term Support (LTS) release, it will continue to be supported for one full year after the version 8 release. Version 6 and older are obsolete and unsupported.',
+  },
 ] as const;
