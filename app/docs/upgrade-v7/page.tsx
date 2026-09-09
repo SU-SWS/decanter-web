@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { Callout } from '@/components/docs/callout';
 import { CodeBlock } from '@/components/docs/codeBlock';
 import { DocPage } from '@/components/docs/docPage';
@@ -83,6 +84,9 @@ module.exports = {
           <li><code>credits</code> was removed because small italic text is not recommended for accessibility.</li>
           <li>The aspect-ratio plugin and children variants were replaced by Tailwind core features.</li>
         </ul>
+        <Callout title="Audit font loading during migration">
+          <p>Version 8 references Source Sans 3, Source Serif 4, and Stanford by family name, but Decanter still leaves file loading to the host project. Add or update the optional font-loading snippets in <Link href="/docs/installation#font-loading">Installation</Link> so migrated pages do not silently fall back to browser fonts.</p>
+        </Callout>
       </section>
     </DocPage>
   );

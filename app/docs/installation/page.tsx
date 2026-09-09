@@ -19,6 +19,7 @@ export default function InstallationPage() {
         { id: 'install-packages', title: 'Install packages' },
         { id: 'configure-postcss', title: 'Configure PostCSS' },
         { id: 'import-decanter', title: 'Import Decanter' },
+        { id: 'font-loading', title: 'Font loading' },
         { id: 'entry-points', title: 'Choose an entry point' },
         { id: 'static-export', title: 'Static export' },
       ]}
@@ -66,6 +67,37 @@ export default config;`}
 @import 'decanter/forms';`} label="app/globals.css" language="css" />
         <Callout title="Do not import Tailwind twice" variant="important">
           <p>The <code>decanter</code> and <code>decanter/minimal</code> entries already import <code>tailwindcss</code>. Adding a separate Tailwind import duplicates Preflight and can produce conflicting base styles.</p>
+        </Callout>
+      </section>
+
+      <section id="font-loading">
+        <h2>Font loading</h2>
+        <p>Decanter defines font-family stacks but does not bundle or download font files. Load only the families your project uses: Source Sans 3 for the default interface text, Source Serif 4 for serif/editorial treatments, and the Stanford ligature font only when using <code>font-stanford</code> or the <Link href="/docs/components/logo">Stanford logo component</Link>.</p>
+        <p>For a simple Next.js setup, add the Google Fonts stylesheet once in your root layout.</p>
+        <CodeBlock
+          code={`<link href="https://fonts.googleapis.com" rel="preconnect" />
+<link crossOrigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+  rel="stylesheet"
+/>`}
+          label="app/layout.tsx"
+          language="tsx"
+        />
+        <p>If the site displays the Stanford wordmark, declare the Stanford font family once. Self-host the file in production when possible; the CDN URL below is the canonical source for the font file.</p>
+        <CodeBlock
+          code={`@font-face {
+  font-family: Stanford;
+  src: url('https://www-media.stanford.edu/assets/fonts/stanford.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+}`}
+          label="app/globals.css"
+          language="css"
+        />
+        <Callout title="Fonts are optional">
+          <p>Missing font files do not break Decanter utilities; each stack falls back to the next available family. Loading the matching fonts improves brand fidelity and prevents the logo from falling back to a generic serif face.</p>
         </Callout>
       </section>
 

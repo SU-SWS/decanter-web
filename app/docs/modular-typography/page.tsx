@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { Callout } from '@/components/docs/callout';
 import { ComponentExample } from '@/components/docs/componentExample';
 import { DocPage } from '@/components/docs/docPage';
@@ -28,6 +29,9 @@ export default function ModularTypographyPage() {
         <p>Use <code>type-0</code> through <code>type-10</code> when text should scale in relation to its container. The steps are well suited to headings, card titles, editorial displays, and component-level type hierarchies.</p>
         <Callout title="Em-based scale">
           <p>Because the utilities use em units, a <code>basefont-*</code> class on a parent changes the whole hierarchy proportionally.</p>
+        </Callout>
+        <Callout title="Load typefaces before judging the scale">
+          <p>The <code>type-*</code> utilities control size, line-height, and tracking; they do not load Source Sans 3 or Source Serif 4. Add the optional font-loading snippets from <Link href="/docs/installation#font-loading">Installation</Link> before final visual review.</p>
         </Callout>
       </section>
 

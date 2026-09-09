@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { Callout } from '@/components/docs/callout';
 import { ComponentExample } from '@/components/docs/componentExample';
 import { DocPage } from '@/components/docs/docPage';
@@ -28,6 +29,9 @@ export default function FluidTypographyPage() {
         <p>Use <code>fluid-type-*</code> for hero banners, feature headings, and wide horizontal components where breakpoint jumps feel abrupt. The minimum and maximum sizes align with Decanter’s responsive type system.</p>
         <Callout title="Use higher steps selectively" variant="important">
           <p>Steps 7 through 10 become extremely large at wide viewports. Reserve them for short display text and test wrapping at browser zoom levels.</p>
+        </Callout>
+        <Callout title="Fluid sizing still needs loaded fonts">
+          <p>The <code>fluid-type-*</code> classes only define viewport-clamped sizes. Load Source Sans 3, Source Serif 4, or any project-specific display face separately using the <Link href="/docs/installation#font-loading">Installation font-loading guidance</Link>.</p>
         </Callout>
       </section>
 
