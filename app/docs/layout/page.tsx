@@ -15,14 +15,22 @@ export default function LayoutPage() {
       description="Stanford screen margins, wide-screen caps, page-level grid gaps, and breakpoints tuned for Decanter layouts."
       eyebrow="Foundations"
       headings={[
+        { id: 'breakpoints', title: 'Breakpoints' },
         { id: 'screen-margins', title: 'Screen margins' },
         { id: 'grid-gaps', title: 'Grid gaps' },
-        { id: 'breakpoints', title: 'Breakpoints' },
         { id: 'core-layout', title: 'Core layout utilities' },
       ]}
       kind="Tailwind extended"
       title="Layout and breakpoints"
     >
+      <section id="breakpoints">
+        <h2>Breakpoints</h2>
+        <div className="table-scroll"><table><thead><tr><th>Prefix</th><th>Minimum width</th><th>Tailwind default</th></tr></thead><tbody>
+          {breakpoints.map((item) => <tr key={item.name}><td><code>{item.name}:</code></td><td>{item.decanter}</td><td>{item.tailwind}</td></tr>)}
+        </tbody></table></div>
+        <p>All normal Tailwind forms work with these screens, including <code>max-lg:hidden</code> and responsive arbitrary utilities.</p>
+      </section>
+
       <section id="screen-margins">
         <h2>Screen margins</h2>
         <p>These tokens drive the <Link href="/docs/components/centered-container">centered container component</Link> and can also be used in custom page-level layout rules.</p>
@@ -55,14 +63,6 @@ export default function LayoutPage() {
             {['First', 'Second', 'Third'].map((label) => <div className="bg-plum p-18 text-center font-semibold text-white" key={label}>{label}</div>)}
           </div>
         </ComponentExample>
-      </section>
-
-      <section id="breakpoints">
-        <h2>Breakpoints</h2>
-        <div className="table-scroll"><table><thead><tr><th>Prefix</th><th>Minimum width</th><th>Tailwind default</th></tr></thead><tbody>
-          {breakpoints.map((item) => <tr key={item.name}><td><code>{item.name}:</code></td><td>{item.decanter}</td><td>{item.tailwind}</td></tr>)}
-        </tbody></table></div>
-        <p>All normal Tailwind forms work with these screens, including <code>max-lg:hidden</code> and responsive arbitrary utilities.</p>
       </section>
 
       <section id="core-layout">
