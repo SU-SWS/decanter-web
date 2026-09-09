@@ -65,7 +65,7 @@ export default function TailwindOverridesPage() {
           <li>Body copy is responsive: 18px, 19px at <code>md</code>, and 21px at <code>2xl</code>.</li>
         </ul>
         <Callout title="Font stacks are not font files">
-          <p>These defaults define family names and fallbacks only. Load Source Sans 3, Source Serif 4, and the Stanford ligature font separately when those families are used; the <Link href="/docs/installation#font-loading">Installation font-loading section</Link> shows the required snippets.</p>
+          <p>These defaults define family names and fallbacks only. Load Source Sans 3, Source Serif 4, and the Stanford ligature font separately when those families are used; the <Link href="/docs/fonts">Fonts guide</Link> shows the required snippets.</p>
         </Callout>
         <p><Link href="/docs/typography">See the complete typography reference.</Link></p>
       </section>

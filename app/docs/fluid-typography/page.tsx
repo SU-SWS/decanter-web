@@ -31,7 +31,7 @@ export default function FluidTypographyPage() {
           <p>Steps 7 through 10 become extremely large at wide viewports. Reserve them for short display text and test wrapping at browser zoom levels.</p>
         </Callout>
         <Callout title="Fluid sizing still needs loaded fonts">
-          <p>The <code>fluid-type-*</code> classes only define viewport-clamped sizes. Load Source Sans 3, Source Serif 4, or any project-specific display face separately using the <Link href="/docs/installation#font-loading">Installation font-loading guidance</Link>.</p>
+          <p>The <code>fluid-type-*</code> classes only define viewport-clamped sizes. Load Source Sans 3, Source Serif 4, or any project-specific display face separately using the <Link href="/docs/fonts">Fonts guide</Link>.</p>
         </Callout>
       </section>
 

@@ -21,7 +21,7 @@ export default function IdentityGuidancePage() {
             <li>Responsive page margins, typography, spacing, and basic identity components.</li>
             <li>A shared implementation vocabulary for Stanford digital products.</li>
           </ul>
-          <p>Decanter defines those font stacks in CSS, but developers still need to load the font files. Include <Link href="/docs/installation#font-loading">font-loading requirements</Link> in implementation handoff when a design relies on Source Sans 3, Source Serif 4, or the Stanford wordmark ligature font.</p>
+          <p>Decanter defines those font stacks in CSS, but developers still need to load the font files. Include <Link href="/docs/fonts">font-loading requirements</Link> in implementation handoff when a design relies on Source Sans 3, Source Serif 4, or the Stanford wordmark ligature font.</p>
           <h2>What it does not replace</h2>
           <p>Decanter does not grant trademark permission, determine organization naming, approve logo lockups, or replace the identity website’s guidance. Product teams remain responsible for reviewing current policy and securing any required approvals.</p>
           <h2>Identity elements</h2>

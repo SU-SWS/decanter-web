@@ -22,7 +22,7 @@ export default function IdentityBarExamplePage() {
 </div>`}>
           <div className="overflow-hidden border border-black-20"><IdentityBar /></div>
         </ComponentExample>
-        <p className="max-w-prose-wide">Load the <Link href="/docs/installation#font-loading">Stanford wordmark font</Link>, retain the Stanford destination, and keep the accessible external-link context supplied by the shared component.</p>
+        <p className="max-w-prose-wide">Load the <Link href="/docs/fonts#stanford-wordmark">Stanford wordmark font</Link>, retain the Stanford destination, and keep the accessible external-link context supplied by the shared component.</p>
       </article>
     </main>
   );

@@ -35,7 +35,7 @@ export default function BaseStylesPage() {
           <li>List markers, item rhythm, tables, captions, and code sizing.</li>
         </ul>
         <Callout title="Load the font files separately">
-          <p>The full entry sets Decanter’s default font stacks, but it does not download Source Sans 3, Source Serif 4, or the Stanford wordmark font. Add the optional font-loading snippets from <Link href="/docs/installation#font-loading">Installation</Link> when the site needs Stanford typography fidelity.</p>
+          <p>The full entry sets Decanter’s default font stacks, but it does not download Source Sans 3, Source Serif 4, or the Stanford wordmark font. Add the optional font-loading snippets from <Link href="/docs/fonts">Fonts</Link> when the site needs Stanford typography fidelity.</p>
         </Callout>
       </section>
 

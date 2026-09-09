@@ -64,7 +64,7 @@ export default function LogoComponentPage() {
         <h2>Requirements</h2>
         <Callout title="Load the Stanford ligature font">
           <p>Decanter defines the <code>font-stanford</code> stack and applies the wordmark’s ligature settings, but it does not bundle the Stanford font file. Load the approved Stanford webfont before using this component so the <code>Stanford University</code> text renders as the official ligature wordmark.</p>
-          <p>See <Link href="/docs/installation#font-loading">Font loading</Link> for the <code>@font-face</code> snippet, and keep the wordmark linked to Stanford’s main website in global identity treatments.</p>
+          <p>See <Link href="/docs/fonts#stanford-wordmark">Fonts</Link> for the <code>@font-face</code> snippet, and keep the wordmark linked to Stanford’s main website in global identity treatments.</p>
         </Callout>
       </section>
     </DocPage>

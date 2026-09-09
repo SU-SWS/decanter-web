@@ -85,7 +85,7 @@ module.exports = {
           <li>The aspect-ratio plugin and children variants were replaced by Tailwind core features.</li>
         </ul>
         <Callout title="Audit font loading during migration">
-          <p>Version 8 references Source Sans 3, Source Serif 4, and Stanford by family name, but Decanter still leaves file loading to the host project. Add or update the optional font-loading snippets in <Link href="/docs/installation#font-loading">Installation</Link> so migrated pages do not silently fall back to browser fonts.</p>
+          <p>Version 8 references Source Sans 3, Source Serif 4, and Stanford by family name, but Decanter still leaves file loading to the host project. Add or update the optional font-loading snippets in <Link href="/docs/fonts">Fonts</Link> so migrated pages do not silently fall back to browser fonts.</p>
         </Callout>
       </section>
     </DocPage>

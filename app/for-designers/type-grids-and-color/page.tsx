@@ -16,7 +16,7 @@ export default function TypeGridColorPage() {
           <section className="border-t-5 border-plum bg-fog-light p-24">
             <p className="mb-8 font-serif type-4 leading-display">Type</p>
             <p className="text-17 leading-normal text-black-70">Source Sans 3 supports interfaces and body content. Source Serif 4 creates editorial contrast. Responsive modular and fluid scales provide intentional hierarchy.</p>
-            <p className="text-17 leading-normal text-black-70">Developer handoff should include the optional <Link href="/docs/installation#font-loading">font-loading setup</Link> so these families render in the built site, not only in design files.</p>
+            <p className="text-17 leading-normal text-black-70">Developer handoff should include the optional <Link href="/docs/fonts">font-loading setup</Link> so these families render in the built site, not only in design files.</p>
             <Link className="font-bold text-plum-dark" href="/docs/typography">Typography documentation →</Link>
           </section>
           <section className="border-t-5 border-digital-blue bg-fog-light p-24">

@@ -99,6 +99,7 @@ export default config;`}
         <Callout title="Fonts are optional">
           <p>Missing font files do not break Decanter utilities; each stack falls back to the next available family. Loading the matching fonts improves brand fidelity and prevents the logo from falling back to a generic serif face.</p>
         </Callout>
+        <p>For framework tooling, self-hosting, and the complete family/weight table, see the <Link href="/docs/fonts">Fonts guide</Link>.</p>
       </section>
 
       <section id="entry-points">

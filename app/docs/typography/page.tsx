@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Callout } from '@/components/docs/callout';
-import { CodeBlock } from '@/components/docs/codeBlock';
 import { ComponentExample } from '@/components/docs/componentExample';
 import { DocPage } from '@/components/docs/docPage';
 
@@ -28,7 +27,6 @@ export default function TypographyPage() {
       eyebrow="Foundations"
       headings={[
         { id: 'font-families', title: 'Font families' },
-        { id: 'loading-fonts', title: 'Loading fonts' },
         { id: 'body-and-headings', title: 'Body and headings' },
         { id: 'base-fonts', title: 'Base font containers' },
         { id: 'text-styles', title: 'Text styles' },
@@ -55,69 +53,8 @@ export default function TypographyPage() {
           </div>
         </ComponentExample>
         <Callout title="Fonts are referenced, not bundled">
-          <p>Decanter provides font-family utilities but does not download font files. This documentation site overrides Tailwind’s <code>font-mono</code> token with Roboto Mono. Load only the families and weights the project actually uses.</p>
+          <p>Decanter provides font-family utilities but does not download font files. This documentation site overrides Tailwind’s <code>font-mono</code> token with Roboto Mono. <Link href="/docs/fonts">Load only the families and weights the project actually uses.</Link></p>
         </Callout>
-      </section>
-
-      <section id="loading-fonts">
-        <h2>Loading fonts</h2>
-        <p>For Source Sans 3, Source Serif 4, and this site’s Roboto Mono code face, use framework font tooling, self-hosted files, or an optimized stylesheet link. Decanter uses weights 400, 600, and 700 plus italics for its core text families.</p>
-        <p>In a Next.js App Router project, place the stylesheet link once in <code>app/layout.tsx</code>.</p>
-        <CodeBlock code={`<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
-/>`} label="app/layout.tsx" language="tsx" />
-        <p>If you use Next.js <code>next/font</code>, expose each family as a CSS variable in the root layout and map Decanter’s theme tokens to those variables in your global stylesheet.</p>
-        <CodeBlock
-          code={`import { Source_Sans_3, Source_Serif_4 } from 'next/font/google';
-
-const sourceSans = Source_Sans_3({
-  display: 'swap',
-  subsets: ['latin'],
-  variable: '--font-source-sans-3',
-});
-
-const sourceSerif = Source_Serif_4({
-  display: 'swap',
-  subsets: ['latin'],
-  variable: '--font-source-serif-4',
-});
-
-const fontVariables = [sourceSans.variable, sourceSerif.variable].join(' ');
-
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return (
-    <html className={fontVariables} lang="en">
-      <body>{children}</body>
-    </html>
-  );
-}`}
-          label="app/layout.tsx"
-          language="tsx"
-        />
-        <CodeBlock
-          code={`@theme inline {
-  --font-sans: var(--font-source-sans-3);
-  --font-serif: var(--font-source-serif-4);
-}`}
-          label="app/globals.css"
-          language="css"
-        />
-        <p>The Stanford ligature font is separate from the Google text families. Add it only when the site uses the <code>logo</code> component or <code>font-stanford</code>, and self-host the file in production when possible.</p>
-        <CodeBlock
-          code={`@font-face {
-  font-family: Stanford;
-  src: url('https://www-media.stanford.edu/assets/fonts/stanford.woff2') format('woff2');
-  font-display: swap;
-  font-style: normal;
-  font-weight: 300;
-}`}
-          label="app/globals.css"
-          language="css"
-        />
-        <p><Link href="/docs/installation#font-loading">Installation includes the shorter project setup version</Link> of this guidance.</p>
       </section>
 
       <section id="body-and-headings">

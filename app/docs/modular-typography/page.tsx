@@ -31,7 +31,7 @@ export default function ModularTypographyPage() {
           <p>Because the utilities use em units, a <code>basefont-*</code> class on a parent changes the whole hierarchy proportionally.</p>
         </Callout>
         <Callout title="Load typefaces before judging the scale">
-          <p>The <code>type-*</code> utilities control size, line-height, and tracking; they do not load Source Sans 3 or Source Serif 4. Add the optional font-loading snippets from <Link href="/docs/installation#font-loading">Installation</Link> before final visual review.</p>
+          <p>The <code>type-*</code> utilities control size, line-height, and tracking; they do not load Source Sans 3 or Source Serif 4. Add the optional font-loading snippets from <Link href="/docs/fonts">Fonts</Link> before final visual review.</p>
         </Callout>
       </section>
 
