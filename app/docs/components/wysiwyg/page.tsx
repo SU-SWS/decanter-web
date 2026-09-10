@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { Callout } from '@/components/docs/callout';
 import { ComponentExample } from '@/components/docs/componentExample';
 import { DocPage } from '@/components/docs/docPage';
@@ -87,6 +88,9 @@ export default function WysiwygComponentPage() {
           <li>Trimmed first and last child margins.</li>
           <li>Linked headings underline on hover or focus.</li>
         </ul>
+        <Callout title="Use the same font-loading setup as Typography">
+          <p>The WYSIWYG component inherits the site’s active Decanter font stacks. Load Source Sans 3 and Source Serif 4 with the <Link href="/docs/fonts">Fonts guide</Link> before evaluating rich-text rhythm and line breaks.</p>
+        </Callout>
       </section>
 
       <section id="content-safety">

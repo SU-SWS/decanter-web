@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { Callout } from '@/components/docs/callout';
 import { CodeBlock } from '@/components/docs/codeBlock';
 import { DocPage } from '@/components/docs/docPage';
@@ -33,6 +34,9 @@ export default function BaseStylesPage() {
           <li>Accessible link color, weight, underline, hover, and focus treatment.</li>
           <li>List markers, item rhythm, tables, captions, and code sizing.</li>
         </ul>
+        <Callout title="Load the font files separately">
+          <p>The full entry sets Decanter’s default font stacks, but it does not download Source Sans 3, Source Serif 4, or the Stanford wordmark font. Add the optional font-loading snippets from <Link href="/docs/fonts">Fonts</Link> when the site needs Stanford typography fidelity.</p>
+        </Callout>
       </section>
 
       <section id="minimal-entry">

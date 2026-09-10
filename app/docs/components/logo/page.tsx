@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { Callout } from '@/components/docs/callout';
 import { ComponentExample } from '@/components/docs/componentExample';
 import { DocPage } from '@/components/docs/docPage';
@@ -61,8 +62,9 @@ export default function LogoComponentPage() {
 
       <section id="requirements">
         <h2>Requirements</h2>
-        <Callout title="Load the Stanford font">
-          <p>Decanter defines the <code>font-stanford</code> stack but does not bundle its font file. Load the approved Stanford webfont before using this component, and keep the wordmark linked to Stanford’s main website in global identity treatments.</p>
+        <Callout title="Load the Stanford ligature font">
+          <p>Decanter defines the <code>font-stanford</code> stack and applies the wordmark’s ligature settings, but it does not bundle the Stanford font file. Load the approved Stanford webfont before using this component so the <code>Stanford University</code> text renders as the official ligature wordmark.</p>
+          <p>See <Link href="/docs/fonts#stanford-wordmark">Fonts</Link> for the <code>@font-face</code> snippet, and keep the wordmark linked to Stanford’s main website in global identity treatments.</p>
         </Callout>
       </section>
     </DocPage>

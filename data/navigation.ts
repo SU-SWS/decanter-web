@@ -64,6 +64,12 @@ export const docsNavigation: NavigationGroup[] = [
         keywords: ['cardinal', 'palette', 'contrast'],
       },
       {
+        title: 'Fonts',
+        href: '/docs/fonts',
+        description: 'Load Source Sans 3, Source Serif 4, and the Stanford wordmark font.',
+        keywords: ['font loading', 'source sans', 'source serif', 'stanford font', 'next font'],
+      },
+      {
         title: 'Typography',
         href: '/docs/typography',
         description: 'Font families, base sizes, text styles, and line heights.',

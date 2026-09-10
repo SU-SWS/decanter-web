@@ -96,6 +96,7 @@ export default function EntryPointsPage() {
           label="app/globals.css"
           language="css"
         />
+        <p>Importing <code>font-family.css</code> exposes Decanter’s font-family tokens, but it does not load any font files. Add Source Sans 3, Source Serif 4, and the Stanford wordmark font separately with the <Link href="/docs/fonts">font-loading snippets</Link> when those stacks are used.</p>
         <Callout title="Advanced and dependency-sensitive" variant="important">
           <p>Individual source files do not resolve their related theme values, base conventions, or component dependencies for you. Prefer a documented preset or the color-only entry unless the project is prepared to audit those dependencies whenever Decanter is updated.</p>
         </Callout>
