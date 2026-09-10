@@ -16,19 +16,19 @@ export default function TypeGridColorPage() {
           <section className="border-t-5 border-plum bg-fog-light p-24">
             <p className="mb-8 font-serif type-4 leading-display">Type</p>
             <p className="text-17 leading-normal text-black-70">Source Sans 3 supports interfaces and body content. Source Serif 4 creates editorial contrast. Responsive modular and fluid scales provide intentional hierarchy.</p>
-            <Link className="font-bold text-plum-dark" href="/docs/typography">Typography documentation →</Link>
+            <Link className="font-bold text-plum-dark hocus:text-plum hocus:no-underline" href="/docs/typography">Typography documentation →</Link>
           </section>
           <section className="border-t-5 border-digital-blue bg-fog-light p-24">
             <div aria-hidden="true" className="mb-18 grid grid-cols-3 gap-8"><span className="h-40 bg-digital-blue-light" /><span className="h-40 bg-digital-blue" /><span className="h-40 bg-digital-blue-dark" /></div>
             <h2 className="mb-10 text-26">Grids</h2>
             <p className="text-17 leading-normal text-black-70">Use the centered container, screen margins, and responsive gap systems to align layouts. Flexbox and CSS Grid behavior comes from Tailwind core.</p>
-            <Link className="font-bold text-digital-blue-dark" href="/docs/layout">Layout documentation →</Link>
+            <Link className="font-bold text-digital-blue-dark hocus:text-digital-blue hocus:no-underline" href="/docs/layout">Layout documentation →</Link>
           </section>
           <section className="border-t-5 border-cardinal-red bg-fog-light p-24">
             <div aria-hidden="true" className="mb-18 flex"><span className="h-40 grow bg-cardinal-red" /><span className="h-40 grow bg-plum" /><span className="h-40 grow bg-palo-alto" /><span className="h-40 grow bg-illuminating" /></div>
             <h2 className="mb-10 text-26">Color</h2>
             <p className="text-17 leading-normal text-black-70">Start with the Stanford identity palette, apply color with purpose, and verify every foreground/background pair for WCAG 2.1 contrast.</p>
-            <Link className="font-bold text-cardinal-red" href="/docs/colors">Color documentation →</Link>
+            <Link className="font-bold text-cardinal-red hocus:text-plum hocus:no-underline" href="/docs/colors">Color documentation →</Link>
           </section>
         </div>
         <section className="mt-48 max-w-prose-wide">
