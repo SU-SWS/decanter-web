@@ -1,29 +1,43 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": false,
     "skipLibCheck": true,
-    "strict": false,
-    "forceConsistentCasingInFileNames": true,
+    "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "baseUrl": ".",
     "paths": {
-      "contentlayer/generated": ["./.contentlayer/generated"]
+      "@/*": [
+        "./*"
+      ]
     }
   },
   "include": [
     "next-env.d.ts",
+    ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".contentlayer/generated"
-, "components/hooks/useActivePath.jsx"  ],
-  "exclude": ["node_modules"]
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "out"
+  ]
 }

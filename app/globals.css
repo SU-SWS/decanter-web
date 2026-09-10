@@ -1,0 +1,269 @@
+@import 'decanter';
+@import 'decanter/forms';
+
+@source '../app';
+@source '../components';
+@source '../data';
+
+@font-face {
+  font-family: Stanford;
+  src: url('https://www-media.stanford.edu/assets/fonts/stanford.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@theme {
+  --font-mono: "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+@layer base {
+  html {
+    scroll-padding-top: 2rem;
+  }
+
+  body {
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-digital-blue-vivid);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    color: var(--color-white);
+    background: var(--color-plum);
+  }
+
+  [id] {
+    scroll-margin-top: 2rem;
+  }
+}
+
+@layer components {
+  .hero-surface {
+    background:
+      radial-gradient(circle at 82% 12%, rgb(115 70 117 / 42%), transparent 34rem),
+      linear-gradient(118deg, var(--color-black-true) 0%, var(--color-black) 45%, var(--color-plum-dark) 100%);
+  }
+
+  .homepage-grid {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+  }
+
+  .homepage-grid::before {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    content: '';
+    background-image:
+      linear-gradient(rgb(255 255 255 / 5%) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(255 255 255 / 5%) 1px, transparent 1px);
+    background-size: 4rem 4rem;
+    mask-image: linear-gradient(to bottom, black, transparent 86%);
+  }
+
+  .site-header {
+    border-bottom: 1px solid rgb(255 255 255 / 14%);
+  }
+
+  .site-mobile-menu > summary::-webkit-details-marker,
+  .docs-mobile-nav > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .search-dialog::backdrop {
+    background: rgb(46 45 41 / 78%);
+  }
+
+  .doc-prose {
+    max-width: 92rem;
+  }
+
+  .doc-prose > h2,
+  .doc-prose > section > h2 {
+    margin-top: 5rem;
+    margin-bottom: 1.6rem;
+    padding-top: 1rem;
+    font-size: clamp(2.8rem, 2.2vw, 4rem);
+    letter-spacing: -0.02em;
+  }
+
+  .doc-prose > h3,
+  .doc-prose > section > h3 {
+    margin-top: 3.6rem;
+    margin-bottom: 1.2rem;
+    font-size: clamp(2.2rem, 1.6vw, 2.8rem);
+  }
+
+  .doc-prose p,
+  .doc-prose li {
+    max-width: 75ch;
+  }
+
+  .doc-prose code:not(pre code) {
+    border: 1px solid var(--color-black-20);
+    border-radius: 0.3rem;
+    padding: 0.15em 0.35em;
+    color: var(--color-plum-dark);
+    background: var(--color-fog-light);
+    font-weight: 600;
+  }
+
+  .doc-prose .table-scroll {
+    max-width: 100%;
+    margin-block: 2.4rem;
+    overflow-x: auto;
+    border: 1px solid var(--color-black-20);
+  }
+
+  .doc-prose .table-scroll table {
+    margin: 0;
+  }
+
+  .doc-prose .table-scroll thead {
+    background: var(--color-fog-light);
+  }
+
+  .doc-prose .table-scroll tr:first-child {
+    border-top: 0;
+  }
+
+  .callout-content > :last-child {
+    margin-bottom: 0;
+  }
+
+  .preview-surface {
+    background-color: var(--color-fog-light);
+  }
+
+  /* The docs shell is itself a .cc, so restore root-container gutters only
+     inside these two isolated component previews. */
+  .centered-container-alignment-preview > div > section > .centered-container,
+  .centered-container-nesting-preview > .centered-container {
+    padding-right: var(--screen-margin-xs);
+    padding-left: var(--screen-margin-xs);
+  }
+
+  .home-code {
+    box-shadow: 0 2.4rem 7rem rgb(0 0 0 / 28%);
+  }
+
+  .syntax-comment {
+    color: #94a3b8;
+    font-style: italic;
+  }
+
+  .syntax-keyword {
+    color: #c4b5fd;
+  }
+
+  .syntax-string {
+    color: #86efac;
+  }
+
+  .syntax-tag {
+    color: #f9a8d4;
+  }
+
+  .syntax-attribute {
+    color: #fde047;
+  }
+
+  .syntax-number {
+    color: #fdba74;
+  }
+
+  .syntax-function {
+    color: #67e8f9;
+  }
+
+  .syntax-property {
+    color: #93c5fd;
+  }
+
+  .syntax-punctuation {
+    color: #cbd5e1;
+  }
+
+  .skiplink-preview .skiplink {
+    position: static;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 0.4em 0.8em;
+    overflow: visible;
+    border: 1px solid var(--color-cool-grey);
+    border-radius: 0.3rem;
+    white-space: normal;
+  }
+}
+
+@media (min-width: 576px) {
+  .centered-container-alignment-preview > div > section > .centered-container,
+  .centered-container-nesting-preview > .centered-container {
+    padding-right: var(--screen-margin-sm);
+    padding-left: var(--screen-margin-sm);
+  }
+}
+
+@media (min-width: 768px) {
+  .centered-container-alignment-preview > div > section > .centered-container,
+  .centered-container-nesting-preview > .centered-container {
+    padding-right: var(--screen-margin-md);
+    padding-left: var(--screen-margin-md);
+  }
+}
+
+@media (min-width: 992px) {
+  .centered-container-alignment-preview > div > section > .centered-container,
+  .centered-container-nesting-preview > .centered-container {
+    padding-right: var(--screen-margin-lg);
+    padding-left: var(--screen-margin-lg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .centered-container-alignment-preview > div > section > .centered-container,
+  .centered-container-nesting-preview > .centered-container {
+    padding-right: var(--screen-margin-xl);
+    padding-left: var(--screen-margin-xl);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  .site-header,
+  .docs-mobile-nav,
+  .search-dialog,
+  footer,
+  aside,
+  nav {
+    display: none !important;
+  }
+
+  .doc-prose {
+    max-width: none;
+  }
+}
