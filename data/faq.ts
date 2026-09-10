@@ -39,4 +39,16 @@ export const faqItems = [
     question: 'How do I get help or contribute?',
     answer: 'Open an issue or pull request in the Decanter GitHub repository. Stanford community members can also join the #decanter Slack channel to ask questions and share projects.',
   },
+  {
+    question: 'Which browsers does Decanter support?',
+    answer: 'Decanter supports many browser versions and is configurable by you through Browserslist. We recommend the Browserslist "default" preset, which covers the last 2 versions of all major browsers with good global coverage.',
+  },
+  {
+    question: 'How long are older Decanter versions supported?',
+    answer: 'Version 7 released on June 26, 2023. As a Long Term Support (LTS) release, it will continue to be supported for one full year after the version 8 release. Version 6 and older are obsolete and unsupported.',
+  },
+  {
+    question: 'What icon set does Decanter recommend?',
+    answer: 'We use Heroicons for many of our projects that use Decanter v7. Heroicons is developed by the Tailwind CSS team and we found it to pair well with the Tailwind utilities, e.g., you can use classes like text-cardinal-red or w-30 to style the icons. We also use FontAwesome in some of our projects for a larger variety of icons as well as social media/brand icons.',
+  },
 ] as const;
