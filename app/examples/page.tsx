@@ -10,9 +10,19 @@ export const metadata: Metadata = {
 
 const examples = [
   {
-    title: 'Content patterns',
-    href: '/examples/content-patterns',
-    description: 'A hero, notice, and one versatile linked-card pattern built from Decanter foundations.',
+    title: 'Editorial hero',
+    href: '/examples/editorial-hero',
+    description: 'A display hero pairing an eyebrow, large display type, and a short supporting statement.',
+  },
+  {
+    title: 'Important notice',
+    href: '/examples/important-notice',
+    description: 'A bordered callout for time-sensitive updates that doesn’t rely on color alone.',
+  },
+  {
+    title: 'Linked story card',
+    href: '/examples/linked-story-card',
+    description: 'A fully clickable card with one clear destination using the stretched-link utility.',
   },
   {
     title: 'Form elements',

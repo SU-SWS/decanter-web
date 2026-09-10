@@ -8,12 +8,12 @@
 /for-developers/how-to-extend /docs/tailwind-overrides/ 301!
 /for-developers/tailwindcss-plugins /docs/upgrade-v7/ 301!
 
-/examples/alerts /examples/content-patterns/ 301!
-/examples/cards /examples/content-patterns/ 301!
+/examples/alerts /examples/important-notice/ 301!
+/examples/cards /examples/linked-story-card/ 301!
 /examples/containers /docs/layout/ 301!
 /examples/grid-css-grid /docs/layout/ 301!
 /examples/grid-flex /docs/layout/ 301!
-/examples/heros /examples/content-patterns/ 301!
+/examples/heros /examples/editorial-hero/ 301!
 /examples/layout /docs/layout/ 301!
 /examples/logo /docs/components/logo/ 301!
 /examples/modular-typography /docs/modular-typography/ 301!

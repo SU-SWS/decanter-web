@@ -12,7 +12,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/for-designers/type-grids-and-color',
   ];
   const exampleRoutes = [
-    '/examples/content-patterns',
+    '/examples/editorial-hero',
+    '/examples/important-notice',
+    '/examples/linked-story-card',
     '/examples/form-elements',
     '/examples/identity-bar',
     '/examples/global-footer',
