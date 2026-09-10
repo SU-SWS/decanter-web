@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { ComponentExample } from '@/components/docs/componentExample';
 import { PageHeader } from '@/components/pageHeader';
 
@@ -12,6 +13,7 @@ export default function ContentPatternsPage() {
     <main id="main-content">
       <PageHeader description="Three composable examples that use Decanter’s type, spacing, color, container, and interaction systems." eyebrow="Examples" title="Content patterns" />
       <article className="cc rs-py-5">
+        <Link className="mb-24 inline-block text-18 font-bold text-cardinal-red no-underline hocus:underline" href="/examples">← Back to examples</Link>
         <section className="mb-56">
           <h2>Editorial hero</h2>
           <ComponentExample code={`<section className="bg-plum-dark text-white">

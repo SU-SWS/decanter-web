@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { ComponentExample } from '@/components/docs/componentExample';
 import { PageHeader } from '@/components/pageHeader';
 import { GlobalFooter } from '@/components/site/globalFooter';
@@ -13,6 +14,7 @@ export default function GlobalFooterExamplePage() {
     <main id="main-content">
       <PageHeader description="The common Stanford links, wordmark, location, and policy links retained by this site." eyebrow="Examples" title="Global Footer" />
       <article className="cc rs-py-5">
+        <Link className="mb-24 inline-block text-18 font-bold text-cardinal-red no-underline hocus:underline" href="/examples">← Back to examples</Link>
         <h2>Usage</h2>
         <p>The shared component below is the same Global Footer rendered at the bottom of every page.</p>
         <ComponentExample code={`<footer class="cc w-full bg-cardinal-red text-white basefont-20 rs-py-1">

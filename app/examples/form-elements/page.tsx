@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { ComponentExample } from '@/components/docs/componentExample';
 import { PageHeader } from '@/components/pageHeader';
 
@@ -40,6 +41,7 @@ export default function FormExamplePage() {
     <main id="main-content">
       <PageHeader description="A focused form using visible labels, useful instructions, grouped choices, and Decanter’s opt-in form classes." eyebrow="Examples" title="Form elements" />
       <article className="cc rs-py-5">
+        <Link className="mb-24 inline-block text-18 font-bold text-cardinal-red no-underline hocus:underline" href="/examples">← Back to examples</Link>
         <section>
           <h2>Complete form</h2>
           <p>Decanter provides the visual foundation. The application still owns submission, validation, error messaging, security, and success feedback.</p>

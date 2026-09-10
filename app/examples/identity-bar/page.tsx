@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { ComponentExample } from '@/components/docs/componentExample';
 import { PageHeader } from '@/components/pageHeader';
 import { IdentityBar } from '@/components/site/identityBar';
@@ -13,6 +14,7 @@ export default function IdentityBarExamplePage() {
     <main id="main-content">
       <PageHeader description="The Stanford wordmark treatment retained at the top of the Decanter documentation site." eyebrow="Examples" title="Identity Bar" />
       <article className="cc rs-py-5">
+        <Link className="mb-24 inline-block text-18 font-bold text-cardinal-red no-underline hocus:underline" href="/examples">← Back to examples</Link>
         <h2>Implementation</h2>
         <ComponentExample code={`<div className="bg-cardinal-red px-20 pt-5 pb-1 sm:px-30 md:px-50 lg:px-30">
   <a className="logo text-20 leading-none text-white hocus:text-white" href="https://www.stanford.edu">
