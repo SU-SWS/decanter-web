@@ -1,4 +1,4 @@
-import { DocsSidebar } from '@/components/docs/docsSidebar';
+import { DocsSidebar } from '@/components/docs/DocsSidebar';
 
 export default function DeveloperDocsLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

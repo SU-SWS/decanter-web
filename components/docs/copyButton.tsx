@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { CheckIcon, CopyIcon } from '@/components/icons';
+import { CheckIcon, CopyIcon } from '@/components/Icons';
 
 type CopyButtonProps = {
   code: string;

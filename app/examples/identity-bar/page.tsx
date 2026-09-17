@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ComponentExample } from '@/components/docs/componentExample';
-import { PageHeader } from '@/components/pageHeader';
-import { IdentityBar } from '@/components/site/identityBar';
+import { ComponentExample } from '@/components/docs/ComponentExample';
+import { PageHeader } from '@/components/PageHeader';
+import { IdentityBar } from '@/components/site/IdentityBar';
 
 export const metadata: Metadata = {
   title: 'Identity Bar example',

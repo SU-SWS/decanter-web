@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Callout } from '@/components/docs/callout';
-import { CodeBlock } from '@/components/docs/codeBlock';
-import { DocPage } from '@/components/docs/docPage';
+import { Callout } from '@/components/docs/Callout';
+import { CodeBlock } from '@/components/docs/CodeBlock';
+import { DocPage } from '@/components/docs/DocPage';
 import { breakpoints } from '@/data/decanter';
 
 export const metadata: Metadata = {

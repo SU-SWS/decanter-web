@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ComponentExample } from '@/components/docs/componentExample';
-import { PageHeader } from '@/components/pageHeader';
-import { GlobalFooter } from '@/components/site/globalFooter';
+import { ComponentExample } from '@/components/docs/ComponentExample';
+import { PageHeader } from '@/components/PageHeader';
+import { GlobalFooter } from '@/components/site/GlobalFooter';
 
 export const metadata: Metadata = {
   title: 'Global Footer example',

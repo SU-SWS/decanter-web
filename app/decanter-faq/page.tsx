@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import { ExternalIcon } from '@/components/icons';
-import { PageHeader } from '@/components/pageHeader';
+import { ExternalIcon } from '@/components/Icons';
+import { PageHeader } from '@/components/PageHeader';
 import { faqItems } from '@/data/faq';
 
 export const metadata: Metadata = {

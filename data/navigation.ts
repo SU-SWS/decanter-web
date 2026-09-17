@@ -12,7 +12,7 @@ export type NavigationGroup = {
 
 export const primaryNavigation = [
   { title: 'Developers', href: '/docs' },
-  { title: 'Designer', href: '/for-designers' },
+  { title: 'Designers', href: '/for-designers' },
   { title: 'Examples', href: '/examples' },
   { title: 'Showcase', href: '/showcase' },
   { title: 'FAQ', href: '/decanter-faq' },

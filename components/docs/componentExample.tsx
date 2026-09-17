@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { CodeBlock, type CodeTab, TabbedCodeBlock } from '@/components/docs/codeBlock';
+import { CodeBlock, type CodeTab, TabbedCodeBlock } from '@/components/docs/CodeBlock';
 
 type ComponentExampleProps = {
   children: ReactNode;

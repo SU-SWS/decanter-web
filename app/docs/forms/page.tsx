@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import { Callout } from '@/components/docs/callout';
-import { CodeBlock } from '@/components/docs/codeBlock';
-import { ComponentExample } from '@/components/docs/componentExample';
-import { DocPage } from '@/components/docs/docPage';
+import { Callout } from '@/components/docs/Callout';
+import { CodeBlock } from '@/components/docs/CodeBlock';
+import { ComponentExample } from '@/components/docs/ComponentExample';
+import { DocPage } from '@/components/docs/DocPage';
 
 export const metadata: Metadata = {
   title: 'Forms',

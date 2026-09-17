@@ -64,12 +64,12 @@ git diff --check
 
 ## Code conventions
 
-- Reusable `.tsx` component filenames use lower camelCase and generally match their primary export: `codeBlock.tsx`, `componentExample.tsx`, `copyButton.tsx`, `siteHeader.tsx`, and so on.
+- Reusable `.tsx` component filenames use PascalCase and generally match their primary export: `CodeBlock.tsx`, `ComponentExample.tsx`, `CopyButton.tsx`, `SiteHeader.tsx`, and so on.
 - Keep Next.js convention filenames unchanged, including `page.tsx`, `layout.tsx`, `not-found.tsx`, `sitemap.ts`, and `robots.ts`.
 - Route directory names remain URL-friendly kebab case.
 - Shared documentation UI lives in `components/docs/`; global site chrome lives in `components/site/`.
-- `components/docs/codeBlock.tsx` performs lightweight syntax highlighting on the server. `components/docs/codeTabs.tsx` and the copy control are small client islands; do not move the tokenizer into client JavaScript.
-- `components/docs/componentExample.tsx` owns the rendered-preview plus code presentation.
+- `components/docs/CodeBlock.tsx` performs lightweight syntax highlighting on the server. `components/docs/CodeTabs.tsx` and the copy control are small client islands; do not move the tokenizer into client JavaScript.
+- `components/docs/ComponentExample.tsx` owns the rendered-preview plus code presentation.
 - Shared external destinations for Decanter live in `data/decanter.ts`, including GitHub and Figma links.
 - Preserve unrelated working-tree changes and keep work in locally runnable batches so the site can be reviewed with `npm run dev` between batches.
 

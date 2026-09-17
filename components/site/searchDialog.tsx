@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { CloseIcon, SearchIcon } from '@/components/icons';
+import { CloseIcon, SearchIcon } from '@/components/Icons';
 import { searchEntries } from '@/data/navigation';
 
 export function SearchDialog() {

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowIcon } from '@/components/icons';
-import { PageHeader } from '@/components/pageHeader';
+import { ArrowIcon } from '@/components/Icons';
+import { PageHeader } from '@/components/PageHeader';
 
 export const metadata: Metadata = {
   title: 'Examples',

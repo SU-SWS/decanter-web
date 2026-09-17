@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ComponentExample } from '@/components/docs/componentExample';
-import { PageHeader } from '@/components/pageHeader';
+import { ComponentExample } from '@/components/docs/ComponentExample';
+import { PageHeader } from '@/components/PageHeader';
 
 export const metadata: Metadata = {
   title: 'Form example',

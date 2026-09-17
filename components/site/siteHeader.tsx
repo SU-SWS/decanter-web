@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { FigmaIcon, GitHubIcon, MenuIcon } from '@/components/icons';
-import { SearchDialog } from '@/components/site/searchDialog';
+import { FigmaIcon, GitHubIcon, MenuIcon } from '@/components/Icons';
+import { SearchDialog } from '@/components/site/SearchDialog';
 import { decanterLinks } from '@/data/decanter';
 import { primaryNavigation } from '@/data/navigation';
 

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowIcon, CheckIcon } from '@/components/icons';
-import { CodeBlock } from '@/components/docs/codeBlock';
+import { ArrowIcon, CheckIcon } from '@/components/Icons';
+import { CodeBlock } from '@/components/docs/CodeBlock';
 
 export const metadata: Metadata = {
   title: 'Stanford’s design system for Tailwind CSS',

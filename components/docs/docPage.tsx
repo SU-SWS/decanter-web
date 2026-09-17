@@ -1,4 +1,4 @@
-import { OnThisPageNav, type PageHeading } from '@/components/docs/onThisPageNav';
+import { OnThisPageNav, type PageHeading } from '@/components/docs/OnThisPageNav';
 
 type DocPageProps = {
   children: React.ReactNode;

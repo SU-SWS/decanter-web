@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import { ComponentExample } from '@/components/docs/componentExample';
-import { DocPage } from '@/components/docs/docPage';
+import { ComponentExample } from '@/components/docs/ComponentExample';
+import { DocPage } from '@/components/docs/DocPage';
 
 export const metadata: Metadata = {
   title: 'Table components',

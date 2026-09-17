@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { PageHeader } from '@/components/pageHeader';
+import { PageHeader } from '@/components/PageHeader';
 
 export const metadata: Metadata = {
   title: 'Accessibility for designers',

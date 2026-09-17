@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import { Callout } from '@/components/docs/callout';
-import { ComponentExample } from '@/components/docs/componentExample';
-import { DocPage } from '@/components/docs/docPage';
+import { Callout } from '@/components/docs/Callout';
+import { ComponentExample } from '@/components/docs/ComponentExample';
+import { DocPage } from '@/components/docs/DocPage';
 import { fluidTypeScale } from '@/data/decanter';
 
 export const metadata: Metadata = {
