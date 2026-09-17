@@ -16,7 +16,7 @@ const kindStyles = {
   Guide: 'border-black-20 bg-fog-light text-black-80',
 };
 
-export function DocPage({ children, description, eyebrow, headings = [], kind = 'Guide', title }: DocPageProps) {
+export const DocPage = ({ children, description, eyebrow, headings = [], kind = 'Guide', title }: DocPageProps) => {
   return (
     <main className="min-w-0 grow" id="main-content">
       <div className="xl:grid xl:grid-cols-[minmax(0,1fr)_220px] xl:gap-48">
@@ -39,4 +39,4 @@ export function DocPage({ children, description, eyebrow, headings = [], kind = 
       </div>
     </main>
   );
-}
+};

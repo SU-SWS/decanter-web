@@ -5,7 +5,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { CloseIcon, SearchIcon } from '@/components/Icons';
 import { searchEntries } from '@/data/navigation';
 
-export function SearchDialog() {
+export const SearchDialog = () => {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const [query, setQuery] = useState('');
@@ -104,4 +104,4 @@ export function SearchDialog() {
       </dialog>
     </>
   );
-}
+};

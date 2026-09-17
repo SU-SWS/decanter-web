@@ -1,4 +1,4 @@
-export function IdentityBar() {
+export const IdentityBar = () => {
   return (
     <div className="bg-cardinal-red px-20 pt-5 pb-1 sm:px-30 md:px-50 lg:px-30">
       <a
@@ -10,4 +10,4 @@ export function IdentityBar() {
       </a>
     </div>
   );
-}
+};

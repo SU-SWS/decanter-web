@@ -4,7 +4,7 @@ import { SearchDialog } from '@/components/site/SearchDialog';
 import { decanterLinks } from '@/data/decanter';
 import { primaryNavigation } from '@/data/navigation';
 
-export function SiteHeader() {
+export const SiteHeader = () => {
   return (
     <header className="site-header bg-black text-white">
       <div className="cc flex min-h-72 items-center justify-between gap-20">
@@ -64,4 +64,4 @@ export function SiteHeader() {
       </div>
     </header>
   );
-}
+};

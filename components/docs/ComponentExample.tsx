@@ -12,7 +12,7 @@ type ComponentExampleProps = {
   title?: string;
 };
 
-export function ComponentExample({
+export const ComponentExample = ({
   children,
   code,
   codeTabs,
@@ -20,7 +20,7 @@ export function ComponentExample({
   label = 'React',
   previewClassName = '',
   title = 'Rendered example',
-}: ComponentExampleProps) {
+}: ComponentExampleProps) => {
   return (
     <div className="component-example my-24 overflow-hidden rounded-[0.8rem] border border-black-20 bg-white shadow-sm">
       <div className="flex min-h-44 items-center border-b border-black-20 bg-white px-20 py-10 sm:px-28">
@@ -36,4 +36,4 @@ export function ComponentExample({
       ) : null}
     </div>
   );
-}
+};

@@ -22,7 +22,7 @@ type CodeTabsProps = {
   tabs: CodeTabMetadata[];
 };
 
-export function CodeTabs({ children, className = '', tabs }: CodeTabsProps) {
+export const CodeTabs = ({ children, className = '', tabs }: CodeTabsProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const baseId = useId().replaceAll(':', '');
   const panels = Children.toArray(children);
@@ -92,4 +92,4 @@ export function CodeTabs({ children, className = '', tabs }: CodeTabsProps) {
       ))}
     </figure>
   );
-}
+};

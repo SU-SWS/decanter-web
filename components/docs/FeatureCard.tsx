@@ -8,7 +8,7 @@ type FeatureCardProps = {
   title: string;
 };
 
-export function FeatureCard({ description, href, label, title }: FeatureCardProps) {
+export const FeatureCard = ({ description, href, label, title }: FeatureCardProps) => {
   return (
     <article className="relative border border-black-20 bg-white p-22 shadow-sm">
       {label ? <p className="mb-9 text-11 font-bold uppercase tracking-[0.12em] text-cardinal-red">{label}</p> : null}
@@ -21,4 +21,4 @@ export function FeatureCard({ description, href, label, title }: FeatureCardProp
       </span>
     </article>
   );
-}
+};

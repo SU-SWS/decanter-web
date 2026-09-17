@@ -13,7 +13,7 @@ type OnThisPageNavProps = {
 
 const activeOffset = 120;
 
-export function OnThisPageNav({ headings }: OnThisPageNavProps) {
+export const OnThisPageNav = ({ headings }: OnThisPageNavProps) => {
   const [activeId, setActiveId] = useState(headings[0]?.id ?? '');
 
   useEffect(() => {
@@ -86,4 +86,4 @@ export function OnThisPageNav({ headings }: OnThisPageNavProps) {
       </ul>
     </nav>
   );
-}
+};

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { docsNavigation } from '@/data/navigation';
 
-function NavigationList() {
+const NavigationList = () => {
   const pathname = usePathname();
   const currentPath = pathname.length > 1 ? pathname.replace(/\/+$/, '') : pathname;
 
@@ -35,9 +35,9 @@ function NavigationList() {
       ))}
     </div>
   );
-}
+};
 
-export function DocsSidebar() {
+export const DocsSidebar = () => {
   return (
     <>
       <details className="docs-mobile-nav border-b border-black-20 bg-fog-light px-20 py-12 lg:hidden">
@@ -53,4 +53,4 @@ export function DocsSidebar() {
       </aside>
     </>
   );
-}
+};

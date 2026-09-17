@@ -12,11 +12,11 @@ const variants = {
   beta: 'border-plum bg-plum-light/10',
 };
 
-export function Callout({ children, title, variant = 'note' }: CalloutProps) {
+export const Callout = ({ children, title, variant = 'note' }: CalloutProps) => {
   return (
     <aside className={`my-24 border-l-4 px-18 py-14 ${variants[variant]}`}>
       <p className="mb-5 text-14 font-bold uppercase tracking-[0.08em] text-black">{title}</p>
       <div className="callout-content text-16 leading-normal text-black-80">{children}</div>
     </aside>
   );
-}
+};

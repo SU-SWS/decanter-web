@@ -14,7 +14,7 @@ const policyLinks = [
   ['Accessibility', 'https://www.stanford.edu/accessibility'],
 ] as const;
 
-export function GlobalFooter() {
+export const GlobalFooter = () => {
   return (
     <footer className="cc w-full bg-cardinal-red text-white basefont-20 rs-py-1">
       <div className="flex flex-col lg:flex-row" title="Common Stanford resources">
@@ -59,4 +59,4 @@ export function GlobalFooter() {
       </div>
     </footer>
   );
-}
+};

@@ -66,6 +66,8 @@ git diff --check
 
 - Reusable `.tsx` component filenames use PascalCase and generally match their primary export: `CodeBlock.tsx`, `ComponentExample.tsx`, `CopyButton.tsx`, `SiteHeader.tsx`, and so on.
 - Keep Next.js convention filenames unchanged, including `page.tsx`, `layout.tsx`, `not-found.tsx`, `sitemap.ts`, and `robots.ts`.
+- Rename component files with `git mv` through a temporary name. macOS is case-insensitive, so a direct case-only rename is silently dropped from the index and the Linux build then fails on the unresolved import.
+- Components in `components/` are arrow functions assigned to a `const`: `export const CodeBlock = ({ code }: CodeBlockProps) => { ... };`. Route components keep the `export default function` declaration Next.js conventions expect.
 - Route directory names remain URL-friendly kebab case.
 - Shared documentation UI lives in `components/docs/`; global site chrome lives in `components/site/`.
 - `components/docs/CodeBlock.tsx` performs lightweight syntax highlighting on the server. `components/docs/CodeTabs.tsx` and the copy control are small client islands; do not move the tokenizer into client JavaScript.

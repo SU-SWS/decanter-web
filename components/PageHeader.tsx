@@ -7,7 +7,7 @@ type PageHeaderProps = {
   title: string;
 };
 
-export function PageHeader({ children, description, eyebrow, title }: PageHeaderProps) {
+export const PageHeader = ({ children, description, eyebrow, title }: PageHeaderProps) => {
   return (
     <header className="hero-surface text-white">
       <div className="cc rs-py-5">
@@ -18,4 +18,4 @@ export function PageHeader({ children, description, eyebrow, title }: PageHeader
       </div>
     </header>
   );
-}
+};

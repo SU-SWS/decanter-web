@@ -8,7 +8,7 @@ type CopyButtonProps = {
   label: string;
 };
 
-export function CopyButton({ code, label }: CopyButtonProps) {
+export const CopyButton = ({ code, label }: CopyButtonProps) => {
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [copied, setCopied] = useState(false);
 
@@ -38,4 +38,4 @@ export function CopyButton({ code, label }: CopyButtonProps) {
       <span className="hidden sm:inline">{copied ? 'Copied' : 'Copy'}</span>
     </button>
   );
-}
+};
