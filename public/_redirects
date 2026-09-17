@@ -1,5 +1,25 @@
-/component/identity-brand-bar /examples/identity-bar 301!
-/component/identity-global-footer /examples/global-footer 301!
+/about /showcase/ 301!
+
+/for-developers /docs/ 301!
+/for-developers/installation /docs/installation/ 301!
+/for-developers/browser-compatibility /docs/installation/ 301!
+/for-developers/strategies-and-conventions /docs/tailwind-overrides/ 301!
+/for-developers/support-and-versions /decanter-faq/ 301!
+/for-developers/how-to-extend /docs/tailwind-overrides/ 301!
+/for-developers/tailwindcss-plugins /docs/upgrade-v7/ 301!
+
+/examples/alerts /examples/content-patterns/ 301!
+/examples/cards /examples/content-patterns/ 301!
+/examples/containers /docs/layout/ 301!
+/examples/grid-css-grid /docs/layout/ 301!
+/examples/grid-flex /docs/layout/ 301!
+/examples/heros /examples/content-patterns/ 301!
+/examples/layout /docs/layout/ 301!
+/examples/logo /docs/components/logo/ 301!
+/examples/modular-typography /docs/modular-typography/ 301!
+
+/component/identity-brand-bar /examples/identity-bar/ 301!
+/component/identity-global-footer /examples/global-footer/ 301!
 /component/composite-main-navigation / 301!
 /component/identity-masthead / 301!
-/component/identity-local-footer / 301!
+/component/identity-local-footer /examples/global-footer/ 301!

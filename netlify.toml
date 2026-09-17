@@ -1,4 +1,11 @@
-# HEADERS - BASIC AUTH
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "24.17.0"
+
+# HEADERS
 # ##############################################################################
 [[headers]]
   for = "/*"
